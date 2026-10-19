@@ -1,0 +1,12 @@
+name: Teste Telegram
+on:
+  workflow_dispatch:
+jobs:
+  teste:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enviar mensagem de teste
+        run: |
+          curl -s "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage" \
+            --data-urlencode "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
+            --data-urlencode "text=Teste de conexão do Radar de Ofertas ✅"
