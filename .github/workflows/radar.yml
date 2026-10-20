@@ -2,7 +2,7 @@ name: Radar ML
 
 on:
   schedule:
-    - cron: "0 * * * *"   # toda hora (UTC)
+    - cron: "20 * * * *"   # toda hora no minuto 20 (UTC) — evita pico de carga do minuto 0
   workflow_dispatch:
 
 permissions:
