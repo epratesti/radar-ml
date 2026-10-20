@@ -37,7 +37,7 @@ CAT_NOMES = {
 }
 
 S = requests.Session()
-S.headers.update({"User-Agent": "radar-ml/1.3", "Accept": "application/json"})
+S.headers.update({"User-Agent": "radar-ml/1.4", "Accept": "application/json"})
 
 
 def headers_ml():
@@ -99,20 +99,33 @@ def montar_produto(pid, tipo, h, categoria):
 
 
 def um_da_categoria(cat_id, h, vistos):
+    """Busca produto na categoria. Prefere frete grátis quando disponível."""
     nome = CAT_NOMES.get(cat_id, cat_id)
     try:
         r = S.get(f"{API}/highlights/MLB/category/{cat_id}", headers=h, timeout=20)
         if r.status_code != 200:
             print(f"Highlights {nome}: {r.status_code}")
             return None
-        for item in r.json().get("content", [])[:12]:  # olha um pouco mais de candidatos
+
+        candidatos = []
+        for item in r.json().get("content", [])[:15]:
             pid = item.get("id")
             if not pid or pid in vistos:
                 continue
             p = montar_produto(pid, item.get("type", "PRODUCT"), h, nome)
             if p:
-                print(f"  OK [{nome}] R$ {p['preco']:.2f} — {p['titulo'][:50]}")
-                return p
+                candidatos.append(p)
+
+        if not candidatos:
+            return None
+
+        # Prioriza frete grátis, senão pega o primeiro válido
+        com_frete = [c for c in candidatos if c.get("frete_gratis")]
+        escolhido = com_frete[0] if com_frete else candidatos[0]
+
+        print(f"  OK [{nome}] R$ {escolhido['preco']:.2f} — {escolhido['titulo'][:50]}"
+              + (" 🚚" if escolhido.get("frete_gratis") else ""))
+        return escolhido
     except Exception as e:
         print(f"Erro {nome}:", e)
     return None
@@ -141,17 +154,26 @@ def preco_br(v):
 
 
 def postar(p):
+    cat = html.escape(p.get("categoria", ""))
+    titulo = html.escape(p["titulo"][:120])
+    preco = preco_br(p["preco"])
+    link = html.escape(p["link"])
+
+    frete_linha = "🚚 <b>Frete grátis</b>\n" if p.get("frete_gratis") else ""
+
     texto = (
-        f"🔥 <b>Mais vendido — {html.escape(p.get('categoria', ''))}</b>\n\n"
-        f"📦 {html.escape(p['titulo'][:130])}\n"
-        f"💰 <b>{preco_br(p['preco'])}</b>\n"
-        + ("🚚 Frete grátis\n" if p.get("frete_gratis") else "")
-        + f"\n🔗 <a href=\"{html.escape(p['link'])}\">Ver oferta no Mercado Livre</a>\n\n"
-        "<i>Link de afiliado. Preços podem variar.</i>"
+        f"🔥 <b>Achado do momento — {cat}</b>\n\n"
+        f"📦 {titulo}\n\n"
+        f"💰 <b>{preco}</b>\n"
+        f"{frete_linha}"
+        f"\n👉 <a href=\"{link}\">Ver oferta no Mercado Livre</a>\n\n"
+        f"<i>Link de afiliado · Preços podem variar</i>"
     )
+
     if not TG_TOKEN or not TG_CHAT:
         print("Telegram não configurado")
         return False
+
     data = {"chat_id": TG_CHAT, "parse_mode": "HTML"}
     if p.get("imagem"):
         data["photo"] = p["imagem"]
@@ -160,6 +182,7 @@ def postar(p):
     else:
         data["text"] = texto
         r = S.post(f"https://api.telegram.org/bot{TG_TOKEN}/sendMessage", data=data, timeout=30)
+
     print("Telegram:", r.status_code, r.text[:150])
     return r.ok
 
@@ -215,7 +238,6 @@ def main():
 
     if not ranking:
         print("Nada a postar")
-        # ainda grava o estado limpo
         STATE.write_text(json.dumps(estado, indent=2, ensure_ascii=False), encoding="utf-8")
         return
     if not (TG_TOKEN and TG_CHAT):
@@ -231,7 +253,6 @@ def main():
     for p in ranking:
         if enviados >= MAX_POSTS:
             break
-        # dupla checagem por segurança
         if p["id"] in estado:
             print(f"  Já postado recentemente, pulando: {p['id']}")
             continue
