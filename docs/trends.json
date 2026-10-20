@@ -1,32 +1,32 @@
 {
-  "atualizado": "2026-10-20T12:59:53.836398-03:00",
+  "atualizado": "2026-10-20T13:31:02.778475-03:00",
   "itens": [
     {
-      "id": "MLB52039200",
-      "titulo": "Samsung Galaxy Buds Core branco",
-      "preco": 200.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_967872-MLA87279987383_072025-F.jpg",
+      "id": "MLB66055148",
+      "titulo": "Smart Tv 32 Philco Roku Tv Dolby Áudio Hdr10 P32crb",
+      "preco": 928.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_875689-MLA107805437119_022026-F.jpg",
       "frete_gratis": true,
       "categoria": "Eletrônicos",
-      "link": "https://www.mercadolivre.com.br/p/MLB52039200?matt_tool=71970283"
+      "link": "https://www.mercadolivre.com.br/p/MLB66055148?matt_tool=71970283"
     },
     {
-      "id": "MLB44470347",
-      "titulo": "Tira Manchas para Roupas Calisul 1kg Percarbonato de Sódio",
-      "preco": 18.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_846999-MLA117391162992_102026-F.jpg",
+      "id": "MLB32043715",
+      "titulo": "Tapete 2x1,5 Sala Peludo Quarto Cores Variadas Cor Branco Desenho Do Tecido Pelo Alto",
+      "preco": 59.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_753255-MLA95501946854_102025-F.jpg",
       "frete_gratis": false,
       "categoria": "Casa",
-      "link": "https://www.mercadolivre.com.br/p/MLB44470347?matt_tool=71970283"
+      "link": "https://www.mercadolivre.com.br/p/MLB32043715?matt_tool=71970283"
     },
     {
-      "id": "MLB19549827",
-      "titulo": "Proteína Black Skull Whey 100% HD em pó sabor Baunilha x 900g",
-      "preco": 104.99,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_910268-MLA116308143272_092026-F.jpg",
-      "frete_gratis": true,
+      "id": "MLB18630341",
+      "titulo": "Creatina 100g Creatina Monohidratada Max Titanium Sem Sabor Alta Pureza",
+      "preco": 21.69,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_697835-MLA117269994412_102026-F.jpg",
+      "frete_gratis": false,
       "categoria": "Esportes",
-      "link": "https://www.mercadolivre.com.br/p/MLB19549827?matt_tool=71970283"
+      "link": "https://www.mercadolivre.com.br/p/MLB18630341?matt_tool=71970283"
     }
   ]
 }
