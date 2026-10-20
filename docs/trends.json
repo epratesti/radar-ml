@@ -1,41 +1,32 @@
 {
-  "atualizado": "2026-10-20T12:57:35.623586-03:00",
+  "atualizado": "2026-10-20T12:59:53.836398-03:00",
   "itens": [
     {
-      "id": "MLB65541449",
-      "titulo": "Fone de Ouvido JBL Tune 530BT Bluetooth Sem Fio Preto Headphone com Microfone Wireless Estéreo Graves Potentes Confortável",
-      "preco": 193.03,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_608030-MLA106478715282_022026-F.jpg",
+      "id": "MLB52039200",
+      "titulo": "Samsung Galaxy Buds Core branco",
+      "preco": 200.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_967872-MLA87279987383_072025-F.jpg",
       "frete_gratis": true,
       "categoria": "Eletrônicos",
-      "link": "https://www.mercadolivre.com.br/p/MLB65541449?matt_tool=71970283"
+      "link": "https://www.mercadolivre.com.br/p/MLB52039200?matt_tool=71970283"
     },
     {
-      "id": "MLB65806827",
-      "titulo": "Kit Cobre Leito Colcha King 3 Peças Boutis Dupla Face Porta Travesseiro Aba Americana - Sofia Rose",
-      "preco": 90.89,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_600929-MLA107442530491_022026-F.jpg",
-      "frete_gratis": true,
+      "id": "MLB44470347",
+      "titulo": "Tira Manchas para Roupas Calisul 1kg Percarbonato de Sódio",
+      "preco": 18.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_846999-MLA117391162992_102026-F.jpg",
+      "frete_gratis": false,
       "categoria": "Casa",
-      "link": "https://www.mercadolivre.com.br/p/MLB65806827?matt_tool=71970283"
+      "link": "https://www.mercadolivre.com.br/p/MLB44470347?matt_tool=71970283"
     },
     {
-      "id": "MLB19721946",
-      "titulo": "Relógio Casio Unissex Vintage Prata Aq-230a-1dmq",
-      "preco": 86.97,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_633473-MLA115741902361_082026-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Relógios",
-      "link": "https://www.mercadolivre.com.br/p/MLB19721946?matt_tool=71970283"
-    },
-    {
-      "id": "MLB18722625",
-      "titulo": "Proteína Darkness Carnibol Beef em pó sabor Chocolate x 1.8kg",
-      "preco": 298.99,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_775815-MLA99993472513_112025-F.jpg",
+      "id": "MLB19549827",
+      "titulo": "Proteína Black Skull Whey 100% HD em pó sabor Baunilha x 900g",
+      "preco": 104.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_910268-MLA116308143272_092026-F.jpg",
       "frete_gratis": true,
       "categoria": "Esportes",
-      "link": "https://www.mercadolivre.com.br/p/MLB18722625?matt_tool=71970283"
+      "link": "https://www.mercadolivre.com.br/p/MLB19549827?matt_tool=71970283"
     }
   ]
 }
