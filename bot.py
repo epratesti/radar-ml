@@ -1,4 +1,9 @@
-"""Radar: 4 produtos diversificados por hora → Telegram."""
+"""Radar: 4 produtos diversificados por hora → Telegram.
+Evita repetições por 14 dias.
+Horário (America/Sao_Paulo):
+  - 07h–22h: a cada 1 hora
+  - 23h, 02h e 05h: a cada 3 horas (madrugada)
+"""
 import os, json, html, datetime as dt
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -9,7 +14,7 @@ AFF_PARAMS = os.getenv("ML_AFFILIATE_PARAMS", "matt_tool={id}")
 TG_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TG_CHAT = os.getenv("TELEGRAM_CHAT_ID")
 MAX_POSTS = int(os.getenv("MAX_POSTS", "4"))
-REPETIR_APOS_DIAS = 7
+REPETIR_APOS_DIAS = 14  # evita repetir o mesmo produto por 2 semanas
 API = "https://api.mercadolibre.com"
 ROOT = Path(__file__).parent
 TRENDS = ROOT / "docs" / "trends.json"
@@ -32,7 +37,7 @@ CAT_NOMES = {
 }
 
 S = requests.Session()
-S.headers.update({"User-Agent": "radar-ml/1.2", "Accept": "application/json"})
+S.headers.update({"User-Agent": "radar-ml/1.3", "Accept": "application/json"})
 
 
 def headers_ml():
@@ -100,7 +105,7 @@ def um_da_categoria(cat_id, h, vistos):
         if r.status_code != 200:
             print(f"Highlights {nome}: {r.status_code}")
             return None
-        for item in r.json().get("content", [])[:8]:
+        for item in r.json().get("content", [])[:12]:  # olha um pouco mais de candidatos
             pid = item.get("id")
             if not pid or pid in vistos:
                 continue
@@ -159,6 +164,19 @@ def postar(p):
     return r.ok
 
 
+def pode_postar_agora(agora: dt.datetime) -> bool:
+    """
+    07h–22h → toda hora
+    23h, 02h e 05h → madrugada (a cada 3 horas)
+    """
+    h = agora.hour
+    if 7 <= h <= 22:
+        return True
+    if h in (23, 2, 5):
+        return True
+    return False
+
+
 def main():
     agora = dt.datetime.now(TZ)
     print("Iniciando", agora.isoformat())
@@ -168,11 +186,25 @@ def main():
 
     STATE.parent.mkdir(parents=True, exist_ok=True)
     try:
-        estado = json.loads(STATE.read_text(encoding="utf-8") or "{}")
-    except Exception:
+        raw = STATE.read_text(encoding="utf-8").strip() or "{}"
+        estado = json.loads(raw)
+        if not isinstance(estado, dict):
+            estado = {}
+    except Exception as e:
+        print("Aviso: estado inválido, reiniciando:", e)
         estado = {}
+
+    # Remove produtos antigos demais (fora da janela de anti-repetição)
     limite = agora - dt.timedelta(days=REPETIR_APOS_DIAS)
-    estado = {k: v for k, v in estado.items() if dt.datetime.fromisoformat(v) > limite}
+    estado_limpo = {}
+    for k, v in estado.items():
+        try:
+            if dt.datetime.fromisoformat(v) > limite:
+                estado_limpo[k] = v
+        except Exception:
+            continue
+    estado = estado_limpo
+    print(f"Produtos já postados (últimos {REPETIR_APOS_DIAS} dias):", len(estado))
 
     ranking = montar_diversificado(h, estado)
     print("Produtos selecionados:", len(ranking))
@@ -183,18 +215,26 @@ def main():
 
     if not ranking:
         print("Nada a postar")
+        # ainda grava o estado limpo
+        STATE.write_text(json.dumps(estado, indent=2, ensure_ascii=False), encoding="utf-8")
         return
     if not (TG_TOKEN and TG_CHAT):
         print("Falta Telegram")
         return
-    if not (8 <= agora.hour < 23):
-        print("Fora do horário 8h–23h")
+    if not pode_postar_agora(agora):
+        print(f"Fora do horário de postagem (hora atual: {agora.hour}h). "
+              "Dia: 7h–22h | Madrugada: 23h, 2h e 5h")
+        STATE.write_text(json.dumps(estado, indent=2, ensure_ascii=False), encoding="utf-8")
         return
 
     enviados = 0
     for p in ranking:
         if enviados >= MAX_POSTS:
             break
+        # dupla checagem por segurança
+        if p["id"] in estado:
+            print(f"  Já postado recentemente, pulando: {p['id']}")
+            continue
         if postar(p):
             estado[p["id"]] = agora.isoformat()
             enviados += 1
