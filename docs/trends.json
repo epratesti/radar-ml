@@ -1,95 +1,32 @@
 {
-  "atualizado": "2026-10-19T21:06:04.008101-03:00",
+  "atualizado": "2026-10-19T21:13:23.240158-03:00",
   "itens": [
-    {
-      "id": "MLB54982411",
-      "titulo": "Celular Samsung Galaxy A17 Com Ia, 256gb, 8gb Ram, Câm De 50mp, Tela De 6.7 , Nfc, Ip54 - Azul",
-      "preco": 1349.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_889169-MLA96868779849_102025-F.jpg",
-      "frete_gratis": true,
-      "link": "https://www.mercadolivre.com.br/p/MLB54982411?matt_tool=71970283",
-      "categoria": "Celulares"
-    },
-    {
-      "id": "MLB55762063",
-      "titulo": "Smartphone Motorola Moto G06 - 256gb 4gb Ram + 8gb Ram Boost, e Camera 50mp Com Ai Bateria De 5200 Mah Tela 6.9 - Bege",
-      "preco": 869.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_793349-MLA91806774304_092025-F.jpg",
-      "frete_gratis": true,
-      "link": "https://www.mercadolivre.com.br/p/MLB55762063?matt_tool=71970283",
-      "categoria": "Celulares"
-    },
-    {
-      "id": "MLB63364148",
-      "titulo": "Smartphone Galaxy A17 Câmera Tripla 256 Gb 4g A175 Samsung Azul",
-      "preco": 1899.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_604348-MLA105252388263_012026-F.jpg",
-      "frete_gratis": true,
-      "link": "https://www.mercadolivre.com.br/p/MLB63364148?matt_tool=71970283",
-      "categoria": "Celulares"
-    },
-    {
-      "id": "MLB44923446",
-      "titulo": "Chinelo Top Havaianas Liso Branco",
-      "preco": 29.4,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_740930-MLA100107121067_122025-F.jpg",
-      "frete_gratis": false,
-      "link": "https://www.mercadolivre.com.br/p/MLB44923446?matt_tool=71970283",
-      "categoria": "Calçados e Roupas"
-    },
-    {
-      "id": "MLB50196682",
-      "titulo": "Sony PlayStation Store Gift Card R$ 150 (Digital)",
-      "preco": 150.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_902418-MLA116666090065_082026-F.jpg",
-      "frete_gratis": false,
-      "link": "https://www.mercadolivre.com.br/p/MLB50196682?matt_tool=71970283",
-      "categoria": "Games"
-    },
-    {
-      "id": "MLB51757399",
-      "titulo": "Razer Gold Digital R$ 30 (digital)",
-      "preco": 30.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_634164-MLA115097345074_082026-F.jpg",
-      "frete_gratis": false,
-      "link": "https://www.mercadolivre.com.br/p/MLB51757399?matt_tool=71970283",
-      "categoria": "Games"
-    },
-    {
-      "id": "MLB39960346",
-      "titulo": "Controle Sem Fio Joystick REDFIN Bluetooth Compatível Para Ps4 Videogame Tv Samsung Pc P4 Ps 4 Manete Pc Gamer Tv Smart Controle Bluetooth Celular Headset Sem Fio Com P2 Marca Redfin",
-      "preco": 34.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_762912-MLA105696431793_012026-F.jpg",
-      "frete_gratis": false,
-      "link": "https://www.mercadolivre.com.br/p/MLB39960346?matt_tool=71970283",
-      "categoria": "Games"
-    },
     {
       "id": "MLB45862017",
       "titulo": "Suporte TV Fixo Universal 10\" a 100\" Polegadas Forte Para Todas as Marcas",
       "preco": 19.0,
       "imagem": "https://http2.mlstatic.com/D_NQ_NP_854028-MLA117416860537_092026-F.jpg",
       "frete_gratis": false,
-      "link": "https://www.mercadolivre.com.br/p/MLB45862017?matt_tool=71970283",
-      "categoria": "Eletrônicos"
+      "categoria": "Eletrônicos",
+      "link": "https://www.mercadolivre.com.br/p/MLB45862017?matt_tool=71970283"
     },
     {
-      "id": "MLB40656539",
-      "titulo": "Starlink Mini Kit Antena Satélite com Roteador Wi-Fi",
-      "preco": 499.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_799612-MLA95359719699_102025-F.jpg",
-      "frete_gratis": true,
-      "link": "https://www.mercadolivre.com.br/p/MLB40656539?matt_tool=71970283",
-      "categoria": "Eletrônicos"
-    },
-    {
-      "id": "MLB24117280",
-      "titulo": "Fone De Ouvido Headphone Dapon H02D Bluetooth 5.1 Over-ear 22h Preto",
-      "preco": 68.91,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_673950-MLA99394598783_112025-F.jpg",
+      "id": "MLB17001072",
+      "titulo": "Lava Roupas Líquido Omo Lavanderia Profissional Lavagem 7 L",
+      "preco": 39.75,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_685429-MLA116551180045_082026-F.jpg",
       "frete_gratis": false,
-      "link": "https://www.mercadolivre.com.br/p/MLB24117280?matt_tool=71970283",
-      "categoria": "Eletrônicos"
+      "categoria": "Casa",
+      "link": "https://www.mercadolivre.com.br/p/MLB17001072?matt_tool=71970283"
+    },
+    {
+      "id": "MLB21693452",
+      "titulo": "Relógio Casio Masculino Digital Preto de Resina W-59-1VQ",
+      "preco": 115.66,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_684326-MLA115755090874_092026-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Relógios",
+      "link": "https://www.mercadolivre.com.br/p/MLB21693452?matt_tool=71970283"
     },
     {
       "id": "MLB19603205",
@@ -97,89 +34,8 @@
       "preco": 30.0,
       "imagem": "https://http2.mlstatic.com/D_NQ_NP_662415-MLA97812910758_112025-F.jpg",
       "frete_gratis": true,
-      "link": "https://www.mercadolivre.com.br/p/MLB19603205?matt_tool=71970283",
-      "categoria": "Esportes e Fitness"
-    },
-    {
-      "id": "MLB18725308",
-      "titulo": "Creatina Soldiers Nutrition em pó Sem sabor x 500g",
-      "preco": 38.2,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_858065-MLA112585347120_062026-F.jpg",
-      "frete_gratis": false,
-      "link": "https://www.mercadolivre.com.br/p/MLB18725308?matt_tool=71970283",
-      "categoria": "Esportes e Fitness"
-    },
-    {
-      "id": "MLB6087971",
-      "titulo": "Proteína Max Titanium Whey Pro Concetrado em pó sabor Morango x 1kg",
-      "preco": 92.99,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_608162-MLA112813208483_062026-F.jpg",
-      "frete_gratis": true,
-      "link": "https://www.mercadolivre.com.br/p/MLB6087971?matt_tool=71970283",
-      "categoria": "Esportes e Fitness"
-    },
-    {
-      "id": "MLB21278806",
-      "titulo": "Filamento 3D Petg Branco Premium Resistente Impressora 3D Master Print 1,75mm - 1kg",
-      "preco": 59.82,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_913849-MLA105989588051_012026-F.jpg",
-      "frete_gratis": false,
-      "link": "https://www.mercadolivre.com.br/p/MLB21278806?matt_tool=71970283",
-      "categoria": "Informática"
-    },
-    {
-      "id": "MLB23487120",
-      "titulo": "Filamento Voolt 3d Pla Verde Efeito Fosco Velvet Premium 1kg Verde Velvet",
-      "preco": 107.61,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_647571-MLA116549201715_082026-F.jpg",
-      "frete_gratis": true,
-      "link": "https://www.mercadolivre.com.br/p/MLB23487120?matt_tool=71970283",
-      "categoria": "Informática"
-    },
-    {
-      "id": "MLB16084358",
-      "titulo": "Papel Higiênico Supreme Folha Tripla 24 Rolos Neve Folha Tripla",
-      "preco": 28.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_866261-MLA99361636628_112025-F.jpg",
-      "frete_gratis": false,
-      "link": "https://www.mercadolivre.com.br/p/MLB16084358?matt_tool=71970283",
-      "categoria": "Beleza"
-    },
-    {
-      "id": "MLB24326256",
-      "titulo": "La Roche-posay Cicaplast Baume B5+ Tempo de aplicação Dia/Noite Tipo de pele Todos os tipos de pele",
-      "preco": 71.52,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_684143-MLU74084950937_012024-F.jpg",
-      "frete_gratis": false,
-      "link": "https://www.mercadolivre.com.br/p/MLB24326256?matt_tool=71970283",
-      "categoria": "Beleza"
-    },
-    {
-      "id": "MLB44470347",
-      "titulo": "Tira Manchas para Roupas Calisul 1kg Percarbonato de Sódio",
-      "preco": 18.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_846999-MLA117391162992_102026-F.jpg",
-      "frete_gratis": false,
-      "link": "https://www.mercadolivre.com.br/p/MLB44470347?matt_tool=71970283",
-      "categoria": "Beleza"
-    },
-    {
-      "id": "MLB13409956",
-      "titulo": "Chaleira Eletrica Atacama 1,8l - Unitermi",
-      "preco": 30.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_965103-MLA99575749404_122025-F.jpg",
-      "frete_gratis": true,
-      "link": "https://www.mercadolivre.com.br/p/MLB13409956?matt_tool=71970283",
-      "categoria": "Eletrodomésticos"
-    },
-    {
-      "id": "MLB27080589",
-      "titulo": "Kit 2 Refil De Água Acqua Pure Electrolux Pe12a Pe12b Pe12g PC01X, Cor Marrom-claro",
-      "preco": 115.57,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_764049-MLA114244626520_082026-F.jpg",
-      "frete_gratis": true,
-      "link": "https://www.mercadolivre.com.br/p/MLB27080589?matt_tool=71970283",
-      "categoria": "Eletrodomésticos"
+      "categoria": "Esportes",
+      "link": "https://www.mercadolivre.com.br/p/MLB19603205?matt_tool=71970283"
     }
   ]
 }
