@@ -1,41 +1,41 @@
 {
-  "atualizado": "2026-10-19T21:14:45.335288-03:00",
+  "atualizado": "2026-10-19T21:17:33.195265-03:00",
   "itens": [
     {
-      "id": "MLB40656539",
-      "titulo": "Starlink Mini Kit Antena Satélite com Roteador Wi-Fi",
-      "preco": 499.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_799612-MLA95359719699_102025-F.jpg",
-      "frete_gratis": true,
+      "id": "MLB24117280",
+      "titulo": "Fone De Ouvido Headphone Dapon H02D Bluetooth 5.1 Over-ear 22h Preto",
+      "preco": 68.91,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_673950-MLA99394598783_112025-F.jpg",
+      "frete_gratis": false,
       "categoria": "Eletrônicos",
-      "link": "https://www.mercadolivre.com.br/p/MLB40656539?matt_tool=71970283"
+      "link": "https://www.mercadolivre.com.br/p/MLB24117280?matt_tool=71970283"
     },
     {
-      "id": "MLB63904966",
-      "titulo": "Kit 10 Potes Vidro Hermetico Vai Ao Forno Microondas 640ml Marmita Hermético Freezer Fitness Rishon",
-      "preco": 65.03,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_895409-MLA117834564002_102026-F.jpg",
+      "id": "MLB16084358",
+      "titulo": "Papel Higiênico Supreme Folha Tripla 24 Rolos Neve Folha Tripla",
+      "preco": 28.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_866261-MLA99361636628_112025-F.jpg",
       "frete_gratis": false,
       "categoria": "Casa",
-      "link": "https://www.mercadolivre.com.br/p/MLB63904966?matt_tool=71970283"
+      "link": "https://www.mercadolivre.com.br/p/MLB16084358?matt_tool=71970283"
     },
     {
-      "id": "MLB65974554",
-      "titulo": "Porta Joias 3 Camadas Couro Caixa De Jóias Feminina Cor Verde",
-      "preco": 75.65,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_923511-MLA106965860438_022026-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Relógios",
-      "link": "https://www.mercadolivre.com.br/p/MLB65974554?matt_tool=71970283"
-    },
-    {
-      "id": "MLB18725308",
-      "titulo": "Creatina Soldiers Nutrition em pó Sem sabor x 500g",
-      "preco": 38.2,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_858065-MLA112585347120_062026-F.jpg",
+      "id": "MLB28894895",
+      "titulo": "Relógio Digital Despertador Mesa Cabeceira Quarto Idoso Cor Preto Micgeek",
+      "preco": 24.94,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_767519-MLA108974232726_032026-F.jpg",
       "frete_gratis": false,
+      "categoria": "Relógios",
+      "link": "https://www.mercadolivre.com.br/p/MLB28894895?matt_tool=71970283"
+    },
+    {
+      "id": "MLB6087971",
+      "titulo": "Proteína Max Titanium Whey Pro Concetrado em pó sabor Morango x 1kg",
+      "preco": 92.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_608162-MLA112813208483_062026-F.jpg",
+      "frete_gratis": true,
       "categoria": "Esportes",
-      "link": "https://www.mercadolivre.com.br/p/MLB18725308?matt_tool=71970283"
+      "link": "https://www.mercadolivre.com.br/p/MLB6087971?matt_tool=71970283"
     }
   ]
 }
