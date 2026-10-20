@@ -1,41 +1,41 @@
 {
-  "atualizado": "2026-10-19T21:17:33.195265-03:00",
+  "atualizado": "2026-10-20T02:48:45.069362-03:00",
   "itens": [
     {
-      "id": "MLB24117280",
-      "titulo": "Fone De Ouvido Headphone Dapon H02D Bluetooth 5.1 Over-ear 22h Preto",
-      "preco": 68.91,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_673950-MLA99394598783_112025-F.jpg",
+      "id": "MLB15029805",
+      "titulo": "Pilha Alcalina Aa Pequena Duracell Com 4 Unidades",
+      "preco": 23.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_745614-MLA116755340171_082026-F.jpg",
       "frete_gratis": false,
       "categoria": "Eletrônicos",
-      "link": "https://www.mercadolivre.com.br/p/MLB24117280?matt_tool=71970283"
+      "link": "https://www.mercadolivre.com.br/p/MLB15029805?matt_tool=71970283"
     },
     {
-      "id": "MLB16084358",
-      "titulo": "Papel Higiênico Supreme Folha Tripla 24 Rolos Neve Folha Tripla",
-      "preco": 28.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_866261-MLA99361636628_112025-F.jpg",
+      "id": "MLB66453791",
+      "titulo": "Papel Higiênico Familiar Folha Dupla Kit 24 Rolos de 30 m",
+      "preco": 33.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_790904-MLA108570211465_032026-F.jpg",
       "frete_gratis": false,
       "categoria": "Casa",
-      "link": "https://www.mercadolivre.com.br/p/MLB16084358?matt_tool=71970283"
+      "link": "https://www.mercadolivre.com.br/p/MLB66453791?matt_tool=71970283"
     },
     {
-      "id": "MLB28894895",
-      "titulo": "Relógio Digital Despertador Mesa Cabeceira Quarto Idoso Cor Preto Micgeek",
-      "preco": 24.94,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_767519-MLA108974232726_032026-F.jpg",
-      "frete_gratis": false,
+      "id": "MLB42520227",
+      "titulo": "Smartwatch Xiaomi Redmi Watch 5 Lite 1.96 Preto",
+      "preco": 309.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_625071-MLA99989591849_112025-F.jpg",
+      "frete_gratis": true,
       "categoria": "Relógios",
-      "link": "https://www.mercadolivre.com.br/p/MLB28894895?matt_tool=71970283"
+      "link": "https://www.mercadolivre.com.br/p/MLB42520227?matt_tool=71970283"
     },
     {
-      "id": "MLB6087971",
-      "titulo": "Proteína Max Titanium Whey Pro Concetrado em pó sabor Morango x 1kg",
-      "preco": 92.99,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_608162-MLA112813208483_062026-F.jpg",
+      "id": "MLB19140415",
+      "titulo": "Suplemento Whey Isolate Protein Fuse 1,8kg sabor Morango Dark Lab",
+      "preco": 179.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_989007-MLA99405715766_112025-F.jpg",
       "frete_gratis": true,
       "categoria": "Esportes",
-      "link": "https://www.mercadolivre.com.br/p/MLB6087971?matt_tool=71970283"
+      "link": "https://www.mercadolivre.com.br/p/MLB19140415?matt_tool=71970283"
     }
   ]
 }
