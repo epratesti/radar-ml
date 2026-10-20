@@ -1,41 +1,41 @@
 {
-  "atualizado": "2026-10-20T08:16:32.815594-03:00",
+  "atualizado": "2026-10-20T08:43:56.669278-03:00",
   "itens": [
     {
-      "id": "MLB15029805",
-      "titulo": "Pilha Alcalina Aa Pequena Duracell Com 4 Unidades",
-      "preco": 23.99,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_745614-MLA116755340171_082026-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Eletrônicos",
-      "link": "https://www.mercadolivre.com.br/p/MLB15029805?matt_tool=71970283"
-    },
-    {
-      "id": "MLB66453791",
-      "titulo": "Papel Higiênico Familiar Folha Dupla Kit 24 Rolos de 30 m",
-      "preco": 33.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_790904-MLA108570211465_032026-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Casa",
-      "link": "https://www.mercadolivre.com.br/p/MLB66453791?matt_tool=71970283"
-    },
-    {
-      "id": "MLB42520227",
-      "titulo": "Smartwatch Xiaomi Redmi Watch 5 Lite 1.96 Preto",
-      "preco": 309.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_625071-MLA99989591849_112025-F.jpg",
+      "id": "MLB39962085",
+      "titulo": "Fone De Ouvido Sem Fio Xiaomi Redmi Buds 6 Play Preto",
+      "preco": 66.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_897783-MLA118646396241_102026-F.jpg",
       "frete_gratis": true,
-      "categoria": "Relógios",
-      "link": "https://www.mercadolivre.com.br/p/MLB42520227?matt_tool=71970283"
+      "categoria": "Eletrônicos",
+      "link": "https://www.mercadolivre.com.br/p/MLB39962085?matt_tool=71970283"
     },
     {
-      "id": "MLB19140415",
-      "titulo": "Suplemento Whey Isolate Protein Fuse 1,8kg sabor Morango Dark Lab",
-      "preco": 179.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_989007-MLA99405715766_112025-F.jpg",
+      "id": "MLB75542419",
+      "titulo": "Percarbonato De Sódio 100% Puro Tira Manchas Alvejante - 1kg Calisul",
+      "preco": 19.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_670568-MLA113572446412_072026-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Casa",
+      "link": "https://www.mercadolivre.com.br/p/MLB75542419?matt_tool=71970283"
+    },
+    {
+      "id": "MLB27398239",
+      "titulo": "Jogo Chave de Fenda e Philips Profissional Imantado 12 Peças",
+      "preco": 57.66,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_625409-MLA112629191862_062026-F.jpg",
+      "frete_gratis": false,
+      "categoria": "Relógios",
+      "link": "https://www.mercadolivre.com.br/p/MLB27398239?matt_tool=71970283"
+    },
+    {
+      "id": "MLB18725403",
+      "titulo": "Proteína Growth Supplements Basic Whey em pó sabor Chocolate x 1kg",
+      "preco": 69.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_819000-MLA101180020755_122025-F.jpg",
       "frete_gratis": true,
       "categoria": "Esportes",
-      "link": "https://www.mercadolivre.com.br/p/MLB19140415?matt_tool=71970283"
+      "link": "https://www.mercadolivre.com.br/p/MLB18725403?matt_tool=71970283"
     }
   ]
 }
