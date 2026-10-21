@@ -1,14 +1,23 @@
 {
-  "atualizado": "2026-10-21T17:05:26.716763-03:00",
+  "atualizado": "2026-10-21T18:06:26.474560-03:00",
   "itens": [
     {
-      "id": "MLB63152047",
-      "titulo": "Patinete Infantil 3 Rodas Led Dobrável Luppy Azul Maxi Toys",
-      "preco": 56.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_702576-MLA110388417253_042026-F.jpg",
+      "id": "MLB50376945",
+      "titulo": "Fritadeira Elétrica Air Fryer Quad Fry Elgin 4,2 L, 1400w",
+      "preco": 241.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_927559-MLA99450788218_112025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Eletrodomésticos",
+      "link": "https://www.mercadolivre.com.br/p/MLB50376945?matt_tool=71970283"
+    },
+    {
+      "id": "MLB74454821",
+      "titulo": "Booster Quádruplo Escuridão Absoluta Português",
+      "preco": 39.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_917866-MLA114013158499_072026-F.jpg",
       "frete_gratis": false,
       "categoria": "Brinquedos",
-      "link": "https://www.mercadolivre.com.br/p/MLB63152047?matt_tool=71970283"
+      "link": "https://www.mercadolivre.com.br/p/MLB74454821?matt_tool=71970283"
     }
   ]
 }
