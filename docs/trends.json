@@ -1,32 +1,41 @@
 {
-  "atualizado": "2026-10-21T11:08:06.431549-03:00",
+  "atualizado": "2026-10-21T12:07:01.847866-03:00",
   "itens": [
     {
-      "id": "MLB61496034",
-      "titulo": "Power Bank 20.000mAh 22.5W Carga Rápida Com Display Digital Carregador Portátil Carga Rápida Premium Compatível Com Todos Os Celulares Iphone Android IOS apple xiaomi LG Samsung Motorola -Marca Davely",
-      "preco": 72.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_703252-MLA99485758076_112025-F.jpg",
+      "id": "MLB52304672",
+      "titulo": "Roblox R$ 100 eGift (Digital)",
+      "preco": 100.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_952461-MLA116490244409_082026-F.jpg",
       "frete_gratis": false,
       "categoria": "Informática",
-      "link": "https://www.mercadolivre.com.br/p/MLB61496034?matt_tool=71970283"
+      "link": "https://www.mercadolivre.com.br/p/MLB52304672?matt_tool=71970283"
     },
     {
-      "id": "MLB79316361",
-      "titulo": "Cozedor de Ovos Eletrico Aparelho de cozimento a vapor EPS-1258 Epsilon Portátil Cor Preto",
-      "preco": 49.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_648167-MLA116162133154_092026-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Eletrodomésticos",
-      "link": "https://www.mercadolivre.com.br/p/MLB79316361?matt_tool=71970283"
-    },
-    {
-      "id": "MLB51652593",
-      "titulo": "Caminhão Dinossauro Pista Com Carrinhos Maleta Transporte Cor Roxo",
+      "id": "MLB18927373",
+      "titulo": "Cafeteira elétrica Electrolux inox filtro permanente removivel corta pingos capacidade 600ml 15 xicaras função manter aquecido sistema ECM10",
       "preco": 99.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_845666-MLA99598112378_122025-F.jpg",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_923263-MLA99474168604_112025-F.jpg",
       "frete_gratis": true,
-      "categoria": "Brinquedos",
-      "link": "https://www.mercadolivre.com.br/p/MLB51652593?matt_tool=71970283"
+      "categoria": "Eletrodomésticos",
+      "link": "https://www.mercadolivre.com.br/p/MLB18927373?matt_tool=71970283"
+    },
+    {
+      "id": "MLB17822924",
+      "titulo": "Relógio de pulso Casio GA-2100 com corria de resina cor vermelho - fondo bordô",
+      "preco": 428.63,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_884312-MLA99489775726_112025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Relógios",
+      "link": "https://www.mercadolivre.com.br/p/MLB17822924?matt_tool=71970283"
+    },
+    {
+      "id": "MLB70449712",
+      "titulo": "Body Splash Masculino Vibration 200ml - Primacial Perfume Bergamota Fresco",
+      "preco": 42.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_617155-MLA118231595864_102026-F.jpg",
+      "frete_gratis": false,
+      "categoria": "Beleza",
+      "link": "https://www.mercadolivre.com.br/p/MLB70449712?matt_tool=71970283"
     }
   ]
 }
