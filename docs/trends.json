@@ -1,41 +1,32 @@
 {
-  "atualizado": "2026-10-21T12:07:01.847866-03:00",
+  "atualizado": "2026-10-21T13:07:16.967964-03:00",
   "itens": [
     {
-      "id": "MLB52304672",
-      "titulo": "Roblox R$ 100 eGift (Digital)",
-      "preco": 100.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_952461-MLA116490244409_082026-F.jpg",
+      "id": "MLB72674962",
+      "titulo": "Mouse Recarregável Bluetooth Wireless Ergonômico Óptico Informática Gamer Led Rgb Notebook Pc Tablet Smartphone Blackbom",
+      "preco": 21.88,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_698387-MLA112152526650_062026-F.jpg",
       "frete_gratis": false,
       "categoria": "Informática",
-      "link": "https://www.mercadolivre.com.br/p/MLB52304672?matt_tool=71970283"
+      "link": "https://www.mercadolivre.com.br/p/MLB72674962?matt_tool=71970283"
     },
     {
-      "id": "MLB18927373",
-      "titulo": "Cafeteira elétrica Electrolux inox filtro permanente removivel corta pingos capacidade 600ml 15 xicaras função manter aquecido sistema ECM10",
-      "preco": 99.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_923263-MLA99474168604_112025-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Eletrodomésticos",
-      "link": "https://www.mercadolivre.com.br/p/MLB18927373?matt_tool=71970283"
-    },
-    {
-      "id": "MLB17822924",
-      "titulo": "Relógio de pulso Casio GA-2100 com corria de resina cor vermelho - fondo bordô",
-      "preco": 428.63,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_884312-MLA99489775726_112025-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Relógios",
-      "link": "https://www.mercadolivre.com.br/p/MLB17822924?matt_tool=71970283"
-    },
-    {
-      "id": "MLB70449712",
-      "titulo": "Body Splash Masculino Vibration 200ml - Primacial Perfume Bergamota Fresco",
-      "preco": 42.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_617155-MLA118231595864_102026-F.jpg",
+      "id": "MLB77835608",
+      "titulo": "Cozedor De Ovos Automático Panela A Vapor Elétrica Legumes Elétrica Portátil Prático Rápido 7 Ovos Em 5min Micgeek",
+      "preco": 30.97,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_873330-MLA115104920512_082026-F.jpg",
       "frete_gratis": false,
-      "categoria": "Beleza",
-      "link": "https://www.mercadolivre.com.br/p/MLB70449712?matt_tool=71970283"
+      "categoria": "Eletrodomésticos",
+      "link": "https://www.mercadolivre.com.br/p/MLB77835608?matt_tool=71970283"
+    },
+    {
+      "id": "MLB35762220",
+      "titulo": "Conjunto 5 Carrinhos Hot Wheels - Mattel",
+      "preco": 67.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_724815-MLA99876815105_112025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Brinquedos",
+      "link": "https://www.mercadolivre.com.br/p/MLB35762220?matt_tool=71970283"
     }
   ]
 }
