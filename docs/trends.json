@@ -1,32 +1,32 @@
 {
-  "atualizado": "2026-10-20T22:42:38.185734-03:00",
+  "atualizado": "2026-10-21T04:49:01.123813-03:00",
   "itens": [
     {
-      "id": "MLB63966639",
-      "titulo": "Filamento Pla Plus 1kg Impressão 3d Nacional - Cores Cor Preto",
-      "preco": 109.65,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_903418-MLA107165042644_022026-F.jpg",
+      "id": "MLB60276890",
+      "titulo": "Bambu Lab PLA Lite vermelho",
+      "preco": 134.95,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_998645-MLA99980485903_112025-F.jpg",
       "frete_gratis": true,
       "categoria": "Informática",
-      "link": "https://www.mercadolivre.com.br/p/MLB63966639?matt_tool=71970283"
+      "link": "https://www.mercadolivre.com.br/p/MLB60276890?matt_tool=71970283"
     },
     {
-      "id": "MLB65131882",
-      "titulo": "Balança Digital De Precisão Davely Cook Cozinha Para Uso Domestico E Profissional Fitness Ideal Para Dietas Treinos Alimentos Confeitaria Nutrição Capacidade Máxima 10 Kg Branco",
-      "preco": 18.05,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_977172-MLA107049793514_022026-F.jpg",
+      "id": "MLB20306137",
+      "titulo": "Mixer Elétrico Portátil 2 em 1 Recarregável Potente Misturador de Bebidas e Ovos 3 Velocidades Usb Batedor e Fue Fouet Woosh",
+      "preco": 15.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_619021-MLA118179806341_092026-F.jpg",
       "frete_gratis": false,
       "categoria": "Eletrodomésticos",
-      "link": "https://www.mercadolivre.com.br/p/MLB65131882?matt_tool=71970283"
+      "link": "https://www.mercadolivre.com.br/p/MLB20306137?matt_tool=71970283"
     },
     {
-      "id": "MLB26080271",
-      "titulo": "L'Oréal Paris Elseve Óleo Extraordinário 100ml - Leave In Anti Frizz Protetor Térmico Tratamento Reconstrutor Para Todos Os Tipos De Cabelo",
-      "preco": 40.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_605503-MLA114497234356_082026-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Beleza",
-      "link": "https://www.mercadolivre.com.br/p/MLB26080271?matt_tool=71970283"
+      "id": "MLB12908877",
+      "titulo": "Whey Protein Isolado Dux Nutrition - Pote 900g Sabor Cappuccino",
+      "preco": 279.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_828853-MLA115054452172_082026-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Esportes",
+      "link": "https://www.mercadolivre.com.br/p/MLB12908877?matt_tool=71970283"
     }
   ]
 }
