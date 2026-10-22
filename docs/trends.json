@@ -1,41 +1,41 @@
 {
-  "atualizado": "2026-10-22T11:32:40.986635-03:00",
+  "atualizado": "2026-10-22T12:07:13.468513-03:00",
   "itens": [
     {
-      "id": "MLB34113516",
-      "titulo": "Caixa De Som Boombox Aiwa AWS-BBS-01-B 200w IP66 30hs De Bateria",
-      "preco": 999.99,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_864411-MLA99591392870_122025-F.jpg",
+      "id": "MLB18964467",
+      "titulo": "Principia Sérum Vitamina C-10",
+      "preco": 39.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_614742-MLA98385730409_112025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Beleza",
+      "link": "https://produto.mercadolivre.com.br/MLB-7851760078?matt_tool=71970283"
+    },
+    {
+      "id": "MLB50243717",
+      "titulo": "Suporte Articulado Para Monitor 13 a 32 Pistão a Gás Ajustável Zinnia Nimbo 110 Branco",
+      "preco": 104.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_857350-MLA107653770031_022026-F.jpg",
       "frete_gratis": true,
       "categoria": "Eletrônicos",
-      "link": "https://produto.mercadolivre.com.br/MLB-7855402200?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-5255185857?matt_tool=71970283"
     },
     {
-      "id": "MLB12908877",
-      "titulo": "Whey Protein Isolado Dux Nutrition - Pote 900g Sabor Cappuccino",
-      "preco": 279.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_828853-MLA115054452172_082026-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Esportes",
-      "link": "https://produto.mercadolivre.com.br/MLB-6169785402?matt_tool=71970283"
-    },
-    {
-      "id": "MLB19976500",
-      "titulo": "Panela De Pressão Panelux Alumínio Polido 7 Litros Cor Cinza",
-      "preco": 98.61,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_844741-MLA100054735233_122025-F.jpg",
-      "frete_gratis": true,
+      "id": "MLB19745649",
+      "titulo": "Água sanitária e alvejante cloro ativo 5 litros Ypê",
+      "preco": 15.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_950605-MLA99927683925_112025-F.jpg",
+      "frete_gratis": false,
       "categoria": "Casa",
-      "link": "https://produto.mercadolivre.com.br/MLB-3729506770?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-3795381493?matt_tool=71970283"
     },
     {
-      "id": "MLB44431020",
-      "titulo": "Relógio De Parede 30cm Para Cozinha, Sala - Preto E Branco",
-      "preco": 59.99,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_607835-MLA99968163143_112025-F.jpg",
+      "id": "MLB70228023",
+      "titulo": "Kit Relógio Feminino Colar Brinco Pulseira Folheado Presente Prateado",
+      "preco": 37.42,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_907811-MLA112159861189_052026-F.jpg",
       "frete_gratis": false,
       "categoria": "Relógios",
-      "link": "https://produto.mercadolivre.com.br/MLB-5208844626?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-4707470817?matt_tool=71970283"
     }
   ]
 }
