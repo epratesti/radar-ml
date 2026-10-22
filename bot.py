@@ -1,8 +1,7 @@
 """Radar: 4 produtos diversificados por hora → Telegram.
-Evita repetições por 14 dias (ID + título normalizado).
-Horário (America/Sao_Paulo):
-  - 07h–22h: a cada 1 hora
-  - 23h, 02h e 05h: a cada 3 horas (madrugada)
+Evita repetições por 7 dias (ID + título).
+Usa highlights + busca (fallback) para não ficar sem produtos.
+Horário (America/Sao_Paulo): 07h–22h a cada 1h | 23h, 02h, 05h madrugada
 """
 import os, json, html, re, datetime as dt
 from pathlib import Path
@@ -14,19 +13,34 @@ AFF_PARAMS = os.getenv("ML_AFFILIATE_PARAMS", "matt_tool={id}")
 TG_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TG_CHAT = os.getenv("TELEGRAM_CHAT_ID")
 MAX_POSTS = int(os.getenv("MAX_POSTS", "4"))
-REPETIR_APOS_DIAS = 14  # evita repetir o mesmo produto por 2 semanas
+REPETIR_APOS_DIAS = 7
 API = "https://api.mercadolibre.com"
 ROOT = Path(__file__).parent
 TRENDS = ROOT / "docs" / "trends.json"
 STATE = ROOT / "state" / "posted.json"
 TZ = ZoneInfo("America/Sao_Paulo")
 
-# Grupos para diversificar (1 produto de cada grupo por hora)
 GRUPOS = [
-    {"nome": "Eletrônicos", "cats": ["MLB1000", "MLB1051", "MLB1648"]},
-    {"nome": "Casa", "cats": ["MLB1574", "MLB5726"]},
-    {"nome": "Moda", "cats": ["MLB1430", "MLB3937"]},
-    {"nome": "Esportes e Beleza", "cats": ["MLB1276", "MLB1246", "MLB1132"]},
+    {
+        "nome": "Eletrônicos",
+        "cats": ["MLB1000", "MLB1051", "MLB1648"],
+        "queries": ["fone bluetooth", "carregador turbo", "smartwatch", "caixa de som"],
+    },
+    {
+        "nome": "Casa",
+        "cats": ["MLB1574", "MLB5726"],
+        "queries": ["air fryer", "liquidificador", "organizador casa", "aspirador"],
+    },
+    {
+        "nome": "Moda",
+        "cats": ["MLB1430", "MLB3937"],
+        "queries": ["tênis", "relógio", "mochila", "óculos de sol"],
+    },
+    {
+        "nome": "Esportes e Beleza",
+        "cats": ["MLB1276", "MLB1246", "MLB1132"],
+        "queries": ["whey protein", "kit skincare", "colchonete academia", "perfume"],
+    },
 ]
 
 CAT_NOMES = {
@@ -37,7 +51,7 @@ CAT_NOMES = {
 }
 
 S = requests.Session()
-S.headers.update({"User-Agent": "radar-ml/1.5", "Accept": "application/json"})
+S.headers.update({"User-Agent": "radar-ml/1.6", "Accept": "application/json"})
 
 
 def headers_ml():
@@ -59,11 +73,9 @@ def link_afiliado(url):
 
 
 def normalizar_titulo(t: str) -> str:
-    """Chave para detectar produtos visualmente iguais (IDs diferentes)."""
     t = (t or "").lower()
     t = re.sub(r"[^a-z0-9áéíóúâêôãõç\s]", " ", t)
     t = re.sub(r"\s+", " ", t).strip()
-    # remove palavras muito genéricas no final
     return t[:80]
 
 
@@ -74,7 +86,6 @@ def carregar_estado():
         data = json.loads(raw)
         if not isinstance(data, dict):
             return {"ids": {}, "titulos": {}}
-        # formato antigo: {id: iso} → migra
         if data and "ids" not in data:
             return {"ids": data, "titulos": {}}
         data.setdefault("ids", {})
@@ -87,14 +98,13 @@ def carregar_estado():
 
 def limpar_estado(estado, agora):
     limite = agora - dt.timedelta(days=REPETIR_APOS_DIAS)
-    ids_limpos = {}
+    ids_limpos, titulos_limpos = {}, {}
     for k, v in estado.get("ids", {}).items():
         try:
             if dt.datetime.fromisoformat(v) > limite:
                 ids_limpos[k] = v
         except Exception:
             continue
-    titulos_limpos = {}
     for k, v in estado.get("titulos", {}).items():
         try:
             if dt.datetime.fromisoformat(v) > limite:
@@ -108,9 +118,7 @@ def ja_postado(estado, pid, titulo):
     if pid in estado["ids"]:
         return True
     nt = normalizar_titulo(titulo)
-    if nt and nt in estado["titulos"]:
-        return True
-    return False
+    return bool(nt and nt in estado["titulos"])
 
 
 def registrar_postado(estado, pid, titulo, agora):
@@ -121,15 +129,8 @@ def registrar_postado(estado, pid, titulo, agora):
 
 
 def escolher_oferta(results):
-    """
-    Escolhe a oferta mais próxima do que o usuário vê na página de catálogo:
-    1) frete grátis + menor preço
-    2) menor preço (sem frete grátis)
-    Descarta preços absurdamente baixos (outliers < 30% da mediana).
-    """
     if not results:
         return None
-
     validos = []
     for it in results:
         try:
@@ -140,23 +141,18 @@ def escolher_oferta(results):
             continue
         frete = (it.get("shipping") or {}).get("free_shipping", False)
         validos.append({"item": it, "preco": preco, "frete": frete})
-
     if not validos:
         return None
-
     precos = sorted(v["preco"] for v in validos)
     mediana = precos[len(precos) // 2]
-    # filtra outliers muito baratos (possível erro / item incompleto)
     piso = mediana * 0.30 if mediana > 0 else 0
     validos = [v for v in validos if v["preco"] >= piso] or validos
-
     com_frete = [v for v in validos if v["frete"]]
     pool = com_frete if com_frete else validos
-    best = min(pool, key=lambda x: x["preco"])
-    return best
+    return min(pool, key=lambda x: x["preco"])
 
 
-def montar_produto(pid, tipo, h, categoria):
+def montar_produto(pid, h, categoria):
     titulo, foto = "", ""
     preco, frete = 0.0, False
     item_id = None
@@ -187,14 +183,9 @@ def montar_produto(pid, tipo, h, categoria):
     if not titulo or preco <= 0:
         return None
 
-    # Link preferencial para o anúncio específico (preço bate com o post)
     if item_id:
-        # formato MLB123456 → MLB-123456 no path clássico
         mid = str(item_id)
-        if mid.startswith("MLB") and "-" not in mid:
-            mid_fmt = mid[:3] + "-" + mid[3:]
-        else:
-            mid_fmt = mid
+        mid_fmt = (mid[:3] + "-" + mid[3:]) if mid.startswith("MLB") and "-" not in mid else mid
         link = link_afiliado(f"https://produto.mercadolivre.com.br/{mid_fmt}")
     else:
         link = link_afiliado(f"https://www.mercadolivre.com.br/p/{pid}")
@@ -211,54 +202,106 @@ def montar_produto(pid, tipo, h, categoria):
     }
 
 
-def um_da_categoria(cat_id, h, vistos_ids, vistos_titulos):
-    """Busca produto na categoria. Prefere frete grátis quando disponível."""
+def produto_de_search_item(item, categoria_label):
+    titulo = item.get("title") or ""
+    try:
+        preco = float(item.get("price") or 0)
+    except (TypeError, ValueError):
+        return None
+    if not titulo or preco <= 0:
+        return None
+    frete = (item.get("shipping") or {}).get("free_shipping", False)
+    foto = (item.get("thumbnail") or "").replace("http://", "https://")
+    mid = str(item.get("id", ""))
+    pid = item.get("catalog_product_id") or mid
+    mid_fmt = (mid[:3] + "-" + mid[3:]) if mid.startswith("MLB") and "-" not in mid else mid
+    return {
+        "id": str(pid),
+        "titulo": titulo,
+        "preco": preco,
+        "imagem": foto,
+        "frete_gratis": frete,
+        "categoria": categoria_label,
+        "link": link_afiliado(f"https://produto.mercadolivre.com.br/{mid_fmt}"),
+        "item_id": mid,
+    }
+
+
+def buscar_highlights(cat_id, h, vistos_ids, vistos_titulos):
     nome = CAT_NOMES.get(cat_id, cat_id)
     try:
         r = S.get(f"{API}/highlights/MLB/category/{cat_id}", headers=h, timeout=20)
         if r.status_code != 200:
             print(f"Highlights {nome}: {r.status_code}")
             return None
-
-        candidatos = []
-        for item in r.json().get("content", [])[:15]:
+        for item in r.json().get("content", [])[:25]:
             pid = item.get("id")
             if not pid or pid in vistos_ids:
                 continue
-            p = montar_produto(pid, item.get("type", "PRODUCT"), h, nome)
+            p = montar_produto(pid, h, nome)
             if not p:
                 continue
             nt = normalizar_titulo(p["titulo"])
             if nt and nt in vistos_titulos:
-                print(f"  Pula título similar: {p['titulo'][:40]}")
                 continue
-            candidatos.append(p)
-
-        if not candidatos:
-            return None
-
-        com_frete = [c for c in candidatos if c.get("frete_gratis")]
-        escolhido = com_frete[0] if com_frete else candidatos[0]
-
-        print(f"  OK [{nome}] R$ {escolhido['preco']:.2f} — {escolhido['titulo'][:50]}"
-              + (" 🚚" if escolhido.get("frete_gratis") else ""))
-        return escolhido
+            print(f"  OK [{nome}/hl] R$ {p['preco']:.2f} — {p['titulo'][:50]}"
+                  + (" 🚚" if p.get("frete_gratis") else ""))
+            return p
     except Exception as e:
-        print(f"Erro {nome}:", e)
+        print(f"Erro highlights {nome}:", e)
+    return None
+
+
+def buscar_query(query, cat_id, h, vistos_ids, vistos_titulos, label):
+    try:
+        params = {"q": query, "limit": 30, "sort": "relevance"}
+        if cat_id:
+            params["category"] = cat_id
+        r = S.get(f"{API}/sites/MLB/search", headers=h, params=params, timeout=20)
+        if r.status_code != 200:
+            print(f"Search '{query}': {r.status_code}")
+            return None
+        for item in r.json().get("results", []):
+            pid = item.get("catalog_product_id") or item.get("id")
+            if not pid or str(pid) in vistos_ids:
+                continue
+            titulo = item.get("title") or ""
+            nt = normalizar_titulo(titulo)
+            if nt and nt in vistos_titulos:
+                continue
+            if item.get("catalog_product_id"):
+                p = montar_produto(item["catalog_product_id"], h, label)
+                if p:
+                    print(f"  OK [{label}/search] R$ {p['preco']:.2f} — {p['titulo'][:50]}")
+                    return p
+            p = produto_de_search_item(item, label)
+            if p:
+                print(f"  OK [{label}/search] R$ {p['preco']:.2f} — {p['titulo'][:50]}")
+                return p
+    except Exception as e:
+        print(f"Erro search '{query}':", e)
+    return None
+
+
+def um_do_grupo(grupo, h, vistos_ids, vistos_titulos):
+    for cat_id in grupo["cats"]:
+        p = buscar_highlights(cat_id, h, vistos_ids, vistos_titulos)
+        if p:
+            return p
+    for q in grupo.get("queries", []):
+        cat = grupo["cats"][0] if grupo["cats"] else None
+        p = buscar_query(q, cat, h, vistos_ids, vistos_titulos, grupo["nome"])
+        if p:
+            return p
     return None
 
 
 def montar_diversificado(h, estado):
-    """1 produto de cada grupo (4 no total), evitando repetidos por ID e título."""
     vistos_ids = set(estado["ids"].keys())
     vistos_titulos = set(estado["titulos"].keys())
     escolhidos = []
     for grupo in GRUPOS:
-        p = None
-        for cat_id in grupo["cats"]:
-            p = um_da_categoria(cat_id, h, vistos_ids, vistos_titulos)
-            if p:
-                break
+        p = um_do_grupo(grupo, h, vistos_ids, vistos_titulos)
         if p:
             vistos_ids.add(p["id"])
             nt = normalizar_titulo(p["titulo"])
@@ -279,10 +322,7 @@ def postar(p):
     titulo = html.escape(p["titulo"][:120])
     preco = preco_br(p["preco"])
     link = html.escape(p["link"])
-
     frete_linha = "🚚 <b>Frete grátis</b>\n" if p.get("frete_gratis") else ""
-
-    # "a partir de" quando há vários vendedores no catálogo
     preco_label = f"a partir de <b>{preco}</b>" if p.get("item_id") else f"<b>{preco}</b>"
 
     texto = (
@@ -333,13 +373,11 @@ def main():
 
     estado = limpar_estado(carregar_estado(), agora)
     print(f"Produtos já postados (últimos {REPETIR_APOS_DIAS} dias):", len(estado["ids"]))
-    print(f"Títulos bloqueados:", len(estado["titulos"]))
 
     ranking = montar_diversificado(h, estado)
     print("Produtos selecionados:", len(ranking))
 
     TRENDS.parent.mkdir(parents=True, exist_ok=True)
-    # trends sem item_id interno (opcional)
     trends_itens = [{k: v for k, v in p.items() if k != "item_id"} for p in ranking]
     TRENDS.write_text(json.dumps({"atualizado": agora.isoformat(), "itens": trends_itens},
                                  ensure_ascii=False, indent=2), encoding="utf-8")
@@ -352,8 +390,7 @@ def main():
         print("Falta Telegram")
         return
     if not pode_postar_agora(agora):
-        print(f"Fora do horário de postagem (hora atual: {agora.hour}h). "
-              "Dia: 7h–22h | Madrugada: 23h, 2h e 5h")
+        print(f"Fora do horário de postagem (hora atual: {agora.hour}h)")
         salvar_estado(estado)
         return
 
@@ -362,12 +399,11 @@ def main():
         if enviados >= MAX_POSTS:
             break
         if ja_postado(estado, p["id"], p["titulo"]):
-            print(f"  Já postado recentemente, pulando: {p['id']}")
+            print(f"  Já postado, pulando: {p['id']}")
             continue
         if postar(p):
             registrar_postado(estado, p["id"], p["titulo"], agora)
             enviados += 1
-            # grava estado a cada post bem-sucedido (reduz perda em crash/race)
             salvar_estado(estado)
 
     salvar_estado(estado)
