@@ -1,32 +1,32 @@
 {
-  "atualizado": "2026-10-22T14:05:29.061596-03:00",
+  "atualizado": "2026-10-22T15:06:09.948799-03:00",
   "itens": [
     {
-      "id": "MLB40182325",
-      "titulo": "Whey Protein Concentrado 1kg Morango Dark Lab",
-      "preco": 149.92,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_927988-MLA99469885866_112025-F.jpg",
+      "id": "MLB66497052",
+      "titulo": "Power Bank 20000mah Carregador Portátil Turbo Rápido 22.5w Display Digital Preto",
+      "preco": 75.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_737097-MLA108177568778_032026-F.jpg",
       "frete_gratis": true,
-      "categoria": "Esportes",
-      "link": "https://produto.mercadolivre.com.br/MLB-5052087506?matt_tool=71970283"
+      "categoria": "Celulares",
+      "link": "https://produto.mercadolivre.com.br/MLB-5406362089?matt_tool=71970283"
     },
     {
-      "id": "MLB53911392",
-      "titulo": "Fone De Ouvido Bluetooth 5.1 Sem Fio Tws Wireless Bateria Longa Duração E Conexão Rápida Coolmusic",
-      "preco": 24.79,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_960127-MLA109738568733_032026-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Eletrônicos",
-      "link": "https://produto.mercadolivre.com.br/MLB-5619970196?matt_tool=71970283"
+      "id": "MLB19694427",
+      "titulo": "Escova Secadora Britânia Bivolt 1300w Soft Bec07r Original",
+      "preco": 99.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_734805-MLA114128393951_072026-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Beleza",
+      "link": "https://produto.mercadolivre.com.br/MLB-5139760693?matt_tool=71970283"
     },
     {
-      "id": "MLB24544782",
-      "titulo": "Amaciante Downy Concentrado Brisa Intenso 3L Rende 12L",
-      "preco": 89.89,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_622255-MLA99452527752_112025-F.jpg",
+      "id": "MLB16016316",
+      "titulo": "Batedeira Prática Mondial 400W - B-44-B",
+      "preco": 74.75,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_877834-MLA99469550350_112025-F.jpg",
       "frete_gratis": true,
-      "categoria": "Casa",
-      "link": "https://produto.mercadolivre.com.br/MLB-5378512239?matt_tool=71970283"
+      "categoria": "Eletrodomésticos",
+      "link": "https://produto.mercadolivre.com.br/MLB-5419224953?matt_tool=71970283"
     }
   ]
 }
