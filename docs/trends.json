@@ -1,23 +1,32 @@
 {
-  "atualizado": "2026-10-22T04:44:53.871282-03:00",
+  "atualizado": "2026-10-22T07:05:56.818683-03:00",
   "itens": [
     {
-      "id": "MLB44361342",
-      "titulo": "Cabo De Rede Internet 30m 30 Metros Cat6 Azul Crimpado Giga Lan Ethernet Boyu Cell",
-      "preco": 40.79,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_795187-MLA107571017470_032026-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Informática",
-      "link": "https://www.mercadolivre.com.br/p/MLB44361342?matt_tool=71970283"
+      "id": "MLB19795010",
+      "titulo": "Amazon Echo Dot 5ª Geração Com Alexa E Som Inteligente",
+      "preco": 382.74,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_971291-MLA118333554665_092026-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Eletrônicos",
+      "link": "https://www.mercadolivre.com.br/p/MLB19795010?matt_tool=71970283"
     },
     {
-      "id": "MLB72190404",
-      "titulo": "Squishy Butter Barra De Manteiga Viral Tik Tok Rápido Amarelo",
-      "preco": 34.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_777911-MLA119154164809_102026-F.jpg",
+      "id": "MLB68410017",
+      "titulo": "Fila Rise Up Masculino",
+      "preco": 260.92,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_992958-MLA109851144816_042026-F.jpg",
       "frete_gratis": true,
-      "categoria": "Brinquedos",
-      "link": "https://www.mercadolivre.com.br/p/MLB72190404?matt_tool=71970283"
+      "categoria": "Moda",
+      "link": "https://www.mercadolivre.com.br/p/MLB68410017?matt_tool=71970283"
+    },
+    {
+      "id": "MLB21140487",
+      "titulo": "Prohibido Pré Treino 360g - Sabor: Cotton Candy - A Combinação Perfeita De 8 Ingredientes Que Proporcionam Energia Do Início Ao Fim Do Seu Treino",
+      "preco": 39.98,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_621004-MLA115733343677_082026-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Esportes",
+      "link": "https://www.mercadolivre.com.br/p/MLB21140487?matt_tool=71970283"
     }
   ]
 }
