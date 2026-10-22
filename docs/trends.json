@@ -1,4 +1,41 @@
 {
-  "atualizado": "2026-10-22T11:08:29.246521-03:00",
-  "itens": []
+  "atualizado": "2026-10-22T11:32:40.986635-03:00",
+  "itens": [
+    {
+      "id": "MLB34113516",
+      "titulo": "Caixa De Som Boombox Aiwa AWS-BBS-01-B 200w IP66 30hs De Bateria",
+      "preco": 999.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_864411-MLA99591392870_122025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Eletrônicos",
+      "link": "https://produto.mercadolivre.com.br/MLB-7855402200?matt_tool=71970283"
+    },
+    {
+      "id": "MLB12908877",
+      "titulo": "Whey Protein Isolado Dux Nutrition - Pote 900g Sabor Cappuccino",
+      "preco": 279.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_828853-MLA115054452172_082026-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Esportes",
+      "link": "https://produto.mercadolivre.com.br/MLB-6169785402?matt_tool=71970283"
+    },
+    {
+      "id": "MLB19976500",
+      "titulo": "Panela De Pressão Panelux Alumínio Polido 7 Litros Cor Cinza",
+      "preco": 98.61,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_844741-MLA100054735233_122025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Casa",
+      "link": "https://produto.mercadolivre.com.br/MLB-3729506770?matt_tool=71970283"
+    },
+    {
+      "id": "MLB44431020",
+      "titulo": "Relógio De Parede 30cm Para Cozinha, Sala - Preto E Branco",
+      "preco": 59.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_607835-MLA99968163143_112025-F.jpg",
+      "frete_gratis": false,
+      "categoria": "Relógios",
+      "link": "https://produto.mercadolivre.com.br/MLB-5208844626?matt_tool=71970283"
+    }
+  ]
 }
