@@ -1,10 +1,10 @@
 """Radar: 4 produtos diversificados por hora → Telegram.
-Evita repetições por 14 dias.
+Evita repetições por 14 dias (ID + título normalizado).
 Horário (America/Sao_Paulo):
   - 07h–22h: a cada 1 hora
   - 23h, 02h e 05h: a cada 3 horas (madrugada)
 """
-import os, json, html, datetime as dt
+import os, json, html, re, datetime as dt
 from pathlib import Path
 from zoneinfo import ZoneInfo
 import requests
@@ -23,10 +23,10 @@ TZ = ZoneInfo("America/Sao_Paulo")
 
 # Grupos para diversificar (1 produto de cada grupo por hora)
 GRUPOS = [
-    {"nome": "Eletrônicos", "cats": ["MLB1000", "MLB1051", "MLB1648"]},      # eletrônicos / celulares / informática
-    {"nome": "Casa", "cats": ["MLB1574", "MLB5726"]},                        # casa / eletrodomésticos
-    {"nome": "Moda", "cats": ["MLB1430", "MLB3937"]},                        # roupas / relógios
-    {"nome": "Esportes e Beleza", "cats": ["MLB1276", "MLB1246", "MLB1132"]}, # fitness / beleza / brinquedos
+    {"nome": "Eletrônicos", "cats": ["MLB1000", "MLB1051", "MLB1648"]},
+    {"nome": "Casa", "cats": ["MLB1574", "MLB5726"]},
+    {"nome": "Moda", "cats": ["MLB1430", "MLB3937"]},
+    {"nome": "Esportes e Beleza", "cats": ["MLB1276", "MLB1246", "MLB1132"]},
 ]
 
 CAT_NOMES = {
@@ -37,7 +37,7 @@ CAT_NOMES = {
 }
 
 S = requests.Session()
-S.headers.update({"User-Agent": "radar-ml/1.4", "Accept": "application/json"})
+S.headers.update({"User-Agent": "radar-ml/1.5", "Accept": "application/json"})
 
 
 def headers_ml():
@@ -58,9 +58,108 @@ def link_afiliado(url):
     return url + sep + AFF_PARAMS.format(id=AFF_ID)
 
 
+def normalizar_titulo(t: str) -> str:
+    """Chave para detectar produtos visualmente iguais (IDs diferentes)."""
+    t = (t or "").lower()
+    t = re.sub(r"[^a-z0-9áéíóúâêôãõç\s]", " ", t)
+    t = re.sub(r"\s+", " ", t).strip()
+    # remove palavras muito genéricas no final
+    return t[:80]
+
+
+def carregar_estado():
+    STATE.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        raw = STATE.read_text(encoding="utf-8").strip() or "{}"
+        data = json.loads(raw)
+        if not isinstance(data, dict):
+            return {"ids": {}, "titulos": {}}
+        # formato antigo: {id: iso} → migra
+        if data and "ids" not in data:
+            return {"ids": data, "titulos": {}}
+        data.setdefault("ids", {})
+        data.setdefault("titulos", {})
+        return data
+    except Exception as e:
+        print("Aviso: estado inválido, reiniciando:", e)
+        return {"ids": {}, "titulos": {}}
+
+
+def limpar_estado(estado, agora):
+    limite = agora - dt.timedelta(days=REPETIR_APOS_DIAS)
+    ids_limpos = {}
+    for k, v in estado.get("ids", {}).items():
+        try:
+            if dt.datetime.fromisoformat(v) > limite:
+                ids_limpos[k] = v
+        except Exception:
+            continue
+    titulos_limpos = {}
+    for k, v in estado.get("titulos", {}).items():
+        try:
+            if dt.datetime.fromisoformat(v) > limite:
+                titulos_limpos[k] = v
+        except Exception:
+            continue
+    return {"ids": ids_limpos, "titulos": titulos_limpos}
+
+
+def ja_postado(estado, pid, titulo):
+    if pid in estado["ids"]:
+        return True
+    nt = normalizar_titulo(titulo)
+    if nt and nt in estado["titulos"]:
+        return True
+    return False
+
+
+def registrar_postado(estado, pid, titulo, agora):
+    estado["ids"][pid] = agora.isoformat()
+    nt = normalizar_titulo(titulo)
+    if nt:
+        estado["titulos"][nt] = agora.isoformat()
+
+
+def escolher_oferta(results):
+    """
+    Escolhe a oferta mais próxima do que o usuário vê na página de catálogo:
+    1) frete grátis + menor preço
+    2) menor preço (sem frete grátis)
+    Descarta preços absurdamente baixos (outliers < 30% da mediana).
+    """
+    if not results:
+        return None
+
+    validos = []
+    for it in results:
+        try:
+            preco = float(it.get("price") or 0)
+        except (TypeError, ValueError):
+            continue
+        if preco <= 0:
+            continue
+        frete = (it.get("shipping") or {}).get("free_shipping", False)
+        validos.append({"item": it, "preco": preco, "frete": frete})
+
+    if not validos:
+        return None
+
+    precos = sorted(v["preco"] for v in validos)
+    mediana = precos[len(precos) // 2]
+    # filtra outliers muito baratos (possível erro / item incompleto)
+    piso = mediana * 0.30 if mediana > 0 else 0
+    validos = [v for v in validos if v["preco"] >= piso] or validos
+
+    com_frete = [v for v in validos if v["frete"]]
+    pool = com_frete if com_frete else validos
+    best = min(pool, key=lambda x: x["preco"])
+    return best
+
+
 def montar_produto(pid, tipo, h, categoria):
     titulo, foto = "", ""
     preco, frete = 0.0, False
+    item_id = None
 
     try:
         rp = S.get(f"{API}/products/{pid}", headers=h, timeout=15)
@@ -77,15 +176,28 @@ def montar_produto(pid, tipo, h, categoria):
         ri = S.get(f"{API}/products/{pid}/items", headers=h, timeout=15)
         if ri.status_code == 200:
             results = ri.json().get("results") or []
-            if results:
-                best = min(results, key=lambda x: x.get("price") or 999999)
-                preco = float(best.get("price") or 0)
-                frete = (best.get("shipping") or {}).get("free_shipping", False)
+            escolha = escolher_oferta(results)
+            if escolha:
+                preco = escolha["preco"]
+                frete = escolha["frete"]
+                item_id = escolha["item"].get("id") or escolha["item"].get("item_id")
     except Exception as e:
         print(f"  items/{pid}:", e)
 
     if not titulo or preco <= 0:
         return None
+
+    # Link preferencial para o anúncio específico (preço bate com o post)
+    if item_id:
+        # formato MLB123456 → MLB-123456 no path clássico
+        mid = str(item_id)
+        if mid.startswith("MLB") and "-" not in mid:
+            mid_fmt = mid[:3] + "-" + mid[3:]
+        else:
+            mid_fmt = mid
+        link = link_afiliado(f"https://produto.mercadolivre.com.br/{mid_fmt}")
+    else:
+        link = link_afiliado(f"https://www.mercadolivre.com.br/p/{pid}")
 
     return {
         "id": pid,
@@ -94,11 +206,12 @@ def montar_produto(pid, tipo, h, categoria):
         "imagem": foto,
         "frete_gratis": frete,
         "categoria": categoria,
-        "link": link_afiliado(f"https://www.mercadolivre.com.br/p/{pid}"),
+        "link": link,
+        "item_id": item_id,
     }
 
 
-def um_da_categoria(cat_id, h, vistos):
+def um_da_categoria(cat_id, h, vistos_ids, vistos_titulos):
     """Busca produto na categoria. Prefere frete grátis quando disponível."""
     nome = CAT_NOMES.get(cat_id, cat_id)
     try:
@@ -110,16 +223,20 @@ def um_da_categoria(cat_id, h, vistos):
         candidatos = []
         for item in r.json().get("content", [])[:15]:
             pid = item.get("id")
-            if not pid or pid in vistos:
+            if not pid or pid in vistos_ids:
                 continue
             p = montar_produto(pid, item.get("type", "PRODUCT"), h, nome)
-            if p:
-                candidatos.append(p)
+            if not p:
+                continue
+            nt = normalizar_titulo(p["titulo"])
+            if nt and nt in vistos_titulos:
+                print(f"  Pula título similar: {p['titulo'][:40]}")
+                continue
+            candidatos.append(p)
 
         if not candidatos:
             return None
 
-        # Prioriza frete grátis, senão pega o primeiro válido
         com_frete = [c for c in candidatos if c.get("frete_gratis")]
         escolhido = com_frete[0] if com_frete else candidatos[0]
 
@@ -132,17 +249,21 @@ def um_da_categoria(cat_id, h, vistos):
 
 
 def montar_diversificado(h, estado):
-    """1 produto de cada grupo (4 no total), evitando repetidos."""
-    vistos = set(estado.keys())
+    """1 produto de cada grupo (4 no total), evitando repetidos por ID e título."""
+    vistos_ids = set(estado["ids"].keys())
+    vistos_titulos = set(estado["titulos"].keys())
     escolhidos = []
     for grupo in GRUPOS:
         p = None
         for cat_id in grupo["cats"]:
-            p = um_da_categoria(cat_id, h, vistos)
+            p = um_da_categoria(cat_id, h, vistos_ids, vistos_titulos)
             if p:
                 break
         if p:
-            vistos.add(p["id"])
+            vistos_ids.add(p["id"])
+            nt = normalizar_titulo(p["titulo"])
+            if nt:
+                vistos_titulos.add(nt)
             escolhidos.append(p)
         if len(escolhidos) >= MAX_POSTS:
             break
@@ -161,10 +282,13 @@ def postar(p):
 
     frete_linha = "🚚 <b>Frete grátis</b>\n" if p.get("frete_gratis") else ""
 
+    # "a partir de" quando há vários vendedores no catálogo
+    preco_label = f"a partir de <b>{preco}</b>" if p.get("item_id") else f"<b>{preco}</b>"
+
     texto = (
         f"🔥 <b>Achado do momento — {cat}</b>\n\n"
         f"📦 {titulo}\n\n"
-        f"💰 <b>{preco}</b>\n"
+        f"💰 {preco_label}\n"
         f"{frete_linha}"
         f"\n👉 <a href=\"{link}\">Ver oferta no Mercado Livre</a>\n\n"
         f"<i>Link de afiliado · Preços podem variar</i>"
@@ -188,16 +312,16 @@ def postar(p):
 
 
 def pode_postar_agora(agora: dt.datetime) -> bool:
-    """
-    07h–22h → toda hora
-    23h, 02h e 05h → madrugada (a cada 3 horas)
-    """
     h = agora.hour
     if 7 <= h <= 22:
         return True
     if h in (23, 2, 5):
         return True
     return False
+
+
+def salvar_estado(estado):
+    STATE.write_text(json.dumps(estado, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
 def main():
@@ -207,38 +331,22 @@ def main():
     if not h:
         return
 
-    STATE.parent.mkdir(parents=True, exist_ok=True)
-    try:
-        raw = STATE.read_text(encoding="utf-8").strip() or "{}"
-        estado = json.loads(raw)
-        if not isinstance(estado, dict):
-            estado = {}
-    except Exception as e:
-        print("Aviso: estado inválido, reiniciando:", e)
-        estado = {}
-
-    # Remove produtos antigos demais (fora da janela de anti-repetição)
-    limite = agora - dt.timedelta(days=REPETIR_APOS_DIAS)
-    estado_limpo = {}
-    for k, v in estado.items():
-        try:
-            if dt.datetime.fromisoformat(v) > limite:
-                estado_limpo[k] = v
-        except Exception:
-            continue
-    estado = estado_limpo
-    print(f"Produtos já postados (últimos {REPETIR_APOS_DIAS} dias):", len(estado))
+    estado = limpar_estado(carregar_estado(), agora)
+    print(f"Produtos já postados (últimos {REPETIR_APOS_DIAS} dias):", len(estado["ids"]))
+    print(f"Títulos bloqueados:", len(estado["titulos"]))
 
     ranking = montar_diversificado(h, estado)
     print("Produtos selecionados:", len(ranking))
 
     TRENDS.parent.mkdir(parents=True, exist_ok=True)
-    TRENDS.write_text(json.dumps({"atualizado": agora.isoformat(), "itens": ranking},
+    # trends sem item_id interno (opcional)
+    trends_itens = [{k: v for k, v in p.items() if k != "item_id"} for p in ranking]
+    TRENDS.write_text(json.dumps({"atualizado": agora.isoformat(), "itens": trends_itens},
                                  ensure_ascii=False, indent=2), encoding="utf-8")
 
     if not ranking:
         print("Nada a postar")
-        STATE.write_text(json.dumps(estado, indent=2, ensure_ascii=False), encoding="utf-8")
+        salvar_estado(estado)
         return
     if not (TG_TOKEN and TG_CHAT):
         print("Falta Telegram")
@@ -246,21 +354,23 @@ def main():
     if not pode_postar_agora(agora):
         print(f"Fora do horário de postagem (hora atual: {agora.hour}h). "
               "Dia: 7h–22h | Madrugada: 23h, 2h e 5h")
-        STATE.write_text(json.dumps(estado, indent=2, ensure_ascii=False), encoding="utf-8")
+        salvar_estado(estado)
         return
 
     enviados = 0
     for p in ranking:
         if enviados >= MAX_POSTS:
             break
-        if p["id"] in estado:
+        if ja_postado(estado, p["id"], p["titulo"]):
             print(f"  Já postado recentemente, pulando: {p['id']}")
             continue
         if postar(p):
-            estado[p["id"]] = agora.isoformat()
+            registrar_postado(estado, p["id"], p["titulo"], agora)
             enviados += 1
+            # grava estado a cada post bem-sucedido (reduz perda em crash/race)
+            salvar_estado(estado)
 
-    STATE.write_text(json.dumps(estado, indent=2, ensure_ascii=False), encoding="utf-8")
+    salvar_estado(estado)
     print("Postagens enviadas:", enviados)
 
 
