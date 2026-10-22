@@ -2,13 +2,14 @@ name: Radar ML
 
 on:
   schedule:
-    - cron: "20 * * * *"   # toda hora no minuto 20 (UTC) — evita pico de carga do minuto 0
+    # 2x por hora (UTC) → ~:10 e :40 horário de SP — GitHub schedule é irregular
+    - cron: "10 * * * *"
+    - cron: "40 * * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
-# Só um run por vez — evita postar o mesmo produto duas vezes
 concurrency:
   group: radar
   cancel-in-progress: false
@@ -46,7 +47,6 @@ jobs:
             exit 0
           fi
           git commit -m "Atualiza tendências $(date -u +%Y-%m-%dT%H:%M)"
-          # pull --rebase evita perder estado se outro run acabou de pushar
           for i in 1 2 3; do
             git pull --rebase origin main && git push && break
             echo "Push falhou (tentativa $i), tentando de novo..."
