@@ -1,4 +1,32 @@
 {
-  "atualizado": "2026-10-23T12:08:11.555112-03:00",
-  "itens": []
+  "atualizado": "2026-10-23T13:08:11.550193-03:00",
+  "itens": [
+    {
+      "id": "MLB22827783",
+      "titulo": "Papel Higiênico Vip Folha Dupla 30m Leve 18 pague 16 Personal",
+      "preco": 21.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_998012-MLU73186603451_122023-F.jpg",
+      "frete_gratis": false,
+      "categoria": "Beleza",
+      "link": "https://produto.mercadolivre.com.br/MLB-3571216718?matt_tool=71970283"
+    },
+    {
+      "id": "MLB27341794",
+      "titulo": "Ventilador de Coluna 40cm Super Power VSP40C 6 Pás 3 Velocidades Mondial",
+      "preco": 249.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_911216-MLA114704223805_072026-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Eletrônicos",
+      "link": "https://produto.mercadolivre.com.br/MLB-3954546539?matt_tool=71970283"
+    },
+    {
+      "id": "MLB68847885",
+      "titulo": "Gravata Tradicional Masculina Premium Várias Cores Padrinhos Casamento E Eventos Rose Gold",
+      "preco": 16.91,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_934577-MLA111045463629_042026-F.jpg",
+      "frete_gratis": false,
+      "categoria": "Moda",
+      "link": "https://produto.mercadolivre.com.br/MLB-5425593763?matt_tool=71970283"
+    }
+  ]
 }
