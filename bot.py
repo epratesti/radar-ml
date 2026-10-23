@@ -1,6 +1,6 @@
-"""Radar: 4 produtos diversificados por hora → Telegram.
+"""Radar: 4 produtos por grupo (4 grupos = até 16/hora) → Telegram.
 Evita repetições por 7 dias (ID + título).
-Busca ampla no catálogo (não depende só de highlights).
+Busca ampla no catálogo.
 Horário SP: 07h–22h / madrugada 23h, 02h, 05h
 """
 import os, json, html, re, random, datetime as dt
@@ -12,7 +12,8 @@ AFF_ID = os.getenv("ML_AFFILIATE_ID", "71970283")
 AFF_PARAMS = os.getenv("ML_AFFILIATE_PARAMS", "matt_tool={id}")
 TG_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TG_CHAT = os.getenv("TELEGRAM_CHAT_ID")
-MAX_POSTS = int(os.getenv("MAX_POSTS", "4"))
+POSTS_POR_GRUPO = int(os.getenv("POSTS_POR_GRUPO", "4"))
+MAX_POSTS = int(os.getenv("MAX_POSTS", str(POSTS_POR_GRUPO * 4)))
 REPETIR_APOS_DIAS = 7
 API = "https://api.mercadolibre.com"
 ROOT = Path(__file__).parent
@@ -20,7 +21,6 @@ TRENDS = ROOT / "docs" / "trends.json"
 STATE = ROOT / "state" / "posted.json"
 TZ = ZoneInfo("America/Sao_Paulo")
 
-# Pool grande de termos — milhares de anúncios por query no ML
 GRUPOS = [
     {
         "nome": "Eletrônicos",
@@ -73,7 +73,7 @@ CAT_NOMES = {
 }
 
 S = requests.Session()
-S.headers.update({"User-Agent": "radar-ml/1.7", "Accept": "application/json"})
+S.headers.update({"User-Agent": "radar-ml/1.8", "Accept": "application/json"})
 
 
 def headers_ml():
@@ -233,54 +233,59 @@ def produto_de_search_item(item, categoria_label):
     }
 
 
-def buscar_query(query, cat_id, h, vistos_ids, vistos_titulos, label):
-    """Busca no catálogo amplo (até 50 resultados + offset aleatório)."""
+def buscar_varios_query(query, cat_id, h, vistos_ids, vistos_titulos, label, quantos):
+    achados = []
     try:
-        offset = random.choice([0, 0, 10, 20, 30, 40, 50])  # varia página
+        offset = random.choice([0, 0, 10, 20, 30, 40, 50])
         params = {
-            "q": query,
-            "limit": 50,
-            "offset": offset,
+            "q": query, "limit": 50, "offset": offset,
             "sort": random.choice(["relevance", "price_asc", "sold_quantity_desc"]),
         }
         if cat_id:
             params["category"] = cat_id
         r = S.get(f"{API}/sites/MLB/search", headers=h, params=params, timeout=25)
         if r.status_code != 200:
-            print(f"Search '{query}': {r.status_code}")
-            return None
+            return achados
         results = r.json().get("results") or []
         random.shuffle(results)
         for item in results:
+            if len(achados) >= quantos:
+                break
             pid = item.get("catalog_product_id") or item.get("id")
             if not pid or str(pid) in vistos_ids:
                 continue
             nt = normalizar_titulo(item.get("title") or "")
             if nt and nt in vistos_titulos:
                 continue
+            p = None
             if item.get("catalog_product_id"):
                 p = montar_produto(item["catalog_product_id"], h, label)
-                if p:
-                    print(f"  OK [{label}] R$ {p['preco']:.2f} — {p['titulo'][:50]}")
-                    return p
-            p = produto_de_search_item(item, label)
-            if p:
-                print(f"  OK [{label}] R$ {p['preco']:.2f} — {p['titulo'][:50]}")
-                return p
+            if not p:
+                p = produto_de_search_item(item, label)
+            if not p:
+                continue
+            vistos_ids.add(p["id"])
+            if nt:
+                vistos_titulos.add(nt)
+            achados.append(p)
+            print(f"  OK [{label}] R$ {p['preco']:.2f} — {p['titulo'][:50]}")
     except Exception as e:
         print(f"Erro search '{query}':", e)
-    return None
+    return achados
 
 
-def buscar_highlights(cat_id, h, vistos_ids, vistos_titulos):
+def buscar_varios_highlights(cat_id, h, vistos_ids, vistos_titulos, quantos):
     nome = CAT_NOMES.get(cat_id, cat_id)
+    achados = []
     try:
         r = S.get(f"{API}/highlights/MLB/category/{cat_id}", headers=h, timeout=20)
         if r.status_code != 200:
-            return None
+            return achados
         items = list(r.json().get("content", [])[:30])
         random.shuffle(items)
         for item in items:
+            if len(achados) >= quantos:
+                break
             pid = item.get("id")
             if not pid or pid in vistos_ids:
                 continue
@@ -290,46 +295,50 @@ def buscar_highlights(cat_id, h, vistos_ids, vistos_titulos):
             nt = normalizar_titulo(p["titulo"])
             if nt and nt in vistos_titulos:
                 continue
+            vistos_ids.add(p["id"])
+            if nt:
+                vistos_titulos.add(nt)
+            achados.append(p)
             print(f"  OK [{nome}/hl] R$ {p['preco']:.2f} — {p['titulo'][:50]}")
-            return p
     except Exception as e:
         print(f"Erro highlights {nome}:", e)
-    return None
+    return achados
 
 
-def um_do_grupo(grupo, h, vistos_ids, vistos_titulos):
-    # 1) busca textual (pool enorme) — prioridade
+def varios_do_grupo(grupo, h, vistos_ids, vistos_titulos, quantos):
+    achados = []
     queries = list(grupo.get("queries", []))
     random.shuffle(queries)
-    for q in queries[:6]:  # tenta até 6 termos por grupo
+    for q in queries:
+        if len(achados) >= quantos:
+            break
+        falta = quantos - len(achados)
         cat = random.choice(grupo["cats"]) if grupo["cats"] else None
-        p = buscar_query(q, cat, h, vistos_ids, vistos_titulos, grupo["nome"])
-        if p:
-            return p
-    # 2) highlights como complemento
-    for cat_id in grupo["cats"]:
-        p = buscar_highlights(cat_id, h, vistos_ids, vistos_titulos)
-        if p:
-            return p
-    return None
+        novos = buscar_varios_query(q, cat, h, vistos_ids, vistos_titulos, grupo["nome"], falta)
+        achados.extend(novos)
+    if len(achados) < quantos:
+        for cat_id in grupo["cats"]:
+            if len(achados) >= quantos:
+                break
+            falta = quantos - len(achados)
+            novos = buscar_varios_highlights(cat_id, h, vistos_ids, vistos_titulos, falta)
+            achados.extend(novos)
+    return achados
 
 
 def montar_diversificado(h, estado):
+    """POSTS_POR_GRUPO produtos de cada grupo (até MAX_POSTS)."""
     vistos_ids = set(estado["ids"].keys())
     vistos_titulos = set(estado["titulos"].keys())
     escolhidos = []
-    grupos = list(GRUPOS)
-    random.shuffle(grupos)
-    for grupo in grupos:
-        p = um_do_grupo(grupo, h, vistos_ids, vistos_titulos)
-        if p:
-            vistos_ids.add(p["id"])
-            nt = normalizar_titulo(p["titulo"])
-            if nt:
-                vistos_titulos.add(nt)
-            escolhidos.append(p)
+    for grupo in GRUPOS:
         if len(escolhidos) >= MAX_POSTS:
             break
+        falta_total = MAX_POSTS - len(escolhidos)
+        n = min(POSTS_POR_GRUPO, falta_total)
+        print(f"Grupo {grupo['nome']}: buscando até {n}")
+        novos = varios_do_grupo(grupo, h, vistos_ids, vistos_titulos, n)
+        escolhidos.extend(novos)
     return escolhidos
 
 
@@ -379,6 +388,7 @@ def salvar_estado(estado):
 def main():
     agora = dt.datetime.now(TZ)
     print("Iniciando", agora.isoformat())
+    print(f"Meta: {POSTS_POR_GRUPO} por grupo, máx {MAX_POSTS} total")
     h = headers_ml()
     if not h:
         return
