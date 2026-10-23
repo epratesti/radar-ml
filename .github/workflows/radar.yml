@@ -2,7 +2,7 @@ name: Radar ML
 
 on:
   schedule:
-    # 2x por hora (UTC) → ~:10 e :40 horário de SP — GitHub schedule é irregular
+    # 2x por hora (UTC) → ~:10 e :40 SP — GitHub schedule é irregular
     - cron: "10 * * * *"
     - cron: "40 * * * *"
   workflow_dispatch:
@@ -35,7 +35,8 @@ jobs:
           ML_CLIENT_ID: ${{ secrets.ML_CLIENT_ID }}
           ML_CLIENT_SECRET: ${{ secrets.ML_CLIENT_SECRET }}
           ML_AFFILIATE_ID: "71970283"
-          MAX_POSTS: "4"
+          POSTS_POR_GRUPO: "4"
+          MAX_POSTS: "16"
 
       - name: Salvar dados atualizados
         run: |
