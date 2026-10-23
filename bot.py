@@ -1,5 +1,5 @@
 """Radar: 4 produtos por grupo (4 grupos = até 16/hora) → Telegram.
-Evita repetições por 7 dias (ID + título).
+Sem bloqueio de repetição entre execuções (só evita duplicata na mesma run).
 Busca ampla no catálogo.
 Horário SP: 07h–22h / madrugada 23h, 02h, 05h
 """
@@ -14,7 +14,8 @@ TG_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TG_CHAT = os.getenv("TELEGRAM_CHAT_ID")
 POSTS_POR_GRUPO = int(os.getenv("POSTS_POR_GRUPO", "4"))
 MAX_POSTS = int(os.getenv("MAX_POSTS", str(POSTS_POR_GRUPO * 4)))
-REPETIR_APOS_DIAS = 7
+# 0 = sem bloqueio entre execuções (produtos podem repetir a qualquer momento)
+REPETIR_APOS_DIAS = int(os.getenv("REPETIR_APOS_DIAS", "0"))
 API = "https://api.mercadolibre.com"
 ROOT = Path(__file__).parent
 TRENDS = ROOT / "docs" / "trends.json"
@@ -73,7 +74,7 @@ CAT_NOMES = {
 }
 
 S = requests.Session()
-S.headers.update({"User-Agent": "radar-ml/1.8", "Accept": "application/json"})
+S.headers.update({"User-Agent": "radar-ml/1.9", "Accept": "application/json"})
 
 
 def headers_ml():
@@ -119,6 +120,9 @@ def carregar_estado():
 
 
 def limpar_estado(estado, agora):
+    """Com REPETIR_APOS_DIAS=0 não bloqueia nada entre execuções."""
+    if REPETIR_APOS_DIAS <= 0:
+        return {"ids": {}, "titulos": {}}
     limite = agora - dt.timedelta(days=REPETIR_APOS_DIAS)
     ids_limpos, titulos_limpos = {}, {}
     for k, v in estado.get("ids", {}).items():
@@ -137,6 +141,8 @@ def limpar_estado(estado, agora):
 
 
 def ja_postado(estado, pid, titulo):
+    if REPETIR_APOS_DIAS <= 0:
+        return False
     if pid in estado["ids"]:
         return True
     nt = normalizar_titulo(titulo)
@@ -144,6 +150,8 @@ def ja_postado(estado, pid, titulo):
 
 
 def registrar_postado(estado, pid, titulo, agora):
+    if REPETIR_APOS_DIAS <= 0:
+        return  # não grava bloqueio
     estado["ids"][pid] = agora.isoformat()
     nt = normalizar_titulo(titulo)
     if nt:
@@ -327,9 +335,14 @@ def varios_do_grupo(grupo, h, vistos_ids, vistos_titulos, quantos):
 
 
 def montar_diversificado(h, estado):
-    """POSTS_POR_GRUPO produtos de cada grupo (até MAX_POSTS)."""
-    vistos_ids = set(estado["ids"].keys())
-    vistos_titulos = set(estado["titulos"].keys())
+    """POSTS_POR_GRUPO produtos de cada grupo (até MAX_POSTS).
+    vistos_* só evitam duplicata na mesma execução; estado histórico é ignorado se REPETIR_APOS_DIAS=0.
+    """
+    if REPETIR_APOS_DIAS <= 0:
+        vistos_ids, vistos_titulos = set(), set()
+    else:
+        vistos_ids = set(estado["ids"].keys())
+        vistos_titulos = set(estado["titulos"].keys())
     escolhidos = []
     for grupo in GRUPOS:
         if len(escolhidos) >= MAX_POSTS:
@@ -389,11 +402,12 @@ def main():
     agora = dt.datetime.now(TZ)
     print("Iniciando", agora.isoformat())
     print(f"Meta: {POSTS_POR_GRUPO} por grupo, máx {MAX_POSTS} total")
+    print(f"Bloqueio entre runs: {'DESLIGADO' if REPETIR_APOS_DIAS <= 0 else f'{REPETIR_APOS_DIAS} dias'}")
     h = headers_ml()
     if not h:
         return
     estado = limpar_estado(carregar_estado(), agora)
-    print(f"Bloqueados (últimos {REPETIR_APOS_DIAS} dias):", len(estado["ids"]))
+    print(f"Bloqueados: {len(estado['ids'])}")
     ranking = montar_diversificado(h, estado)
     print("Produtos selecionados:", len(ranking))
     TRENDS.parent.mkdir(parents=True, exist_ok=True)
