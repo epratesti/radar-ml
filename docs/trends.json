@@ -1,4 +1,23 @@
 {
-  "atualizado": "2026-10-22T22:27:23.675098-03:00",
-  "itens": []
+  "atualizado": "2026-10-23T03:28:21.149270-03:00",
+  "itens": [
+    {
+      "id": "MLB16602518",
+      "titulo": "Liquidificador Oster OLIQ610 1400w Full 3,2L Cor Preto",
+      "preco": 144.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_864038-MLA100027785333_122025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Eletrodomésticos",
+      "link": "https://produto.mercadolivre.com.br/MLB-7722868774?matt_tool=71970283"
+    },
+    {
+      "id": "MLB49652036",
+      "titulo": "Secador De Cabelos Philco psc3500 4 Em 1 dobrável motor bldc Prateado",
+      "preco": 421.95,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_723697-MLA115636981336_092026-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Beleza",
+      "link": "https://produto.mercadolivre.com.br/MLB-6486861240?matt_tool=71970283"
+    }
+  ]
 }
