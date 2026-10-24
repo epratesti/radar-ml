@@ -1,41 +1,41 @@
 {
-  "atualizado": "2026-10-24T12:07:33.935449-03:00",
+  "atualizado": "2026-10-24T13:08:00.010379-03:00",
   "itens": [
     {
-      "id": "MLB19150371",
-      "titulo": "NIVEA Hidratante Desodorante Beleza Radiante Cuidado Intenso 400ml, Hidratação Profunda 48h, Brilho Natural, Corporal, Pele Seca e Extrasseca",
-      "preco": 19.99,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_959443-MLA93494140268_102025-F.jpg",
+      "id": "MLB18964467",
+      "titulo": "Principia Sérum Vitamina C-10",
+      "preco": 39.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_614742-MLA98385730409_112025-F.jpg",
       "frete_gratis": true,
       "categoria": "Beleza",
-      "link": "https://produto.mercadolivre.com.br/MLB-7707188478?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-7851760078?matt_tool=71970283"
     },
     {
-      "id": "MLB63364148",
-      "titulo": "Smartphone Galaxy A17 Câmera Tripla 256 Gb 4g A175 Samsung Azul",
-      "preco": 1899.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_604348-MLA105252388263_012026-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Celulares",
-      "link": "https://produto.mercadolivre.com.br/MLB-5315131669?matt_tool=71970283"
-    },
-    {
-      "id": "MLB79483467",
-      "titulo": "Patinete Elétrico Infantil Triciclo PARES Drift Bluetooth 3 Rodas Vermelho Diversão e Lazer + Kit de segurança",
-      "preco": 809.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_815199-MLA117836437827_092026-F.jpg",
-      "frete_gratis": true,
+      "id": "MLB69694728",
+      "titulo": "Spray Pum Peido Fedorento Pegadinha Viral Trollagem Brincadeira Perfume Fedido - Marca Black Raipe",
+      "preco": 19.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_638104-MLA111704798941_052026-F.jpg",
+      "frete_gratis": false,
       "categoria": "Brinquedos",
-      "link": "https://produto.mercadolivre.com.br/MLB-7658098506?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-5648370548?matt_tool=71970283"
     },
     {
-      "id": "MLB27080589",
-      "titulo": "Kit 2 Refil De Água Acqua Pure Electrolux Pe12a Pe12b Pe12g PC01X, Cor Marrom-claro",
-      "preco": 115.57,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_764049-MLA114244626520_082026-F.jpg",
+      "id": "MLB21672188",
+      "titulo": "Aspirador Pó E Água Soprador Wap Gtw 10 Maré 1400w Cor Cinza",
+      "preco": 242.5,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_627568-MLA108247612641_032026-F.jpg",
       "frete_gratis": true,
       "categoria": "Eletrodomésticos",
-      "link": "https://produto.mercadolivre.com.br/MLB-7845862386?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-5457753915?matt_tool=71970283"
+    },
+    {
+      "id": "MLB11286621",
+      "titulo": "Caixa Papel Sulfite A4 Report 10 Resmas De 500 Folhas Kit",
+      "preco": 233.4,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_805455-MLA99487191924_112025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Informática",
+      "link": "https://produto.mercadolivre.com.br/MLB-4071106422?matt_tool=71970283"
     }
   ]
 }
