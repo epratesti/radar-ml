@@ -2,9 +2,8 @@ name: Radar ML
 
 on:
   schedule:
-    # 2x por hora (UTC) → ~:10 e :40 SP — GitHub schedule é irregular
-    - cron: "10 * * * *"
-    - cron: "40 * * * *"
+    # 1x por hora (UTC) — menos flood e menos corrida de estado
+    - cron: "15 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -19,6 +18,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Garantir estado mais recente
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
 
       - uses: actions/setup-python@v5
         with:
@@ -35,14 +41,66 @@ jobs:
           ML_CLIENT_ID: ${{ secrets.ML_CLIENT_ID }}
           ML_CLIENT_SECRET: ${{ secrets.ML_CLIENT_SECRET }}
           ML_AFFILIATE_ID: "71970283"
-          POSTS_POR_GRUPO: "2"
-          MAX_POSTS: "12"
-          REPETIR_APOS_DIAS: "7"
+          POSTS_POR_GRUPO: "1"
+          MAX_POSTS: "4"
+          REPETIR_APOS_DIAS: "14"
 
-      - name: Salvar dados atualizados
+      - name: Salvar dados (merge seguro do estado)
         run: |
           git config user.name "radar-bot"
           git config user.email "radar-bot@users.noreply.github.com"
+
+          # Guarda o estado gerado por esta run
+          cp state/posted.json /tmp/posted_local.json
+          cp docs/trends.json /tmp/trends_local.json 2>/dev/null || true
+
+          git fetch origin main
+          git reset --soft origin/main
+
+          # Mescla posted.json local + remoto (união de ids/titulos, data mais recente)
+          python3 << 'PY'
+          import json
+          from pathlib import Path
+
+          def load(p):
+              try:
+                  d = json.loads(Path(p).read_text(encoding="utf-8"))
+                  if not isinstance(d, dict):
+                      return {"ids": {}, "titulos": {}}
+                  d.setdefault("ids", {})
+                  d.setdefault("titulos", {})
+                  return d
+              except Exception:
+                  return {"ids": {}, "titulos": {}}
+
+          local = load("/tmp/posted_local.json")
+          remote = load("state/posted.json")
+
+          def merge(a, b):
+              out = dict(a)
+              for k, v in b.items():
+                  if k not in out or str(v) > str(out[k]):
+                      out[k] = v
+              return out
+
+          merged = {
+              "ids": merge(remote.get("ids", {}), local.get("ids", {})),
+              "titulos": merge(remote.get("titulos", {}), local.get("titulos", {})),
+          }
+          Path("state").mkdir(parents=True, exist_ok=True)
+          Path("state/posted.json").write_text(
+              json.dumps(merged, indent=2, ensure_ascii=False) + "\n",
+              encoding="utf-8",
+          )
+          print(f"Estado mesclado: {len(merged['ids'])} ids, {len(merged['titulos'])} titulos")
+          PY
+
+          # trends desta run prevalece
+          if [ -f /tmp/trends_local.json ]; then
+            mkdir -p docs
+            cp /tmp/trends_local.json docs/trends.json
+          fi
+
           git add docs/trends.json state/posted.json || true
           if git diff --cached --quiet; then
             echo "Nenhuma mudança para commit"
@@ -51,6 +109,29 @@ jobs:
           git commit -m "Atualiza tendências $(date -u +%Y-%m-%dT%H:%M)"
           for i in 1 2 3; do
             git pull --rebase origin main && git push && break
-            echo "Push falhou (tentativa $i), tentando de novo..."
-            sleep 3
+            echo "Push falhou (tentativa $i), mesclando de novo..."
+            python3 << 'PY'
+          import json
+          from pathlib import Path
+          def load(p):
+              try:
+                  d = json.loads(Path(p).read_text(encoding="utf-8"))
+                  d.setdefault("ids", {}); d.setdefault("titulos", {})
+                  return d
+              except Exception:
+                  return {"ids": {}, "titulos": {}}
+          local = load("/tmp/posted_local.json")
+          remote = load("state/posted.json")
+          def merge(a, b):
+              out = dict(a)
+              for k, v in b.items():
+                  if k not in out or str(v) > str(out[k]):
+                      out[k] = v
+              return out
+          merged = {"ids": merge(remote["ids"], local["ids"]), "titulos": merge(remote["titulos"], local["titulos"])}
+          Path("state/posted.json").write_text(json.dumps(merged, indent=2, ensure_ascii=False)+"\n", encoding="utf-8")
+          PY
+            git add state/posted.json
+            git rebase --continue 2>/dev/null || git commit --amend --no-edit 2>/dev/null || true
+            sleep 2
           done
