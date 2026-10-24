@@ -35,8 +35,9 @@ jobs:
           ML_CLIENT_ID: ${{ secrets.ML_CLIENT_ID }}
           ML_CLIENT_SECRET: ${{ secrets.ML_CLIENT_SECRET }}
           ML_AFFILIATE_ID: "71970283"
-          POSTS_POR_GRUPO: "4"
-          MAX_POSTS: "16"
+          POSTS_POR_GRUPO: "2"
+          MAX_POSTS: "12"
+          REPETIR_APOS_DIAS: "7"
 
       - name: Salvar dados atualizados
         run: |
