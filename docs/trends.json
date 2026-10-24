@@ -1,77 +1,41 @@
 {
-  "atualizado": "2026-10-24T09:13:50.998100-03:00",
+  "atualizado": "2026-10-24T10:10:30.822451-03:00",
   "itens": [
     {
-      "id": "MLB35762220",
-      "titulo": "Conjunto 5 Carrinhos Hot Wheels - Mattel",
-      "preco": 89.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_724815-MLA99876815105_112025-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Brinquedos",
-      "link": "https://produto.mercadolivre.com.br/MLB-7740050964?matt_tool=71970283"
-    },
-    {
-      "id": "MLB51652593",
-      "titulo": "Caminhão Dinossauro Pista Com Carrinhos Maleta Transporte Cor Roxo",
-      "preco": 99.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_845666-MLA99598112378_122025-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Brinquedos",
-      "link": "https://produto.mercadolivre.com.br/MLB-5461309698?matt_tool=71970283"
-    },
-    {
-      "id": "MLB18238727",
-      "titulo": "Aspirador de Pó Vertical Electrolux 1450W STK15 com Fio Portátil de Mão 2 em 1 e 1,6 Litros de capacidade com Filtro Hepa Cinza-escuro",
-      "preco": 180.4,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_738236-MLA116379124521_082026-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Eletrodomésticos",
-      "link": "https://produto.mercadolivre.com.br/MLB-7839835996?matt_tool=71970283"
-    },
-    {
-      "id": "MLB27078749",
-      "titulo": "Refil Filtro Cix06ax Purificador De Água Consul Cpc30af, Cpc30ab, Cpb35ab, Cpb35af, Cpb36af, Cpb36ab, Cpb34ab, Cpb34af, Cpb34as, Cpc31ab, Cpc31af , Original",
-      "preco": 70.19,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_879703-MLA99536118600_122025-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Eletrodomésticos",
-      "link": "https://produto.mercadolivre.com.br/MLB-3861077575?matt_tool=71970283"
-    },
-    {
-      "id": "MLB52363091",
-      "titulo": "Escova Progressiva 150g - Fashion Gold",
-      "preco": 99.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_861957-MLA108178234350_032026-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Beleza",
-      "link": "https://produto.mercadolivre.com.br/MLB-4239462089?matt_tool=71970283"
-    },
-    {
-      "id": "MLB18717798",
-      "titulo": "Fralda Bigfral Derma Plus M 8 Unidades Tamanho Médio",
-      "preco": 92.89,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_952728-MLA99929505489_112025-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Beleza",
-      "link": "https://produto.mercadolivre.com.br/MLB-4748449987?matt_tool=71970283"
-    },
-    {
-      "id": "MLB70514530",
-      "titulo": "Carregador Portátil Power Bank 20.000mah Turbo Celular Carga Rápida 22.5w Premium Display Visor Grande Universal Usb-c Viagens Festa Para los E Android iPhone Samsung Motorola Xiaomi Branco Nixzen",
-      "preco": 72.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_918189-MLA113906382815_062026-F.jpg",
+      "id": "MLB47889235",
+      "titulo": "Carregador Super Rápido 25w Para Samsung Galaxy S24 S23 S22 S21 S20 Fe Ultra Motorola M22 M31 M32 M62 M63 M64 G15 Xiaomi Redmi Note 12 13 14 15 LG - Super Fast Cabo Blindado Tipo Usb C -Dtimp",
+      "preco": 29.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_923598-MLA113044313715_062026-F.jpg",
       "frete_gratis": false,
       "categoria": "Celulares",
-      "link": "https://produto.mercadolivre.com.br/MLB-6867815778?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-4235549699?matt_tool=71970283"
     },
     {
-      "id": "MLB67410010",
-      "titulo": "Celular Samsung Galaxy A57 5G 128GB, 8GB RAM, Recursos AI",
-      "preco": 1587.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_759289-MLA112991671232_072026-F.jpg",
+      "id": "MLB25741527",
+      "titulo": "Sanduicheira Elétrica Cadence SAN400 Preta",
+      "preco": 89.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_633183-MLA99468751756_112025-F.jpg",
       "frete_gratis": true,
-      "categoria": "Celulares",
-      "link": "https://produto.mercadolivre.com.br/MLB-7841093584?matt_tool=71970283"
+      "categoria": "Eletrodomésticos",
+      "link": "https://produto.mercadolivre.com.br/MLB-6607665974?matt_tool=71970283"
+    },
+    {
+      "id": "MLB78872569",
+      "titulo": "Maquina Maquininha Dragao Acabamento Cortar Cabelo Aparador Barba Pelos Elétrica Sem Fio Recarregavel - Crowley",
+      "preco": 24.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_952927-MLA115681613734_092026-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Beleza",
+      "link": "https://produto.mercadolivre.com.br/MLB-5452944157?matt_tool=71970283"
+    },
+    {
+      "id": "MLB67746701",
+      "titulo": "Cozinha Infantil Brinquedo Com Luz 33 Acessórios Sai Água Rosa",
+      "preco": 119.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_676065-MLA110243997819_042026-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Brinquedos",
+      "link": "https://produto.mercadolivre.com.br/MLB-5386100459?matt_tool=71970283"
     }
   ]
 }
