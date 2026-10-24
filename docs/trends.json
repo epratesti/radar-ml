@@ -1,95 +1,86 @@
 {
-  "atualizado": "2026-10-24T08:06:24.755270-03:00",
+  "atualizado": "2026-10-24T09:09:52.247200-03:00",
   "itens": [
     {
-      "id": "MLB39377594",
-      "titulo": "Buba Mamadeira Easy Flow Nuvem 270ml anticólica cor azul",
+      "id": "MLB18927373",
+      "titulo": "Cafeteira elétrica Electrolux inox filtro permanente removivel corta pingos capacidade 600ml 15 xicaras função manter aquecido sistema ECM10",
+      "preco": 95.76,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_923263-MLA99474168604_112025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Eletrodomésticos",
+      "link": "https://produto.mercadolivre.com.br/MLB-7859666650?matt_tool=71970283"
+    },
+    {
+      "id": "MLB37955040",
+      "titulo": "Marmita Elétrica Preta Bivolt Portátil Doméstica 110/220v Veicular 12/24v Lancheira 1.5l Com Divisórias Esquenta Rápido Refeições Práticas Trabalho Casa Carro Caminhão Viagem Faculdade Woosh",
       "preco": 79.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_767921-MLU78250913200_082024-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Bebês",
-      "link": "https://produto.mercadolivre.com.br/MLB-4209790179?matt_tool=71970283"
-    },
-    {
-      "id": "MLB28992390",
-      "titulo": "Bomba Tira Leite Materno Elétrica Portátil Extratora Amamentação Mãos Livres Sem BPA Coletor Sugador Bombinha Peito 3 Modos 9 Níveis de Sucção Recarregável Silenciosa Display Digital Fergusom",
-      "preco": 58.96,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_622220-MLA117869877176_102026-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Bebês",
-      "link": "https://produto.mercadolivre.com.br/MLB-7877077698?matt_tool=71970283"
-    },
-    {
-      "id": "MLB22827783",
-      "titulo": "Papel Higiênico Vip Folha Dupla 30m Leve 18 pague 16 Personal",
-      "preco": 21.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_998012-MLU73186603451_122023-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Beleza",
-      "link": "https://produto.mercadolivre.com.br/MLB-3571216718?matt_tool=71970283"
-    },
-    {
-      "id": "MLB25904875",
-      "titulo": "Creme Multirreparador Pele Sensível Cicaplast Baume B5+ La Roche-Posay 20ml",
-      "preco": 38.89,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_906529-MLA115584916886_092026-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Beleza",
-      "link": "https://produto.mercadolivre.com.br/MLB-3954266250?matt_tool=71970283"
-    },
-    {
-      "id": "MLB46053181",
-      "titulo": "Liquidificador Pratic Turbo III, Mondial, 550W - L-93-BG",
-      "preco": 90.95,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_856315-MLA99920847933_112025-F.jpg",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_605725-MLA117534176540_102026-F.jpg",
       "frete_gratis": true,
       "categoria": "Eletrodomésticos",
-      "link": "https://produto.mercadolivre.com.br/MLB-5326605383?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-5423030585?matt_tool=71970283"
     },
     {
-      "id": "MLB19694427",
-      "titulo": "Escova Secadora Britânia Bivolt 1300w Soft Bec07r Original",
-      "preco": 99.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_734805-MLA114128393951_072026-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Eletrodomésticos",
-      "link": "https://produto.mercadolivre.com.br/MLB-5139760693?matt_tool=71970283"
-    },
-    {
-      "id": "MLB36464821",
-      "titulo": "Antipulgas Defenza 45mg Cães De 2 A 4,5kg 1 Comprimido Msd",
-      "preco": 47.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_605917-MLA110210763454_052026-F.jpg",
-      "frete_gratis": true,
+      "id": "MLB27847114",
+      "titulo": "Ração Úmida Pedigree para Cão Adulto de Raças Pequenas Sabor Carne ao Molho - Kit com 12 Sachês de 100g",
+      "preco": 20.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_878947-MLA99932126325_112025-F.jpg",
+      "frete_gratis": false,
       "categoria": "Pet Shop",
-      "link": "https://produto.mercadolivre.com.br/MLB-4794558509?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-5446978839?matt_tool=71970283"
     },
     {
-      "id": "MLB32350330",
-      "titulo": "Simparic 40mg Cães 10,1-20kg Pulgas Carrapatos 3 Comprimidos Zoetis",
-      "preco": 172.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_805521-MLU75306151652_032024-F.jpg",
+      "id": "MLB70449712",
+      "titulo": "Body Splash Masculino Vibration 200ml - Primacial Perfume Bergamota Fresco",
+      "preco": 42.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_617155-MLA118231595864_102026-F.jpg",
+      "frete_gratis": false,
+      "categoria": "Beleza",
+      "link": "https://produto.mercadolivre.com.br/MLB-4748589927?matt_tool=71970283"
+    },
+    {
+      "id": "MLB26080271",
+      "titulo": "L'Oréal Paris Elseve Óleo Extraordinário 100ml - Leave In Anti Frizz Protetor Térmico Tratamento Reconstrutor Para Todos Os Tipos De Cabelo",
+      "preco": 43.49,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_605503-MLA114497234356_082026-F.jpg",
       "frete_gratis": true,
-      "categoria": "Pet Shop",
-      "link": "https://produto.mercadolivre.com.br/MLB-7692795106?matt_tool=71970283"
+      "categoria": "Beleza",
+      "link": "https://produto.mercadolivre.com.br/MLB-5439740605?matt_tool=71970283"
     },
     {
-      "id": "MLB54982411",
-      "titulo": "Celular Samsung Galaxy A17 Com Ia, 256gb, 8gb Ram, Câm De 50mp, Tela De 6.7 , Nfc, Ip54 - Azul",
-      "preco": 1289.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_889169-MLA96868779849_102025-F.jpg",
+      "id": "MLB55762063",
+      "titulo": "Smartphone Motorola Moto G06 - 256gb 4gb Ram + 8gb Ram Boost, e Camera 50mp Com Ai Bateria De 5200 Mah Tela 6.9 - Bege",
+      "preco": 869.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_793349-MLA91806774304_092025-F.jpg",
       "frete_gratis": true,
       "categoria": "Celulares",
-      "link": "https://produto.mercadolivre.com.br/MLB-4669565403?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-7677756000?matt_tool=71970283"
     },
     {
-      "id": "MLB70109633",
-      "titulo": "Cartão De Memória 128 Gb Micro Sd Classe 10 Ultra 100mb/s, Para Drones, Celulares, Câmeras Wi-fi, Com Adaptador Sd",
-      "preco": 71.3,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_878737-MLA114740264494_082026-F.jpg",
+      "id": "MLB65041642",
+      "titulo": "Smartphone Motorola Moto G17 4g - 128gb 4gb Ram + 8gb Ram Boost, Camera 50mp Sony Lytia 600, Tela Fhd+ 60hz, Bateria 5200 Mah - Azul",
+      "preco": 949.05,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_773592-MLA105493148200_012026-F.jpg",
       "frete_gratis": true,
       "categoria": "Celulares",
-      "link": "https://produto.mercadolivre.com.br/MLB-7399054176?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-5248948411?matt_tool=71970283"
+    },
+    {
+      "id": "MLB28717101",
+      "titulo": "Cama Elástica Pula Pula Infantil Trampolim 1,4 Metros Atentu",
+      "preco": 269.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_917104-MLA96155675715_102025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Brinquedos",
+      "link": "https://produto.mercadolivre.com.br/MLB-4287637614?matt_tool=71970283"
+    },
+    {
+      "id": "MLB25656157",
+      "titulo": "Patinete Infantil 3 Rodas Com Led Som E Cesta Menino Menina Cor Rosa",
+      "preco": 85.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_829394-MLA99479039346_112025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Brinquedos",
+      "link": "https://produto.mercadolivre.com.br/MLB-5373185981?matt_tool=71970283"
     }
   ]
 }
