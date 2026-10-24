@@ -1,86 +1,113 @@
 {
-  "atualizado": "2026-10-24T04:35:38.222189-03:00",
+  "atualizado": "2026-10-24T07:05:36.224141-03:00",
   "itens": [
     {
-      "id": "MLB18725403",
-      "titulo": "Proteína Growth Supplements Basic Whey em pó sabor Chocolate x 1kg",
-      "preco": 69.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_819000-MLA101180020755_122025-F.jpg",
+      "id": "MLB18490662",
+      "titulo": "pré treino Horus Max Titanium Sabor Blue Ice 300g",
+      "preco": 78.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_623347-MLA114565880347_072026-F.jpg",
+      "frete_gratis": false,
+      "categoria": "Esportes",
+      "link": "https://produto.mercadolivre.com.br/MLB-3962827161?matt_tool=71970283"
+    },
+    {
+      "id": "MLB18218388",
+      "titulo": "Supercoffee Tradicional - Classic Size (220g) - Caffeine Army",
+      "preco": 124.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_830462-MLA99533779378_122025-F.jpg",
       "frete_gratis": true,
       "categoria": "Esportes",
-      "link": "https://produto.mercadolivre.com.br/MLB-7686989210?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-7594882720?matt_tool=71970283"
     },
     {
-      "id": "MLB21361292",
-      "titulo": "Loção Hidratante Corporal 3 Ceramidas Hidratação 120h CeraVe 473ml",
-      "preco": 81.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_930930-MLA118355221530_102026-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Beleza",
-      "link": "https://produto.mercadolivre.com.br/MLB-5438818723?matt_tool=71970283"
-    },
-    {
-      "id": "MLB18392841",
-      "titulo": "Lenços Umedecidos Huggies Rosto E Corpo 4 pcts - 192 Un",
-      "preco": 76.53,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_753827-MLA80015367155_102024-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Bebês",
-      "link": "https://produto.mercadolivre.com.br/MLB-7659250780?matt_tool=71970283"
-    },
-    {
-      "id": "MLB18715369",
-      "titulo": "Fraldas Pom Pom Protek M x 48 unidades",
-      "preco": 42.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_906144-MLA99932428557_112025-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Bebês",
-      "link": "https://produto.mercadolivre.com.br/MLB-4696098935?matt_tool=71970283"
-    },
-    {
-      "id": "MLB27341794",
-      "titulo": "Ventilador de Coluna 40cm Super Power VSP40C 6 Pás 3 Velocidades Mondial",
-      "preco": 249.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_911216-MLA114704223805_072026-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Eletrônicos",
-      "link": "https://produto.mercadolivre.com.br/MLB-3954546539?matt_tool=71970283"
-    },
-    {
-      "id": "MLB20306137",
-      "titulo": "Mixer Elétrico Portátil 2 em 1 Recarregável Potente Misturador de Bebidas e Ovos 3 Velocidades Usb Batedor e Fue Fouet Woosh",
-      "preco": 55.8,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_973679-MLA118375684594_102026-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Eletrodomésticos",
-      "link": "https://produto.mercadolivre.com.br/MLB-5441326559?matt_tool=71970283"
-    },
-    {
-      "id": "MLB50376945",
-      "titulo": "Fritadeira Elétrica Air Fryer Quad Fry Elgin 4,2 L, 1400w",
-      "preco": 241.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_927559-MLA99450788218_112025-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Eletrodomésticos",
-      "link": "https://produto.mercadolivre.com.br/MLB-6895450992?matt_tool=71970283"
-    },
-    {
-      "id": "MLB15982835",
-      "titulo": "Simparic 20mg Antipulgas Cães 5 A 10kg 1 Comprimidos Zoetis",
-      "preco": 41.11,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_887764-MLA119593681229_102026-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Pet Shop",
-      "link": "https://produto.mercadolivre.com.br/MLB-5432587675?matt_tool=71970283"
-    },
-    {
-      "id": "MLB66492672",
-      "titulo": "Pazinha Higiênica Coletora Pá Caixa Areia Gatos Inox Peneira Prateado Boa Dica",
-      "preco": 18.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_822347-MLA109117266079_032026-F.jpg",
+      "id": "MLB69613562",
+      "titulo": "Areia Higiênica Granulado Para Gatos 4kg Mandioca + Minerais Controle De Odores Alta Absorção Econômica Biodegradável Não Suja Patinhas Rende Mais Banheiro Sanitário Pet Super Premium",
+      "preco": 20.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_632907-MLA115701618116_092026-F.jpg",
       "frete_gratis": false,
       "categoria": "Pet Shop",
-      "link": "https://produto.mercadolivre.com.br/MLB-5342925629?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-5355508815?matt_tool=71970283"
+    },
+    {
+      "id": "MLB18720058",
+      "titulo": "Ração P/caes Adultos Fresh Meat Sensitive Min E Peq 1kg",
+      "preco": 70.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_952496-MLA99450305980_112025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Pet Shop",
+      "link": "https://produto.mercadolivre.com.br/MLB-5204403275?matt_tool=71970283"
+    },
+    {
+      "id": "MLB18392608",
+      "titulo": "Fralda Descartável Turma da Mônica Baby M 50 Unidades 12 h",
+      "preco": 38.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_738296-MLA110297780960_052026-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Bebês",
+      "link": "https://produto.mercadolivre.com.br/MLB-4361722689?matt_tool=71970283"
+    },
+    {
+      "id": "MLB36436855",
+      "titulo": "Tapete de Atividades Para Bebê Piano Play Funny Dino Maxi Baby",
+      "preco": 66.91,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_872497-MLA95657283632_102025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Bebês",
+      "link": "https://produto.mercadolivre.com.br/MLB-7841069478?matt_tool=71970283"
+    },
+    {
+      "id": "MLB19724101",
+      "titulo": "Garrafão Térmico Mantém Gelado Quente Cinza Plus 5l Termolar",
+      "preco": 81.8,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_622927-MLA105472804126_012026-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Esportes",
+      "link": "https://produto.mercadolivre.com.br/MLB-4141925325?matt_tool=71970283"
+    },
+    {
+      "id": "MLB19755099",
+      "titulo": "Protetor Solar Facial Antioleosidade FPS 80 Anthelios La Roche-Posay 40g",
+      "preco": 83.56,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_752201-MLA113617929791_062026-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Beleza",
+      "link": "https://produto.mercadolivre.com.br/MLB-4195198970?matt_tool=71970283"
+    },
+    {
+      "id": "MLB13409956",
+      "titulo": "Chaleira Eletrica Atacama 1,8l - Unitermi",
+      "preco": 35.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_965103-MLA99575749404_122025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Eletrodomésticos",
+      "link": "https://produto.mercadolivre.com.br/MLB-7795185142?matt_tool=71970283"
+    },
+    {
+      "id": "MLB22871761",
+      "titulo": "Escova Rotativa Mondial Ceramica Tourmaline Ion 3x1 Erb-01 Rosa 127/220v",
+      "preco": 97.64,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_842831-MLA99963285219_112025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Eletrodomésticos",
+      "link": "https://produto.mercadolivre.com.br/MLB-5454510697?matt_tool=71970283"
+    },
+    {
+      "id": "MLB39962085",
+      "titulo": "Fone De Ouvido Sem Fio Xiaomi Redmi Buds 6 Play Preto",
+      "preco": 68.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_715678-MLU78765136521_082024-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Eletrônicos",
+      "link": "https://produto.mercadolivre.com.br/MLB-7855775760?matt_tool=71970283"
+    },
+    {
+      "id": "MLB25263382",
+      "titulo": "Fone De Ouvido Bluetooth Bateria de Longa Duração Pro 4 Branco Conecta Rápido Fast Plug Com Case Carregador E Microfone",
+      "preco": 16.95,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_846832-MLA115693573446_092026-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Eletrônicos",
+      "link": "https://produto.mercadolivre.com.br/MLB-5419738455?matt_tool=71970283"
     }
   ]
 }
