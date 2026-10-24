@@ -1,6 +1,6 @@
-"""Radar: 4 produtos por grupo (4 grupos = até 16/hora) → Telegram.
-Sem bloqueio de repetição entre execuções (só evita duplicata na mesma run).
-Busca ampla no catálogo.
+"""Radar: produtos diversificados do Mercado Livre → Telegram.
+Evita repetição entre execuções (bloqueio por ID e título normalizado).
+Busca ampla em várias categorias.
 Horário SP: 07h–22h / madrugada 23h, 02h, 05h
 """
 import os, json, html, re, random, datetime as dt
@@ -12,56 +12,85 @@ AFF_ID = os.getenv("ML_AFFILIATE_ID", "71970283")
 AFF_PARAMS = os.getenv("ML_AFFILIATE_PARAMS", "matt_tool={id}")
 TG_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TG_CHAT = os.getenv("TELEGRAM_CHAT_ID")
-POSTS_POR_GRUPO = int(os.getenv("POSTS_POR_GRUPO", "4"))
-MAX_POSTS = int(os.getenv("MAX_POSTS", str(POSTS_POR_GRUPO * 4)))
-# 0 = sem bloqueio entre execuções (produtos podem repetir a qualquer momento)
-REPETIR_APOS_DIAS = int(os.getenv("REPETIR_APOS_DIAS", "0"))
+POSTS_POR_GRUPO = int(os.getenv("POSTS_POR_GRUPO", "3"))
+MAX_POSTS = int(os.getenv("MAX_POSTS", "12"))
+# Dias sem repetir o mesmo produto (ID ou título similar). Padrão: 7
+REPETIR_APOS_DIAS = int(os.getenv("REPETIR_APOS_DIAS", "7"))
 API = "https://api.mercadolibre.com"
 ROOT = Path(__file__).parent
 TRENDS = ROOT / "docs" / "trends.json"
 STATE = ROOT / "state" / "posted.json"
 TZ = ZoneInfo("America/Sao_Paulo")
 
+# Grupos amplos cobrindo o catálogo do ML Brasil
 GRUPOS = [
     {
-        "nome": "Eletrônicos",
-        "cats": ["MLB1000", "MLB1051", "MLB1648"],
+        "nome": "Eletrônicos e Informática",
+        "cats": ["MLB1000", "MLB1051", "MLB1648", "MLB1144"],
         "queries": [
             "tv led smart", "fone bluetooth", "carregador turbo", "smartwatch",
             "caixa de som bluetooth", "mouse gamer", "teclado sem fio",
             "webcam full hd", "ssd 1tb", "pendrive 128gb", "tablet android",
-            "power bank", "cabo usb c", "suporte notebook",
+            "power bank", "cabo usb c", "suporte notebook", "notebook",
+            "monitor gamer", "impressora", "roteador wifi", "hd externo",
+            "controle xbox", "jogo ps5", "echo dot", "chromecast",
         ],
     },
     {
-        "nome": "Casa e Móveis",
+        "nome": "Casa, Móveis e Eletrodomésticos",
         "cats": ["MLB1574", "MLB5726"],
         "queries": [
             "armário", "guarda roupa", "sofá", "mesa de jantar", "cama box",
             "estante", "rack tv", "air fryer", "liquidificador",
             "aspirador de pó", "ventilador de teto", "ferro de passar",
             "panela de pressão", "jogo de lençol", "organizador closet",
-            "cortina", "tapete sala", "luminária de mesa",
+            "cortina", "tapete sala", "luminária de mesa", "geladeira",
+            "máquina de lavar", "microondas", "cafeteira", "sanduicheira",
+            "frigideira antiaderente", "jogo de panelas", "organizador cozinha",
         ],
     },
     {
-        "nome": "Moda e Calçados",
-        "cats": ["MLB1430", "MLB3937"],
+        "nome": "Moda, Calçados e Acessórios",
+        "cats": ["MLB1430", "MLB3937", "MLB1276"],
         "queries": [
             "tênis", "sapato social", "sandália", "chinelo",
             "calça jeans", "calça legging", "camisa", "camiseta",
             "mochila", "bolsa", "carteira", "cinto",
             "relógio", "óculos de sol", "jaqueta", "bermuda",
-            "vestido", "blusa feminina", "tênis corrida",
+            "vestido", "blusa feminina", "tênis corrida", "boné",
+            "meia esportiva", "cinto masculino", "bolsa feminina",
         ],
     },
     {
-        "nome": "Esportes e Beleza",
-        "cats": ["MLB1276", "MLB1246", "MLB1132"],
+        "nome": "Esportes, Beleza e Saúde",
+        "cats": ["MLB1276", "MLB1246", "MLB264586"],
         "queries": [
             "whey protein", "creatina", "colchonete academia", "halter",
             "perfume", "kit skincare", "shampoo", "escova de cabelo",
             "bicicleta", "patins", "bola futebol", "garrafa térmica",
+            "creme hidratante", "protetor solar", "secador de cabelo",
+            "barra de proteína", "corda de pular", "yoga mat",
+        ],
+    },
+    {
+        "nome": "Bebês, Brinquedos e Papelaria",
+        "cats": ["MLB1384", "MLB1132", "MLB1196"],
+        "queries": [
+            "fralda descartável", "carrinho de bebê", "cadeira de alimentação",
+            "brinquedo educativo", "lego", "boneca", "carrinho controle remoto",
+            "caderno universitário", "caneta esferográfica", "mochila escolar",
+            "kit material escolar", "quebra cabeça", "pelúcia",
+        ],
+    },
+    {
+        "nome": "Ferramentas, Automotivo e Pet",
+        "cats": ["MLB407134", "MLB1743", "MLB1071"],
+        "queries": [
+            "furadeira", "kit ferramentas", "chave de fenda",
+            "capa de banco carro", "óleo motor", "pneu",
+            "ração cachorro", "ração gato", "arranhador gato",
+            "coleira", "cama pet", "brinquedo cachorro",
+            "lanterna led", "extensão elétrica", "tomada inteligente",
         ],
     },
 ]
@@ -70,11 +99,13 @@ CAT_NOMES = {
     "MLB1051": "Celulares", "MLB1430": "Moda", "MLB1144": "Games",
     "MLB1000": "Eletrônicos", "MLB1276": "Esportes", "MLB1648": "Informática",
     "MLB1246": "Beleza", "MLB5726": "Eletrodomésticos", "MLB1132": "Brinquedos",
-    "MLB1574": "Casa", "MLB3937": "Relógios",
+    "MLB1574": "Casa", "MLB3937": "Relógios", "MLB1384": "Bebês",
+    "MLB1196": "Papelaria", "MLB407134": "Ferramentas", "MLB1743": "Automotivo",
+    "MLB1071": "Pet Shop", "MLB264586": "Saúde",
 }
 
 S = requests.Session()
-S.headers.update({"User-Agent": "radar-ml/1.9", "Accept": "application/json"})
+S.headers.update({"User-Agent": "radar-ml/2.0", "Accept": "application/json"})
 
 
 def headers_ml():
@@ -120,8 +151,9 @@ def carregar_estado():
 
 
 def limpar_estado(estado, agora):
-    """Com REPETIR_APOS_DIAS=0 não bloqueia nada entre execuções."""
+    """Remove entradas antigas além de REPETIR_APOS_DIAS."""
     if REPETIR_APOS_DIAS <= 0:
+        # Ainda assim mantemos o estado da execução atual; limpeza total só se explicitamente 0
         return {"ids": {}, "titulos": {}}
     limite = agora - dt.timedelta(days=REPETIR_APOS_DIAS)
     ids_limpos, titulos_limpos = {}, {}
@@ -141,21 +173,23 @@ def limpar_estado(estado, agora):
 
 
 def ja_postado(estado, pid, titulo):
+    """Verifica se produto (ou título muito parecido) já foi postado recentemente."""
     if REPETIR_APOS_DIAS <= 0:
         return False
-    if pid in estado["ids"]:
+    if str(pid) in estado.get("ids", {}):
         return True
     nt = normalizar_titulo(titulo)
-    return bool(nt and nt in estado["titulos"])
+    return bool(nt and nt in estado.get("titulos", {}))
 
 
 def registrar_postado(estado, pid, titulo, agora):
+    """Registra produto postado para evitar repetição."""
     if REPETIR_APOS_DIAS <= 0:
-        return  # não grava bloqueio
-    estado["ids"][pid] = agora.isoformat()
+        return
+    estado.setdefault("ids", {})[str(pid)] = agora.isoformat()
     nt = normalizar_titulo(titulo)
     if nt:
-        estado["titulos"][nt] = agora.isoformat()
+        estado.setdefault("titulos", {})[nt] = agora.isoformat()
 
 
 def escolher_oferta(results):
@@ -215,7 +249,7 @@ def montar_produto(pid, h, categoria):
     else:
         link = link_afiliado(f"https://www.mercadolivre.com.br/p/{pid}")
     return {
-        "id": pid, "titulo": titulo, "preco": preco, "imagem": foto,
+        "id": str(pid), "titulo": titulo, "preco": preco, "imagem": foto,
         "frete_gratis": frete, "categoria": categoria, "link": link, "item_id": item_id,
     }
 
@@ -259,8 +293,8 @@ def buscar_varios_query(query, cat_id, h, vistos_ids, vistos_titulos, label, qua
         for item in results:
             if len(achados) >= quantos:
                 break
-            pid = item.get("catalog_product_id") or item.get("id")
-            if not pid or str(pid) in vistos_ids:
+            pid = str(item.get("catalog_product_id") or item.get("id") or "")
+            if not pid or pid in vistos_ids:
                 continue
             nt = normalizar_titulo(item.get("title") or "")
             if nt and nt in vistos_titulos:
@@ -272,6 +306,7 @@ def buscar_varios_query(query, cat_id, h, vistos_ids, vistos_titulos, label, qua
                 p = produto_de_search_item(item, label)
             if not p:
                 continue
+            # Validação mínima: preço > 0 e título não vazio (já garantido)
             vistos_ids.add(p["id"])
             if nt:
                 vistos_titulos.add(nt)
@@ -294,7 +329,7 @@ def buscar_varios_highlights(cat_id, h, vistos_ids, vistos_titulos, quantos):
         for item in items:
             if len(achados) >= quantos:
                 break
-            pid = item.get("id")
+            pid = str(item.get("id") or "")
             if not pid or pid in vistos_ids:
                 continue
             p = montar_produto(pid, h, nome)
@@ -335,21 +370,18 @@ def varios_do_grupo(grupo, h, vistos_ids, vistos_titulos, quantos):
 
 
 def montar_diversificado(h, estado):
-    """POSTS_POR_GRUPO produtos de cada grupo (até MAX_POSTS).
-    vistos_* só evitam duplicata na mesma execução; estado histórico é ignorado se REPETIR_APOS_DIAS=0.
-    """
-    if REPETIR_APOS_DIAS <= 0:
-        vistos_ids, vistos_titulos = set(), set()
-    else:
-        vistos_ids = set(estado["ids"].keys())
-        vistos_titulos = set(estado["titulos"].keys())
+    """Busca produtos de todos os grupos, respeitando histórico de postados."""
+    vistos_ids = set(str(k) for k in estado.get("ids", {}).keys())
+    vistos_titulos = set(estado.get("titulos", {}).keys())
     escolhidos = []
-    for grupo in GRUPOS:
+    grupos = list(GRUPOS)
+    random.shuffle(grupos)  # ordem dos grupos varia a cada run
+    for grupo in grupos:
         if len(escolhidos) >= MAX_POSTS:
             break
         falta_total = MAX_POSTS - len(escolhidos)
         n = min(POSTS_POR_GRUPO, falta_total)
-        print(f"Grupo {grupo['nome']}: buscando até {n}")
+        print(f"Grupo {grupo['nome']}: buscando até {n} (já vistos: {len(vistos_ids)} ids)")
         novos = varios_do_grupo(grupo, h, vistos_ids, vistos_titulos, n)
         escolhidos.extend(novos)
     return escolhidos
@@ -395,6 +427,7 @@ def pode_postar_agora(agora: dt.datetime) -> bool:
 
 
 def salvar_estado(estado):
+    STATE.parent.mkdir(parents=True, exist_ok=True)
     STATE.write_text(json.dumps(estado, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
@@ -407,7 +440,7 @@ def main():
     if not h:
         return
     estado = limpar_estado(carregar_estado(), agora)
-    print(f"Bloqueados: {len(estado['ids'])}")
+    print(f"Bloqueados (histórico): {len(estado.get('ids', {}))} ids, {len(estado.get('titulos', {}))} títulos")
     ranking = montar_diversificado(h, estado)
     print("Produtos selecionados:", len(ranking))
     TRENDS.parent.mkdir(parents=True, exist_ok=True)
@@ -420,9 +453,10 @@ def main():
         return
     if not (TG_TOKEN and TG_CHAT):
         print("Falta Telegram")
+        salvar_estado(estado)
         return
     if not pode_postar_agora(agora):
-        print(f"Fora do horário ({agora.hour}h)")
+        print(f"Fora do horário ({agora.hour}h) — produtos salvos em trends, sem postar")
         salvar_estado(estado)
         return
     enviados = 0
@@ -430,6 +464,7 @@ def main():
         if enviados >= MAX_POSTS:
             break
         if ja_postado(estado, p["id"], p["titulo"]):
+            print(f"  Pula (já postado): {p['titulo'][:50]}")
             continue
         if postar(p):
             registrar_postado(estado, p["id"], p["titulo"], agora)
@@ -437,6 +472,7 @@ def main():
             salvar_estado(estado)
     salvar_estado(estado)
     print("Postagens enviadas:", enviados)
+    print(f"Estado atual: {len(estado.get('ids', {}))} ids bloqueados")
 
 
 if __name__ == "__main__":
