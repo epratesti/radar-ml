@@ -1,41 +1,32 @@
 {
-  "atualizado": "2026-10-24T13:08:00.010379-03:00",
+  "atualizado": "2026-10-24T13:38:16.566186-03:00",
   "itens": [
     {
-      "id": "MLB18964467",
-      "titulo": "Principia Sérum Vitamina C-10",
-      "preco": 39.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_614742-MLA98385730409_112025-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Beleza",
-      "link": "https://produto.mercadolivre.com.br/MLB-7851760078?matt_tool=71970283"
-    },
-    {
-      "id": "MLB69694728",
-      "titulo": "Spray Pum Peido Fedorento Pegadinha Viral Trollagem Brincadeira Perfume Fedido - Marca Black Raipe",
-      "preco": 19.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_638104-MLA111704798941_052026-F.jpg",
+      "id": "MLB79948726",
+      "titulo": "Luva Nitrílica Preta Descartável Tamanho M 100 Unidades antiderrapantes",
+      "preco": 32.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_645527-MLA118299459475_092026-F.jpg",
       "frete_gratis": false,
-      "categoria": "Brinquedos",
-      "link": "https://produto.mercadolivre.com.br/MLB-5648370548?matt_tool=71970283"
+      "categoria": "Saúde",
+      "link": "https://produto.mercadolivre.com.br/MLB-4315821525?matt_tool=71970283"
     },
     {
-      "id": "MLB21672188",
-      "titulo": "Aspirador Pó E Água Soprador Wap Gtw 10 Maré 1400w Cor Cinza",
-      "preco": 242.5,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_627568-MLA108247612641_032026-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Eletrodomésticos",
-      "link": "https://produto.mercadolivre.com.br/MLB-5457753915?matt_tool=71970283"
-    },
-    {
-      "id": "MLB11286621",
-      "titulo": "Caixa Papel Sulfite A4 Report 10 Resmas De 500 Folhas Kit",
-      "preco": 233.4,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_805455-MLA99487191924_112025-F.jpg",
+      "id": "MLB60276890",
+      "titulo": "Bambu Lab PLA Lite vermelho",
+      "preco": 123.41,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_998645-MLA99980485903_112025-F.jpg",
       "frete_gratis": true,
       "categoria": "Informática",
-      "link": "https://produto.mercadolivre.com.br/MLB-4071106422?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-5930500536?matt_tool=71970283"
+    },
+    {
+      "id": "MLB37516784",
+      "titulo": "Bicicleta Infantil De Equilíbrio Sem Pedal Andador 4 Rodas Cor Azul",
+      "preco": 79.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_976719-MLA100007783665_122025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Brinquedos",
+      "link": "https://produto.mercadolivre.com.br/MLB-5439317731?matt_tool=71970283"
     }
   ]
 }
