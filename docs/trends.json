@@ -1,113 +1,95 @@
 {
-  "atualizado": "2026-10-24T07:05:36.224141-03:00",
+  "atualizado": "2026-10-24T07:51:55.854362-03:00",
   "itens": [
     {
-      "id": "MLB18490662",
-      "titulo": "pré treino Horus Max Titanium Sabor Blue Ice 300g",
-      "preco": 78.99,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_623347-MLA114565880347_072026-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Esportes",
-      "link": "https://produto.mercadolivre.com.br/MLB-3962827161?matt_tool=71970283"
-    },
-    {
-      "id": "MLB18218388",
-      "titulo": "Supercoffee Tradicional - Classic Size (220g) - Caffeine Army",
-      "preco": 124.99,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_830462-MLA99533779378_122025-F.jpg",
+      "id": "MLB66497052",
+      "titulo": "Power Bank 20000mah Carregador Portátil Turbo Rápido 22.5w Display Digital Preto",
+      "preco": 75.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_737097-MLA108177568778_032026-F.jpg",
       "frete_gratis": true,
-      "categoria": "Esportes",
-      "link": "https://produto.mercadolivre.com.br/MLB-7594882720?matt_tool=71970283"
+      "categoria": "Celulares",
+      "link": "https://produto.mercadolivre.com.br/MLB-5406362089?matt_tool=71970283"
     },
     {
-      "id": "MLB69613562",
-      "titulo": "Areia Higiênica Granulado Para Gatos 4kg Mandioca + Minerais Controle De Odores Alta Absorção Econômica Biodegradável Não Suja Patinhas Rende Mais Banheiro Sanitário Pet Super Premium",
-      "preco": 20.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_632907-MLA115701618116_092026-F.jpg",
+      "id": "MLB54961556",
+      "titulo": "Smartphone Samsung Galaxy A07 4G 256GB 8GB Preto 6,7\"",
+      "preco": 1169.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_895724-MLA91526198522_092025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Celulares",
+      "link": "https://produto.mercadolivre.com.br/MLB-4521167945?matt_tool=71970283"
+    },
+    {
+      "id": "MLB75466404",
+      "titulo": "Chaleira Elétrica Inox 1,8 Litros Jarra Aquecedora Com Desligamento Automático e Base Giratória Aquecimento Rápido Alça Ergonômica Para Escritório Casa Cozinha Viagem Fervedor De Água Moderno",
+      "preco": 40.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_950533-MLA115732440651_082026-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Eletrodomésticos",
+      "link": "https://produto.mercadolivre.com.br/MLB-5316929695?matt_tool=71970283"
+    },
+    {
+      "id": "MLB16016316",
+      "titulo": "Batedeira Prática Mondial 400W - B-44-B",
+      "preco": 74.75,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_877834-MLA99469550350_112025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Eletrodomésticos",
+      "link": "https://produto.mercadolivre.com.br/MLB-5419224953?matt_tool=71970283"
+    },
+    {
+      "id": "MLB67818618",
+      "titulo": "Tapete Higiênico Para Cachorro Descartável Alta Absorção 60x60 60 Unidades Secagem Rápida Cão Proteção Piso",
+      "preco": 59.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_939566-MLA116739049828_092026-F.jpg",
       "frete_gratis": false,
       "categoria": "Pet Shop",
-      "link": "https://produto.mercadolivre.com.br/MLB-5355508815?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-4944739929?matt_tool=71970283"
     },
     {
-      "id": "MLB18720058",
-      "titulo": "Ração P/caes Adultos Fresh Meat Sensitive Min E Peq 1kg",
-      "preco": 70.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_952496-MLA99450305980_112025-F.jpg",
+      "id": "MLB51858893",
+      "titulo": "Areia Higiênica Fina Biodegradável Para Gatos Kadi 4kg",
+      "preco": 37.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_984623-MLA100111381817_122025-F.jpg",
       "frete_gratis": true,
       "categoria": "Pet Shop",
-      "link": "https://produto.mercadolivre.com.br/MLB-5204403275?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-5342001653?matt_tool=71970283"
     },
     {
-      "id": "MLB18392608",
-      "titulo": "Fralda Descartável Turma da Mônica Baby M 50 Unidades 12 h",
-      "preco": 38.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_738296-MLA110297780960_052026-F.jpg",
+      "id": "MLB18392647",
+      "titulo": "Fraldas Descartáveis Baby Qu4troSec Com 62 Unidades Tamanho P Turma da Mônica",
+      "preco": 42.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_944831-MLA110297599476_052026-F.jpg",
       "frete_gratis": true,
       "categoria": "Bebês",
-      "link": "https://produto.mercadolivre.com.br/MLB-4361722689?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-5057706617?matt_tool=71970283"
     },
     {
-      "id": "MLB36436855",
-      "titulo": "Tapete de Atividades Para Bebê Piano Play Funny Dino Maxi Baby",
-      "preco": 66.91,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_872497-MLA95657283632_102025-F.jpg",
-      "frete_gratis": true,
+      "id": "MLB76397729",
+      "titulo": "Kit Mordedor para Bebê brinquedo Sensorial Silicone com Chocalho 8 Peças Coloridas",
+      "preco": 27.49,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_636014-MLA114307309560_082026-F.jpg",
+      "frete_gratis": false,
       "categoria": "Bebês",
-      "link": "https://produto.mercadolivre.com.br/MLB-7841069478?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-7337553420?matt_tool=71970283"
     },
     {
-      "id": "MLB19724101",
-      "titulo": "Garrafão Térmico Mantém Gelado Quente Cinza Plus 5l Termolar",
-      "preco": 81.8,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_622927-MLA105472804126_012026-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Esportes",
-      "link": "https://produto.mercadolivre.com.br/MLB-4141925325?matt_tool=71970283"
-    },
-    {
-      "id": "MLB19755099",
-      "titulo": "Protetor Solar Facial Antioleosidade FPS 80 Anthelios La Roche-Posay 40g",
-      "preco": 83.56,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_752201-MLA113617929791_062026-F.jpg",
+      "id": "MLB60416809",
+      "titulo": "Hidrabene Protetor facial Solar FPS 70 Toque Seco Antissinais Clareia a pele 50g",
+      "preco": 42.89,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_655805-MLA116956226142_092026-F.jpg",
       "frete_gratis": true,
       "categoria": "Beleza",
-      "link": "https://produto.mercadolivre.com.br/MLB-4195198970?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-7750913248?matt_tool=71970283"
     },
     {
-      "id": "MLB13409956",
-      "titulo": "Chaleira Eletrica Atacama 1,8l - Unitermi",
-      "preco": 35.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_965103-MLA99575749404_122025-F.jpg",
+      "id": "MLB37257779",
+      "titulo": "Shampoo Anticaspa Cabelos Normais a Oleosos, Dercos DS Vichy, 300g",
+      "preco": 184.67,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_646464-MLA112810161826_072026-F.jpg",
       "frete_gratis": true,
-      "categoria": "Eletrodomésticos",
-      "link": "https://produto.mercadolivre.com.br/MLB-7795185142?matt_tool=71970283"
-    },
-    {
-      "id": "MLB22871761",
-      "titulo": "Escova Rotativa Mondial Ceramica Tourmaline Ion 3x1 Erb-01 Rosa 127/220v",
-      "preco": 97.64,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_842831-MLA99963285219_112025-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Eletrodomésticos",
-      "link": "https://produto.mercadolivre.com.br/MLB-5454510697?matt_tool=71970283"
-    },
-    {
-      "id": "MLB39962085",
-      "titulo": "Fone De Ouvido Sem Fio Xiaomi Redmi Buds 6 Play Preto",
-      "preco": 68.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_715678-MLU78765136521_082024-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Eletrônicos",
-      "link": "https://produto.mercadolivre.com.br/MLB-7855775760?matt_tool=71970283"
-    },
-    {
-      "id": "MLB25263382",
-      "titulo": "Fone De Ouvido Bluetooth Bateria de Longa Duração Pro 4 Branco Conecta Rápido Fast Plug Com Case Carregador E Microfone",
-      "preco": 16.95,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_846832-MLA115693573446_092026-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Eletrônicos",
-      "link": "https://produto.mercadolivre.com.br/MLB-5419738455?matt_tool=71970283"
+      "categoria": "Beleza",
+      "link": "https://produto.mercadolivre.com.br/MLB-5759894972?matt_tool=71970283"
     }
   ]
 }
