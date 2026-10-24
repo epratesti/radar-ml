@@ -1,23 +1,32 @@
 {
-  "atualizado": "2026-10-24T18:05:55.799243-03:00",
+  "atualizado": "2026-10-24T19:06:07.478807-03:00",
   "itens": [
     {
-      "id": "MLB74743819",
-      "titulo": "Blister Triplo Pokémon ME05 Escuridão Absoluta",
-      "preco": 39.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_650344-MLA116714869329_082026-F.jpg",
+      "id": "MLB35276826",
+      "titulo": "Sanduicheira Grill 2 Em 1 Kian Preta Elétrica 750w Cor Preto,Seu Mixto Quente Ultra Rápido, e Outros Petiscos",
+      "preco": 55.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_811189-MLA117367368715_092026-F.jpg",
       "frete_gratis": true,
-      "categoria": "Brinquedos",
-      "link": "https://produto.mercadolivre.com.br/MLB-7230113462?matt_tool=71970283"
+      "categoria": "Eletrodomésticos",
+      "link": "https://produto.mercadolivre.com.br/MLB-5317988333?matt_tool=71970283"
     },
     {
-      "id": "MLB27065699",
-      "titulo": "Suporte Para Notebook e Macbook de Alumínio Dobrável Prateado Ajuste de Altura e Inclinação Confortáve Base Antiderrapante Portátil Articulado Reforçado Ergonomico Universal Para 14 a 20 Polegadas",
-      "preco": 22.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_862425-MLA95804056004_102025-F.jpg",
+      "id": "MLB50860259",
+      "titulo": "Xbox Cartão Presente R$ 100 Gift card (Digital)",
+      "preco": 100.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_639120-MLA116488850701_082026-F.jpg",
       "frete_gratis": false,
       "categoria": "Informática",
-      "link": "https://produto.mercadolivre.com.br/MLB-5579047914?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-5446906630?matt_tool=71970283"
+    },
+    {
+      "id": "MLB78777171",
+      "titulo": "O diário de tarefas gnomosas do floreante viajante - (Autor(es) original) Lacerda, Maidy - Outro Planeta - Capa Dura",
+      "preco": 57.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_690785-MLA117027871833_092026-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Papelaria",
+      "link": "https://produto.mercadolivre.com.br/MLB-5237430655?matt_tool=71970283"
     }
   ]
 }
