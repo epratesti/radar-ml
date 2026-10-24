@@ -1,32 +1,23 @@
 {
-  "atualizado": "2026-10-24T19:06:07.478807-03:00",
+  "atualizado": "2026-10-24T19:31:48.938212-03:00",
   "itens": [
     {
-      "id": "MLB35276826",
-      "titulo": "Sanduicheira Grill 2 Em 1 Kian Preta Elétrica 750w Cor Preto,Seu Mixto Quente Ultra Rápido, e Outros Petiscos",
-      "preco": 55.99,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_811189-MLA117367368715_092026-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Eletrodomésticos",
-      "link": "https://produto.mercadolivre.com.br/MLB-5317988333?matt_tool=71970283"
-    },
-    {
-      "id": "MLB50860259",
-      "titulo": "Xbox Cartão Presente R$ 100 Gift card (Digital)",
-      "preco": 100.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_639120-MLA116488850701_082026-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Informática",
-      "link": "https://produto.mercadolivre.com.br/MLB-5446906630?matt_tool=71970283"
-    },
-    {
-      "id": "MLB78777171",
-      "titulo": "O diário de tarefas gnomosas do floreante viajante - (Autor(es) original) Lacerda, Maidy - Outro Planeta - Capa Dura",
-      "preco": 57.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_690785-MLA117027871833_092026-F.jpg",
+      "id": "MLB66864521",
+      "titulo": "Copa do Mundo da Fifa 2026™ Kit com 12 envelopes de figurinhas Fifa World Cup 2026™ - Panini - Capa Mole",
+      "preco": 54.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_903022-MLA109894312615_032026-F.jpg",
       "frete_gratis": true,
       "categoria": "Papelaria",
-      "link": "https://produto.mercadolivre.com.br/MLB-5237430655?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-7626230080?matt_tool=71970283"
+    },
+    {
+      "id": "MLB50747611",
+      "titulo": "Tablet Xiaomi Redmi Pad 2 11'' 256gb 8 Ram Wi-fi Cor Cinza G Cor Cinza Gray",
+      "preco": 1339.89,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_746662-MLA100005494779_112025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Informática",
+      "link": "https://produto.mercadolivre.com.br/MLB-5958020162?matt_tool=71970283"
     }
   ]
 }
