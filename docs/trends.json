@@ -1,104 +1,86 @@
 {
-  "atualizado": "2026-10-24T02:47:04.941346-03:00",
+  "atualizado": "2026-10-24T04:35:38.222189-03:00",
   "itens": [
     {
-      "id": "MLB24028629",
-      "titulo": "Fone De Ouvido Soundcore by Anker P20i Graves Poderosos e Impactantes Bluetooth 5.3 30H de Reprodução Resistência à Água 2 Mics IA para Chamadas Claras Personalização de Som via App Cor Preto",
-      "preco": 146.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_730568-MLA99983575997_112025-F.jpg",
+      "id": "MLB18725403",
+      "titulo": "Proteína Growth Supplements Basic Whey em pó sabor Chocolate x 1kg",
+      "preco": 69.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_819000-MLA101180020755_122025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Esportes",
+      "link": "https://produto.mercadolivre.com.br/MLB-7686989210?matt_tool=71970283"
+    },
+    {
+      "id": "MLB21361292",
+      "titulo": "Loção Hidratante Corporal 3 Ceramidas Hidratação 120h CeraVe 473ml",
+      "preco": 81.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_930930-MLA118355221530_102026-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Beleza",
+      "link": "https://produto.mercadolivre.com.br/MLB-5438818723?matt_tool=71970283"
+    },
+    {
+      "id": "MLB18392841",
+      "titulo": "Lenços Umedecidos Huggies Rosto E Corpo 4 pcts - 192 Un",
+      "preco": 76.53,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_753827-MLA80015367155_102024-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Bebês",
+      "link": "https://produto.mercadolivre.com.br/MLB-7659250780?matt_tool=71970283"
+    },
+    {
+      "id": "MLB18715369",
+      "titulo": "Fraldas Pom Pom Protek M x 48 unidades",
+      "preco": 42.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_906144-MLA99932428557_112025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Bebês",
+      "link": "https://produto.mercadolivre.com.br/MLB-4696098935?matt_tool=71970283"
+    },
+    {
+      "id": "MLB27341794",
+      "titulo": "Ventilador de Coluna 40cm Super Power VSP40C 6 Pás 3 Velocidades Mondial",
+      "preco": 249.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_911216-MLA114704223805_072026-F.jpg",
       "frete_gratis": true,
       "categoria": "Eletrônicos",
-      "link": "https://produto.mercadolivre.com.br/MLB-5410852112?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-3954546539?matt_tool=71970283"
     },
     {
-      "id": "MLB42520227",
-      "titulo": "Smartwatch Xiaomi Redmi Watch 5 Lite 1.96 Preto",
-      "preco": 303.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_779006-MLA119924571115_102026-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Relógios",
-      "link": "https://produto.mercadolivre.com.br/MLB-5408519659?matt_tool=71970283"
-    },
-    {
-      "id": "MLB39230611",
-      "titulo": "Creatina Integralmédica sem sabor pacote x 2 frascos de 300g",
-      "preco": 98.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_951997-MLA99985874825_112025-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Esportes",
-      "link": "https://produto.mercadolivre.com.br/MLB-5343675053?matt_tool=71970283"
-    },
-    {
-      "id": "MLB19590092",
-      "titulo": "Ducha Eletrônica Lorenzetti Loren Shower Ultra 7500W 220V Branco",
-      "preco": 107.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_638677-MLA118516851287_092026-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Casa",
-      "link": "https://produto.mercadolivre.com.br/MLB-5451116897?matt_tool=71970283"
-    },
-    {
-      "id": "MLB62997555",
-      "titulo": "Balança Digital De Precisão De Cozinha Para Uso Domestico E Profissional Fitness Ideal Para Dietas Treinos Alimentos Confeitaria Nutrição Capacidade Máxima 10 Kg Branco",
-      "preco": 29.39,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_903976-MLA109751277529_032026-F.jpg",
+      "id": "MLB20306137",
+      "titulo": "Mixer Elétrico Portátil 2 em 1 Recarregável Potente Misturador de Bebidas e Ovos 3 Velocidades Usb Batedor e Fue Fouet Woosh",
+      "preco": 55.8,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_973679-MLA118375684594_102026-F.jpg",
       "frete_gratis": true,
       "categoria": "Eletrodomésticos",
-      "link": "https://produto.mercadolivre.com.br/MLB-7842033472?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-5441326559?matt_tool=71970283"
     },
     {
-      "id": "MLB75828998",
-      "titulo": "Tapete Higiênico Descartável Luxena para Cães e Gatos 50x60 cm com 50 Unidades e Eliminação de Odor Com Camadas De Proteção",
-      "preco": 45.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_955216-MLA114022806412_072026-F.jpg",
+      "id": "MLB50376945",
+      "titulo": "Fritadeira Elétrica Air Fryer Quad Fry Elgin 4,2 L, 1400w",
+      "preco": 241.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_927559-MLA99450788218_112025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Eletrodomésticos",
+      "link": "https://produto.mercadolivre.com.br/MLB-6895450992?matt_tool=71970283"
+    },
+    {
+      "id": "MLB15982835",
+      "titulo": "Simparic 20mg Antipulgas Cães 5 A 10kg 1 Comprimidos Zoetis",
+      "preco": 41.11,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_887764-MLA119593681229_102026-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Pet Shop",
+      "link": "https://produto.mercadolivre.com.br/MLB-5432587675?matt_tool=71970283"
+    },
+    {
+      "id": "MLB66492672",
+      "titulo": "Pazinha Higiênica Coletora Pá Caixa Areia Gatos Inox Peneira Prateado Boa Dica",
+      "preco": 18.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_822347-MLA109117266079_032026-F.jpg",
       "frete_gratis": false,
       "categoria": "Pet Shop",
-      "link": "https://produto.mercadolivre.com.br/MLB-4970343919?matt_tool=71970283"
-    },
-    {
-      "id": "MLB66044612",
-      "titulo": "Ração Golden Premium Especial Castrado Carne Frango Gato Adulto 10,1kg",
-      "preco": 136.99,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_936250-MLA107768596801_022026-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Pet Shop",
-      "link": "https://produto.mercadolivre.com.br/MLB-7772545280?matt_tool=71970283"
-    },
-    {
-      "id": "MLB42105593",
-      "titulo": "Fralda Protect & Sec 90 Unidades Tamanho Médio Personal Baby",
-      "preco": 79.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_754916-MLA99922830519_112025-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Bebês",
-      "link": "https://produto.mercadolivre.com.br/MLB-7835967532?matt_tool=71970283"
-    },
-    {
-      "id": "MLB18392724",
-      "titulo": "Huggies Fralda Descartável Premium Natural Care RN 34 Unidades",
-      "preco": 32.99,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_837020-MLA99452042258_112025-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Bebês",
-      "link": "https://produto.mercadolivre.com.br/MLB-7301208330?matt_tool=71970283"
-    },
-    {
-      "id": "MLB18953093",
-      "titulo": "Whey Protein Growth Concentrado 1kg – Sabor Baunilha",
-      "preco": 143.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_824274-MLA98770399871_112025-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Esportes",
-      "link": "https://produto.mercadolivre.com.br/MLB-5432274779?matt_tool=71970283"
-    },
-    {
-      "id": "MLB12406685",
-      "titulo": "Anabolic Mass 28500 3kg Profit Labs Sabor Chocolate",
-      "preco": 99.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_616506-MLA110075703952_042026-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Esportes",
-      "link": "https://produto.mercadolivre.com.br/MLB-5453142579?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-5342925629?matt_tool=71970283"
     }
   ]
 }
