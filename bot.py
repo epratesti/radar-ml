@@ -1,6 +1,6 @@
 """Radar: produtos diversificados do Mercado Livre → Telegram.
-Evita repetição entre execuções (bloqueio por ID e título normalizado).
-Busca ampla em várias categorias.
+Evita repetição entre execuções (bloqueio por ID, item_id e título normalizado).
+Também bloqueia itens já presentes em docs/trends.json.
 Horário SP: 07h–22h / madrugada 23h, 02h, 05h
 """
 import os, json, html, re, random, datetime as dt
@@ -12,7 +12,7 @@ AFF_ID = os.getenv("ML_AFFILIATE_ID", "71970283")
 AFF_PARAMS = os.getenv("ML_AFFILIATE_PARAMS", "matt_tool={id}")
 TG_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TG_CHAT = os.getenv("TELEGRAM_CHAT_ID")
-POSTS_POR_GRUPO = int(os.getenv("POSTS_POR_GRUPO", "3"))
+POSTS_POR_GRUPO = int(os.getenv("POSTS_POR_GRUPO", "2"))
 MAX_POSTS = int(os.getenv("MAX_POSTS", "12"))
 # Dias sem repetir o mesmo produto (ID ou título similar). Padrão: 7
 REPETIR_APOS_DIAS = int(os.getenv("REPETIR_APOS_DIAS", "7"))
@@ -22,7 +22,6 @@ TRENDS = ROOT / "docs" / "trends.json"
 STATE = ROOT / "state" / "posted.json"
 TZ = ZoneInfo("America/Sao_Paulo")
 
-# Grupos amplos cobrindo o catálogo do ML Brasil
 GRUPOS = [
     {
         "nome": "Eletrônicos e Informática",
@@ -105,7 +104,7 @@ CAT_NOMES = {
 }
 
 S = requests.Session()
-S.headers.update({"User-Agent": "radar-ml/2.0", "Accept": "application/json"})
+S.headers.update({"User-Agent": "radar-ml/2.1", "Accept": "application/json"})
 
 
 def headers_ml():
@@ -133,6 +132,13 @@ def normalizar_titulo(t: str) -> str:
     return t[:80]
 
 
+def chave_titulo_curta(t: str) -> str:
+    """Primeiras palavras do título para pegar variações do mesmo produto."""
+    nt = normalizar_titulo(t)
+    palavras = nt.split()
+    return " ".join(palavras[:6]) if palavras else ""
+
+
 def carregar_estado():
     STATE.parent.mkdir(parents=True, exist_ok=True)
     try:
@@ -150,10 +156,36 @@ def carregar_estado():
         return {"ids": {}, "titulos": {}}
 
 
+def incorporar_trends(estado, agora):
+    """Inclui produtos do trends.json no bloqueio (evita repetir o lote anterior)."""
+    if REPETIR_APOS_DIAS <= 0:
+        return estado
+    try:
+        if not TRENDS.exists():
+            return estado
+        data = json.loads(TRENDS.read_text(encoding="utf-8") or "{}")
+        itens = data.get("itens") or []
+        ts = data.get("atualizado") or agora.isoformat()
+        for it in itens:
+            pid = str(it.get("id") or "")
+            titulo = it.get("titulo") or ""
+            if pid and pid not in estado["ids"]:
+                estado["ids"][pid] = ts
+            nt = normalizar_titulo(titulo)
+            if nt and nt not in estado["titulos"]:
+                estado["titulos"][nt] = ts
+            ct = chave_titulo_curta(titulo)
+            if ct and ct not in estado["titulos"]:
+                estado["titulos"][ct] = ts
+        print(f"Trends incorporados: +{len(itens)} itens no bloqueio")
+    except Exception as e:
+        print("Aviso ao ler trends:", e)
+    return estado
+
+
 def limpar_estado(estado, agora):
     """Remove entradas antigas além de REPETIR_APOS_DIAS."""
     if REPETIR_APOS_DIAS <= 0:
-        # Ainda assim mantemos o estado da execução atual; limpeza total só se explicitamente 0
         return {"ids": {}, "titulos": {}}
     limite = agora - dt.timedelta(days=REPETIR_APOS_DIAS)
     ids_limpos, titulos_limpos = {}, {}
@@ -172,24 +204,44 @@ def limpar_estado(estado, agora):
     return {"ids": ids_limpos, "titulos": titulos_limpos}
 
 
-def ja_postado(estado, pid, titulo):
+def ja_postado(estado, pid, titulo, item_id=None):
     """Verifica se produto (ou título muito parecido) já foi postado recentemente."""
     if REPETIR_APOS_DIAS <= 0:
         return False
-    if str(pid) in estado.get("ids", {}):
+    ids = estado.get("ids", {})
+    if str(pid) in ids:
         return True
+    if item_id and str(item_id) in ids:
+        return True
+    titulos = estado.get("titulos", {})
     nt = normalizar_titulo(titulo)
-    return bool(nt and nt in estado.get("titulos", {}))
+    if nt and nt in titulos:
+        return True
+    ct = chave_titulo_curta(titulo)
+    if ct and ct in titulos:
+        return True
+    # Checagem extra: título curto já bloqueado como prefixo
+    if ct:
+        for t in titulos:
+            if t.startswith(ct) or ct.startswith(t[: max(10, len(ct) - 5)]):
+                return True
+    return False
 
 
-def registrar_postado(estado, pid, titulo, agora):
+def registrar_postado(estado, pid, titulo, agora, item_id=None):
     """Registra produto postado para evitar repetição."""
     if REPETIR_APOS_DIAS <= 0:
         return
-    estado.setdefault("ids", {})[str(pid)] = agora.isoformat()
+    ts = agora.isoformat()
+    estado.setdefault("ids", {})[str(pid)] = ts
+    if item_id:
+        estado["ids"][str(item_id)] = ts
     nt = normalizar_titulo(titulo)
     if nt:
-        estado.setdefault("titulos", {})[nt] = agora.isoformat()
+        estado.setdefault("titulos", {})[nt] = ts
+    ct = chave_titulo_curta(titulo)
+    if ct:
+        estado.setdefault("titulos", {})[ct] = ts
 
 
 def escolher_oferta(results):
@@ -278,7 +330,7 @@ def produto_de_search_item(item, categoria_label):
 def buscar_varios_query(query, cat_id, h, vistos_ids, vistos_titulos, label, quantos):
     achados = []
     try:
-        offset = random.choice([0, 0, 10, 20, 30, 40, 50])
+        offset = random.choice([0, 10, 20, 30, 40, 50, 60, 80])
         params = {
             "q": query, "limit": 50, "offset": offset,
             "sort": random.choice(["relevance", "price_asc", "sold_quantity_desc"]),
@@ -294,10 +346,13 @@ def buscar_varios_query(query, cat_id, h, vistos_ids, vistos_titulos, label, qua
             if len(achados) >= quantos:
                 break
             pid = str(item.get("catalog_product_id") or item.get("id") or "")
-            if not pid or pid in vistos_ids:
+            mid = str(item.get("id") or "")
+            if not pid or pid in vistos_ids or (mid and mid in vistos_ids):
                 continue
-            nt = normalizar_titulo(item.get("title") or "")
-            if nt and nt in vistos_titulos:
+            titulo = item.get("title") or ""
+            nt = normalizar_titulo(titulo)
+            ct = chave_titulo_curta(titulo)
+            if (nt and nt in vistos_titulos) or (ct and ct in vistos_titulos):
                 continue
             p = None
             if item.get("catalog_product_id"):
@@ -306,10 +361,19 @@ def buscar_varios_query(query, cat_id, h, vistos_ids, vistos_titulos, label, qua
                 p = produto_de_search_item(item, label)
             if not p:
                 continue
-            # Validação mínima: preço > 0 e título não vazio (já garantido)
+            if p["id"] in vistos_ids:
+                continue
+            nt2 = normalizar_titulo(p["titulo"])
+            ct2 = chave_titulo_curta(p["titulo"])
+            if (nt2 and nt2 in vistos_titulos) or (ct2 and ct2 in vistos_titulos):
+                continue
             vistos_ids.add(p["id"])
-            if nt:
-                vistos_titulos.add(nt)
+            if p.get("item_id"):
+                vistos_ids.add(str(p["item_id"]))
+            if nt2:
+                vistos_titulos.add(nt2)
+            if ct2:
+                vistos_titulos.add(ct2)
             achados.append(p)
             print(f"  OK [{label}] R$ {p['preco']:.2f} — {p['titulo'][:50]}")
     except Exception as e:
@@ -324,7 +388,7 @@ def buscar_varios_highlights(cat_id, h, vistos_ids, vistos_titulos, quantos):
         r = S.get(f"{API}/highlights/MLB/category/{cat_id}", headers=h, timeout=20)
         if r.status_code != 200:
             return achados
-        items = list(r.json().get("content", [])[:30])
+        items = list(r.json().get("content", [])[:40])
         random.shuffle(items)
         for item in items:
             if len(achados) >= quantos:
@@ -336,11 +400,16 @@ def buscar_varios_highlights(cat_id, h, vistos_ids, vistos_titulos, quantos):
             if not p:
                 continue
             nt = normalizar_titulo(p["titulo"])
-            if nt and nt in vistos_titulos:
+            ct = chave_titulo_curta(p["titulo"])
+            if (nt and nt in vistos_titulos) or (ct and ct in vistos_titulos):
                 continue
             vistos_ids.add(p["id"])
+            if p.get("item_id"):
+                vistos_ids.add(str(p["item_id"]))
             if nt:
                 vistos_titulos.add(nt)
+            if ct:
+                vistos_titulos.add(ct)
             achados.append(p)
             print(f"  OK [{nome}/hl] R$ {p['preco']:.2f} — {p['titulo'][:50]}")
     except Exception as e:
@@ -375,7 +444,7 @@ def montar_diversificado(h, estado):
     vistos_titulos = set(estado.get("titulos", {}).keys())
     escolhidos = []
     grupos = list(GRUPOS)
-    random.shuffle(grupos)  # ordem dos grupos varia a cada run
+    random.shuffle(grupos)
     for grupo in grupos:
         if len(escolhidos) >= MAX_POSTS:
             break
@@ -440,15 +509,18 @@ def main():
     if not h:
         return
     estado = limpar_estado(carregar_estado(), agora)
+    estado = incorporar_trends(estado, agora)
     print(f"Bloqueados (histórico): {len(estado.get('ids', {}))} ids, {len(estado.get('titulos', {}))} títulos")
     ranking = montar_diversificado(h, estado)
-    print("Produtos selecionados:", len(ranking))
+    # Filtra de novo na hora de montar o ranking final
+    ranking = [p for p in ranking if not ja_postado(estado, p["id"], p["titulo"], p.get("item_id"))]
+    print("Produtos selecionados (após filtro):", len(ranking))
     TRENDS.parent.mkdir(parents=True, exist_ok=True)
     trends_itens = [{k: v for k, v in p.items() if k != "item_id"} for p in ranking]
     TRENDS.write_text(json.dumps({"atualizado": agora.isoformat(), "itens": trends_itens},
                                  ensure_ascii=False, indent=2), encoding="utf-8")
     if not ranking:
-        print("Nada a postar")
+        print("Nada a postar (tudo já bloqueado ou busca vazia)")
         salvar_estado(estado)
         return
     if not (TG_TOKEN and TG_CHAT):
@@ -463,11 +535,11 @@ def main():
     for p in ranking:
         if enviados >= MAX_POSTS:
             break
-        if ja_postado(estado, p["id"], p["titulo"]):
+        if ja_postado(estado, p["id"], p["titulo"], p.get("item_id")):
             print(f"  Pula (já postado): {p['titulo'][:50]}")
             continue
         if postar(p):
-            registrar_postado(estado, p["id"], p["titulo"], agora)
+            registrar_postado(estado, p["id"], p["titulo"], agora, p.get("item_id"))
             enviados += 1
             salvar_estado(estado)
     salvar_estado(estado)
