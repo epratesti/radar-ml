@@ -1,23 +1,23 @@
 {
-  "atualizado": "2026-10-25T09:36:01.725111-03:00",
+  "atualizado": "2026-10-25T10:12:15.434209-03:00",
   "itens": [
     {
-      "id": "MLB19438138",
-      "titulo": "Cartas de um diabo a seu aprendiz - Lewis, C.S. - Thomas Nelson Brasil - Capa Dura",
-      "preco": 38.89,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_753389-MLA113421179343_062026-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Papelaria",
-      "link": "https://produto.mercadolivre.com.br/MLB-2760522602?matt_tool=71970283"
-    },
-    {
-      "id": "MLB57081243",
-      "titulo": "Console Playstation®5 Slim Digital - Pacote Astro Bot E Gran Turismo 7 - Branco",
-      "preco": 2399.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_667226-MLA96871260244_112025-F.jpg",
+      "id": "MLB34016199",
+      "titulo": "Microfone de Lapela Sem Fio Hollyland Lark M2 Combo (USB-C, Lightning e Câmera)",
+      "preco": 598.5,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_644387-MLA119786973369_102026-F.jpg",
       "frete_gratis": true,
       "categoria": "Games",
-      "link": "https://produto.mercadolivre.com.br/MLB-5271087369?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-7845639456?matt_tool=71970283"
+    },
+    {
+      "id": "MLB19453772",
+      "titulo": "Livro Verity, Colleen Hoover, Português, Galera, 2021",
+      "preco": 39.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_909003-MLU50881573316_072022-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Papelaria",
+      "link": "https://produto.mercadolivre.com.br/MLB-5434239475?matt_tool=71970283"
     }
   ]
 }
