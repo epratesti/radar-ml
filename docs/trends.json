@@ -1,32 +1,23 @@
 {
-  "atualizado": "2026-10-25T08:06:39.886597-03:00",
+  "atualizado": "2026-10-25T09:09:49.765715-03:00",
   "itens": [
     {
-      "id": "MLB19305160",
-      "titulo": "Libro O diário de uma princesa desastrada, Um Romance, de Lacerda, Maidy. Editorial Outro Planeta., tapa mole, en português (2022)",
-      "preco": 71.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_960774-MLU50455305870_062022-F.jpg",
+      "id": "MLB74135784",
+      "titulo": "Eu duvido você terminar este livro - Mafra, Giuliana - Editora Planeta - Capa Mole",
+      "preco": 41.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_716741-MLA113066519028_072026-F.jpg",
       "frete_gratis": true,
       "categoria": "Papelaria",
-      "link": "https://produto.mercadolivre.com.br/MLB-7170665470?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-4811259715?matt_tool=71970283"
     },
     {
-      "id": "MLB24473062",
-      "titulo": "Controle GameSir G7 SE com Fio para Xbox One Series S X PC Hall Effect Botões Mecânicos Cor Branco",
-      "preco": 230.13,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_876806-MLA99469873464_112025-F.jpg",
-      "frete_gratis": true,
+      "id": "MLB32333269",
+      "titulo": "Nintendo Gift Card eShop R$ 50 (Digital)",
+      "preco": 50.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_845854-MLA115155718544_082026-F.jpg",
+      "frete_gratis": false,
       "categoria": "Games",
-      "link": "https://produto.mercadolivre.com.br/MLB-5958045928?matt_tool=71970283"
-    },
-    {
-      "id": "MLB19976500",
-      "titulo": "Panela De Pressão Panelux Alumínio Polido 7 Litros Cor Cinza",
-      "preco": 98.61,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_844741-MLA100054735233_122025-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Casa",
-      "link": "https://produto.mercadolivre.com.br/MLB-3729506770?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-5408299164?matt_tool=71970283"
     }
   ]
 }
