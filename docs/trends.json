@@ -1,23 +1,41 @@
 {
-  "atualizado": "2026-10-24T22:13:49.284175-03:00",
+  "atualizado": "2026-10-25T03:16:18.730723-03:00",
   "itens": [
     {
-      "id": "MLB19424544",
-      "titulo": "O homem mais rico da Babilônia - Clason, George S - Harper Business - Capa Mole",
-      "preco": 21.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_980167-MLA112269697812_062026-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Papelaria",
-      "link": "https://produto.mercadolivre.com.br/MLB-4651389402?matt_tool=71970283"
+      "id": "MLB21278806",
+      "titulo": "Filamento 3D Petg Branco Premium Resistente Impressora 3D Master Print 1,75mm - 1kg",
+      "preco": 64.91,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_913849-MLA105989588051_012026-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Informática",
+      "link": "https://produto.mercadolivre.com.br/MLB-5457089905?matt_tool=71970283"
     },
     {
-      "id": "MLB72674962",
-      "titulo": "Mouse Recarregável Bluetooth Wireless Ergonômico Óptico Informática Gamer Led Rgb Notebook Pc Tablet Smartphone Blackbom",
-      "preco": 20.59,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_698387-MLA112152526650_062026-F.jpg",
+      "id": "MLB49822923",
+      "titulo": "Batedeira Planetária Philco 900W 5L Preta 12 Velocidades Turbo PBP90A",
+      "preco": 284.05,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_728713-MLA99416610212_112025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Eletrodomésticos",
+      "link": "https://produto.mercadolivre.com.br/MLB-5216351977?matt_tool=71970283"
+    },
+    {
+      "id": "MLB19299491",
+      "titulo": "Hábitos atômicos - Clear, James - Editora Alta Books - Capa Mole",
+      "preco": 41.41,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_653257-MLU50462500949_062022-F.jpg",
       "frete_gratis": false,
-      "categoria": "Informática",
-      "link": "https://produto.mercadolivre.com.br/MLB-6943757138?matt_tool=71970283"
+      "categoria": "Papelaria",
+      "link": "https://produto.mercadolivre.com.br/MLB-3845254515?matt_tool=71970283"
+    },
+    {
+      "id": "MLB45617876",
+      "titulo": "Attracione Men perfume Masculino Com Feromônios Ativados 25 mL",
+      "preco": 55.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_948198-MLA81769955450_012025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Beleza",
+      "link": "https://produto.mercadolivre.com.br/MLB-4693409499?matt_tool=71970283"
     }
   ]
 }
