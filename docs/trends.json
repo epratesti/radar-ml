@@ -1,23 +1,23 @@
 {
-  "atualizado": "2026-10-25T09:09:49.765715-03:00",
+  "atualizado": "2026-10-25T09:36:01.725111-03:00",
   "itens": [
     {
-      "id": "MLB74135784",
-      "titulo": "Eu duvido você terminar este livro - Mafra, Giuliana - Editora Planeta - Capa Mole",
-      "preco": 41.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_716741-MLA113066519028_072026-F.jpg",
-      "frete_gratis": true,
+      "id": "MLB19438138",
+      "titulo": "Cartas de um diabo a seu aprendiz - Lewis, C.S. - Thomas Nelson Brasil - Capa Dura",
+      "preco": 38.89,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_753389-MLA113421179343_062026-F.jpg",
+      "frete_gratis": false,
       "categoria": "Papelaria",
-      "link": "https://produto.mercadolivre.com.br/MLB-4811259715?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-2760522602?matt_tool=71970283"
     },
     {
-      "id": "MLB32333269",
-      "titulo": "Nintendo Gift Card eShop R$ 50 (Digital)",
-      "preco": 50.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_845854-MLA115155718544_082026-F.jpg",
-      "frete_gratis": false,
+      "id": "MLB57081243",
+      "titulo": "Console Playstation®5 Slim Digital - Pacote Astro Bot E Gran Turismo 7 - Branco",
+      "preco": 2399.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_667226-MLA96871260244_112025-F.jpg",
+      "frete_gratis": true,
       "categoria": "Games",
-      "link": "https://produto.mercadolivre.com.br/MLB-5408299164?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-5271087369?matt_tool=71970283"
     }
   ]
 }
