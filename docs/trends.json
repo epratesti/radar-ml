@@ -1,41 +1,23 @@
 {
-  "atualizado": "2026-10-25T12:08:08.386015-03:00",
+  "atualizado": "2026-10-25T13:08:17.332250-03:00",
   "itens": [
     {
-      "id": "MLB63615370",
-      "titulo": "Creme Hidratante Facial Principia Ch-01 Karité Glicerina 50g Todo Tipo De Pele Dia/noite",
-      "preco": 38.69,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_918525-MLA102373426972_122025-F.jpg",
+      "id": "MLB16602518",
+      "titulo": "Liquidificador Oster OLIQ610 1400w Full 3,2L Cor Preto",
+      "preco": 144.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_864038-MLA100027785333_122025-F.jpg",
       "frete_gratis": true,
-      "categoria": "Beleza",
-      "link": "https://produto.mercadolivre.com.br/MLB-7839016640?matt_tool=71970283"
+      "categoria": "Eletrodomésticos",
+      "link": "https://produto.mercadolivre.com.br/MLB-7722868774?matt_tool=71970283"
     },
     {
-      "id": "MLB42172335",
-      "titulo": "Cama Gato Nuvem Caminha Pet Redonda Ninho Soft Macia 50x50cm Cor Bege",
-      "preco": 49.71,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_614860-MLA109764006388_042026-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Pet Shop",
-      "link": "https://produto.mercadolivre.com.br/MLB-4232262827?matt_tool=71970283"
-    },
-    {
-      "id": "MLB59866601",
-      "titulo": "Jogo De Lençol Queen 3 Peças 400 Fios C/ Elástico Hotel Pink Liso",
-      "preco": 32.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_808562-MLA115342218281_072026-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Casa",
-      "link": "https://produto.mercadolivre.com.br/MLB-5787642520?matt_tool=71970283"
-    },
-    {
-      "id": "MLB69284011",
-      "titulo": "Kit 2 Controles Sem Fio Bluetooth Para Ps4 Videogame Gamepass Steam Tv Smart Gamer Celular Joystick Manete - Crowley",
-      "preco": 99.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_923078-MLA117702509479_092026-F.jpg",
+      "id": "MLB22341315",
+      "titulo": "Fone De Ouvido Com Fio Usb H390 Rosa Logitech Luz Nude",
+      "preco": 175.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_607621-MLA99549027968_122025-F.jpg",
       "frete_gratis": true,
       "categoria": "Games",
-      "link": "https://produto.mercadolivre.com.br/MLB-4664879549?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-5366835711?matt_tool=71970283"
     }
   ]
 }
