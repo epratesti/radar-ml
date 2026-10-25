@@ -1,41 +1,32 @@
 {
-  "atualizado": "2026-10-25T07:06:12.228783-03:00",
+  "atualizado": "2026-10-25T08:06:39.886597-03:00",
   "itens": [
     {
-      "id": "MLB65764004",
-      "titulo": "Fones De Ouvido Usb-c Tipo C Com Microfone Integrado Som Estéreo Alta Qualidade Controle Chamadas Compatível Com iPhone 15 16 17 18 Android Samsung Xiaomi Motorola PLUG & PLAY Premium Eletric Teck",
-      "preco": 22.3,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_693659-MLA113618776783_062026-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Eletrônicos",
-      "link": "https://produto.mercadolivre.com.br/MLB-6290239732?matt_tool=71970283"
-    },
-    {
-      "id": "MLB53817780",
-      "titulo": "Câmera Lâmpada Jortan Giratória 360° Visão Noturna Wi-Fi Full HD E27",
-      "preco": 82.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_967723-MLA89628184976_082025-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Casa",
-      "link": "https://produto.mercadolivre.com.br/MLB-4787621485?matt_tool=71970283"
-    },
-    {
-      "id": "MLB44866959",
-      "titulo": "Protetor Solar Antimanchas Com Cor 2 Em Bastão 90fps Sallve",
-      "preco": 57.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_690853-MLA99434991990_112025-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Beleza",
-      "link": "https://produto.mercadolivre.com.br/MLB-7760359420?matt_tool=71970283"
-    },
-    {
-      "id": "MLB39606339",
-      "titulo": "Livro O Massacre Da Família Hope De Riley Sager Edição 1 Em Português 2024 Editora Intrínseca",
-      "preco": 52.4,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_656839-MLA112270175202_062026-F.jpg",
+      "id": "MLB19305160",
+      "titulo": "Libro O diário de uma princesa desastrada, Um Romance, de Lacerda, Maidy. Editorial Outro Planeta., tapa mole, en português (2022)",
+      "preco": 71.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_960774-MLU50455305870_062022-F.jpg",
       "frete_gratis": true,
       "categoria": "Papelaria",
-      "link": "https://produto.mercadolivre.com.br/MLB-5097723592?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-7170665470?matt_tool=71970283"
+    },
+    {
+      "id": "MLB24473062",
+      "titulo": "Controle GameSir G7 SE com Fio para Xbox One Series S X PC Hall Effect Botões Mecânicos Cor Branco",
+      "preco": 230.13,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_876806-MLA99469873464_112025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Games",
+      "link": "https://produto.mercadolivre.com.br/MLB-5958045928?matt_tool=71970283"
+    },
+    {
+      "id": "MLB19976500",
+      "titulo": "Panela De Pressão Panelux Alumínio Polido 7 Litros Cor Cinza",
+      "preco": 98.61,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_844741-MLA100054735233_122025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Casa",
+      "link": "https://produto.mercadolivre.com.br/MLB-3729506770?matt_tool=71970283"
     }
   ]
 }
