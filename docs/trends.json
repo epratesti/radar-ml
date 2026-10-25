@@ -1,23 +1,41 @@
 {
-  "atualizado": "2026-10-25T11:08:53.010743-03:00",
+  "atualizado": "2026-10-25T12:08:08.386015-03:00",
   "itens": [
     {
-      "id": "MLB39766120",
-      "titulo": "SSD Kingston NV3 1TB M.2 2280 PCIe 4.0 NVMe 6000 MB/s",
-      "preco": 964.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_930129-MLU78451929490_082024-F.jpg",
+      "id": "MLB63615370",
+      "titulo": "Creme Hidratante Facial Principia Ch-01 Karité Glicerina 50g Todo Tipo De Pele Dia/noite",
+      "preco": 38.69,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_918525-MLA102373426972_122025-F.jpg",
       "frete_gratis": true,
-      "categoria": "Games",
-      "link": "https://produto.mercadolivre.com.br/MLB-5414137162?matt_tool=71970283"
+      "categoria": "Beleza",
+      "link": "https://produto.mercadolivre.com.br/MLB-7839016640?matt_tool=71970283"
     },
     {
-      "id": "MLB41503075",
-      "titulo": "365 hábitos simples e poderosos - Houch, Paulo - On Line Editora - Capa Mole",
-      "preco": 26.02,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_798913-MLA118815402075_102026-F.jpg",
+      "id": "MLB42172335",
+      "titulo": "Cama Gato Nuvem Caminha Pet Redonda Ninho Soft Macia 50x50cm Cor Bege",
+      "preco": 49.71,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_614860-MLA109764006388_042026-F.jpg",
+      "frete_gratis": false,
+      "categoria": "Pet Shop",
+      "link": "https://produto.mercadolivre.com.br/MLB-4232262827?matt_tool=71970283"
+    },
+    {
+      "id": "MLB59866601",
+      "titulo": "Jogo De Lençol Queen 3 Peças 400 Fios C/ Elástico Hotel Pink Liso",
+      "preco": 32.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_808562-MLA115342218281_072026-F.jpg",
+      "frete_gratis": false,
+      "categoria": "Casa",
+      "link": "https://produto.mercadolivre.com.br/MLB-5787642520?matt_tool=71970283"
+    },
+    {
+      "id": "MLB69284011",
+      "titulo": "Kit 2 Controles Sem Fio Bluetooth Para Ps4 Videogame Gamepass Steam Tv Smart Gamer Celular Joystick Manete - Crowley",
+      "preco": 99.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_923078-MLA117702509479_092026-F.jpg",
       "frete_gratis": true,
-      "categoria": "Papelaria",
-      "link": "https://produto.mercadolivre.com.br/MLB-5159270170?matt_tool=71970283"
+      "categoria": "Games",
+      "link": "https://produto.mercadolivre.com.br/MLB-4664879549?matt_tool=71970283"
     }
   ]
 }
