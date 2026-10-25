@@ -1,23 +1,23 @@
 {
-  "atualizado": "2026-10-24T21:07:37.227718-03:00",
+  "atualizado": "2026-10-24T22:07:04.560054-03:00",
   "itens": [
     {
-      "id": "MLB79600848",
-      "titulo": "As Aventuras de Nando - Dearo, Gabriel - Editora Planeta - Capa Mole",
-      "preco": 66.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_602075-MLA116406235974_092026-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Papelaria",
-      "link": "https://produto.mercadolivre.com.br/MLB-5438395001?matt_tool=71970283"
+      "id": "MLB51757399",
+      "titulo": "Razer Gold Digital R$ 30 (digital)",
+      "preco": 30.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_634164-MLA115097345074_082026-F.jpg",
+      "frete_gratis": false,
+      "categoria": "Informática",
+      "link": "https://produto.mercadolivre.com.br/MLB-4117910335?matt_tool=71970283"
     },
     {
-      "id": "MLB23487120",
-      "titulo": "Filamento Voolt 3d Pla Verde Efeito Fosco Velvet Premium 1kg Verde Velvet",
-      "preco": 107.3,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_647571-MLA116549201715_082026-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Informática",
-      "link": "https://produto.mercadolivre.com.br/MLB-5288497247?matt_tool=71970283"
+      "id": "MLB72129598",
+      "titulo": "Revista Físico Dark News Revistas [revistas] Dark Lab De Brasil",
+      "preco": 38.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_628429-MLA111629542136_062026-F.jpg",
+      "frete_gratis": false,
+      "categoria": "Papelaria",
+      "link": "https://produto.mercadolivre.com.br/MLB-6905632066?matt_tool=71970283"
     }
   ]
 }
