@@ -15,7 +15,6 @@ TG_CHAT = os.getenv("TELEGRAM_CHAT_ID")
 POSTS_POR_GRUPO = int(os.getenv("POSTS_POR_GRUPO", "2"))
 MAX_POSTS = int(os.getenv("MAX_POSTS", "8"))
 REPETIR_APOS_DIAS = int(os.getenv("REPETIR_APOS_DIAS", "3"))
-# quantos posts Shopee por execução (resto vem do ML)
 SHOPEE_POSTS = int(os.getenv("SHOPEE_POSTS", "3"))
 
 SHOPEE_APP_ID = os.getenv("SHOPEE_APP_ID", "").strip()
@@ -39,12 +38,11 @@ GRUPOS = [
      "queries": ["whey protein", "creatina", "perfume", "shampoo", "kit skincare", "bola futebol", "garrafa térmica"]},
 ]
 
-# queries extras usadas na Shopee (mesmos temas)
 SHOPEE_QUERIES = [
     "fone bluetooth", "smartwatch", "carregador turbo", "power bank",
     "air fryer", "liquidificador", "aspirador", "cafeteira",
-    "tênis", "mochila", "relógio", "chinelo",
-    "whey protein", "perfume", "kit skincare", "garrafa térmica",
+    "tenis", "mochila", "relogio", "chinelo",
+    "whey protein", "perfume", "kit skincare", "garrafa termica",
 ]
 
 CAT_NOMES = {
@@ -292,14 +290,10 @@ def montar_ml(h, estado):
     return out[:max_ml]
 
 
-# ---------- Shopee Affiliate ----------
-
 def shopee_request(query_str: str):
-    """POST GraphQL autenticado (SHA256 AppId+Timestamp+Payload+Secret)."""
     if not (SHOPEE_APP_ID and SHOPEE_SECRET):
         return None
     payload_obj = {"query": query_str}
-    # Payload exatamente como será enviado no body
     payload = json.dumps(payload_obj, ensure_ascii=False, separators=(",", ":"))
     ts = str(int(time.time()))
     factor = f"{SHOPEE_APP_ID}{ts}{payload}{SHOPEE_SECRET}"
@@ -316,11 +310,11 @@ def buscar_shopee(keyword, vistos, vistos_t, n):
     achados = []
     if not (SHOPEE_APP_ID and SHOPEE_SECRET):
         return achados
-    # escape aspas no keyword
-    kw = keyword.replace('"', "\\"")
+    # json.dumps inclui aspas e escapa corretamente
+    kw = json.dumps(keyword, ensure_ascii=False)
     q = (
         "{"
-        f'productOfferV2(keyword: "{kw}", listType: 0, sortType: 2, page: 1, limit: 20) {{'
+        f"productOfferV2(keyword: {kw}, listType: 0, sortType: 2, page: 1, limit: 20) {{"
         "nodes { itemId productName offerLink imageUrl priceMin priceMax "
         "priceDiscountRate sales commissionRate shopName }"
         " pageInfo { page limit hasNextPage }"
@@ -331,11 +325,11 @@ def buscar_shopee(keyword, vistos, vistos_t, n):
         if r is None:
             return achados
         if r.status_code != 200:
-            print(f"  Shopee '{keyword}': HTTP {r.status_code} {r.text[:120]}")
+            print(f"  Shopee '{keyword}': HTTP {r.status_code} {r.text[:180]}")
             return achados
         data = r.json()
         if data.get("errors"):
-            print(f"  Shopee errors: {data['errors'][:2]}")
+            print(f"  Shopee errors: {str(data['errors'])[:200]}")
             return achados
         nodes = ((data.get("data") or {}).get("productOfferV2") or {}).get("nodes") or []
         random.shuffle(nodes)
