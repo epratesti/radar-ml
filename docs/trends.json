@@ -1,4 +1,77 @@
 {
-  "atualizado": "2026-10-26T11:30:31.113373-03:00",
-  "itens": []
+  "atualizado": "2026-10-26T11:37:58.180135-03:00",
+  "itens": [
+    {
+      "id": "MLB17001072",
+      "titulo": "Lava Roupas Líquido Omo Lavanderia Profissional Lavagem 7 L",
+      "preco": 39.75,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_685429-MLA116551180045_082026-F.jpg",
+      "frete_gratis": false,
+      "categoria": "Casa",
+      "link": "https://produto.mercadolivre.com.br/MLB-5063201555?matt_tool=71970283"
+    },
+    {
+      "id": "MLB19590092",
+      "titulo": "Ducha Eletrônica Lorenzetti Loren Shower Ultra 7500W 220V Branco",
+      "preco": 97.11,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_638677-MLA118516851287_092026-F.jpg",
+      "frete_gratis": false,
+      "categoria": "Casa",
+      "link": "https://produto.mercadolivre.com.br/MLB-3918408487?matt_tool=71970283"
+    },
+    {
+      "id": "MLB40182325",
+      "titulo": "Whey Protein Concentrado 1kg Morango Dark Lab",
+      "preco": 149.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_927988-MLA99469885866_112025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Esportes",
+      "link": "https://produto.mercadolivre.com.br/MLB-5052087506?matt_tool=71970283"
+    },
+    {
+      "id": "MLB19140415",
+      "titulo": "Suplemento Whey Isolate Protein Fuse 1,8kg sabor Morango Dark Lab",
+      "preco": 179.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_989007-MLA99405715766_112025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Esportes",
+      "link": "https://produto.mercadolivre.com.br/MLB-5039804027?matt_tool=71970283"
+    },
+    {
+      "id": "MLB44923446",
+      "titulo": "Chinelo Top Havaianas Liso Branco",
+      "preco": 29.4,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_740930-MLA100107121067_122025-F.jpg",
+      "frete_gratis": false,
+      "categoria": "Moda",
+      "link": "https://produto.mercadolivre.com.br/MLB-6929873368?matt_tool=71970283"
+    },
+    {
+      "id": "MLB45474714",
+      "titulo": "Chinelo Feminino Slim Havaianas",
+      "preco": 37.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_671885-MLA81672743644_012025-F.jpg",
+      "frete_gratis": false,
+      "categoria": "Moda",
+      "link": "https://produto.mercadolivre.com.br/MLB-5457864401?matt_tool=71970283"
+    },
+    {
+      "id": "MLB53911392",
+      "titulo": "Fone De Ouvido Bluetooth 5.1 Sem Fio Tws Wireless Bateria Longa Duração E Conexão Rápida Coolmusic",
+      "preco": 24.79,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_960127-MLA109738568733_032026-F.jpg",
+      "frete_gratis": false,
+      "categoria": "Eletrônicos",
+      "link": "https://produto.mercadolivre.com.br/MLB-5619970196?matt_tool=71970283"
+    },
+    {
+      "id": "MLB50243717",
+      "titulo": "Suporte Articulado Para Monitor 13 a 32 Pistão a Gás Ajustável Zinnia Nimbo 110 Branco",
+      "preco": 104.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_857350-MLA107653770031_022026-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Eletrônicos",
+      "link": "https://produto.mercadolivre.com.br/MLB-5255185857?matt_tool=71970283"
+    }
+  ]
 }
