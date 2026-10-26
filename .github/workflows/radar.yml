@@ -41,8 +41,11 @@ jobs:
           ML_CLIENT_ID: ${{ secrets.ML_CLIENT_ID }}
           ML_CLIENT_SECRET: ${{ secrets.ML_CLIENT_SECRET }}
           ML_AFFILIATE_ID: "71970283"
+          SHOPEE_APP_ID: ${{ secrets.SHOPEE_APP_ID }}
+          SHOPEE_SECRET: ${{ secrets.SHOPEE_SECRET }}
           POSTS_POR_GRUPO: "2"
           MAX_POSTS: "8"
+          SHOPEE_POSTS: "3"
           REPETIR_APOS_DIAS: "3"
 
       - name: Salvar dados (merge seguro do estado)
