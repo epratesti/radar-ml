@@ -2,7 +2,7 @@ name: Radar ML
 
 on:
   schedule:
-    # 1x por hora (UTC) — menos flood e menos corrida de estado
+    # 1x por hora (UTC)
     - cron: "15 * * * *"
   workflow_dispatch:
 
@@ -42,8 +42,8 @@ jobs:
           ML_CLIENT_SECRET: ${{ secrets.ML_CLIENT_SECRET }}
           ML_AFFILIATE_ID: "71970283"
           POSTS_POR_GRUPO: "1"
-          MAX_POSTS: "4"
-          REPETIR_APOS_DIAS: "14"
+          MAX_POSTS: "6"
+          REPETIR_APOS_DIAS: "5"
 
       - name: Salvar dados (merge seguro do estado)
         run: |
