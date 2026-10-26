@@ -1,91 +1,91 @@
 {
-  "atualizado": "2026-10-26T15:06:55.949189-03:00",
+  "atualizado": "2026-10-26T15:35:56.558746-03:00",
   "itens": [
     {
-      "id": "MLB18725308",
-      "titulo": "Creatina Soldiers Nutrition em pó Sem sabor x 500g",
-      "preco": 38.2,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_784236-MLA119862530715_102026-F.jpg",
+      "id": "SHOPEE-58200448338",
+      "titulo": "Fone de ouvido estéreo sem fio à prova d'água com Bluetooth caixa de carregamento longa duração T70",
+      "preco": 35.99,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lc-ms04vb3imy2vc7",
       "frete_gratis": false,
-      "categoria": "Esportes",
+      "categoria": "Shopee",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/70LDKJ8cqC",
+      "comissao": "0.03",
+      "loja": "Cuco Variedades"
+    },
+    {
+      "id": "MLB23958420",
+      "titulo": "Detergente Ypê Neutro 5 Litros",
+      "preco": 21.97,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_941769-MLA99925691215_112025-F.jpg",
+      "frete_gratis": false,
+      "categoria": "Casa",
       "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-7745342080?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-3795317377?matt_tool=71970283"
     },
     {
-      "id": "SHOPEE-22499056874",
-      "titulo": "Smartwatch MINI 38MM PRO Com monitor De Frequência Cardíaca Do Computador São Paulo pronta entrega",
-      "preco": 53.99,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mg4sqr0e5nggcd",
+      "id": "MLB53222689",
+      "titulo": "Kit 10 Potes Herméticos Vidro 640ml Starhouse Marmita Forno Micro-ondas Airfryer com 4 travas de super vedação",
+      "preco": 60.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_942823-MLA113526261849_062026-F.jpg",
       "frete_gratis": false,
-      "categoria": "Shopee",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/50a8udDfYg",
-      "comissao": "0.13",
-      "loja": "Os produtos preferidos"
+      "categoria": "Casa",
+      "fonte": "ml",
+      "link": "https://produto.mercadolivre.com.br/MLB-7880072296?matt_tool=71970283"
     },
     {
-      "id": "SHOPEE-55816802474",
-      "titulo": "Whey Protein Concentrado Growth Supplements",
-      "preco": 263.05,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8258y-msdkb3hgwi6ade",
+      "id": "MLB66055148",
+      "titulo": "Smart Tv 32 Philco Roku Tv Dolby Áudio Hdr10 P32crb",
+      "preco": 999.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_875689-MLA107805437119_022026-F.jpg",
       "frete_gratis": false,
-      "categoria": "Shopee",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/5q9FuAEtel",
-      "comissao": "0.06",
-      "loja": "GROWTH SUPPLEMENTS"
+      "categoria": "Eletrônicos",
+      "fonte": "ml",
+      "link": "https://produto.mercadolivre.com.br/MLB-7717329164?matt_tool=71970283"
     },
     {
-      "id": "MLB18953093",
-      "titulo": "Whey Protein Growth Concentrado 1kg – Sabor Baunilha",
-      "preco": 143.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_824274-MLA98770399871_112025-F.jpg",
+      "id": "MLB24028629",
+      "titulo": "Fone De Ouvido Soundcore by Anker P20i Graves Poderosos e Impactantes Bluetooth 5.3 30H de Reprodução Resistência à Água 2 Mics IA para Chamadas Claras Personalização de Som via App Cor Preto",
+      "preco": 146.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_730568-MLA99983575997_112025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Eletrônicos",
+      "fonte": "ml",
+      "link": "https://produto.mercadolivre.com.br/MLB-5410852112?matt_tool=71970283"
+    },
+    {
+      "id": "MLB19772622",
+      "titulo": "Suplemento Alimentar Whey Fort 3W Sabor Frutas Vermelhas 900g Vitafor",
+      "preco": 175.28,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_900386-MLU75143558182_032024-F.jpg",
       "frete_gratis": true,
       "categoria": "Esportes",
       "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-5432274779?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-5413596327?matt_tool=71970283"
     },
     {
-      "id": "MLB75542419",
-      "titulo": "Percarbonato De Sódio 100% Puro Tira Manchas Alvejante - 1kg Calisul",
-      "preco": 26.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_670568-MLA113572446412_072026-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Casa",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-5226404229?matt_tool=71970283"
-    },
-    {
-      "id": "SHOPEE-14831203028",
-      "titulo": "Pulseira de silicone para Smartwatch 44mm 40mm 38mm 42mm cinto de borracha smartwatch pulseira iwatch",
-      "preco": 7.99,
-      "imagem": "https://cf.shopee.com.br/file/b1ed91ed9ff02a3b583b6891da086210",
+      "id": "SHOPEE-58255159172",
+      "titulo": "Fones de ouvido sem fio Bluetooth compactos Xiaomi Redmi Airdots com Estojo Recarregável",
+      "preco": 20.47,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820la-mltkawis4qo439",
       "frete_gratis": false,
       "categoria": "Shopee",
       "fonte": "shopee",
-      "link": "https://s.shopee.com.br/1BNQLaSGKp",
-      "comissao": "0.03",
-      "loja": "Lily Space"
+      "link": "https://s.shopee.com.br/6q1n809GBD",
+      "comissao": "0.12",
+      "loja": "YYYNN"
     },
     {
-      "id": "MLB16084358",
-      "titulo": "Papel Higiênico Supreme Folha Tripla 24 Rolos Neve Folha Tripla",
-      "preco": 28.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_866261-MLA99361636628_112025-F.jpg",
+      "id": "SHOPEE-23394690451",
+      "titulo": "Principia Kit Completo Peles Sensíveis c/ Gel de Limpeza GL-02 + Creme Hidratante CH-01 + Protetor Solar PS-01 FPS 60",
+      "preco": 113.23,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mh9d339f89af1c",
       "frete_gratis": false,
-      "categoria": "Casa",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-5736190284?matt_tool=71970283"
-    },
-    {
-      "id": "MLB70228023",
-      "titulo": "Kit Relógio Feminino Colar Brinco Pulseira Folheado Presente Prateado",
-      "preco": 34.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_907811-MLA112159861189_052026-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Relógios",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-4707470817?matt_tool=71970283"
+      "categoria": "Shopee",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/4LKS9PN6kf",
+      "comissao": "0.13",
+      "loja": "Principia Skincare"
     }
   ]
 }
