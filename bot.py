@@ -1,5 +1,9 @@
-"""Radar ML → Telegram. Busca ML (sem auth se 403) + highlights fallback."""
-import os, json, html, re, random, datetime as dt
+"""Radar ML + Shopee → Telegram.
+ML: search (sem auth se 403) + highlights.
+Shopee: Open API afiliado GraphQL productOfferV2.
+Horário SP: 07h–22h.
+"""
+import os, json, html, re, random, hashlib, time, datetime as dt
 from pathlib import Path
 from zoneinfo import ZoneInfo
 import requests
@@ -11,6 +15,13 @@ TG_CHAT = os.getenv("TELEGRAM_CHAT_ID")
 POSTS_POR_GRUPO = int(os.getenv("POSTS_POR_GRUPO", "2"))
 MAX_POSTS = int(os.getenv("MAX_POSTS", "8"))
 REPETIR_APOS_DIAS = int(os.getenv("REPETIR_APOS_DIAS", "3"))
+# quantos posts Shopee por execução (resto vem do ML)
+SHOPEE_POSTS = int(os.getenv("SHOPEE_POSTS", "3"))
+
+SHOPEE_APP_ID = os.getenv("SHOPEE_APP_ID", "").strip()
+SHOPEE_SECRET = os.getenv("SHOPEE_SECRET", "").strip()
+SHOPEE_GQL = "https://open-api.affiliate.shopee.com.br/graphql"
+
 API = "https://api.mercadolibre.com"
 ROOT = Path(__file__).parent
 TRENDS = ROOT / "docs" / "trends.json"
@@ -28,6 +39,14 @@ GRUPOS = [
      "queries": ["whey protein", "creatina", "perfume", "shampoo", "kit skincare", "bola futebol", "garrafa térmica"]},
 ]
 
+# queries extras usadas na Shopee (mesmos temas)
+SHOPEE_QUERIES = [
+    "fone bluetooth", "smartwatch", "carregador turbo", "power bank",
+    "air fryer", "liquidificador", "aspirador", "cafeteira",
+    "tênis", "mochila", "relógio", "chinelo",
+    "whey protein", "perfume", "kit skincare", "garrafa térmica",
+]
+
 CAT_NOMES = {
     "MLB1000": "Eletrônicos", "MLB1051": "Celulares", "MLB1648": "Informática",
     "MLB1574": "Casa", "MLB5726": "Eletrodomésticos", "MLB1430": "Moda",
@@ -35,13 +54,14 @@ CAT_NOMES = {
 }
 
 S = requests.Session()
-S.headers.update({"User-Agent": "radar-ml/2.5", "Accept": "application/json"})
+S.headers.update({"User-Agent": "radar-ml/3.0", "Accept": "application/json"})
 
 
 def headers_ml():
     cid, sec = os.getenv("ML_CLIENT_ID"), os.getenv("ML_CLIENT_SECRET")
     if not (cid and sec):
-        print("ERRO: secrets ML ausentes"); return {}
+        print("ERRO: secrets ML ausentes")
+        return {}
     r = S.post(f"{API}/oauth/token", data={
         "grant_type": "client_credentials", "client_id": cid, "client_secret": sec
     }, timeout=20)
@@ -69,7 +89,8 @@ def carregar_estado():
             return {"ids": {}, "titulos": {}}
         if data and "ids" not in data:
             return {"ids": data, "titulos": {}}
-        data.setdefault("ids", {}); data.setdefault("titulos", {})
+        data.setdefault("ids", {})
+        data.setdefault("titulos", {})
         return data
     except Exception:
         return {"ids": {}, "titulos": {}}
@@ -127,17 +148,16 @@ def produto_search(item, label):
     mid_fmt = (mid[:3] + "-" + mid[3:]) if mid.startswith("MLB") and "-" not in mid else mid
     return {
         "id": pid, "titulo": titulo, "preco": preco, "imagem": foto,
-        "frete_gratis": frete, "categoria": label,
+        "frete_gratis": frete, "categoria": label, "fonte": "ml",
         "link": link_afiliado(f"https://produto.mercadolivre.com.br/{mid_fmt}"),
         "item_id": mid,
     }
 
 
 def ml_get(url, h, params=None):
-    """GET com token; se 403, tenta de novo sem Authorization (endpoint público)."""
     r = S.get(url, headers=h or {}, params=params, timeout=25)
     if r.status_code == 403 and h:
-        r = S.get(url, headers={"Accept": "application/json", "User-Agent": "radar-ml/2.5"},
+        r = S.get(url, headers={"Accept": "application/json", "User-Agent": "radar-ml/3.0"},
                   params=params, timeout=25)
     return r
 
@@ -172,7 +192,7 @@ def buscar(query, h, vistos, vistos_t, label, n):
             if nt:
                 vistos_t.add(nt)
             achados.append(p)
-            print(f"  OK [{label}] R$ {p['preco']:.2f} — {p['titulo'][:50]}")
+            print(f"  OK [ML/{label}] R$ {p['preco']:.2f} — {p['titulo'][:50]}")
     except Exception as e:
         print(f"Erro {query}:", e)
     return achados
@@ -194,7 +214,6 @@ def buscar_highlights(cat_id, h, vistos, vistos_t, n):
             pid = str(item.get("id") or "")
             if not pid or pid in vistos:
                 continue
-            # product detail may need token
             titulo, preco, foto, frete, mid = "", 0.0, "", False, None
             try:
                 rp = ml_get(f"{API}/products/{pid}", h)
@@ -227,48 +246,158 @@ def buscar_highlights(cat_id, h, vistos, vistos_t, n):
             else:
                 link = link_afiliado(f"https://www.mercadolivre.com.br/p/{pid}")
             p = {"id": pid, "titulo": titulo, "preco": preco, "imagem": foto,
-                 "frete_gratis": frete, "categoria": nome, "link": link, "item_id": mid}
+                 "frete_gratis": frete, "categoria": nome, "fonte": "ml",
+                 "link": link, "item_id": mid}
             vistos.add(pid)
             if mid:
                 vistos.add(str(mid))
             if nt:
                 vistos_t.add(nt)
             achados.append(p)
-            print(f"  OK [{nome}/hl] R$ {preco:.2f} — {titulo[:50]}")
+            print(f"  OK [ML/{nome}/hl] R$ {preco:.2f} — {titulo[:50]}")
     except Exception as e:
         print(f"Erro highlights {nome}:", e)
     return achados
 
 
-def montar(h, estado):
+def montar_ml(h, estado):
     vistos = set(str(k) for k in estado["ids"])
     vistos_t = set(estado["titulos"])
     out = []
+    max_ml = max(1, MAX_POSTS - SHOPEE_POSTS)
     grupos = list(GRUPOS)
     random.shuffle(grupos)
     for g in grupos:
-        if len(out) >= MAX_POSTS:
+        if len(out) >= max_ml:
             break
-        qs = list(g["queries"]); random.shuffle(qs)
+        qs = list(g["queries"])
+        random.shuffle(qs)
         got = 0
-        print(f"Grupo {g['nome']}: até {POSTS_POR_GRUPO}")
+        print(f"Grupo ML {g['nome']}: até {POSTS_POR_GRUPO}")
         for q in qs:
-            if got >= POSTS_POR_GRUPO or len(out) >= MAX_POSTS:
+            if got >= POSTS_POR_GRUPO or len(out) >= max_ml:
                 break
-            falta = min(POSTS_POR_GRUPO - got, MAX_POSTS - len(out))
+            falta = min(POSTS_POR_GRUPO - got, max_ml - len(out))
             novos = buscar(q, h, vistos, vistos_t, g["nome"], falta)
             out.extend(novos)
             got += len(novos)
-        # fallback highlights se busca falhou
         if got < POSTS_POR_GRUPO:
             for cat in g["cats"]:
-                if got >= POSTS_POR_GRUPO or len(out) >= MAX_POSTS:
+                if got >= POSTS_POR_GRUPO or len(out) >= max_ml:
                     break
-                falta = min(POSTS_POR_GRUPO - got, MAX_POSTS - len(out))
+                falta = min(POSTS_POR_GRUPO - got, max_ml - len(out))
                 novos = buscar_highlights(cat, h, vistos, vistos_t, falta)
                 out.extend(novos)
                 got += len(novos)
-    return out[:MAX_POSTS]
+    return out[:max_ml]
+
+
+# ---------- Shopee Affiliate ----------
+
+def shopee_request(query_str: str):
+    """POST GraphQL autenticado (SHA256 AppId+Timestamp+Payload+Secret)."""
+    if not (SHOPEE_APP_ID and SHOPEE_SECRET):
+        return None
+    payload_obj = {"query": query_str}
+    # Payload exatamente como será enviado no body
+    payload = json.dumps(payload_obj, ensure_ascii=False, separators=(",", ":"))
+    ts = str(int(time.time()))
+    factor = f"{SHOPEE_APP_ID}{ts}{payload}{SHOPEE_SECRET}"
+    sig = hashlib.sha256(factor.encode("utf-8")).hexdigest()
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"SHA256 Credential={SHOPEE_APP_ID}, Timestamp={ts}, Signature={sig}",
+    }
+    r = S.post(SHOPEE_GQL, data=payload.encode("utf-8"), headers=headers, timeout=30)
+    return r
+
+
+def buscar_shopee(keyword, vistos, vistos_t, n):
+    achados = []
+    if not (SHOPEE_APP_ID and SHOPEE_SECRET):
+        return achados
+    # escape aspas no keyword
+    kw = keyword.replace('"', "\\"")
+    q = (
+        "{"
+        f'productOfferV2(keyword: "{kw}", listType: 0, sortType: 2, page: 1, limit: 20) {{'
+        "nodes { itemId productName offerLink imageUrl priceMin priceMax "
+        "priceDiscountRate sales commissionRate shopName }"
+        " pageInfo { page limit hasNextPage }"
+        "}}"
+    )
+    try:
+        r = shopee_request(q)
+        if r is None:
+            return achados
+        if r.status_code != 200:
+            print(f"  Shopee '{keyword}': HTTP {r.status_code} {r.text[:120]}")
+            return achados
+        data = r.json()
+        if data.get("errors"):
+            print(f"  Shopee errors: {data['errors'][:2]}")
+            return achados
+        nodes = ((data.get("data") or {}).get("productOfferV2") or {}).get("nodes") or []
+        random.shuffle(nodes)
+        for node in nodes:
+            if len(achados) >= n:
+                break
+            titulo = node.get("productName") or ""
+            link = node.get("offerLink") or node.get("productLink") or ""
+            pid = f"SHOPEE-{node.get('itemId')}"
+            try:
+                preco = float(node.get("priceMin") or node.get("priceMax") or 0)
+            except (TypeError, ValueError):
+                preco = 0
+            if not titulo or not link or preco <= 0:
+                continue
+            nt = norm(titulo)
+            if pid in vistos or (nt and nt in vistos_t):
+                continue
+            foto = node.get("imageUrl") or ""
+            p = {
+                "id": pid,
+                "titulo": titulo,
+                "preco": preco,
+                "imagem": foto,
+                "frete_gratis": False,
+                "categoria": "Shopee",
+                "fonte": "shopee",
+                "link": link,
+                "item_id": str(node.get("itemId") or ""),
+                "comissao": node.get("commissionRate"),
+                "loja": node.get("shopName") or "",
+            }
+            vistos.add(pid)
+            if p["item_id"]:
+                vistos.add(p["item_id"])
+            if nt:
+                vistos_t.add(nt)
+            achados.append(p)
+            print(f"  OK [Shopee] R$ {preco:.2f} — {titulo[:50]}")
+    except Exception as e:
+        print(f"Erro Shopee '{keyword}':", e)
+    return achados
+
+
+def montar_shopee(estado):
+    if not (SHOPEE_APP_ID and SHOPEE_SECRET):
+        print("Shopee: secrets ausentes (SHOPEE_APP_ID / SHOPEE_SECRET) — pulando")
+        return []
+    print("Shopee: buscando ofertas de afiliado...")
+    vistos = set(str(k) for k in estado["ids"])
+    vistos_t = set(estado["titulos"])
+    out = []
+    qs = list(SHOPEE_QUERIES)
+    random.shuffle(qs)
+    for q in qs:
+        if len(out) >= SHOPEE_POSTS:
+            break
+        falta = SHOPEE_POSTS - len(out)
+        novos = buscar_shopee(q, vistos, vistos_t, min(2, falta))
+        out.extend(novos)
+        time.sleep(0.4)
+    return out[:SHOPEE_POSTS]
 
 
 def preco_br(v):
@@ -276,23 +405,37 @@ def preco_br(v):
 
 
 def postar(p):
+    fonte = p.get("fonte") or "ml"
     cat = html.escape(p.get("categoria", ""))
     titulo = html.escape(p["titulo"][:120])
     preco = preco_br(p["preco"])
     link = html.escape(p["link"])
     frete = "🚚 <b>Frete grátis</b>\n" if p.get("frete_gratis") else ""
-    texto = (
-        f"🔥 <b>Achado do momento — {cat}</b>\n\n"
-        f"📦 {titulo}\n\n"
-        f"💰 <b>{preco}</b>\n{frete}"
-        f"\n👉 <a href=\"{link}\">Ver oferta no Mercado Livre</a>\n\n"
-        f"<i>Link de afiliado · Preços podem variar</i>"
-    )
+    if fonte == "shopee":
+        loja = html.escape(p.get("loja") or "")
+        loja_linha = f"🏪 {loja}\n" if loja else ""
+        texto = (
+            f"🛒 <b>Shopee — {cat}</b>\n\n"
+            f"📦 {titulo}\n\n"
+            f"💰 <b>{preco}</b>\n{loja_linha}{frete}"
+            f"\n👉 <a href=\"{link}\">Ver oferta na Shopee</a>\n\n"
+            f"<i>Link de afiliado · Preços podem variar</i>"
+        )
+    else:
+        texto = (
+            f"🔥 <b>Achado do momento — {cat}</b>\n\n"
+            f"📦 {titulo}\n\n"
+            f"💰 <b>{preco}</b>\n{frete}"
+            f"\n👉 <a href=\"{link}\">Ver oferta no Mercado Livre</a>\n\n"
+            f"<i>Link de afiliado · Preços podem variar</i>"
+        )
     if not TG_TOKEN or not TG_CHAT:
-        print("Telegram não configurado"); return False
+        print("Telegram não configurado")
+        return False
     data = {"chat_id": TG_CHAT, "parse_mode": "HTML"}
     if p.get("imagem"):
-        data["photo"] = p["imagem"]; data["caption"] = texto
+        data["photo"] = p["imagem"]
+        data["caption"] = texto
         r = S.post(f"https://api.telegram.org/bot{TG_TOKEN}/sendPhoto", data=data, timeout=30)
     else:
         data["text"] = texto
@@ -313,25 +456,41 @@ def salvar(estado):
 def main():
     agora = dt.datetime.now(TZ)
     print("Iniciando", agora.isoformat())
-    print(f"Meta: {POSTS_POR_GRUPO}/grupo máx {MAX_POSTS} | bloqueio {REPETIR_APOS_DIAS}d")
+    print(f"Meta: ML + Shopee | máx {MAX_POSTS} | bloqueio {REPETIR_APOS_DIAS}d | shopee={SHOPEE_POSTS}")
     h = headers_ml()
     if not h:
         return
     estado = limpar_estado(carregar_estado(), agora)
     print(f"Bloqueados: {len(estado['ids'])} ids")
-    ranking = montar(h, estado)
-    ranking = [p for p in ranking if not ja_postado(estado, p["id"], p["titulo"], p.get("item_id"))]
-    print("Selecionados:", len(ranking))
+
+    ranking_ml = montar_ml(h, estado)
+    ranking_sh = montar_shopee(estado)
+    ranking = ranking_ml + ranking_sh
+    random.shuffle(ranking)
+    ranking = [
+        p for p in ranking
+        if not ja_postado(estado, p["id"], p["titulo"], p.get("item_id"))
+    ][:MAX_POSTS]
+    print(f"Selecionados: {len(ranking)} (ML={len(ranking_ml)} Shopee={len(ranking_sh)})")
+
     TRENDS.parent.mkdir(parents=True, exist_ok=True)
     itens = [{k: v for k, v in p.items() if k != "item_id"} for p in ranking]
-    TRENDS.write_text(json.dumps({"atualizado": agora.isoformat(), "itens": itens},
-                                 ensure_ascii=False, indent=2), encoding="utf-8")
+    TRENDS.write_text(
+        json.dumps({"atualizado": agora.isoformat(), "itens": itens},
+                   ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
     if not ranking:
-        print("Nada a postar"); salvar(estado); return
+        print("Nada a postar")
+        salvar(estado)
+        return
     if not (TG_TOKEN and TG_CHAT):
-        print("Falta Telegram"); return
+        print("Falta Telegram")
+        return
     if not pode_postar(agora):
-        print(f"Fora do horário ({agora.hour}h)"); salvar(estado); return
+        print(f"Fora do horário ({agora.hour}h)")
+        salvar(estado)
+        return
     enviados = 0
     for p in ranking:
         if enviados >= MAX_POSTS:
@@ -342,6 +501,7 @@ def main():
             registrar(estado, p["id"], p["titulo"], agora, p.get("item_id"))
             enviados += 1
             salvar(estado)
+            time.sleep(1.0)
     salvar(estado)
     print("Postagens enviadas:", enviados)
 
