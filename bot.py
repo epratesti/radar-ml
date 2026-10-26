@@ -1,4 +1,4 @@
-"""Radar ML → Telegram. 4 grupos, busca ampla, anti-dupe 3 dias."""
+"""Radar ML → Telegram. Busca ML (sem auth se 403) + highlights fallback."""
 import os, json, html, re, random, datetime as dt
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -28,8 +28,14 @@ GRUPOS = [
      "queries": ["whey protein", "creatina", "perfume", "shampoo", "kit skincare", "bola futebol", "garrafa térmica"]},
 ]
 
+CAT_NOMES = {
+    "MLB1000": "Eletrônicos", "MLB1051": "Celulares", "MLB1648": "Informática",
+    "MLB1574": "Casa", "MLB5726": "Eletrodomésticos", "MLB1430": "Moda",
+    "MLB3937": "Relógios", "MLB1276": "Esportes", "MLB1246": "Beleza", "MLB1132": "Brinquedos",
+}
+
 S = requests.Session()
-S.headers.update({"User-Agent": "radar-ml/2.4", "Accept": "application/json"})
+S.headers.update({"User-Agent": "radar-ml/2.5", "Accept": "application/json"})
 
 
 def headers_ml():
@@ -127,14 +133,23 @@ def produto_search(item, label):
     }
 
 
+def ml_get(url, h, params=None):
+    """GET com token; se 403, tenta de novo sem Authorization (endpoint público)."""
+    r = S.get(url, headers=h or {}, params=params, timeout=25)
+    if r.status_code == 403 and h:
+        r = S.get(url, headers={"Accept": "application/json", "User-Agent": "radar-ml/2.5"},
+                  params=params, timeout=25)
+    return r
+
+
 def buscar(query, h, vistos, vistos_t, label, n):
     achados = []
     try:
-        offset = random.choice([0, 0, 10, 20, 30, 40, 50])
-        r = S.get(f"{API}/sites/MLB/search", headers=h, params={
+        offset = random.choice([0, 0, 10, 20, 30, 40])
+        r = ml_get(f"{API}/sites/MLB/search", h, params={
             "q": query, "limit": 50, "offset": offset,
             "sort": random.choice(["relevance", "sold_quantity_desc"]),
-        }, timeout=25)
+        })
         if r.status_code != 200:
             print(f"  search {query}: {r.status_code}")
             return achados
@@ -163,6 +178,68 @@ def buscar(query, h, vistos, vistos_t, label, n):
     return achados
 
 
+def buscar_highlights(cat_id, h, vistos, vistos_t, n):
+    nome = CAT_NOMES.get(cat_id, cat_id)
+    achados = []
+    try:
+        r = ml_get(f"{API}/highlights/MLB/category/{cat_id}", h)
+        if r.status_code != 200:
+            print(f"  highlights {nome}: {r.status_code}")
+            return achados
+        items = list(r.json().get("content", [])[:30])
+        random.shuffle(items)
+        for item in items:
+            if len(achados) >= n:
+                break
+            pid = str(item.get("id") or "")
+            if not pid or pid in vistos:
+                continue
+            # product detail may need token
+            titulo, preco, foto, frete, mid = "", 0.0, "", False, None
+            try:
+                rp = ml_get(f"{API}/products/{pid}", h)
+                if rp.status_code == 200:
+                    d = rp.json()
+                    titulo = d.get("name") or d.get("title") or ""
+                    pics = d.get("pictures") or []
+                    if pics:
+                        foto = (pics[0].get("url") or pics[0].get("secure_url") or "").replace("http://", "https://")
+                ri = ml_get(f"{API}/products/{pid}/items", h)
+                if ri.status_code == 200:
+                    results = ri.json().get("results") or []
+                    if results:
+                        it = min(results, key=lambda x: float(x.get("price") or 1e18))
+                        preco = float(it.get("price") or 0)
+                        frete = (it.get("shipping") or {}).get("free_shipping", False)
+                        mid = it.get("id") or it.get("item_id")
+            except Exception as e:
+                print(f"  product {pid}:", e)
+                continue
+            if not titulo or preco <= 0:
+                continue
+            nt = norm(titulo)
+            if nt and nt in vistos_t:
+                continue
+            if mid:
+                m = str(mid)
+                mid_fmt = (m[:3] + "-" + m[3:]) if m.startswith("MLB") and "-" not in m else m
+                link = link_afiliado(f"https://produto.mercadolivre.com.br/{mid_fmt}")
+            else:
+                link = link_afiliado(f"https://www.mercadolivre.com.br/p/{pid}")
+            p = {"id": pid, "titulo": titulo, "preco": preco, "imagem": foto,
+                 "frete_gratis": frete, "categoria": nome, "link": link, "item_id": mid}
+            vistos.add(pid)
+            if mid:
+                vistos.add(str(mid))
+            if nt:
+                vistos_t.add(nt)
+            achados.append(p)
+            print(f"  OK [{nome}/hl] R$ {preco:.2f} — {titulo[:50]}")
+    except Exception as e:
+        print(f"Erro highlights {nome}:", e)
+    return achados
+
+
 def montar(h, estado):
     vistos = set(str(k) for k in estado["ids"])
     vistos_t = set(estado["titulos"])
@@ -182,6 +259,15 @@ def montar(h, estado):
             novos = buscar(q, h, vistos, vistos_t, g["nome"], falta)
             out.extend(novos)
             got += len(novos)
+        # fallback highlights se busca falhou
+        if got < POSTS_POR_GRUPO:
+            for cat in g["cats"]:
+                if got >= POSTS_POR_GRUPO or len(out) >= MAX_POSTS:
+                    break
+                falta = min(POSTS_POR_GRUPO - got, MAX_POSTS - len(out))
+                novos = buscar_highlights(cat, h, vistos, vistos_t, falta)
+                out.extend(novos)
+                got += len(novos)
     return out[:MAX_POSTS]
 
 
