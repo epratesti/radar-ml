@@ -1,7 +1,13 @@
 """Radar ML + Shopee → Telegram + Facebook Page.
-ML: search (sem auth se 403) + highlights.
+ML: search (com fallback para catálogo /products/search) + highlights.
 Shopee: Open API afiliado GraphQL productOfferV2.
 Horário SP: 07h–22h.
+
+v3.2:
+- Facebook: diagnóstico do token no início, leitura correta do erro (error.code),
+  e desativa o Facebook na execução após falha de permissão (evita N erros repetidos).
+- Mercado Livre: se /sites/MLB/search der 403 repetido, para de tentar e usa
+  /products/search (catálogo) + highlights.
 """
 import os, json, html, re, random, hashlib, time, datetime as dt
 from pathlib import Path
@@ -30,6 +36,16 @@ TRENDS = ROOT / "docs" / "trends.json"
 STATE = ROOT / "state" / "posted.json"
 TZ = ZoneInfo("America/Sao_Paulo")
 
+# Estado de execução (circuit breakers)
+FB_ATIVO = bool(FB_PAGE_ID and FB_ACCESS_TOKEN)
+FB_FALHAS = 0
+FB_ERROS_FATAIS = {3, 10, 102, 190, 200, 240, 283, 368}
+
+SEARCH_403 = 0
+SEARCH_OFF = False
+CAT_FALHAS = 0
+CAT_OFF = False
+
 GRUPOS = [
     {"nome": "Eletrônicos", "cats": ["MLB1000", "MLB1051", "MLB1648"],
      "queries": ["fone bluetooth", "carregador turbo", "smartwatch", "tv led", "ssd 1tb", "power bank", "mouse gamer", "caixa de som"]},
@@ -55,9 +71,12 @@ CAT_NOMES = {
 }
 
 S = requests.Session()
-S.headers.update({"User-Agent": "radar-ml/3.1", "Accept": "application/json"})
+S.headers.update({"User-Agent": "radar-ml/3.2", "Accept": "application/json"})
 
 
+# ----------------------------------------------------------------------------
+# Mercado Livre
+# ----------------------------------------------------------------------------
 def headers_ml():
     cid, sec = os.getenv("ML_CLIENT_ID"), os.getenv("ML_CLIENT_SECRET")
     if not (cid and sec):
@@ -158,13 +177,17 @@ def produto_search(item, label):
 def ml_get(url, h, params=None):
     r = S.get(url, headers=h or {}, params=params, timeout=25)
     if r.status_code == 403 and h:
-        r = S.get(url, headers={"Accept": "application/json", "User-Agent": "radar-ml/3.1"},
+        r = S.get(url, headers={"Accept": "application/json", "User-Agent": "radar-ml/3.2"},
                   params=params, timeout=25)
     return r
 
 
 def buscar(query, h, vistos, vistos_t, label, n):
+    """Busca clássica /sites/MLB/search. Se der 403 várias vezes seguidas, desliga na execução."""
+    global SEARCH_403, SEARCH_OFF
     achados = []
+    if SEARCH_OFF:
+        return achados
     try:
         offset = random.choice([0, 0, 10, 20, 30, 40])
         r = ml_get(f"{API}/sites/MLB/search", h, params={
@@ -173,7 +196,13 @@ def buscar(query, h, vistos, vistos_t, label, n):
         })
         if r.status_code != 200:
             print(f"  search {query}: {r.status_code}")
+            if r.status_code == 403:
+                SEARCH_403 += 1
+                if SEARCH_403 >= 3:
+                    SEARCH_OFF = True
+                    print("  → /sites/MLB/search bloqueado (403). Usando catálogo + highlights nesta execução.")
             return achados
+        SEARCH_403 = 0
         results = list(r.json().get("results") or [])
         random.shuffle(results)
         for item in results:
@@ -199,6 +228,85 @@ def buscar(query, h, vistos, vistos_t, label, n):
     return achados
 
 
+def produto_catalogo(pid, h, label, vistos, vistos_t):
+    """Monta um produto a partir de um ID de catálogo (/products/{id} + /products/{id}/items)."""
+    pid = str(pid or "")
+    if not pid or pid in vistos:
+        return None
+    titulo, preco, foto, frete, mid = "", 0.0, "", False, None
+    try:
+        rp = ml_get(f"{API}/products/{pid}", h)
+        if rp.status_code == 200:
+            d = rp.json()
+            titulo = d.get("name") or d.get("title") or ""
+            pics = d.get("pictures") or []
+            if pics:
+                foto = (pics[0].get("url") or pics[0].get("secure_url") or "").replace("http://", "https://")
+        ri = ml_get(f"{API}/products/{pid}/items", h)
+        if ri.status_code == 200:
+            results = ri.json().get("results") or []
+            if results:
+                it = min(results, key=lambda x: float(x.get("price") or 1e18))
+                preco = float(it.get("price") or 0)
+                frete = (it.get("shipping") or {}).get("free_shipping", False)
+                mid = it.get("id") or it.get("item_id")
+    except Exception as e:
+        print(f"  product {pid}:", e)
+        return None
+    if not titulo or preco <= 0:
+        return None
+    nt = norm(titulo)
+    if nt and nt in vistos_t:
+        return None
+    if mid:
+        m = str(mid)
+        mid_fmt = (m[:3] + "-" + m[3:]) if m.startswith("MLB") and "-" not in m else m
+        link = link_afiliado(f"https://produto.mercadolivre.com.br/{mid_fmt}")
+    else:
+        link = link_afiliado(f"https://www.mercadolivre.com.br/p/{pid}")
+    vistos.add(pid)
+    if mid:
+        vistos.add(str(mid))
+    if nt:
+        vistos_t.add(nt)
+    return {"id": pid, "titulo": titulo, "preco": preco, "imagem": foto,
+            "frete_gratis": frete, "categoria": label, "fonte": "ml",
+            "link": link, "item_id": mid}
+
+
+def buscar_catalogo(query, h, vistos, vistos_t, label, n):
+    """Fallback: /products/search (catálogo) quando /sites/MLB/search está bloqueado."""
+    global CAT_FALHAS, CAT_OFF
+    achados = []
+    if CAT_OFF:
+        return achados
+    try:
+        r = ml_get(f"{API}/products/search", h, params={
+            "status": "active", "site_id": "MLB", "q": query, "limit": 20,
+        })
+        if r.status_code != 200:
+            print(f"  catálogo {query}: {r.status_code}")
+            CAT_FALHAS += 1
+            if CAT_FALHAS >= 3:
+                CAT_OFF = True
+                print("  → /products/search indisponível. Usando só highlights nesta execução.")
+            return achados
+        CAT_FALHAS = 0
+        results = list(r.json().get("results") or [])
+        random.shuffle(results)
+        for item in results[:8]:
+            if len(achados) >= n:
+                break
+            p = produto_catalogo(item.get("id"), h, label, vistos, vistos_t)
+            if not p:
+                continue
+            achados.append(p)
+            print(f"  OK [ML/{label}/cat] R$ {p['preco']:.2f} — {p['titulo'][:50]}")
+    except Exception as e:
+        print(f"Erro catálogo {query}:", e)
+    return achados
+
+
 def buscar_highlights(cat_id, h, vistos, vistos_t, n):
     nome = CAT_NOMES.get(cat_id, cat_id)
     achados = []
@@ -212,50 +320,11 @@ def buscar_highlights(cat_id, h, vistos, vistos_t, n):
         for item in items:
             if len(achados) >= n:
                 break
-            pid = str(item.get("id") or "")
-            if not pid or pid in vistos:
+            p = produto_catalogo(item.get("id"), h, nome, vistos, vistos_t)
+            if not p:
                 continue
-            titulo, preco, foto, frete, mid = "", 0.0, "", False, None
-            try:
-                rp = ml_get(f"{API}/products/{pid}", h)
-                if rp.status_code == 200:
-                    d = rp.json()
-                    titulo = d.get("name") or d.get("title") or ""
-                    pics = d.get("pictures") or []
-                    if pics:
-                        foto = (pics[0].get("url") or pics[0].get("secure_url") or "").replace("http://", "https://")
-                ri = ml_get(f"{API}/products/{pid}/items", h)
-                if ri.status_code == 200:
-                    results = ri.json().get("results") or []
-                    if results:
-                        it = min(results, key=lambda x: float(x.get("price") or 1e18))
-                        preco = float(it.get("price") or 0)
-                        frete = (it.get("shipping") or {}).get("free_shipping", False)
-                        mid = it.get("id") or it.get("item_id")
-            except Exception as e:
-                print(f"  product {pid}:", e)
-                continue
-            if not titulo or preco <= 0:
-                continue
-            nt = norm(titulo)
-            if nt and nt in vistos_t:
-                continue
-            if mid:
-                m = str(mid)
-                mid_fmt = (m[:3] + "-" + m[3:]) if m.startswith("MLB") and "-" not in m else m
-                link = link_afiliado(f"https://produto.mercadolivre.com.br/{mid_fmt}")
-            else:
-                link = link_afiliado(f"https://www.mercadolivre.com.br/p/{pid}")
-            p = {"id": pid, "titulo": titulo, "preco": preco, "imagem": foto,
-                 "frete_gratis": frete, "categoria": nome, "fonte": "ml",
-                 "link": link, "item_id": mid}
-            vistos.add(pid)
-            if mid:
-                vistos.add(str(mid))
-            if nt:
-                vistos_t.add(nt)
             achados.append(p)
-            print(f"  OK [ML/{nome}/hl] R$ {preco:.2f} — {titulo[:50]}")
+            print(f"  OK [ML/{nome}/hl] R$ {p['preco']:.2f} — {p['titulo'][:50]}")
     except Exception as e:
         print(f"Erro highlights {nome}:", e)
     return achados
@@ -280,6 +349,8 @@ def montar_ml(h, estado):
                 break
             falta = min(POSTS_POR_GRUPO - got, max_ml - len(out))
             novos = buscar(q, h, vistos, vistos_t, g["nome"], falta)
+            if not novos and not CAT_OFF:
+                novos = buscar_catalogo(q, h, vistos, vistos_t, g["nome"], falta)
             out.extend(novos)
             got += len(novos)
         if got < POSTS_POR_GRUPO:
@@ -293,6 +364,9 @@ def montar_ml(h, estado):
     return out[:max_ml]
 
 
+# ----------------------------------------------------------------------------
+# Shopee
+# ----------------------------------------------------------------------------
 def shopee_request(query_str: str):
     if not (SHOPEE_APP_ID and SHOPEE_SECRET):
         return None
@@ -396,6 +470,9 @@ def montar_shopee(estado):
     return out[:SHOPEE_POSTS]
 
 
+# ----------------------------------------------------------------------------
+# Texto dos posts
+# ----------------------------------------------------------------------------
 def preco_br(v):
     return f"R$ {v:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
 
@@ -447,6 +524,9 @@ def texto_post(p, para_facebook=False):
             )
 
 
+# ----------------------------------------------------------------------------
+# Canais
+# ----------------------------------------------------------------------------
 def postar_telegram(p):
     if not TG_TOKEN or not TG_CHAT:
         print("Telegram não configurado")
@@ -464,47 +544,104 @@ def postar_telegram(p):
     return r.ok
 
 
+def fb_erro(r):
+    """Extrai (code, subcode, message) do JSON de erro da Graph API."""
+    try:
+        e = (r.json() or {}).get("error") or {}
+        return e.get("code"), e.get("error_subcode"), e.get("message") or r.text[:180]
+    except Exception:
+        return None, None, r.text[:180]
+
+
+def fb_dica(code):
+    if code == 240:
+        return ("Token sem permissão de postar nessa página. Use o PAGE ACCESS TOKEN da página "
+                "(GET /me/accounts), com pages_manage_posts, e confira se FB_PAGE_ID é o ID da página.")
+    if code in (190, 102):
+        return "Token inválido ou expirado. Gere um novo token de página (de longa duração)."
+    if code in (10, 200, 283, 368):
+        return ("Falta permissão (pages_manage_posts / pages_read_engagement), o app está em modo "
+                "Desenvolvimento ou a conta está restrita.")
+    if code == 3:
+        return "Funcionalidade indisponível para esse app/token. Revise as permissões do app."
+    return "Verifique FB_PAGE_ID, FB_ACCESS_TOKEN e as permissões do app."
+
+
+def fb_diagnostico():
+    """Valida o token antes de postar. Desativa o Facebook na execução se estiver claramente inválido."""
+    global FB_ATIVO
+    if not FB_ATIVO:
+        return
+    try:
+        r = S.get(f"{FB_API}/me", params={"fields": "id,name", "access_token": FB_ACCESS_TOKEN}, timeout=20)
+        if r.status_code != 200:
+            code, _, msg = fb_erro(r)
+            print(f"Facebook: token rejeitado (code {code}): {msg}")
+            print("  →", fb_dica(code))
+            FB_ATIVO = False
+            return
+        me = r.json()
+        if str(me.get("id")) == FB_PAGE_ID:
+            print(f"Facebook: token de PÁGINA ok — {me.get('name')}")
+        else:
+            print(f"Facebook: AVISO — o token pertence a '{me.get('name')}' (id {me.get('id')}), "
+                  f"não à página {FB_PAGE_ID}. Se for token de usuário, troque pelo token da página (GET /me/accounts).")
+        rp = S.get(f"{FB_API}/{FB_PAGE_ID}", params={"fields": "id,name", "access_token": FB_ACCESS_TOKEN}, timeout=20)
+        if rp.status_code != 200:
+            code, _, msg = fb_erro(rp)
+            print(f"Facebook: não consegui acessar a página {FB_PAGE_ID} (code {code}): {msg}")
+            print("  →", fb_dica(code))
+            FB_ATIVO = False
+        else:
+            print(f"Facebook: página acessível — {rp.json().get('name')}")
+    except Exception as e:
+        print("Facebook: erro no diagnóstico:", e)
+
+
 def postar_facebook(p):
     """Posta foto + legenda na página do Facebook via Graph API."""
-    if not (FB_PAGE_ID and FB_ACCESS_TOKEN):
-        print("Facebook não configurado (FB_PAGE_ID / FB_ACCESS_TOKEN)")
+    global FB_ATIVO, FB_FALHAS
+    if not FB_ATIVO:
         return False
     caption = texto_post(p, para_facebook=True)
     try:
         if p.get("imagem"):
-            # Post com foto (recomendado)
             url = f"{FB_API}/{FB_PAGE_ID}/photos"
-            data = {
-                "url": p["imagem"],
-                "caption": caption,
-                "access_token": FB_ACCESS_TOKEN,
-            }
+            data = {"url": p["imagem"], "caption": caption, "access_token": FB_ACCESS_TOKEN}
             r = S.post(url, data=data, timeout=40)
         else:
-            # Post só texto + link
             url = f"{FB_API}/{FB_PAGE_ID}/feed"
-            data = {
-                "message": caption,
-                "link": p["link"],
-                "access_token": FB_ACCESS_TOKEN,
-            }
+            data = {"message": caption, "link": p["link"], "access_token": FB_ACCESS_TOKEN}
             r = S.post(url, data=data, timeout=30)
-        print("Facebook:", r.status_code, r.text[:180])
+
         if r.status_code in (200, 201):
+            FB_FALHAS = 0
+            print("Facebook:", r.status_code, r.text[:120])
             return True
-        # Token inválido / permissão
-        if r.status_code in (190, 200, 10, 100):
-            print("  → Verifique FB_ACCESS_TOKEN e permissões pages_manage_posts")
+
+        code, _, msg = fb_erro(r)
+        print(f"Facebook: {r.status_code} (code {code}) {msg}")
+        FB_FALHAS += 1
+        if code in FB_ERROS_FATAIS:
+            print("  →", fb_dica(code))
+            print("  → Facebook desativado nesta execução (Telegram continua).")
+            FB_ATIVO = False
+        elif FB_FALHAS >= 3:
+            print("  → 3 falhas seguidas no Facebook; desativado nesta execução.")
+            FB_ATIVO = False
         return False
     except Exception as e:
         print("Erro Facebook:", e)
+        FB_FALHAS += 1
+        if FB_FALHAS >= 3:
+            FB_ATIVO = False
         return False
 
 
 def postar(p):
     """Envia para todos os canais configurados. Sucesso se pelo menos um canal funcionar."""
     ok_tg = postar_telegram(p) if (TG_TOKEN and TG_CHAT) else False
-    ok_fb = postar_facebook(p) if (FB_PAGE_ID and FB_ACCESS_TOKEN) else False
+    ok_fb = postar_facebook(p) if FB_ATIVO else False
     return ok_tg or ok_fb
 
 
@@ -521,7 +658,8 @@ def main():
     agora = dt.datetime.now(TZ)
     print("Iniciando", agora.isoformat())
     print(f"Meta: ML + Shopee | máx {MAX_POSTS} | bloqueio {REPETIR_APOS_DIAS}d | shopee={SHOPEE_POSTS}")
-    print(f"Canais: Telegram={'sim' if TG_TOKEN and TG_CHAT else 'não'} | Facebook={'sim' if FB_PAGE_ID and FB_ACCESS_TOKEN else 'não'}")
+    print(f"Canais: Telegram={'sim' if TG_TOKEN and TG_CHAT else 'não'} | Facebook={'sim' if FB_ATIVO else 'não'}")
+    fb_diagnostico()
     h = headers_ml()
     if not h:
         return
@@ -550,9 +688,9 @@ def main():
         salvar(estado)
         return
 
-    tem_canal = (TG_TOKEN and TG_CHAT) or (FB_PAGE_ID and FB_ACCESS_TOKEN)
+    tem_canal = (TG_TOKEN and TG_CHAT) or FB_ATIVO
     if not tem_canal:
-        print("Nenhum canal configurado (Telegram ou Facebook)")
+        print("Nenhum canal ativo (Telegram ou Facebook)")
         salvar(estado)
         return
     if not pode_postar(agora):
