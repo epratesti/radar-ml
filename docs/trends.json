@@ -1,81 +1,81 @@
 {
-  "atualizado": "2026-10-27T11:05:27.367326-03:00",
+  "atualizado": "2026-10-27T11:24:29.264882-03:00",
   "itens": [
     {
-      "id": "SHOPEE-22397182247",
-      "titulo": "Carregador iPhone Turbo Tipo-C 20W + Cabo Lightining para IPhone Carga rápida",
-      "preco": 14.99,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rbkw-lpcg9rytbas79a",
+      "id": "MLB69735015",
+      "titulo": "Pokémon ME04 Caos Ascendente Blister Quádruplo Toxel 4 Boosters copag",
+      "preco": 39.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_861056-MLA116069207296_092026-F.jpg",
       "frete_gratis": false,
-      "categoria": "Shopee",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/5VWQps054O",
-      "comissao": "0.11",
-      "loja": "ZSZ_SHOP"
+      "categoria": "Brinquedos",
+      "fonte": "ml",
+      "link": "https://produto.mercadolivre.com.br/MLB-5452950305?matt_tool=71970283"
     },
     {
-      "id": "SHOPEE-22593832914",
-      "titulo": "Fones De Ouvido Bluetooth HiFi Estéreo Com Redução De Ruído ENC À Prova D'água i12 TWS  FON-I12",
-      "preco": 21.99,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-m7cfa9jh9yks7d",
+      "id": "MLB63152047",
+      "titulo": "Patinete Infantil 3 Rodas Led Dobrável Luppy Azul Maxi Toys",
+      "preco": 49.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_702576-MLA110388417253_042026-F.jpg",
+      "frete_gratis": false,
+      "categoria": "Brinquedos",
+      "fonte": "ml",
+      "link": "https://produto.mercadolivre.com.br/MLB-5440792289?matt_tool=71970283"
+    },
+    {
+      "id": "MLB63966639",
+      "titulo": "Filamento Pla Plus 1kg Impressão 3d Nacional - Cores Cor Preto",
+      "preco": 104.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_903418-MLA107165042644_022026-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Informática",
+      "fonte": "ml",
+      "link": "https://produto.mercadolivre.com.br/MLB-7831786404?matt_tool=71970283"
+    },
+    {
+      "id": "SHOPEE-22299265128",
+      "titulo": "Mochila Executiva Impermeável Unissex Reforçada com Cabo de Aço para Notebook 15.6'' Grande Capacidade Viagem Trabalho",
+      "preco": 29.99,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-82589-mtnhizjsx3ifa8",
       "frete_gratis": false,
       "categoria": "Shopee",
       "fonte": "shopee",
-      "link": "https://s.shopee.com.br/W7kcEZNGo",
+      "link": "https://s.shopee.com.br/906InN78or",
       "comissao": "0.03",
-      "loja": "Cuco Variedades"
+      "loja": "TUCAN "
     },
     {
-      "id": "MLB45617876",
-      "titulo": "Attracione Men perfume Masculino Com Feromônios Ativados 25 mL",
-      "preco": 52.2,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_948198-MLA81769955450_012025-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Beleza",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-4612875615?matt_tool=71970283"
-    },
-    {
-      "id": "MLB21278806",
-      "titulo": "Filamento 3D Petg Branco Premium Resistente Impressora 3D Master Print 1,75mm - 1kg",
-      "preco": 59.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_913849-MLA105989588051_012026-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Informática",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-5467835685?matt_tool=71970283"
-    },
-    {
-      "id": "SHOPEE-28369741532",
-      "titulo": "KY2 Pro Sem Fio Bluetooth 5.3 Fone De Ouvido Único Tampões Ultra Longa Vida Útil Da Bateria Negócios Esportes Fones Com",
-      "preco": 12.06,
-      "imagem": "https://cf.shopee.com.br/file/cn-11134207-7r98o-lufrk06tgqr7d8",
+      "id": "SHOPEE-9787295031",
+      "titulo": "Protein Fusion Whey Isolate 900g - Espartanos",
+      "preco": 45.96,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-m4946jqt4u693f",
       "frete_gratis": false,
       "categoria": "Shopee",
       "fonte": "shopee",
-      "link": "https://s.shopee.com.br/1141D9XTFr",
-      "comissao": "0.04",
-      "loja": "Choice Oficial"
+      "link": "https://s.shopee.com.br/7Ky52X4zNV",
+      "comissao": "0.13",
+      "loja": "Loja do Suplemento Oficial"
     },
     {
-      "id": "MLB70449712",
-      "titulo": "Body Splash Masculino Vibration 200ml - Primacial Perfume Bergamota Fresco",
-      "preco": 34.13,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_617155-MLA118231595864_102026-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Beleza",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-7891513090?matt_tool=71970283"
+      "id": "SHOPEE-58254796458",
+      "titulo": "KIT Whey Protein Fusion + Creatina + Pré Treino + Shaker - ESPARTANOS",
+      "preco": 79.99,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztc-mke6w3lmx2bk67",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/5fpr3TBKlH",
+      "comissao": "0.13",
+      "loja": "Loja do Suplemento Oficial"
     },
     {
-      "id": "MLB50196682",
-      "titulo": "Sony PlayStation Store Gift Card R$ 150 (Digital)",
-      "preco": 150.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_902418-MLA116666090065_082026-F.jpg",
+      "id": "MLB44361342",
+      "titulo": "Cabo De Rede Internet 30m 30 Metros Cat6 Azul Crimpado Giga Lan Ethernet Boyu Cell",
+      "preco": 41.18,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_795187-MLA107571017470_032026-F.jpg",
       "frete_gratis": false,
       "categoria": "Informática",
       "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-5408400744?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-4729017917?matt_tool=71970283"
     }
   ]
 }
