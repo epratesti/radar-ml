@@ -1,81 +1,81 @@
 {
-  "atualizado": "2026-10-27T10:08:07.395478-03:00",
+  "atualizado": "2026-10-27T11:05:27.367326-03:00",
   "itens": [
     {
-      "id": "MLB23487120",
-      "titulo": "Filamento Voolt 3d Pla Verde Efeito Fosco Velvet Premium 1kg Verde Velvet",
-      "preco": 107.61,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_647571-MLA116549201715_082026-F.jpg",
+      "id": "SHOPEE-22397182247",
+      "titulo": "Carregador iPhone Turbo Tipo-C 20W + Cabo Lightining para IPhone Carga rápida",
+      "preco": 14.99,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rbkw-lpcg9rytbas79a",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/5VWQps054O",
+      "comissao": "0.11",
+      "loja": "ZSZ_SHOP"
+    },
+    {
+      "id": "SHOPEE-22593832914",
+      "titulo": "Fones De Ouvido Bluetooth HiFi Estéreo Com Redução De Ruído ENC À Prova D'água i12 TWS  FON-I12",
+      "preco": 21.99,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-m7cfa9jh9yks7d",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/W7kcEZNGo",
+      "comissao": "0.03",
+      "loja": "Cuco Variedades"
+    },
+    {
+      "id": "MLB45617876",
+      "titulo": "Attracione Men perfume Masculino Com Feromônios Ativados 25 mL",
+      "preco": 52.2,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_948198-MLA81769955450_012025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Beleza",
+      "fonte": "ml",
+      "link": "https://produto.mercadolivre.com.br/MLB-4612875615?matt_tool=71970283"
+    },
+    {
+      "id": "MLB21278806",
+      "titulo": "Filamento 3D Petg Branco Premium Resistente Impressora 3D Master Print 1,75mm - 1kg",
+      "preco": 59.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_913849-MLA105989588051_012026-F.jpg",
       "frete_gratis": true,
       "categoria": "Informática",
       "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-7762920436?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-5467835685?matt_tool=71970283"
     },
     {
-      "id": "SHOPEE-22494456015",
-      "titulo": "Fone de ouvido Bluetooth Sem Fio Headphone Bluetooth Recarregável P9 Air Top Casual Esportivo",
-      "preco": 24.87,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-824gf-mf8cvs3kgwela4",
+      "id": "SHOPEE-28369741532",
+      "titulo": "KY2 Pro Sem Fio Bluetooth 5.3 Fone De Ouvido Único Tampões Ultra Longa Vida Útil Da Bateria Negócios Esportes Fones Com",
+      "preco": 12.06,
+      "imagem": "https://cf.shopee.com.br/file/cn-11134207-7r98o-lufrk06tgqr7d8",
       "frete_gratis": false,
       "categoria": "Shopee",
       "fonte": "shopee",
-      "link": "https://s.shopee.com.br/4B12yyLPpM",
-      "comissao": "0.03",
-      "loja": "TOP LOJA ELETRONICO"
+      "link": "https://s.shopee.com.br/1141D9XTFr",
+      "comissao": "0.04",
+      "loja": "Choice Oficial"
     },
     {
-      "id": "MLB55762063",
-      "titulo": "Smartphone Motorola Moto G06 - 256gb 4gb Ram + 8gb Ram Boost, e Camera 50mp Com Ai Bateria De 5200 Mah Tela 6.9 - Bege",
-      "preco": 930.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_793349-MLA91806774304_092025-F.jpg",
+      "id": "MLB70449712",
+      "titulo": "Body Splash Masculino Vibration 200ml - Primacial Perfume Bergamota Fresco",
+      "preco": 34.13,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_617155-MLA118231595864_102026-F.jpg",
       "frete_gratis": true,
-      "categoria": "Celulares",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-4856877715?matt_tool=71970283"
-    },
-    {
-      "id": "SHOPEE-23399043568",
-      "titulo": "Fone Bluetooth Pro5 Premium | Imersão Total c Cancelamento Ruído Qualidade Superior p iPhoneAndroid",
-      "preco": 66.88,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mg4gj8nwxkw7e0",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/2BFybIT1tA",
-      "comissao": "0.03",
-      "loja": "TOP SELECAO"
-    },
-    {
-      "id": "MLB19150371",
-      "titulo": "NIVEA Hidratante Desodorante Beleza Radiante Cuidado Intenso 400ml, Hidratação Profunda 48h, Brilho Natural, Corporal, Pele Seca e Extrasseca",
-      "preco": 17.99,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_959443-MLA93494140268_102025-F.jpg",
-      "frete_gratis": false,
       "categoria": "Beleza",
       "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-5447869931?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-7891513090?matt_tool=71970283"
     },
     {
-      "id": "MLB60416809",
-      "titulo": "Hidrabene Protetor facial Solar FPS 70 Toque Seco Antissinais Clareia a pele 50g",
-      "preco": 30.62,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_997425-MLA118480886623_092026-F.jpg",
+      "id": "MLB50196682",
+      "titulo": "Sony PlayStation Store Gift Card R$ 150 (Digital)",
+      "preco": 150.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_902418-MLA116666090065_082026-F.jpg",
       "frete_gratis": false,
-      "categoria": "Beleza",
+      "categoria": "Informática",
       "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-5261456973?matt_tool=71970283"
-    },
-    {
-      "id": "SHOPEE-43007791633",
-      "titulo": "Chinelo Infantil com Elástico Antiderrapante Confortável Bebê Unissex",
-      "preco": 16.9,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-mby1vqu3deu144",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/3LRw2xJumv",
-      "comissao": "0.03",
-      "loja": "Lima'S Fabrica"
+      "link": "https://produto.mercadolivre.com.br/MLB-5408400744?matt_tool=71970283"
     }
   ]
 }
