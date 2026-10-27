@@ -1,91 +1,91 @@
 {
-  "atualizado": "2026-10-27T11:39:26.624355-03:00",
+  "atualizado": "2026-10-27T11:48:01.809483-03:00",
   "itens": [
     {
-      "id": "MLB45837395",
-      "titulo": "Smart TV LED Xion 43",
-      "preco": 1500.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_990623-MLA82210395033_022025-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Eletrônicos",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-6297021948?matt_tool=71970283"
-    },
-    {
-      "id": "SHOPEE-23798203051",
-      "titulo": "Kit 100 forma de airfryer descartavel antiaderente de papel cozinha quadrado fritadeira cozimento",
-      "preco": 14.99,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820mh-msc0ajin7hms37",
+      "id": "SHOPEE-20599305295",
+      "titulo": "Mini Aspirador De Pó Robô Automático Inteligente Doméstico E Recarregável",
+      "preco": 38.99,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lxv4xwxj3rte78",
       "frete_gratis": false,
       "categoria": "Shopee",
       "fonte": "shopee",
-      "link": "https://s.shopee.com.br/50aAHH154q",
+      "link": "https://s.shopee.com.br/2BFyugN3M5",
       "comissao": "0.03",
-      "loja": "Casa&C Shop"
+      "loja": "Kaym Black"
     },
     {
-      "id": "MLB68084122",
-      "titulo": "Kit Skincare Facial Glow",
-      "preco": 49.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_951302-MLA110504035333_042026-F.jpg",
+      "id": "SHOPEE-20699892486",
+      "titulo": "Sapateira 4/5 Andares Organizador de Sapatos Tênis 8/10 Pares Desmontável Multiuso para Sapatos, Livros e Brinquedos",
+      "preco": 19.58,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mhm77p5j0ruu03",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/70LEQLkzlC",
+      "comissao": "0.12",
+      "loja": "MANGO-SHOP"
+    },
+    {
+      "id": "MLB60351675",
+      "titulo": "Aspirador sem fio, aspirador de vara, aspirador Insep",
+      "preco": 669.2,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_634539-MLA95023778606_102025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Casa e Eletro",
+      "fonte": "ml",
+      "link": "https://produto.mercadolivre.com.br/MLB-7088246020?matt_tool=71970283"
+    },
+    {
+      "id": "SHOPEE-22793684140",
+      "titulo": "Tênis Feminino Esportivo Leve e mácio Academia Corrida",
+      "preco": 29.0,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-m5tyxgjeaxz9d5",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/6fiO1jmGR6",
+      "comissao": "0.13",
+      "loja": "Dulojashoes"
+    },
+    {
+      "id": "MLB38591220",
+      "titulo": "Mini aspirador Zcsertgi, aspirador de carro, aspirador de pó",
+      "preco": 142.76,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_797785-MLA99904948491_112025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Casa e Eletro",
+      "fonte": "ml",
+      "link": "https://produto.mercadolivre.com.br/MLB-3986516611?matt_tool=71970283"
+    },
+    {
+      "id": "MLB23697502",
+      "titulo": "Ssd 1tb M.2 2280 Sata",
+      "preco": 709.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_776121-MLU69791652657_062023-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Eletrônicos",
+      "fonte": "ml",
+      "link": "https://produto.mercadolivre.com.br/MLB-5312148151?matt_tool=71970283"
+    },
+    {
+      "id": "MLB17007152",
+      "titulo": "Mouse gamer Onikuma Gamer CW902 preto",
+      "preco": 58.6,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_737709-MLA99632349914_122025-F.jpg",
+      "frete_gratis": false,
+      "categoria": "Eletrônicos",
+      "fonte": "ml",
+      "link": "https://produto.mercadolivre.com.br/MLB-6649105574?matt_tool=71970283"
+    },
+    {
+      "id": "MLB70217256",
+      "titulo": "Kit Skincare Coreano",
+      "preco": 179.7,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_605018-MLA111154467630_052026-F.jpg",
       "frete_gratis": true,
       "categoria": "Esportes e Beleza",
       "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-6967055754?matt_tool=71970283"
-    },
-    {
-      "id": "MLB22990111",
-      "titulo": "Panela Pressão Rochedo 7l Turbo Polida",
-      "preco": 194.26,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_735715-MLA99452705392_112025-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Casa e Eletro",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-4320571041?matt_tool=71970283"
-    },
-    {
-      "id": "SHOPEE-55666184367",
-      "titulo": "ROMANTIC CROWN Garrafa Térmica 800ml Aço Inox 304 Grande Capacidade com 2 Formas de Beber para Viagem e Esporte",
-      "preco": 44.98,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m2-mtgcw2memgoy63",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/4B13HjzzTV",
-      "comissao": "0.08",
-      "loja": "Romantic.Crown.07"
-    },
-    {
-      "id": "SHOPEE-43133655210",
-      "titulo": "ROMANTIC CROWN Copo Térmico Inox 1200ml com Bico Flip e Alça Garrafa Térmica para Viagem e Carro",
-      "preco": 49.98,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820mc-msz051f1n4lg47",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/5fpr4UuHQg",
-      "comissao": "0.08",
-      "loja": "Romantic.Crown.07"
-    },
-    {
-      "id": "MLB26061372",
-      "titulo": "Panela Pressão 20l Profissional Nigro Polida",
-      "preco": 579.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_866504-MLA94155226426_102025-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Casa e Eletro",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-7877235812?matt_tool=71970283"
-    },
-    {
-      "id": "MLB47213593",
-      "titulo": "Kit Acrilico Para Tv Led Un55au8000",
-      "preco": 589.99,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_809431-MLA83115286829_032025-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Eletrônicos",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-4078706503?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-6835084194?matt_tool=71970283"
     }
   ]
 }
