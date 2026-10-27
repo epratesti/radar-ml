@@ -1,15 +1,35 @@
 {
-  "atualizado": "2026-10-27T02:34:19.478489-03:00",
+  "atualizado": "2026-10-27T03:11:27.296669-03:00",
   "itens": [
     {
-      "id": "MLB24326256",
-      "titulo": "Creme Multirreparador Pele Sensível Cicaplast Baume B5+ La Roche-Posay 40ml",
-      "preco": 71.52,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_695558-MLA119937437423_102026-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Beleza",
+      "id": "MLB65271168",
+      "titulo": "Carregador Turbo 40w Para iPhone 11 12 13 14 Pro Max Usb Branco",
+      "preco": 29.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_999053-MLA112935055303_062026-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Celulares",
       "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-3949790433?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-7867496582?matt_tool=71970283"
+    },
+    {
+      "id": "MLB25741527",
+      "titulo": "Sanduicheira Elétrica Cadence SAN400 Preta",
+      "preco": 89.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_633183-MLA99468751756_112025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Eletrodomésticos",
+      "fonte": "ml",
+      "link": "https://produto.mercadolivre.com.br/MLB-6607665974?matt_tool=71970283"
+    },
+    {
+      "id": "MLB54982411",
+      "titulo": "Celular Samsung Galaxy A17 Com Ia, 256gb, 8gb Ram, Câm De 50mp, Tela De 6.7 , Nfc, Ip54 - Azul",
+      "preco": 1289.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_889169-MLA96868779849_102025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Celulares",
+      "fonte": "ml",
+      "link": "https://produto.mercadolivre.com.br/MLB-4669565403?matt_tool=71970283"
     },
     {
       "id": "MLB45617876",
@@ -22,70 +42,50 @@
       "link": "https://produto.mercadolivre.com.br/MLB-4612875615?matt_tool=71970283"
     },
     {
-      "id": "MLB70514530",
-      "titulo": "Carregador Portátil Power Bank 20.000mah Turbo Celular Carga Rápida 22.5w Premium Display Visor Grande Universal Usb-c Viagens Festa Para los E Android iPhone Samsung Motorola Xiaomi Branco Nixzen",
-      "preco": 72.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_918189-MLA113906382815_062026-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Celulares",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-6867815778?matt_tool=71970283"
-    },
-    {
-      "id": "SHOPEE-22694463642",
-      "titulo": "Forma Air Fryer 50/100/150/200/250 Descartável Antiaderente Redonda Forro De Papel Vegetal",
-      "preco": 12.89,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lk-mu9scy1ab5s278",
+      "id": "SHOPEE-58251519281",
+      "titulo": "ROMANTIC CROWN Copo Térmico Inox Portátil 1200ml/600ml com Tampa e Canudo Garrafa Térmica Inoxidável",
+      "preco": 34.98,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mi59t0ifxfk25c",
       "frete_gratis": false,
       "categoria": "Shopee",
       "fonte": "shopee",
-      "link": "https://s.shopee.com.br/1gJgwT522B",
-      "comissao": "0.03",
-      "loja": "Win  "
+      "link": "https://s.shopee.com.br/4B11zA7NDt",
+      "comissao": "0.08",
+      "loja": "Romantic Crown"
     },
     {
-      "id": "MLB77835608",
-      "titulo": "Cozedor De Ovos Automático Panela A Vapor Elétrica Legumes Elétrica Portátil Prático Rápido 7 Ovos Em 5min Micgeek",
-      "preco": 28.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_873330-MLA115104920512_082026-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Eletrodomésticos",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-5447993697?matt_tool=71970283"
-    },
-    {
-      "id": "SHOPEE-23393820140",
-      "titulo": "Garrafa Térmica 900ML Com Bico Com Alça Flip Tumbl Aço Inoxidável Academia Trabalho",
-      "preco": 28.89,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-m79yy1wpr0wa03",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/6VOwlRyUUI",
-      "comissao": "0.03",
-      "loja": "Behemoth Eletrônicos"
-    },
-    {
-      "id": "SHOPEE-21198282551",
-      "titulo": "Forma De Silicone 1 ou 3 peças Para Air Fryer Forno Fritadeira Assadeira Reutilizável Antiaderente Flexível",
-      "preco": 10.8,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-824iu-me96xd96itj808",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/1BNQLY6w38",
-      "comissao": "0.09",
-      "loja": "Mix Essencial Variedades"
-    },
-    {
-      "id": "MLB27080589",
-      "titulo": "Kit 2 Refil De Água Acqua Pure Electrolux Pe12a Pe12b Pe12g PC01X, Cor Marrom-claro",
-      "preco": 115.57,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_764049-MLA114244626520_082026-F.jpg",
+      "id": "MLB19694427",
+      "titulo": "Escova Secadora Britânia Bivolt 1300w Soft Bec07r Original",
+      "preco": 99.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_734805-MLA114128393951_072026-F.jpg",
       "frete_gratis": true,
-      "categoria": "Eletrodomésticos",
+      "categoria": "Beleza",
       "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-7883780734?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-5139760693?matt_tool=71970283"
+    },
+    {
+      "id": "SHOPEE-54413646243",
+      "titulo": "2 peças de relógios de moda feminina com pulseira de silicone e bracelete em formato de coração (sem caixa)",
+      "preco": 14.64,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134253-8258p-mqe2o5tp7kelac",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/2LZO0GwTgR",
+      "comissao": "0.07",
+      "loja": "Choice Oficial"
+    },
+    {
+      "id": "SHOPEE-23594336224",
+      "titulo": "Garrafa 1700, 900ml Térmica Prática Versátil Aço Inoxidável Com Alça Transporte Fácil Confortável",
+      "preco": 56.99,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lj-mmnmb62hdxjab4",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/50a8yh4CX8",
+      "comissao": "0.24",
+      "loja": "SHOP JI"
     }
   ]
 }
