@@ -1,91 +1,91 @@
 {
-  "atualizado": "2026-10-27T12:21:19.058120-03:00",
+  "atualizado": "2026-10-27T13:09:47.413347-03:00",
   "itens": [
     {
-      "id": "MLB69972890",
-      "titulo": "Carregador Turbo Portátil 200w,Carregamento Super Rápido,Carregador Celular Rapido,Carregador Turbo Usb-c,Fonte Bivolt 110v/220v,Carregamento Rápido Fast Charge, Ideal Para Celular, Tablet E Notebook",
-      "preco": 25.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_665995-MLA111863482425_052026-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Eletrônicos",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-7888970694?matt_tool=71970283"
-    },
-    {
-      "id": "SHOPEE-22199227294",
-      "titulo": "Pururuca Listrada de Trigo Snack Brazil | Pellet para Fritar | Óleo, Air Fryer e Micro-ondas",
-      "preco": 10.5,
-      "imagem": "https://cf.shopee.com.br/file/br-11134201-820la-mtgjevhymwhsb9",
+      "id": "SHOPEE-58216433905",
+      "titulo": "Fone De Ouvido Sem Fio Bluetooth 5.0 E6s e A6s Pronta Entrega no Brasil - CAROLSTORE",
+      "preco": 17.99,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8257t-ms1imvza172869",
       "frete_gratis": false,
       "categoria": "Shopee",
       "fonte": "shopee",
-      "link": "https://s.shopee.com.br/1BNRiEFfrF",
-      "comissao": "0.06",
-      "loja": "snacks brazil"
-    },
-    {
-      "id": "SHOPEE-23694958937",
-      "titulo": "Fone De Ouvido Bluetooth Orelha Gatinho Infantil Led Sem Fio",
-      "preco": 27.5,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-820nh-mnq01ce18zr689",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/LoKPva0bn",
-      "comissao": "0.06",
-      "loja": "TOP SHOP ELETRONICO"
-    },
-    {
-      "id": "SHOPEE-23893228453",
-      "titulo": "Forma Descartável Papel Airfryer Antiaderente Para Cozinha",
-      "preco": 13.99,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820ln-msc30lkqvnrb8e",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/W7kv0IDDB",
+      "link": "https://s.shopee.com.br/1W0Ho4VZF6",
       "comissao": "0.03",
-      "loja": "B&R Shop"
+      "loja": "CAROL STORE BR"
     },
     {
-      "id": "MLB49448628",
-      "titulo": "Cafeteira manual italiana PENTHA Cafeteira italiana Moka Cafeteira italiana Moka - prata",
-      "preco": 65.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_885246-MLA84260495680_052025-F.jpg",
+      "id": "SHOPEE-21798200941",
+      "titulo": "Fone P47 Headphone Sem Fio Estéreo Redução de Ruídos Bluetooth 5.0 Universal",
+      "preco": 18.98,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rav0-mairf8w1nd37d7",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/gRAoXYjvl",
+      "comissao": "0.03",
+      "loja": "TOP LOJA ELETRONICO"
+    },
+    {
+      "id": "MLB47075228",
+      "titulo": "Perfume Deold, perfume feminino de coruja, perfume floral e frutado",
+      "preco": 79.5,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_716539-MLA82741377678_032025-F.jpg",
       "frete_gratis": true,
+      "categoria": "Esportes e Beleza",
+      "fonte": "ml",
+      "link": "https://produto.mercadolivre.com.br/MLB-7393875904?matt_tool=71970283"
+    },
+    {
+      "id": "MLB19416986",
+      "titulo": "Livro Medicina da noite, de (Organizador) Jansen, José Manoel/ (Organizador) Lopes, Agnaldo José/ (Organizador) Jansen, Ursula/ (Organizador) Capone, Domenico/ (Organizador) Maeda, Teresinha...",
+      "preco": 62.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_913027-MLU50699268825_072022-F.jpg",
+      "frete_gratis": false,
       "categoria": "Casa e Eletro",
       "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-7890967526?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-3724878687?matt_tool=71970283"
     },
     {
-      "id": "MLB76870660",
-      "titulo": "Air Fryer Agratto Air Fryer Supremma De 4l Preto",
-      "preco": 250.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_775688-MLA115975716523_082026-F.jpg",
+      "id": "MLB23552617",
+      "titulo": "Óculos Sol Mormaii Grand Tour",
+      "preco": 526.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_921266-MLA95555607805_102025-F.jpg",
       "frete_gratis": true,
-      "categoria": "Casa e Eletro",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-5427148915?matt_tool=71970283"
-    },
-    {
-      "id": "MLB62645989",
-      "titulo": "Komei Carregador Turbo 67w",
-      "preco": 25.49,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_812850-MLA99846878543_112025-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Eletrônicos",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-7185078578?matt_tool=71970283"
-    },
-    {
-      "id": "MLB47585760",
-      "titulo": "Chinelo MC74VHC574DTR2G D",
-      "preco": 70.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_803697-MLA83417452213_032025-F.jpg",
-      "frete_gratis": false,
       "categoria": "Moda",
       "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-7732002000?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-6119121842?matt_tool=71970283"
+    },
+    {
+      "id": "SHOPEE-23597895251",
+      "titulo": "Carregador Portátil Bateria Power Bank 20000mah PN-959",
+      "preco": 34.98,
+      "imagem": "https://cf.shopee.com.br/file/br-11134201-820lc-mqyd4oflknba85",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/BUucbV9PA",
+      "comissao": "0.03",
+      "loja": "MOBY LUX"
+    },
+    {
+      "id": "MLB51529781",
+      "titulo": "Bolsa De Ombro Feminina Bolsa Crossbody Bolsa Bolsa Demoedas Preto Vavichica",
+      "preco": 699.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_871606-MLA86299704362_062025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Moda",
+      "fonte": "ml",
+      "link": "https://produto.mercadolivre.com.br/MLB-5432242237?matt_tool=71970283"
+    },
+    {
+      "id": "MLB36477466",
+      "titulo": "Garrafa Térmica Mr Garrafa Térmica",
+      "preco": 56.72,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_884703-MLA94006835071_102025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Esportes e Beleza",
+      "fonte": "ml",
+      "link": "https://produto.mercadolivre.com.br/MLB-7880089898?matt_tool=71970283"
     }
   ]
 }
