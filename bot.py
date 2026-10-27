@@ -1,4 +1,4 @@
-"""Radar ML + Shopee → Telegram.
+"""Radar ML + Shopee → Telegram + Facebook Page.
 ML: search (sem auth se 403) + highlights.
 Shopee: Open API afiliado GraphQL productOfferV2.
 Horário SP: 07h–22h.
@@ -12,6 +12,8 @@ AFF_ID = os.getenv("ML_AFFILIATE_ID", "71970283")
 AFF_PARAMS = os.getenv("ML_AFFILIATE_PARAMS", "matt_tool={id}")
 TG_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TG_CHAT = os.getenv("TELEGRAM_CHAT_ID")
+FB_PAGE_ID = os.getenv("FB_PAGE_ID", "").strip()
+FB_ACCESS_TOKEN = os.getenv("FB_ACCESS_TOKEN", "").strip()
 POSTS_POR_GRUPO = int(os.getenv("POSTS_POR_GRUPO", "2"))
 MAX_POSTS = int(os.getenv("MAX_POSTS", "8"))
 REPETIR_APOS_DIAS = int(os.getenv("REPETIR_APOS_DIAS", "3"))
@@ -22,6 +24,7 @@ SHOPEE_SECRET = os.getenv("SHOPEE_SECRET", "").strip()
 SHOPEE_GQL = "https://open-api.affiliate.shopee.com.br/graphql"
 
 API = "https://api.mercadolibre.com"
+FB_API = "https://graph.facebook.com/v21.0"
 ROOT = Path(__file__).parent
 TRENDS = ROOT / "docs" / "trends.json"
 STATE = ROOT / "state" / "posted.json"
@@ -52,7 +55,7 @@ CAT_NOMES = {
 }
 
 S = requests.Session()
-S.headers.update({"User-Agent": "radar-ml/3.0", "Accept": "application/json"})
+S.headers.update({"User-Agent": "radar-ml/3.1", "Accept": "application/json"})
 
 
 def headers_ml():
@@ -155,7 +158,7 @@ def produto_search(item, label):
 def ml_get(url, h, params=None):
     r = S.get(url, headers=h or {}, params=params, timeout=25)
     if r.status_code == 403 and h:
-        r = S.get(url, headers={"Accept": "application/json", "User-Agent": "radar-ml/3.0"},
+        r = S.get(url, headers={"Accept": "application/json", "User-Agent": "radar-ml/3.1"},
                   params=params, timeout=25)
     return r
 
@@ -310,7 +313,6 @@ def buscar_shopee(keyword, vistos, vistos_t, n):
     achados = []
     if not (SHOPEE_APP_ID and SHOPEE_SECRET):
         return achados
-    # json.dumps inclui aspas e escapa corretamente
     kw = json.dumps(keyword, ensure_ascii=False)
     q = (
         "{"
@@ -398,34 +400,58 @@ def preco_br(v):
     return f"R$ {v:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
 
 
-def postar(p):
+def texto_post(p, para_facebook=False):
+    """Gera o texto do post. Facebook não usa HTML."""
     fonte = p.get("fonte") or "ml"
-    cat = html.escape(p.get("categoria", ""))
-    titulo = html.escape(p["titulo"][:120])
+    cat = p.get("categoria", "")
+    titulo = p["titulo"][:120]
     preco = preco_br(p["preco"])
-    link = html.escape(p["link"])
-    frete = "🚚 <b>Frete grátis</b>\n" if p.get("frete_gratis") else ""
+    link = p["link"]
+    frete = "🚚 Frete grátis\n" if p.get("frete_gratis") else ""
+
     if fonte == "shopee":
-        loja = html.escape(p.get("loja") or "")
+        loja = p.get("loja") or ""
         loja_linha = f"🏪 {loja}\n" if loja else ""
-        texto = (
-            f"🛒 <b>Shopee — {cat}</b>\n\n"
-            f"📦 {titulo}\n\n"
-            f"💰 <b>{preco}</b>\n{loja_linha}{frete}"
-            f"\n👉 <a href=\"{link}\">Ver oferta na Shopee</a>\n\n"
-            f"<i>Link de afiliado · Preços podem variar</i>"
-        )
+        if para_facebook:
+            return (
+                f"🛒 Shopee — {cat}\n\n"
+                f"📦 {titulo}\n\n"
+                f"💰 {preco}\n{loja_linha}{frete}"
+                f"\n👉 Ver oferta: {link}\n\n"
+                f"Link de afiliado · Preços podem variar"
+            )
+        else:
+            return (
+                f"🛒 <b>Shopee — {html.escape(cat)}</b>\n\n"
+                f"📦 {html.escape(titulo)}\n\n"
+                f"💰 <b>{preco}</b>\n{html.escape(loja_linha)}{frete}"
+                f"\n👉 <a href=\"{html.escape(link)}\">Ver oferta na Shopee</a>\n\n"
+                f"<i>Link de afiliado · Preços podem variar</i>"
+            )
     else:
-        texto = (
-            f"🔥 <b>Achado do momento — {cat}</b>\n\n"
-            f"📦 {titulo}\n\n"
-            f"💰 <b>{preco}</b>\n{frete}"
-            f"\n👉 <a href=\"{link}\">Ver oferta no Mercado Livre</a>\n\n"
-            f"<i>Link de afiliado · Preços podem variar</i>"
-        )
+        if para_facebook:
+            return (
+                f"🔥 Achado do momento — {cat}\n\n"
+                f"📦 {titulo}\n\n"
+                f"💰 {preco}\n{frete}"
+                f"\n👉 Ver oferta: {link}\n\n"
+                f"Link de afiliado · Preços podem variar"
+            )
+        else:
+            return (
+                f"🔥 <b>Achado do momento — {html.escape(cat)}</b>\n\n"
+                f"📦 {html.escape(titulo)}\n\n"
+                f"💰 <b>{preco}</b>\n{frete}"
+                f"\n👉 <a href=\"{html.escape(link)}\">Ver oferta no Mercado Livre</a>\n\n"
+                f"<i>Link de afiliado · Preços podem variar</i>"
+            )
+
+
+def postar_telegram(p):
     if not TG_TOKEN or not TG_CHAT:
         print("Telegram não configurado")
         return False
+    texto = texto_post(p, para_facebook=False)
     data = {"chat_id": TG_CHAT, "parse_mode": "HTML"}
     if p.get("imagem"):
         data["photo"] = p["imagem"]
@@ -436,6 +462,50 @@ def postar(p):
         r = S.post(f"https://api.telegram.org/bot{TG_TOKEN}/sendMessage", data=data, timeout=30)
     print("Telegram:", r.status_code, r.text[:120])
     return r.ok
+
+
+def postar_facebook(p):
+    """Posta foto + legenda na página do Facebook via Graph API."""
+    if not (FB_PAGE_ID and FB_ACCESS_TOKEN):
+        print("Facebook não configurado (FB_PAGE_ID / FB_ACCESS_TOKEN)")
+        return False
+    caption = texto_post(p, para_facebook=True)
+    try:
+        if p.get("imagem"):
+            # Post com foto (recomendado)
+            url = f"{FB_API}/{FB_PAGE_ID}/photos"
+            data = {
+                "url": p["imagem"],
+                "caption": caption,
+                "access_token": FB_ACCESS_TOKEN,
+            }
+            r = S.post(url, data=data, timeout=40)
+        else:
+            # Post só texto + link
+            url = f"{FB_API}/{FB_PAGE_ID}/feed"
+            data = {
+                "message": caption,
+                "link": p["link"],
+                "access_token": FB_ACCESS_TOKEN,
+            }
+            r = S.post(url, data=data, timeout=30)
+        print("Facebook:", r.status_code, r.text[:180])
+        if r.status_code in (200, 201):
+            return True
+        # Token inválido / permissão
+        if r.status_code in (190, 200, 10, 100):
+            print("  → Verifique FB_ACCESS_TOKEN e permissões pages_manage_posts")
+        return False
+    except Exception as e:
+        print("Erro Facebook:", e)
+        return False
+
+
+def postar(p):
+    """Envia para todos os canais configurados. Sucesso se pelo menos um canal funcionar."""
+    ok_tg = postar_telegram(p) if (TG_TOKEN and TG_CHAT) else False
+    ok_fb = postar_facebook(p) if (FB_PAGE_ID and FB_ACCESS_TOKEN) else False
+    return ok_tg or ok_fb
 
 
 def pode_postar(agora):
@@ -451,6 +521,7 @@ def main():
     agora = dt.datetime.now(TZ)
     print("Iniciando", agora.isoformat())
     print(f"Meta: ML + Shopee | máx {MAX_POSTS} | bloqueio {REPETIR_APOS_DIAS}d | shopee={SHOPEE_POSTS}")
+    print(f"Canais: Telegram={'sim' if TG_TOKEN and TG_CHAT else 'não'} | Facebook={'sim' if FB_PAGE_ID and FB_ACCESS_TOKEN else 'não'}")
     h = headers_ml()
     if not h:
         return
@@ -478,13 +549,17 @@ def main():
         print("Nada a postar")
         salvar(estado)
         return
-    if not (TG_TOKEN and TG_CHAT):
-        print("Falta Telegram")
+
+    tem_canal = (TG_TOKEN and TG_CHAT) or (FB_PAGE_ID and FB_ACCESS_TOKEN)
+    if not tem_canal:
+        print("Nenhum canal configurado (Telegram ou Facebook)")
+        salvar(estado)
         return
     if not pode_postar(agora):
         print(f"Fora do horário ({agora.hour}h)")
         salvar(estado)
         return
+
     enviados = 0
     for p in ranking:
         if enviados >= MAX_POSTS:
@@ -495,7 +570,7 @@ def main():
             registrar(estado, p["id"], p["titulo"], agora, p.get("item_id"))
             enviados += 1
             salvar(estado)
-            time.sleep(1.0)
+            time.sleep(1.5)
     salvar(estado)
     print("Postagens enviadas:", enviados)
 

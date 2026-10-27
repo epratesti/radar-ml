@@ -43,6 +43,8 @@ jobs:
           ML_AFFILIATE_ID: "71970283"
           SHOPEE_APP_ID: ${{ secrets.SHOPEE_APP_ID }}
           SHOPEE_SECRET: ${{ secrets.SHOPEE_SECRET }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN }}
           POSTS_POR_GRUPO: "2"
           MAX_POSTS: "8"
           SHOPEE_POSTS: "3"
