@@ -1,91 +1,91 @@
 {
-  "atualizado": "2026-10-27T16:06:12.344149-03:00",
+  "atualizado": "2026-10-27T17:05:39.236914-03:00",
   "itens": [
     {
-      "id": "MLB28454175",
-      "titulo": "Cafeteira de gotejamento com cafeteira de 12 xícaras, cafeteira programada",
-      "preco": 299.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_711418-MLU77331265551_062024-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Casa e Eletro",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-4654275899?matt_tool=71970283"
-    },
-    {
-      "id": "MLB26034306",
-      "titulo": "Air fryer Lumi Fritadeira Air Fryer Fritadeira Eletrica Air Fryer",
-      "preco": 340.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_944345-MLU71504962194_092023-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Casa e Eletro",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-5074854807?matt_tool=71970283"
-    },
-    {
-      "id": "MLB49760452",
-      "titulo": "Shampoo Colageno & Bergamota Shampoo Shampoo 32,12 Fl Oz",
-      "preco": 71.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_927172-MLA84618518759_052025-F.jpg",
+      "id": "SHOPEE-58255822645",
+      "titulo": "Garrafa Térmica Alça Academia Inox 350ml/600ml/800ml/1000ml",
+      "preco": 27.9,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820mf-mp9r35av9wjq14",
       "frete_gratis": false,
+      "categoria": "Shopee",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/BUusoPhAT",
+      "comissao": "0.03",
+      "loja": "Domu Lar"
+    },
+    {
+      "id": "MLB50178919",
+      "titulo": "Kaisasa Shampoo Tonalizante Para Cobrir Cabelo Cinzento，shampoo cabelo branco，shampoo barba，shampoo redutor grisalhos，shampoo tonalizante preto，hair dye shampoo，black hair dye，500ml-Preto",
+      "preco": 189.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_818741-MLA109993336551_042026-F.jpg",
+      "frete_gratis": true,
       "categoria": "Esportes e Beleza",
       "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-6099950774?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-7895401012?matt_tool=71970283"
     },
     {
-      "id": "SHOPEE-58255498231",
-      "titulo": "Sandália Macia Feminina Ideal Para Conforto Diário Leve",
-      "preco": 14.97,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8259i-mum5nk2x8dmv1c",
+      "id": "MLB46048788",
+      "titulo": "Cabo Panela Pressão Tramontina Vancouver Tampa Superior",
+      "preco": 27.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_762715-MLA100087144787_122025-F.jpg",
+      "frete_gratis": false,
+      "categoria": "Casa e Eletro",
+      "fonte": "ml",
+      "link": "https://produto.mercadolivre.com.br/MLB-5387317029?matt_tool=71970283"
+    },
+    {
+      "id": "MLB70629389",
+      "titulo": "Kit Cola Chinelo 50g + Verniz Chinelo 37ml Gliart",
+      "preco": 34.8,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_775078-MLA111481307520_052026-F.jpg",
+      "frete_gratis": false,
+      "categoria": "Moda",
+      "fonte": "ml",
+      "link": "https://produto.mercadolivre.com.br/MLB-4726308495?matt_tool=71970283"
+    },
+    {
+      "id": "SHOPEE-17292590903",
+      "titulo": "Pulseira Oceano Silicone Para Smart Watch Smartwatch e Iwo 38mm 40mm 41mm 42mm 44mm 45mm 49mm Ultra serie 8",
+      "preco": 10.99,
+      "imagem": "https://cf.shopee.com.br/file/br-11134201-23020-c2wixduf3dnva4",
       "frete_gratis": false,
       "categoria": "Shopee",
       "fonte": "shopee",
-      "link": "https://s.shopee.com.br/BUuH8VyD6",
+      "link": "https://s.shopee.com.br/5AtadnZ81Q",
       "comissao": "0.03",
-      "loja": "Martins Chinelos"
+      "loja": "Lucky Boy Space"
     },
     {
-      "id": "SHOPEE-40331456554",
-      "titulo": "Senbenbao X55 Fones De Ouvido TWS Sono Sem Fio Bluetooth Display Led Alta Fidelidade Estéreo Cancelamento Ruído À Prova ",
-      "preco": 17.72,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-823ob-mp7wv1fcnx8rc4",
+      "id": "SHOPEE-52658057285",
+      "titulo": "ROMANTIC CROWN Kit 2 Copo Térmico Inox Portátil 1200ml/600ml Garrafa Térmica Inoxidável com Tampa e Canudo",
+      "preco": 79.98,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820ln-ms9nflkeskck4f",
       "frete_gratis": false,
       "categoria": "Shopee",
       "fonte": "shopee",
-      "link": "https://s.shopee.com.br/50a9yVIF8V",
-      "comissao": "0.13",
-      "loja": "Brand Choice"
+      "link": "https://s.shopee.com.br/2gCFrPGB6C",
+      "comissao": "0.08",
+      "loja": "Romantic.Crown.07"
     },
     {
-      "id": "MLB37198903",
-      "titulo": "Oculos Sol Guess Gu78666028p",
-      "preco": 129.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_752833-MLA99414956090_112025-F.jpg",
+      "id": "MLB63245371",
+      "titulo": "Borracha Panela Pressão Nigro Eterna 15lts Silicone",
+      "preco": 41.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_847476-MLA101686858223_122025-F.jpg",
+      "frete_gratis": false,
+      "categoria": "Casa e Eletro",
+      "fonte": "ml",
+      "link": "https://produto.mercadolivre.com.br/MLB-6070122632?matt_tool=71970283"
+    },
+    {
+      "id": "MLB71624587",
+      "titulo": "Livro - Sapato Aqui, Chinelo Acolá",
+      "preco": 499.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_769617-MLA112645336215_062026-F.jpg",
       "frete_gratis": true,
       "categoria": "Moda",
       "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-4266875289?matt_tool=71970283"
-    },
-    {
-      "id": "SHOPEE-58255239538",
-      "titulo": "Chinelo BABUCHE PLATAFORMA ALTA NUVEM MACIA 100 % DECORADA COM BÓTONS PINGENTES EM ABS CONFORTÁVELSandália Confortável",
-      "preco": 37.99,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81zu9-mkpc3fgyf0u9e5",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/1141GfSnWF",
-      "comissao": "0.03",
-      "loja": "X&M Variedades"
-    },
-    {
-      "id": "MLB35062915",
-      "titulo": "Garrafa Térmica Unitermi Garrafa Térmica De Inox Garrafa Térmica",
-      "preco": 86.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_706656-MLA99442675186_112025-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Esportes e Beleza",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-5944813576?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-4737435219?matt_tool=71970283"
     }
   ]
 }
