@@ -2,8 +2,10 @@ name: Radar ML
 
 on:
   schedule:
-    - cron: "10 * * * *"
-    - cron: "40 * * * *"
+    # Horário de SP: 07:05, 10:05, 13:05, 16:05, 19:05, 22:05
+    - cron: "5 10,13,16,19,22,1 * * *"
+    # Horário de SP: 08:35, 11:35, 14:35, 17:35, 20:35
+    - cron: "35 11,14,17,20,23 * * *"
   workflow_dispatch:
 
 permissions:
