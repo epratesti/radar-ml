@@ -1,91 +1,81 @@
 {
-  "atualizado": "2026-10-27T09:09:57.380282-03:00",
+  "atualizado": "2026-10-27T10:08:07.395478-03:00",
   "itens": [
     {
-      "id": "SHOPEE-58258956764",
-      "titulo": "Carregador rápido de 120W com 6A USB C cabo 1M para Mi Turbo Charge Turbo Power Cabo USB + Cabo Tipo C",
-      "preco": 18.79,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-823qk-moi4apd18efh61",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/4fxImYs40w",
-      "comissao": "0.03",
-      "loja": "Loja Geral Breeze"
-    },
-    {
-      "id": "SHOPEE-23594970510",
-      "titulo": "Fone Ouvido Bluetooth 5.3 Tws M10 resistente a agua Microfone-Powerbank",
-      "preco": 19.89,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lf-mospn2ff75s5ba",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/BUtclVFkK",
-      "comissao": "0.03",
-      "loja": "ERICK ELETRONICOS"
-    },
-    {
-      "id": "MLB70514530",
-      "titulo": "Carregador Portátil Power Bank 20.000mah Turbo Celular Carga Rápida 22.5w Premium Display Visor Grande Universal Usb-c Viagens Festa Para los E Android iPhone Samsung Motorola Xiaomi Branco Nixzen",
-      "preco": 72.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_918189-MLA113906382815_062026-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Celulares",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-6867815778?matt_tool=71970283"
-    },
-    {
-      "id": "MLB70109633",
-      "titulo": "Cartão De Memória 128 Gb Micro Sd Classe 10 Ultra 100mb/s, Para Drones, Celulares, Câmeras Wi-fi, Com Adaptador Sd",
-      "preco": 34.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_878737-MLA114740264494_082026-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Celulares",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-7626696546?matt_tool=71970283"
-    },
-    {
-      "id": "MLB18717798",
-      "titulo": "Fralda Bigfral Derma Plus M 8 Unidades Tamanho Médio",
-      "preco": 20.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_952728-MLA99929505489_112025-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Beleza",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-5304980684?matt_tool=71970283"
-    },
-    {
-      "id": "MLB25741527",
-      "titulo": "Sanduicheira Elétrica Cadence SAN400 Preta",
-      "preco": 89.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_633183-MLA99468751756_112025-F.jpg",
+      "id": "MLB23487120",
+      "titulo": "Filamento Voolt 3d Pla Verde Efeito Fosco Velvet Premium 1kg Verde Velvet",
+      "preco": 107.61,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_647571-MLA116549201715_082026-F.jpg",
       "frete_gratis": true,
-      "categoria": "Eletrodomésticos",
+      "categoria": "Informática",
       "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-6607665974?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-7762920436?matt_tool=71970283"
     },
     {
-      "id": "MLB37257779",
-      "titulo": "Shampoo Anticaspa Cabelos Normais a Oleosos, Dercos DS Vichy, 300g",
-      "preco": 108.62,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_646464-MLA112810161826_072026-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Beleza",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-4755857128?matt_tool=71970283"
-    },
-    {
-      "id": "SHOPEE-22697451515",
-      "titulo": "Kit Pilhas Clacier Recarregável  4700mAh ou 2700mAh",
-      "preco": 18.88,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-ltvoxhgf5nq83e",
+      "id": "SHOPEE-22494456015",
+      "titulo": "Fone de ouvido Bluetooth Sem Fio Headphone Bluetooth Recarregável P9 Air Top Casual Esportivo",
+      "preco": 24.87,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-824gf-mf8cvs3kgwela4",
       "frete_gratis": false,
       "categoria": "Shopee",
       "fonte": "shopee",
-      "link": "https://s.shopee.com.br/2VsoP3MN0c",
+      "link": "https://s.shopee.com.br/4B12yyLPpM",
       "comissao": "0.03",
-      "loja": "Hybe Store"
+      "loja": "TOP LOJA ELETRONICO"
+    },
+    {
+      "id": "MLB55762063",
+      "titulo": "Smartphone Motorola Moto G06 - 256gb 4gb Ram + 8gb Ram Boost, e Camera 50mp Com Ai Bateria De 5200 Mah Tela 6.9 - Bege",
+      "preco": 930.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_793349-MLA91806774304_092025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Celulares",
+      "fonte": "ml",
+      "link": "https://produto.mercadolivre.com.br/MLB-4856877715?matt_tool=71970283"
+    },
+    {
+      "id": "SHOPEE-23399043568",
+      "titulo": "Fone Bluetooth Pro5 Premium | Imersão Total c Cancelamento Ruído Qualidade Superior p iPhoneAndroid",
+      "preco": 66.88,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mg4gj8nwxkw7e0",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/2BFybIT1tA",
+      "comissao": "0.03",
+      "loja": "TOP SELECAO"
+    },
+    {
+      "id": "MLB19150371",
+      "titulo": "NIVEA Hidratante Desodorante Beleza Radiante Cuidado Intenso 400ml, Hidratação Profunda 48h, Brilho Natural, Corporal, Pele Seca e Extrasseca",
+      "preco": 17.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_959443-MLA93494140268_102025-F.jpg",
+      "frete_gratis": false,
+      "categoria": "Beleza",
+      "fonte": "ml",
+      "link": "https://produto.mercadolivre.com.br/MLB-5447869931?matt_tool=71970283"
+    },
+    {
+      "id": "MLB60416809",
+      "titulo": "Hidrabene Protetor facial Solar FPS 70 Toque Seco Antissinais Clareia a pele 50g",
+      "preco": 30.62,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_997425-MLA118480886623_092026-F.jpg",
+      "frete_gratis": false,
+      "categoria": "Beleza",
+      "fonte": "ml",
+      "link": "https://produto.mercadolivre.com.br/MLB-5261456973?matt_tool=71970283"
+    },
+    {
+      "id": "SHOPEE-43007791633",
+      "titulo": "Chinelo Infantil com Elástico Antiderrapante Confortável Bebê Unissex",
+      "preco": 16.9,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-mby1vqu3deu144",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/3LRw2xJumv",
+      "comissao": "0.03",
+      "loja": "Lima'S Fabrica"
     }
   ]
 }
