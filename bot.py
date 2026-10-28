@@ -16,6 +16,13 @@ v3.3 (marketing):
 - Corrigido o texto "Shopee — Shopee".
 - Se o token do ML falhar, a Shopee continua rodando.
 Tudo continua automático (sem interação): só variáveis de ambiente opcionais.
+
+v3.4:
+- Facebook: o post sai com foto + texto e o link de afiliado vai no PRIMEIRO COMENTÁRIO
+  (exige token de página com pages_manage_engagement). Ligado por padrão;
+  FB_LINK_NO_COMENTARIO=0 volta o link para a legenda.
+- Se o comentário falhar, o bot edita a legenda para incluir o link e, no resto da
+  execução, volta a postar com o link na legenda (nenhum post fica sem link).
 """
 
 import os, io, json, html, re, random, hashlib, time, unicodedata, datetime as dt
@@ -65,6 +72,7 @@ PAUSA_MIN = max(0, env_int("PAUSA_MIN_SEG", 45))        # pausa entre posts (seg
 PAUSA_MAX = max(PAUSA_MIN, env_int("PAUSA_MAX_SEG", 120))
 IMG_CARD = (os.getenv("IMG_CARD", "1").strip() != "0")  # IMG_CARD=0 desliga o card e usa a foto original
 BRAND_NAME = os.getenv("BRAND_NAME", "").strip()        # nome da página, pequeno no canto do card (opcional)
+FB_LINK_NO_COMENTARIO = (os.getenv("FB_LINK_NO_COMENTARIO", "1").strip() != "0")  # link no 1º comentário (Facebook)
 
 API = "https://api.mercadolibre.com"
 FB_API = "https://graph.facebook.com/v21.0"
@@ -78,6 +86,7 @@ TZ = ZoneInfo("America/Sao_Paulo")
 FB_ATIVO = bool(FB_PAGE_ID and FB_ACCESS_TOKEN)
 FB_FALHAS = 0
 FB_ERROS_FATAIS = {3, 10, 102, 190, 200, 240, 283, 368}
+FB_COMENT_OK = True   # vira False se o comentário falhar → link volta para a legenda nesta execução
 
 SEARCH_403 = 0
 SEARCH_OFF = False
@@ -127,7 +136,7 @@ PERGUNTAS_FB = [
 ]
 
 S = requests.Session()
-S.headers.update({"User-Agent": "radar-ml/3.3", "Accept": "application/json"})
+S.headers.update({"User-Agent": "radar-ml/3.4", "Accept": "application/json"})
 
 
 # ----------------------------------------------------------------------------
@@ -314,7 +323,7 @@ def produto_search(item, label):
 def ml_get(url, h, params=None):
     r = S.get(url, headers=h or {}, params=params, timeout=25)
     if r.status_code == 403 and h:
-        r = S.get(url, headers={"Accept": "application/json", "User-Agent": "radar-ml/3.3"},
+        r = S.get(url, headers={"Accept": "application/json", "User-Agent": "radar-ml/3.4"},
                   params=params, timeout=25)
     return r
 
@@ -712,7 +721,7 @@ def selecionar(pool_ml, pool_sh):
 # ----------------------------------------------------------------------------
 # Texto dos posts
 # ----------------------------------------------------------------------------
-def texto_post(p, para_facebook=False):
+def texto_post(p, para_facebook=False, link_no_comentario=False):
     """Facebook: texto puro, 1ª linha com tudo que importa (o feed corta o resto).
     Telegram: HTML, link vai no botão inline."""
     fonte = p.get("fonte") or "ml"
@@ -734,10 +743,12 @@ def texto_post(p, para_facebook=False):
 
     if para_facebook:
         linha_preco = f"💰 De {preco_br(orig)} por {preco}" if orig else f"💰 {preco}"
+        linha_link = ("🔗 Link no primeiro comentário" if link_no_comentario
+                      else f"👉 Ver oferta: {p['link']}")
         partes = [
             f"{gancho} • {titulo} por {preco}",
             "\n".join([linha_preco] + extras),
-            f"👉 Ver oferta: {p['link']}",
+            linha_link,
             random.choice(PERGUNTAS_FB),
             hashtags(p, 3),
             "Link de afiliado · Preço pode mudar",
@@ -754,6 +765,10 @@ def texto_post(p, para_facebook=False):
         f"<i>{mkt} · Link de afiliado · Preço pode mudar</i>",
     ]
     return "\n\n".join(partes)
+
+
+def rotulo_link(p):
+    return "Ver oferta na Shopee" if (p.get("fonte") == "shopee") else "Ver oferta no Mercado Livre"
 
 
 def rotulo_botao(p):
@@ -991,12 +1006,61 @@ def fb_diagnostico():
         print("Facebook: erro no diagnóstico:", e)
 
 
+def fb_ids(r):
+    """(post_id, node_id) da resposta de publicação. Foto: post_id + id; feed: só id."""
+    try:
+        j = r.json() or {}
+    except Exception:
+        return None, None
+    return (j.get("post_id") or j.get("id")), j.get("id")
+
+
+def fb_comentar_link(post_id, p):
+    """Publica o link de afiliado como primeiro comentário. True se deu certo."""
+    msg = f"👉 {rotulo_link(p)}: {p['link']}"
+    try:
+        r = S.post(f"{FB_API}/{post_id}/comments",
+                   data={"message": msg, "access_token": FB_ACCESS_TOKEN}, timeout=30)
+        if r.status_code in (200, 201):
+            print("Facebook: link publicado no primeiro comentário")
+            return True
+        code, _, m = fb_erro(r)
+        print(f"Facebook: comentário falhou {r.status_code} (code {code}) {m}")
+        print("  → Confira se o token da página tem a permissão pages_manage_engagement.")
+    except Exception as e:
+        print("Erro ao comentar no Facebook:", e)
+    return False
+
+
+def fb_restaurar_link(post_id, node_id, caption_com_link):
+    """Comentário falhou: edita a legenda para incluir o link (o post não fica sem link)."""
+    tentativas = []
+    if post_id:
+        tentativas.append((post_id, "message"))
+    if node_id and node_id != post_id:
+        tentativas.append((node_id, "name"))
+    for alvo, campo in tentativas:
+        try:
+            r = S.post(f"{FB_API}/{alvo}",
+                       data={campo: caption_com_link, "access_token": FB_ACCESS_TOKEN}, timeout=30)
+            if r.status_code in (200, 201):
+                print("Facebook: legenda atualizada com o link")
+                return True
+            code, _, m = fb_erro(r)
+            print(f"Facebook: não consegui editar a legenda ({campo}) code {code}: {m}")
+        except Exception as e:
+            print("Erro ao editar legenda:", e)
+    print("Facebook: AVISO — este post ficou sem link no Facebook (Telegram ok).")
+    return False
+
+
 def postar_facebook(p, img=None):
-    """Posta foto + legenda na página do Facebook via Graph API."""
-    global FB_ATIVO, FB_FALHAS
+    """Posta foto + legenda na página do Facebook via Graph API (link no 1º comentário)."""
+    global FB_ATIVO, FB_FALHAS, FB_COMENT_OK
     if not FB_ATIVO:
         return False
-    caption = texto_post(p, para_facebook=True)
+    usar_comentario = FB_LINK_NO_COMENTARIO and FB_COMENT_OK
+    caption = texto_post(p, para_facebook=True, link_no_comentario=usar_comentario)
     try:
         if img:
             r = S.post(f"{FB_API}/{FB_PAGE_ID}/photos",
@@ -1008,11 +1072,21 @@ def postar_facebook(p, img=None):
             r = S.post(url, data=data, timeout=40)
         else:
             url = f"{FB_API}/{FB_PAGE_ID}/feed"
-            data = {"message": caption, "link": p["link"], "access_token": FB_ACCESS_TOKEN}
+            data = {"message": caption, "access_token": FB_ACCESS_TOKEN}
+            if not usar_comentario:
+                data["link"] = p["link"]
             r = S.post(url, data=data, timeout=30)
         if r.status_code in (200, 201):
             FB_FALHAS = 0
             print("Facebook:", r.status_code, r.text[:120])
+            if usar_comentario:
+                post_id, node_id = fb_ids(r)
+                time.sleep(2)
+                if not (post_id and fb_comentar_link(post_id, p)):
+                    FB_COMENT_OK = False
+                    print("  → Link volta para a legenda pelo resto desta execução.")
+                    fb_restaurar_link(post_id, node_id, caption.replace(
+                        "🔗 Link no primeiro comentário", f"👉 Ver oferta: {p['link']}"))
             return True
         code, _, msg = fb_erro(r)
         print(f"Facebook: {r.status_code} (code {code}) {msg}")
