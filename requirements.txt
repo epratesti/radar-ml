@@ -1,1 +1,2 @@
 requests
+Pillow>=10.1
