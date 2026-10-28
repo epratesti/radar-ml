@@ -1,91 +1,91 @@
 {
-  "atualizado": "2026-10-27T20:07:26.796837-03:00",
+  "atualizado": "2026-10-27T21:09:16.927770-03:00",
   "itens": [
     {
-      "id": "MLB25394815",
-      "titulo": "Garrafa Termica Lúmina Aço Inox 500ml Cor Garrafa Térmica",
-      "preco": 68.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_953178-MLA100008910417_122025-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Esportes e Beleza",
+      "id": "MLB45101358",
+      "titulo": "Panela Cuba Interna Philco Panela Pressão Digital Ppp05 5l",
+      "preco": 99.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_627204-MLA99951941649_112025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Casa e Eletro",
       "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-5434776291?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-5315352071?matt_tool=71970283"
     },
     {
-      "id": "SHOPEE-58252572971",
-      "titulo": "Kit 12/24/36 Forminhas Silicone Cupcake Empadinha Air Fryer",
-      "preco": 10.99,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-822zd-moeo4sxj318tb2",
+      "id": "SHOPEE-58207663151",
+      "titulo": "Kit 50 a 300 Formas Descartável Para Airfryer Antiaderente Não Suja Cozinha Fritadedira Promoção",
+      "preco": 11.99,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-82626-mm9sym8py58v5c",
       "frete_gratis": false,
       "categoria": "Shopee",
       "fonte": "shopee",
-      "link": "https://s.shopee.com.br/4fxJsf2Lko",
-      "comissao": "0.03",
-      "loja": "Dong Sheng Presente LTDA"
+      "link": "https://s.shopee.com.br/3VlMUW6n7T",
+      "comissao": "0.13",
+      "loja": "Universo do Lar*"
     },
     {
-      "id": "MLB58868529",
-      "titulo": "Mouse gamer Logitech MOUSE Logitech G102 RGB Gamer G102 branco",
-      "preco": 98.1,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_675765-MLA94051092727_102025-F.jpg",
+      "id": "SHOPEE-20397811642",
+      "titulo": "Cheirinho Para Carro Aromatizador Ar Condicionado Perfume Aroma Purificador de Ar",
+      "preco": 15.79,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-m05ptzgp3o3h63",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/70LFI5YMW7",
+      "comissao": "0.05",
+      "loja": "CARPEI ACESSORIO LTDA"
+    },
+    {
+      "id": "SHOPEE-23298210857",
+      "titulo": "Perfume Touti Vip Fit Lux Todas Fragrancias Masculino Feminino Luxo Alta Fixacao",
+      "preco": 33.1,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-m6dzgmcihqvb27",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/4VduJUhsas",
+      "comissao": "0.14",
+      "loja": "PREEPFULL"
+    },
+    {
+      "id": "MLB74867919",
+      "titulo": "Caixa Som Ambiente 70w Leson Terracota Ativa + Passiva Caixa Som Ambiente 70w Leson Terracota Ativa + Passiva",
+      "preco": 369.93,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_815060-MLA112850533114_072026-F.jpg",
       "frete_gratis": true,
       "categoria": "Eletrônicos",
       "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-5378818841?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-4840120241?matt_tool=71970283"
     },
     {
-      "id": "MLB77813496",
-      "titulo": "Garrafa Inox TéRmica Preto Fosco Vingadores 500ml Marvel Garrafa Termica Agua Garrafa Termica Inox",
-      "preco": 139.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_848721-MLA115077905296_082026-F.jpg",
+      "id": "MLB41255464",
+      "titulo": "Kit Skincare Dermachem Kit Sabonete Facial + Esfoliante",
+      "preco": 39.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_615934-MLA79616779201_092024-F.jpg",
+      "frete_gratis": false,
+      "categoria": "Esportes e Beleza",
+      "fonte": "ml",
+      "link": "https://produto.mercadolivre.com.br/MLB-4428753531?matt_tool=71970283"
+    },
+    {
+      "id": "MLB79151603",
+      "titulo": "Panela Pressão Antiaderente 7l Alta Pressão Cozinha Panelux Padrão",
+      "preco": 193.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_941456-MLA117442647097_092026-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Casa e Eletro",
+      "fonte": "ml",
+      "link": "https://produto.mercadolivre.com.br/MLB-7667196874?matt_tool=71970283"
+    },
+    {
+      "id": "MLB66302381",
+      "titulo": "Perfume Masculino Corinthians Perfume Do Timão",
+      "preco": 249.9,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_975622-MLA108280073589_032026-F.jpg",
       "frete_gratis": true,
       "categoria": "Esportes e Beleza",
       "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-7466143354?matt_tool=71970283"
-    },
-    {
-      "id": "SHOPEE-21399069053",
-      "titulo": "Caneta Paint Original Reparadora Pintura Automotiva Permanente Não Sai Na Água Tira Riscos Carro Moto Retoque de Placa Tênis Pneus para Ferro Metal Madeira Plástico Gesso Vidro Couro Tecido Cores Preto Branco Prata (Cinza) Dourado Azul Vermelha",
-      "preco": 18.72,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lsirz2r48wfv6e",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/7Ky5cTSnSi",
-      "comissao": "0.24",
-      "loja": "VENDAS.VTO"
-    },
-    {
-      "id": "MLB38338044",
-      "titulo": "Liquidificador portátil, Mini liquidificador recarregável USB, Liquidificador",
-      "preco": 41.56,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_887284-MLU78285122081_082024-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Casa e Eletro",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-4476508833?matt_tool=71970283"
-    },
-    {
-      "id": "SHOPEE-23592875532",
-      "titulo": "1/2/3 Formas de Silicone Quadrada 18x18cm Assadeira Air Fryer e Forno Forma para Fritadeira Elétrica com Alça",
-      "preco": 10.0,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rcc8-lsk6nq2atlh5cd",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/30p5tb8h8O",
-      "comissao": "0.03",
-      "loja": "Zyoou Market"
-    },
-    {
-      "id": "MLB50493068",
-      "titulo": "Elgin Air Fryer Fritadeira Air Fryer",
-      "preco": 213.21,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_711865-MLA118364972602_102026-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Casa e Eletro",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-6291964460?matt_tool=71970283"
+      "link": "https://produto.mercadolivre.com.br/MLB-5034089913?matt_tool=71970283"
     }
   ]
 }
