@@ -42,7 +42,11 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           ML_CLIENT_ID: ${{ secrets.ML_CLIENT_ID }}
           ML_CLIENT_SECRET: ${{ secrets.ML_CLIENT_SECRET }}
-          ML_AFFILIATE_ID: "71970283"
+          # Afiliado ML — configure estes secrets no repositório
+          ML_AFFILIATE_ID: ${{ secrets.ML_AFFILIATE_ID }}
+          ML_AFFILIATE_WORD: ${{ secrets.ML_AFFILIATE_WORD }}
+          # (opcional) template completo, ex: matt_tool={id}&matt_word={word}
+          ML_AFFILIATE_PARAMS: ${{ secrets.ML_AFFILIATE_PARAMS }}
           SHOPEE_APP_ID: ${{ secrets.SHOPEE_APP_ID }}
           SHOPEE_SECRET: ${{ secrets.SHOPEE_SECRET }}
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
