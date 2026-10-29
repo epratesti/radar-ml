@@ -1,17 +1,17 @@
 {
-  "atualizado": "2026-10-29T03:51:54.702231-03:00",
+  "atualizado": "2026-10-29T07:40:31.468154-03:00",
   "itens": [
     {
-      "id": "MLB18724696",
-      "titulo": "Suplemento em pó Max Titanium Mass Titanium Refil 17500 Carboidratos sabor Chocolate x 3kg",
-      "preco": 101.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_910957-MLA113002407784_072026-F.jpg",
+      "id": "MLB62511822",
+      "titulo": "Tênis Carina Street Bdp Puma",
+      "preco": 230.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_735782-MLA99431268555_112025-F.jpg",
       "frete_gratis": true,
-      "categoria": "Esportes",
+      "categoria": "Moda",
       "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-3867892924?matt_tool=71970283",
-      "desconto": 49,
-      "preco_original": 199.9,
+      "link": "https://produto.mercadolivre.com.br/MLB-6254580488?matt_tool=71970283",
+      "desconto": 34,
+      "preco_original": 349.99,
       "vendidos": 0
     },
     {
@@ -44,6 +44,36 @@
       "vendidos": 0
     },
     {
+      "id": "SHOPEE-58265197313",
+      "titulo": "Kit Raquete Frescobol Bateu Colou Peteca Tênis C/ Bolinha Bate Gruda Binquedo Menino e Menina",
+      "preco": 24.99,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m2-mr85lot3rtacc0",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/AUv9V8ZeUF",
+      "comissao": "0.13",
+      "loja": "DBrinq's",
+      "termo": "tenis",
+      "desconto": 54,
+      "preco_original": 0,
+      "vendidos": 5512
+    },
+    {
+      "id": "MLB62888998",
+      "titulo": "Air fryer Britânia Fritadeira Air Fryer preto",
+      "preco": 260.99,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_601992-MLA100011667808_122025-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Casa e Eletro",
+      "fonte": "ml",
+      "link": "https://produto.mercadolivre.com.br/MLB-4514192843?matt_tool=71970283",
+      "desconto": 0,
+      "preco_original": 0.0,
+      "vendidos": 0,
+      "termo": "air fryer"
+    },
+    {
       "id": "SHOPEE-58204417297",
       "titulo": "Aspirador Nasal Infantil 9 Níveis Sucção Ajustável Com Música Recarregável Silicone Alimentício Seguro Silencioso 5V/1A",
       "preco": 49.98,
@@ -60,48 +90,6 @@
       "vendidos": 2262
     },
     {
-      "id": "MLB18010993",
-      "titulo": "Controle Joystick Sem Fio Sony PlayStation 5 CFI-ZCT1W Midnight Black",
-      "preco": 330.17,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_759059-MLA99508283678_112025-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Informática",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-5478513751?matt_tool=71970283",
-      "desconto": 0,
-      "preco_original": 0.0,
-      "vendidos": 0
-    },
-    {
-      "id": "SHOPEE-52352168399",
-      "titulo": "Pasta de Amendoim com Whey Protein 600g Dr Peanut",
-      "preco": 47.5,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztc-mjogvg8bh62p24",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/70LHKhevuN",
-      "comissao": "0.07",
-      "loja": "Hard Extreme",
-      "termo": "whey protein",
-      "desconto": 52,
-      "preco_original": 0,
-      "vendidos": 2756
-    },
-    {
-      "id": "MLB20849917",
-      "titulo": "Papel Fotográfico Adesivo A4 Branco - Glossy Masterprint 130g com 50 Folhas",
-      "preco": 23.99,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_776183-MLA116100126678_092026-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Informática",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-5188157769?matt_tool=71970283",
-      "desconto": 0,
-      "preco_original": 0.0,
-      "vendidos": 0
-    },
-    {
       "id": "SHOPEE-20398274863",
       "titulo": "Mini Aspirador de Pó Portátil Automotivo Casa Sem Fio 3 em 1 Potente 6000Pa Recarregável",
       "preco": 26.97,
@@ -116,6 +104,22 @@
       "desconto": 46,
       "preco_original": 0,
       "vendidos": 3627
+    },
+    {
+      "id": "SHOPEE-58205469373",
+      "titulo": "Moedor Manual de Café Temperos Inox Portátil Cerâmica",
+      "preco": 36.33,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8262f-mkwr7zjyesxu26",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/6VP0zWPzut",
+      "comissao": "0.03",
+      "loja": "Novus up",
+      "termo": "cafeteira",
+      "desconto": 52,
+      "preco_original": 0,
+      "vendidos": 993
     }
   ]
 }
