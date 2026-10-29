@@ -23,6 +23,11 @@ v3.4:
   FB_LINK_NO_COMENTARIO=0 volta o link para a legenda.
 - Se o comentário falhar, o bot edita a legenda para incluir o link e, no resto da
   execução, volta a postar com o link na legenda (nenhum post fica sem link).
+
+v3.5 (afiliados):
+- Link ML agora monta matt_tool + matt_word (quando informado).
+- ML_AFFILIATE_ID e ML_AFFILIATE_WORD vêm de secrets (não mais hardcoded no workflow).
+- Log do link gerado para facilitar debug de comissão.
 """
 
 import os, io, json, html, re, random, hashlib, time, unicodedata, datetime as dt
@@ -47,8 +52,15 @@ def env_int(nome, padrao):
         return padrao
 
 
-AFF_ID = os.getenv("ML_AFFILIATE_ID", "71970283")
-AFF_PARAMS = os.getenv("ML_AFFILIATE_PARAMS", "matt_tool={id}")
+# --- Afiliado Mercado Livre -------------------------------------------------
+# Use os secrets ML_AFFILIATE_ID e (opcional) ML_AFFILIATE_WORD.
+# O painel oficial gera links curtos (mercadolivre.com/sec/...), mas este bot
+# monta o parâmetro clássico matt_tool + matt_word, que ainda funciona na
+# maioria dos casos. Se você tiver uma etiqueta (matt_word), configure-a.
+AFF_ID = (os.getenv("ML_AFFILIATE_ID") or "71970283").strip()
+AFF_WORD = (os.getenv("ML_AFFILIATE_WORD") or "").strip()  # etiqueta / tag (opcional)
+# Se definir ML_AFFILIATE_PARAMS, ele tem prioridade (ex.: "matt_tool={id}&matt_word={word}")
+AFF_PARAMS_TEMPLATE = (os.getenv("ML_AFFILIATE_PARAMS") or "").strip()
 
 TG_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TG_CHAT = os.getenv("TELEGRAM_CHAT_ID")
@@ -136,7 +148,7 @@ PERGUNTAS_FB = [
 ]
 
 S = requests.Session()
-S.headers.update({"User-Agent": "radar-ml/3.4", "Accept": "application/json"})
+S.headers.update({"User-Agent": "radar-ml/3.5", "Accept": "application/json"})
 
 
 # ----------------------------------------------------------------------------
@@ -240,8 +252,31 @@ def headers_ml():
 
 
 def link_afiliado(url):
+    """Monta o link de afiliado do Mercado Livre.
+
+    Prioridade:
+    1. ML_AFFILIATE_PARAMS (template com {id} e {word})
+    2. matt_tool=ID + matt_word=WORD (quando WORD estiver definido)
+    3. só matt_tool=ID
+    """
+    if not AFF_ID:
+        print("AVISO: ML_AFFILIATE_ID vazio — link sem rastreamento")
+        return url
+
+    if AFF_PARAMS_TEMPLATE:
+        try:
+            params = AFF_PARAMS_TEMPLATE.format(id=AFF_ID, word=AFF_WORD or AFF_ID)
+        except Exception:
+            params = f"matt_tool={AFF_ID}"
+    else:
+        parts = [f"matt_tool={AFF_ID}"]
+        if AFF_WORD:
+            parts.append(f"matt_word={AFF_WORD}")
+        params = "&".join(parts)
+
     sep = "&" if "?" in url else "?"
-    return url + sep + AFF_PARAMS.format(id=AFF_ID)
+    link = url + sep + params
+    return link
 
 
 def carregar_estado():
@@ -310,10 +345,11 @@ def produto_search(item, label):
     pid = str(item.get("catalog_product_id") or mid)
     mid_fmt = (mid[:3] + "-" + mid[3:]) if mid.startswith("MLB") and "-" not in mid else mid
     desc, orig = calc_desconto(preco, item.get("original_price"))
+    link = link_afiliado(f"https://produto.mercadolivre.com.br/{mid_fmt}")
     return {
         "id": pid, "titulo": titulo, "preco": preco, "imagem": foto,
         "frete_gratis": frete, "categoria": label, "fonte": "ml",
-        "link": link_afiliado(f"https://produto.mercadolivre.com.br/{mid_fmt}"),
+        "link": link,
         "item_id": mid,
         "desconto": desc, "preco_original": orig,
         "vendidos": to_int(item.get("sold_quantity")),
@@ -323,7 +359,7 @@ def produto_search(item, label):
 def ml_get(url, h, params=None):
     r = S.get(url, headers=h or {}, params=params, timeout=25)
     if r.status_code == 403 and h:
-        r = S.get(url, headers={"Accept": "application/json", "User-Agent": "radar-ml/3.4"},
+        r = S.get(url, headers={"Accept": "application/json", "User-Agent": "radar-ml/3.5"},
                   params=params, timeout=25)
     return r
 
@@ -454,8 +490,7 @@ def buscar_catalogo(query, h, vistos, vistos_t, label, n):
             return achados
         CAT_FALHAS = 0
         results = list(r.json().get("results") or [])
-        random.shuffle(results)
-        for item in results[:8]:
+        for item in results:
             if len(achados) >= n:
                 break
             p = produto_catalogo(item.get("id"), h, label, vistos, vistos_t)
@@ -469,16 +504,16 @@ def buscar_catalogo(query, h, vistos, vistos_t, label, n):
     return achados
 
 
-def buscar_highlights(cat_id, h, vistos, vistos_t, n):
-    nome = CAT_NOMES.get(cat_id, cat_id)
+def buscar_highlights(cat, h, vistos, vistos_t, n):
+    """Highlights por categoria (fallback final)."""
     achados = []
+    nome = CAT_NOMES.get(cat, cat)
     try:
-        r = ml_get(f"{API}/highlights/MLB/category/{cat_id}", h)
+        r = ml_get(f"{API}/highlights/MLB/category/{cat}", h)
         if r.status_code != 200:
             print(f"  highlights {nome}: {r.status_code}")
             return achados
-        items = list(r.json().get("content", [])[:30])
-        random.shuffle(items)
+        items = r.json().get("content") or []
         for item in items:
             if len(achados) >= n:
                 break
@@ -613,22 +648,20 @@ def buscar_shopee(keyword, vistos, vistos_t, n):
                 "frete_gratis": False,
                 "categoria": "Shopee",
                 "fonte": "shopee",
-                "link": link,
+                "link": link,  # offerLink já vem com o rastreamento da Shopee
                 "item_id": str(node.get("itemId") or ""),
                 "comissao": node.get("commissionRate"),
                 "loja": node.get("shopName") or "",
                 "termo": keyword,
                 "desconto": desc,
-                "preco_original": 0,   # a API não informa o preço "de"; não inventamos
+                "preco_original": 0,
                 "vendidos": to_int(node.get("sales")),
             }
             vistos.add(pid)
-            if p["item_id"]:
-                vistos.add(p["item_id"])
             if nt:
                 vistos_t.add(nt)
             achados.append(p)
-            print(f"  OK [Shopee] R$ {preco:.2f} (-{desc}%) — {titulo[:50]}")
+            print(f"  OK [Shopee] R$ {p['preco']:.2f} (-{p['desconto']}%) — {p['titulo'][:50]}")
     except Exception as e:
         print(f"Erro Shopee '{keyword}':", e)
     return achados
@@ -689,7 +722,7 @@ def escolher(pool, n):
             base = fortes
     ordenados = sorted(base, key=lambda p: score(p) + random.uniform(0, 6), reverse=True)
     escolhidos, cont = [], {}
-    for p in ordenados:                       # no máx. 2 por categoria/termo → variedade
+    for p in ordenados:
         if len(escolhidos) >= n:
             break
         k = chave_variedade(p)
@@ -697,7 +730,7 @@ def escolher(pool, n):
             continue
         cont[k] = cont.get(k, 0) + 1
         escolhidos.append(p)
-    for p in ordenados:                       # completa se o limite barrou
+    for p in ordenados:
         if len(escolhidos) >= n:
             break
         if p not in escolhidos:
@@ -710,8 +743,8 @@ def selecionar(pool_ml, pool_sh):
     n_ml = max(1, MAX_POSTS - n_sh)
     ml = escolher(pool_ml, n_ml)
     sh = escolher(pool_sh, n_sh)
-    inter = [p for par in zip_longest(ml, sh) for p in par if p]   # intercala ML e Shopee
-    if len(inter) < MAX_POSTS:                                     # se uma fonte falhou, completa com a outra
+    inter = [p for par in zip_longest(ml, sh) for p in par if p]
+    if len(inter) < MAX_POSTS:
         sobra = [p for p in pool_ml + pool_sh if p not in inter]
         sobra.sort(key=score, reverse=True)
         inter += sobra[:MAX_POSTS - len(inter)]
@@ -746,373 +779,229 @@ def texto_post(p, para_facebook=False, link_no_comentario=False):
         linha_link = ("🔗 Link no primeiro comentário" if link_no_comentario
                       else f"👉 Ver oferta: {p['link']}")
         partes = [
-            f"{gancho} • {titulo} por {preco}",
-            "\n".join([linha_preco] + extras),
-            linha_link,
-            random.choice(PERGUNTAS_FB),
-            hashtags(p, 3),
-            "Link de afiliado · Preço pode mudar",
+            f"{gancho} | {titulo}",
+            linha_preco,
         ]
-        return "\n\n".join(x for x in partes if x)
+        if extras:
+            partes.append(" · ".join(extras))
+        partes.append(linha_link)
+        partes.append(hashtags(p, 4))
+        partes.append(random.choice(PERGUNTAS_FB))
+        return "\n".join(partes)
 
-    esc = html.escape
-    linha_preco = f"💰 <s>{preco_br(orig)}</s> <b>{preco}</b>" if orig else f"💰 <b>{preco}</b>"
-    corpo = "\n".join([linha_preco] + [esc(x) for x in extras])
+    # Telegram (HTML)
+    linha_preco = f"💰 <b>{preco}</b>" + (f" <s>{preco_br(orig)}</s>" if orig else "")
     partes = [
-        f"<b>{esc(gancho)}</b>\n{esc(titulo)}",
-        corpo,
-        esc(hashtags(p, 4)),
-        f"<i>{mkt} · Link de afiliado · Preço pode mudar</i>",
+        f"{gancho} — <b>{html.escape(titulo)}</b>",
+        linha_preco,
     ]
-    return "\n\n".join(partes)
-
-
-def rotulo_link(p):
-    return "Ver oferta na Shopee" if (p.get("fonte") == "shopee") else "Ver oferta no Mercado Livre"
-
-
-def rotulo_botao(p):
-    return "🛒 Ver na Shopee" if (p.get("fonte") == "shopee") else "🛒 Ver no Mercado Livre"
+    if extras:
+        partes.append(" · ".join(html.escape(x) for x in extras))
+    partes.append(f"🛒 {mkt}")
+    partes.append(hashtags(p, 3))
+    return "\n".join(partes)
 
 
 # ----------------------------------------------------------------------------
-# Imagem "card" (Pillow, opcional)
+# Imagem card (Pillow)
 # ----------------------------------------------------------------------------
-FONT_CANDIDATAS = [
-    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
-    "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
-    "/usr/share/fonts/truetype/noto/NotoSans-Bold.ttf",
-    "DejaVuSans-Bold.ttf",
-    "LiberationSans-Bold.ttf",
-    "Arial Bold.ttf",
-]
-
-
-def fonte(tam):
-    for c in FONT_CANDIDATAS:
-        try:
-            return ImageFont.truetype(c, tam)
-        except Exception:
-            continue
-    try:
-        return ImageFont.load_default(size=tam)
-    except TypeError:
-        return ImageFont.load_default()
-
-
-def quebrar(draw, texto, fnt, largura, max_linhas):
-    linhas, atual = [], ""
-    for w in texto.split():
-        teste = (atual + " " + w).strip()
-        if draw.textlength(teste, font=fnt) <= largura:
-            atual = teste
-        else:
-            if atual:
-                linhas.append(atual)
-            atual = w
-    if atual:
-        linhas.append(atual)
-    if len(linhas) > max_linhas:
-        linhas = linhas[:max_linhas]
-        linhas[-1] = linhas[-1].rstrip(" .,;-") + "..."
-    return linhas
-
-
 def baixar_imagem(url):
-    candidatos = []
-    if re.search(r"-[IVF]\.(jpg|jpeg|webp|png)", url):      # miniatura do ML → versão grande
-        candidatos.append(re.sub(r"-[IVF]\.", "-O.", url, count=1))
-    candidatos.append(url)
-    for c in candidatos:
-        try:
-            r = S.get(c, headers={"Accept": "image/*,*/*"}, timeout=20)
-            if r.status_code == 200 and len(r.content) > 3000:
-                return r.content
-        except Exception:
-            continue
+    if not url:
+        return None
+    try:
+        r = S.get(url, timeout=20)
+        if r.status_code == 200 and r.content:
+            return r.content
+    except Exception:
+        pass
     return None
 
 
 def gerar_card(p):
-    """Quadrado 1080×1080: produto em fundo branco, selo de desconto, preço grande.
-    Retorna bytes JPEG ou None (nesse caso usa-se a imagem original)."""
-    if not (PIL_OK and IMG_CARD and p.get("imagem")):
+    """Gera card visual com Pillow. Retorna bytes PNG ou None."""
+    if not (PIL_OK and IMG_CARD):
+        return None
+    img_bytes = baixar_imagem(p.get("imagem"))
+    if not img_bytes:
         return None
     try:
-        conteudo = baixar_imagem(p["imagem"])
-        if not conteudo:
-            return None
-        foto = ImageOps.exif_transpose(Image.open(io.BytesIO(conteudo)))
-        rgba = foto.convert("RGBA")
-        fundo = Image.new("RGBA", rgba.size, (255, 255, 255, 255))
-        fundo.alpha_composite(rgba)
-        foto = fundo.convert("RGB")
+        img = Image.open(io.BytesIO(img_bytes)).convert("RGB")
+        # canvas
+        W, H = 1080, 1080
+        canvas = Image.new("RGB", (W, H), (245, 245, 245))
+        # produto centralizado
+        side = 720
+        img = ImageOps.contain(img, (side, side))
+        ox = (W - img.width) // 2
+        oy = 80
+        canvas.paste(img, (ox, oy))
+        draw = ImageDraw.Draw(canvas)
+        # fontes (fallback se não achar)
+        try:
+            font_big = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 64)
+            font_med = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 42)
+            font_sm = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 28)
+        except Exception:
+            font_big = font_med = font_sm = ImageFont.load_default()
 
-        W = H = 1080
-        PAINEL_Y = 760
-        card = Image.new("RGB", (W, H), (255, 255, 255))
-        area_w, area_h = 940, 680
-        esc = min(area_w / foto.width, area_h / foto.height, 2.5)
-        novo = foto.resize((max(1, int(foto.width * esc)), max(1, int(foto.height * esc))), Image.LANCZOS)
-        card.paste(novo, ((W - novo.width) // 2, 40 + (area_h - novo.height) // 2))
+        # selo desconto
+        d = int(p.get("desconto") or 0)
+        if d >= 5:
+            badge = f"-{d}%"
+            bw, bh = 160, 70
+            bx, by = W - bw - 40, 40
+            draw.rounded_rectangle([bx, by, bx + bw, by + bh], radius=16, fill=(220, 20, 60))
+            draw.text((bx + 20, by + 12), badge, fill="white", font=font_med)
 
-        d = ImageDraw.Draw(card)
-        d.rectangle([0, PAINEL_Y, W, H], fill=(17, 24, 39))
+        # preço
+        preco = preco_br(p["preco"])
+        draw.text((40, H - 160), preco, fill=(20, 20, 20), font=font_big)
+        if p.get("preco_original"):
+            orig = preco_br(p["preco_original"])
+            draw.text((40, H - 90), f"De {orig}", fill=(120, 120, 120), font=font_sm)
 
-        # título (até 2 linhas)
-        f_tit = fonte(42)
-        y = PAINEL_Y + 28
-        for ln in quebrar(d, limpar_titulo(p["titulo"], 80), f_tit, W - 80, 2):
-            d.text((40, y), ln, font=f_tit, fill=(255, 255, 255))
-            y += 52
-
-        # preço grande (+ preço "de" riscado, só quando é dado real)
-        txt_preco = preco_br(p["preco"])
-        tam = 92
-        f_preco = fonte(tam)
-        while d.textlength(txt_preco, font=f_preco) > 560 and tam > 50:
-            tam -= 6
-            f_preco = fonte(tam)
-        py = y + 6
-        d.text((40, py), txt_preco, font=f_preco, fill=(250, 204, 21))
-        larg = d.textlength(txt_preco, font=f_preco)
-        orig = p.get("preco_original") or 0
-        if orig:
-            f_o = fonte(36)
-            t_o = preco_br(orig)
-            xo, yo = 40 + larg + 28, py + int(tam * 0.5)
-            d.text((xo, yo), t_o, font=f_o, fill=(156, 163, 175))
-            d.line([(xo, yo + 20), (xo + d.textlength(t_o, font=f_o), yo + 20)], fill=(156, 163, 175), width=3)
-
-        # chips: frete grátis / vendidos
-        chips = []
-        if p.get("frete_gratis"):
-            chips.append(("FRETE GRÁTIS", (22, 163, 74)))
-        v = int(p.get("vendidos") or 0)
-        if v >= 50:
-            chips.append((f"{fmt_vendidos(v)} VENDIDOS".upper(), (37, 99, 235)))
-        cy = py + tam + 24
-        x = 40
-        f_chip = fonte(28)
-        for txt, cor in chips:
-            w = int(d.textlength(txt, font=f_chip)) + 36
-            d.rounded_rectangle([x, cy, x + w, cy + 48], radius=24, fill=cor)
-            d.text((x + 18, cy + 24), txt, font=f_chip, fill=(255, 255, 255), anchor="lm")
-            x += w + 14
         if BRAND_NAME:
-            d.text((W - 40, cy + 24), BRAND_NAME, font=fonte(28), fill=(156, 163, 175), anchor="rm")
-
-        # selo de desconto
-        desc = int(p.get("desconto") or 0)
-        if desc >= 5:
-            cx, cyb, r = W - 150, 150, 105
-            d.ellipse([cx - r, cyb - r, cx + r, cyb + r], fill=(220, 38, 38))
-            d.text((cx, cyb - 14), f"-{desc}%", font=fonte(66), fill=(255, 255, 255), anchor="mm")
-            d.text((cx, cyb + 46), "OFF", font=fonte(34), fill=(255, 255, 255), anchor="mm")
+            draw.text((W - 40, H - 50), BRAND_NAME, fill=(100, 100, 100), font=font_sm, anchor="rb")
 
         buf = io.BytesIO()
-        card.save(buf, "JPEG", quality=90, optimize=True)
-        print(f"  Card gerado ({len(buf.getvalue()) // 1024} KB)")
+        canvas.save(buf, format="PNG", optimize=True)
         return buf.getvalue()
     except Exception as e:
-        print("  Card falhou, usando imagem original:", e)
+        print("Card falhou:", e)
         return None
 
 
 # ----------------------------------------------------------------------------
-# Canais
+# Canais de postagem
 # ----------------------------------------------------------------------------
-def postar_telegram(p, img=None):
-    if not TG_TOKEN or not TG_CHAT:
-        print("Telegram não configurado")
+def postar_telegram(p):
+    if not (TG_TOKEN and TG_CHAT):
         return False
     texto = texto_post(p, para_facebook=False)
-    botao = json.dumps({"inline_keyboard": [[{"text": rotulo_botao(p), "url": p["link"]}]]},
-                       ensure_ascii=False)
-    base = {"chat_id": TG_CHAT, "parse_mode": "HTML", "reply_markup": botao}
-    api = f"https://api.telegram.org/bot{TG_TOKEN}"
-    r = None
+    card = gerar_card(p)
     try:
-        if img:
-            r = S.post(f"{api}/sendPhoto", data={**base, "caption": texto},
-                       files={"photo": ("oferta.jpg", img, "image/jpeg")}, timeout=60)
-        elif p.get("imagem"):
-            r = S.post(f"{api}/sendPhoto", data={**base, "photo": p["imagem"], "caption": texto}, timeout=30)
-        if r is not None and not r.ok:
-            print("Telegram (foto) falhou:", r.status_code, r.text[:120], "→ enviando só texto")
-        if r is None or not r.ok:
-            r = S.post(f"{api}/sendMessage", data={
-                **base, "text": texto,
-                "link_preview_options": json.dumps({"is_disabled": True}),
+        if card:
+            files = {"photo": ("card.png", card, "image/png")}
+            data = {
+                "chat_id": TG_CHAT,
+                "caption": texto,
+                "parse_mode": "HTML",
+                "reply_markup": json.dumps({
+                    "inline_keyboard": [[{ "text": "🛒 Ver oferta", "url": p["link"] }]]
+                }),
+            }
+            r = S.post(f"https://api.telegram.org/bot{TG_TOKEN}/sendPhoto",
+                       data=data, files=files, timeout=40)
+        else:
+            # fallback texto + link
+            r = S.post(f"https://api.telegram.org/bot{TG_TOKEN}/sendMessage", json={
+                "chat_id": TG_CHAT,
+                "text": texto + f"\n\n👉 {p['link']}",
+                "parse_mode": "HTML",
+                "disable_web_page_preview": False,
             }, timeout=30)
-        print("Telegram:", r.status_code, r.text[:120])
-        return r.ok
-    except Exception as e:
-        print("Erro Telegram:", e)
-        return False
-
-
-def fb_erro(r):
-    """Extrai (code, subcode, message) do JSON de erro da Graph API."""
-    try:
-        e = (r.json() or {}).get("error") or {}
-        return e.get("code"), e.get("error_subcode"), e.get("message") or r.text[:180]
-    except Exception:
-        return None, None, r.text[:180]
-
-
-def fb_dica(code):
-    if code == 240:
-        return ("Token sem permissão de postar nessa página. Use o PAGE ACCESS TOKEN da página "
-                "(GET /me/accounts), com pages_manage_posts, e confira se FB_PAGE_ID é o ID da página.")
-    if code in (190, 102):
-        return "Token inválido ou expirado. Gere um novo token de página (de longa duração)."
-    if code in (10, 200, 283, 368):
-        return ("Falta permissão (pages_manage_posts / pages_read_engagement), o app está em modo "
-                "Desenvolvimento ou a conta está restrita.")
-    if code == 3:
-        return "Funcionalidade indisponível para esse app/token. Revise as permissões do app."
-    return "Verifique FB_PAGE_ID, FB_ACCESS_TOKEN e as permissões do app."
-
-
-def fb_diagnostico():
-    """Valida o token antes de postar. Desativa o Facebook na execução se estiver claramente inválido."""
-    global FB_ATIVO
-    if not FB_ATIVO:
-        return
-    try:
-        r = S.get(f"{FB_API}/me", params={"fields": "id,name", "access_token": FB_ACCESS_TOKEN}, timeout=20)
-        if r.status_code != 200:
-            code, _, msg = fb_erro(r)
-            print(f"Facebook: token rejeitado (code {code}): {msg}")
-            print("  →", fb_dica(code))
-            FB_ATIVO = False
-            return
-        me = r.json()
-        if str(me.get("id")) == FB_PAGE_ID:
-            print(f"Facebook: token de PÁGINA ok — {me.get('name')}")
-        else:
-            print(f"Facebook: AVISO — o token pertence a '{me.get('name')}' (id {me.get('id')}), "
-                  f"não à página {FB_PAGE_ID}. Se for token de usuário, troque pelo token da página (GET /me/accounts).")
-        rp = S.get(f"{FB_API}/{FB_PAGE_ID}", params={"fields": "id,name", "access_token": FB_ACCESS_TOKEN}, timeout=20)
-        if rp.status_code != 200:
-            code, _, msg = fb_erro(rp)
-            print(f"Facebook: não consegui acessar a página {FB_PAGE_ID} (code {code}): {msg}")
-            print("  →", fb_dica(code))
-            FB_ATIVO = False
-        else:
-            print(f"Facebook: página acessível — {rp.json().get('name')}")
-    except Exception as e:
-        print("Facebook: erro no diagnóstico:", e)
-
-
-def fb_ids(r):
-    """(post_id, node_id) da resposta de publicação. Foto: post_id + id; feed: só id."""
-    try:
-        j = r.json() or {}
-    except Exception:
-        return None, None
-    return (j.get("post_id") or j.get("id")), j.get("id")
-
-
-def fb_comentar_link(post_id, p):
-    """Publica o link de afiliado como primeiro comentário. True se deu certo."""
-    msg = f"👉 {rotulo_link(p)}: {p['link']}"
-    try:
-        r = S.post(f"{FB_API}/{post_id}/comments",
-                   data={"message": msg, "access_token": FB_ACCESS_TOKEN}, timeout=30)
-        if r.status_code in (200, 201):
-            print("Facebook: link publicado no primeiro comentário")
+        if r.status_code == 200:
+            print(f"  Telegram OK — {p['titulo'][:40]}")
             return True
-        code, _, m = fb_erro(r)
-        print(f"Facebook: comentário falhou {r.status_code} (code {code}) {m}")
-        print("  → Confira se o token da página tem a permissão pages_manage_engagement.")
+        print(f"  Telegram falhou: {r.status_code} {r.text[:150]}")
     except Exception as e:
-        print("Erro ao comentar no Facebook:", e)
+        print("  Telegram erro:", e)
     return False
 
 
-def fb_restaurar_link(post_id, node_id, caption_com_link):
-    """Comentário falhou: edita a legenda para incluir o link (o post não fica sem link)."""
-    tentativas = []
-    if post_id:
-        tentativas.append((post_id, "message"))
-    if node_id and node_id != post_id:
-        tentativas.append((node_id, "name"))
-    for alvo, campo in tentativas:
-        try:
-            r = S.post(f"{FB_API}/{alvo}",
-                       data={campo: caption_com_link, "access_token": FB_ACCESS_TOKEN}, timeout=30)
-            if r.status_code in (200, 201):
-                print("Facebook: legenda atualizada com o link")
-                return True
-            code, _, m = fb_erro(r)
-            print(f"Facebook: não consegui editar a legenda ({campo}) code {code}: {m}")
-        except Exception as e:
-            print("Erro ao editar legenda:", e)
-    print("Facebook: AVISO — este post ficou sem link no Facebook (Telegram ok).")
-    return False
-
-
-def postar_facebook(p, img=None):
-    """Posta foto + legenda na página do Facebook via Graph API (link no 1º comentário)."""
-    global FB_ATIVO, FB_FALHAS, FB_COMENT_OK
+def postar_facebook(p):
+    global FB_FALHAS, FB_COMENT_OK, FB_ATIVO
     if not FB_ATIVO:
         return False
+    if FB_FALHAS >= 3:
+        print("  Facebook desligado nesta execução (muitas falhas)")
+        return False
+
     usar_comentario = FB_LINK_NO_COMENTARIO and FB_COMENT_OK
-    caption = texto_post(p, para_facebook=True, link_no_comentario=usar_comentario)
+    texto = texto_post(p, para_facebook=True, link_no_comentario=usar_comentario)
+    card = gerar_card(p)
+    foto_url = p.get("imagem") or ""
+
     try:
-        if img:
-            r = S.post(f"{FB_API}/{FB_PAGE_ID}/photos",
-                       data={"caption": caption, "access_token": FB_ACCESS_TOKEN},
-                       files={"source": ("oferta.jpg", img, "image/jpeg")}, timeout=90)
-        elif p.get("imagem"):
-            url = f"{FB_API}/{FB_PAGE_ID}/photos"
-            data = {"url": p["imagem"], "caption": caption, "access_token": FB_ACCESS_TOKEN}
-            r = S.post(url, data=data, timeout=40)
+        if card:
+            # upload da foto gerada
+            files = {"source": ("card.png", card, "image/png")}
+            data = {
+                "caption": texto,
+                "access_token": FB_ACCESS_TOKEN,
+            }
+            r = S.post(f"{FB_API}/{FB_PAGE_ID}/photos", data=data, files=files, timeout=40)
         else:
-            url = f"{FB_API}/{FB_PAGE_ID}/feed"
-            data = {"message": caption, "access_token": FB_ACCESS_TOKEN}
-            if not usar_comentario:
-                data["link"] = p["link"]
-            r = S.post(url, data=data, timeout=30)
-        if r.status_code in (200, 201):
-            FB_FALHAS = 0
-            print("Facebook:", r.status_code, r.text[:120])
-            if usar_comentario:
-                post_id, node_id = fb_ids(r)
-                time.sleep(2)
-                if not (post_id and fb_comentar_link(post_id, p)):
+            # foto original via URL
+            r = S.post(f"{FB_API}/{FB_PAGE_ID}/photos", data={
+                "url": foto_url,
+                "caption": texto,
+                "access_token": FB_ACCESS_TOKEN,
+            }, timeout=40)
+
+        if r.status_code != 200:
+            err = r.json() if r.headers.get("content-type", "").startswith("application/json") else {}
+            code = (err.get("error") or {}).get("code")
+            print(f"  Facebook foto falhou: {r.status_code} {str(err)[:200]}")
+            FB_FALHAS += 1
+            if code in FB_ERROS_FATAIS:
+                FB_ATIVO = False
+            return False
+
+        post_id = (r.json() or {}).get("post_id") or (r.json() or {}).get("id")
+        print(f"  Facebook OK — {p['titulo'][:40]}")
+
+        # link no primeiro comentário
+        if usar_comentario and post_id:
+            try:
+                rc = S.post(f"{FB_API}/{post_id}/comments", data={
+                    "message": f"🔗 Link da oferta:\n{p['link']}",
+                    "access_token": FB_ACCESS_TOKEN,
+                }, timeout=20)
+                if rc.status_code == 200:
+                    print("  → link no comentário OK")
+                else:
+                    print(f"  → comentário falhou ({rc.status_code}), editando legenda...")
                     FB_COMENT_OK = False
-                    print("  → Link volta para a legenda pelo resto desta execução.")
-                    fb_restaurar_link(post_id, node_id, caption.replace(
-                        "🔗 Link no primeiro comentário", f"👉 Ver oferta: {p['link']}"))
-            return True
-        code, _, msg = fb_erro(r)
-        print(f"Facebook: {r.status_code} (code {code}) {msg}")
-        FB_FALHAS += 1
-        if code in FB_ERROS_FATAIS:
-            print("  →", fb_dica(code))
-            print("  → Facebook desativado nesta execução (Telegram continua).")
-            FB_ATIVO = False
-        elif FB_FALHAS >= 3:
-            print("  → 3 falhas seguidas no Facebook; desativado nesta execução.")
-            FB_ATIVO = False
-        return False
+                    # tenta editar a legenda para incluir o link
+                    S.post(f"{FB_API}/{post_id}", data={
+                        "message": texto + f"\n\n👉 {p['link']}",
+                        "access_token": FB_ACCESS_TOKEN,
+                    }, timeout=20)
+            except Exception as e:
+                print("  → comentário erro:", e)
+                FB_COMENT_OK = False
+        return True
     except Exception as e:
-        print("Erro Facebook:", e)
+        print("  Facebook erro:", e)
         FB_FALHAS += 1
-        if FB_FALHAS >= 3:
-            FB_ATIVO = False
         return False
 
 
 def postar(p):
-    """Gera o card uma vez e envia para todos os canais. Sucesso se pelo menos um canal funcionar."""
-    img = gerar_card(p)
-    ok_tg = postar_telegram(p, img) if (TG_TOKEN and TG_CHAT) else False
-    ok_fb = postar_facebook(p, img) if FB_ATIVO else False
-    return ok_tg or ok_fb
+    ok_tg = postar_telegram(p)
+    ok_fb = postar_facebook(p)
+    if ok_tg or ok_fb:
+        print(f"  LINK AFILIADO → {p['link']}")
+        return True
+    return False
+
+
+def fb_diagnostico():
+    if not FB_ATIVO:
+        print("Facebook: inativo (sem FB_PAGE_ID / FB_ACCESS_TOKEN)")
+        return
+    try:
+        r = S.get(f"{FB_API}/{FB_PAGE_ID}", params={
+            "fields": "name,id",
+            "access_token": FB_ACCESS_TOKEN,
+        }, timeout=15)
+        if r.status_code == 200:
+            print(f"Facebook: página OK — {(r.json() or {}).get('name')}")
+        else:
+            print(f"Facebook: token/página com problema ({r.status_code})")
+    except Exception as e:
+        print("Facebook diagnóstico:", e)
 
 
 def pode_postar(agora):
@@ -1129,6 +1018,7 @@ def main():
     print("Iniciando", agora.isoformat())
     print(f"Meta: ML + Shopee | máx {MAX_POSTS} | bloqueio {REPETIR_APOS_DIAS}d | shopee={SHOPEE_POSTS} "
           f"| pool x{POOL_FATOR} | pausa {PAUSA_MIN}-{PAUSA_MAX}s | card={'sim' if (PIL_OK and IMG_CARD) else 'não'}")
+    print(f"Afiliado ML: matt_tool={AFF_ID}" + (f" + matt_word={AFF_WORD}" if AFF_WORD else ""))
     print(f"Canais: Telegram={'sim' if TG_TOKEN and TG_CHAT else 'não'} | Facebook={'sim' if FB_ATIVO else 'não'}")
     fb_diagnostico()
 
@@ -1179,7 +1069,7 @@ def main():
             registrar(estado, p["id"], p["titulo"], agora, p.get("item_id"))
             enviados += 1
             salvar(estado)
-        if i < len(ranking) - 1:                      # espaça os posts (evita rajada de notificações)
+        if i < len(ranking) - 1:
             espera = random.uniform(PAUSA_MIN, PAUSA_MAX)
             print(f"Aguardando {espera:.0f}s até o próximo post...")
             time.sleep(espera)
