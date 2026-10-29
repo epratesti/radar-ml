@@ -5,9 +5,9 @@ Shopee: Open API afiliado GraphQL productOfferV2.
 Horário SP: 07h–22h.
 
 v3.3:
-- MODO_COMENTARIO (padrão ligado): os posts saem SEM link, com a chamada
-  "comente EU QUERO" e o link é enviado manualmente. Para voltar ao formato
-  com link, defina a variável MODO_COMENTARIO=0.
+- MODO_COMENTARIO (padrão ligado): os posts do MERCADO LIVRE saem SEM link, com a
+  chamada "comente EU QUERO" (link enviado manualmente). A SHOPEE continua com link.
+  Para o ML voltar ao formato com link, defina MODO_COMENTARIO=0.
 - Facebook: diagnóstico do token no início, leitura correta do erro (error.code),
   e desativa o Facebook na execução após falha de permissão.
 - Mercado Livre: se /sites/MLB/search der 403 repetido, para de tentar e usa
@@ -31,7 +31,7 @@ SHOPEE_POSTS = int(os.getenv("SHOPEE_POSTS", "3"))
 SHOPEE_APP_ID = os.getenv("SHOPEE_APP_ID", "").strip()
 SHOPEE_SECRET = os.getenv("SHOPEE_SECRET", "").strip()
 
-# Modo "comente EU QUERO": posts sem link; o link é enviado manualmente.
+# Modo "comente EU QUERO": posts do Mercado Livre sem link (a Shopee mantém o link).
 MODO_COMENTARIO = os.getenv("MODO_COMENTARIO", "1").strip() == "1"
 CTA = os.getenv("CTA_TEXTO", 'Quer o link? Comente "EU QUERO" que eu te envio!')
 
@@ -499,9 +499,9 @@ def texto_post(p, para_facebook=False):
     loja = p.get("loja") or ""
     loja_linha = f"🏪 {loja}\n" if (fonte == "shopee" and loja) else ""
 
-    # ---------- MODO COMENTÁRIO (sem link) ----------
-    if MODO_COMENTARIO:
-        cab = "🛒 Oferta na Shopee" if fonte == "shopee" else f"🔥 Achado do momento — {cat}"
+    # ---------- MODO COMENTÁRIO (sem link) — só Mercado Livre ----------
+    if MODO_COMENTARIO and fonte != "shopee":
+        cab = f"🔥 Achado do momento — {cat}"
         if para_facebook:
             return (
                 f"{cab}\n\n"
@@ -522,14 +522,14 @@ def texto_post(p, para_facebook=False):
     if fonte == "shopee":
         if para_facebook:
             return (
-                f"🛒 Shopee — {cat}\n\n"
+                f"🛒 Oferta na Shopee\n\n"
                 f"📦 {titulo}\n\n"
                 f"💰 {preco}\n{loja_linha}{frete}"
                 f"\n👉 Ver oferta: {link}\n\n"
                 f"Link de afiliado · Preços podem variar"
             )
         return (
-            f"🛒 <b>Shopee — {html.escape(cat)}</b>\n\n"
+            f"🛒 <b>Oferta na Shopee</b>\n\n"
             f"📦 {html.escape(titulo)}\n\n"
             f"💰 <b>{preco}</b>\n{html.escape(loja_linha)}{frete}"
             f"\n👉 <a href=\"{html.escape(link)}\">Ver oferta na Shopee</a>\n\n"
@@ -640,7 +640,7 @@ def postar_facebook(p):
         else:
             url = f"{FB_API}/{FB_PAGE_ID}/feed"
             data = {"message": caption, "access_token": FB_ACCESS_TOKEN}
-            if not MODO_COMENTARIO:
+            if not MODO_COMENTARIO or p.get("fonte") == "shopee":
                 data["link"] = p["link"]
             r = S.post(url, data=data, timeout=30)
         if r.status_code in (200, 201):
@@ -686,7 +686,7 @@ def main():
     agora = dt.datetime.now(TZ)
     print("Iniciando", agora.isoformat())
     print(f"Meta: ML + Shopee | máx {MAX_POSTS} | bloqueio {REPETIR_APOS_DIAS}d | shopee={SHOPEE_POSTS}")
-    print(f"Modo: {'comentário (sem link)' if MODO_COMENTARIO else 'com link'}")
+    print(f"Modo: {'ML comentário (sem link) | Shopee com link' if MODO_COMENTARIO else 'com link'}")
     print(f"Canais: Telegram={'sim' if TG_TOKEN and TG_CHAT else 'não'} | Facebook={'sim' if FB_ATIVO else 'não'}")
     fb_diagnostico()
     h = headers_ml()
