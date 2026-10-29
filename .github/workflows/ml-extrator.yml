@@ -1,0 +1,72 @@
+nome: ML Extrator (lista de links de afiliados)
+
+sobre:
+  agendar:
+    - cron: "30 9 * * *" # 06:30 no horário de São Paulo (UTC-3)
+  despacho de fluxo de trabalho:
+    entradas:
+      depurar:
+        description: "Salvar prints/HTML para diagnóstico (fica visível para quem acessa o repositório público)"
+        tipo: booleano
+        padrão: falso
+
+permissões:
+  Conteúdo: escrever
+
+empregos:
+  extrair:
+    executa em: ubuntu-latest
+    tempo limite em minutos: 15
+    passos:
+      - usa: ações/checkout@v4
+
+      - usa: actions/setup-python@v5
+        com:
+          versão do python: "3.12"
+
+      - nome: m Dramaturgo
+        executar: |
+          pip install playwright
+          playwright install --with-deps chromium
+
+      - nome: Extrair links do painel de afiliados
+        ambiente:
+          ML_COOKIES_JSON: ${{ secrets.ML_COOKIES_JSON }}
+          ML_MAX_PRODUTOS: "25"
+          ML_DEBUG: ${{ inputs.debug && 'true' || 'false' }}
+        Execute: python ml_extrator.py
+
+      - nome: Salvar lista no repositório
+        se: sucesso()
+        executar: |
+          git config user.name "radar-bot"
+          git config user.email "radar-bot@users.noreply.github.com"
+          git add state/ml_lista.json
+          se git diff --cached --quiet; então
+            eco "Lista sem mudanças"
+          outro
+            git commit -m "chore: atualiza lista de links ML"
+            git pull --rebase
+            git push
+          fi
+
+      - nome: Guardar diagnóstico (só se depurar)
+        se: ${{ always() && inputs.debug }}
+        utiliza: actions/upload-artifact@v4
+        com:
+          nome: ml-debug
+          caminho: depuração/
+          dias de retenção: 1
+          se nenhum arquivo for encontrado: ignore
+
+      - nome: Avisar no Telegram (seu chat) se falhar
+        se: falha()
+        ambiente:
+          TG_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TG_ADMIN: ${{ secrets.TG_ADMIN_CHAT }}
+        executar: |
+          se [ -n "$TG_TOKEN" ] && [ -n "$TG_ADMIN" ]; então
+            curl -s "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
+              -d chat_id="${TG_ADMIN}" \
+              -d text="⚠️ Radar ML: o extrator de links falhou (sessão expirada ou painel mudou). Veja o log em Actions." > /dev/nulo
+          fi
