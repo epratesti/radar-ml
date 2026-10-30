@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-29T23:48:25.084081-03:00",
+  "atualizado": "2026-10-30T03:54:53.352868-03:00",
   "itens": [
     {
       "id": "MLB62997555",
@@ -12,35 +12,6 @@
       "link": "https://produto.mercadolivre.com.br/MLB-4083251613?matt_tool=71970283",
       "desconto": 46,
       "preco_original": 38.9,
-      "vendidos": 0
-    },
-    {
-      "id": "SHOPEE-21897981294",
-      "titulo": "Attracione Men (Perfume Masculino com Feromônios Ativados)",
-      "preco": 59.0,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7repr-m2v3wdwedwcb1f",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/8pmvkVWRRk",
-      "comissao": "0.03",
-      "loja": "Attracione Men & Attracione",
-      "termo": "perfume",
-      "desconto": 80,
-      "preco_original": 0,
-      "vendidos": 3354
-    },
-    {
-      "id": "MLB48478097",
-      "titulo": "Cabo Carregador Turbo Tipo C Para iPhone 8 X Xr 11 12 13 14 Pro Max Cor Branco Dtimp",
-      "preco": 19.0,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_826812-MLA111718763226_062026-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Celulares",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-5771954224?matt_tool=71970283",
-      "desconto": 36,
-      "preco_original": 29.9,
       "vendidos": 0
     },
     {
@@ -60,6 +31,77 @@
       "vendidos": 2484
     },
     {
+      "id": "MLB48478097",
+      "titulo": "Cabo Carregador Turbo Tipo C Para iPhone 8 X Xr 11 12 13 14 Pro Max Cor Branco Dtimp",
+      "preco": 19.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_826812-MLA111718763226_062026-F.jpg",
+      "frete_gratis": false,
+      "categoria": "Celulares",
+      "fonte": "ml",
+      "link": "https://produto.mercadolivre.com.br/MLB-5771954224?matt_tool=71970283",
+      "desconto": 36,
+      "preco_original": 29.9,
+      "vendidos": 0
+    },
+    {
+      "id": "SHOPEE-23394690451",
+      "titulo": "Principia Kit Completo Peles Sensíveis c/ Gel de Limpeza GL-02 + Creme Hidratante CH-01 + Protetor Solar PS-01 FPS 60",
+      "preco": 93.99,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mh9d339f89af1c",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/8fTWX8YQ8w",
+      "comissao": "0.13",
+      "loja": "Principia Skincare",
+      "termo": "kit skincare",
+      "desconto": 38,
+      "preco_original": 0,
+      "vendidos": 2380
+    },
+    {
+      "id": "MLB64322156",
+      "titulo": "Philips OneBlade Aparador e Barbeador Elétrico com Pente Ajustável 5 em 1 | Raspa, Apara e Contorna | Uso Seco e Molhado | 100% À Prova d'Água | Sem Fio | Bivolt | QP1425/10",
+      "preco": 111.0,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_750670-MLA118429558724_102026-F.jpg",
+      "frete_gratis": true,
+      "categoria": "Beleza",
+      "fonte": "ml",
+      "link": "https://produto.mercadolivre.com.br/MLB-7887999078?matt_tool=71970283",
+      "desconto": 0,
+      "preco_original": 0.0,
+      "vendidos": 0
+    },
+    {
+      "id": "SHOPEE-58209955451",
+      "titulo": "Descalcificante Limpa Cafeteira Expresso Maquina Nespresso Dolce Gusto 3 Corações Café Dentro Limpez",
+      "preco": 17.87,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820l5-mnp4nu9pryf625",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/2gCJluIli3",
+      "comissao": "0.18",
+      "loja": "Oferta Day",
+      "termo": "cafeteira",
+      "desconto": 35,
+      "preco_original": 0,
+      "vendidos": 1468
+    },
+    {
+      "id": "MLB19694427",
+      "titulo": "Escova Secadora Britânia Bivolt 1300w Soft Bec07r Original",
+      "preco": 75.86,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_717664-MLA116175833066_092026-F.jpg",
+      "frete_gratis": false,
+      "categoria": "Beleza",
+      "fonte": "ml",
+      "link": "https://produto.mercadolivre.com.br/MLB-7909446260?matt_tool=71970283",
+      "desconto": 0,
+      "preco_original": 0.0,
+      "vendidos": 0
+    },
+    {
       "id": "MLB18964467",
       "titulo": "Principia Sérum Vitamina C-10",
       "preco": 23.89,
@@ -71,54 +113,6 @@
       "desconto": 0,
       "preco_original": 0.0,
       "vendidos": 0
-    },
-    {
-      "id": "SHOPEE-58213437798",
-      "titulo": "Body Splash Inspirado em Perfumes Importados com Essência Concentrada e Fragrância Marcante",
-      "preco": 10.99,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lr-mqv9nes5wqo3cf",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/8fTVYCX4mj",
-      "comissao": "0.18",
-      "loja": "HN PERFUMES",
-      "termo": "perfume",
-      "desconto": 45,
-      "preco_original": 0,
-      "vendidos": 3398
-    },
-    {
-      "id": "SHOPEE-16284758791",
-      "titulo": "Mochila Reforçada Masculina Faculdade Impermeável Resistente Grande Trabalho Escolar",
-      "preco": 59.99,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mfea12iap14w0d",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/AAIK3QI0kz",
-      "comissao": "0.06",
-      "loja": "Isic Fast",
-      "termo": "mochila",
-      "desconto": 39,
-      "preco_original": 0,
-      "vendidos": 2854
-    },
-    {
-      "id": "SHOPEE-20599359513",
-      "titulo": "Kit Cozinha Brinquedo Infantil Fogão Forno Panelinhas Xícaras Acessórios Faz de Conta",
-      "preco": 29.98,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lb-moh9avb3ey9scc",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/8fTWX8lcVh",
-      "comissao": "0.1",
-      "loja": "Amoritta Kids",
-      "termo": "air fryer",
-      "desconto": 32,
-      "preco_original": 0,
-      "vendidos": 2034
     }
   ]
 }
