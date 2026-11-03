@@ -52,9 +52,11 @@ jobs:
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN }}
           POSTS_POR_GRUPO: "2"
-          MAX_POSTS: "8"
-          SHOPEE_POSTS: "3"
+          MAX_POSTS: "12"
+          SHOPEE_POSTS: "12"
           REPETIR_APOS_DIAS: "3"
+          # Desliga Mercado Livre por enquanto (Telegram + Facebook)
+          ML_ENABLED: "0"
 
       - name: Salvar dados (merge seguro do estado)
         run: |
