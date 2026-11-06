@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-06T17:08:18.237808-03:00",
+  "atualizado": "2026-11-06T18:08:42.992044-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-22094238842",
+      "titulo": "BODY SPLASH FEMININO ARABE AYRA 100ML - PRIMACIAL PERFUME FLORAL",
+      "preco": 24.9,
+      "preco_anterior": null,
+      "a_partir_de": false,
+      "desconto": 38,
+      "vendas": 5919,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m1-mukoqlfdn280c5",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "perfume",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/80DzuHLuyi",
+      "comissao": "0.28",
+      "loja": "Primacial",
+      "postado_em": "2026-11-06T18:08:42.992044-03:00"
+    },
+    {
+      "id": "SHOPEE-58255159172",
+      "titulo": "Fones de ouvido sem fio Bluetooth compactos Xiaomi Redmi Airdots com Estojo Recarregável",
+      "preco": 21.79,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 60,
+      "vendas": 8760,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820la-mltkawis4qo439",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "fone bluetooth",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/2LZdAagZFd",
+      "comissao": "0.12",
+      "loja": "YYYNN",
+      "postado_em": "2026-11-06T18:08:42.992044-03:00"
+    },
     {
       "id": "SHOPEE-23198988208",
       "titulo": "Mouse Pad Desk Pad Couro Borda Costurada Gigante Antiderrapante Tapete Mesa Gamer Setup Trabalho Estudo Protetor Mesa",
