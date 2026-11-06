@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-06T19:10:14.397657-03:00",
+  "atualizado": "2026-11-06T20:10:15.229966-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-58202615709",
+      "titulo": "MINI Refrigerador De Ar Ventilador Umidificador Dupla Giratório+rgb Camada Ventilador Climatizador Ar C/ Reservatório",
+      "preco": 59.88,
+      "preco_anterior": null,
+      "a_partir_de": false,
+      "desconto": 68,
+      "vendas": 3777,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-81zue-mizz3df604cj39",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "ventilador",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/2BGFB78II0",
+      "comissao": "0.14",
+      "loja": "JX VERDE",
+      "postado_em": "2026-11-06T20:10:15.229966-03:00"
+    },
+    {
+      "id": "SHOPEE-22397182239",
+      "titulo": "Mini Liquidificador Portátil Shake 6 Laminas + Cabo USB-1",
+      "preco": 24.49,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 76,
+      "vendas": 1410,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rbkc-lpcg90v8yx5251",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "liquidificador",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/6L5oFMYowK",
+      "comissao": "0.11",
+      "loja": "ZSZ_SHOP",
+      "postado_em": "2026-11-06T20:10:15.229966-03:00"
+    },
     {
       "id": "SHOPEE-25356800051",
       "titulo": "80 Estilos Moda Broche Dos Desenhos Animados Bonito Liga Alfinetes Badge Pin Mochila Decoração",
