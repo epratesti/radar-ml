@@ -1,19 +1,144 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RADAR DE OFERTAS – Documentação</title>
-  <style>
-    body { font-family: system-ui, -apple-system, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
-    a { color: #1877f2; display: block; margin: 0.6em 0; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Radar de Ofertas Shopee</title>
+<meta name="description" content="As melhores ofertas da Shopee, atualizadas ao longo do dia.">
+<style>
+  :root {
+    --bg: #f6f6f8; --card: #ffffff; --texto: #1c1c22; --suave: #6b6b78;
+    --borda: #e4e4ea; --laranja: #ee4d2d; --laranja-esc: #d83f21; --verde: #0a8f4d;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121216; --card: #1c1c22; --texto: #f1f1f4; --suave: #9a9aa8;
+      --borda: #2c2c35; --laranja: #ff6a4d; --laranja-esc: #ff5232; --verde: #3ddc84;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--texto);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    padding: env(safe-area-inset-top, 0) 0 env(safe-area-inset-bottom, 0);
+  }
+  header { max-width: 1100px; margin: 0 auto; padding: 28px 16px 8px; }
+  h1 { margin: 0 0 4px; font-size: 1.6rem; }
+  .sub { color: var(--suave); font-size: .9rem; }
+  main { max-width: 1100px; margin: 0 auto; padding: 16px; }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+  .card {
+    background: var(--card); border: 1px solid var(--borda); border-radius: 14px;
+    overflow: hidden; display: flex; flex-direction: column;
+  }
+  .foto { position: relative; aspect-ratio: 1 / 1; background: var(--borda); }
+  .foto img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .selo {
+    position: absolute; top: 10px; left: 10px; background: var(--laranja); color: #fff;
+    font-weight: 700; font-size: .8rem; padding: 4px 8px; border-radius: 8px;
+  }
+  .selo.queda { background: var(--verde); }
+  .corpo { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+  .titulo {
+    font-size: .95rem; line-height: 1.3; margin: 0;
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .antes { color: var(--suave); text-decoration: line-through; font-size: .85rem; }
+  .preco { font-size: 1.35rem; font-weight: 800; color: var(--laranja); }
+  .preco small { font-size: .75rem; font-weight: 500; color: var(--suave); }
+  .meta { color: var(--suave); font-size: .8rem; display: flex; flex-direction: column; gap: 2px; }
+  .btn {
+    margin-top: auto; text-align: center; text-decoration: none; background: var(--laranja);
+    color: #fff; font-weight: 700; padding: 11px; border-radius: 10px;
+  }
+  .btn:hover { background: var(--laranja-esc); }
+  .vazio, .erro { text-align: center; color: var(--suave); padding: 48px 16px; }
+  footer { max-width: 1100px; margin: 0 auto; padding: 8px 16px 32px; color: var(--suave); font-size: .78rem; }
+</style>
 </head>
 <body>
-  <h1>RADAR DE OFERTAS</h1>
-  <p>Documentação do aplicativo Meta.</p>
-  <a href="privacy.html">Política de Privacidade</a>
-  <a href="terms.html">Termos de Serviço</a>
-  <a href="data-deletion.html">Instruções de Exclusão de Dados</a>
+<header>
+  <h1>🛍️ Radar de Ofertas Shopee</h1>
+  <div class="sub" id="atualizado">Carregando ofertas…</div>
+</header>
+
+<main>
+  <div class="grid" id="grid"></div>
+  <div class="vazio" id="vazio" hidden>Ainda não há ofertas por aqui. Volte em alguns minutos!</div>
+  <div class="erro" id="erro" hidden>Não foi possível carregar as ofertas agora.</div>
+</main>
+
+<footer>
+  Links de afiliado: podemos receber comissão pelas compras, sem custo extra para você.
+  Preços e estoque podem variar na Shopee.
+</footer>
+
+<script>
+  const brl = (v) => Number(v).toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+  const compacto = (n) => Number(n).toLocaleString("pt-BR", { notation: "compact", maximumFractionDigits: 1 });
+
+  function el(tag, cls, texto) {
+    const e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (texto !== undefined) e.textContent = texto;
+    return e;
+  }
+
+  function card(p) {
+    const c = el("article", "card");
+
+    const foto = el("div", "foto");
+    if (p.imagem) {
+      const img = document.createElement("img");
+      img.src = p.imagem; img.alt = ""; img.loading = "lazy"; img.referrerPolicy = "no-referrer";
+      foto.appendChild(img);
+    }
+    if (p.preco_anterior) {
+      const pct = Math.max(1, Math.round((1 - p.preco / p.preco_anterior) * 100));
+      foto.appendChild(el("span", "selo queda", "🔻 Baixou -" + pct + "%"));
+    } else if (p.desconto) {
+      foto.appendChild(el("span", "selo", p.desconto + "% OFF"));
+    }
+    c.appendChild(foto);
+
+    const corpo = el("div", "corpo");
+    corpo.appendChild(el("h2", "titulo", p.titulo));
+
+    if (p.preco_anterior) corpo.appendChild(el("div", "antes", brl(p.preco_anterior)));
+    const preco = el("div", "preco");
+    if (p.a_partir_de) preco.appendChild(el("small", "", "a partir de "));
+    preco.appendChild(document.createTextNode(brl(p.preco)));
+    corpo.appendChild(preco);
+
+    const meta = el("div", "meta");
+    if (p.vendas) meta.appendChild(el("span", "", "⭐ " + compacto(p.vendas) + " vendidos"));
+    if (p.loja) meta.appendChild(el("span", "", "🏪 " + p.loja));
+    corpo.appendChild(meta);
+
+    const a = el("a", "btn", "Ver oferta na Shopee");
+    a.href = p.link; a.target = "_blank"; a.rel = "noopener noreferrer sponsored";
+    corpo.appendChild(a);
+
+    c.appendChild(corpo);
+    return c;
+  }
+
+  fetch("trends.json?t=" + Date.now())
+    .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then((d) => {
+      const itens = d.itens || [];
+      const quando = d.atualizado ? new Date(d.atualizado) : null;
+      document.getElementById("atualizado").textContent = quando
+        ? "Atualizado em " + quando.toLocaleString("pt-BR", { dateStyle: "short", timeStyle: "short" })
+        : "";
+      if (!itens.length) { document.getElementById("vazio").hidden = false; return; }
+      const grid = document.getElementById("grid");
+      itens.forEach((p) => grid.appendChild(card(p)));
+    })
+    .catch(() => {
+      document.getElementById("atualizado").textContent = "";
+      document.getElementById("erro").hidden = false;
+    });
+</script>
 </body>
 </html>
