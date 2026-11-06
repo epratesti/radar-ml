@@ -50,6 +50,15 @@ v3.9 (nov/2026):
   e descarta valores inválidos (< R$ 0,50 ou > R$ 50.000).
 - Desliga posts do Mercado Livre por padrão (Telegram + Facebook).
   Para reativar: secret/env ML_ENABLED=1.
+
+v4.0 (nov/2026) — preços corretos + cards atraentes:
+- Shopee: normalização de preço mais robusta (micros/centavos/reais com
+  checagem cruzada por priceMax e faixa plausível); descarta inconsistentes.
+- ML: usa imagem em alta resolução (troca thumbnail -I/-Y por -O/-F) e
+  prioriza pictures[] quando disponível.
+- Card visual redesenhado: fundo em gradiente, selo de desconto em badge,
+  faixa de preço com contraste, título curto, sombra na foto do produto.
+- Não mostra "De X por Y" quando não há preço original confiável.
 """
 
 import os, io, json, html, re, random, hashlib, time, unicodedata, datetime as dt
@@ -223,7 +232,77 @@ def calc_desconto(preco, original):
 
 
 def preco_br(v):
+    try:
+        v = float(v)
+    except (TypeError, ValueError):
+        return "R$ —"
     return f"R$ {v:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
+
+
+def ml_imagem_hd(url):
+    """Eleva thumbnail do ML para resolução maior (O/F em vez de I/Y/W)."""
+    if not url:
+        return ""
+    u = url.replace("http://", "https://")
+    # padrões comuns do CDN ML: ...-I.jpg, -Y.jpg, -W.jpg, -V.jpg → -O.jpg
+    u = re.sub(r"-([IYVW])(\.\w+)(\?.*)?$", r"-O\2\3", u)
+    # às vezes vem com size no path
+    u = re.sub(r"/D_NQ_NP_\d+-", "/D_NQ_NP_2X-", u)
+    return u
+
+
+def normalizar_preco_shopee(raw, raw_max=None):
+    """Converte priceMin (e opcionalmente priceMax) da API Shopee para reais.
+
+    A API de afiliados BR oscila entre micros (×100000), centavos e reais.
+    Estratégia:
+      1) gera candidatos pelas 3 escalas
+      2) se priceMax existir, gera os mesmos candidatos e escolhe o par
+         com escala coerente (min <= max e razão razoável)
+      3) descarta fora de R$ 0,50–50.000
+    """
+    try:
+        raw = float(raw or 0)
+    except (TypeError, ValueError):
+        return None
+    if raw <= 0:
+        return None
+
+    def candidatos(v):
+        out = []
+        for div in (100000.0, 100.0, 1.0):
+            p = v / div
+            if 0.5 <= p <= 50000:
+                out.append(p)
+        return out
+
+    cands = candidatos(raw)
+    if not cands:
+        return None
+
+    try:
+        rmax = float(raw_max) if raw_max not in (None, "", 0, 0.0) else None
+    except (TypeError, ValueError):
+        rmax = None
+
+    if rmax and rmax > 0:
+        cmax = candidatos(rmax)
+        melhores = []
+        for a in cands:
+            for b in cmax:
+                if a <= b * 1.05 and b <= a * 20:  # min não muito acima do max; max não absurdo
+                    melhores.append((abs(b - a), a, b))
+        if melhores:
+            melhores.sort()
+            return melhores[0][1]
+
+    # sem max: prefere escala que não deixe o número "inteiro grande sem centavos"
+    # (ex.: 1999 como centavos → 19.99; 19.99 como reais fica)
+    cands.sort(key=lambda p: (
+        0 if (p != int(p) or p < 100) else 1,  # prefere com centavos ou <100
+        abs(p - 50),  # viés leve para faixa típica de oferta
+    ))
+    return cands[0]
 
 
 def fmt_vendidos(n):
@@ -388,7 +467,13 @@ def produto_search(item, label):
     if not titulo or preco <= 0:
         return None
     frete = (item.get("shipping") or {}).get("free_shipping", False)
-    foto = (item.get("thumbnail") or "").replace("http://", "https://")
+    # Preferir imagem HD: pictures[] > thumbnail elevado
+    foto = ""
+    pics = item.get("pictures") or []
+    if pics:
+        foto = (pics[0].get("secure_url") or pics[0].get("url") or "").replace("http://", "https://")
+    if not foto:
+        foto = ml_imagem_hd(item.get("thumbnail") or item.get("secure_thumbnail") or "")
     mid = str(item.get("id", ""))
     pid = str(item.get("catalog_product_id") or mid)
     mid_fmt = (mid[:3] + "-" + mid[3:]) if mid.startswith("MLB") and "-" not in mid else mid
@@ -482,7 +567,8 @@ def produto_catalogo(pid, h, label, vistos, vistos_t):
             titulo = d.get("name") or d.get("title") or ""
             pics = d.get("pictures") or []
             if pics:
-                foto = (pics[0].get("url") or pics[0].get("secure_url") or "").replace("http://", "https://")
+                foto = (pics[0].get("secure_url") or pics[0].get("url") or "").replace("http://", "https://")
+                foto = ml_imagem_hd(foto)
         ri = ml_get(f"{API}/products/{pid}/items", h)
         if ri.status_code == 200:
             results = ri.json().get("results") or []
@@ -674,29 +760,22 @@ def buscar_shopee(keyword, vistos, vistos_t, n):
             pid = str(node.get("itemId") or "")
             if not titulo or not pid or pid in vistos or (nt and nt in vistos_t):
                 continue
-            try:
-                raw = float(node.get("priceMin") or 0)
-                # Shopee Affiliate BR: priceMin costuma vir em micros (×100000),
-                # mas às vezes já vem em reais ou em centavos. Normaliza para R$.
-                if raw <= 0:
-                    continue
-                if raw >= 1000:           # tipicamente micros: 1999000 → R$ 19,99
-                    preco = raw / 100000
-                elif raw >= 100:          # centavos: 1999 → R$ 19,99
-                    preco = raw / 100
-                else:                     # já em reais: 19.99
-                    preco = raw
-                # Proteção final: se ainda ficou absurdo, descarta
-                if preco < 0.5 or preco > 50000:
-                    continue
-            except (TypeError, ValueError):
-                continue
-            if preco <= 0:
+            preco = normalizar_preco_shopee(node.get("priceMin"), node.get("priceMax"))
+            if preco is None or preco <= 0:
                 continue
             try:
                 desc = int(float(node.get("priceDiscountRate") or 0))
             except (TypeError, ValueError):
                 desc = 0
+            # preço original só se desconto for plausível (3–90%)
+            orig = 0.0
+            if 3 <= desc <= 90 and preco > 0:
+                try:
+                    orig = round(preco / (1 - desc / 100.0), 2)
+                    if orig <= preco or orig > 50000:
+                        orig = 0.0
+                except Exception:
+                    orig = 0.0
             foto = (node.get("imageUrl") or "").replace("http://", "https://")
             link = node.get("offerLink") or ""
             p = {
@@ -712,8 +791,8 @@ def buscar_shopee(keyword, vistos, vistos_t, n):
                 "comissao": node.get("commissionRate"),
                 "loja": node.get("shopName") or "",
                 "termo": keyword,
-                "desconto": desc,
-                "preco_original": 0,
+                "desconto": desc if orig else (desc if desc >= 5 else 0),
+                "preco_original": orig,
                 "vendidos": to_int(node.get("sales")),
             }
             vistos.add(pid)
@@ -883,36 +962,128 @@ def baixar_imagem(url):
     return None
 
 
+def _font(size, bold=False):
+    paths = [
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf" if bold else "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+        "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf" if bold else "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
+        "/usr/share/fonts/truetype/freefont/FreeSansBold.ttf" if bold else "/usr/share/fonts/truetype/freefont/FreeSans.ttf",
+    ]
+    for path in paths:
+        try:
+            return ImageFont.truetype(path, size)
+        except Exception:
+            continue
+    return ImageFont.load_default()
+
+
+def _rounded_rect(draw, xy, radius, fill):
+    x0, y0, x1, y1 = xy
+    r = max(0, int(radius))
+    draw.rounded_rectangle([x0, y0, x1, y1], radius=r, fill=fill)
+
+
 def gerar_card(p):
-    """Gera card visual com Pillow. Retorna bytes PNG ou None."""
+    """Card visual atraente: gradiente, foto com sombra, selo de desconto e faixa de preço."""
     if not (PIL_OK and IMG_CARD):
         return None
     img_bytes = baixar_imagem(p.get("imagem"))
     if not img_bytes:
         return None
     try:
-        im = Image.open(io.BytesIO(img_bytes)).convert("RGB")
-        im = ImageOps.contain(im, (600, 600))
-        # fundo branco com padding
-        card = Image.new("RGB", (700, 900), (255, 255, 255))
-        x = (700 - im.width) // 2
-        y = 40
-        card.paste(im, (x, y))
+        W, H = 720, 960
+        # fundo gradiente suave (claro → levemente rosado/quente)
+        card = Image.new("RGB", (W, H), (250, 250, 252))
         draw = ImageDraw.Draw(card)
-        # texto simplificado (fontes do sistema podem variar)
-        try:
-            font_big = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 36)
-            font_sm = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 22)
-        except Exception:
-            font_big = ImageFont.load_default()
-            font_sm = font_big
-        preco = preco_br(p["preco"])
+        for i in range(H):
+            t = i / max(H - 1, 1)
+            r = int(250 - 8 * t)
+            g = int(250 - 18 * t)
+            b = int(252 - 12 * t)
+            draw.line([(0, i), (W, i)], fill=(r, g, b))
+
+        # área da foto
+        im = Image.open(io.BytesIO(img_bytes)).convert("RGB")
+        im = ImageOps.contain(im, (620, 620))
+        # sombra suave atrás da foto
+        shadow = Image.new("RGBA", (im.width + 16, im.height + 16), (0, 0, 0, 0))
+        sd = ImageDraw.Draw(shadow)
+        sd.rounded_rectangle([8, 8, im.width + 8, im.height + 8], radius=18, fill=(0, 0, 0, 45))
+        sx = (W - shadow.width) // 2
+        sy = 36
+        card.paste(shadow, (sx, sy), shadow)
+
+        # foto centralizada
+        px = (W - im.width) // 2
+        py = 44
+        # cantos arredondados na foto via máscara
+        mask = Image.new("L", im.size, 0)
+        md = ImageDraw.Draw(mask)
+        md.rounded_rectangle([0, 0, im.width, im.height], radius=16, fill=255)
+        card.paste(im, (px, py), mask)
+
+        # selo de desconto (badge)
         d = int(p.get("desconto") or 0)
-        draw.text((40, 680), preco, fill=(20, 20, 20), font=font_big)
+        font_badge = _font(26, bold=True)
+        font_big = _font(44, bold=True)
+        font_md = _font(24, bold=True)
+        font_sm = _font(20)
+        font_xs = _font(16)
+
         if d >= 5:
-            draw.text((40, 730), f"-{d}% OFF", fill=(200, 40, 40), font=font_sm)
+            badge_txt = f"-{d}%"
+            # medir texto
+            try:
+                bbox = draw.textbbox((0, 0), badge_txt, font=font_badge)
+                tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
+            except Exception:
+                tw, th = 70, 28
+            bw, bh = tw + 28, th + 18
+            bx, by = W - bw - 28, 28
+            _rounded_rect(draw, (bx, by, bx + bw, by + bh), 14, (220, 38, 38))
+            draw.text((bx + 14, by + 8), badge_txt, fill=(255, 255, 255), font=font_badge)
+
+        # faixa inferior de preço
+        faixa_y0 = 700
+        _rounded_rect(draw, (24, faixa_y0, W - 24, H - 24), 22, (28, 28, 32))
+
+        preco = preco_br(p["preco"])
+        orig = p.get("preco_original") or 0
+        try:
+            orig = float(orig)
+        except (TypeError, ValueError):
+            orig = 0.0
+
+        # título curto
+        tit = limpar_titulo(p.get("titulo") or "", 42)
+        draw.text((48, faixa_y0 + 18), tit, fill=(210, 210, 215), font=font_sm)
+
+        # preço grande
+        draw.text((48, faixa_y0 + 52), preco, fill=(255, 255, 255), font=font_big)
+
+        # preço original riscado + tag frete
+        extra_y = faixa_y0 + 110
+        if orig and orig > float(p.get("preco") or 0):
+            ot = preco_br(orig)
+            draw.text((48, extra_y), ot, fill=(160, 160, 170), font=font_sm)
+            ot_w = 80
+            try:
+                ob = draw.textbbox((48, extra_y), ot, font=font_sm)
+                mid_y = (ob[1] + ob[3]) // 2
+                draw.line([(ob[0], mid_y), (ob[2], mid_y)], fill=(160, 160, 170), width=2)
+                ot_w = ob[2] - ob[0]
+            except Exception:
+                pass
+            if d >= 5:
+                draw.text((48 + 12 + ot_w, extra_y), f"{d}% OFF", fill=(255, 120, 120), font=font_md)
+
+        if p.get("frete_gratis"):
+            fx = W - 200
+            _rounded_rect(draw, (fx, faixa_y0 + 100, fx + 150, faixa_y0 + 136), 10, (40, 140, 80))
+            draw.text((fx + 16, faixa_y0 + 106), "Frete grátis", fill=(255, 255, 255), font=font_xs)
+
         if BRAND_NAME:
-            draw.text((40, 850), BRAND_NAME[:30], fill=(120, 120, 120), font=font_sm)
+            draw.text((48, H - 52), BRAND_NAME[:28], fill=(140, 140, 150), font=font_xs)
+
         buf = io.BytesIO()
         card.save(buf, format="PNG", optimize=True)
         return buf.getvalue()
