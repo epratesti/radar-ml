@@ -1,19 +1,19 @@
 """Radar Shopee → Telegram + Facebook Page.
 
-v4.0 (somente Shopee)
+v5.0 (somente Shopee)
 
-Melhorias desta versão:
-- Removido o Mercado Livre (o bot não depende mais dos secrets ML).
-- Layout novo: título em negrito, preço, % OFF, vendidos, loja e botão "Comprar".
-- Preço "a partir de" quando o produto tem variações com preços diferentes.
-- Títulos limpos (sem espaços duplos, sem CAIXA ALTA, cortados sem quebrar palavra).
-- Telegram: se a foto falhar, envia como texto (o post não se perde) + tratamento de 429.
-- Filtro de qualidade: ignora produtos com poucas vendas (SHOPEE_MIN_VENDAS).
-- Para de consultar a Shopee após 3 falhas seguidas (economiza tempo no Actions).
-- Facebook: diagnóstico do token e desativa na execução após erro fatal.
+Novidades:
+1. Ranking por potencial: pontua vendas, desconto e comissão (não é mais aleatório).
+2. Queda de preço: guarda o último preço postado e reposta se baixar (QUEDA_MIN_PCT).
+3. Posts espalhados: poucos posts por execução, com intervalo entre eles.
+4. Textos variados (várias chamadas) + hashtags no Facebook.
+5. Alertas privados no Telegram quando algo falha (ALERTA_CHAT_ID).
+6. docs/trends.json acumula os últimos posts (o site não fica com só 2 itens).
+7. DRY_RUN=1: mostra os posts no log sem enviar nem salvar nada.
 """
 
-import os, json, html, re, random, hashlib, time, datetime as dt
+import os, json, html, re, math, random, hashlib, time, unicodedata, traceback
+import datetime as dt
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -27,18 +27,30 @@ def env_int(nome, padrao):
         return padrao
 
 
+# --- Canais -----------------------------------------------------------------
 TG_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TG_CHAT = os.getenv("TELEGRAM_CHAT_ID")
+ALERTA_CHAT_ID = os.getenv("ALERTA_CHAT_ID", "").strip()  # SEU chat privado (não o canal)
 FB_PAGE_ID = os.getenv("FB_PAGE_ID", "").strip()
 FB_ACCESS_TOKEN = os.getenv("FB_ACCESS_TOKEN", "").strip()
 
-MAX_POSTS = env_int("MAX_POSTS", 8)
-REPETIR_APOS_DIAS = env_int("REPETIR_APOS_DIAS", 3)
-SHOPEE_MIN_VENDAS = env_int("SHOPEE_MIN_VENDAS", 20)  # use 0 para não filtrar
-
+# --- Shopee -----------------------------------------------------------------
 SHOPEE_APP_ID = os.getenv("SHOPEE_APP_ID", "").strip()
 SHOPEE_SECRET = os.getenv("SHOPEE_SECRET", "").strip()
 SHOPEE_GQL = "https://open-api.affiliate.shopee.com.br/graphql"
+
+# --- Ajustes ----------------------------------------------------------------
+MAX_POSTS = env_int("MAX_POSTS", 2)                      # posts por execução
+QUERIES_POR_EXECUCAO = env_int("QUERIES_POR_EXECUCAO", 6)
+CANDIDATOS_POR_BUSCA = env_int("CANDIDATOS_POR_BUSCA", 8)
+SHOPEE_MIN_VENDAS = env_int("SHOPEE_MIN_VENDAS", 20)     # 0 = não filtrar
+REPETIR_APOS_DIAS = env_int("REPETIR_APOS_DIAS", 3)
+QUEDA_MIN_PCT = env_int("QUEDA_MIN_PCT", 10)             # queda mínima p/ repostar
+PRECO_HISTORICO_DIAS = env_int("PRECO_HISTORICO_DIAS", 14)
+POST_INTERVALO_SEG = env_int("POST_INTERVALO_SEG", 30)
+ALERTA_REPETIR_HORAS = env_int("ALERTA_REPETIR_HORAS", 12)
+TRENDS_MAX = env_int("TRENDS_MAX", 30)
+DRY_RUN = os.getenv("DRY_RUN", "").strip().lower() in ("1", "true", "sim", "yes")
 
 FB_API = "https://graph.facebook.com/v21.0"
 
@@ -47,12 +59,14 @@ TRENDS = ROOT / "docs" / "trends.json"
 STATE = ROOT / "state" / "posted.json"
 TZ = ZoneInfo("America/Sao_Paulo")
 
-# Estado de execução (circuit breakers)
+# --- Estado de execução (circuit breakers e alertas) --------------------------
 FB_ATIVO = bool(FB_PAGE_ID and FB_ACCESS_TOKEN)
 FB_FALHAS = 0
 FB_ERROS_FATAIS = {3, 10, 102, 190, 200, 240, 283, 368}
 SHOPEE_FALHAS = 0
 SHOPEE_OFF = False
+SHOPEE_ULTIMO_ERRO = ""
+ALERTAS = {}  # chave -> mensagem
 
 SHOPEE_QUERIES = [
     "fone bluetooth", "smartwatch", "carregador turbo", "power bank",
@@ -62,8 +76,17 @@ SHOPEE_QUERIES = [
     "caixa de som", "mouse gamer", "organizador", "ventilador",
 ]
 
+CHAMADAS = [
+    "🔥 Oferta do dia",
+    "💸 Preço bom na Shopee",
+    "⚡ Corre que tá barato",
+    "🛍️ Achadinho Shopee",
+    "🎯 Olha esse preço",
+    "⭐ Mais vendido da Shopee",
+]
+
 S = requests.Session()
-S.headers.update({"User-Agent": "radar-shopee/4.0", "Accept": "application/json"})
+S.headers.update({"User-Agent": "radar-shopee/5.0", "Accept": "application/json"})
 
 
 # ----------------------------------------------------------------------------
@@ -105,59 +128,69 @@ def fmt_vendas(n):
     return str(n)
 
 
+def hashtag(t):
+    t = unicodedata.normalize("NFKD", t or "").encode("ascii", "ignore").decode()
+    t = re.sub(r"[^a-zA-Z0-9]", "", t)
+    return f"#{t}" if t else ""
+
+
+def add_alerta(chave, msg):
+    if chave not in ALERTAS:
+        ALERTAS[chave] = msg
+    print(f"⚠️ ALERTA [{chave}]: {msg}")
+
+
 # ----------------------------------------------------------------------------
-# Estado (anti-repetição)
+# Estado (anti-repetição + histórico de preços + alertas)
 # ----------------------------------------------------------------------------
+def estado_vazio():
+    return {"ids": {}, "titulos": {}, "precos": {}, "alertas": {}}
+
+
 def carregar_estado():
     STATE.parent.mkdir(parents=True, exist_ok=True)
     try:
         data = json.loads(STATE.read_text(encoding="utf-8") or "{}")
         if not isinstance(data, dict):
-            return {"ids": {}, "titulos": {}}
-        if data and "ids" not in data:
-            return {"ids": data, "titulos": {}}
-        data.setdefault("ids", {})
-        data.setdefault("titulos", {})
+            return estado_vazio()
+        if data and "ids" not in data:  # formato antigo (só ids)
+            data = {"ids": data}
+        for k in ("ids", "titulos", "precos", "alertas"):
+            data.setdefault(k, {})
         return data
     except Exception:
-        return {"ids": {}, "titulos": {}}
+        return estado_vazio()
+
+
+def _depois_de(ts, limite):
+    try:
+        return dt.datetime.fromisoformat(ts) > limite
+    except Exception:
+        return False
 
 
 def limpar_estado(estado, agora):
-    limite = agora - dt.timedelta(days=REPETIR_APOS_DIAS)
-    ids, tits = {}, {}
-    for k, v in estado.get("ids", {}).items():
-        try:
-            if dt.datetime.fromisoformat(v) > limite:
-                ids[k] = v
-        except Exception:
-            pass
-    for k, v in estado.get("titulos", {}).items():
-        try:
-            if dt.datetime.fromisoformat(v) > limite:
-                tits[k] = v
-        except Exception:
-            pass
-    return {"ids": ids, "titulos": tits}
+    lim = agora - dt.timedelta(days=REPETIR_APOS_DIAS)
+    lim_preco = agora - dt.timedelta(days=PRECO_HISTORICO_DIAS)
+    lim_alerta = agora - dt.timedelta(days=2)
+    return {
+        "ids": {k: v for k, v in estado.get("ids", {}).items() if _depois_de(v, lim)},
+        "titulos": {k: v for k, v in estado.get("titulos", {}).items() if _depois_de(v, lim)},
+        "precos": {k: v for k, v in estado.get("precos", {}).items()
+                   if isinstance(v, dict) and _depois_de(v.get("ts", ""), lim_preco)},
+        "alertas": {k: v for k, v in estado.get("alertas", {}).items() if _depois_de(v, lim_alerta)},
+    }
 
 
-def ja_postado(estado, pid, titulo, item_id=None):
-    if str(pid) in estado["ids"]:
-        return True
-    if item_id and str(item_id) in estado["ids"]:
-        return True
-    nt = norm(titulo)
-    return bool(nt and nt in estado["titulos"])
-
-
-def registrar(estado, pid, titulo, agora, item_id=None):
+def registrar(estado, p, agora):
     ts = agora.isoformat()
-    estado["ids"][str(pid)] = ts
-    if item_id:
-        estado["ids"][str(item_id)] = ts
-    nt = norm(titulo)
+    estado["ids"][str(p["id"])] = ts
+    if p.get("item_id"):
+        estado["ids"][str(p["item_id"])] = ts
+    nt = norm(p["titulo"])
     if nt:
         estado["titulos"][nt] = ts
+    estado["precos"][str(p["id"])] = {"preco": p["preco"], "ts": ts}
 
 
 def salvar(estado):
@@ -180,53 +213,8 @@ def shopee_request(query_str):
     return S.post(SHOPEE_GQL, data=payload.encode("utf-8"), headers=headers, timeout=30)
 
 
-def buscar_shopee(keyword, vistos, vistos_t, n):
-    global SHOPEE_FALHAS, SHOPEE_OFF
-    achados = []
-    if SHOPEE_OFF:
-        return achados
-
-    kw = json.dumps(keyword, ensure_ascii=False)
-    q = (
-        "{"
-        f"productOfferV2(keyword: {kw}, listType: 0, sortType: 2, page: 1, limit: 30) {{"
-        "nodes { itemId productName offerLink productLink imageUrl priceMin priceMax "
-        "priceDiscountRate sales commissionRate shopName }"
-        " pageInfo { page limit hasNextPage }"
-        "}}"
-    )
-    try:
-        r = shopee_request(q)
-        if r.status_code != 200:
-            print(f"  Shopee '{keyword}': HTTP {r.status_code} {r.text[:180]}")
-            SHOPEE_FALHAS += 1
-        else:
-            data = r.json()
-            if data.get("errors"):
-                print(f"  Shopee errors: {str(data['errors'])[:200]}")
-                SHOPEE_FALHAS += 1
-            else:
-                SHOPEE_FALHAS = 0
-                nodes = ((data.get("data") or {}).get("productOfferV2") or {}).get("nodes") or []
-                random.shuffle(nodes)
-                for node in nodes:
-                    if len(achados) >= n:
-                        break
-                    p = montar_produto(node, vistos, vistos_t)
-                    if p:
-                        achados.append(p)
-                        print(f"  OK [Shopee] {preco_br(p['preco'])} — {p['titulo'][:50]}")
-    except Exception as e:
-        print(f"Erro Shopee '{keyword}':", e)
-        SHOPEE_FALHAS += 1
-
-    if SHOPEE_FALHAS >= 3:
-        SHOPEE_OFF = True
-        print("  → 3 falhas seguidas na Shopee; parando as buscas nesta execução.")
-    return achados
-
-
-def montar_produto(node, vistos, vistos_t):
+def montar_produto(node, estado, ctx, busca):
+    """Converte um nó da API em produto. Retorna None se não for elegível."""
     titulo = " ".join((node.get("productName") or "").split())
     link = node.get("offerLink") or node.get("productLink") or ""
     item_id = str(node.get("itemId") or "")
@@ -246,91 +234,199 @@ def montar_produto(node, vistos, vistos_t):
     if not (0 < desconto < 90):
         desconto = 0
 
+    comissao = num(node.get("commissionRate"))
+    comissao_pct = comissao * 100 if comissao <= 1 else comissao
+
     nt = norm(titulo)
-    if pid in vistos or item_id in vistos or (nt and nt in vistos_t):
+
+    # duplicado dentro desta mesma execução
+    if pid in ctx["run"] or (nt and nt in ctx["run_t"]):
         return None
 
-    vistos.add(pid)
-    vistos.add(item_id)
-    if nt:
-        vistos_t.add(nt)
+    # queda de preço: produto já postado que ficou mais barato
+    preco_anterior = None
+    ant = estado["precos"].get(pid)
+    if ant:
+        p_ant = num(ant.get("preco"))
+        if p_ant > 0 and preco <= p_ant * (1 - QUEDA_MIN_PCT / 100):
+            try:
+                ha_mais_de_1_dia = (dt.datetime.now(TZ) - dt.datetime.fromisoformat(ant["ts"])) >= dt.timedelta(days=1)
+            except Exception:
+                ha_mais_de_1_dia = False
+            if ha_mais_de_1_dia:
+                preco_anterior = p_ant
 
-    return {
+    # bloqueio por já ter postado (não vale para queda de preço)
+    if not preco_anterior:
+        if pid in ctx["vistos"] or item_id in ctx["vistos"] or (nt and nt in ctx["vistos_t"]):
+            return None
+
+    ctx["run"].add(pid)
+    if nt:
+        ctx["run_t"].add(nt)
+
+    p = {
         "id": pid,
         "titulo": titulo,
         "preco": preco,
+        "preco_anterior": preco_anterior,
         "a_partir_de": pmax > pmin > 0,
         "desconto": desconto,
         "vendas": vendas,
         "imagem": node.get("imageUrl") or "",
         "frete_gratis": False,
         "categoria": "Shopee",
+        "busca": busca,
         "fonte": "shopee",
         "link": link,
         "item_id": item_id,
         "comissao": node.get("commissionRate"),
+        "comissao_pct": comissao_pct,
         "loja": node.get("shopName") or "",
+        "chamada": random.choice(CHAMADAS),
     }
+    p["score"] = pontuar(p)
+    return p
 
 
-def montar_shopee(estado):
+def pontuar(p):
+    """Quanto maior, mais vale postar: vendas + desconto + comissão (+ bônus de queda)."""
+    s = math.log1p(p["vendas"])
+    s += p["desconto"] * 0.08
+    s += min(p["comissao_pct"], 30) * 0.3
+    if p.get("preco_anterior"):
+        s += 4
+    return s + random.uniform(0, 1.5)  # um pouco de aleatoriedade p/ variar
+
+
+def buscar_shopee(keyword, estado, ctx):
+    global SHOPEE_FALHAS, SHOPEE_OFF, SHOPEE_ULTIMO_ERRO
+    achados = []
+    if SHOPEE_OFF:
+        return achados
+
+    kw = json.dumps(keyword, ensure_ascii=False)
+    q = (
+        "{"
+        f"productOfferV2(keyword: {kw}, listType: 0, sortType: 2, page: 1, limit: 40) {{"
+        "nodes { itemId productName offerLink productLink imageUrl priceMin priceMax "
+        "priceDiscountRate sales commissionRate shopName }"
+        " pageInfo { page limit hasNextPage }"
+        "}}"
+    )
+    try:
+        r = shopee_request(q)
+        if r.status_code != 200:
+            SHOPEE_ULTIMO_ERRO = f"HTTP {r.status_code} {r.text[:120]}"
+            print(f"  Shopee '{keyword}': {SHOPEE_ULTIMO_ERRO}")
+            SHOPEE_FALHAS += 1
+        else:
+            data = r.json()
+            if data.get("errors"):
+                SHOPEE_ULTIMO_ERRO = str(data["errors"])[:160]
+                print(f"  Shopee errors: {SHOPEE_ULTIMO_ERRO}")
+                SHOPEE_FALHAS += 1
+            else:
+                SHOPEE_FALHAS = 0
+                nodes = ((data.get("data") or {}).get("productOfferV2") or {}).get("nodes") or []
+                for node in nodes:  # já vem ordenado por vendas
+                    if len(achados) >= CANDIDATOS_POR_BUSCA:
+                        break
+                    p = montar_produto(node, estado, ctx, keyword)
+                    if p:
+                        achados.append(p)
+                print(f"  '{keyword}': {len(achados)} candidatos")
+    except Exception as e:
+        SHOPEE_ULTIMO_ERRO = f"{type(e).__name__}: {e}"
+        print(f"Erro Shopee '{keyword}':", e)
+        SHOPEE_FALHAS += 1
+
+    if SHOPEE_FALHAS >= 3 and not SHOPEE_OFF:
+        SHOPEE_OFF = True
+        add_alerta("shopee_off", f"Shopee falhou 3x seguidas ({SHOPEE_ULTIMO_ERRO}). Buscas interrompidas.")
+    return achados
+
+
+def coletar_shopee(estado):
     if not (SHOPEE_APP_ID and SHOPEE_SECRET):
-        print("ERRO: secrets SHOPEE_APP_ID / SHOPEE_SECRET ausentes")
+        add_alerta("shopee_secrets", "Secrets SHOPEE_APP_ID / SHOPEE_SECRET ausentes.")
         return []
-    print("Shopee: buscando ofertas de afiliado...")
-    vistos = set(str(k) for k in estado["ids"])
-    vistos_t = set(estado["titulos"])
-    out = []
+    print("Shopee: coletando candidatos...")
+    ctx = {
+        "vistos": set(str(k) for k in estado["ids"]),
+        "vistos_t": set(estado["titulos"]),
+        "run": set(),
+        "run_t": set(),
+    }
     qs = list(SHOPEE_QUERIES)
     random.shuffle(qs)
-    for q in qs:
-        if len(out) >= MAX_POSTS or SHOPEE_OFF:
+    pool = []
+    for q in qs[:QUERIES_POR_EXECUCAO]:
+        if SHOPEE_OFF:
             break
-        falta = MAX_POSTS - len(out)
-        out.extend(buscar_shopee(q, vistos, vistos_t, min(2, falta)))
+        pool.extend(buscar_shopee(q, estado, ctx))
         time.sleep(0.4)
-    return out[:MAX_POSTS]
+    if not pool and not SHOPEE_OFF:
+        add_alerta("sem_candidatos",
+                   "Nenhum produto elegível encontrado (filtros de vendas/duplicados muito rígidos?).")
+    return pool
+
+
+def escolher(pool, n):
+    """Pega os melhores por pontuação, limitando quantos vêm da mesma busca."""
+    limite_por_busca = max(1, (n + 2) // 3)
+    por_busca, out = {}, []
+    for p in sorted(pool, key=lambda x: x["score"], reverse=True):
+        if len(out) >= n:
+            break
+        if por_busca.get(p["busca"], 0) >= limite_por_busca:
+            continue
+        por_busca[p["busca"]] = por_busca.get(p["busca"], 0) + 1
+        out.append(p)
+    return out
 
 
 # ----------------------------------------------------------------------------
 # Texto dos posts
 # ----------------------------------------------------------------------------
-def linhas_info(p, html_mode):
-    esc = html.escape if html_mode else (lambda x: x)
-    linhas = []
-    if p.get("desconto"):
-        linhas.append(f"🔥 {p['desconto']}% OFF")
-    if p.get("vendas"):
-        linhas.append(f"⭐ {fmt_vendas(p['vendas'])} vendidos")
-    if p.get("loja"):
-        linhas.append(f"🏪 {esc(cortar(p['loja'], 40))}")
-    return linhas
-
-
 def texto_post(p, para_facebook=False):
-    """Telegram usa HTML; Facebook usa texto puro."""
-    titulo = cortar(p["titulo"], 90)
+    """Telegram usa HTML; Facebook usa texto puro (com hashtags)."""
+    fb = para_facebook
+    esc = (lambda x: x) if fb else html.escape
+
+    titulo = esc(cortar(p["titulo"], 90))
     prefixo = "a partir de " if p.get("a_partir_de") else ""
     preco = preco_br(p["preco"])
+    ant = p.get("preco_anterior")
     rodape = "Link de afiliado · preço e estoque podem variar"
 
-    if para_facebook:
-        info = "\n".join(linhas_info(p, False))
-        return (
-            f"🛍️ {titulo}\n\n"
-            f"💰 {prefixo}{preco}\n"
-            f"{info}\n\n"
-            f"👉 Comprar na Shopee: {p['link']}\n\n"
-            f"{rodape}"
-        ).replace("\n\n\n", "\n\n")
+    if ant:
+        pct = max(1, round((1 - p["preco"] / ant) * 100))
+        chamada = "🔻 BAIXOU DE PREÇO"
+        if fb:
+            preco_linha = f"💰 De {preco_br(ant)} por {prefixo}{preco} (-{pct}%)"
+        else:
+            preco_linha = f"💰 <s>{preco_br(ant)}</s> ➜ {prefixo}<b>{preco}</b> (-{pct}%)"
+    else:
+        chamada = p.get("chamada") or CHAMADAS[0]
+        preco_linha = f"💰 {prefixo}{preco}" if fb else f"💰 {prefixo}<b>{preco}</b>"
 
-    info = "\n".join(linhas_info(p, True))
-    return (
-        f"🛍️ <b>{html.escape(titulo)}</b>\n\n"
-        f"💰 {prefixo}<b>{preco}</b>\n"
-        f"{info}\n\n"
-        f"<i>{rodape}</i>"
-    ).replace("\n\n\n", "\n\n")
+    info = []
+    if p.get("desconto") and not ant:
+        info.append(f"🔥 {p['desconto']}% OFF")
+    if p.get("vendas"):
+        info.append(f"⭐ {fmt_vendas(p['vendas'])} vendidos")
+    if p.get("loja"):
+        info.append(f"🏪 {esc(cortar(p['loja'], 40))}")
+
+    if fb:
+        tags = " ".join(t for t in ["#Shopee", "#Ofertas", "#Promoção", hashtag(p.get("busca"))] if t)
+        linhas = [chamada, "", titulo, "", preco_linha] + info + [
+            "", f"👉 Comprar na Shopee: {p['link']}", "", rodape, "", tags,
+        ]
+    else:
+        linhas = [chamada, "", f"<b>{titulo}</b>", "", preco_linha] + info + ["", f"<i>{rodape}</i>"]
+    return "\n".join(linhas)
 
 
 # ----------------------------------------------------------------------------
@@ -371,7 +467,38 @@ def postar_telegram(p):
         r = tg_enviar("sendMessage", {**base, "text": texto, "disable_web_page_preview": "true"})
 
     print("Telegram:", r.status_code, r.text[:100])
+    if not r.ok:
+        add_alerta("tg_falha", f"Telegram recusou o post (HTTP {r.status_code}): {r.text[:120]}")
     return r.ok
+
+
+def enviar_privado(texto):
+    """Aviso só para você (ALERTA_CHAT_ID). Nunca usa o canal público."""
+    if not (TG_TOKEN and ALERTA_CHAT_ID):
+        print("(aviso não enviado: defina o secret ALERTA_CHAT_ID)")
+        return False
+    try:
+        r = S.post(f"https://api.telegram.org/bot{TG_TOKEN}/sendMessage",
+                   data={"chat_id": ALERTA_CHAT_ID, "text": texto, "parse_mode": "HTML"}, timeout=20)
+        return r.ok
+    except Exception as e:
+        print("Erro ao enviar aviso:", e)
+        return False
+
+
+def enviar_alertas(estado, agora):
+    """Envia avisos acumulados, sem repetir o mesmo problema dentro de ALERTA_REPETIR_HORAS."""
+    if not ALERTAS:
+        return
+    lim = agora - dt.timedelta(hours=ALERTA_REPETIR_HORAS)
+    novos = [(k, m) for k, m in ALERTAS.items() if not _depois_de(estado["alertas"].get(k, ""), lim)]
+    if not novos:
+        return
+    texto = "⚠️ <b>Radar Shopee</b>\n\n" + "\n".join(f"• {html.escape(m)}" for _, m in novos)
+    if enviar_privado(texto):
+        for k, _ in novos:
+            estado["alertas"][k] = agora.isoformat()
+        salvar(estado)
 
 
 def fb_erro(r):
@@ -404,7 +531,7 @@ def fb_diagnostico():
         if r.status_code != 200:
             code, _, msg = fb_erro(r)
             print(f"Facebook: token rejeitado (code {code}): {msg}")
-            print(" →", fb_dica(code))
+            add_alerta("fb_off", f"Facebook desativado (code {code}): {fb_dica(code)}")
             FB_ATIVO = False
             return
         me = r.json()
@@ -441,17 +568,17 @@ def postar_facebook(p):
         print(f"Facebook: {r.status_code} (code {code}) {msg}")
         FB_FALHAS += 1
         if code in FB_ERROS_FATAIS:
-            print(" →", fb_dica(code))
-            print(" → Facebook desativado nesta execução (Telegram continua).")
+            add_alerta("fb_off", f"Facebook desativado (code {code}): {fb_dica(code)}")
             FB_ATIVO = False
         elif FB_FALHAS >= 3:
-            print(" → 3 falhas seguidas; Facebook desativado nesta execução.")
+            add_alerta("fb_off", "Facebook falhou 3x seguidas e foi desativado nesta execução.")
             FB_ATIVO = False
         return False
     except Exception as e:
         print("Erro Facebook:", e)
         FB_FALHAS += 1
         if FB_FALHAS >= 3:
+            add_alerta("fb_off", f"Facebook com erro de conexão repetido ({e}).")
             FB_ATIVO = False
         return False
 
@@ -468,63 +595,96 @@ def pode_postar(agora):
 
 
 # ----------------------------------------------------------------------------
-# Main
+# Site (docs/trends.json) — acumula os últimos posts
 # ----------------------------------------------------------------------------
-def main():
-    agora = dt.datetime.now(TZ)
-    print("Iniciando", agora.isoformat())
-    print(f"Meta: Shopee | máx {MAX_POSTS} | bloqueio {REPETIR_APOS_DIAS}d | min vendas {SHOPEE_MIN_VENDAS}")
-    print(f"Canais: Telegram={'sim' if TG_TOKEN and TG_CHAT else 'não'} | Facebook={'sim' if FB_ATIVO else 'não'}")
-
-    fb_diagnostico()
-
-    estado = limpar_estado(carregar_estado(), agora)
-    print(f"Bloqueados: {len(estado['ids'])} ids")
-
-    ranking = montar_shopee(estado)
-    random.shuffle(ranking)
-    ranking = [
-        p for p in ranking
-        if not ja_postado(estado, p["id"], p["titulo"], p.get("item_id"))
-    ][:MAX_POSTS]
-    print(f"Selecionados: {len(ranking)}")
-
-    # trends.json (usado pelo site em docs/) — campos antigos mantidos, novos adicionados
+def atualizar_trends(postados, agora):
+    ocultar = {"item_id", "chamada", "score", "comissao_pct"}
+    antigos = []
+    try:
+        antigos = (json.loads(TRENDS.read_text(encoding="utf-8")) or {}).get("itens") or []
+    except Exception:
+        pass
+    novos = [
+        {**{k: v for k, v in p.items() if k not in ocultar}, "postado_em": agora.isoformat()}
+        for p in postados
+    ]
+    ids_novos = {i["id"] for i in novos}
+    itens = (novos + [i for i in antigos if i.get("id") not in ids_novos])[:TRENDS_MAX]
     TRENDS.parent.mkdir(parents=True, exist_ok=True)
-    itens = [{k: v for k, v in p.items() if k != "item_id"} for p in ranking]
     TRENDS.write_text(
         json.dumps({"atualizado": agora.isoformat(), "itens": itens}, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
 
-    if not ranking:
+
+# ----------------------------------------------------------------------------
+# Main
+# ----------------------------------------------------------------------------
+def main():
+    agora = dt.datetime.now(TZ)
+    print("Iniciando", agora.isoformat(), "(DRY_RUN)" if DRY_RUN else "")
+    print(f"Meta: Shopee | {MAX_POSTS} posts/execução | bloqueio {REPETIR_APOS_DIAS}d | "
+          f"min vendas {SHOPEE_MIN_VENDAS} | queda mín {QUEDA_MIN_PCT}%")
+
+    if not pode_postar(agora) and not DRY_RUN:
+        print(f"Fora do horário ({agora.hour}h) — nada a fazer")
+        return
+
+    if not DRY_RUN:
+        fb_diagnostico()
+    print(f"Canais: Telegram={'sim' if TG_TOKEN and TG_CHAT else 'não'} | Facebook={'sim' if FB_ATIVO else 'não'}")
+
+    estado = limpar_estado(carregar_estado(), agora)
+    print(f"Bloqueados: {len(estado['ids'])} ids | preços rastreados: {len(estado['precos'])}")
+
+    pool = coletar_shopee(estado)
+    escolhidos = escolher(pool, MAX_POSTS)
+    quedas = sum(1 for p in escolhidos if p.get("preco_anterior"))
+    print(f"Candidatos: {len(pool)} | selecionados: {len(escolhidos)} (quedas de preço: {quedas})")
+
+    if DRY_RUN:
+        for p in escolhidos:
+            print(f"\n--- score {p['score']:.1f} | busca '{p['busca']}' ---")
+            print("TELEGRAM:\n" + texto_post(p, False))
+            print("\nFACEBOOK:\n" + texto_post(p, True))
+        return
+
+    if not escolhidos:
         print("Nada a postar")
         salvar(estado)
+        enviar_alertas(estado, agora)
         return
 
     if not ((TG_TOKEN and TG_CHAT) or FB_ATIVO):
-        print("Nenhum canal ativo (Telegram ou Facebook)")
+        add_alerta("sem_canal", "Nenhum canal ativo (Telegram/Facebook) — nada foi postado.")
         salvar(estado)
+        enviar_alertas(estado, agora)
         return
 
-    if not pode_postar(agora):
-        print(f"Fora do horário ({agora.hour}h)")
-        salvar(estado)
-        return
-
-    enviados = 0
-    for p in ranking:
-        if enviados >= MAX_POSTS:
-            break
+    postados = []
+    for i, p in enumerate(escolhidos):
         if postar(p):
-            registrar(estado, p["id"], p["titulo"], agora, p.get("item_id"))
-            enviados += 1
+            registrar(estado, p, agora)
+            postados.append(p)
             salvar(estado)
-        time.sleep(1.5)
+        if i < len(escolhidos) - 1:
+            time.sleep(POST_INTERVALO_SEG * random.uniform(0.7, 1.3))
+
+    if postados:
+        atualizar_trends(postados, agora)
+    else:
+        add_alerta("sem_envio", "Havia produtos selecionados, mas nenhum canal conseguiu postar.")
 
     salvar(estado)
-    print("Postagens enviadas:", enviados)
+    print("Postagens enviadas:", len(postados))
+    enviar_alertas(estado, agora)
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        traceback.print_exc()
+        enviar_privado(f"⚠️ <b>Radar Shopee</b>\n\n• Falha inesperada: {html.escape(type(e).__name__)}: "
+                       f"{html.escape(str(e)[:200])}")
+        raise
