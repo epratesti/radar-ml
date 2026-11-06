@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-10-31T13:18:50.403901-03:00",
+  "atualizado": "2026-11-06T16:32:43.773730-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-22895058213",
+      "titulo": "Kit Body Splash Feminino Arabe 60ml Shakan Coroa Amber Sereia Rubi Ametysta Presente Bolsa Ambarados",
+      "preco": 15.89,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 77,
+      "vendas": 2512,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m3-mpnvskafmdc004",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "perfume",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/7VHlWvfGh7",
+      "comissao": "0.155",
+      "loja": "Cosmetic.Plus",
+      "postado_em": "2026-11-06T16:32:43.773730-03:00"
+    },
+    {
+      "id": "SHOPEE-19697980846",
+      "titulo": "Ventilador Luminária Led 6 Pás Lâmpada Soquete Bocal E27 Teto 3 Cores Luz Branco Amarelo Bivolt",
+      "preco": 42.99,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 52,
+      "vendas": 7589,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mhqkzkrt4w03ba",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "ventilador",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/3LSCZG3qv7",
+      "comissao": "0.15",
+      "loja": "SKY MALL",
+      "postado_em": "2026-11-06T16:32:43.773730-03:00"
+    },
     {
       "id": "MLB62239002",
       "titulo": "Porta Panetone de Cerâmica Branco com Guirlanda Natal, Redondo, 20 cm, da Home&Decor",
