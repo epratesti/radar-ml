@@ -1,124 +1,64 @@
-name: Radar ML
+name: Radar Shopee
 
 on:
   schedule:
-    # Horário de SP: 07:05, 10:05, 13:05, 16:05, 19:05, 22:05
-    - cron: "5 10,13,16,19,22,1 * * *"
-    # Horário de SP: 08:35, 11:35, 14:35, 17:35, 20:35
-    - cron: "35 11,14,17,20,23 * * *"
+    # Horário de Brasília: 08h, 10h, 12h, 14h, 16h, 18h, 20h e 22h (cron é em UTC, -3h)
+    - cron: "7 11,13,15,17,19,21,23,1 * * *"
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Teste: mostra os posts no log, sem enviar nem salvar nada"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
 
+# Evita duas execuções ao mesmo tempo (postagem duplicada / conflito no posted.json)
 concurrency:
-  group: radar
+  group: radar-shopee
   cancel-in-progress: false
 
 jobs:
-  rodar:
+  run:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Garantir estado mais recente
-        run: |
-          git fetch origin main
-          git reset --hard origin/main
 
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: "3.11"
+          cache: pip
 
       - name: Instalar dependências
         run: pip install -r requirements.txt
 
-      - name: Executar radar
-        run: python bot.py
+      - name: Rodar bot
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          ML_CLIENT_ID: ${{ secrets.ML_CLIENT_ID }}
-          ML_CLIENT_SECRET: ${{ secrets.ML_CLIENT_SECRET }}
-          # Afiliado ML — configure estes secrets no repositório
-          ML_AFFILIATE_ID: ${{ secrets.ML_AFFILIATE_ID }}
-          ML_AFFILIATE_WORD: ${{ secrets.ML_AFFILIATE_WORD }}
-          # (opcional) template completo, ex: matt_tool={id}&matt_word={word}
-          ML_AFFILIATE_PARAMS: ${{ secrets.ML_AFFILIATE_PARAMS }}
-          SHOPEE_APP_ID: ${{ secrets.SHOPEE_APP_ID }}
-          SHOPEE_SECRET: ${{ secrets.SHOPEE_SECRET }}
+          ALERTA_CHAT_ID: ${{ secrets.ALERTA_CHAT_ID }}
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN }}
-          POSTS_POR_GRUPO: "2"
-          MAX_POSTS: "12"
-          SHOPEE_POSTS: "12"
-          REPETIR_APOS_DIAS: "3"
-          # Desliga Mercado Livre por enquanto (Telegram + Facebook)
-          ML_ENABLED: "0"
+          SHOPEE_APP_ID: ${{ secrets.SHOPEE_APP_ID }}
+          SHOPEE_SECRET: ${{ secrets.SHOPEE_SECRET }}
+          MAX_POSTS: ${{ vars.MAX_POSTS || '2' }}
+          SHOPEE_MIN_VENDAS: ${{ vars.SHOPEE_MIN_VENDAS || '20' }}
+          DRY_RUN: ${{ inputs.dry_run && '1' || '' }}
+        run: python bot.py
 
-      - name: Salvar dados (merge seguro do estado)
+      - name: Salvar estado e site
+        if: ${{ always() && inputs.dry_run != true }}
         run: |
           git config user.name "radar-bot"
           git config user.email "radar-bot@users.noreply.github.com"
-
-          cp state/posted.json /tmp/posted_local.json
-          cp docs/trends.json /tmp/trends_local.json 2>/dev/null || true
-
-          git fetch origin main
-          git reset --soft origin/main
-
-          python3 << 'PY'
-          import json
-          from pathlib import Path
-
-          def load(p):
-              try:
-                  d = json.loads(Path(p).read_text(encoding="utf-8"))
-                  if not isinstance(d, dict):
-                      return {"ids": {}, "titulos": {}}
-                  d.setdefault("ids", {})
-                  d.setdefault("titulos", {})
-                  return d
-              except Exception:
-                  return {"ids": {}, "titulos": {}}
-
-          local = load("/tmp/posted_local.json")
-          remote = load("state/posted.json")
-
-          def merge(a, b):
-              out = dict(a)
-              for k, v in b.items():
-                  if k not in out or str(v) > str(out[k]):
-                      out[k] = v
-              return out
-
-          merged = {
-              "ids": merge(remote.get("ids", {}), local.get("ids", {})),
-              "titulos": merge(remote.get("titulos", {}), local.get("titulos", {})),
-          }
-          Path("state").mkdir(parents=True, exist_ok=True)
-          Path("state/posted.json").write_text(
-              json.dumps(merged, indent=2, ensure_ascii=False) + "\n",
-              encoding="utf-8",
-          )
-          print(f"Estado mesclado: {len(merged['ids'])} ids, {len(merged['titulos'])} titulos")
-          PY
-
-          if [ -f /tmp/trends_local.json ]; then
-            mkdir -p docs
-            cp /tmp/trends_local.json docs/trends.json
-          fi
-
-          git add docs/trends.json state/posted.json || true
+          git add state/posted.json docs/trends.json
           if git diff --cached --quiet; then
-            echo "Nenhuma mudança para commit"
+            echo "Sem mudanças para salvar"
             exit 0
           fi
-          git commit -m "Atualiza tendências $(date -u +%Y-%m-%dT%H:%M)"
-          for i in 1 2 3; do
-            git pull --rebase origin main && git push && break
-            echo "Push falhou (tentativa $i)..."
-            sleep 2
-          done
+          git commit -m "chore: atualiza estado e trends"
+          git pull --rebase origin main
+          git push
