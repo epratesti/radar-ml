@@ -1,0 +1,150 @@
+name: Restore bot v4
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Restore bot.py from last good commit and apply v4.0
+        run: |
+          set -e
+          git show 689afe7:bot.py > /tmp/base_bot.py
+          python3 << 'PY'
+          import re
+          from pathlib import Path
+          code = Path('/tmp/base_bot.py').read_text(encoding='utf-8')
+
+          old_pb = '''def preco_br(v):\n    return f"R$ {v:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")\n\n\ndef fmt_vendidos(n):'''
+          new_pb = '''def preco_br(v):\n    try:\n        v = float(v)\n    except (TypeError, ValueError):\n        return "R$ \u2014"\n    return f"R$ {v:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")\n\n\ndef ml_imagem_hd(url):\n    if not url:\n        return ""\n    u = url.replace("http://", "https://")\n    u = re.sub(r"-([IYVW])(\\.\\w+)(\\?.*)?$", r"-O\\2\\3", u)\n    u = re.sub(r"/D_NQ_NP_\\d+-", "/D_NQ_NP_2X-", u)\n    return u\n\n\ndef normalizar_preco_shopee(raw, raw_max=None):\n    try:\n        raw = float(raw or 0)\n    except (TypeError, ValueError):\n        return None\n    if raw <= 0:\n        return None\n    def candidatos(v):\n        out = []\n        for div in (100000.0, 100.0, 1.0):\n            p = v / div\n            if 0.5 <= p <= 50000:\n                out.append(p)\n        return out\n    cands = candidatos(raw)\n    if not cands:\n        return None\n    try:\n        rmax = float(raw_max) if raw_max not in (None, "", 0, 0.0) else None\n    except (TypeError, ValueError):\n        rmax = None\n    if rmax and rmax > 0:\n        cmax = candidatos(rmax)\n        melhores = []\n        for a in cands:\n            for b in cmax:\n                if a <= b * 1.05 and b <= a * 20:\n                    melhores.append((abs(b - a), a, b))\n        if melhores:\n            melhores.sort()\n            return melhores[0][1]\n    cands.sort(key=lambda p: (0 if (p != int(p) or p < 100) else 1, abs(p - 50)))\n    return cands[0]\n\n\ndef fmt_vendidos(n):'''
+          if old_pb not in code:
+              raise SystemExit('preco_br missing')
+          code = code.replace(old_pb, new_pb, 1)
+
+          old_ps = '''    frete = (item.get("shipping") or {}).get("free_shipping", False)\n    foto = (item.get("thumbnail") or "").replace("http://", "https://")\n    mid = str(item.get("id", ""))'''
+          new_ps = '''    frete = (item.get("shipping") or {}).get("free_shipping", False)\n    foto = ""\n    pics = item.get("pictures") or []\n    if pics:\n        foto = (pics[0].get("secure_url") or pics[0].get("url") or "").replace("http://", "https://")\n    if not foto:\n        foto = ml_imagem_hd(item.get("thumbnail") or item.get("secure_thumbnail") or "")\n    mid = str(item.get("id", ""))'''
+          if old_ps not in code:
+              raise SystemExit('produto_search missing')
+          code = code.replace(old_ps, new_ps, 1)
+
+          old_cat = '''            if pics:\n                foto = (pics[0].get("url") or pics[0].get("secure_url") or "").replace("http://", "https://")'''
+          new_cat = '''            if pics:\n                foto = (pics[0].get("secure_url") or pics[0].get("url") or "").replace("http://", "https://")\n                foto = ml_imagem_hd(foto)'''
+          if old_cat in code:
+              code = code.replace(old_cat, new_cat, 1)
+
+          pattern = r'            try:\n                raw = float\(node\.get\("priceMin"\) or 0\).*?"vendidos": to_int\(node\.get\("sales"\)\),\n            \}'
+          new_sh = '''            preco = normalizar_preco_shopee(node.get("priceMin"), node.get("priceMax"))\n            if preco is None or preco <= 0:\n                continue\n            try:\n                desc = int(float(node.get("priceDiscountRate") or 0))\n            except (TypeError, ValueError):\n                desc = 0\n            orig = 0.0\n            if 3 <= desc <= 90 and preco > 0:\n                try:\n                    orig = round(preco / (1 - desc / 100.0), 2)\n                    if orig <= preco or orig > 50000:\n                        orig = 0.0\n                except Exception:\n                    orig = 0.0\n            foto = (node.get("imageUrl") or "").replace("http://", "https://")\n            link = node.get("offerLink") or ""\n            p = {\n                "id": pid,\n                "titulo": titulo,\n                "preco": preco,\n                "imagem": foto,\n                "frete_gratis": False,\n                "categoria": "Shopee",\n                "fonte": "shopee",\n                "link": link,\n                "item_id": str(node.get("itemId") or ""),\n                "comissao": node.get("commissionRate"),\n                "loja": node.get("shopName") or "",\n                "termo": keyword,\n                "desconto": desc if orig else (desc if desc >= 5 else 0),\n                "preco_original": orig,\n                "vendidos": to_int(node.get("sales")),\n            }'''
+          m = re.search(pattern, code, re.S)
+          if not m:
+              raise SystemExit('shopee block missing')
+          code = code[:m.start()] + new_sh + code[m.end():]
+
+          # Improved gerar_card (compact)
+          m2 = re.search(r'def gerar_card\(p\):.*?return None\n\n\n# ----------------------------------------------------------------------------\n# Publica', code, re.S)
+          if not m2:
+              raise SystemExit('gerar_card missing')
+          new_card = '''def _font(size, bold=False):
+    paths = [
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf" if bold else "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+        "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf" if bold else "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
+    ]
+    for path in paths:
+        try:
+            return ImageFont.truetype(path, size)
+        except Exception:
+            continue
+    return ImageFont.load_default()
+
+
+def gerar_card(p):
+    """Card visual: gradiente, foto com sombra, selo e faixa de preco."""
+    if not (PIL_OK and IMG_CARD):
+        return None
+    img_bytes = baixar_imagem(p.get("imagem"))
+    if not img_bytes:
+        return None
+    try:
+        W, H = 720, 960
+        card = Image.new("RGB", (W, H), (250, 250, 252))
+        draw = ImageDraw.Draw(card)
+        for i in range(H):
+            t = i / max(H - 1, 1)
+            draw.line([(0, i), (W, i)], fill=(int(250 - 8 * t), int(250 - 18 * t), int(252 - 12 * t)))
+        im = Image.open(io.BytesIO(img_bytes)).convert("RGB")
+        im = ImageOps.contain(im, (620, 620))
+        shadow = Image.new("RGBA", (im.width + 16, im.height + 16), (0, 0, 0, 0))
+        ImageDraw.Draw(shadow).rounded_rectangle([8, 8, im.width + 8, im.height + 8], radius=18, fill=(0, 0, 0, 45))
+        card.paste(shadow, ((W - shadow.width) // 2, 36), shadow)
+        mask = Image.new("L", im.size, 0)
+        ImageDraw.Draw(mask).rounded_rectangle([0, 0, im.width, im.height], radius=16, fill=255)
+        card.paste(im, ((W - im.width) // 2, 44), mask)
+        d = int(p.get("desconto") or 0)
+        font_badge, font_big, font_md, font_sm, font_xs = _font(26, True), _font(44, True), _font(24, True), _font(20), _font(16)
+        if d >= 5:
+            badge_txt = f"-{d}%"
+            try:
+                bbox = draw.textbbox((0, 0), badge_txt, font=font_badge)
+                tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
+            except Exception:
+                tw, th = 70, 28
+            bw, bh = tw + 28, th + 18
+            bx, by = W - bw - 28, 28
+            draw.rounded_rectangle([bx, by, bx + bw, by + bh], radius=14, fill=(220, 38, 38))
+            draw.text((bx + 14, by + 8), badge_txt, fill=(255, 255, 255), font=font_badge)
+        faixa_y0 = 700
+        draw.rounded_rectangle([24, faixa_y0, W - 24, H - 24], radius=22, fill=(28, 28, 32))
+        preco = preco_br(p["preco"])
+        try:
+            orig = float(p.get("preco_original") or 0)
+        except (TypeError, ValueError):
+            orig = 0.0
+        draw.text((48, faixa_y0 + 18), limpar_titulo(p.get("titulo") or "", 42), fill=(210, 210, 215), font=font_sm)
+        draw.text((48, faixa_y0 + 52), preco, fill=(255, 255, 255), font=font_big)
+        extra_y = faixa_y0 + 110
+        if orig and orig > float(p.get("preco") or 0):
+            ot = preco_br(orig)
+            draw.text((48, extra_y), ot, fill=(160, 160, 170), font=font_sm)
+            ot_w = 80
+            try:
+                ob = draw.textbbox((48, extra_y), ot, font=font_sm)
+                mid_y = (ob[1] + ob[3]) // 2
+                draw.line([(ob[0], mid_y), (ob[2], mid_y)], fill=(160, 160, 170), width=2)
+                ot_w = ob[2] - ob[0]
+            except Exception:
+                pass
+            if d >= 5:
+                draw.text((48 + 12 + ot_w, extra_y), f"{d}% OFF", fill=(255, 120, 120), font=font_md)
+        if p.get("frete_gratis"):
+            fx = W - 200
+            draw.rounded_rectangle([fx, faixa_y0 + 100, fx + 150, faixa_y0 + 136], radius=10, fill=(40, 140, 80))
+            draw.text((fx + 16, faixa_y0 + 106), "Frete gratis", fill=(255, 255, 255), font=font_xs)
+        if BRAND_NAME:
+            draw.text((48, H - 52), BRAND_NAME[:28], fill=(140, 140, 150), font=font_xs)
+        buf = io.BytesIO()
+        card.save(buf, format="PNG", optimize=True)
+        return buf.getvalue()
+    except Exception as e:
+        print("  card falhou:", e)
+        return None
+
+
+# ----------------------------------------------------------------------------
+# Publica'''
+          code = code[:m2.start()] + new_card + code[m2.end():]
+
+          if 'v4.0' not in code:
+              code = code.replace('Para reativar: secret/env ML_ENABLED=1.\n"""', 'Para reativar: secret/env ML_ENABLED=1.\n\nv4.0 (nov/2026) \u2014 precos corretos + cards atraentes.\n"""', 1)
+
+          Path('bot.py').write_text(code, encoding='utf-8')
+          compile(code, 'bot.py', 'exec')
+          print('OK', len(code), 'v4.0' in code)
+          PY
+          git config user.name "radar-bot"
+          git config user.email "radar-bot@users.noreply.github.com"
+          git add bot.py
+          git commit -m "v4.0: corrige precos Shopee/ML e redesenha cards visuais" || true
+          git push origin HEAD:main
