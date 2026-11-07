@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-07T17:08:13.989872-03:00",
+  "atualizado": "2026-11-07T17:44:51.940227-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-20398528613",
+      "titulo": "ANA 1108 KIT 3 Pcs Porta Perfume Recarregavel Portatil Spray 5ml",
+      "preco": 11.99,
+      "preco_anterior": null,
+      "a_partir_de": false,
+      "desconto": 76,
+      "vendas": 4791,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m8-mmvxxzgnnoqsff",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "perfume",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/5q9Yn2249o",
+      "comissao": "0.07",
+      "loja": "ANA 1108  Loja Oficial",
+      "postado_em": "2026-11-07T17:44:51.940227-03:00"
+    },
+    {
+      "id": "SHOPEE-23394735827",
+      "titulo": "Caixa de Som K12 Bluetooth Portátil com 1 ou 2 Microfones Mini Alto-Falante Karaokê",
+      "preco": 25.99,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 74,
+      "vendas": 4401,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-81zu0-mikpskoj21og40",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "caixa de som",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/40hunXkBgC",
+      "comissao": "0.03",
+      "loja": "UNIBOM.STORE",
+      "postado_em": "2026-11-07T17:44:51.940227-03:00"
+    },
     {
       "id": "SHOPEE-23899017576",
       "titulo": "Carregador Portátil Indução para Sem fio Bateria Carga 3000/5000/10000mAh",
@@ -504,42 +540,6 @@
       "comissao": "0.21",
       "loja": "KOKESHI OFICIAL",
       "postado_em": "2026-11-06T21:47:38.872128-03:00"
-    },
-    {
-      "id": "SHOPEE-23994387054",
-      "titulo": "Kit Dupla Renovadores Faciais Kokeshi Pele Porcelana Olhos Gueixa",
-      "preco": 39.9,
-      "preco_anterior": null,
-      "a_partir_de": false,
-      "desconto": 29,
-      "vendas": 9645,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lg-mv7qrwedl8n5f6",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "kit skincare",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/7AesulBYWT",
-      "comissao": "0.26",
-      "loja": "KOKESHI OFICIAL",
-      "postado_em": "2026-11-06T21:11:32.606211-03:00"
-    },
-    {
-      "id": "SHOPEE-58259749592",
-      "titulo": "Kit Carregador 67W Turbo + Cabo Tipo-C Carga Rápida Universal Xiaomi Redmi Note E Poco X7 Android",
-      "preco": 29.51,
-      "preco_anterior": null,
-      "a_partir_de": false,
-      "desconto": 41,
-      "vendas": 9444,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8258n-mr8vmek85csha1",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "carregador turbo",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/AAIUUxrdJs",
-      "comissao": "0.15",
-      "loja": "Reis Empire",
-      "postado_em": "2026-11-06T21:11:32.606211-03:00"
     }
   ]
 }

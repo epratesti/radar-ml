@@ -434,7 +434,11 @@
     "SHOPEE-23899017576": "2026-11-07T17:08:13.989872-03:00",
     "23899017576": "2026-11-07T17:08:13.989872-03:00",
     "SHOPEE-58202231060": "2026-11-07T17:08:13.989872-03:00",
-    "58202231060": "2026-11-07T17:08:13.989872-03:00"
+    "58202231060": "2026-11-07T17:08:13.989872-03:00",
+    "SHOPEE-20398528613": "2026-11-07T17:44:51.940227-03:00",
+    "20398528613": "2026-11-07T17:44:51.940227-03:00",
+    "SHOPEE-23394735827": "2026-11-07T17:44:51.940227-03:00",
+    "23394735827": "2026-11-07T17:44:51.940227-03:00"
   },
   "titulos": {
     "kit hidrabene clareador skincare clareador facial sabonete protetor 70 fps e sér": "2026-11-04T18:07:12.571542-03:00",
@@ -831,7 +835,9 @@
     "whey protein concentrado 1kg dark lab": "2026-11-07T16:14:09.935270-03:00",
     "espremedor elétrico laranja limão frutas fazer sucos recarregável usb cozinha": "2026-11-07T16:14:09.935270-03:00",
     "carregador portátil indução para sem fio bateria carga 3000 5000 10000mah": "2026-11-07T17:08:13.989872-03:00",
-    "novo smartwatch relógio inteligente assistente de voz bluetooth chamada prova d ": "2026-11-07T17:08:13.989872-03:00"
+    "novo smartwatch relógio inteligente assistente de voz bluetooth chamada prova d ": "2026-11-07T17:08:13.989872-03:00",
+    "ana 1108 kit 3 pcs porta perfume recarregavel portatil spray 5ml": "2026-11-07T17:44:51.940227-03:00",
+    "caixa de som k12 bluetooth portátil com 1 ou 2 microfones mini alto falante kara": "2026-11-07T17:44:51.940227-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -993,6 +999,14 @@
     "SHOPEE-58202231060": {
       "preco": 78.6,
       "ts": "2026-11-07T17:08:13.989872-03:00"
+    },
+    "SHOPEE-20398528613": {
+      "preco": 11.99,
+      "ts": "2026-11-07T17:44:51.940227-03:00"
+    },
+    "SHOPEE-23394735827": {
+      "preco": 25.99,
+      "ts": "2026-11-07T17:44:51.940227-03:00"
     }
   },
   "alertas": {}
