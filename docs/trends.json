@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-06T21:47:38.872128-03:00",
+  "atualizado": "2026-11-06T22:10:40.582094-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-23197485445",
+      "titulo": "Whey Protein Fuse 900g Isolate Dark Lab",
+      "preco": 78.9,
+      "preco_anterior": null,
+      "a_partir_de": false,
+      "desconto": 51,
+      "vendas": 4883,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lzaxtiavhw6de4",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "whey protein",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/9fMDu4Aasi",
+      "comissao": "0.21",
+      "loja": "Dark Lab Oficial",
+      "postado_em": "2026-11-06T22:10:40.582094-03:00"
+    },
+    {
+      "id": "SHOPEE-27893329314",
+      "titulo": "Lançamento De Smartwatch Relógio Inteligente Com Tela Infinita E Duas Alças , Estilo Tecnologia Para Homens Mulheres",
+      "preco": 41.99,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 63,
+      "vendas": 1172,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-825ac-mg5y351q9r7z3c",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "smartwatch",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/1BNiMUGKLH",
+      "comissao": "0.18",
+      "loja": "Cc conveniência",
+      "postado_em": "2026-11-06T22:10:40.582094-03:00"
+    },
     {
       "id": "SHOPEE-46360468172",
       "titulo": "Kit 4 Potes Herméticos Tampa Bambu Organizador Mantimentos Cozinha",
