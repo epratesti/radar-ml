@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-07T07:08:39.024890-03:00",
+  "atualizado": "2026-11-07T08:11:22.127374-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-22392993399",
+      "titulo": "Hipercalórico Dark Mass 3kg Dark Lab - Whey Protein, Creatina, BCAA, Waxy Maize, Premium Mass Gainer",
+      "preco": 78.9,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 51,
+      "vendas": 2795,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lzawnmo1qj3970",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "whey protein",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/9V2nhlBEDj",
+      "comissao": "0.24",
+      "loja": "Dark Lab Oficial",
+      "postado_em": "2026-11-07T08:11:22.127374-03:00"
+    },
+    {
+      "id": "SHOPEE-58262387632",
+      "titulo": "Kit Renovadores Gota de Colágeno e Rosa Mosqueta Kokeshi",
+      "preco": 66.41,
+      "preco_anterior": null,
+      "a_partir_de": false,
+      "desconto": 38,
+      "vendas": 5433,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lc-mume7ufalreo72",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "kit skincare",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/6q22W9CpCR",
+      "comissao": "0.21",
+      "loja": "KOKESHI OFICIAL",
+      "postado_em": "2026-11-07T08:11:22.127374-03:00"
+    },
     {
       "id": "SHOPEE-22199220609",
       "titulo": "B&BRobô Varredora/Aspirador De Pó Automática 3 Em 1 Limpeza Doméstica Robótico Inteligente E Silencioso",
