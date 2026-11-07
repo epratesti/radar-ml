@@ -1,17 +1,5 @@
 {
   "ids": {
-    "28369741532": "2026-11-04T11:10:57.734417-03:00",
-    "51300279164": "2026-11-04T11:10:57.734417-03:00",
-    "22798831770": "2026-11-04T11:10:57.734417-03:00",
-    "58217146071": "2026-11-04T11:10:57.734417-03:00",
-    "22898980977": "2026-11-04T11:10:57.734417-03:00",
-    "23398812006": "2026-11-04T11:10:57.734417-03:00",
-    "58214711664": "2026-11-04T11:10:57.734417-03:00",
-    "23791204929": "2026-11-04T11:10:57.734417-03:00",
-    "58257072096": "2026-11-04T11:10:57.734417-03:00",
-    "14831203028": "2026-11-04T11:10:57.734417-03:00",
-    "22093433759": "2026-11-04T11:10:57.734417-03:00",
-    "23393820140": "2026-11-04T11:10:57.734417-03:00",
     "10818658094": "2026-11-04T13:17:33.734829-03:00",
     "58267468674": "2026-11-04T13:17:33.734829-03:00",
     "58219710815": "2026-11-04T13:17:33.734829-03:00",
@@ -510,21 +498,13 @@
     "SHOPEE-23197685907": "2026-11-07T10:13:06.042772-03:00",
     "23197685907": "2026-11-07T10:13:06.042772-03:00",
     "SHOPEE-58266070880": "2026-11-07T10:13:06.042772-03:00",
-    "58266070880": "2026-11-07T10:13:06.042772-03:00"
+    "58266070880": "2026-11-07T10:13:06.042772-03:00",
+    "SHOPEE-58200797547": "2026-11-07T11:16:30.651861-03:00",
+    "58200797547": "2026-11-07T11:16:30.651861-03:00",
+    "SHOPEE-21399069053": "2026-11-07T11:16:30.651861-03:00",
+    "21399069053": "2026-11-07T11:16:30.651861-03:00"
   },
   "titulos": {
-    "ky2 pro sem fio bluetooth 5 3 fone de ouvido único tampões ultra longa vida útil": "2026-11-04T11:10:57.734417-03:00",
-    "novas meias de natal com design de desenho animado para homens algodão adequadas": "2026-11-04T11:10:57.734417-03:00",
-    "decoração p árvore de natal usb rgb luz quente 100 200 led 10 20m prova d água u": "2026-11-04T11:10:57.734417-03:00",
-    "kit 6 10 20 metros festão de natal decoração enfeite natalino 2 metros 9cm espes": "2026-11-04T11:10:57.734417-03:00",
-    "principia kit duo c 2 protetores solares faciais ps 01 fps 60": "2026-11-04T11:10:57.734417-03:00",
-    "kit árvore de natal completa pisca led enfeites decorada 120cm 150cm 180cm 1 20 ": "2026-11-04T11:10:57.734417-03:00",
-    "whey protein gourmett 907g diversos sabores": "2026-11-04T11:10:57.734417-03:00",
-    "whey protein isolado iso blend complex 2kg xpro nutrition": "2026-11-04T11:10:57.734417-03:00",
-    "fechaduras de segurança prova de crianças para geladeira e armário 1 2 4 unidade": "2026-11-04T11:10:57.734417-03:00",
-    "pulseira de silicone para smartwatch 44mm 40mm 38mm 42mm cinto de borracha smart": "2026-11-04T11:10:57.734417-03:00",
-    "pisca pisca 100 leds branco quente 8 funções 10mts decoração natal": "2026-11-04T11:10:57.734417-03:00",
-    "garrafa térmica 900ml aço inox tumbler com tampa flip bico e alça portátil para ": "2026-11-04T11:10:57.734417-03:00",
     "suporte gancho guirlanda porta suporte base arvore de natal pé de ferro estrutur": "2026-11-04T13:17:33.734829-03:00",
     "3m bivolt 110v 220v cortina de luz natal estrela 5 pontas pisca pisca led quinta": "2026-11-04T13:17:33.734829-03:00",
     "projetor led natalino 16 temas luzes de natal desenhos coloridos rotação 270 dec": "2026-11-04T13:17:33.734829-03:00",
@@ -999,7 +979,9 @@
     "1 2 peças suporte de canto e reta porta shampoo prateleira para banheiro organiz": "2026-11-07T09:11:37.544158-03:00",
     "adaptador de tomada ultra resistente de porcelana para secador air fryer benjami": "2026-11-07T09:11:37.544158-03:00",
     "chinelo adulto masculino confortável leve e antiderrapante": "2026-11-07T10:13:06.042772-03:00",
-    "kit linha coreana hidrabene k sérum harmonizador facial sérum ghk cu sérum pdrn ": "2026-11-07T10:13:06.042772-03:00"
+    "kit linha coreana hidrabene k sérum harmonizador facial sérum ghk cu sérum pdrn ": "2026-11-07T10:13:06.042772-03:00",
+    "ez silver essence eau de parfum 100ml": "2026-11-07T11:16:30.651861-03:00",
+    "caneta paint original reparadora pintura automotiva permanente não sai na água t": "2026-11-07T11:16:30.651861-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -1097,6 +1079,14 @@
     "SHOPEE-58266070880": {
       "preco": 187.61,
       "ts": "2026-11-07T10:13:06.042772-03:00"
+    },
+    "SHOPEE-58200797547": {
+      "preco": 44.9,
+      "ts": "2026-11-07T11:16:30.651861-03:00"
+    },
+    "SHOPEE-21399069053": {
+      "preco": 18.72,
+      "ts": "2026-11-07T11:16:30.651861-03:00"
     }
   },
   "alertas": {}

@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-07T10:13:06.042772-03:00",
+  "atualizado": "2026-11-07T11:16:30.651861-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-58200797547",
+      "titulo": "EZ Silver Essence - Eau de Parfum 100ml",
+      "preco": 44.9,
+      "preco_anterior": null,
+      "a_partir_de": false,
+      "desconto": 35,
+      "vendas": 5386,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mhbzozlyxp8l74",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "perfume",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/8AXQ6aLHdl",
+      "comissao": "0.28",
+      "loja": "E'thereal Paris",
+      "postado_em": "2026-11-07T11:16:30.651861-03:00"
+    },
+    {
+      "id": "SHOPEE-21399069053",
+      "titulo": "Caneta Paint Original Reparadora Pintura Automotiva Permanente Não Sai Na Água Tira Riscos Carro Moto Retoque de Placa Tênis Pneus para Ferro Metal Madeira Plástico Gesso Vidro Couro Tecido Cores Preto Branco Prata (Cinza) Dourado Azul Vermelha",
+      "preco": 18.72,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 55,
+      "vendas": 4934,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lsirz2r48wfv6e",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "tenis",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/2BGGQIosXr",
+      "comissao": "0.24",
+      "loja": "VENDAS.VTO",
+      "postado_em": "2026-11-07T11:16:30.651861-03:00"
+    },
     {
       "id": "SHOPEE-23197685907",
       "titulo": "Chinelo Adulto Masculino Confortável Leve e Antiderrapante",
@@ -492,36 +528,6 @@
       "desconto": 74,
       "preco_original": 0,
       "vendidos": 5254
-    },
-    {
-      "id": "MLB74878448",
-      "titulo": "10 Caixa Porta Panetone Sextavado Com Tampa 17x16,5 Mdf Cru",
-      "preco": 297.22,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_969405-MLA112853179066_072026-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Natal e Fim de Ano",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-7085029328?matt_tool=71970283",
-      "desconto": 0,
-      "preco_original": 0.0,
-      "vendidos": 0,
-      "termo": "porta panetone"
-    },
-    {
-      "id": "SHOPEE-47855423393",
-      "titulo": "Tênis Feminino Esportivo  Lançamento Caminha Academia Corrida Trabalho Dia a dia",
-      "preco": 29.89,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztc-mjzjnsk0uhhf61",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/7puS8v13OE",
-      "comissao": "0.07",
-      "loja": "ESSER CALÇADOS",
-      "termo": "tenis",
-      "desconto": 70,
-      "preco_original": 0,
-      "vendidos": 3507
     }
   ]
 }
