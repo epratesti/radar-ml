@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-06T22:10:40.582094-03:00",
+  "atualizado": "2026-11-07T07:08:39.024890-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-22199220609",
+      "titulo": "B&BRobô Varredora/Aspirador De Pó Automática 3 Em 1 Limpeza Doméstica Robótico Inteligente E Silencioso",
+      "preco": 37.99,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 70,
+      "vendas": 4441,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-821dm-mh9dj2twkavd00",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "aspirador",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/7puZhxnUZH",
+      "comissao": "0.11",
+      "loja": "Lume & Lume ",
+      "postado_em": "2026-11-07T07:08:39.024890-03:00"
+    },
+    {
+      "id": "SHOPEE-22493277109",
+      "titulo": "2 Cápsula Café Reutilizável Dolce Gusto Preto/Transparente/Castanho Recarregável Refrescante Efectivo Promoção",
+      "preco": 13.59,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 43,
+      "vendas": 795,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81zul-mkkkrv8mwtmraf",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "cafeteira",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/W82ADYcLq",
+      "comissao": "0.23",
+      "loja": "mrecearia",
+      "postado_em": "2026-11-07T07:08:39.024890-03:00"
+    },
     {
       "id": "SHOPEE-23197485445",
       "titulo": "Whey Protein Fuse 900g Isolate Dark Lab",

@@ -542,7 +542,11 @@
     "SHOPEE-23197485445": "2026-11-06T22:10:40.582094-03:00",
     "23197485445": "2026-11-06T22:10:40.582094-03:00",
     "SHOPEE-27893329314": "2026-11-06T22:10:40.582094-03:00",
-    "27893329314": "2026-11-06T22:10:40.582094-03:00"
+    "27893329314": "2026-11-06T22:10:40.582094-03:00",
+    "SHOPEE-22199220609": "2026-11-07T07:08:39.024890-03:00",
+    "22199220609": "2026-11-07T07:08:39.024890-03:00",
+    "SHOPEE-22493277109": "2026-11-07T07:08:39.024890-03:00",
+    "22493277109": "2026-11-07T07:08:39.024890-03:00"
   },
   "titulos": {
     "body splash perfume deo colônia flooratta red 200ml": "2026-11-04T07:24:29.520989-03:00",
@@ -1071,7 +1075,9 @@
     "kit 4 potes herméticos tampa bambu organizador mantimentos cozinha": "2026-11-06T21:47:38.872128-03:00",
     "kit facial kokeshi completo 3 passos hidratação e colágeno": "2026-11-06T21:47:38.872128-03:00",
     "whey protein fuse 900g isolate dark lab": "2026-11-06T22:10:40.582094-03:00",
-    "lançamento de smartwatch relógio inteligente com tela infinita e duas alças esti": "2026-11-06T22:10:40.582094-03:00"
+    "lançamento de smartwatch relógio inteligente com tela infinita e duas alças esti": "2026-11-06T22:10:40.582094-03:00",
+    "b brobô varredora aspirador de pó automática 3 em 1 limpeza doméstica robótico i": "2026-11-07T07:08:39.024890-03:00",
+    "2 cápsula café reutilizável dolce gusto preto transparente castanho recarregável": "2026-11-07T07:08:39.024890-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -1137,6 +1143,14 @@
     "SHOPEE-27893329314": {
       "preco": 41.99,
       "ts": "2026-11-06T22:10:40.582094-03:00"
+    },
+    "SHOPEE-22199220609": {
+      "preco": 37.99,
+      "ts": "2026-11-07T07:08:39.024890-03:00"
+    },
+    "SHOPEE-22493277109": {
+      "preco": 13.59,
+      "ts": "2026-11-07T07:08:39.024890-03:00"
     }
   },
   "alertas": {}
