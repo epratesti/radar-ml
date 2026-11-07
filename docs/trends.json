@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-07T09:11:37.544158-03:00",
+  "atualizado": "2026-11-07T10:13:06.042772-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-23197685907",
+      "titulo": "Chinelo Adulto Masculino Confortável Leve e Antiderrapante",
+      "preco": 19.9,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 78,
+      "vendas": 4284,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lc-msv9x4r1nax20d",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "chinelo",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/5LDI7kuF85",
+      "comissao": "0.15",
+      "loja": "Mabi Shoes",
+      "postado_em": "2026-11-07T10:13:06.042772-03:00"
+    },
+    {
+      "id": "SHOPEE-58266070880",
+      "titulo": "Kit Linha Coreana Hidrabene K-Sérum Harmonizador Facial + Sérum GHK-Cu + Sérum PDRN Skincare",
+      "preco": 187.61,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 69,
+      "vendas": 4933,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lh-mtza8ww705q921",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "kit skincare",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/8VAJtad2XK",
+      "comissao": "0.13",
+      "loja": "Hidrabene ",
+      "postado_em": "2026-11-07T10:13:06.042772-03:00"
+    },
     {
       "id": "SHOPEE-22099046331",
       "titulo": "1/2 Peças Suporte de Canto e Reta Porta Shampoo Prateleira Para Banheiro Organizador com Adesivo",
@@ -486,33 +522,6 @@
       "desconto": 70,
       "preco_original": 0,
       "vendidos": 3507
-    },
-    {
-      "id": "MLB24212932",
-      "titulo": "Garrafa Térmica Aço Inox Térmica Garrafa Térmica 750 ml",
-      "preco": 43.9,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_746803-MLA99568258088_122025-F.jpg",
-      "frete_gratis": true,
-      "categoria": "Esportes e Beleza",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-5142889438?matt_tool=71970283",
-      "desconto": 0,
-      "preco_original": 0.0,
-      "vendidos": 0,
-      "termo": "garrafa térmica"
-    },
-    {
-      "id": "MLB21361292",
-      "titulo": "Loção Hidratante Corporal 3 Ceramidas Hidratação 120h CeraVe 473ml",
-      "preco": 81.8,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_930930-MLA118355221530_102026-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Beleza",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-6218471620?matt_tool=71970283",
-      "desconto": 0,
-      "preco_original": 0.0,
-      "vendidos": 0
     }
   ]
 }
