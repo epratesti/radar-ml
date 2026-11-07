@@ -1,6 +1,24 @@
 {
-  "atualizado": "2026-11-07T17:44:51.940227-03:00",
+  "atualizado": "2026-11-07T18:08:31.727592-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-23995144850",
+      "titulo": "Mini Power Bank Carregador 10000mAh para iPhone eTouch-C 2 em 1",
+      "preco": 23.88,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 80,
+      "vendas": 2873,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lp-mrln9ppn3tol41",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "power bank",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/50aOKoNKOp",
+      "comissao": "0.03",
+      "loja": "Gordo Loja",
+      "postado_em": "2026-11-07T18:08:31.727592-03:00"
+    },
     {
       "id": "SHOPEE-20398528613",
       "titulo": "ANA 1108 KIT 3 Pcs Porta Perfume Recarregavel Portatil Spray 5ml",
@@ -521,24 +539,6 @@
       "link": "https://s.shopee.com.br/70LVHcye8v",
       "comissao": "0.13",
       "loja": "SELLNEEDS",
-      "postado_em": "2026-11-06T21:47:38.872128-03:00"
-    },
-    {
-      "id": "SHOPEE-22494941454",
-      "titulo": "Kit Facial Kokeshi Completo 3 Passos Hidratação e Colágeno",
-      "preco": 64.9,
-      "preco_anterior": null,
-      "a_partir_de": false,
-      "desconto": 30,
-      "vendas": 10510,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lx-mqbygibr40sg7a",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "kit skincare",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/70LSiSCBrQ",
-      "comissao": "0.21",
-      "loja": "KOKESHI OFICIAL",
       "postado_em": "2026-11-06T21:47:38.872128-03:00"
     }
   ]
