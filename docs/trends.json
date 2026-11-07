@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-07T11:16:30.651861-03:00",
+  "atualizado": "2026-11-07T12:10:29.785169-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-58210532717",
+      "titulo": "Body splash Perfume Deo Colônia Flooratta Red 200ML",
+      "preco": 29.9,
+      "preco_anterior": null,
+      "a_partir_de": false,
+      "desconto": 77,
+      "vendas": 4842,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820le-mo5m3lm7da841f",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "perfume",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/906X67I6ws",
+      "comissao": "0.17",
+      "loja": "Nobre.Essências",
+      "postado_em": "2026-11-07T12:10:29.785169-03:00"
+    },
+    {
+      "id": "SHOPEE-23593847901",
+      "titulo": "Mochila Bolsa Viagem Resistente Coreana Masculina Feminina Colorida",
+      "preco": 27.99,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 72,
+      "vendas": 3236,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8262f-ml3p8fq62c5g00",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "mochila",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/2LZdMa6MCz",
+      "comissao": "0.11",
+      "loja": "JIMMY.STORE",
+      "postado_em": "2026-11-07T12:10:29.785169-03:00"
+    },
     {
       "id": "SHOPEE-58200797547",
       "titulo": "EZ Silver Essence - Eau de Parfum 100ml",
@@ -498,36 +534,6 @@
       "desconto": 76,
       "preco_original": 0,
       "vendidos": 3293
-    },
-    {
-      "id": "MLB78211817",
-      "titulo": "Pingente Dentes Dentista Pin Para Crocs Botton Chinelo Botton Pin Sandália Chinelo Dentista Dentes",
-      "preco": 22.5,
-      "imagem": "https://http2.mlstatic.com/D_NQ_NP_914319-MLA115259394088_082026-F.jpg",
-      "frete_gratis": false,
-      "categoria": "Moda",
-      "fonte": "ml",
-      "link": "https://produto.mercadolivre.com.br/MLB-5125789737?matt_tool=71970283",
-      "desconto": 5,
-      "preco_original": 23.69,
-      "vendidos": 0,
-      "termo": "chinelo"
-    },
-    {
-      "id": "SHOPEE-21698279856",
-      "titulo": "Bolsa para Lavar Sapato Tênis na Máquina de Lavar Prático",
-      "preco": 20.99,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8259h-mqvcqlw5g7pp91",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/906PX3wc1L",
-      "comissao": "0.03",
-      "loja": "TOP VIDA CHINA",
-      "termo": "tenis",
-      "desconto": 74,
-      "preco_original": 0,
-      "vendidos": 5254
     }
   ]
 }

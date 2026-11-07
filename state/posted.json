@@ -502,7 +502,11 @@
     "SHOPEE-58200797547": "2026-11-07T11:16:30.651861-03:00",
     "58200797547": "2026-11-07T11:16:30.651861-03:00",
     "SHOPEE-21399069053": "2026-11-07T11:16:30.651861-03:00",
-    "21399069053": "2026-11-07T11:16:30.651861-03:00"
+    "21399069053": "2026-11-07T11:16:30.651861-03:00",
+    "SHOPEE-58210532717": "2026-11-07T12:10:29.785169-03:00",
+    "58210532717": "2026-11-07T12:10:29.785169-03:00",
+    "SHOPEE-23593847901": "2026-11-07T12:10:29.785169-03:00",
+    "23593847901": "2026-11-07T12:10:29.785169-03:00"
   },
   "titulos": {
     "suporte gancho guirlanda porta suporte base arvore de natal pé de ferro estrutur": "2026-11-04T13:17:33.734829-03:00",
@@ -981,7 +985,9 @@
     "chinelo adulto masculino confortável leve e antiderrapante": "2026-11-07T10:13:06.042772-03:00",
     "kit linha coreana hidrabene k sérum harmonizador facial sérum ghk cu sérum pdrn ": "2026-11-07T10:13:06.042772-03:00",
     "ez silver essence eau de parfum 100ml": "2026-11-07T11:16:30.651861-03:00",
-    "caneta paint original reparadora pintura automotiva permanente não sai na água t": "2026-11-07T11:16:30.651861-03:00"
+    "caneta paint original reparadora pintura automotiva permanente não sai na água t": "2026-11-07T11:16:30.651861-03:00",
+    "body splash perfume deo colônia flooratta red 200ml": "2026-11-07T12:10:29.785169-03:00",
+    "mochila bolsa viagem resistente coreana masculina feminina colorida": "2026-11-07T12:10:29.785169-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -1087,6 +1093,14 @@
     "SHOPEE-21399069053": {
       "preco": 18.72,
       "ts": "2026-11-07T11:16:30.651861-03:00"
+    },
+    "SHOPEE-58210532717": {
+      "preco": 29.9,
+      "ts": "2026-11-07T12:10:29.785169-03:00"
+    },
+    "SHOPEE-23593847901": {
+      "preco": 27.99,
+      "ts": "2026-11-07T12:10:29.785169-03:00"
     }
   },
   "alertas": {}
