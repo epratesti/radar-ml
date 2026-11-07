@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-07T13:47:11.236300-03:00",
+  "atualizado": "2026-11-07T14:09:18.815917-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-40927356584",
+      "titulo": "Conjunto de 4 Máscaras & Bálsamos Labiais, Tratamento Hidratante e Reparador para Lábios Secos, Kit de Cuidados",
+      "preco": 14.73,
+      "preco_anterior": null,
+      "a_partir_de": false,
+      "desconto": 83,
+      "vendas": 3176,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-825ad-mv01wpnz7zt521",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "kit skincare",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/9fMHHjYbAh",
+      "comissao": "0.09",
+      "loja": "Choice Oficial",
+      "postado_em": "2026-11-07T14:09:18.815917-03:00"
+    },
+    {
+      "id": "SHOPEE-20797795834",
+      "titulo": "2026 smartwatch 9 pro Carregamento sem fio relógio inteligente 2.02 inches Série 9 Bluetooth Call",
+      "preco": 55.88,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 63,
+      "vendas": 1131,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rdw9-lzabd7yd64ru41",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "smartwatch",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/30pNLTKrWM",
+      "comissao": "0.13",
+      "loja": "-BML-",
+      "postado_em": "2026-11-07T14:09:18.815917-03:00"
+    },
     {
       "id": "SHOPEE-22598926569",
       "titulo": "EZ Kaya Ocean - Eau de Toilette 100ml LANÇAMENTO EXCLUSIVO",
@@ -504,42 +540,6 @@
       "comissao": "0.12",
       "loja": "YYYNN",
       "postado_em": "2026-11-06T18:08:42.992044-03:00"
-    },
-    {
-      "id": "SHOPEE-23198988208",
-      "titulo": "Mouse Pad Desk Pad Couro Borda Costurada Gigante Antiderrapante Tapete Mesa Gamer Setup Trabalho Estudo Protetor Mesa",
-      "preco": 15.89,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 56,
-      "vendas": 3201,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820li-mlfcjdzl6ryf41",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "mouse gamer",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/9APzYQzRMA",
-      "comissao": "0.19",
-      "loja": "OmniStore",
-      "postado_em": "2026-11-06T17:08:18.237808-03:00"
-    },
-    {
-      "id": "SHOPEE-58204543063",
-      "titulo": "Combo 1,2 e 3 Pares Chinelo Feminino Casual Leve Antiderrapante Confortável",
-      "preco": 15.99,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 82,
-      "vendas": 2891,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztf-ml1zdh9onnr6dc",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "chinelo",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/7VHlZMX03L",
-      "comissao": "0.13",
-      "loja": "Ohanastoree",
-      "postado_em": "2026-11-06T17:08:18.237808-03:00"
     }
   ]
 }
