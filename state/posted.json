@@ -1,17 +1,5 @@
 {
   "ids": {
-    "58255641529": "2026-11-05T16:10:31.806474-03:00",
-    "58251693883": "2026-11-05T16:10:31.806474-03:00",
-    "22299582170": "2026-11-05T16:10:31.806474-03:00",
-    "23698422814": "2026-11-05T16:10:31.806474-03:00",
-    "58261884456": "2026-11-05T16:10:31.806474-03:00",
-    "23698938144": "2026-11-05T16:10:31.806474-03:00",
-    "18397983348": "2026-11-05T16:10:31.806474-03:00",
-    "12575696269": "2026-11-05T16:10:31.806474-03:00",
-    "23497339408": "2026-11-05T16:10:31.806474-03:00",
-    "23092637497": "2026-11-05T16:10:31.806474-03:00",
-    "49500249379": "2026-11-05T16:10:31.806474-03:00",
-    "26916468957": "2026-11-05T16:10:31.806474-03:00",
     "23399043568": "2026-11-05T17:08:28.737903-03:00",
     "21897981294": "2026-11-05T17:08:28.737903-03:00",
     "23594527100": "2026-11-05T17:08:28.737903-03:00",
@@ -294,21 +282,13 @@
     "SHOPEE-23397600706": "2026-11-08T16:07:51.618244-03:00",
     "23397600706": "2026-11-08T16:07:51.618244-03:00",
     "SHOPEE-49912454334": "2026-11-08T16:07:51.618244-03:00",
-    "49912454334": "2026-11-08T16:07:51.618244-03:00"
+    "49912454334": "2026-11-08T16:07:51.618244-03:00",
+    "SHOPEE-45963749827": "2026-11-08T17:08:09.235776-03:00",
+    "45963749827": "2026-11-08T17:08:09.235776-03:00",
+    "SHOPEE-58260024382": "2026-11-08T17:08:09.235776-03:00",
+    "58260024382": "2026-11-08T17:08:09.235776-03:00"
   },
   "titulos": {
-    "fone pro sem fio som hifi 8d pop up automático toque inteligente bateria 5 7h bl": "2026-11-05T16:10:31.806474-03:00",
-    "watersy garrafa térmica portátil 532ml aço inox sem bpa presente para viagem tra": "2026-11-05T16:10:31.806474-03:00",
-    "mini portátil carregador power bank 10000mah com 02 saídas tipo c lightning": "2026-11-05T16:10:31.806474-03:00",
-    "ana1108 kit 30 60 90 150unidades máscaras faciais comprimidas para tratamento de": "2026-11-05T16:10:31.806474-03:00",
-    "cafeteira elétrica cadence single up": "2026-11-05T16:10:31.806474-03:00",
-    "tecido tricoline mista barrado digital 10 faixas 0 50 cm x 1 45 largura varias e": "2026-11-05T16:10:31.806474-03:00",
-    "kit 4 capas de almofadas natalinas decorativas natal enfeite de natal 45x45": "2026-11-05T16:10:31.806474-03:00",
-    "meia infantil cano longo 3 4 colorida algodão escola meia maluca natal": "2026-11-05T16:10:31.806474-03:00",
-    "laços com 100 50 ou 20 unidades para caixa de presente roupa artesanato enfeites": "2026-11-05T16:10:31.806474-03:00",
-    "kit com12 10 8 6 bolas de natal lisa fosca tamanho 2 5 6 7 8 10cm decoração enfe": "2026-11-05T16:10:31.806474-03:00",
-    "meias de natal tricô floco de neve carta meia decoração de natal 2025 para casa ": "2026-11-05T16:10:31.806474-03:00",
-    "10 unidades pacote 13cm decoração de natal borda em pó dourado material de tecid": "2026-11-05T16:10:31.806474-03:00",
     "fone bluetooth pro5 premium imersão total c cancelamento ruído qualidade superio": "2026-11-05T17:08:28.737903-03:00",
     "attracione men perfume masculino com feromônios ativados": "2026-11-05T17:08:28.737903-03:00",
     "moedor elérico multifuncional de café e especiarias 110v aço inoxidável 4 lâmina": "2026-11-05T17:08:28.737903-03:00",
@@ -519,7 +499,9 @@
     "original caixa de som com bluetooth led modelo alexa de um aparelho super bass": "2026-11-08T15:07:29.761374-03:00",
     "1 3 5 pcs cápsula café reutilizável dolce gusto recarregável refrescante efectiv": "2026-11-08T15:07:29.761374-03:00",
     "cesto de roupa 40x70 30x50cm caixa dobrável brinquedos cesto diversa organizador": "2026-11-08T16:07:51.618244-03:00",
-    "maria 5d w m curl uc ud cílios fácil lu ventilador extensões de atacado volume p": "2026-11-08T16:07:51.618244-03:00"
+    "maria 5d w m curl uc ud cílios fácil lu ventilador extensões de atacado volume p": "2026-11-08T16:07:51.618244-03:00",
+    "romantic crown copo térmico inox portátil 1200ml 600ml com tampa e canudo garraf": "2026-11-08T17:08:09.235776-03:00",
+    "chinelo feminino leve e prático para uso em praia e lazer": "2026-11-08T17:08:09.235776-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -809,6 +791,14 @@
     "SHOPEE-49912454334": {
       "preco": 19.0,
       "ts": "2026-11-08T16:07:51.618244-03:00"
+    },
+    "SHOPEE-45963749827": {
+      "preco": 34.98,
+      "ts": "2026-11-08T17:08:09.235776-03:00"
+    },
+    "SHOPEE-58260024382": {
+      "preco": 14.97,
+      "ts": "2026-11-08T17:08:09.235776-03:00"
     }
   },
   "alertas": {}

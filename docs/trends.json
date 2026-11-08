@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-08T16:07:51.618244-03:00",
+  "atualizado": "2026-11-08T17:08:09.235776-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-45963749827",
+      "titulo": "ROMANTIC CROWN Copo Térmico Inox Portátil 1200ml/600ml com Tampa e Canudo Garrafa Térmica Inoxidável",
+      "preco": 34.98,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 50,
+      "vendas": 5779,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lh-mtgcw2meqoeac6",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "garrafa termica",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/2BGHoQ1g1g",
+      "comissao": "0.08",
+      "loja": "Romantic.Crown.07",
+      "postado_em": "2026-11-08T17:08:09.235776-03:00"
+    },
+    {
+      "id": "SHOPEE-58260024382",
+      "titulo": "Chinelo Feminino Leve e Prático Para Uso em Praia e Lazer",
+      "preco": 14.97,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 70,
+      "vendas": 9350,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-825bb-mum5w17d61vrd7",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "chinelo",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/9AQ2DY0JFE",
+      "comissao": "0.03",
+      "loja": "Martins Chinelos",
+      "postado_em": "2026-11-08T17:08:09.235776-03:00"
+    },
     {
       "id": "SHOPEE-23397600706",
       "titulo": "Cesto De Roupa 40x70 30x50Cm Caixa Dobrável Brinquedos Cesto Diversa Organizador Cozinha Quarto Casa",
@@ -504,42 +540,6 @@
       "comissao": "0.03",
       "loja": "yiyiyi",
       "postado_em": "2026-11-07T20:09:58.302295-03:00"
-    },
-    {
-      "id": "SHOPEE-55359781665",
-      "titulo": "Kit 2 Sacos lavar Tenis Sapato Máquina Lavar roupas Protege não danifica Lavagem Segura Lavanderia",
-      "preco": 36.9,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 45,
-      "vendas": 8846,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lj-mnovtdkehbsx28",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "tenis",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/2Vt3MBG3OM",
-      "comissao": "0.13",
-      "loja": "TMZ UTILIDADES",
-      "postado_em": "2026-11-07T19:08:50.471916-03:00"
-    },
-    {
-      "id": "SHOPEE-58261888418",
-      "titulo": "Karaokê Bluetooth com 2 Microfones Sem Fio Caixa de Som Portátil ANJGG BRASIL",
-      "preco": 34.99,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 56,
-      "vendas": 2622,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-824jl-mpido8umydqje7",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "caixa de som",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/4VeBOSiHfL",
-      "comissao": "0.13",
-      "loja": "ANJGG Brazil",
-      "postado_em": "2026-11-07T19:08:50.471916-03:00"
     }
   ]
 }
