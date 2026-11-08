@@ -1,17 +1,5 @@
 {
   "ids": {
-    "23497594302": "2026-11-05T10:13:54.755729-03:00",
-    "23493508948": "2026-11-05T10:13:54.755729-03:00",
-    "21198282551": "2026-11-05T10:13:54.755729-03:00",
-    "42075132567": "2026-11-05T10:13:54.755729-03:00",
-    "43424248366": "2026-11-05T10:13:54.755729-03:00",
-    "23492583324": "2026-11-05T10:13:54.755729-03:00",
-    "57214089969": "2026-11-05T10:13:54.755729-03:00",
-    "23995137419": "2026-11-05T10:13:54.755729-03:00",
-    "23394690451": "2026-11-05T10:13:54.755729-03:00",
-    "22494710306": "2026-11-05T10:13:54.755729-03:00",
-    "58268286267": "2026-11-05T10:13:54.755729-03:00",
-    "51265601171": "2026-11-05T10:13:54.755729-03:00",
     "58208872077": "2026-11-05T11:14:02.144457-03:00",
     "21997222833": "2026-11-05T11:14:02.144457-03:00",
     "22694463642": "2026-11-05T11:14:02.144457-03:00",
@@ -350,21 +338,13 @@
     "SHOPEE-29842873054": "2026-11-08T08:10:36.653242-03:00",
     "29842873054": "2026-11-08T08:10:36.653242-03:00",
     "SHOPEE-52607420187": "2026-11-08T09:12:35.587022-03:00",
-    "52607420187": "2026-11-08T09:12:35.587022-03:00"
+    "52607420187": "2026-11-08T09:12:35.587022-03:00",
+    "SHOPEE-22497773735": "2026-11-08T10:16:02.979418-03:00",
+    "22497773735": "2026-11-08T10:16:02.979418-03:00",
+    "SHOPEE-19098205730": "2026-11-08T10:16:02.979418-03:00",
+    "19098205730": "2026-11-08T10:16:02.979418-03:00"
   },
   "titulos": {
-    "romantic crown mochila de viagem expansível bolsa executiva notebook masculina e": "2026-11-05T10:13:54.755729-03:00",
-    "escova limpa sapato tenis boné roupa com dispenser reservatório sabão portatil": "2026-11-05T10:13:54.755729-03:00",
-    "forma de silicone 1 ou 3 peças para air fryer forno fritadeira assadeira reutili": "2026-11-05T10:13:54.755729-03:00",
-    "2025 smartwatch relogio inteligente relógio 10 chamadas de presente esportes mas": "2026-11-05T10:13:54.755729-03:00",
-    "1 4 unidades meias de natal festivas decorações de atmosfera para casa árvores p": "2026-11-05T10:13:54.755729-03:00",
-    "cascata natal 400 200 100 lâmpadas led com 8 funções ou fixo fio branco pisca pi": "2026-11-05T10:13:54.755729-03:00",
-    "pikachu fone de ouvido bluetooth infantil sem fio dobrável volume seguro present": "2026-11-05T10:13:54.755729-03:00",
-    "sapateira 4 andares desmontável organizador de tênis sapatos multiuso brinquedos": "2026-11-05T10:13:54.755729-03:00",
-    "principia kit completo peles sensíveis c gel de limpeza gl 02 creme hidratante c": "2026-11-05T10:13:54.755729-03:00",
-    "kit skincare rosa mosqueta limpeza de pele bruma facial": "2026-11-05T10:13:54.755729-03:00",
-    "basike headphone bluetooth 5 4 anc 35db 80h fone over ear super bass presente de": "2026-11-05T10:13:54.755729-03:00",
-    "techlife smartwatch para homens e mulheres h11 esportivo outdoor tela hd 1 96 po": "2026-11-05T10:13:54.755729-03:00",
     "mochila grande unissex resistente impermeável notebook alta capacidade com compa": "2026-11-05T11:14:02.144457-03:00",
     "tênis meia feminino calce fácil botinha ortopédico esportivo sneaker slip on cas": "2026-11-05T11:14:02.144457-03:00",
     "forma air fryer 50 100 150 200 250 descartável antiaderente redonda forro de pap": "2026-11-05T11:14:02.144457-03:00",
@@ -645,7 +625,9 @@
     "alaxe5 generation original speaker immediate shipping best price": "2026-11-08T07:09:05.766379-03:00",
     "kit body splash masculino 2x200ml neonoble inspirado em 212 vip black e sauvage": "2026-11-08T08:10:36.653242-03:00",
     "ftw whey protein concentrado 1kg refil 15g proteína por dose": "2026-11-08T08:10:36.653242-03:00",
-    "escova de limpeza multifuncional flexível para garrafas mamadeiras liquidificado": "2026-11-08T09:12:35.587022-03:00"
+    "escova de limpeza multifuncional flexível para garrafas mamadeiras liquidificado": "2026-11-08T09:12:35.587022-03:00",
+    "romantic crown mochila viagem feminina masculina multifuncional reforçada imperm": "2026-11-08T10:16:02.979418-03:00",
+    "gaabor aspirador de pó portátil 2 em 1 com fio e haste de pressão sucção forte d": "2026-11-08T10:16:02.979418-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -879,6 +861,14 @@
     "SHOPEE-52607420187": {
       "preco": 9.97,
       "ts": "2026-11-08T09:12:35.587022-03:00"
+    },
+    "SHOPEE-22497773735": {
+      "preco": 109.98,
+      "ts": "2026-11-08T10:16:02.979418-03:00"
+    },
+    "SHOPEE-19098205730": {
+      "preco": 189.0,
+      "ts": "2026-11-08T10:16:02.979418-03:00"
     }
   },
   "alertas": {}
