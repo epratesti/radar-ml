@@ -1,17 +1,5 @@
 {
   "ids": {
-    "23922757726": "2026-11-05T20:08:47.679272-03:00",
-    "22796088452": "2026-11-05T20:08:47.679272-03:00",
-    "58213608076": "2026-11-05T20:08:47.679272-03:00",
-    "58251969731": "2026-11-05T20:08:47.679272-03:00",
-    "54663825990": "2026-11-05T20:08:47.679272-03:00",
-    "23098514649": "2026-11-05T20:08:47.679272-03:00",
-    "42874795763": "2026-11-05T20:08:47.679272-03:00",
-    "6893113630": "2026-11-05T20:08:47.679272-03:00",
-    "16684193209": "2026-11-05T20:08:47.679272-03:00",
-    "19099838369": "2026-11-05T20:08:47.679272-03:00",
-    "41710377974": "2026-11-05T20:08:47.679272-03:00",
-    "58218340834": "2026-11-05T20:08:47.679272-03:00",
     "22799680199": "2026-11-05T20:58:49.914030-03:00",
     "23594439744": "2026-11-05T20:58:49.914030-03:00",
     "58266620271": "2026-11-05T20:58:49.914030-03:00",
@@ -254,21 +242,13 @@
     "SHOPEE-20997608223": "2026-11-08T19:09:41.270274-03:00",
     "20997608223": "2026-11-08T19:09:41.270274-03:00",
     "SHOPEE-22993575936": "2026-11-08T19:09:41.270274-03:00",
-    "22993575936": "2026-11-08T19:09:41.270274-03:00"
+    "22993575936": "2026-11-08T19:09:41.270274-03:00",
+    "SHOPEE-49610876725": "2026-11-08T20:10:13.791383-03:00",
+    "49610876725": "2026-11-08T20:10:13.791383-03:00",
+    "SHOPEE-54850610196": "2026-11-08T20:10:13.791383-03:00",
+    "54850610196": "2026-11-08T20:10:13.791383-03:00"
   },
   "titulos": {
-    "headphone fone de ouvido bluetooth sem fio infantil desenho lc868 embalagem boni": "2026-11-05T20:08:47.679272-03:00",
-    "cabo carregador usb typo c 1 metro para android galaxy xiomi moto g carregamento": "2026-11-05T20:08:47.679272-03:00",
-    "power bank mini 10000mah para viagens recarga sem fio e cabo iphone e tipo c 2em": "2026-11-05T20:08:47.679272-03:00",
-    "kits de meias de natal 3 6 12 pares cores sortidas masculino e feminino 35 46": "2026-11-05T20:08:47.679272-03:00",
-    "perfume masculino 100ml fragrância elegante longa duração para uso diário": "2026-11-05T20:08:47.679272-03:00",
-    "cafeteira elétrica electrolux digital 38 xícaras experience programável com time": "2026-11-05T20:08:47.679272-03:00",
-    "100 whey protein pote 900g max titanium": "2026-11-05T20:08:47.679272-03:00",
-    "adaptador capsulas três corações para maquina dolcegusto": "2026-11-05T20:08:47.679272-03:00",
-    "toalha de mesa decoração natal papai noel": "2026-11-05T20:08:47.679272-03:00",
-    "toalha de mesa plástica iridescência polegadas brilhante para decoração de casam": "2026-11-05T20:08:47.679272-03:00",
-    "kit peruca e barba para fantasia de papai noel": "2026-11-05T20:08:47.679272-03:00",
-    "tecido veludo cristal vermelho 1 metro natal papai noel fantasia e decoração": "2026-11-05T20:08:47.679272-03:00",
     "inova fone bluetooth sem fio dobrável com qualidade som hifi 5 4 perfeito para m": "2026-11-05T20:58:49.914030-03:00",
     "400ml 6 lâminas espremedor elétrico mini liquidificador portátil de suco de alim": "2026-11-05T20:58:49.914030-03:00",
     "toalha de mesa natalina 4 6 e 8 lugares oxford natal estampada papai noel vermel": "2026-11-05T20:58:49.914030-03:00",
@@ -435,7 +415,9 @@
     "romantic crown copo térmico inox portátil 1200ml 600ml com tampa e canudo garraf": "2026-11-08T17:08:09.235776-03:00",
     "chinelo feminino leve e prático para uso em praia e lazer": "2026-11-08T17:08:09.235776-03:00",
     "caixa de som bluetooth portátil com led rgb portátil fm usb tws 30w para praia f": "2026-11-08T19:09:41.270274-03:00",
-    "pasta sanfonada com 12 divisórias ou pasta prancheta tamanho a4 escritório escol": "2026-11-08T19:09:41.270274-03:00"
+    "pasta sanfonada com 12 divisórias ou pasta prancheta tamanho a4 escritório escol": "2026-11-08T19:09:41.270274-03:00",
+    "rádio caixa de som bluetooth recarregável lanterna retro portátil fm am usb sd p": "2026-11-08T20:10:13.791383-03:00",
+    "caneca magnética com mistura automática 380ml": "2026-11-08T20:10:13.791383-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -741,6 +723,14 @@
     "SHOPEE-22993575936": {
       "preco": 11.89,
       "ts": "2026-11-08T19:09:41.270274-03:00"
+    },
+    "SHOPEE-49610876725": {
+      "preco": 68.9,
+      "ts": "2026-11-08T20:10:13.791383-03:00"
+    },
+    "SHOPEE-54850610196": {
+      "preco": 33.98,
+      "ts": "2026-11-08T20:10:13.791383-03:00"
     }
   },
   "alertas": {}
