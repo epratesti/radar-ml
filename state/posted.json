@@ -1,17 +1,5 @@
 {
   "ids": {
-    "23898836118": "2026-11-05T12:09:42.511193-03:00",
-    "58265197313": "2026-11-05T12:09:42.511193-03:00",
-    "49464520169": "2026-11-05T12:09:42.511193-03:00",
-    "58258362801": "2026-11-05T12:09:42.511193-03:00",
-    "58210841827": "2026-11-05T12:09:42.511193-03:00",
-    "23194292053": "2026-11-05T12:09:42.511193-03:00",
-    "23194485944": "2026-11-05T12:09:42.511193-03:00",
-    "23094454204": "2026-11-05T12:09:42.511193-03:00",
-    "23697969853": "2026-11-05T12:09:42.511193-03:00",
-    "58261589683": "2026-11-05T12:09:42.511193-03:00",
-    "22898785453": "2026-11-05T12:09:42.511193-03:00",
-    "5796026674": "2026-11-05T12:09:42.511193-03:00",
     "19899586753": "2026-11-05T13:10:16.468893-03:00",
     "22192647025": "2026-11-05T13:10:16.468893-03:00",
     "20097733711": "2026-11-05T13:10:16.468893-03:00",
@@ -334,21 +322,13 @@
     "SHOPEE-21997150349": "2026-11-08T11:14:27.928573-03:00",
     "21997150349": "2026-11-08T11:14:27.928573-03:00",
     "SHOPEE-22098878065": "2026-11-08T11:14:27.928573-03:00",
-    "22098878065": "2026-11-08T11:14:27.928573-03:00"
+    "22098878065": "2026-11-08T11:14:27.928573-03:00",
+    "SHOPEE-58206612939": "2026-11-08T12:11:28.039992-03:00",
+    "58206612939": "2026-11-08T12:11:28.039992-03:00",
+    "SHOPEE-23093960843": "2026-11-08T12:11:28.039992-03:00",
+    "23093960843": "2026-11-08T12:11:28.039992-03:00"
   },
   "titulos": {
-    "2 1 pcs bolsa mochila de peito tiracolo pochete bolsa impermeável transversal ma": "2026-11-05T12:09:42.511193-03:00",
-    "kit raquete frescobol bateu colou peteca tênis c bolinha bate gruda binquedo men": "2026-11-05T12:09:42.511193-03:00",
-    "kit skincare limpeza hidratação rosa mosqueta 12 itens presente na caixa flork": "2026-11-05T12:09:42.511193-03:00",
-    "fritadeira air fryer oven afon 12l fg 12l digital 2000w mondial": "2026-11-05T12:09:42.511193-03:00",
-    "hilee garrafa térmica 304 inox free sip com canudo tampa dupla anti vazamento po": "2026-11-05T12:09:42.511193-03:00",
-    "vestido renda luxo kit 4 peças 0 a 12 meses calcinha bunda rica laço sapatinho f": "2026-11-05T12:09:42.511193-03:00",
-    "fantasia menino papai noel infantil criança natal com gorro presente aniversário": "2026-11-05T12:09:42.511193-03:00",
-    "kit bonecos de neve pelúcia 22cm urso enfeite natal decoração presente natalino ": "2026-11-05T12:09:42.511193-03:00",
-    "kit 84 42 enfeites decoração para arvore de natal bolinha tambor papai noel laço": "2026-11-05T12:09:42.511193-03:00",
-    "pulseira silicone para apple watch 38 40 41 42 44 45 49mm series se se2 se3 ultr": "2026-11-05T12:09:42.511193-03:00",
-    "20 30 40 50 fones de ouvido sem fio bluetooth personalizado a laser com sua logo": "2026-11-05T12:09:42.511193-03:00",
-    "2 arraste copo liquidificador mondial l 99 l 850 l 900 l 1000 l 1200": "2026-11-05T12:09:42.511193-03:00",
     "fone de ouvido sem fio com cancelamento de ruído bluetooth pop up": "2026-11-05T13:10:16.468893-03:00",
     "caneca kit garrafa térmica vacuum bottle inox 500ml 3 xícaras bebidas fria ou qu": "2026-11-05T13:10:16.468893-03:00",
     "cortina de luz led multicolorida 3x3m ou 4x3m usb com controle remoto 8 modos pa": "2026-11-05T13:10:16.468893-03:00",
@@ -609,7 +589,9 @@
     "romantic crown mochila viagem feminina masculina multifuncional reforçada imperm": "2026-11-08T10:16:02.979418-03:00",
     "gaabor aspirador de pó portátil 2 em 1 com fio e haste de pressão sucção forte d": "2026-11-08T10:16:02.979418-03:00",
     "kit 6 forma de silicone para fritadeira air fryer com alça antiaderente cozinha": "2026-11-08T11:14:27.928573-03:00",
-    "chinelo bandeirinha original sandalia de dedo unissex verão presente para o dia ": "2026-11-08T11:14:27.928573-03:00"
+    "chinelo bandeirinha original sandalia de dedo unissex verão presente para o dia ": "2026-11-08T11:14:27.928573-03:00",
+    "kit 2 body splash ameixa negra maracujá ou uva merlot cereja 200ml belkit alta p": "2026-11-08T12:11:28.039992-03:00",
+    "pasta sanfonada para documento com 12 divisórias e pasta prancheta tamanho a4 es": "2026-11-08T12:11:28.039992-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -859,6 +841,14 @@
     "SHOPEE-22098878065": {
       "preco": 19.9,
       "ts": "2026-11-08T11:14:27.928573-03:00"
+    },
+    "SHOPEE-58206612939": {
+      "preco": 36.9,
+      "ts": "2026-11-08T12:11:28.039992-03:00"
+    },
+    "SHOPEE-23093960843": {
+      "preco": 10.99,
+      "ts": "2026-11-08T12:11:28.039992-03:00"
     }
   },
   "alertas": {}
