@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-08T07:09:05.766379-03:00",
+  "atualizado": "2026-11-08T08:10:36.653242-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-58215631607",
+      "titulo": "Kit Body Splash Masculino 2x200ml NeoNoble Inspirado em 212 VIP Black e Sauvage",
+      "preco": 21.5,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 59,
+      "vendas": 4407,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8259q-mrirzbbo3g1x0f",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "perfume",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/9V2sXtvpHS",
+      "comissao": "0.18",
+      "loja": "PH imports ",
+      "postado_em": "2026-11-08T08:10:36.653242-03:00"
+    },
+    {
+      "id": "SHOPEE-29842873054",
+      "titulo": "FTW Whey Protein Concentrado 1kg Refil - 15g Proteína Por Dose",
+      "preco": 78.9,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 60,
+      "vendas": 1375,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lc-mqdi4h8b6wao80",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "whey protein",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/2BGHoQawZh",
+      "comissao": "0.19",
+      "loja": "Loja Oficial FTW",
+      "postado_em": "2026-11-08T08:10:36.653242-03:00"
+    },
     {
       "id": "SHOPEE-22793684140",
       "titulo": "Tênis Feminino Esportivo Leve e mácio Academia Corrida",
@@ -504,42 +540,6 @@
       "comissao": "0.17",
       "loja": "Nobre.Essências",
       "postado_em": "2026-11-07T12:10:29.785169-03:00"
-    },
-    {
-      "id": "SHOPEE-23593847901",
-      "titulo": "Mochila Bolsa Viagem Resistente Coreana Masculina Feminina Colorida",
-      "preco": 27.99,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 72,
-      "vendas": 3236,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8262f-ml3p8fq62c5g00",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "mochila",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/2LZdMa6MCz",
-      "comissao": "0.11",
-      "loja": "JIMMY.STORE",
-      "postado_em": "2026-11-07T12:10:29.785169-03:00"
-    },
-    {
-      "id": "SHOPEE-58200797547",
-      "titulo": "EZ Silver Essence - Eau de Parfum 100ml",
-      "preco": 44.9,
-      "preco_anterior": null,
-      "a_partir_de": false,
-      "desconto": 35,
-      "vendas": 5386,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mhbzozlyxp8l74",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "perfume",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/8AXQ6aLHdl",
-      "comissao": "0.28",
-      "loja": "E'thereal Paris",
-      "postado_em": "2026-11-07T11:16:30.651861-03:00"
     }
   ]
 }
