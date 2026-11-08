@@ -1,17 +1,5 @@
 {
   "ids": {
-    "54850610196": "2026-11-05T14:09:42.394504-03:00",
-    "22495070421": "2026-11-05T14:09:42.394504-03:00",
-    "58263335250": "2026-11-05T14:09:42.394504-03:00",
-    "23698922806": "2026-11-05T14:09:42.394504-03:00",
-    "58204088950": "2026-11-05T14:09:42.394504-03:00",
-    "23097346417": "2026-11-05T14:09:42.394504-03:00",
-    "18199069887": "2026-11-05T14:09:42.394504-03:00",
-    "23893428608": "2026-11-05T14:09:42.394504-03:00",
-    "22192429700": "2026-11-05T14:09:42.394504-03:00",
-    "22393488458": "2026-11-05T14:09:42.394504-03:00",
-    "58220352282": "2026-11-05T14:09:42.394504-03:00",
-    "58261413307": "2026-11-05T14:09:42.394504-03:00",
     "52658057285": "2026-11-05T14:55:31.164076-03:00",
     "40558674549": "2026-11-05T14:55:31.164076-03:00",
     "22593255142": "2026-11-05T14:55:31.164076-03:00",
@@ -318,21 +306,13 @@
     "SHOPEE-58213273842": "2026-11-08T13:58:02.593000-03:00",
     "58213273842": "2026-11-08T13:58:02.593000-03:00",
     "SHOPEE-58208872077": "2026-11-08T13:58:02.593000-03:00",
-    "58208872077": "2026-11-08T13:58:02.593000-03:00"
+    "58208872077": "2026-11-08T13:58:02.593000-03:00",
+    "SHOPEE-58201056244": "2026-11-08T14:10:53.063318-03:00",
+    "58201056244": "2026-11-08T14:10:53.063318-03:00",
+    "SHOPEE-23398892792": "2026-11-08T14:10:53.063318-03:00",
+    "23398892792": "2026-11-08T14:10:53.063318-03:00"
   },
   "titulos": {
-    "caneca magnética com mistura automática 380ml": "2026-11-05T14:09:42.394504-03:00",
-    "carregador mini power bank 10000mah bateria sem fio 2em1 carregador portátil par": "2026-11-05T14:09:42.394504-03:00",
-    "carregador turbo 20w compatível iphone cabo lightning": "2026-11-05T14:09:42.394504-03:00",
-    "porta bolo panetone 23cm em cerâmica noel merry chistimas": "2026-11-05T14:09:42.394504-03:00",
-    "relógio de quartzo casual masculino pulseira pu vintage com bracelete estiloso u": "2026-11-05T14:09:42.394504-03:00",
-    "liquidificador rosa britânia 1400w 3l 12 velocidades blq1300rs": "2026-11-05T14:09:42.394504-03:00",
-    "fritadeira elétrica air fryer mondial family af 30 3 5l preta 220v": "2026-11-05T14:09:42.394504-03:00",
-    "10 fones bluetooth presente com microfone personalizados sua logo colorida campa": "2026-11-05T14:09:42.394504-03:00",
-    "enfeite de natal letras de alfabeto completo vermelhas meias de natal pingentes ": "2026-11-05T14:09:42.394504-03:00",
-    "kit bolas de natal com foto personalizada": "2026-11-05T14:09:42.394504-03:00",
-    "kit 42 84 enfeites decoração natalina para árvore de natal guirlanda pendente bo": "2026-11-05T14:09:42.394504-03:00",
-    "mini fonte de alimentação portátil de emergência para iphone e android com chave": "2026-11-05T14:09:42.394504-03:00",
     "romantic crown kit 2 copo térmico inox portátil 1200ml 600ml garrafa térmica ino": "2026-11-05T14:55:31.164076-03:00",
     "meia de natal lb letras em malha letras de natal meias de natal árvore de bolsa ": "2026-11-05T14:55:31.164076-03:00",
     "toalha de mesa oxford festiva natalina natal papai noel para 4 e 6 lugares": "2026-11-05T14:55:31.164076-03:00",
@@ -573,7 +553,9 @@
     "kit 2 body splash ameixa negra maracujá ou uva merlot cereja 200ml belkit alta p": "2026-11-08T12:11:28.039992-03:00",
     "pasta sanfonada para documento com 12 divisórias e pasta prancheta tamanho a4 es": "2026-11-08T12:11:28.039992-03:00",
     "kit 7 saquinhos maternidade organizador mala bebê mala viagem roupa molhada e se": "2026-11-08T13:58:02.593000-03:00",
-    "mochila grande unissex resistente impermeável notebook alta capacidade com compa": "2026-11-08T13:58:02.593000-03:00"
+    "mochila grande unissex resistente impermeável notebook alta capacidade com compa": "2026-11-08T13:58:02.593000-03:00",
+    "ventilador de teto com lampada led integrada bocal e27 6 pétalas 60w 3 velocidad": "2026-11-08T14:10:53.063318-03:00",
+    "pasta sanfonada a4 12 divisórias com elástico em polipropileno escolar e escritó": "2026-11-08T14:10:53.063318-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -839,6 +821,14 @@
     "SHOPEE-58208872077": {
       "preco": 59.9,
       "ts": "2026-11-08T13:58:02.593000-03:00"
+    },
+    "SHOPEE-58201056244": {
+      "preco": 51.99,
+      "ts": "2026-11-08T14:10:53.063318-03:00"
+    },
+    "SHOPEE-23398892792": {
+      "preco": 11.88,
+      "ts": "2026-11-08T14:10:53.063318-03:00"
     }
   },
   "alertas": {}
