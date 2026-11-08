@@ -1,17 +1,5 @@
 {
   "ids": {
-    "58268626300": "2026-11-04T22:16:05.755608-03:00",
-    "41581456549": "2026-11-04T22:16:05.755608-03:00",
-    "58211842722": "2026-11-04T22:16:05.755608-03:00",
-    "11296470325": "2026-11-04T22:16:05.755608-03:00",
-    "58266145962": "2026-11-04T22:16:05.755608-03:00",
-    "18875453326": "2026-11-04T22:16:05.755608-03:00",
-    "58268694030": "2026-11-04T22:16:05.755608-03:00",
-    "58216107230": "2026-11-04T22:16:05.755608-03:00",
-    "27436927832": "2026-11-04T22:16:05.755608-03:00",
-    "40128790649": "2026-11-04T22:16:05.755608-03:00",
-    "23091236584": "2026-11-04T22:16:05.755608-03:00",
-    "22794972394": "2026-11-04T22:16:05.755608-03:00",
     "58206612939": "2026-11-05T07:19:58.048221-03:00",
     "55450779075": "2026-11-05T07:19:58.048221-03:00",
     "58205979239": "2026-11-05T07:19:58.048221-03:00",
@@ -388,21 +376,13 @@
     "SHOPEE-23498780349": "2026-11-07T22:10:25.120709-03:00",
     "23498780349": "2026-11-07T22:10:25.120709-03:00",
     "SHOPEE-58202416470": "2026-11-07T22:10:25.120709-03:00",
-    "58202416470": "2026-11-07T22:10:25.120709-03:00"
+    "58202416470": "2026-11-07T22:10:25.120709-03:00",
+    "SHOPEE-22793684140": "2026-11-08T07:09:05.766379-03:00",
+    "22793684140": "2026-11-08T07:09:05.766379-03:00",
+    "SHOPEE-18598350302": "2026-11-08T07:09:05.766379-03:00",
+    "18598350302": "2026-11-08T07:09:05.766379-03:00"
   },
   "titulos": {
-    "24 flores artificiais de natal vermelho e dourado com glitter 14cm decoração árv": "2026-11-04T22:16:05.755608-03:00",
-    "fones de ouvido x55 tws mini sleep sem fio bluetooth com display led som estéreo": "2026-11-04T22:16:05.755608-03:00",
-    "mochila térmica bag freezer cooler gelo bolsa bebidas anti vazamento praia campi": "2026-11-04T22:16:05.755608-03:00",
-    "roupão unissex quentinho microfibra super fofinho diversas cores manga curta pre": "2026-11-04T22:16:05.755608-03:00",
-    "kit honey cuidados labiais 2 itens esfoliante labial lip gloss hidratante brilho": "2026-11-04T22:16:05.755608-03:00",
-    "liquidificador britânia 1200w 3l 12 velocidades blq1380p": "2026-11-04T22:16:05.755608-03:00",
-    "pinhas natal enfeite natural decoração pendente artesanato guirlanda natalina": "2026-11-04T22:16:05.755608-03:00",
-    "porta panetone de porcelana natalino decorativo para mesa posta natal 17cm": "2026-11-04T22:16:05.755608-03:00",
-    "conjunto de relógio digital elegante 4 peças caixa quadrada pulseiras de coração": "2026-11-04T22:16:05.755608-03:00",
-    "whey protein isolado zero lactose isolate protein 900g new millen": "2026-11-04T22:16:05.755608-03:00",
-    "tênis feminino masculino diker esportivo caminhada academia": "2026-11-04T22:16:05.755608-03:00",
-    "kit presente infantil skincare completo menina 7 itens gloss faixa spa sérum mou": "2026-11-04T22:16:05.755608-03:00",
     "kit 2 body splash ameixa negra maracujá ou uva merlot cereja 200ml belkit alta p": "2026-11-05T07:19:58.048221-03:00",
     "kit smartwatch relógio inteligente digital feminino calculadora amoled 2 0 hd ma": "2026-11-05T07:19:58.048221-03:00",
     "principia kit limpa hidrata e protege c gel de limpeza gl 01 creme hidratante ch": "2026-11-05T07:19:58.048221-03:00",
@@ -726,7 +706,9 @@
     "smartwatch mini 38mm pro com monitor de frequência cardíaca do computador são pa": "2026-11-07T21:18:32.112469-03:00",
     "kit hidrabene clareador skincare clareador facial sabonete protetor 70 fps e sér": "2026-11-07T21:18:32.112469-03:00",
     "ventilador 80w de teto silencioso led 3 cores bulbo 12w com controle bivolt 5 pá": "2026-11-07T22:10:25.120709-03:00",
-    "2 4 6 8 10 15 gancho adesivo parede multifuncional transparente autocolante metá": "2026-11-07T22:10:25.120709-03:00"
+    "2 4 6 8 10 15 gancho adesivo parede multifuncional transparente autocolante metá": "2026-11-07T22:10:25.120709-03:00",
+    "tênis feminino esportivo leve e mácio academia corrida": "2026-11-08T07:09:05.766379-03:00",
+    "alaxe5 generation original speaker immediate shipping best price": "2026-11-08T07:09:05.766379-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -940,6 +922,14 @@
     "SHOPEE-58202416470": {
       "preco": 4.98,
       "ts": "2026-11-07T22:10:25.120709-03:00"
+    },
+    "SHOPEE-22793684140": {
+      "preco": 29.0,
+      "ts": "2026-11-08T07:09:05.766379-03:00"
+    },
+    "SHOPEE-18598350302": {
+      "preco": 46.99,
+      "ts": "2026-11-08T07:09:05.766379-03:00"
     }
   },
   "alertas": {}

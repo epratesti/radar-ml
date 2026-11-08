@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-07T22:10:25.120709-03:00",
+  "atualizado": "2026-11-08T07:09:05.766379-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-22793684140",
+      "titulo": "Tênis Feminino Esportivo Leve e mácio Academia Corrida",
+      "preco": 29.0,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 42,
+      "vendas": 6853,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-m5tyxgjeaxz9d5",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "tenis",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/2LZd9sGgjL",
+      "comissao": "0.13",
+      "loja": "Dulojashoes",
+      "postado_em": "2026-11-08T07:09:05.766379-03:00"
+    },
+    {
+      "id": "SHOPEE-18598350302",
+      "titulo": "Alaxe5 Generation Original Speaker Immediate Shipping Best Price",
+      "preco": 46.99,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 57,
+      "vendas": 5210,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mh4dohuahhc099",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "caixa de som",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/4fxbalheKG",
+      "comissao": "0.08",
+      "loja": "TW1 TECH LTDA",
+      "postado_em": "2026-11-08T07:09:05.766379-03:00"
+    },
     {
       "id": "SHOPEE-23498780349",
       "titulo": "Ventilador 80w de Teto Silencioso LED 3 Cores Bulbo 12w com Controle Bivolt 5 Pás Branco Potente",
@@ -504,42 +540,6 @@
       "comissao": "0.28",
       "loja": "E'thereal Paris",
       "postado_em": "2026-11-07T11:16:30.651861-03:00"
-    },
-    {
-      "id": "SHOPEE-21399069053",
-      "titulo": "Caneta Paint Original Reparadora Pintura Automotiva Permanente Não Sai Na Água Tira Riscos Carro Moto Retoque de Placa Tênis Pneus para Ferro Metal Madeira Plástico Gesso Vidro Couro Tecido Cores Preto Branco Prata (Cinza) Dourado Azul Vermelha",
-      "preco": 18.72,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 55,
-      "vendas": 4934,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lsirz2r48wfv6e",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "tenis",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/2BGGQIosXr",
-      "comissao": "0.24",
-      "loja": "VENDAS.VTO",
-      "postado_em": "2026-11-07T11:16:30.651861-03:00"
-    },
-    {
-      "id": "SHOPEE-23197685907",
-      "titulo": "Chinelo Adulto Masculino Confortável Leve e Antiderrapante",
-      "preco": 19.9,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 78,
-      "vendas": 4284,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lc-msv9x4r1nax20d",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "chinelo",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/5LDI7kuF85",
-      "comissao": "0.15",
-      "loja": "Mabi Shoes",
-      "postado_em": "2026-11-07T10:13:06.042772-03:00"
     }
   ]
 }
