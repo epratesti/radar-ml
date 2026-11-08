@@ -1,17 +1,5 @@
 {
   "ids": {
-    "22594206890": "2026-11-04T21:09:41.282901-03:00",
-    "18898048924": "2026-11-04T21:09:41.282901-03:00",
-    "21032420237": "2026-11-04T21:09:41.282901-03:00",
-    "58209766348": "2026-11-04T21:09:41.282901-03:00",
-    "22793395045": "2026-11-04T21:09:41.282901-03:00",
-    "58209756091": "2026-11-04T21:09:41.282901-03:00",
-    "23298210857": "2026-11-04T21:09:41.282901-03:00",
-    "22499667397": "2026-11-04T21:09:41.282901-03:00",
-    "58256616845": "2026-11-04T21:09:41.282901-03:00",
-    "44424784105": "2026-11-04T21:09:41.282901-03:00",
-    "19256089689": "2026-11-04T21:09:41.282901-03:00",
-    "56057690048": "2026-11-04T21:09:41.282901-03:00",
     "22093160276": "2026-11-04T21:24:52.290396-03:00",
     "47703405896": "2026-11-04T21:24:52.290396-03:00",
     "58258491270": "2026-11-04T21:24:52.290396-03:00",
@@ -412,21 +400,13 @@
     "SHOPEE-21797631048": "2026-11-07T20:09:58.302295-03:00",
     "21797631048": "2026-11-07T20:09:58.302295-03:00",
     "SHOPEE-23897644397": "2026-11-07T20:09:58.302295-03:00",
-    "23897644397": "2026-11-07T20:09:58.302295-03:00"
+    "23897644397": "2026-11-07T20:09:58.302295-03:00",
+    "SHOPEE-23198212585": "2026-11-07T21:12:10.767587-03:00",
+    "23198212585": "2026-11-07T21:12:10.767587-03:00",
+    "SHOPEE-23098440348": "2026-11-07T21:12:10.767587-03:00",
+    "23098440348": "2026-11-07T21:12:10.767587-03:00"
   },
   "titulos": {
-    "chinelos masculino e feminino do brasil bandeirinha de borracha original anti de": "2026-11-04T21:09:41.282901-03:00",
-    "kit 2 conjunto biquíni infantil moda praia sublimado calcinha e top desenhos pre": "2026-11-04T21:09:41.282901-03:00",
-    "bateria portátil power bank 10 000mah e 5000mah universal": "2026-11-04T21:09:41.282901-03:00",
-    "kit skincare kokeshi cosméticos completo 6 itens hidratação e tratamento facial": "2026-11-04T21:09:41.282901-03:00",
-    "toalha de mesa redonda natal 145x145cm 4 lugares várias estampas preço de fábric": "2026-11-04T21:09:41.282901-03:00",
-    "caixinha personalizada para fone bluetooth lembrancinha qualquer tema": "2026-11-04T21:09:41.282901-03:00",
-    "perfume touti vip fit lux todas fragrancias masculino feminino luxo alta fixacao": "2026-11-04T21:09:41.282901-03:00",
-    "15 unidades fio de led fio fada corda o de luzes natal e festa luzes festas pres": "2026-11-04T21:09:41.282901-03:00",
-    "kit skin care limpeza de pele rosa mosqueta completo clareador manchas hidratant": "2026-11-04T21:09:41.282901-03:00",
-    "feliz natal kit com 04 capas para almofada mamãe e papai noel ho ho 45x45": "2026-11-04T21:09:41.282901-03:00",
-    "pulseira de couro masculino clássico de aço inoxidável multicolor 19 21 23cm esc": "2026-11-04T21:09:41.282901-03:00",
-    "tênis de corrida placa de carbono chunta malha respirável absorção de choque pro": "2026-11-04T21:09:41.282901-03:00",
     "2026 nova série 8 relógio t800 ultra smart watch esportivo sem fio prova d água ": "2026-11-04T21:24:52.290396-03:00",
     "pijama natalino bebê menina manga curta estampa fofa natal roupa infantil verão ": "2026-11-04T21:24:52.290396-03:00",
     "carregador turbo 2 saídas fonte 50w 2 entradas usb e usb c com cabo lightning ul": "2026-11-04T21:24:52.290396-03:00",
@@ -780,7 +760,9 @@
     "kit 2 sacos lavar tenis sapato máquina lavar roupas protege não danifica lavagem": "2026-11-07T19:08:50.471916-03:00",
     "karaokê bluetooth com 2 microfones sem fio caixa de som portátil anjgg brasil": "2026-11-07T19:08:50.471916-03:00",
     "sapateira 4 ou 5 andares multiuso desmontável organizadora multiuso sapatos livr": "2026-11-07T20:09:58.302295-03:00",
-    "caixa de som speaker bluetooth rgb portátil 10w usb aux": "2026-11-07T20:09:58.302295-03:00"
+    "caixa de som speaker bluetooth rgb portátil 10w usb aux": "2026-11-07T20:09:58.302295-03:00",
+    "whey ultra protein concentrado pote 900g ftw": "2026-11-07T21:12:10.767587-03:00",
+    "k12 caixa de som sem fio com microfone karaokê mini alto falante bluetooth portá": "2026-11-07T21:12:10.767587-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -970,6 +952,14 @@
     "SHOPEE-23897644397": {
       "preco": 23.88,
       "ts": "2026-11-07T20:09:58.302295-03:00"
+    },
+    "SHOPEE-23198212585": {
+      "preco": 69.99,
+      "ts": "2026-11-07T21:12:10.767587-03:00"
+    },
+    "SHOPEE-23098440348": {
+      "preco": 27.49,
+      "ts": "2026-11-07T21:12:10.767587-03:00"
     }
   },
   "alertas": {}

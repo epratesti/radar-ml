@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-07T20:09:58.302295-03:00",
+  "atualizado": "2026-11-07T21:12:10.767587-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-23198212585",
+      "titulo": "Whey Ultra Protein Concentrado Pote 900g - FTW",
+      "preco": 69.99,
+      "preco_anterior": null,
+      "a_partir_de": false,
+      "desconto": 36,
+      "vendas": 2843,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztc-mj9vukr0feo684",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "whey protein",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/5AtsKFPJ14",
+      "comissao": "0.22",
+      "loja": "Loja Oficial FTW",
+      "postado_em": "2026-11-07T21:12:10.767587-03:00"
+    },
+    {
+      "id": "SHOPEE-23098440348",
+      "titulo": "K12 Caixa de som sem fio com microfone Karaokê, Mini Alto-falante Bluetooth portátil 1/2 Mic",
+      "preco": 27.49,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 73,
+      "vendas": 7650,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rff1-m96a3707agyh54",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "caixa de som",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/5AtqvRugja",
+      "comissao": "0.03",
+      "loja": "ZSZ_SHOP",
+      "postado_em": "2026-11-07T21:12:10.767587-03:00"
+    },
     {
       "id": "SHOPEE-21797631048",
       "titulo": "Sapateira 4 ou 5 Andares Multiuso Desmontável Organizadora Multiuso Sapatos Livros Brinquedos",
@@ -504,42 +540,6 @@
       "comissao": "0.24",
       "loja": "Dark Lab Oficial",
       "postado_em": "2026-11-07T08:11:22.127374-03:00"
-    },
-    {
-      "id": "SHOPEE-58262387632",
-      "titulo": "Kit Renovadores Gota de Colágeno e Rosa Mosqueta Kokeshi",
-      "preco": 66.41,
-      "preco_anterior": null,
-      "a_partir_de": false,
-      "desconto": 38,
-      "vendas": 5433,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lc-mume7ufalreo72",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "kit skincare",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/6q22W9CpCR",
-      "comissao": "0.21",
-      "loja": "KOKESHI OFICIAL",
-      "postado_em": "2026-11-07T08:11:22.127374-03:00"
-    },
-    {
-      "id": "SHOPEE-22199220609",
-      "titulo": "B&BRobô Varredora/Aspirador De Pó Automática 3 Em 1 Limpeza Doméstica Robótico Inteligente E Silencioso",
-      "preco": 37.99,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 70,
-      "vendas": 4441,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-821dm-mh9dj2twkavd00",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "aspirador",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/7puZhxnUZH",
-      "comissao": "0.11",
-      "loja": "Lume & Lume ",
-      "postado_em": "2026-11-07T07:08:39.024890-03:00"
     }
   ]
 }
