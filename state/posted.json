@@ -1,17 +1,5 @@
 {
   "ids": {
-    "58206269989": "2026-11-05T15:54:22.742578-03:00",
-    "29891829106": "2026-11-05T15:54:22.742578-03:00",
-    "9593664421": "2026-11-05T15:54:22.742578-03:00",
-    "58215845838": "2026-11-05T15:54:22.742578-03:00",
-    "49367956718": "2026-11-05T15:54:22.742578-03:00",
-    "22098654722": "2026-11-05T15:54:22.742578-03:00",
-    "22294507989": "2026-11-05T15:54:22.742578-03:00",
-    "25326316710": "2026-11-05T15:54:22.742578-03:00",
-    "58213857949": "2026-11-05T15:54:22.742578-03:00",
-    "22798705701": "2026-11-05T15:54:22.742578-03:00",
-    "21799543150": "2026-11-05T15:54:22.742578-03:00",
-    "58257060543": "2026-11-05T15:54:22.742578-03:00",
     "58255641529": "2026-11-05T16:10:31.806474-03:00",
     "58251693883": "2026-11-05T16:10:31.806474-03:00",
     "22299582170": "2026-11-05T16:10:31.806474-03:00",
@@ -302,21 +290,13 @@
     "SHOPEE-22194652188": "2026-11-08T15:07:29.761374-03:00",
     "22194652188": "2026-11-08T15:07:29.761374-03:00",
     "SHOPEE-23597035403": "2026-11-08T15:07:29.761374-03:00",
-    "23597035403": "2026-11-08T15:07:29.761374-03:00"
+    "23597035403": "2026-11-08T15:07:29.761374-03:00",
+    "SHOPEE-23397600706": "2026-11-08T16:07:51.618244-03:00",
+    "23397600706": "2026-11-08T16:07:51.618244-03:00",
+    "SHOPEE-49912454334": "2026-11-08T16:07:51.618244-03:00",
+    "49912454334": "2026-11-08T16:07:51.618244-03:00"
   },
   "titulos": {
-    "cafeteira italiana moka 12 xícaras 600ml em inox para café tipo expresso": "2026-11-05T15:54:22.742578-03:00",
-    "toalha de mesa redonda 4 lugares natal feliz 135cm": "2026-11-05T15:54:22.742578-03:00",
-    "100 pçs 65mm pequena flor artificial cereja bagas para diy casamento caixa de bo": "2026-11-05T15:54:22.742578-03:00",
-    "tênis infantil feminino presente de natal casual confortável oferta exclusiva": "2026-11-05T15:54:22.742578-03:00",
-    "kit 3 bolas de natal grande 17cm vermelha decoração árvore enfeite luxo promoção": "2026-11-05T15:54:22.742578-03:00",
-    "porta panetone de vidro escolha sua base e personalização": "2026-11-05T15:54:22.742578-03:00",
-    "liquidificador electrolux 1500w 3 2l efficient triforce 15 velocidades cinza ebl": "2026-11-05T15:54:22.742578-03:00",
-    "óculos de sol para festa de natal 3 pacotes moda pequena feminino preto uv400 co": "2026-11-05T15:54:22.742578-03:00",
-    "guirlanda festão verde para porta com 3 laço vermelho 25cm enfeite de natal deco": "2026-11-05T15:54:22.742578-03:00",
-    "caixa de presente cosmético ou artesanatos com visor tags 15x15x4cm estampa flor": "2026-11-05T15:54:22.742578-03:00",
-    "10 caixas em formato de arvore de natal para 06 ou 10 doces e lembrancinhas esco": "2026-11-05T15:54:22.742578-03:00",
-    "kit 100 saquinhos saco organza 7x9 9x12 10x15 13x18 20x30 20x35 branco lembranci": "2026-11-05T15:54:22.742578-03:00",
     "fone pro sem fio som hifi 8d pop up automático toque inteligente bateria 5 7h bl": "2026-11-05T16:10:31.806474-03:00",
     "watersy garrafa térmica portátil 532ml aço inox sem bpa presente para viagem tra": "2026-11-05T16:10:31.806474-03:00",
     "mini portátil carregador power bank 10000mah com 02 saídas tipo c lightning": "2026-11-05T16:10:31.806474-03:00",
@@ -537,7 +517,9 @@
     "ventilador de teto com lampada led integrada bocal e27 6 pétalas 60w 3 velocidad": "2026-11-08T14:10:53.063318-03:00",
     "pasta sanfonada a4 12 divisórias com elástico em polipropileno escolar e escritó": "2026-11-08T14:10:53.063318-03:00",
     "original caixa de som com bluetooth led modelo alexa de um aparelho super bass": "2026-11-08T15:07:29.761374-03:00",
-    "1 3 5 pcs cápsula café reutilizável dolce gusto recarregável refrescante efectiv": "2026-11-08T15:07:29.761374-03:00"
+    "1 3 5 pcs cápsula café reutilizável dolce gusto recarregável refrescante efectiv": "2026-11-08T15:07:29.761374-03:00",
+    "cesto de roupa 40x70 30x50cm caixa dobrável brinquedos cesto diversa organizador": "2026-11-08T16:07:51.618244-03:00",
+    "maria 5d w m curl uc ud cílios fácil lu ventilador extensões de atacado volume p": "2026-11-08T16:07:51.618244-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -819,6 +801,14 @@
     "SHOPEE-23597035403": {
       "preco": 9.59,
       "ts": "2026-11-08T15:07:29.761374-03:00"
+    },
+    "SHOPEE-23397600706": {
+      "preco": 11.8,
+      "ts": "2026-11-08T16:07:51.618244-03:00"
+    },
+    "SHOPEE-49912454334": {
+      "preco": 19.0,
+      "ts": "2026-11-08T16:07:51.618244-03:00"
     }
   },
   "alertas": {}
