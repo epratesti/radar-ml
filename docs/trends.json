@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-08T08:10:36.653242-03:00",
+  "atualizado": "2026-11-08T09:12:35.587022-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-22494941454",
+      "titulo": "Kit Facial Kokeshi Completo 3 Passos Hidratação e Colágeno",
+      "preco": 56.91,
+      "preco_anterior": 64.9,
+      "a_partir_de": false,
+      "desconto": 39,
+      "vendas": 10351,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lx-mqbygibr40sg7a",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "kit skincare",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/1qdRU3XASh",
+      "comissao": "0.21",
+      "loja": "KOKESHI OFICIAL",
+      "postado_em": "2026-11-08T09:12:35.587022-03:00"
+    },
+    {
+      "id": "SHOPEE-52607420187",
+      "titulo": "Escova de Limpeza Multifuncional Flexível Para Garrafas Mamadeiras Liquidificador De Silicone",
+      "preco": 9.97,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 62,
+      "vendas": 2766,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lu-mpnppwqseqypd8",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "liquidificador",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/2Vt8HHlkMa",
+      "comissao": "0.13",
+      "loja": "MF Baby e Home",
+      "postado_em": "2026-11-08T09:12:35.587022-03:00"
+    },
     {
       "id": "SHOPEE-58215631607",
       "titulo": "Kit Body Splash Masculino 2x200ml NeoNoble Inspirado em 212 VIP Black e Sauvage",
@@ -504,42 +540,6 @@
       "comissao": "0.11",
       "loja": "LUFEE ACESSÓRIOS",
       "postado_em": "2026-11-07T13:10:50.125970-03:00"
-    },
-    {
-      "id": "SHOPEE-22393096204",
-      "titulo": "Carregador Super Rápido Turbo 50w / 68w / 125w e 168w Entrada e Saída de Carga Tipo C",
-      "preco": 19.99,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 71,
-      "vendas": 1685,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lwiueyaua06u52",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "carregador turbo",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/8pnAMXQFN0",
-      "comissao": "0.12",
-      "loja": "Lily Space",
-      "postado_em": "2026-11-07T13:10:50.125970-03:00"
-    },
-    {
-      "id": "SHOPEE-58210532717",
-      "titulo": "Body splash Perfume Deo Colônia Flooratta Red 200ML",
-      "preco": 29.9,
-      "preco_anterior": null,
-      "a_partir_de": false,
-      "desconto": 77,
-      "vendas": 4842,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820le-mo5m3lm7da841f",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "perfume",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/906X67I6ws",
-      "comissao": "0.17",
-      "loja": "Nobre.Essências",
-      "postado_em": "2026-11-07T12:10:29.785169-03:00"
     }
   ]
 }
