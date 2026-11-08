@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-07T21:12:10.767587-03:00",
+  "atualizado": "2026-11-07T21:18:32.112469-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-22499056874",
+      "titulo": "Smartwatch MINI 38MM PRO Com monitor De Frequência Cardíaca Do Computador São Paulo pronta entrega",
+      "preco": 53.99,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 73,
+      "vendas": 1718,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mg4sqr0e5nggcd",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "smartwatch",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/4fxbKXEW8a",
+      "comissao": "0.13",
+      "loja": "Os produtos preferidos",
+      "postado_em": "2026-11-07T21:18:32.112469-03:00"
+    },
+    {
+      "id": "SHOPEE-58264684239",
+      "titulo": "Kit Hidrabene Clareador Skincare Clareador Facial: Sabonete, Protetor 70 FPS e Sérum Multicorretivo",
+      "preco": 79.9,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 50,
+      "vendas": 17718,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lx-mt45q21kcvt09d",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "kit skincare",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/7VHjJNAHqV",
+      "comissao": "0.13",
+      "loja": "Hidrabene ",
+      "postado_em": "2026-11-07T21:18:32.112469-03:00"
+    },
     {
       "id": "SHOPEE-23198212585",
       "titulo": "Whey Ultra Protein Concentrado Pote 900g - FTW",
@@ -504,42 +540,6 @@
       "comissao": "0.03",
       "loja": "Papala Home Store",
       "postado_em": "2026-11-07T09:11:37.544158-03:00"
-    },
-    {
-      "id": "SHOPEE-23598387814",
-      "titulo": "Adaptador de Tomada Ultra Resistente de Porcelana para Secador Air Fryer Benjamin Bivolt 10A e 20A",
-      "preco": 12.72,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 60,
-      "vendas": 2589,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rep2-m8i16u5pyp4wcf",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "air fryer",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/5q9VKK31p0",
-      "comissao": "0.13",
-      "loja": "RYT WEB",
-      "postado_em": "2026-11-07T09:11:37.544158-03:00"
-    },
-    {
-      "id": "SHOPEE-22392993399",
-      "titulo": "Hipercalórico Dark Mass 3kg Dark Lab - Whey Protein, Creatina, BCAA, Waxy Maize, Premium Mass Gainer",
-      "preco": 78.9,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 51,
-      "vendas": 2795,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lzawnmo1qj3970",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "whey protein",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/9V2nhlBEDj",
-      "comissao": "0.24",
-      "loja": "Dark Lab Oficial",
-      "postado_em": "2026-11-07T08:11:22.127374-03:00"
     }
   ]
 }
