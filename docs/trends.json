@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-08T20:10:13.791383-03:00",
+  "atualizado": "2026-11-08T21:12:55.738574-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-22093160276",
+      "titulo": "2026 Nova Série 8 Relógio T800 Ultra Smart Watch Esportivo Sem Fio À Prova D'água T800 Ultra2 MAX",
+      "preco": 45.88,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 70,
+      "vendas": 3344,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rdym-lxrzfhio6fhl9d",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "relogio",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/8AXVpAJBlr",
+      "comissao": "0.16",
+      "loja": "-BML-",
+      "postado_em": "2026-11-08T21:12:55.738574-03:00"
+    },
+    {
+      "id": "SHOPEE-44213872297",
+      "titulo": "Smartwatch GPS BETTDOW com aplicativo de IA integrado, 100 modos esportivos, resistência à água de 3 ATM e tela AMOLED",
+      "preco": 315.0,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 55,
+      "vendas": 2073,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lp-msjcgt0pai9we6",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "smartwatch",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/AAIaCqXz9d",
+      "comissao": "0.13",
+      "loja": "Bettdow",
+      "postado_em": "2026-11-08T21:12:55.738574-03:00"
+    },
     {
       "id": "SHOPEE-49610876725",
       "titulo": "Rádio Caixa de Som Bluetooth Recarregável Lanterna Retro Portátil FM AM USB SD Pilha",
@@ -504,42 +540,6 @@
       "comissao": "0.03",
       "loja": "LUCIOshopping",
       "postado_em": "2026-11-07T22:10:25.120709-03:00"
-    },
-    {
-      "id": "SHOPEE-22499056874",
-      "titulo": "Smartwatch MINI 38MM PRO Com monitor De Frequência Cardíaca Do Computador São Paulo pronta entrega",
-      "preco": 53.99,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 73,
-      "vendas": 1718,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mg4sqr0e5nggcd",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "smartwatch",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/4fxbKXEW8a",
-      "comissao": "0.13",
-      "loja": "Os produtos preferidos",
-      "postado_em": "2026-11-07T21:18:32.112469-03:00"
-    },
-    {
-      "id": "SHOPEE-58264684239",
-      "titulo": "Kit Hidrabene Clareador Skincare Clareador Facial: Sabonete, Protetor 70 FPS e Sérum Multicorretivo",
-      "preco": 79.9,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 50,
-      "vendas": 17718,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lx-mt45q21kcvt09d",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "kit skincare",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/7VHjJNAHqV",
-      "comissao": "0.13",
-      "loja": "Hidrabene ",
-      "postado_em": "2026-11-07T21:18:32.112469-03:00"
     }
   ]
 }
