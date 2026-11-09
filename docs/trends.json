@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-08T21:12:55.738574-03:00",
+  "atualizado": "2026-11-08T21:41:04.937266-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-58265197313",
+      "titulo": "Kit Raquete Frescobol Bateu Colou Peteca Tênis C/ Bolinha Bate Gruda Binquedo Menino e Menina",
+      "preco": 24.99,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 54,
+      "vendas": 4405,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m2-mr85lot3rtacc0",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "tenis",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/50aTSAuTxx",
+      "comissao": "0.13",
+      "loja": "DBrinq's",
+      "postado_em": "2026-11-08T21:41:04.937266-03:00"
+    },
+    {
+      "id": "SHOPEE-58253326285",
+      "titulo": "Carregador Lightning Turbo Para 11 12 13 14 Pro X XR 20W Cabo Tipo C Lightning",
+      "preco": 39.9,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 40,
+      "vendas": 3318,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztc-mjfmlxjdwt1d0f",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "carregador turbo",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/60T0a5j6TS",
+      "comissao": "0.15",
+      "loja": "CasaTech Oficial",
+      "postado_em": "2026-11-08T21:41:04.937266-03:00"
+    },
     {
       "id": "SHOPEE-22093160276",
       "titulo": "2026 Nova Série 8 Relógio T800 Ultra Smart Watch Esportivo Sem Fio À Prova D'água T800 Ultra2 MAX",
@@ -504,42 +540,6 @@
       "comissao": "0.08",
       "loja": "TW1 TECH LTDA",
       "postado_em": "2026-11-08T07:09:05.766379-03:00"
-    },
-    {
-      "id": "SHOPEE-23498780349",
-      "titulo": "Ventilador 80w de Teto Silencioso LED 3 Cores Bulbo 12w com Controle Bivolt 5 Pás Branco Potente",
-      "preco": 38.8,
-      "preco_anterior": null,
-      "a_partir_de": false,
-      "desconto": 69,
-      "vendas": 17719,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m7-mv7mtxakt3pf62",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "ventilador",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/2gCVm26OGv",
-      "comissao": "0.03",
-      "loja": "ETP ILUMINA",
-      "postado_em": "2026-11-07T22:10:25.120709-03:00"
-    },
-    {
-      "id": "SHOPEE-58202416470",
-      "titulo": "2/4/6/8/10/15 Gancho Adesivo Parede Multifuncional Transparente Autocolante Metálico Premium",
-      "preco": 4.98,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 75,
-      "vendas": 10422,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-minv6pm3l14x7b",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "organizador",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/9AQ1LnZcRj",
-      "comissao": "0.03",
-      "loja": "LUCIOshopping",
-      "postado_em": "2026-11-07T22:10:25.120709-03:00"
     }
   ]
 }

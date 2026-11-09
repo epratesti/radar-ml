@@ -1,14 +1,5 @@
 {
   "ids": {
-    "22099191110": "2026-11-05T21:17:53.280982-03:00",
-    "22794275506": "2026-11-05T21:17:53.280982-03:00",
-    "23194841321": "2026-11-05T21:17:53.280982-03:00",
-    "23694667973": "2026-11-05T21:17:53.280982-03:00",
-    "58217285381": "2026-11-05T21:17:53.280982-03:00",
-    "22595187537": "2026-11-05T21:17:53.280982-03:00",
-    "58215441377": "2026-11-05T21:17:53.280982-03:00",
-    "23698932435": "2026-11-05T21:17:53.280982-03:00",
-    "22698755998": "2026-11-05T21:17:53.280982-03:00",
     "22997983243": "2026-11-05T22:03:45.427054-03:00",
     "19199894917": "2026-11-05T22:03:45.427054-03:00",
     "23493010548": "2026-11-05T22:03:45.427054-03:00",
@@ -238,18 +229,13 @@
     "SHOPEE-22093160276": "2026-11-08T21:12:55.738574-03:00",
     "22093160276": "2026-11-08T21:12:55.738574-03:00",
     "SHOPEE-44213872297": "2026-11-08T21:12:55.738574-03:00",
-    "44213872297": "2026-11-08T21:12:55.738574-03:00"
+    "44213872297": "2026-11-08T21:12:55.738574-03:00",
+    "SHOPEE-58265197313": "2026-11-08T21:41:04.937266-03:00",
+    "58265197313": "2026-11-08T21:41:04.937266-03:00",
+    "SHOPEE-58253326285": "2026-11-08T21:41:04.937266-03:00",
+    "58253326285": "2026-11-08T21:41:04.937266-03:00"
   },
   "titulos": {
-    "garrafa térmica watersy 500ml 48h frio perfeita para academia futebol e dia a di": "2026-11-05T21:17:53.280982-03:00",
-    "kit 100 forma de airfryer descartavel antiaderente de papel cozinha quadrado fri": "2026-11-05T21:17:53.280982-03:00",
-    "cafeteira elétrica 15 xícaras 650w com filtro permanente removível 110v": "2026-11-05T21:17:53.280982-03:00",
-    "toalha de mesa decoração natal 6 e 4 lugares premium 3d brilho": "2026-11-05T21:17:53.280982-03:00",
-    "porta panetone cerâmica esmaltada premium branco suporte para panetone e chocoto": "2026-11-05T21:17:53.280982-03:00",
-    "kit presente feminino personalizado com nome copo térmico 360 porta joias m na c": "2026-11-05T21:17:53.280982-03:00",
-    "kit 12 24 36 forminhas silicone cupcake empadinha air fryer": "2026-11-05T21:17:53.280982-03:00",
-    "caminho de mesa natalino decoração de jantar e ceia de natal": "2026-11-05T21:17:53.280982-03:00",
-    "porta panetone decorado palavras com tampa rosca e alça": "2026-11-05T21:17:53.280982-03:00",
     "toalha de natal 4 e 6 lugares": "2026-11-05T22:03:45.427054-03:00",
     "porta panetone embalagem de tecido 6 opções de estampas de natal": "2026-11-05T22:03:45.427054-03:00",
     "relógio de pulso feminino masculino minimalista analógico resistente ideal para ": "2026-11-05T22:03:45.427054-03:00",
@@ -399,7 +385,9 @@
     "rádio caixa de som bluetooth recarregável lanterna retro portátil fm am usb sd p": "2026-11-08T20:10:13.791383-03:00",
     "caneca magnética com mistura automática 380ml": "2026-11-08T20:10:13.791383-03:00",
     "2026 nova série 8 relógio t800 ultra smart watch esportivo sem fio prova d água ": "2026-11-08T21:12:55.738574-03:00",
-    "smartwatch gps bettdow com aplicativo de ia integrado 100 modos esportivos resis": "2026-11-08T21:12:55.738574-03:00"
+    "smartwatch gps bettdow com aplicativo de ia integrado 100 modos esportivos resis": "2026-11-08T21:12:55.738574-03:00",
+    "kit raquete frescobol bateu colou peteca tênis c bolinha bate gruda binquedo men": "2026-11-08T21:41:04.937266-03:00",
+    "carregador lightning turbo para 11 12 13 14 pro x xr 20w cabo tipo c lightning": "2026-11-08T21:41:04.937266-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -721,6 +709,14 @@
     "SHOPEE-44213872297": {
       "preco": 315.0,
       "ts": "2026-11-08T21:12:55.738574-03:00"
+    },
+    "SHOPEE-58265197313": {
+      "preco": 24.99,
+      "ts": "2026-11-08T21:41:04.937266-03:00"
+    },
+    "SHOPEE-58253326285": {
+      "preco": 39.9,
+      "ts": "2026-11-08T21:41:04.937266-03:00"
     }
   },
   "alertas": {}
