@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-09T08:11:36.421253-03:00",
+  "atualizado": "2026-11-09T09:11:32.747371-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-21897981294",
+      "titulo": "Attracione Men (Perfume Masculino com Feromônios Ativados)",
+      "preco": 57.13,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 80,
+      "vendas": 3574,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7repr-m2v3wdwedwcb1f",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "perfume",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/30pQT14FHY",
+      "comissao": "0.03",
+      "loja": "Attracione Men & Attracione",
+      "postado_em": "2026-11-09T09:11:32.747371-03:00"
+    },
+    {
+      "id": "SHOPEE-58255641529",
+      "titulo": "Fone Pro Sem Fio Som HiFi 8D Pop-Up Automático Toque Inteligente Bateria 5–7h Bluetooth Universal",
+      "preco": 17.99,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 74,
+      "vendas": 7364,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8261z-ml25b72c1ds21d",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "fone bluetooth",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/2Vt8ffMU5S",
+      "comissao": "0.03",
+      "loja": "Achados&Pedidos",
+      "postado_em": "2026-11-09T09:11:32.747371-03:00"
+    },
     {
       "id": "SHOPEE-54557028525",
       "titulo": "Chaleira Elétrica Inox 1,8L 1000W ou 1200W Desligamento Automático - Bule Jarra Cafeteira Elétrica Aquece Água Rápido",
@@ -504,42 +540,6 @@
       "comissao": "0.11",
       "loja": "DOMUS STORE_",
       "postado_em": "2026-11-08T10:16:02.979418-03:00"
-    },
-    {
-      "id": "SHOPEE-22494941454",
-      "titulo": "Kit Facial Kokeshi Completo 3 Passos Hidratação e Colágeno",
-      "preco": 56.91,
-      "preco_anterior": 64.9,
-      "a_partir_de": false,
-      "desconto": 39,
-      "vendas": 10351,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lx-mqbygibr40sg7a",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "kit skincare",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/1qdRU3XASh",
-      "comissao": "0.21",
-      "loja": "KOKESHI OFICIAL",
-      "postado_em": "2026-11-08T09:12:35.587022-03:00"
-    },
-    {
-      "id": "SHOPEE-52607420187",
-      "titulo": "Escova de Limpeza Multifuncional Flexível Para Garrafas Mamadeiras Liquidificador De Silicone",
-      "preco": 9.97,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 62,
-      "vendas": 2766,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lu-mpnppwqseqypd8",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "liquidificador",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/2Vt8HHlkMa",
-      "comissao": "0.13",
-      "loja": "MF Baby e Home",
-      "postado_em": "2026-11-08T09:12:35.587022-03:00"
     }
   ]
 }

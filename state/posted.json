@@ -225,7 +225,11 @@
     "SHOPEE-54557028525": "2026-11-09T08:11:36.421253-03:00",
     "54557028525": "2026-11-09T08:11:36.421253-03:00",
     "SHOPEE-22299265128": "2026-11-09T08:11:36.421253-03:00",
-    "22299265128": "2026-11-09T08:11:36.421253-03:00"
+    "22299265128": "2026-11-09T08:11:36.421253-03:00",
+    "SHOPEE-21897981294": "2026-11-09T09:11:32.747371-03:00",
+    "21897981294": "2026-11-09T09:11:32.747371-03:00",
+    "SHOPEE-58255641529": "2026-11-09T09:11:32.747371-03:00",
+    "58255641529": "2026-11-09T09:11:32.747371-03:00"
   },
   "titulos": {
     "carregador iphone turbo tipo c 20w cabo lightining para iphone carga rápida": "2026-11-06T09:11:51.161704-03:00",
@@ -367,7 +371,9 @@
     "garrafa térmica watersy 500ml 48h frio perfeita para academia futebol e dia a di": "2026-11-08T22:12:16.269138-03:00",
     "perfume masculino 100ml fragrância elegante longa duração para uso diário": "2026-11-08T22:12:16.269138-03:00",
     "chaleira elétrica inox 1 8l 1000w ou 1200w desligamento automático bule jarra ca": "2026-11-09T08:11:36.421253-03:00",
-    "mochila executiva impermeável unissex reforçada com cabo de aço para notebook 15": "2026-11-09T08:11:36.421253-03:00"
+    "mochila executiva impermeável unissex reforçada com cabo de aço para notebook 15": "2026-11-09T08:11:36.421253-03:00",
+    "attracione men perfume masculino com feromônios ativados": "2026-11-09T09:11:32.747371-03:00",
+    "fone pro sem fio som hifi 8d pop up automático toque inteligente bateria 5 7h bl": "2026-11-09T09:11:32.747371-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -713,6 +719,14 @@
     "SHOPEE-22299265128": {
       "preco": 29.99,
       "ts": "2026-11-09T08:11:36.421253-03:00"
+    },
+    "SHOPEE-21897981294": {
+      "preco": 57.13,
+      "ts": "2026-11-09T09:11:32.747371-03:00"
+    },
+    "SHOPEE-58255641529": {
+      "preco": 17.99,
+      "ts": "2026-11-09T09:11:32.747371-03:00"
     }
   },
   "alertas": {}
