@@ -1,9 +1,5 @@
 {
   "ids": {
-    "21698279856": "2026-11-06T15:20:45.963077-03:00",
-    "23591522884": "2026-11-06T15:20:45.963077-03:00",
-    "58250724964": "2026-11-06T15:20:45.963077-03:00",
-    "24730631114": "2026-11-06T15:20:45.963077-03:00",
     "SHOPEE-22895058213": "2026-11-06T16:32:43.773730-03:00",
     "22895058213": "2026-11-06T16:32:43.773730-03:00",
     "SHOPEE-19697980846": "2026-11-06T16:32:43.773730-03:00",
@@ -193,13 +189,13 @@
     "SHOPEE-23218022612": "2026-11-09T15:19:19.613107-03:00",
     "23218022612": "2026-11-09T15:19:19.613107-03:00",
     "SHOPEE-23300932279": "2026-11-09T15:19:19.613107-03:00",
-    "23300932279": "2026-11-09T15:19:19.613107-03:00"
+    "23300932279": "2026-11-09T15:19:19.613107-03:00",
+    "SHOPEE-58213437798": "2026-11-09T16:08:37.062004-03:00",
+    "58213437798": "2026-11-09T16:08:37.062004-03:00",
+    "SHOPEE-23794330101": "2026-11-09T16:08:37.062004-03:00",
+    "23794330101": "2026-11-09T16:08:37.062004-03:00"
   },
   "titulos": {
-    "bolsa para lavar sapato tênis na máquina de lavar prático": "2026-11-06T15:20:45.963077-03:00",
-    "mini aspirador de pó portátil automotivo e casa potente recarregável marisa stor": "2026-11-06T15:20:45.963077-03:00",
-    "vestido infantil menina 2 ao 8 anos algodão premium festa natal cores toque maci": "2026-11-06T15:20:45.963077-03:00",
-    "novo smartwatch fones de ouvido 2 em 1 sem fio bluetooth tws fone chamada prova ": "2026-11-06T15:20:45.963077-03:00",
     "kit body splash feminino arabe 60ml shakan coroa amber sereia rubi ametysta pres": "2026-11-06T16:32:43.773730-03:00",
     "ventilador luminária led 6 pás lâmpada soquete bocal e27 teto 3 cores luz branco": "2026-11-06T16:32:43.773730-03:00",
     "mouse pad desk pad couro borda costurada gigante antiderrapante tapete mesa game": "2026-11-06T17:08:18.237808-03:00",
@@ -294,7 +290,9 @@
     "relógio masculino digital wr 100 qualidade entrega rápida": "2026-11-09T13:09:29.879739-03:00",
     "mochila bolsa reforçada notebook resistente trabalho faculdade coreana": "2026-11-09T14:11:34.525734-03:00",
     "mini liquidificador portátil shake 6 laminas cabo usb": "2026-11-09T15:19:19.613107-03:00",
-    "caixa de som bluetooth amplificada potente led rgb usb sd radio fm mp3 celular n": "2026-11-09T15:19:19.613107-03:00"
+    "caixa de som bluetooth amplificada potente led rgb usb sd radio fm mp3 celular n": "2026-11-09T15:19:19.613107-03:00",
+    "body splash inspirado em perfumes importados com essência concentrada e fragrânc": "2026-11-09T16:08:37.062004-03:00",
+    "porta ovos 4 andares rolante em plástico para geladeira organizador 20 a 30 ovos": "2026-11-09T16:08:37.062004-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -676,6 +674,14 @@
     "SHOPEE-23300932279": {
       "preco": 27.99,
       "ts": "2026-11-09T15:19:19.613107-03:00"
+    },
+    "SHOPEE-58213437798": {
+      "preco": 10.99,
+      "ts": "2026-11-09T16:08:37.062004-03:00"
+    },
+    "SHOPEE-23794330101": {
+      "preco": 13.48,
+      "ts": "2026-11-09T16:08:37.062004-03:00"
     }
   },
   "alertas": {}
