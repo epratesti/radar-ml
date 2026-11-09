@@ -187,7 +187,9 @@
     "SHOPEE-23694435102": "2026-11-09T17:08:19.497351-03:00",
     "23694435102": "2026-11-09T17:08:19.497351-03:00",
     "SHOPEE-26980788215": "2026-11-09T18:18:50.117667-03:00",
-    "26980788215": "2026-11-09T18:18:50.117667-03:00"
+    "26980788215": "2026-11-09T18:18:50.117667-03:00",
+    "SHOPEE-58256512525": "2026-11-09T18:22:16.892935-03:00",
+    "58256512525": "2026-11-09T18:22:16.892935-03:00"
   },
   "titulos": {
     "80 estilos moda broche dos desenhos animados bonito liga alfinetes badge pin moc": "2026-11-06T19:10:14.397657-03:00",
@@ -283,7 +285,8 @@
     "porta ovos 4 andares rolante em plástico para geladeira organizador 20 a 30 ovos": "2026-11-09T16:08:37.062004-03:00",
     "mouse pad desk pad couro borda costurada gigante antiderrapante tapete mesa game": "2026-11-09T17:08:19.497351-03:00",
     "chinelo rasteira feminina adulto e infantil com nó bico quadrado confortável e e": "2026-11-09T17:08:19.497351-03:00",
-    "romantic crown copo térmico inox portátil 1200ml 600ml 1 2l garrafa térmica inox": "2026-11-09T18:18:50.117667-03:00"
+    "romantic crown copo térmico inox portátil 1200ml 600ml 1 2l garrafa térmica inox": "2026-11-09T18:18:50.117667-03:00",
+    "mochila masculina preta reforçada impermeável grande capacidade para trabalho vi": "2026-11-09T18:22:16.892935-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -681,6 +684,10 @@
     "SHOPEE-26980788215": {
       "preco": 34.98,
       "ts": "2026-11-09T18:18:50.117667-03:00"
+    },
+    "SHOPEE-58256512525": {
+      "preco": 39.99,
+      "ts": "2026-11-09T18:22:16.892935-03:00"
     }
   },
   "alertas": {}

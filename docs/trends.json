@@ -1,6 +1,24 @@
 {
-  "atualizado": "2026-11-09T18:18:50.117667-03:00",
+  "atualizado": "2026-11-09T18:22:16.892935-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-58256512525",
+      "titulo": "Mochila Masculina Preta Reforçada Impermeável Grande Capacidade para Trabalho Viagem Escola e Uso Diário",
+      "preco": 39.99,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 56,
+      "vendas": 3534,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820ls-mljxwss4qfbb8d",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "mochila",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/80E6pShmv0",
+      "comissao": "0.03",
+      "loja": "RON CHANG",
+      "postado_em": "2026-11-09T18:22:16.892935-03:00"
+    },
     {
       "id": "SHOPEE-26980788215",
       "titulo": "ROMANTIC CROWN Copo Térmico Inox Portátil 1200ml/600ml/1.2L Garrafa Térmica Inoxidável com Tampa e Canudo",
@@ -521,24 +539,6 @@
       "link": "https://s.shopee.com.br/9pfi91X55v",
       "comissao": "0.13",
       "loja": "ES Official Shop",
-      "postado_em": "2026-11-08T16:07:51.618244-03:00"
-    },
-    {
-      "id": "SHOPEE-49912454334",
-      "titulo": "Maria 5D W M Curl UC/UD Cílios Fácil LU Ventilador Extensões De Atacado Volume Pré-Fabricado Estilo W Natural Macio",
-      "preco": 19.0,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 52,
-      "vendas": 8992,
-      "imagem": "https://cf.shopee.com.br/file/cn-11134207-820l4-mpj7tsq5r0gb60",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "ventilador",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/9KjSsMFuN8",
-      "comissao": "0.08",
-      "loja": "Maria sasha eyelashes",
       "postado_em": "2026-11-08T16:07:51.618244-03:00"
     }
   ]
