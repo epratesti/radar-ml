@@ -1,17 +1,5 @@
 {
   "ids": {
-    "27123077441": "2026-11-06T14:09:40.434515-03:00",
-    "58255498231": "2026-11-06T14:09:40.434515-03:00",
-    "58258956764": "2026-11-06T14:09:40.434515-03:00",
-    "23218022612": "2026-11-06T14:09:40.434515-03:00",
-    "58204541630": "2026-11-06T14:09:40.434515-03:00",
-    "24885328612": "2026-11-06T14:09:40.434515-03:00",
-    "20297618642": "2026-11-06T14:09:40.434515-03:00",
-    "21697974917": "2026-11-06T14:09:40.434515-03:00",
-    "22298254865": "2026-11-06T14:09:40.434515-03:00",
-    "48466069176": "2026-11-06T14:09:40.434515-03:00",
-    "58268289539": "2026-11-06T14:09:40.434515-03:00",
-    "20699892486": "2026-11-06T14:09:40.434515-03:00",
     "23299113492": "2026-11-06T14:26:58.171309-03:00",
     "23694435102": "2026-11-06T14:26:58.171309-03:00",
     "58211536223": "2026-11-06T14:26:58.171309-03:00",
@@ -219,21 +207,11 @@
     "SHOPEE-18499853587": "2026-11-09T13:09:29.879739-03:00",
     "18499853587": "2026-11-09T13:09:29.879739-03:00",
     "SHOPEE-23797686527": "2026-11-09T13:09:29.879739-03:00",
-    "23797686527": "2026-11-09T13:09:29.879739-03:00"
+    "23797686527": "2026-11-09T13:09:29.879739-03:00",
+    "SHOPEE-18350470458": "2026-11-09T14:11:34.525734-03:00",
+    "18350470458": "2026-11-09T14:11:34.525734-03:00"
   },
   "titulos": {
-    "fio de fada de 2m com luzes de fadas led para decoração de casa e festa de natal": "2026-11-06T14:09:40.434515-03:00",
-    "sandália macia feminina ideal para conforto diário leve": "2026-11-06T14:09:40.434515-03:00",
-    "carregador rápido de 120w com 6a usb c cabo 1m para mi turbo charge turbo power ": "2026-11-06T14:09:40.434515-03:00",
-    "mini liquidificador portátil shake 6 laminas cabo usb": "2026-11-06T14:09:40.434515-03:00",
-    "relogio smartwatch feminino masculino series 10 para android ios faz recebe cham": "2026-11-06T14:09:40.434515-03:00",
-    "meias de natal alfabeto de tricotar floco de neve cartas vermelhas árvore de dec": "2026-11-06T14:09:40.434515-03:00",
-    "smartwatch d20 relógio colocar foto com tela hd y68 bluetooth com lembrete chama": "2026-11-06T14:09:40.434515-03:00",
-    "tênis masculino presente natal ano novo super confortável envio imediato": "2026-11-06T14:09:40.434515-03:00",
-    "vestido infantil menina vermelho pompom modelo luxo festas natal": "2026-11-06T14:09:40.434515-03:00",
-    "novas crianças 2g relógio inteligente cartão sim chamadas câmera prova dwaterpro": "2026-11-06T14:09:40.434515-03:00",
-    "enfeite de porta guirlanda árvore de natal ou redonda verde e nevada decoração n": "2026-11-06T14:09:40.434515-03:00",
-    "sapateira 4 5 andares organizador de sapatos tênis 8 10 pares desmontável multiu": "2026-11-06T14:09:40.434515-03:00",
     "cascata de luzes de natal prova d água 10m 400 leds 8 funções 220v ou 110v com c": "2026-11-06T14:26:58.171309-03:00",
     "sandália rasteira feminina adulto e infantil com nó bico quadrado confortável e ": "2026-11-06T14:26:58.171309-03:00",
     "watersy garrafa térmica 17oz 510ml a vácuo inox 18 8 antivazamento portátil para": "2026-11-06T14:26:58.171309-03:00",
@@ -349,7 +327,8 @@
     "2026 novo watch s20 pro max relógio 10 smart watch homens bt chamada sempre em e": "2026-11-09T10:15:42.379010-03:00",
     "caixa de som c 2 microfones bluetooth 5 0 karaokê luzes led entretenimento em ca": "2026-11-09T10:15:42.379010-03:00",
     "carregador sem fio 5000 10000mah iphone": "2026-11-09T13:09:29.879739-03:00",
-    "relógio masculino digital wr 100 qualidade entrega rápida": "2026-11-09T13:09:29.879739-03:00"
+    "relógio masculino digital wr 100 qualidade entrega rápida": "2026-11-09T13:09:29.879739-03:00",
+    "mochila bolsa reforçada notebook resistente trabalho faculdade coreana": "2026-11-09T14:11:34.525734-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -719,6 +698,10 @@
     "SHOPEE-23797686527": {
       "preco": 14.49,
       "ts": "2026-11-09T13:09:29.879739-03:00"
+    },
+    "SHOPEE-18350470458": {
+      "preco": 29.9,
+      "ts": "2026-11-09T14:11:34.525734-03:00"
     }
   },
   "alertas": {}
