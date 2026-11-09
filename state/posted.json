@@ -1,9 +1,5 @@
 {
   "ids": {
-    "SHOPEE-22094238842": "2026-11-06T18:08:42.992044-03:00",
-    "22094238842": "2026-11-06T18:08:42.992044-03:00",
-    "SHOPEE-58255159172": "2026-11-06T18:08:42.992044-03:00",
-    "58255159172": "2026-11-06T18:08:42.992044-03:00",
     "SHOPEE-25356800051": "2026-11-06T19:10:14.397657-03:00",
     "25356800051": "2026-11-06T19:10:14.397657-03:00",
     "SHOPEE-23898692172": "2026-11-06T19:10:14.397657-03:00",
@@ -189,11 +185,11 @@
     "SHOPEE-23198988208": "2026-11-09T17:08:19.497351-03:00",
     "23198988208": "2026-11-09T17:08:19.497351-03:00",
     "SHOPEE-23694435102": "2026-11-09T17:08:19.497351-03:00",
-    "23694435102": "2026-11-09T17:08:19.497351-03:00"
+    "23694435102": "2026-11-09T17:08:19.497351-03:00",
+    "SHOPEE-26980788215": "2026-11-09T18:18:50.117667-03:00",
+    "26980788215": "2026-11-09T18:18:50.117667-03:00"
   },
   "titulos": {
-    "body splash feminino arabe ayra 100ml primacial perfume floral": "2026-11-06T18:08:42.992044-03:00",
-    "fones de ouvido sem fio bluetooth compactos xiaomi redmi airdots com estojo reca": "2026-11-06T18:08:42.992044-03:00",
     "80 estilos moda broche dos desenhos animados bonito liga alfinetes badge pin moc": "2026-11-06T19:10:14.397657-03:00",
     "ventilador de teto com luz silencioso controle remoto economica instalação fácil": "2026-11-06T19:10:14.397657-03:00",
     "mini refrigerador de ar ventilador umidificador dupla giratório rgb camada venti": "2026-11-06T20:10:15.229966-03:00",
@@ -286,7 +282,8 @@
     "body splash inspirado em perfumes importados com essência concentrada e fragrânc": "2026-11-09T16:08:37.062004-03:00",
     "porta ovos 4 andares rolante em plástico para geladeira organizador 20 a 30 ovos": "2026-11-09T16:08:37.062004-03:00",
     "mouse pad desk pad couro borda costurada gigante antiderrapante tapete mesa game": "2026-11-09T17:08:19.497351-03:00",
-    "chinelo rasteira feminina adulto e infantil com nó bico quadrado confortável e e": "2026-11-09T17:08:19.497351-03:00"
+    "chinelo rasteira feminina adulto e infantil com nó bico quadrado confortável e e": "2026-11-09T17:08:19.497351-03:00",
+    "romantic crown copo térmico inox portátil 1200ml 600ml 1 2l garrafa térmica inox": "2026-11-09T18:18:50.117667-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -680,6 +677,10 @@
     "SHOPEE-23694435102": {
       "preco": 29.9,
       "ts": "2026-11-09T17:08:19.497351-03:00"
+    },
+    "SHOPEE-26980788215": {
+      "preco": 34.98,
+      "ts": "2026-11-09T18:18:50.117667-03:00"
     }
   },
   "alertas": {}
