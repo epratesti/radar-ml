@@ -1,13 +1,5 @@
 {
   "ids": {
-    "SHOPEE-22895058213": "2026-11-06T16:32:43.773730-03:00",
-    "22895058213": "2026-11-06T16:32:43.773730-03:00",
-    "SHOPEE-19697980846": "2026-11-06T16:32:43.773730-03:00",
-    "19697980846": "2026-11-06T16:32:43.773730-03:00",
-    "SHOPEE-23198988208": "2026-11-06T17:08:18.237808-03:00",
-    "23198988208": "2026-11-06T17:08:18.237808-03:00",
-    "SHOPEE-58204543063": "2026-11-06T17:08:18.237808-03:00",
-    "58204543063": "2026-11-06T17:08:18.237808-03:00",
     "SHOPEE-22094238842": "2026-11-06T18:08:42.992044-03:00",
     "22094238842": "2026-11-06T18:08:42.992044-03:00",
     "SHOPEE-58255159172": "2026-11-06T18:08:42.992044-03:00",
@@ -193,13 +185,13 @@
     "SHOPEE-58213437798": "2026-11-09T16:08:37.062004-03:00",
     "58213437798": "2026-11-09T16:08:37.062004-03:00",
     "SHOPEE-23794330101": "2026-11-09T16:08:37.062004-03:00",
-    "23794330101": "2026-11-09T16:08:37.062004-03:00"
+    "23794330101": "2026-11-09T16:08:37.062004-03:00",
+    "SHOPEE-23198988208": "2026-11-09T17:08:19.497351-03:00",
+    "23198988208": "2026-11-09T17:08:19.497351-03:00",
+    "SHOPEE-23694435102": "2026-11-09T17:08:19.497351-03:00",
+    "23694435102": "2026-11-09T17:08:19.497351-03:00"
   },
   "titulos": {
-    "kit body splash feminino arabe 60ml shakan coroa amber sereia rubi ametysta pres": "2026-11-06T16:32:43.773730-03:00",
-    "ventilador luminária led 6 pás lâmpada soquete bocal e27 teto 3 cores luz branco": "2026-11-06T16:32:43.773730-03:00",
-    "mouse pad desk pad couro borda costurada gigante antiderrapante tapete mesa game": "2026-11-06T17:08:18.237808-03:00",
-    "combo 1 2 e 3 pares chinelo feminino casual leve antiderrapante confortável": "2026-11-06T17:08:18.237808-03:00",
     "body splash feminino arabe ayra 100ml primacial perfume floral": "2026-11-06T18:08:42.992044-03:00",
     "fones de ouvido sem fio bluetooth compactos xiaomi redmi airdots com estojo reca": "2026-11-06T18:08:42.992044-03:00",
     "80 estilos moda broche dos desenhos animados bonito liga alfinetes badge pin moc": "2026-11-06T19:10:14.397657-03:00",
@@ -292,7 +284,9 @@
     "mini liquidificador portátil shake 6 laminas cabo usb": "2026-11-09T15:19:19.613107-03:00",
     "caixa de som bluetooth amplificada potente led rgb usb sd radio fm mp3 celular n": "2026-11-09T15:19:19.613107-03:00",
     "body splash inspirado em perfumes importados com essência concentrada e fragrânc": "2026-11-09T16:08:37.062004-03:00",
-    "porta ovos 4 andares rolante em plástico para geladeira organizador 20 a 30 ovos": "2026-11-09T16:08:37.062004-03:00"
+    "porta ovos 4 andares rolante em plástico para geladeira organizador 20 a 30 ovos": "2026-11-09T16:08:37.062004-03:00",
+    "mouse pad desk pad couro borda costurada gigante antiderrapante tapete mesa game": "2026-11-09T17:08:19.497351-03:00",
+    "chinelo rasteira feminina adulto e infantil com nó bico quadrado confortável e e": "2026-11-09T17:08:19.497351-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -305,7 +299,7 @@
     },
     "SHOPEE-23198988208": {
       "preco": 15.89,
-      "ts": "2026-11-06T17:08:18.237808-03:00"
+      "ts": "2026-11-09T17:08:19.497351-03:00"
     },
     "SHOPEE-58204543063": {
       "preco": 15.99,
@@ -682,6 +676,10 @@
     "SHOPEE-23794330101": {
       "preco": 13.48,
       "ts": "2026-11-09T16:08:37.062004-03:00"
+    },
+    "SHOPEE-23694435102": {
+      "preco": 29.9,
+      "ts": "2026-11-09T17:08:19.497351-03:00"
     }
   },
   "alertas": {}
