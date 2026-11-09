@@ -1,11 +1,5 @@
 {
   "ids": {
-    "58207663151": "2026-11-06T07:08:47.015643-03:00",
-    "58262742976": "2026-11-06T07:08:47.015643-03:00",
-    "58217308989": "2026-11-06T07:08:47.015643-03:00",
-    "23393279185": "2026-11-06T07:08:47.015643-03:00",
-    "22399053626": "2026-11-06T08:10:15.462940-03:00",
-    "58269003607": "2026-11-06T08:10:15.462940-03:00",
     "22397182247": "2026-11-06T09:11:51.161704-03:00",
     "58259192328": "2026-11-06T09:11:51.161704-03:00",
     "22198737829": "2026-11-06T09:11:51.161704-03:00",
@@ -227,15 +221,13 @@
     "SHOPEE-22099191110": "2026-11-08T22:12:16.269138-03:00",
     "22099191110": "2026-11-08T22:12:16.269138-03:00",
     "SHOPEE-54663825990": "2026-11-08T22:12:16.269138-03:00",
-    "54663825990": "2026-11-08T22:12:16.269138-03:00"
+    "54663825990": "2026-11-08T22:12:16.269138-03:00",
+    "SHOPEE-54557028525": "2026-11-09T08:11:36.421253-03:00",
+    "54557028525": "2026-11-09T08:11:36.421253-03:00",
+    "SHOPEE-22299265128": "2026-11-09T08:11:36.421253-03:00",
+    "22299265128": "2026-11-09T08:11:36.421253-03:00"
   },
   "titulos": {
-    "kit 50 a 300 formas descartável para airfryer antiaderente não suja cozinha frit": "2026-11-06T07:08:47.015643-03:00",
-    "smartwatch 7 em 1 kit presente 7 pulseiras 38 45 49mm tela full touch relógio in": "2026-11-06T07:08:47.015643-03:00",
-    "porta panetone em cerâmica premium": "2026-11-06T07:08:47.015643-03:00",
-    "panetoneira porta panetone bambu e cúpula de vidro": "2026-11-06T07:08:47.015643-03:00",
-    "porta panetone em cerâmica premium leia a descrição": "2026-11-06T08:10:15.462940-03:00",
-    "redoma de vidro com base para panetone pequeno boleira porta doces mesa posta e ": "2026-11-06T08:10:15.462940-03:00",
     "carregador iphone turbo tipo c 20w cabo lightining para iphone carga rápida": "2026-11-06T09:11:51.161704-03:00",
     "natal meias 3d infantis personagens divertidos conforto macio sortidos criança f": "2026-11-06T09:11:51.161704-03:00",
     "pantufas de inverno adulto masculina chinelo quente para casa confortáveis prese": "2026-11-06T09:11:51.161704-03:00",
@@ -373,7 +365,9 @@
     "kit raquete frescobol bateu colou peteca tênis c bolinha bate gruda binquedo men": "2026-11-08T21:41:04.937266-03:00",
     "carregador lightning turbo para 11 12 13 14 pro x xr 20w cabo tipo c lightning": "2026-11-08T21:41:04.937266-03:00",
     "garrafa térmica watersy 500ml 48h frio perfeita para academia futebol e dia a di": "2026-11-08T22:12:16.269138-03:00",
-    "perfume masculino 100ml fragrância elegante longa duração para uso diário": "2026-11-08T22:12:16.269138-03:00"
+    "perfume masculino 100ml fragrância elegante longa duração para uso diário": "2026-11-08T22:12:16.269138-03:00",
+    "chaleira elétrica inox 1 8l 1000w ou 1200w desligamento automático bule jarra ca": "2026-11-09T08:11:36.421253-03:00",
+    "mochila executiva impermeável unissex reforçada com cabo de aço para notebook 15": "2026-11-09T08:11:36.421253-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -711,6 +705,14 @@
     "SHOPEE-54663825990": {
       "preco": 27.99,
       "ts": "2026-11-08T22:12:16.269138-03:00"
+    },
+    "SHOPEE-54557028525": {
+      "preco": 43.9,
+      "ts": "2026-11-09T08:11:36.421253-03:00"
+    },
+    "SHOPEE-22299265128": {
+      "preco": 29.99,
+      "ts": "2026-11-09T08:11:36.421253-03:00"
     }
   },
   "alertas": {}

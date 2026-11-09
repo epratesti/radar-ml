@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-08T22:12:16.269138-03:00",
+  "atualizado": "2026-11-09T08:11:36.421253-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-54557028525",
+      "titulo": "Chaleira Elétrica Inox 1,8L 1000W ou 1200W Desligamento Automático - Bule Jarra Cafeteira Elétrica Aquece Água Rápido",
+      "preco": 43.9,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 44,
+      "vendas": 3684,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lc-mreq8encuolh62",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "cafeteira",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/8pnBgRgrvs",
+      "comissao": "0.09",
+      "loja": "Pratitudo Essencial",
+      "postado_em": "2026-11-09T08:11:36.421253-03:00"
+    },
+    {
+      "id": "SHOPEE-22299265128",
+      "titulo": "Mochila Executiva Impermeável Unissex Reforçada com Cabo de Aço para Notebook 15.6'' Grande Capacidade Viagem Trabalho",
+      "preco": 29.99,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 70,
+      "vendas": 2909,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-82589-mtnhizjsx3ifa8",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "mochila",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/3qOVw5i0ip",
+      "comissao": "0.03",
+      "loja": "TUCAN ",
+      "postado_em": "2026-11-09T08:11:36.421253-03:00"
+    },
     {
       "id": "SHOPEE-22099191110",
       "titulo": "Garrafa Térmica WATERSY 500ml - 48h Frio! Perfeita para Academia, Futebol e Dia a Dia⚽🏋️",
@@ -504,42 +540,6 @@
       "comissao": "0.13",
       "loja": "MF Baby e Home",
       "postado_em": "2026-11-08T09:12:35.587022-03:00"
-    },
-    {
-      "id": "SHOPEE-58215631607",
-      "titulo": "Kit Body Splash Masculino 2x200ml NeoNoble Inspirado em 212 VIP Black e Sauvage",
-      "preco": 21.5,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 59,
-      "vendas": 4407,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8259q-mrirzbbo3g1x0f",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "perfume",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/9V2sXtvpHS",
-      "comissao": "0.18",
-      "loja": "PH imports ",
-      "postado_em": "2026-11-08T08:10:36.653242-03:00"
-    },
-    {
-      "id": "SHOPEE-29842873054",
-      "titulo": "FTW Whey Protein Concentrado 1kg Refil - 15g Proteína Por Dose",
-      "preco": 78.9,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 60,
-      "vendas": 1375,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lc-mqdi4h8b6wao80",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "whey protein",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/2BGHoQawZh",
-      "comissao": "0.19",
-      "loja": "Loja Oficial FTW",
-      "postado_em": "2026-11-08T08:10:36.653242-03:00"
     }
   ]
 }
