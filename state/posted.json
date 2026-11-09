@@ -1,11 +1,5 @@
 {
   "ids": {
-    "22397182247": "2026-11-06T09:11:51.161704-03:00",
-    "58259192328": "2026-11-06T09:11:51.161704-03:00",
-    "22198737829": "2026-11-06T09:11:51.161704-03:00",
-    "58269092171": "2026-11-06T09:11:51.161704-03:00",
-    "58255539749": "2026-11-06T09:33:54.333422-03:00",
-    "23393724872": "2026-11-06T09:33:54.333422-03:00",
     "44132993977": "2026-11-06T11:33:37.918728-03:00",
     "21869498082": "2026-11-06T11:33:37.918728-03:00",
     "18499853587": "2026-11-06T11:33:37.918728-03:00",
@@ -229,15 +223,13 @@
     "SHOPEE-21897981294": "2026-11-09T09:11:32.747371-03:00",
     "21897981294": "2026-11-09T09:11:32.747371-03:00",
     "SHOPEE-58255641529": "2026-11-09T09:11:32.747371-03:00",
-    "58255641529": "2026-11-09T09:11:32.747371-03:00"
+    "58255641529": "2026-11-09T09:11:32.747371-03:00",
+    "SHOPEE-18499604408": "2026-11-09T10:15:42.379010-03:00",
+    "18499604408": "2026-11-09T10:15:42.379010-03:00",
+    "SHOPEE-58254952015": "2026-11-09T10:15:42.379010-03:00",
+    "58254952015": "2026-11-09T10:15:42.379010-03:00"
   },
   "titulos": {
-    "carregador iphone turbo tipo c 20w cabo lightining para iphone carga rápida": "2026-11-06T09:11:51.161704-03:00",
-    "natal meias 3d infantis personagens divertidos conforto macio sortidos criança f": "2026-11-06T09:11:51.161704-03:00",
-    "pantufas de inverno adulto masculina chinelo quente para casa confortáveis prese": "2026-11-06T09:11:51.161704-03:00",
-    "porta panetone natalino exclusivo duna decoração de natal 3d": "2026-11-06T09:11:51.161704-03:00",
-    "tomi mito bolsa feminina media bolsas femininas de ombro presente de natal femin": "2026-11-06T09:33:54.333422-03:00",
-    "spa dos pés relaxante presente feminino amigo secreto natal esfoliante pedra pom": "2026-11-06T09:33:54.333422-03:00",
     "conjunto marrant feminino conjunto alfaiataria marrant feminino calça e blusa ro": "2026-11-06T11:33:37.918728-03:00",
     "pulseira oceano silicone para smart watch e iwo 38mm 40mm 41mm 42mm 44mm 45mm 49": "2026-11-06T11:33:37.918728-03:00",
     "carregador sem fio 5000 10000mah iphone": "2026-11-06T11:33:37.918728-03:00",
@@ -373,7 +365,9 @@
     "chaleira elétrica inox 1 8l 1000w ou 1200w desligamento automático bule jarra ca": "2026-11-09T08:11:36.421253-03:00",
     "mochila executiva impermeável unissex reforçada com cabo de aço para notebook 15": "2026-11-09T08:11:36.421253-03:00",
     "attracione men perfume masculino com feromônios ativados": "2026-11-09T09:11:32.747371-03:00",
-    "fone pro sem fio som hifi 8d pop up automático toque inteligente bateria 5 7h bl": "2026-11-09T09:11:32.747371-03:00"
+    "fone pro sem fio som hifi 8d pop up automático toque inteligente bateria 5 7h bl": "2026-11-09T09:11:32.747371-03:00",
+    "2026 novo watch s20 pro max relógio 10 smart watch homens bt chamada sempre em e": "2026-11-09T10:15:42.379010-03:00",
+    "caixa de som c 2 microfones bluetooth 5 0 karaokê luzes led entretenimento em ca": "2026-11-09T10:15:42.379010-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -727,6 +721,14 @@
     "SHOPEE-58255641529": {
       "preco": 17.99,
       "ts": "2026-11-09T09:11:32.747371-03:00"
+    },
+    "SHOPEE-18499604408": {
+      "preco": 39.99,
+      "ts": "2026-11-09T10:15:42.379010-03:00"
+    },
+    "SHOPEE-58254952015": {
+      "preco": 28.99,
+      "ts": "2026-11-09T10:15:42.379010-03:00"
     }
   },
   "alertas": {}
