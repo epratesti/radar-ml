@@ -1,11 +1,5 @@
 {
   "ids": {
-    "22997983243": "2026-11-05T22:03:45.427054-03:00",
-    "19199894917": "2026-11-05T22:03:45.427054-03:00",
-    "23493010548": "2026-11-05T22:03:45.427054-03:00",
-    "58266762210": "2026-11-05T22:03:45.427054-03:00",
-    "42083163426": "2026-11-05T22:03:45.427054-03:00",
-    "58209978220": "2026-11-05T22:03:45.427054-03:00",
     "44667747739": "2026-11-05T22:13:35.853339-03:00",
     "44268531118": "2026-11-05T22:13:35.853339-03:00",
     "20697970501": "2026-11-05T22:13:35.853339-03:00",
@@ -233,15 +227,13 @@
     "SHOPEE-58265197313": "2026-11-08T21:41:04.937266-03:00",
     "58265197313": "2026-11-08T21:41:04.937266-03:00",
     "SHOPEE-58253326285": "2026-11-08T21:41:04.937266-03:00",
-    "58253326285": "2026-11-08T21:41:04.937266-03:00"
+    "58253326285": "2026-11-08T21:41:04.937266-03:00",
+    "SHOPEE-22099191110": "2026-11-08T22:12:16.269138-03:00",
+    "22099191110": "2026-11-08T22:12:16.269138-03:00",
+    "SHOPEE-54663825990": "2026-11-08T22:12:16.269138-03:00",
+    "54663825990": "2026-11-08T22:12:16.269138-03:00"
   },
   "titulos": {
-    "toalha de natal 4 e 6 lugares": "2026-11-05T22:03:45.427054-03:00",
-    "porta panetone embalagem de tecido 6 opções de estampas de natal": "2026-11-05T22:03:45.427054-03:00",
-    "relógio de pulso feminino masculino minimalista analógico resistente ideal para ": "2026-11-05T22:03:45.427054-03:00",
-    "toalha de mesa cetim 4 6 e 8 lugares diversas cores festa aniversário casamento ": "2026-11-05T22:03:45.427054-03:00",
-    "porta panetone chocotone cerâmica branco mesa posta natal com abertura para serv": "2026-11-05T22:03:45.427054-03:00",
-    "papel de presente resma 50x60 natal feminino masculino unissex 40 folhas": "2026-11-05T22:03:45.427054-03:00",
     "strobo pisca pisca cordão natal 500 leds 50m prova d água bivolt 100 flash decor": "2026-11-05T22:13:35.853339-03:00",
     "adulto crianças gwen traje stacy cosplay bodysuit macacão feminino meninas hallo": "2026-11-05T22:13:35.853339-03:00",
     "panetoneira porta panetone flat cúpula vidro e base bambu": "2026-11-05T22:13:35.853339-03:00",
@@ -387,7 +379,9 @@
     "2026 nova série 8 relógio t800 ultra smart watch esportivo sem fio prova d água ": "2026-11-08T21:12:55.738574-03:00",
     "smartwatch gps bettdow com aplicativo de ia integrado 100 modos esportivos resis": "2026-11-08T21:12:55.738574-03:00",
     "kit raquete frescobol bateu colou peteca tênis c bolinha bate gruda binquedo men": "2026-11-08T21:41:04.937266-03:00",
-    "carregador lightning turbo para 11 12 13 14 pro x xr 20w cabo tipo c lightning": "2026-11-08T21:41:04.937266-03:00"
+    "carregador lightning turbo para 11 12 13 14 pro x xr 20w cabo tipo c lightning": "2026-11-08T21:41:04.937266-03:00",
+    "garrafa térmica watersy 500ml 48h frio perfeita para academia futebol e dia a di": "2026-11-08T22:12:16.269138-03:00",
+    "perfume masculino 100ml fragrância elegante longa duração para uso diário": "2026-11-08T22:12:16.269138-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -717,6 +711,14 @@
     "SHOPEE-58253326285": {
       "preco": 39.9,
       "ts": "2026-11-08T21:41:04.937266-03:00"
+    },
+    "SHOPEE-22099191110": {
+      "preco": 27.98,
+      "ts": "2026-11-08T22:12:16.269138-03:00"
+    },
+    "SHOPEE-54663825990": {
+      "preco": 27.99,
+      "ts": "2026-11-08T22:12:16.269138-03:00"
     }
   },
   "alertas": {}
