@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-09T10:15:42.379010-03:00",
+  "atualizado": "2026-11-09T13:09:29.879739-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-18499853587",
+      "titulo": "Carregador Sem Fio 5000/10000mAh iPhone",
+      "preco": 28.85,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 50,
+      "vendas": 12221,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-mavkx3k4v9n308",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "power bank",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/9zz9HPyT5B",
+      "comissao": "0.14",
+      "loja": "JX VERDE",
+      "postado_em": "2026-11-09T13:09:29.879739-03:00"
+    },
+    {
+      "id": "SHOPEE-23797686527",
+      "titulo": "Relógio Masculino digital wr | 100 % qualidade | entrega rápida",
+      "preco": 14.49,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 86,
+      "vendas": 6677,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-m1zzq6l901gfa2",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "relogio",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/AAIaCqBZiB",
+      "comissao": "0.03",
+      "loja": "RN VARIEDADES",
+      "postado_em": "2026-11-09T13:09:29.879739-03:00"
+    },
     {
       "id": "SHOPEE-18499604408",
       "titulo": "2026 Novo Watch S20 PRO Max Relógio 10 Smart Watch Homens BT Chamada Sempre Em Exibição Temperatura",
@@ -504,42 +540,6 @@
       "comissao": "0.07",
       "loja": "TOP&CASA",
       "postado_em": "2026-11-08T12:11:28.039992-03:00"
-    },
-    {
-      "id": "SHOPEE-21997150349",
-      "titulo": "Kit 6 Forma de Silicone para Fritadeira Air Fryer com Alça Antiaderente Cozinha",
-      "preco": 11.99,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 83,
-      "vendas": 5852,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztc-mk35l9kuakg158",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "air fryer",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/1BnIhqSdy",
-      "comissao": "0.03",
-      "loja": "MVO COMÉRCIO DE VARIEDADES",
-      "postado_em": "2026-11-08T11:14:27.928573-03:00"
-    },
-    {
-      "id": "SHOPEE-22098878065",
-      "titulo": "Chinelo Bandeirinha Original Sandalia De Dedo Unissex Verão. Presente para o Dia dos Pais",
-      "preco": 19.9,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 20,
-      "vendas": 11762,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-824hw-me1mqqajx1c73f",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "chinelo",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/8AXV1i47H0",
-      "comissao": "0.14",
-      "loja": "Ferrari_Shopping",
-      "postado_em": "2026-11-08T11:14:27.928573-03:00"
     }
   ]
 }

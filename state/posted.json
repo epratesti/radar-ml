@@ -215,7 +215,11 @@
     "SHOPEE-18499604408": "2026-11-09T10:15:42.379010-03:00",
     "18499604408": "2026-11-09T10:15:42.379010-03:00",
     "SHOPEE-58254952015": "2026-11-09T10:15:42.379010-03:00",
-    "58254952015": "2026-11-09T10:15:42.379010-03:00"
+    "58254952015": "2026-11-09T10:15:42.379010-03:00",
+    "SHOPEE-18499853587": "2026-11-09T13:09:29.879739-03:00",
+    "18499853587": "2026-11-09T13:09:29.879739-03:00",
+    "SHOPEE-23797686527": "2026-11-09T13:09:29.879739-03:00",
+    "23797686527": "2026-11-09T13:09:29.879739-03:00"
   },
   "titulos": {
     "fio de fada de 2m com luzes de fadas led para decoração de casa e festa de natal": "2026-11-06T14:09:40.434515-03:00",
@@ -343,7 +347,9 @@
     "attracione men perfume masculino com feromônios ativados": "2026-11-09T09:11:32.747371-03:00",
     "fone pro sem fio som hifi 8d pop up automático toque inteligente bateria 5 7h bl": "2026-11-09T09:11:32.747371-03:00",
     "2026 novo watch s20 pro max relógio 10 smart watch homens bt chamada sempre em e": "2026-11-09T10:15:42.379010-03:00",
-    "caixa de som c 2 microfones bluetooth 5 0 karaokê luzes led entretenimento em ca": "2026-11-09T10:15:42.379010-03:00"
+    "caixa de som c 2 microfones bluetooth 5 0 karaokê luzes led entretenimento em ca": "2026-11-09T10:15:42.379010-03:00",
+    "carregador sem fio 5000 10000mah iphone": "2026-11-09T13:09:29.879739-03:00",
+    "relógio masculino digital wr 100 qualidade entrega rápida": "2026-11-09T13:09:29.879739-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -705,6 +711,14 @@
     "SHOPEE-58254952015": {
       "preco": 28.99,
       "ts": "2026-11-09T10:15:42.379010-03:00"
+    },
+    "SHOPEE-18499853587": {
+      "preco": 28.85,
+      "ts": "2026-11-09T13:09:29.879739-03:00"
+    },
+    "SHOPEE-23797686527": {
+      "preco": 14.49,
+      "ts": "2026-11-09T13:09:29.879739-03:00"
     }
   },
   "alertas": {}
