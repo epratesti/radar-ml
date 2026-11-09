@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-09T14:11:34.525734-03:00",
+  "atualizado": "2026-11-09T15:19:19.613107-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-23218022612",
+      "titulo": "Mini Liquidificador Portátil Shake 6 Laminas + Cabo USB",
+      "preco": 24.48,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 76,
+      "vendas": 2515,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7qukw-lihnnsnqd8dscc",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "liquidificador",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/7KyPcz50HE",
+      "comissao": "0.09",
+      "loja": "ZSZ_Official Store",
+      "postado_em": "2026-11-09T15:19:19.613107-03:00"
+    },
+    {
+      "id": "SHOPEE-23300932279",
+      "titulo": "Caixa De Som Bluetooth Amplificada Potente LED RGB USB SD Radio Fm Mp3 Celular Note Tablet Conexão TWS",
+      "preco": 27.99,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 67,
+      "vendas": 2618,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7ratx-ma1h9d9oo1ape0",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "caixa de som",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/3LSFvp7cFz",
+      "comissao": "0.07",
+      "loja": "SUPER COMPRAS.SHOP",
+      "postado_em": "2026-11-09T15:19:19.613107-03:00"
+    },
     {
       "id": "SHOPEE-18350470458",
       "titulo": "Mochila Bolsa Reforçada Notebook Resistente Trabalho Faculdade Coreana",
@@ -504,42 +540,6 @@
       "comissao": "0.73",
       "loja": "Verde Água Embalagens e Enxovais",
       "postado_em": "2026-11-08T13:58:02.593000-03:00"
-    },
-    {
-      "id": "SHOPEE-58208872077",
-      "titulo": "mochila grande unissex resistente impermeável notebook alta capacidade com compartimentos ideal trabalho faculdade",
-      "preco": 59.9,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 70,
-      "vendas": 4223,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lk-ms4ydyx58xdy23",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "mochila",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/4VeCjJfTMt",
-      "comissao": "0.12",
-      "loja": "Loja Oficial N&M 1",
-      "postado_em": "2026-11-08T13:58:02.593000-03:00"
-    },
-    {
-      "id": "SHOPEE-58206612939",
-      "titulo": "Kit 2 Body Splash Ameixa Negra, Maracujá, ou Uva Merlot Cereja 200ml BELKIT Alta Projeção e Fixação",
-      "preco": 36.9,
-      "preco_anterior": null,
-      "a_partir_de": false,
-      "desconto": 54,
-      "vendas": 4671,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820md-mlmms06ewtmt08",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "perfume",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/9pfiwVuYbU",
-      "comissao": "0.19",
-      "loja": "Bela Beleza Oficial",
-      "postado_em": "2026-11-08T12:11:28.039992-03:00"
     }
   ]
 }
