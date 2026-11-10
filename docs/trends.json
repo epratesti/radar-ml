@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-10T19:09:10.274310-03:00",
+  "atualizado": "2026-11-10T20:09:18.482908-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-22997182283",
+      "titulo": "Kit Carregador Para iPhone Fonte + Cabo 20w PD Turbo Rapido Tipo C Lightning",
+      "preco": 9.49,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 88,
+      "vendas": 2472,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lsvdp1mfzd44da",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "carregador turbo",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/2qW195gLrg",
+      "comissao": "0.09",
+      "loja": "ZSZ_brasil",
+      "postado_em": "2026-11-10T20:09:18.482908-03:00"
+    },
+    {
+      "id": "SHOPEE-58216363171",
+      "titulo": "CR2032 3V com 1/2/3/4 Cartelas para Relógio, Controle e Eletrônicos",
+      "preco": 10.99,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 78,
+      "vendas": 2978,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820l7-ms02am2o3vuu6a",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "relogio",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/7fbILeYe6o",
+      "comissao": "0.03",
+      "loja": "estrela237",
+      "postado_em": "2026-11-10T20:09:18.482908-03:00"
+    },
     {
       "id": "SHOPEE-23399193375",
       "titulo": "2026 T800 Ultra 3 MAX Mais Recente Smartwatch Relógio Inteligente NFC Série 10 2.19Polegadas Sem Fio",
@@ -504,42 +540,6 @@
       "comissao": "0.07",
       "loja": "SUPER COMPRAS.SHOP",
       "postado_em": "2026-11-09T15:19:19.613107-03:00"
-    },
-    {
-      "id": "SHOPEE-18350470458",
-      "titulo": "Mochila Bolsa Reforçada Notebook Resistente Trabalho Faculdade Coreana",
-      "preco": 29.9,
-      "preco_anterior": null,
-      "a_partir_de": false,
-      "desconto": 59,
-      "vendas": 3783,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lkz9ur4r4lj3c1",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "mochila",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/4B1MKhgk2n",
-      "comissao": "0.05",
-      "loja": "Fenix Abdon",
-      "postado_em": "2026-11-09T14:11:34.525734-03:00"
-    },
-    {
-      "id": "SHOPEE-18499853587",
-      "titulo": "Carregador Sem Fio 5000/10000mAh iPhone",
-      "preco": 28.85,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 50,
-      "vendas": 12221,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-mavkx3k4v9n308",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "power bank",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/9zz9HPyT5B",
-      "comissao": "0.14",
-      "loja": "JX VERDE",
-      "postado_em": "2026-11-09T13:09:29.879739-03:00"
     }
   ]
 }
