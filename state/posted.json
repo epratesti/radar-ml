@@ -2,10 +2,6 @@
   "ids": {
     "SHOPEE-22494941454": "2026-11-08T09:12:35.587022-03:00",
     "22494941454": "2026-11-08T09:12:35.587022-03:00",
-    "SHOPEE-22199220609": "2026-11-07T07:08:39.024890-03:00",
-    "22199220609": "2026-11-07T07:08:39.024890-03:00",
-    "SHOPEE-22493277109": "2026-11-07T07:08:39.024890-03:00",
-    "22493277109": "2026-11-07T07:08:39.024890-03:00",
     "SHOPEE-22392993399": "2026-11-07T08:11:22.127374-03:00",
     "22392993399": "2026-11-07T08:11:22.127374-03:00",
     "SHOPEE-58262387632": "2026-11-07T08:11:22.127374-03:00",
@@ -179,12 +175,14 @@
     "SHOPEE-22397182247": "2026-11-09T22:23:20.578418-03:00",
     "22397182247": "2026-11-09T22:23:20.578418-03:00",
     "SHOPEE-23497594302": "2026-11-09T22:23:20.578418-03:00",
-    "23497594302": "2026-11-09T22:23:20.578418-03:00"
+    "23497594302": "2026-11-09T22:23:20.578418-03:00",
+    "SHOPEE-46360468172": "2026-11-10T07:09:13.798806-03:00",
+    "46360468172": "2026-11-10T07:09:13.798806-03:00",
+    "SHOPEE-22199220609": "2026-11-10T07:09:13.798806-03:00",
+    "22199220609": "2026-11-10T07:09:13.798806-03:00"
   },
   "titulos": {
     "kit facial kokeshi completo 3 passos hidratação e colágeno": "2026-11-08T09:12:35.587022-03:00",
-    "b brobô varredora aspirador de pó automática 3 em 1 limpeza doméstica robótico i": "2026-11-07T07:08:39.024890-03:00",
-    "2 cápsula café reutilizável dolce gusto preto transparente castanho recarregável": "2026-11-07T07:08:39.024890-03:00",
     "hipercalórico dark mass 3kg dark lab whey protein creatina bcaa waxy maize premi": "2026-11-07T08:11:22.127374-03:00",
     "kit renovadores gota de colágeno e rosa mosqueta kokeshi": "2026-11-07T08:11:22.127374-03:00",
     "1 2 peças suporte de canto e reta porta shampoo prateleira para banheiro organiz": "2026-11-07T09:11:37.544158-03:00",
@@ -271,7 +269,9 @@
     "relógio smartwatch d20 pro bluetooth coloca foto na tela monitor cardíaco pressã": "2026-11-09T19:09:12.417685-03:00",
     "mini liquidificador portátil 400ml 6 lâminas recarregável usb mixer suco shake": "2026-11-09T19:09:12.417685-03:00",
     "carregador iphone turbo tipo c 20w cabo lightining para iphone carga rápida": "2026-11-09T22:23:20.578418-03:00",
-    "romantic crown mochila de viagem expansível bolsa executiva notebook masculina e": "2026-11-09T22:23:20.578418-03:00"
+    "romantic crown mochila de viagem expansível bolsa executiva notebook masculina e": "2026-11-09T22:23:20.578418-03:00",
+    "kit 4 potes herméticos tampa bambu organizador mantimentos cozinha": "2026-11-10T07:09:13.798806-03:00",
+    "b brobô varredora aspirador de pó automática 3 em 1 limpeza doméstica robótico i": "2026-11-10T07:09:13.798806-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -324,7 +324,7 @@
     },
     "SHOPEE-46360468172": {
       "preco": 35.49,
-      "ts": "2026-11-06T21:47:38.872128-03:00"
+      "ts": "2026-11-10T07:09:13.798806-03:00"
     },
     "SHOPEE-22494941454": {
       "preco": 56.91,
@@ -340,7 +340,7 @@
     },
     "SHOPEE-22199220609": {
       "preco": 37.99,
-      "ts": "2026-11-07T07:08:39.024890-03:00"
+      "ts": "2026-11-10T07:09:13.798806-03:00"
     },
     "SHOPEE-22493277109": {
       "preco": 13.59,
