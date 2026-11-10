@@ -54,8 +54,8 @@
     "22497773735": "2026-11-08T10:16:02.979418-03:00",
     "SHOPEE-19098205730": "2026-11-08T10:16:02.979418-03:00",
     "19098205730": "2026-11-08T10:16:02.979418-03:00",
-    "SHOPEE-21997150349": "2026-11-08T11:14:27.928573-03:00",
-    "21997150349": "2026-11-08T11:14:27.928573-03:00",
+    "SHOPEE-21997150349": "2026-11-10T15:08:22.842268-03:00",
+    "21997150349": "2026-11-10T15:08:22.842268-03:00",
     "SHOPEE-22098878065": "2026-11-08T11:14:27.928573-03:00",
     "22098878065": "2026-11-08T11:14:27.928573-03:00",
     "SHOPEE-58206612939": "2026-11-08T12:11:28.039992-03:00",
@@ -161,7 +161,9 @@
     "SHOPEE-58202148614": "2026-11-10T12:13:31.854234-03:00",
     "58202148614": "2026-11-10T12:13:31.854234-03:00",
     "SHOPEE-58255159172": "2026-11-10T13:11:20.508437-03:00",
-    "58255159172": "2026-11-10T13:11:20.508437-03:00"
+    "58255159172": "2026-11-10T13:11:20.508437-03:00",
+    "SHOPEE-21297578652": "2026-11-10T15:08:22.842268-03:00",
+    "21297578652": "2026-11-10T15:08:22.842268-03:00"
   },
   "titulos": {
     "kit facial kokeshi completo 3 passos hidratação e colágeno": "2026-11-08T09:12:35.587022-03:00",
@@ -191,7 +193,7 @@
     "escova de limpeza multifuncional flexível para garrafas mamadeiras liquidificado": "2026-11-08T09:12:35.587022-03:00",
     "romantic crown mochila viagem feminina masculina multifuncional reforçada imperm": "2026-11-08T10:16:02.979418-03:00",
     "gaabor aspirador de pó portátil 2 em 1 com fio e haste de pressão sucção forte d": "2026-11-08T10:16:02.979418-03:00",
-    "kit 6 forma de silicone para fritadeira air fryer com alça antiaderente cozinha": "2026-11-08T11:14:27.928573-03:00",
+    "kit 6 forma de silicone para fritadeira air fryer com alça antiaderente cozinha": "2026-11-10T15:08:22.842268-03:00",
     "chinelo bandeirinha original sandalia de dedo unissex verão presente para o dia ": "2026-11-08T11:14:27.928573-03:00",
     "kit 2 body splash ameixa negra maracujá ou uva merlot cereja 200ml belkit alta p": "2026-11-08T12:11:28.039992-03:00",
     "pasta sanfonada para documento com 12 divisórias e pasta prancheta tamanho a4 es": "2026-11-08T12:11:28.039992-03:00",
@@ -244,7 +246,8 @@
     "pulseira oceano silicone para smart watch e iwo 38mm 40mm 41mm 42mm 44mm 45mm 49": "2026-11-10T10:15:56.712994-03:00",
     "body splash feminino arabe ayra 100ml primacial perfume floral": "2026-11-10T12:13:31.854234-03:00",
     "caixa de som bluetooth portátil rgb com microfone sem fio karaokê usb tf aux led": "2026-11-10T12:13:31.854234-03:00",
-    "fones de ouvido sem fio bluetooth compactos xiaomi redmi airdots com estojo reca": "2026-11-10T13:11:20.508437-03:00"
+    "fones de ouvido sem fio bluetooth compactos xiaomi redmi airdots com estojo reca": "2026-11-10T13:11:20.508437-03:00",
+    "sandália ortopédica feminina terapêutica para esporão chinelo ortopédico": "2026-11-10T15:08:22.842268-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -488,8 +491,8 @@
       "ts": "2026-11-08T10:16:02.979418-03:00"
     },
     "SHOPEE-21997150349": {
-      "preco": 11.99,
-      "ts": "2026-11-08T11:14:27.928573-03:00"
+      "preco": 9.99,
+      "ts": "2026-11-10T15:08:22.842268-03:00"
     },
     "SHOPEE-22098878065": {
       "preco": 19.9,
@@ -678,6 +681,10 @@
     "SHOPEE-58202148614": {
       "preco": 34.99,
       "ts": "2026-11-10T12:13:31.854234-03:00"
+    },
+    "SHOPEE-21297578652": {
+      "preco": 27.03,
+      "ts": "2026-11-10T15:08:22.842268-03:00"
     }
   },
   "alertas": {}
