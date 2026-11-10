@@ -2,14 +2,6 @@
   "ids": {
     "SHOPEE-22494941454": "2026-11-08T09:12:35.587022-03:00",
     "22494941454": "2026-11-08T09:12:35.587022-03:00",
-    "SHOPEE-58200797547": "2026-11-07T11:16:30.651861-03:00",
-    "58200797547": "2026-11-07T11:16:30.651861-03:00",
-    "SHOPEE-21399069053": "2026-11-07T11:16:30.651861-03:00",
-    "21399069053": "2026-11-07T11:16:30.651861-03:00",
-    "SHOPEE-58210532717": "2026-11-07T12:10:29.785169-03:00",
-    "58210532717": "2026-11-07T12:10:29.785169-03:00",
-    "SHOPEE-23593847901": "2026-11-07T12:10:29.785169-03:00",
-    "23593847901": "2026-11-07T12:10:29.785169-03:00",
     "SHOPEE-20607193834": "2026-11-07T13:10:50.125970-03:00",
     "20607193834": "2026-11-07T13:10:50.125970-03:00",
     "SHOPEE-22393096204": "2026-11-07T13:10:50.125970-03:00",
@@ -175,14 +167,14 @@
     "SHOPEE-58259749592": "2026-11-10T10:15:56.712994-03:00",
     "58259749592": "2026-11-10T10:15:56.712994-03:00",
     "SHOPEE-21869498082": "2026-11-10T10:15:56.712994-03:00",
-    "21869498082": "2026-11-10T10:15:56.712994-03:00"
+    "21869498082": "2026-11-10T10:15:56.712994-03:00",
+    "SHOPEE-22094238842": "2026-11-10T12:13:31.854234-03:00",
+    "22094238842": "2026-11-10T12:13:31.854234-03:00",
+    "SHOPEE-58202148614": "2026-11-10T12:13:31.854234-03:00",
+    "58202148614": "2026-11-10T12:13:31.854234-03:00"
   },
   "titulos": {
     "kit facial kokeshi completo 3 passos hidratação e colágeno": "2026-11-08T09:12:35.587022-03:00",
-    "ez silver essence eau de parfum 100ml": "2026-11-07T11:16:30.651861-03:00",
-    "caneta paint original reparadora pintura automotiva permanente não sai na água t": "2026-11-07T11:16:30.651861-03:00",
-    "body splash perfume deo colônia flooratta red 200ml": "2026-11-07T12:10:29.785169-03:00",
-    "mochila bolsa viagem resistente coreana masculina feminina colorida": "2026-11-07T12:10:29.785169-03:00",
     "carregador portátil power bank universal 10 000mah e 5 000mah": "2026-11-07T13:10:50.125970-03:00",
     "carregador super rápido turbo 50w 68w 125w e 168w entrada e saída de carga tipo ": "2026-11-07T13:10:50.125970-03:00",
     "ez kaya ocean eau de toilette 100ml lançamento exclusivo": "2026-11-07T13:47:11.236300-03:00",
@@ -265,7 +257,9 @@
     "relógio retrô digital prata led unissex fashion masculino feminino pulseira inox": "2026-11-10T08:10:53.877913-03:00",
     "descalcificante limpa cafeteira expresso maquina nespresso dolce gusto 3 coraçõe": "2026-11-10T08:10:53.877913-03:00",
     "kit carregador 67w turbo cabo tipo c carga rápida universal xiaomi redmi note e ": "2026-11-10T10:15:56.712994-03:00",
-    "pulseira oceano silicone para smart watch e iwo 38mm 40mm 41mm 42mm 44mm 45mm 49": "2026-11-10T10:15:56.712994-03:00"
+    "pulseira oceano silicone para smart watch e iwo 38mm 40mm 41mm 42mm 44mm 45mm 49": "2026-11-10T10:15:56.712994-03:00",
+    "body splash feminino arabe ayra 100ml primacial perfume floral": "2026-11-10T12:13:31.854234-03:00",
+    "caixa de som bluetooth portátil rgb com microfone sem fio karaokê usb tf aux led": "2026-11-10T12:13:31.854234-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -286,7 +280,7 @@
     },
     "SHOPEE-22094238842": {
       "preco": 24.9,
-      "ts": "2026-11-06T18:08:42.992044-03:00"
+      "ts": "2026-11-10T12:13:31.854234-03:00"
     },
     "SHOPEE-58255159172": {
       "preco": 21.79,
@@ -695,6 +689,10 @@
     "SHOPEE-21869498082": {
       "preco": 10.99,
       "ts": "2026-11-10T10:15:56.712994-03:00"
+    },
+    "SHOPEE-58202148614": {
+      "preco": 34.99,
+      "ts": "2026-11-10T12:13:31.854234-03:00"
     }
   },
   "alertas": {}

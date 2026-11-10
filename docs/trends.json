@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-10T10:15:56.712994-03:00",
+  "atualizado": "2026-11-10T12:13:31.854234-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-22094238842",
+      "titulo": "BODY SPLASH FEMININO ARABE AYRA 100ML - PRIMACIAL PERFUME FLORAL",
+      "preco": 24.9,
+      "preco_anterior": null,
+      "a_partir_de": false,
+      "desconto": 38,
+      "vendas": 5751,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m1-mukoqlfdn280c5",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "perfume",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/8VAOoWDWMo",
+      "comissao": "0.31",
+      "loja": "Primacial",
+      "postado_em": "2026-11-10T12:13:31.854234-03:00"
+    },
+    {
+      "id": "SHOPEE-58202148614",
+      "titulo": "Caixa de Som Bluetooth Portátil RGB com Microfone Sem Fio Karaokê USB TF AUX LED Colorido Mini Speaker Potente",
+      "preco": 34.99,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 65,
+      "vendas": 1239,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8262w-ml5kmo5n7hmp56",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "caixa de som",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/4LKpqr3KR9",
+      "comissao": "0.07",
+      "loja": "ANJ.GG store",
+      "postado_em": "2026-11-10T12:13:31.854234-03:00"
+    },
     {
       "id": "SHOPEE-58259749592",
       "titulo": "Kit Carregador 67W Turbo + Cabo Tipo-C Carga Rápida Universal Xiaomi Redmi Note E Poco X7 Android",
@@ -504,42 +540,6 @@
       "comissao": "0.13",
       "loja": "Watersy Store",
       "postado_em": "2026-11-08T22:12:16.269138-03:00"
-    },
-    {
-      "id": "SHOPEE-54663825990",
-      "titulo": "Perfume Masculino 100ml Fragrância Elegante Longa Duração Para Uso Diário",
-      "preco": 27.99,
-      "preco_anterior": null,
-      "a_partir_de": false,
-      "desconto": 44,
-      "vendas": 3932,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820la-mqj7ti2uhiwx4a",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "perfume",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/AUvPjjs1FY",
-      "comissao": "0.19",
-      "loja": "Shiloya L",
-      "postado_em": "2026-11-08T22:12:16.269138-03:00"
-    },
-    {
-      "id": "SHOPEE-58265197313",
-      "titulo": "Kit Raquete Frescobol Bateu Colou Peteca Tênis C/ Bolinha Bate Gruda Binquedo Menino e Menina",
-      "preco": 24.99,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 54,
-      "vendas": 4405,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820m2-mr85lot3rtacc0",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "tenis",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/50aTSAuTxx",
-      "comissao": "0.13",
-      "loja": "DBrinq's",
-      "postado_em": "2026-11-08T21:41:04.937266-03:00"
     }
   ]
 }
