@@ -2,16 +2,6 @@
   "ids": {
     "SHOPEE-22494941454": "2026-11-08T09:12:35.587022-03:00",
     "22494941454": "2026-11-08T09:12:35.587022-03:00",
-    "SHOPEE-23899017576": "2026-11-07T17:08:13.989872-03:00",
-    "23899017576": "2026-11-07T17:08:13.989872-03:00",
-    "SHOPEE-58202231060": "2026-11-07T17:08:13.989872-03:00",
-    "58202231060": "2026-11-07T17:08:13.989872-03:00",
-    "SHOPEE-20398528613": "2026-11-07T17:44:51.940227-03:00",
-    "20398528613": "2026-11-07T17:44:51.940227-03:00",
-    "SHOPEE-23394735827": "2026-11-07T17:44:51.940227-03:00",
-    "23394735827": "2026-11-07T17:44:51.940227-03:00",
-    "SHOPEE-23995144850": "2026-11-07T18:08:31.727592-03:00",
-    "23995144850": "2026-11-07T18:08:31.727592-03:00",
     "SHOPEE-55359781665": "2026-11-07T19:08:50.471916-03:00",
     "55359781665": "2026-11-07T19:08:50.471916-03:00",
     "SHOPEE-58261888418": "2026-11-07T19:08:50.471916-03:00",
@@ -161,15 +151,12 @@
     "SHOPEE-22892686035": "2026-11-10T17:07:21.809151-03:00",
     "22892686035": "2026-11-10T17:07:21.809151-03:00",
     "SHOPEE-23593847901": "2026-11-10T17:07:21.809151-03:00",
-    "23593847901": "2026-11-10T17:07:21.809151-03:00"
+    "23593847901": "2026-11-10T17:07:21.809151-03:00",
+    "SHOPEE-58258956764": "2026-11-10T18:08:51.907255-03:00",
+    "58258956764": "2026-11-10T18:08:51.907255-03:00"
   },
   "titulos": {
     "kit facial kokeshi completo 3 passos hidratação e colágeno": "2026-11-08T09:12:35.587022-03:00",
-    "carregador portátil indução para sem fio bateria carga 3000 5000 10000mah": "2026-11-07T17:08:13.989872-03:00",
-    "novo smartwatch relógio inteligente assistente de voz bluetooth chamada prova d ": "2026-11-07T17:08:13.989872-03:00",
-    "ana 1108 kit 3 pcs porta perfume recarregavel portatil spray 5ml": "2026-11-07T17:44:51.940227-03:00",
-    "caixa de som k12 bluetooth portátil com 1 ou 2 microfones mini alto falante kara": "2026-11-07T17:44:51.940227-03:00",
-    "mini power bank carregador 10000mah para iphone etouch c 2 em 1": "2026-11-07T18:08:31.727592-03:00",
     "kit 2 sacos lavar tenis sapato máquina lavar roupas protege não danifica lavagem": "2026-11-07T19:08:50.471916-03:00",
     "karaokê bluetooth com 2 microfones sem fio caixa de som portátil anjgg brasil": "2026-11-07T19:08:50.471916-03:00",
     "sapateira 4 ou 5 andares multiuso desmontável organizadora multiuso sapatos livr": "2026-11-07T20:09:58.302295-03:00",
@@ -244,7 +231,8 @@
     "sandália ortopédica feminina terapêutica para esporão chinelo ortopédico": "2026-11-10T15:08:22.842268-03:00",
     "1 2 5 suporte de parede multifuncional caixa de armazenamento casa para carregar": "2026-11-10T15:33:36.666437-03:00",
     "fone de ouvido entrada lightning para iphone microfone bluetooth": "2026-11-10T17:07:21.809151-03:00",
-    "mochila bolsa viagem resistente coreana masculina feminina colorida": "2026-11-10T17:07:21.809151-03:00"
+    "mochila bolsa viagem resistente coreana masculina feminina colorida": "2026-11-10T17:07:21.809151-03:00",
+    "carregador rápido de 120w com 6a usb c cabo 1m para mi turbo charge turbo power ": "2026-11-10T18:08:51.907255-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -690,6 +678,10 @@
     "SHOPEE-22892686035": {
       "preco": 8.99,
       "ts": "2026-11-10T17:07:21.809151-03:00"
+    },
+    "SHOPEE-58258956764": {
+      "preco": 15.89,
+      "ts": "2026-11-10T18:08:51.907255-03:00"
     }
   },
   "alertas": {}

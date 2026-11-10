@@ -1,6 +1,24 @@
 {
-  "atualizado": "2026-11-10T17:07:21.809151-03:00",
+  "atualizado": "2026-11-10T18:08:51.907255-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-58258956764",
+      "titulo": "Carregador rápido de 120W com 6A USB C cabo 1M para Mi Turbo Charge Turbo Power Cabo USB + Cabo Tipo C",
+      "preco": 15.89,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 74,
+      "vendas": 4337,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-823qk-moi4apd18efh61",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "carregador turbo",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/4fxczdoBB4",
+      "comissao": "0.03",
+      "loja": "Loja Geral Breeze",
+      "postado_em": "2026-11-10T18:08:51.907255-03:00"
+    },
     {
       "id": "SHOPEE-22892686035",
       "titulo": "Fone de Ouvido entrada lightning para Iphone Microfone Bluetooth",
@@ -522,24 +540,6 @@
       "comissao": "0.03",
       "loja": "RN VARIEDADES",
       "postado_em": "2026-11-09T13:09:29.879739-03:00"
-    },
-    {
-      "id": "SHOPEE-18499604408",
-      "titulo": "2026 Novo Watch S20 PRO Max Relógio 10 Smart Watch Homens BT Chamada Sempre Em Exibição Temperatura",
-      "preco": 39.99,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 77,
-      "vendas": 1010,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztn-ml5rhfmfr405fa",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "smartwatch",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/8VAMDmeKXX",
-      "comissao": "0.07",
-      "loja": "-BML-",
-      "postado_em": "2026-11-09T10:15:42.379010-03:00"
     }
   ]
 }
