@@ -1,6 +1,24 @@
 {
-  "atualizado": "2026-11-10T18:08:51.907255-03:00",
+  "atualizado": "2026-11-10T19:09:10.274310-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-23399193375",
+      "titulo": "2026 T800 Ultra 3 MAX Mais Recente Smartwatch Relógio Inteligente NFC Série 10 2.19Polegadas Sem Fio",
+      "preco": 39.9,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 73,
+      "vendas": 1148,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mhq4f2lhz40397",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "smartwatch",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/6VPJIUWXzj",
+      "comissao": "0.11",
+      "loja": "LUNANA Shop",
+      "postado_em": "2026-11-10T19:09:10.274310-03:00"
+    },
     {
       "id": "SHOPEE-58258956764",
       "titulo": "Carregador rápido de 120W com 6A USB C cabo 1M para Mi Turbo Charge Turbo Power Cabo USB + Cabo Tipo C",
@@ -521,24 +539,6 @@
       "link": "https://s.shopee.com.br/9zz9HPyT5B",
       "comissao": "0.14",
       "loja": "JX VERDE",
-      "postado_em": "2026-11-09T13:09:29.879739-03:00"
-    },
-    {
-      "id": "SHOPEE-23797686527",
-      "titulo": "Relógio Masculino digital wr | 100 % qualidade | entrega rápida",
-      "preco": 14.49,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 86,
-      "vendas": 6677,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-m1zzq6l901gfa2",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "relogio",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/AAIaCqBZiB",
-      "comissao": "0.03",
-      "loja": "RN VARIEDADES",
       "postado_em": "2026-11-09T13:09:29.879739-03:00"
     }
   ]
