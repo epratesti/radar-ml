@@ -2,10 +2,6 @@
   "ids": {
     "SHOPEE-22494941454": "2026-11-08T09:12:35.587022-03:00",
     "22494941454": "2026-11-08T09:12:35.587022-03:00",
-    "SHOPEE-20607193834": "2026-11-07T13:10:50.125970-03:00",
-    "20607193834": "2026-11-07T13:10:50.125970-03:00",
-    "SHOPEE-22393096204": "2026-11-07T13:10:50.125970-03:00",
-    "22393096204": "2026-11-07T13:10:50.125970-03:00",
     "SHOPEE-22598926569": "2026-11-07T13:47:11.236300-03:00",
     "22598926569": "2026-11-07T13:47:11.236300-03:00",
     "SHOPEE-53312814680": "2026-11-07T13:47:11.236300-03:00",
@@ -171,12 +167,12 @@
     "SHOPEE-22094238842": "2026-11-10T12:13:31.854234-03:00",
     "22094238842": "2026-11-10T12:13:31.854234-03:00",
     "SHOPEE-58202148614": "2026-11-10T12:13:31.854234-03:00",
-    "58202148614": "2026-11-10T12:13:31.854234-03:00"
+    "58202148614": "2026-11-10T12:13:31.854234-03:00",
+    "SHOPEE-58255159172": "2026-11-10T13:11:20.508437-03:00",
+    "58255159172": "2026-11-10T13:11:20.508437-03:00"
   },
   "titulos": {
     "kit facial kokeshi completo 3 passos hidratação e colágeno": "2026-11-08T09:12:35.587022-03:00",
-    "carregador portátil power bank universal 10 000mah e 5 000mah": "2026-11-07T13:10:50.125970-03:00",
-    "carregador super rápido turbo 50w 68w 125w e 168w entrada e saída de carga tipo ": "2026-11-07T13:10:50.125970-03:00",
     "ez kaya ocean eau de toilette 100ml lançamento exclusivo": "2026-11-07T13:47:11.236300-03:00",
     "liquidificador portátil blender elgin daily blend 350w 750ml 2 copos preto": "2026-11-07T13:47:11.236300-03:00",
     "conjunto de 4 máscaras bálsamos labiais tratamento hidratante e reparador para l": "2026-11-07T14:09:18.815917-03:00",
@@ -259,7 +255,8 @@
     "kit carregador 67w turbo cabo tipo c carga rápida universal xiaomi redmi note e ": "2026-11-10T10:15:56.712994-03:00",
     "pulseira oceano silicone para smart watch e iwo 38mm 40mm 41mm 42mm 44mm 45mm 49": "2026-11-10T10:15:56.712994-03:00",
     "body splash feminino arabe ayra 100ml primacial perfume floral": "2026-11-10T12:13:31.854234-03:00",
-    "caixa de som bluetooth portátil rgb com microfone sem fio karaokê usb tf aux led": "2026-11-10T12:13:31.854234-03:00"
+    "caixa de som bluetooth portátil rgb com microfone sem fio karaokê usb tf aux led": "2026-11-10T12:13:31.854234-03:00",
+    "fones de ouvido sem fio bluetooth compactos xiaomi redmi airdots com estojo reca": "2026-11-10T13:11:20.508437-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -283,8 +280,8 @@
       "ts": "2026-11-10T12:13:31.854234-03:00"
     },
     "SHOPEE-58255159172": {
-      "preco": 21.79,
-      "ts": "2026-11-06T18:08:42.992044-03:00"
+      "preco": 20.47,
+      "ts": "2026-11-10T13:11:20.508437-03:00"
     },
     "SHOPEE-25356800051": {
       "preco": 2.98,

@@ -1,6 +1,24 @@
 {
-  "atualizado": "2026-11-10T12:13:31.854234-03:00",
+  "atualizado": "2026-11-10T13:11:20.508437-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-58255159172",
+      "titulo": "Fones de ouvido sem fio Bluetooth compactos Xiaomi Redmi Airdots com Estojo Recarregável",
+      "preco": 20.47,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 61,
+      "vendas": 7414,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820la-mltkawis4qo439",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "fone bluetooth",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/9KjUt3Q0Ap",
+      "comissao": "0.12",
+      "loja": "YYYNN",
+      "postado_em": "2026-11-10T13:11:20.508437-03:00"
+    },
     {
       "id": "SHOPEE-22094238842",
       "titulo": "BODY SPLASH FEMININO ARABE AYRA 100ML - PRIMACIAL PERFUME FLORAL",
@@ -522,24 +540,6 @@
       "comissao": "0.03",
       "loja": "TUCAN ",
       "postado_em": "2026-11-09T08:11:36.421253-03:00"
-    },
-    {
-      "id": "SHOPEE-22099191110",
-      "titulo": "Garrafa Térmica WATERSY 500ml - 48h Frio! Perfeita para Academia, Futebol e Dia a Dia⚽🏋️",
-      "preco": 27.98,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 76,
-      "vendas": 4319,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lb-msl12l6zbq4k5a",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "garrafa termica",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/2LZi0j12gl",
-      "comissao": "0.13",
-      "loja": "Watersy Store",
-      "postado_em": "2026-11-08T22:12:16.269138-03:00"
     }
   ]
 }
