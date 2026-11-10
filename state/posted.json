@@ -2,10 +2,6 @@
   "ids": {
     "SHOPEE-22494941454": "2026-11-08T09:12:35.587022-03:00",
     "22494941454": "2026-11-08T09:12:35.587022-03:00",
-    "SHOPEE-23293253949": "2026-11-07T16:14:09.935270-03:00",
-    "23293253949": "2026-11-07T16:14:09.935270-03:00",
-    "SHOPEE-23497309877": "2026-11-07T16:14:09.935270-03:00",
-    "23497309877": "2026-11-07T16:14:09.935270-03:00",
     "SHOPEE-23899017576": "2026-11-07T17:08:13.989872-03:00",
     "23899017576": "2026-11-07T17:08:13.989872-03:00",
     "SHOPEE-58202231060": "2026-11-07T17:08:13.989872-03:00",
@@ -161,12 +157,14 @@
     "SHOPEE-21297578652": "2026-11-10T15:08:22.842268-03:00",
     "21297578652": "2026-11-10T15:08:22.842268-03:00",
     "SHOPEE-23096150316": "2026-11-10T15:33:36.666437-03:00",
-    "23096150316": "2026-11-10T15:33:36.666437-03:00"
+    "23096150316": "2026-11-10T15:33:36.666437-03:00",
+    "SHOPEE-22892686035": "2026-11-10T17:07:21.809151-03:00",
+    "22892686035": "2026-11-10T17:07:21.809151-03:00",
+    "SHOPEE-23593847901": "2026-11-10T17:07:21.809151-03:00",
+    "23593847901": "2026-11-10T17:07:21.809151-03:00"
   },
   "titulos": {
     "kit facial kokeshi completo 3 passos hidratação e colágeno": "2026-11-08T09:12:35.587022-03:00",
-    "whey protein concentrado 1kg dark lab": "2026-11-07T16:14:09.935270-03:00",
-    "espremedor elétrico laranja limão frutas fazer sucos recarregável usb cozinha": "2026-11-07T16:14:09.935270-03:00",
     "carregador portátil indução para sem fio bateria carga 3000 5000 10000mah": "2026-11-07T17:08:13.989872-03:00",
     "novo smartwatch relógio inteligente assistente de voz bluetooth chamada prova d ": "2026-11-07T17:08:13.989872-03:00",
     "ana 1108 kit 3 pcs porta perfume recarregavel portatil spray 5ml": "2026-11-07T17:44:51.940227-03:00",
@@ -244,7 +242,9 @@
     "caixa de som bluetooth portátil rgb com microfone sem fio karaokê usb tf aux led": "2026-11-10T12:13:31.854234-03:00",
     "fones de ouvido sem fio bluetooth compactos xiaomi redmi airdots com estojo reca": "2026-11-10T13:11:20.508437-03:00",
     "sandália ortopédica feminina terapêutica para esporão chinelo ortopédico": "2026-11-10T15:08:22.842268-03:00",
-    "1 2 5 suporte de parede multifuncional caixa de armazenamento casa para carregar": "2026-11-10T15:33:36.666437-03:00"
+    "1 2 5 suporte de parede multifuncional caixa de armazenamento casa para carregar": "2026-11-10T15:33:36.666437-03:00",
+    "fone de ouvido entrada lightning para iphone microfone bluetooth": "2026-11-10T17:07:21.809151-03:00",
+    "mochila bolsa viagem resistente coreana masculina feminina colorida": "2026-11-10T17:07:21.809151-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -357,7 +357,7 @@
     },
     "SHOPEE-23593847901": {
       "preco": 27.99,
-      "ts": "2026-11-07T12:10:29.785169-03:00"
+      "ts": "2026-11-10T17:07:21.809151-03:00"
     },
     "SHOPEE-20607193834": {
       "preco": 33.75,
@@ -686,6 +686,10 @@
     "SHOPEE-23096150316": {
       "preco": 9.89,
       "ts": "2026-11-10T15:33:36.666437-03:00"
+    },
+    "SHOPEE-22892686035": {
+      "preco": 8.99,
+      "ts": "2026-11-10T17:07:21.809151-03:00"
     }
   },
   "alertas": {}
