@@ -2,10 +2,6 @@
   "ids": {
     "SHOPEE-22494941454": "2026-11-08T09:12:35.587022-03:00",
     "22494941454": "2026-11-08T09:12:35.587022-03:00",
-    "SHOPEE-58203349918": "2026-11-07T15:12:02.675566-03:00",
-    "58203349918": "2026-11-07T15:12:02.675566-03:00",
-    "SHOPEE-52858085838": "2026-11-07T15:12:02.675566-03:00",
-    "52858085838": "2026-11-07T15:12:02.675566-03:00",
     "SHOPEE-23293253949": "2026-11-07T16:14:09.935270-03:00",
     "23293253949": "2026-11-07T16:14:09.935270-03:00",
     "SHOPEE-23497309877": "2026-11-07T16:14:09.935270-03:00",
@@ -163,12 +159,12 @@
     "SHOPEE-58255159172": "2026-11-10T13:11:20.508437-03:00",
     "58255159172": "2026-11-10T13:11:20.508437-03:00",
     "SHOPEE-21297578652": "2026-11-10T15:08:22.842268-03:00",
-    "21297578652": "2026-11-10T15:08:22.842268-03:00"
+    "21297578652": "2026-11-10T15:08:22.842268-03:00",
+    "SHOPEE-23096150316": "2026-11-10T15:33:36.666437-03:00",
+    "23096150316": "2026-11-10T15:33:36.666437-03:00"
   },
   "titulos": {
     "kit facial kokeshi completo 3 passos hidratação e colágeno": "2026-11-08T09:12:35.587022-03:00",
-    "sandália feminina chinelos de praia com enfeites luxo confortável eva": "2026-11-07T15:12:02.675566-03:00",
-    "garrafa térmica cabo madeira para café 1l": "2026-11-07T15:12:02.675566-03:00",
     "whey protein concentrado 1kg dark lab": "2026-11-07T16:14:09.935270-03:00",
     "espremedor elétrico laranja limão frutas fazer sucos recarregável usb cozinha": "2026-11-07T16:14:09.935270-03:00",
     "carregador portátil indução para sem fio bateria carga 3000 5000 10000mah": "2026-11-07T17:08:13.989872-03:00",
@@ -247,7 +243,8 @@
     "body splash feminino arabe ayra 100ml primacial perfume floral": "2026-11-10T12:13:31.854234-03:00",
     "caixa de som bluetooth portátil rgb com microfone sem fio karaokê usb tf aux led": "2026-11-10T12:13:31.854234-03:00",
     "fones de ouvido sem fio bluetooth compactos xiaomi redmi airdots com estojo reca": "2026-11-10T13:11:20.508437-03:00",
-    "sandália ortopédica feminina terapêutica para esporão chinelo ortopédico": "2026-11-10T15:08:22.842268-03:00"
+    "sandália ortopédica feminina terapêutica para esporão chinelo ortopédico": "2026-11-10T15:08:22.842268-03:00",
+    "1 2 5 suporte de parede multifuncional caixa de armazenamento casa para carregar": "2026-11-10T15:33:36.666437-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -685,6 +682,10 @@
     "SHOPEE-21297578652": {
       "preco": 27.03,
       "ts": "2026-11-10T15:08:22.842268-03:00"
+    },
+    "SHOPEE-23096150316": {
+      "preco": 9.89,
+      "ts": "2026-11-10T15:33:36.666437-03:00"
     }
   },
   "alertas": {}
