@@ -179,7 +179,11 @@
     "SHOPEE-46360468172": "2026-11-10T07:09:13.798806-03:00",
     "46360468172": "2026-11-10T07:09:13.798806-03:00",
     "SHOPEE-22199220609": "2026-11-10T07:09:13.798806-03:00",
-    "22199220609": "2026-11-10T07:09:13.798806-03:00"
+    "22199220609": "2026-11-10T07:09:13.798806-03:00",
+    "SHOPEE-58251249633": "2026-11-10T08:10:53.877913-03:00",
+    "58251249633": "2026-11-10T08:10:53.877913-03:00",
+    "SHOPEE-58209955451": "2026-11-10T08:10:53.877913-03:00",
+    "58209955451": "2026-11-10T08:10:53.877913-03:00"
   },
   "titulos": {
     "kit facial kokeshi completo 3 passos hidratação e colágeno": "2026-11-08T09:12:35.587022-03:00",
@@ -271,7 +275,9 @@
     "carregador iphone turbo tipo c 20w cabo lightining para iphone carga rápida": "2026-11-09T22:23:20.578418-03:00",
     "romantic crown mochila de viagem expansível bolsa executiva notebook masculina e": "2026-11-09T22:23:20.578418-03:00",
     "kit 4 potes herméticos tampa bambu organizador mantimentos cozinha": "2026-11-10T07:09:13.798806-03:00",
-    "b brobô varredora aspirador de pó automática 3 em 1 limpeza doméstica robótico i": "2026-11-10T07:09:13.798806-03:00"
+    "b brobô varredora aspirador de pó automática 3 em 1 limpeza doméstica robótico i": "2026-11-10T07:09:13.798806-03:00",
+    "relógio retrô digital prata led unissex fashion masculino feminino pulseira inox": "2026-11-10T08:10:53.877913-03:00",
+    "descalcificante limpa cafeteira expresso maquina nespresso dolce gusto 3 coraçõe": "2026-11-10T08:10:53.877913-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -689,6 +695,14 @@
     "SHOPEE-23497594302": {
       "preco": 99.98,
       "ts": "2026-11-09T22:23:20.578418-03:00"
+    },
+    "SHOPEE-58251249633": {
+      "preco": 14.9,
+      "ts": "2026-11-10T08:10:53.877913-03:00"
+    },
+    "SHOPEE-58209955451": {
+      "preco": 17.87,
+      "ts": "2026-11-10T08:10:53.877913-03:00"
     }
   },
   "alertas": {}
