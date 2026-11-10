@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-10T08:10:53.877913-03:00",
+  "atualizado": "2026-11-10T10:15:56.712994-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-58259749592",
+      "titulo": "Kit Carregador 67W Turbo + Cabo Tipo-C Carga Rápida Universal Xiaomi Redmi Note E Poco X7 Android",
+      "preco": 29.8,
+      "preco_anterior": null,
+      "a_partir_de": false,
+      "desconto": 40,
+      "vendas": 9300,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8258n-mr8vmek85csha1",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "carregador turbo",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/50aTOFmuV6",
+      "comissao": "0.15",
+      "loja": "Reis Empire",
+      "postado_em": "2026-11-10T10:15:56.712994-03:00"
+    },
+    {
+      "id": "SHOPEE-21869498082",
+      "titulo": "Pulseira Oceano Silicone Para Smart Watch e Iwo 38mm 40mm 41mm 42mm 44mm 45mm 49mm Ultra serie 8",
+      "preco": 10.99,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 69,
+      "vendas": 2229,
+      "imagem": "https://cf.shopee.com.br/file/br-11134201-22120-hqk2lecqgelv33",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "smartwatch",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/3g58myeRBr",
+      "comissao": "0.03",
+      "loja": "Lily Space",
+      "postado_em": "2026-11-10T10:15:56.712994-03:00"
+    },
     {
       "id": "SHOPEE-58251249633",
       "titulo": "Relógio Retrô Digital Prata LED Unissex Fashion Masculino Feminino Pulseira Inoxidável Alta Qualidade",
@@ -504,42 +540,6 @@
       "comissao": "0.13",
       "loja": "DBrinq's",
       "postado_em": "2026-11-08T21:41:04.937266-03:00"
-    },
-    {
-      "id": "SHOPEE-58253326285",
-      "titulo": "Carregador Lightning Turbo Para 11 12 13 14 Pro X XR 20W Cabo Tipo C Lightning",
-      "preco": 39.9,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 40,
-      "vendas": 3318,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztc-mjfmlxjdwt1d0f",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "carregador turbo",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/60T0a5j6TS",
-      "comissao": "0.15",
-      "loja": "CasaTech Oficial",
-      "postado_em": "2026-11-08T21:41:04.937266-03:00"
-    },
-    {
-      "id": "SHOPEE-22093160276",
-      "titulo": "2026 Nova Série 8 Relógio T800 Ultra Smart Watch Esportivo Sem Fio À Prova D'água T800 Ultra2 MAX",
-      "preco": 45.88,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 70,
-      "vendas": 3344,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rdym-lxrzfhio6fhl9d",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "relogio",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/8AXVpAJBlr",
-      "comissao": "0.16",
-      "loja": "-BML-",
-      "postado_em": "2026-11-08T21:12:55.738574-03:00"
     }
   ]
 }
