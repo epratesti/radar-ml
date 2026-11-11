@@ -117,7 +117,9 @@
     "SHOPEE-22494941454": "2026-11-11T15:30:06.914612-03:00",
     "22494941454": "2026-11-11T15:30:06.914612-03:00",
     "SHOPEE-58208872077": "2026-11-11T15:30:06.914612-03:00",
-    "58208872077": "2026-11-11T15:30:06.914612-03:00"
+    "58208872077": "2026-11-11T15:30:06.914612-03:00",
+    "SHOPEE-58250184742": "2026-11-11T18:08:08.085623-03:00",
+    "58250184742": "2026-11-11T18:08:08.085623-03:00"
   },
   "titulos": {
     "kit 6 forma de silicone para fritadeira air fryer com alça antiaderente cozinha": "2026-11-10T15:08:22.842268-03:00",
@@ -178,7 +180,8 @@
     "kit 100 forma de airfryer descartavel antiaderente de papel cozinha quadrado fri": "2026-11-11T12:11:56.223100-03:00",
     "smartwatch d20 relógio inteligente y68 esportivo bluetooth android ios com foto ": "2026-11-11T15:08:41.340013-03:00",
     "kit facial kokeshi completo 3 passos hidratação e colágeno": "2026-11-11T15:30:06.914612-03:00",
-    "mochila grande unissex resistente impermeável notebook alta capacidade com compa": "2026-11-11T15:30:06.914612-03:00"
+    "mochila grande unissex resistente impermeável notebook alta capacidade com compa": "2026-11-11T15:30:06.914612-03:00",
+    "kit 100 200 300 forro de papel descartável para airfryer antiaderente quadrado a": "2026-11-11T18:08:08.085623-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -668,6 +671,10 @@
     "SHOPEE-22593614484": {
       "preco": 17.96,
       "ts": "2026-11-11T15:08:41.340013-03:00"
+    },
+    "SHOPEE-58250184742": {
+      "preco": 14.99,
+      "ts": "2026-11-11T18:08:08.085623-03:00"
     }
   },
   "alertas": {}

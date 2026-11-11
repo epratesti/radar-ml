@@ -1,6 +1,24 @@
 {
-  "atualizado": "2026-11-11T15:30:06.914612-03:00",
+  "atualizado": "2026-11-11T18:08:08.085623-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-58250184742",
+      "titulo": "Kit 100/200/300 Forro de Papel Descartável para Airfryer Antiaderente,Quadrado,Anti-Óleo Sem Limpeza",
+      "preco": 14.99,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 62,
+      "vendas": 2504,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-821ee-mggvnhpoe5n07f",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "air fryer",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/8AXa0gE05h",
+      "comissao": "0.11",
+      "loja": "VidaBem",
+      "postado_em": "2026-11-11T18:08:08.085623-03:00"
+    },
     {
       "id": "SHOPEE-22494941454",
       "titulo": "Kit Facial Kokeshi Completo 3 Passos Hidratação e Colágeno",
@@ -521,24 +539,6 @@
       "link": "https://s.shopee.com.br/1BNnk9fOdz",
       "comissao": "0.13",
       "loja": "SELLNEEDS",
-      "postado_em": "2026-11-10T07:09:13.798806-03:00"
-    },
-    {
-      "id": "SHOPEE-22199220609",
-      "titulo": "B&BRobô Varredora/Aspirador De Pó Automática 3 Em 1 Limpeza Doméstica Robótico Inteligente E Silencioso",
-      "preco": 37.99,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 69,
-      "vendas": 5114,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-821dm-mh9dj2twkavd00",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "aspirador",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/AKc2ezkV8c",
-      "comissao": "0.11",
-      "loja": "Lume & Lume ",
       "postado_em": "2026-11-10T07:09:13.798806-03:00"
     }
   ]
