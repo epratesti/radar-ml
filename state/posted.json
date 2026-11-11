@@ -121,7 +121,11 @@
     "SHOPEE-22794275506": "2026-11-11T12:11:56.223100-03:00",
     "22794275506": "2026-11-11T12:11:56.223100-03:00",
     "SHOPEE-22593614484": "2026-11-11T15:08:41.340013-03:00",
-    "22593614484": "2026-11-11T15:08:41.340013-03:00"
+    "22593614484": "2026-11-11T15:08:41.340013-03:00",
+    "SHOPEE-22494941454": "2026-11-11T15:30:06.914612-03:00",
+    "22494941454": "2026-11-11T15:30:06.914612-03:00",
+    "SHOPEE-58208872077": "2026-11-11T15:30:06.914612-03:00",
+    "58208872077": "2026-11-11T15:30:06.914612-03:00"
   },
   "titulos": {
     "kit 6 forma de silicone para fritadeira air fryer com alça antiaderente cozinha": "2026-11-10T15:08:22.842268-03:00",
@@ -184,7 +188,9 @@
     "smartwatch mini 38mm pro com monitor de frequência cardíaca do computador são pa": "2026-11-11T11:15:56.144170-03:00",
     "robô varredora aspirador de pó automática 3 em 1 limpeza doméstica robótico inte": "2026-11-11T11:15:56.144170-03:00",
     "kit 100 forma de airfryer descartavel antiaderente de papel cozinha quadrado fri": "2026-11-11T12:11:56.223100-03:00",
-    "smartwatch d20 relógio inteligente y68 esportivo bluetooth android ios com foto ": "2026-11-11T15:08:41.340013-03:00"
+    "smartwatch d20 relógio inteligente y68 esportivo bluetooth android ios com foto ": "2026-11-11T15:08:41.340013-03:00",
+    "kit facial kokeshi completo 3 passos hidratação e colágeno": "2026-11-11T15:30:06.914612-03:00",
+    "mochila grande unissex resistente impermeável notebook alta capacidade com compa": "2026-11-11T15:30:06.914612-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -240,8 +246,8 @@
       "ts": "2026-11-10T07:09:13.798806-03:00"
     },
     "SHOPEE-22494941454": {
-      "preco": 56.91,
-      "ts": "2026-11-08T09:12:35.587022-03:00"
+      "preco": 44.9,
+      "ts": "2026-11-11T15:30:06.914612-03:00"
     },
     "SHOPEE-23197485445": {
       "preco": 78.9,
@@ -448,8 +454,8 @@
       "ts": "2026-11-08T13:58:02.593000-03:00"
     },
     "SHOPEE-58208872077": {
-      "preco": 59.9,
-      "ts": "2026-11-08T13:58:02.593000-03:00"
+      "preco": 59.4,
+      "ts": "2026-11-11T15:30:06.914612-03:00"
     },
     "SHOPEE-58201056244": {
       "preco": 51.99,

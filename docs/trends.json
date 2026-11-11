@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-11T15:08:41.340013-03:00",
+  "atualizado": "2026-11-11T15:30:06.914612-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-22494941454",
+      "titulo": "Kit Facial Kokeshi Completo 3 Passos Hidratação e Colágeno",
+      "preco": 44.9,
+      "preco_anterior": 56.91,
+      "a_partir_de": false,
+      "desconto": 52,
+      "vendas": 9797,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lx-mqbygibr40sg7a",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "kit skincare",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/80EA1zcwtu",
+      "comissao": "0.21",
+      "loja": "KOKESHI OFICIAL",
+      "postado_em": "2026-11-11T15:30:06.914612-03:00"
+    },
+    {
+      "id": "SHOPEE-58208872077",
+      "titulo": "mochila grande unissex resistente impermeável notebook alta capacidade com compartimentos ideal trabalho faculdade",
+      "preco": 59.4,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 70,
+      "vendas": 4166,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lk-ms4ydyx58xdy23",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "mochila",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/9V2xok21oq",
+      "comissao": "0.12",
+      "loja": "Loja Oficial N&M 1",
+      "postado_em": "2026-11-11T15:30:06.914612-03:00"
+    },
     {
       "id": "SHOPEE-22593614484",
       "titulo": "Smartwatch D20 - Relógio Inteligente y68 Esportivo Bluetooth Android/iOS - Com foto Na Tela",
@@ -504,42 +540,6 @@
       "comissao": "0.11",
       "loja": "Lume & Lume ",
       "postado_em": "2026-11-10T07:09:13.798806-03:00"
-    },
-    {
-      "id": "SHOPEE-22397182247",
-      "titulo": "Carregador iPhone Turbo Tipo-C 20W + Cabo Lightining para IPhone Carga rápida",
-      "preco": 14.99,
-      "preco_anterior": null,
-      "a_partir_de": false,
-      "desconto": 70,
-      "vendas": 9121,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rbkw-lpcg9rytbas79a",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "carregador turbo",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/5AttaYmHA9",
-      "comissao": "0.11",
-      "loja": "ZSZ_SHOP",
-      "postado_em": "2026-11-09T22:23:20.578418-03:00"
-    },
-    {
-      "id": "SHOPEE-22999454687",
-      "titulo": "Mini Liquidificador Portátil 400ml 6 Lâminas Recarregável USB Mixer Suco Shake",
-      "preco": 32.9,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 58,
-      "vendas": 3635,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-82621-mlh3gn4xczk470",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "liquidificador",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/6q29246uI5",
-      "comissao": "0.04",
-      "loja": "Lemon Seleção",
-      "postado_em": "2026-11-09T19:09:12.417685-03:00"
     }
   ]
 }
