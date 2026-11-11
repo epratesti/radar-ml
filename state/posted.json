@@ -2,10 +2,6 @@
   "ids": {
     "SHOPEE-21997150349": "2026-11-10T15:08:22.842268-03:00",
     "21997150349": "2026-11-10T15:08:22.842268-03:00",
-    "SHOPEE-20997608223": "2026-11-08T19:09:41.270274-03:00",
-    "20997608223": "2026-11-08T19:09:41.270274-03:00",
-    "SHOPEE-22993575936": "2026-11-08T19:09:41.270274-03:00",
-    "22993575936": "2026-11-08T19:09:41.270274-03:00",
     "SHOPEE-49610876725": "2026-11-08T20:10:13.791383-03:00",
     "49610876725": "2026-11-08T20:10:13.791383-03:00",
     "SHOPEE-54850610196": "2026-11-08T20:10:13.791383-03:00",
@@ -123,12 +119,14 @@
     "SHOPEE-19697980846": "2026-11-11T19:09:27.605574-03:00",
     "19697980846": "2026-11-11T19:09:27.605574-03:00",
     "SHOPEE-22791523448": "2026-11-11T19:09:27.605574-03:00",
-    "22791523448": "2026-11-11T19:09:27.605574-03:00"
+    "22791523448": "2026-11-11T19:09:27.605574-03:00",
+    "SHOPEE-23198212585": "2026-11-11T20:09:55.687295-03:00",
+    "23198212585": "2026-11-11T20:09:55.687295-03:00",
+    "SHOPEE-58250947403": "2026-11-11T20:09:55.687295-03:00",
+    "58250947403": "2026-11-11T20:09:55.687295-03:00"
   },
   "titulos": {
     "kit 6 forma de silicone para fritadeira air fryer com alça antiaderente cozinha": "2026-11-10T15:08:22.842268-03:00",
-    "caixa de som bluetooth portátil com led rgb portátil fm usb tws 30w para praia f": "2026-11-08T19:09:41.270274-03:00",
-    "pasta sanfonada com 12 divisórias ou pasta prancheta tamanho a4 escritório escol": "2026-11-08T19:09:41.270274-03:00",
     "rádio caixa de som bluetooth recarregável lanterna retro portátil fm am usb sd p": "2026-11-08T20:10:13.791383-03:00",
     "caneca magnética com mistura automática 380ml": "2026-11-08T20:10:13.791383-03:00",
     "2026 nova série 8 relógio t800 ultra smart watch esportivo sem fio prova d água ": "2026-11-08T21:12:55.738574-03:00",
@@ -187,7 +185,9 @@
     "mochila grande unissex resistente impermeável notebook alta capacidade com compa": "2026-11-11T15:30:06.914612-03:00",
     "kit 100 200 300 forro de papel descartável para airfryer antiaderente quadrado a": "2026-11-11T18:08:08.085623-03:00",
     "ventilador luminária led 6 pás lâmpada soquete bocal e27 teto 3 cores luz branco": "2026-11-11T19:09:27.605574-03:00",
-    "mini aspirador de pó portátil automotivo e casa potente recarregável": "2026-11-11T19:09:27.605574-03:00"
+    "mini aspirador de pó portátil automotivo e casa potente recarregável": "2026-11-11T19:09:27.605574-03:00",
+    "whey ultra protein concentrado pote 900g ftw": "2026-11-11T20:09:55.687295-03:00",
+    "mouse pad rgb grande gamer personalizado apoio ergonômico confortável antiderrap": "2026-11-11T20:09:55.687295-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -379,8 +379,8 @@
       "ts": "2026-11-07T20:09:58.302295-03:00"
     },
     "SHOPEE-23198212585": {
-      "preco": 69.99,
-      "ts": "2026-11-07T21:12:10.767587-03:00"
+      "preco": 45.9,
+      "ts": "2026-11-11T20:09:55.687295-03:00"
     },
     "SHOPEE-23098440348": {
       "preco": 27.49,
@@ -685,6 +685,10 @@
     "SHOPEE-22791523448": {
       "preco": 20.99,
       "ts": "2026-11-11T19:09:27.605574-03:00"
+    },
+    "SHOPEE-58250947403": {
+      "preco": 21.55,
+      "ts": "2026-11-11T20:09:55.687295-03:00"
     }
   },
   "alertas": {}
