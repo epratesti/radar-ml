@@ -119,7 +119,11 @@
     "SHOPEE-58208872077": "2026-11-11T15:30:06.914612-03:00",
     "58208872077": "2026-11-11T15:30:06.914612-03:00",
     "SHOPEE-58250184742": "2026-11-11T18:08:08.085623-03:00",
-    "58250184742": "2026-11-11T18:08:08.085623-03:00"
+    "58250184742": "2026-11-11T18:08:08.085623-03:00",
+    "SHOPEE-19697980846": "2026-11-11T19:09:27.605574-03:00",
+    "19697980846": "2026-11-11T19:09:27.605574-03:00",
+    "SHOPEE-22791523448": "2026-11-11T19:09:27.605574-03:00",
+    "22791523448": "2026-11-11T19:09:27.605574-03:00"
   },
   "titulos": {
     "kit 6 forma de silicone para fritadeira air fryer com alça antiaderente cozinha": "2026-11-10T15:08:22.842268-03:00",
@@ -181,7 +185,9 @@
     "smartwatch d20 relógio inteligente y68 esportivo bluetooth android ios com foto ": "2026-11-11T15:08:41.340013-03:00",
     "kit facial kokeshi completo 3 passos hidratação e colágeno": "2026-11-11T15:30:06.914612-03:00",
     "mochila grande unissex resistente impermeável notebook alta capacidade com compa": "2026-11-11T15:30:06.914612-03:00",
-    "kit 100 200 300 forro de papel descartável para airfryer antiaderente quadrado a": "2026-11-11T18:08:08.085623-03:00"
+    "kit 100 200 300 forro de papel descartável para airfryer antiaderente quadrado a": "2026-11-11T18:08:08.085623-03:00",
+    "ventilador luminária led 6 pás lâmpada soquete bocal e27 teto 3 cores luz branco": "2026-11-11T19:09:27.605574-03:00",
+    "mini aspirador de pó portátil automotivo e casa potente recarregável": "2026-11-11T19:09:27.605574-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -190,7 +196,7 @@
     },
     "SHOPEE-19697980846": {
       "preco": 42.99,
-      "ts": "2026-11-06T16:32:43.773730-03:00"
+      "ts": "2026-11-11T19:09:27.605574-03:00"
     },
     "SHOPEE-23198988208": {
       "preco": 15.89,
@@ -675,6 +681,10 @@
     "SHOPEE-58250184742": {
       "preco": 14.99,
       "ts": "2026-11-11T18:08:08.085623-03:00"
+    },
+    "SHOPEE-22791523448": {
+      "preco": 20.99,
+      "ts": "2026-11-11T19:09:27.605574-03:00"
     }
   },
   "alertas": {}
