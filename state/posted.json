@@ -2,10 +2,6 @@
   "ids": {
     "SHOPEE-22494941454": "2026-11-08T09:12:35.587022-03:00",
     "22494941454": "2026-11-08T09:12:35.587022-03:00",
-    "SHOPEE-58215631607": "2026-11-08T08:10:36.653242-03:00",
-    "58215631607": "2026-11-08T08:10:36.653242-03:00",
-    "SHOPEE-29842873054": "2026-11-08T08:10:36.653242-03:00",
-    "29842873054": "2026-11-08T08:10:36.653242-03:00",
     "SHOPEE-52607420187": "2026-11-08T09:12:35.587022-03:00",
     "52607420187": "2026-11-08T09:12:35.587022-03:00",
     "SHOPEE-22497773735": "2026-11-08T10:16:02.979418-03:00",
@@ -141,12 +137,12 @@
     "SHOPEE-23397324970": "2026-11-10T20:57:53.396139-03:00",
     "23397324970": "2026-11-10T20:57:53.396139-03:00",
     "SHOPEE-20399896346": "2026-11-11T07:08:44.158781-03:00",
-    "20399896346": "2026-11-11T07:08:44.158781-03:00"
+    "20399896346": "2026-11-11T07:08:44.158781-03:00",
+    "SHOPEE-23994798337": "2026-11-11T09:12:18.854592-03:00",
+    "23994798337": "2026-11-11T09:12:18.854592-03:00"
   },
   "titulos": {
     "kit facial kokeshi completo 3 passos hidratação e colágeno": "2026-11-08T09:12:35.587022-03:00",
-    "kit body splash masculino 2x200ml neonoble inspirado em 212 vip black e sauvage": "2026-11-08T08:10:36.653242-03:00",
-    "ftw whey protein concentrado 1kg refil 15g proteína por dose": "2026-11-08T08:10:36.653242-03:00",
     "escova de limpeza multifuncional flexível para garrafas mamadeiras liquidificado": "2026-11-08T09:12:35.587022-03:00",
     "romantic crown mochila viagem feminina masculina multifuncional reforçada imperm": "2026-11-08T10:16:02.979418-03:00",
     "gaabor aspirador de pó portátil 2 em 1 com fio e haste de pressão sucção forte d": "2026-11-08T10:16:02.979418-03:00",
@@ -214,7 +210,8 @@
     "cr2032 3v com 1 2 3 4 cartelas para relógio controle e eletrônicos": "2026-11-10T20:09:18.482908-03:00",
     "kit 50 a 300 formas descartável para airfryer antiaderente não suja cozinha frit": "2026-11-10T20:57:53.396139-03:00",
     "relógio prova d água led digital de pulso esportivo feminino masculino ultra9 es": "2026-11-10T20:57:53.396139-03:00",
-    "high quality non toxic reusable pour over coffee filter stainless steel coffee t": "2026-11-11T07:08:44.158781-03:00"
+    "high quality non toxic reusable pour over coffee filter stainless steel coffee t": "2026-11-11T07:08:44.158781-03:00",
+    "escova limpador de ventilador espanador de pó flexível para limpar ar condiciona": "2026-11-11T09:12:18.854592-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -688,6 +685,10 @@
     "SHOPEE-20399896346": {
       "preco": 18.99,
       "ts": "2026-11-11T07:08:44.158781-03:00"
+    },
+    "SHOPEE-23994798337": {
+      "preco": 11.99,
+      "ts": "2026-11-11T09:12:18.854592-03:00"
     }
   },
   "alertas": {}
