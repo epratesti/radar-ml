@@ -2,10 +2,6 @@
   "ids": {
     "SHOPEE-21997150349": "2026-11-10T15:08:22.842268-03:00",
     "21997150349": "2026-11-10T15:08:22.842268-03:00",
-    "SHOPEE-58206612939": "2026-11-08T12:11:28.039992-03:00",
-    "58206612939": "2026-11-08T12:11:28.039992-03:00",
-    "SHOPEE-23093960843": "2026-11-08T12:11:28.039992-03:00",
-    "23093960843": "2026-11-08T12:11:28.039992-03:00",
     "SHOPEE-58213273842": "2026-11-08T13:58:02.593000-03:00",
     "58213273842": "2026-11-08T13:58:02.593000-03:00",
     "SHOPEE-58208872077": "2026-11-08T13:58:02.593000-03:00",
@@ -133,12 +129,12 @@
     "SHOPEE-22499056874": "2026-11-11T11:15:56.144170-03:00",
     "22499056874": "2026-11-11T11:15:56.144170-03:00",
     "SHOPEE-19499549872": "2026-11-11T11:15:56.144170-03:00",
-    "19499549872": "2026-11-11T11:15:56.144170-03:00"
+    "19499549872": "2026-11-11T11:15:56.144170-03:00",
+    "SHOPEE-22794275506": "2026-11-11T12:11:56.223100-03:00",
+    "22794275506": "2026-11-11T12:11:56.223100-03:00"
   },
   "titulos": {
     "kit 6 forma de silicone para fritadeira air fryer com alça antiaderente cozinha": "2026-11-10T15:08:22.842268-03:00",
-    "kit 2 body splash ameixa negra maracujá ou uva merlot cereja 200ml belkit alta p": "2026-11-08T12:11:28.039992-03:00",
-    "pasta sanfonada para documento com 12 divisórias e pasta prancheta tamanho a4 es": "2026-11-08T12:11:28.039992-03:00",
     "kit 7 saquinhos maternidade organizador mala bebê mala viagem roupa molhada e se": "2026-11-08T13:58:02.593000-03:00",
     "mochila grande unissex resistente impermeável notebook alta capacidade com compa": "2026-11-08T13:58:02.593000-03:00",
     "ventilador de teto com lampada led integrada bocal e27 6 pétalas 60w 3 velocidad": "2026-11-08T14:10:53.063318-03:00",
@@ -202,7 +198,8 @@
     "high quality non toxic reusable pour over coffee filter stainless steel coffee t": "2026-11-11T07:08:44.158781-03:00",
     "escova limpador de ventilador espanador de pó flexível para limpar ar condiciona": "2026-11-11T09:12:18.854592-03:00",
     "smartwatch mini 38mm pro com monitor de frequência cardíaca do computador são pa": "2026-11-11T11:15:56.144170-03:00",
-    "robô varredora aspirador de pó automática 3 em 1 limpeza doméstica robótico inte": "2026-11-11T11:15:56.144170-03:00"
+    "robô varredora aspirador de pó automática 3 em 1 limpeza doméstica robótico inte": "2026-11-11T11:15:56.144170-03:00",
+    "kit 100 forma de airfryer descartavel antiaderente de papel cozinha quadrado fri": "2026-11-11T12:11:56.223100-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -684,6 +681,10 @@
     "SHOPEE-19499549872": {
       "preco": 38.18,
       "ts": "2026-11-11T11:15:56.144170-03:00"
+    },
+    "SHOPEE-22794275506": {
+      "preco": 16.98,
+      "ts": "2026-11-11T12:11:56.223100-03:00"
     }
   },
   "alertas": {}
