@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-11T10:14:43.616810-03:00",
+  "atualizado": "2026-11-11T11:15:56.144170-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-22499056874",
+      "titulo": "Smartwatch MINI 38MM PRO Com monitor De Frequência Cardíaca Do Computador São Paulo pronta entrega",
+      "preco": 53.0,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 74,
+      "vendas": 1657,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mg4sqr0e5nggcd",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "smartwatch",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/60T5IeLQqS",
+      "comissao": "0.13",
+      "loja": "Os produtos preferidos",
+      "postado_em": "2026-11-11T11:15:56.144170-03:00"
+    },
+    {
+      "id": "SHOPEE-19499549872",
+      "titulo": "Robô Varredora/Aspirador De Pó Automática 3 Em 1 Limpeza Doméstica Robótico Inteligente E Silencioso",
+      "preco": 38.18,
+      "preco_anterior": null,
+      "a_partir_de": false,
+      "desconto": 60,
+      "vendas": 1934,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-m2wi3azb4nid1e",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "aspirador",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/6q2CMP0Ybb",
+      "comissao": "0.14",
+      "loja": "JX VERDE",
+      "postado_em": "2026-11-11T11:15:56.144170-03:00"
+    },
     {
       "id": "SHOPEE-23497594302",
       "titulo": "ROMANTIC CROWN Mochila de Viagem Expansível, Bolsa Executiva Notebook Masculina e Feminina Trabalho,Grande,Reforçada",
@@ -504,42 +540,6 @@
       "comissao": "0.08",
       "loja": "Romantic.Crown.07",
       "postado_em": "2026-11-09T18:18:50.117667-03:00"
-    },
-    {
-      "id": "SHOPEE-23198988208",
-      "titulo": "Mouse Pad Desk Pad Couro Borda Costurada Gigante Antiderrapante Tapete Mesa Gamer Setup Trabalho Estudo Protetor Mesa",
-      "preco": 15.89,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 56,
-      "vendas": 3087,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820li-mlfcjdzl6ryf41",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "mouse gamer",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/2qW0nSPHSW",
-      "comissao": "0.19",
-      "loja": "OmniStore",
-      "postado_em": "2026-11-09T17:08:19.497351-03:00"
-    },
-    {
-      "id": "SHOPEE-23694435102",
-      "titulo": "Chinelo Rasteira Feminina Adulto e Infantil com Nó Bico Quadrado Confortável e Elegante para Dia a Dia",
-      "preco": 29.9,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 67,
-      "vendas": 6281,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lf-mlnmkfz6dvr8e0",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "chinelo",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/40hyBb3Ey5",
-      "comissao": "0.06",
-      "loja": "GOIS E MORAIS",
-      "postado_em": "2026-11-09T17:08:19.497351-03:00"
     }
   ]
 }
