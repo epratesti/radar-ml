@@ -1,9 +1,5 @@
 {
   "ids": {
-    "SHOPEE-22494941454": "2026-11-08T09:12:35.587022-03:00",
-    "22494941454": "2026-11-08T09:12:35.587022-03:00",
-    "SHOPEE-52607420187": "2026-11-08T09:12:35.587022-03:00",
-    "52607420187": "2026-11-08T09:12:35.587022-03:00",
     "SHOPEE-22497773735": "2026-11-08T10:16:02.979418-03:00",
     "22497773735": "2026-11-08T10:16:02.979418-03:00",
     "SHOPEE-19098205730": "2026-11-08T10:16:02.979418-03:00",
@@ -90,14 +86,14 @@
     "26980788215": "2026-11-09T18:18:50.117667-03:00",
     "SHOPEE-58256512525": "2026-11-09T18:22:16.892935-03:00",
     "58256512525": "2026-11-09T18:22:16.892935-03:00",
-    "SHOPEE-17255136776": "2026-11-09T19:09:12.417685-03:00",
-    "17255136776": "2026-11-09T19:09:12.417685-03:00",
+    "SHOPEE-17255136776": "2026-11-11T10:14:43.616810-03:00",
+    "17255136776": "2026-11-11T10:14:43.616810-03:00",
     "SHOPEE-22999454687": "2026-11-09T19:09:12.417685-03:00",
     "22999454687": "2026-11-09T19:09:12.417685-03:00",
     "SHOPEE-22397182247": "2026-11-09T22:23:20.578418-03:00",
     "22397182247": "2026-11-09T22:23:20.578418-03:00",
-    "SHOPEE-23497594302": "2026-11-09T22:23:20.578418-03:00",
-    "23497594302": "2026-11-09T22:23:20.578418-03:00",
+    "SHOPEE-23497594302": "2026-11-11T10:14:43.616810-03:00",
+    "23497594302": "2026-11-11T10:14:43.616810-03:00",
     "SHOPEE-46360468172": "2026-11-10T07:09:13.798806-03:00",
     "46360468172": "2026-11-10T07:09:13.798806-03:00",
     "SHOPEE-22199220609": "2026-11-10T07:09:13.798806-03:00",
@@ -142,8 +138,6 @@
     "23994798337": "2026-11-11T09:12:18.854592-03:00"
   },
   "titulos": {
-    "kit facial kokeshi completo 3 passos hidratação e colágeno": "2026-11-08T09:12:35.587022-03:00",
-    "escova de limpeza multifuncional flexível para garrafas mamadeiras liquidificado": "2026-11-08T09:12:35.587022-03:00",
     "romantic crown mochila viagem feminina masculina multifuncional reforçada imperm": "2026-11-08T10:16:02.979418-03:00",
     "gaabor aspirador de pó portátil 2 em 1 com fio e haste de pressão sucção forte d": "2026-11-08T10:16:02.979418-03:00",
     "kit 6 forma de silicone para fritadeira air fryer com alça antiaderente cozinha": "2026-11-10T15:08:22.842268-03:00",
@@ -187,10 +181,10 @@
     "chinelo rasteira feminina adulto e infantil com nó bico quadrado confortável e e": "2026-11-09T17:08:19.497351-03:00",
     "romantic crown copo térmico inox portátil 1200ml 600ml 1 2l garrafa térmica inox": "2026-11-09T18:18:50.117667-03:00",
     "mochila masculina preta reforçada impermeável grande capacidade para trabalho vi": "2026-11-09T18:22:16.892935-03:00",
-    "relógio smartwatch d20 pro bluetooth coloca foto na tela monitor cardíaco pressã": "2026-11-09T19:09:12.417685-03:00",
+    "relógio smartwatch d20 pro bluetooth coloca foto na tela monitor cardíaco pressã": "2026-11-11T10:14:43.616810-03:00",
     "mini liquidificador portátil 400ml 6 lâminas recarregável usb mixer suco shake": "2026-11-09T19:09:12.417685-03:00",
     "carregador iphone turbo tipo c 20w cabo lightining para iphone carga rápida": "2026-11-09T22:23:20.578418-03:00",
-    "romantic crown mochila de viagem expansível bolsa executiva notebook masculina e": "2026-11-09T22:23:20.578418-03:00",
+    "romantic crown mochila de viagem expansível bolsa executiva notebook masculina e": "2026-11-11T10:14:43.616810-03:00",
     "kit 4 potes herméticos tampa bambu organizador mantimentos cozinha": "2026-11-10T07:09:13.798806-03:00",
     "b brobô varredora aspirador de pó automática 3 em 1 limpeza doméstica robótico i": "2026-11-10T07:09:13.798806-03:00",
     "relógio retrô digital prata led unissex fashion masculino feminino pulseira inox": "2026-11-10T08:10:53.877913-03:00",
@@ -615,8 +609,8 @@
       "ts": "2026-11-09T18:22:16.892935-03:00"
     },
     "SHOPEE-17255136776": {
-      "preco": 20.99,
-      "ts": "2026-11-09T19:09:12.417685-03:00"
+      "preco": 18.79,
+      "ts": "2026-11-11T10:14:43.616810-03:00"
     },
     "SHOPEE-22999454687": {
       "preco": 32.9,
@@ -627,8 +621,8 @@
       "ts": "2026-11-09T22:23:20.578418-03:00"
     },
     "SHOPEE-23497594302": {
-      "preco": 99.98,
-      "ts": "2026-11-09T22:23:20.578418-03:00"
+      "preco": 89.98,
+      "ts": "2026-11-11T10:14:43.616810-03:00"
     },
     "SHOPEE-58251249633": {
       "preco": 14.9,
