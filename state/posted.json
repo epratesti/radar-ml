@@ -2,10 +2,6 @@
   "ids": {
     "SHOPEE-21997150349": "2026-11-10T15:08:22.842268-03:00",
     "21997150349": "2026-11-10T15:08:22.842268-03:00",
-    "SHOPEE-22099191110": "2026-11-08T22:12:16.269138-03:00",
-    "22099191110": "2026-11-08T22:12:16.269138-03:00",
-    "SHOPEE-54663825990": "2026-11-08T22:12:16.269138-03:00",
-    "54663825990": "2026-11-08T22:12:16.269138-03:00",
     "SHOPEE-54557028525": "2026-11-09T08:11:36.421253-03:00",
     "54557028525": "2026-11-09T08:11:36.421253-03:00",
     "SHOPEE-22299265128": "2026-11-09T08:11:36.421253-03:00",
@@ -117,12 +113,14 @@
     "SHOPEE-22392993399": "2026-11-11T21:11:46.529005-03:00",
     "22392993399": "2026-11-11T21:11:46.529005-03:00",
     "SHOPEE-23994387054": "2026-11-11T22:11:28.276087-03:00",
-    "23994387054": "2026-11-11T22:11:28.276087-03:00"
+    "23994387054": "2026-11-11T22:11:28.276087-03:00",
+    "SHOPEE-58256926114": "2026-11-11T22:24:29.527384-03:00",
+    "58256926114": "2026-11-11T22:24:29.527384-03:00",
+    "SHOPEE-21198282551": "2026-11-11T22:24:29.527384-03:00",
+    "21198282551": "2026-11-11T22:24:29.527384-03:00"
   },
   "titulos": {
     "kit 6 forma de silicone para fritadeira air fryer com alça antiaderente cozinha": "2026-11-10T15:08:22.842268-03:00",
-    "garrafa térmica watersy 500ml 48h frio perfeita para academia futebol e dia a di": "2026-11-08T22:12:16.269138-03:00",
-    "perfume masculino 100ml fragrância elegante longa duração para uso diário": "2026-11-08T22:12:16.269138-03:00",
     "chaleira elétrica inox 1 8l 1000w ou 1200w desligamento automático bule jarra ca": "2026-11-09T08:11:36.421253-03:00",
     "mochila executiva impermeável unissex reforçada com cabo de aço para notebook 15": "2026-11-09T08:11:36.421253-03:00",
     "attracione men perfume masculino com feromônios ativados": "2026-11-09T09:11:32.747371-03:00",
@@ -178,7 +176,9 @@
     "mouse pad rgb grande gamer personalizado apoio ergonômico confortável antiderrap": "2026-11-11T20:09:55.687295-03:00",
     "alaxe5 generation original speaker immediate shipping best price": "2026-11-11T21:11:46.529005-03:00",
     "hipercalórico dark mass 3kg dark lab whey protein creatina bcaa waxy maize premi": "2026-11-11T21:11:46.529005-03:00",
-    "kit dupla renovadores faciais kokeshi pele porcelana olhos gueixa": "2026-11-11T22:11:28.276087-03:00"
+    "kit dupla renovadores faciais kokeshi pele porcelana olhos gueixa": "2026-11-11T22:11:28.276087-03:00",
+    "carregador portátil 5000mah 10000mah indução sem fio bateria carga": "2026-11-11T22:24:29.527384-03:00",
+    "forma de silicone 1 ou 3 peças para air fryer forno fritadeira assadeira reutili": "2026-11-11T22:24:29.527384-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -680,6 +680,14 @@
     "SHOPEE-58250947403": {
       "preco": 21.55,
       "ts": "2026-11-11T20:09:55.687295-03:00"
+    },
+    "SHOPEE-58256926114": {
+      "preco": 25.45,
+      "ts": "2026-11-11T22:24:29.527384-03:00"
+    },
+    "SHOPEE-21198282551": {
+      "preco": 10.8,
+      "ts": "2026-11-11T22:24:29.527384-03:00"
     }
   },
   "alertas": {}
