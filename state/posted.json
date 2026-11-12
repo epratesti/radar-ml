@@ -4,14 +4,8 @@
     "21997150349": "2026-11-10T15:08:22.842268-03:00",
     "SHOPEE-18499853587": "2026-11-11T22:11:28.276087-03:00",
     "18499853587": "2026-11-11T22:11:28.276087-03:00",
-    "SHOPEE-26980788215": "2026-11-09T18:18:50.117667-03:00",
-    "26980788215": "2026-11-09T18:18:50.117667-03:00",
-    "SHOPEE-58256512525": "2026-11-09T18:22:16.892935-03:00",
-    "58256512525": "2026-11-09T18:22:16.892935-03:00",
     "SHOPEE-17255136776": "2026-11-11T10:14:43.616810-03:00",
     "17255136776": "2026-11-11T10:14:43.616810-03:00",
-    "SHOPEE-22999454687": "2026-11-09T19:09:12.417685-03:00",
-    "22999454687": "2026-11-09T19:09:12.417685-03:00",
     "SHOPEE-22397182247": "2026-11-09T22:23:20.578418-03:00",
     "22397182247": "2026-11-09T22:23:20.578418-03:00",
     "SHOPEE-23497594302": "2026-11-11T10:14:43.616810-03:00",
@@ -109,15 +103,16 @@
     "SHOPEE-23797686527": "2026-11-12T16:08:24.381438-03:00",
     "23797686527": "2026-11-12T16:08:24.381438-03:00",
     "SHOPEE-52352168399": "2026-11-12T17:09:50.052323-03:00",
-    "52352168399": "2026-11-12T17:09:50.052323-03:00"
+    "52352168399": "2026-11-12T17:09:50.052323-03:00",
+    "SHOPEE-21797728567": "2026-11-12T19:10:39.202234-03:00",
+    "21797728567": "2026-11-12T19:10:39.202234-03:00",
+    "SHOPEE-23597035403": "2026-11-12T19:10:39.202234-03:00",
+    "23597035403": "2026-11-12T19:10:39.202234-03:00"
   },
   "titulos": {
     "kit 6 forma de silicone para fritadeira air fryer com alça antiaderente cozinha": "2026-11-10T15:08:22.842268-03:00",
     "carregador sem fio 5000 10000mah iphone": "2026-11-11T22:11:28.276087-03:00",
-    "romantic crown copo térmico inox portátil 1200ml 600ml 1 2l garrafa térmica inox": "2026-11-09T18:18:50.117667-03:00",
-    "mochila masculina preta reforçada impermeável grande capacidade para trabalho vi": "2026-11-09T18:22:16.892935-03:00",
     "relógio smartwatch d20 pro bluetooth coloca foto na tela monitor cardíaco pressã": "2026-11-11T10:14:43.616810-03:00",
-    "mini liquidificador portátil 400ml 6 lâminas recarregável usb mixer suco shake": "2026-11-09T19:09:12.417685-03:00",
     "carregador iphone turbo tipo c 20w cabo lightining para iphone carga rápida": "2026-11-09T22:23:20.578418-03:00",
     "romantic crown mochila de viagem expansível bolsa executiva notebook masculina e": "2026-11-11T10:14:43.616810-03:00",
     "kit 4 potes herméticos tampa bambu organizador mantimentos cozinha": "2026-11-10T07:09:13.798806-03:00",
@@ -166,7 +161,9 @@
     "ventilador de teto com luz silencioso controle remoto economica instalação fácil": "2026-11-12T15:45:58.716149-03:00",
     "whey protein fuse 900g isolate dark lab": "2026-11-12T16:08:24.381438-03:00",
     "relógio masculino digital wr 100 qualidade entrega rápida": "2026-11-12T16:08:24.381438-03:00",
-    "pasta de amendoim com whey protein 600g dr peanut": "2026-11-12T17:09:50.052323-03:00"
+    "pasta de amendoim com whey protein 600g dr peanut": "2026-11-12T17:09:50.052323-03:00",
+    "arara 4 5 andares multiuso c sapateira cabideiro e suporte p roupas tênis e clos": "2026-11-12T19:10:39.202234-03:00",
+    "1 3 5 pcs cápsula café reutilizável dolce gusto recarregável refrescante efectiv": "2026-11-12T19:10:39.202234-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -447,7 +444,7 @@
     },
     "SHOPEE-23597035403": {
       "preco": 9.59,
-      "ts": "2026-11-08T15:07:29.761374-03:00"
+      "ts": "2026-11-12T19:10:39.202234-03:00"
     },
     "SHOPEE-23397600706": {
       "preco": 11.8,
@@ -688,6 +685,10 @@
     "SHOPEE-52352168399": {
       "preco": 41.99,
       "ts": "2026-11-12T17:09:50.052323-03:00"
+    },
+    "SHOPEE-21797728567": {
+      "preco": 41.48,
+      "ts": "2026-11-12T19:10:39.202234-03:00"
     }
   },
   "alertas": {}
