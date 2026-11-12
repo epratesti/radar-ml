@@ -2,10 +2,6 @@
   "ids": {
     "SHOPEE-21997150349": "2026-11-10T15:08:22.842268-03:00",
     "21997150349": "2026-11-10T15:08:22.842268-03:00",
-    "SHOPEE-18499604408": "2026-11-09T10:15:42.379010-03:00",
-    "18499604408": "2026-11-09T10:15:42.379010-03:00",
-    "SHOPEE-58254952015": "2026-11-09T10:15:42.379010-03:00",
-    "58254952015": "2026-11-09T10:15:42.379010-03:00",
     "SHOPEE-18499853587": "2026-11-11T22:11:28.276087-03:00",
     "18499853587": "2026-11-11T22:11:28.276087-03:00",
     "SHOPEE-23797686527": "2026-11-09T13:09:29.879739-03:00",
@@ -117,12 +113,12 @@
     "SHOPEE-21399069053": "2026-11-12T10:14:11.637699-03:00",
     "21399069053": "2026-11-12T10:14:11.637699-03:00",
     "SHOPEE-23598387814": "2026-11-12T10:14:11.637699-03:00",
-    "23598387814": "2026-11-12T10:14:11.637699-03:00"
+    "23598387814": "2026-11-12T10:14:11.637699-03:00",
+    "SHOPEE-54850610196": "2026-11-12T11:17:52.711067-03:00",
+    "54850610196": "2026-11-12T11:17:52.711067-03:00"
   },
   "titulos": {
     "kit 6 forma de silicone para fritadeira air fryer com alça antiaderente cozinha": "2026-11-10T15:08:22.842268-03:00",
-    "2026 novo watch s20 pro max relógio 10 smart watch homens bt chamada sempre em e": "2026-11-09T10:15:42.379010-03:00",
-    "caixa de som c 2 microfones bluetooth 5 0 karaokê luzes led entretenimento em ca": "2026-11-09T10:15:42.379010-03:00",
     "carregador sem fio 5000 10000mah iphone": "2026-11-11T22:11:28.276087-03:00",
     "relógio masculino digital wr 100 qualidade entrega rápida": "2026-11-09T13:09:29.879739-03:00",
     "mochila bolsa reforçada notebook resistente trabalho faculdade coreana": "2026-11-09T14:11:34.525734-03:00",
@@ -178,7 +174,8 @@
     "carregador portátil indução para sem fio bateria carga 3000 5000 10000mah": "2026-11-12T07:08:56.029954-03:00",
     "espremedor elétrico de frutas automático laranja limão e outras frutas suco natu": "2026-11-12T07:08:56.029954-03:00",
     "caneta paint original reparadora pintura automotiva permanente não sai na água t": "2026-11-12T10:14:11.637699-03:00",
-    "adaptador de tomada ultra resistente de porcelana para secador air fryer benjami": "2026-11-12T10:14:11.637699-03:00"
+    "adaptador de tomada ultra resistente de porcelana para secador air fryer benjami": "2026-11-12T10:14:11.637699-03:00",
+    "caneca magnética com mistura automática 380ml": "2026-11-12T11:17:52.711067-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -491,7 +488,7 @@
     },
     "SHOPEE-54850610196": {
       "preco": 33.98,
-      "ts": "2026-11-08T20:10:13.791383-03:00"
+      "ts": "2026-11-12T11:17:52.711067-03:00"
     },
     "SHOPEE-22093160276": {
       "preco": 45.88,

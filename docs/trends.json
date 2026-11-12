@@ -1,6 +1,24 @@
 {
-  "atualizado": "2026-11-12T10:14:11.637699-03:00",
+  "atualizado": "2026-11-12T11:17:52.711067-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-54850610196",
+      "titulo": "Caneca Magnética Com Mistura Automática 380ml",
+      "preco": 33.98,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 72,
+      "vendas": 1830,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820l7-mlffathukzr9f4",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "cafeteira",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/ql0oNh0bC",
+      "comissao": "0.07",
+      "loja": "Belin Life ",
+      "postado_em": "2026-11-12T11:17:52.711067-03:00"
+    },
     {
       "id": "SHOPEE-21399069053",
       "titulo": "Caneta Paint Original Reparadora Pintura Automotiva Permanente Não Sai Na Água Tira Riscos Carro Moto Retoque de Placa Tênis Pneus para Ferro Metal Madeira Plástico Gesso Vidro Couro Tecido Cores Preto Branco Prata (Cinza) Dourado Azul Vermelha",
@@ -522,24 +540,6 @@
       "comissao": "0.03",
       "loja": "estrela237",
       "postado_em": "2026-11-10T20:09:18.482908-03:00"
-    },
-    {
-      "id": "SHOPEE-23399193375",
-      "titulo": "2026 T800 Ultra 3 MAX Mais Recente Smartwatch Relógio Inteligente NFC Série 10 2.19Polegadas Sem Fio",
-      "preco": 39.9,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 73,
-      "vendas": 1148,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mhq4f2lhz40397",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "smartwatch",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/6VPJIUWXzj",
-      "comissao": "0.11",
-      "loja": "LUNANA Shop",
-      "postado_em": "2026-11-10T19:09:10.274310-03:00"
     }
   ]
 }
