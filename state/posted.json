@@ -115,7 +115,9 @@
     "SHOPEE-23598387814": "2026-11-12T10:14:11.637699-03:00",
     "23598387814": "2026-11-12T10:14:11.637699-03:00",
     "SHOPEE-54850610196": "2026-11-12T11:17:52.711067-03:00",
-    "54850610196": "2026-11-12T11:17:52.711067-03:00"
+    "54850610196": "2026-11-12T11:17:52.711067-03:00",
+    "SHOPEE-18499695542": "2026-11-12T12:11:08.880911-03:00",
+    "18499695542": "2026-11-12T12:11:08.880911-03:00"
   },
   "titulos": {
     "kit 6 forma de silicone para fritadeira air fryer com alça antiaderente cozinha": "2026-11-10T15:08:22.842268-03:00",
@@ -175,7 +177,8 @@
     "espremedor elétrico de frutas automático laranja limão e outras frutas suco natu": "2026-11-12T07:08:56.029954-03:00",
     "caneta paint original reparadora pintura automotiva permanente não sai na água t": "2026-11-12T10:14:11.637699-03:00",
     "adaptador de tomada ultra resistente de porcelana para secador air fryer benjami": "2026-11-12T10:14:11.637699-03:00",
-    "caneca magnética com mistura automática 380ml": "2026-11-12T11:17:52.711067-03:00"
+    "caneca magnética com mistura automática 380ml": "2026-11-12T11:17:52.711067-03:00",
+    "mini aspirador de pó 3 em 1 a vacuo usb portátil recarregavel se8010": "2026-11-12T12:11:08.880911-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -689,6 +692,10 @@
     "SHOPEE-52905774499": {
       "preco": 49.99,
       "ts": "2026-11-12T07:08:56.029954-03:00"
+    },
+    "SHOPEE-18499695542": {
+      "preco": 21.99,
+      "ts": "2026-11-12T12:11:08.880911-03:00"
     }
   },
   "alertas": {}
