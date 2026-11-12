@@ -1,6 +1,24 @@
 {
-  "atualizado": "2026-11-12T16:08:24.381438-03:00",
+  "atualizado": "2026-11-12T17:09:50.052323-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-52352168399",
+      "titulo": "Pasta de Amendoim com Whey Protein 600g Dr Peanut",
+      "preco": 41.99,
+      "preco_anterior": null,
+      "a_partir_de": false,
+      "desconto": 58,
+      "vendas": 2683,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztc-mjogvg8bh62p24",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "whey protein",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/4qH9tgtaDw",
+      "comissao": "0.07",
+      "loja": "Hard Extreme",
+      "postado_em": "2026-11-12T17:09:50.052323-03:00"
+    },
     {
       "id": "SHOPEE-23197485445",
       "titulo": "Whey Protein Fuse 900g Isolate Dark Lab",
@@ -522,24 +540,6 @@
       "comissao": "0.13",
       "loja": "janeeimport",
       "postado_em": "2026-11-11T09:12:18.854592-03:00"
-    },
-    {
-      "id": "SHOPEE-20399896346",
-      "titulo": "High Quality Non-Toxic Reusable Pour Over Coffee Filter Stainless Steel Coffee Tea Filter--Immediate",
-      "preco": 18.99,
-      "preco_anterior": null,
-      "a_partir_de": false,
-      "desconto": 76,
-      "vendas": 1098,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-824i9-mfra08dv9dl91a",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "cafeteira",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/6AmVIBO56G",
-      "comissao": "0.13",
-      "loja": "FLMAX",
-      "postado_em": "2026-11-11T07:08:44.158781-03:00"
     }
   ]
 }
