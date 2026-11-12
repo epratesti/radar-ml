@@ -2,10 +2,6 @@
   "ids": {
     "SHOPEE-21997150349": "2026-11-10T15:08:22.842268-03:00",
     "21997150349": "2026-11-10T15:08:22.842268-03:00",
-    "SHOPEE-49610876725": "2026-11-08T20:10:13.791383-03:00",
-    "49610876725": "2026-11-08T20:10:13.791383-03:00",
-    "SHOPEE-54850610196": "2026-11-08T20:10:13.791383-03:00",
-    "54850610196": "2026-11-08T20:10:13.791383-03:00",
     "SHOPEE-22093160276": "2026-11-08T21:12:55.738574-03:00",
     "22093160276": "2026-11-08T21:12:55.738574-03:00",
     "SHOPEE-44213872297": "2026-11-08T21:12:55.738574-03:00",
@@ -123,12 +119,14 @@
     "SHOPEE-23198212585": "2026-11-11T20:09:55.687295-03:00",
     "23198212585": "2026-11-11T20:09:55.687295-03:00",
     "SHOPEE-58250947403": "2026-11-11T20:09:55.687295-03:00",
-    "58250947403": "2026-11-11T20:09:55.687295-03:00"
+    "58250947403": "2026-11-11T20:09:55.687295-03:00",
+    "SHOPEE-18598350302": "2026-11-11T21:11:46.529005-03:00",
+    "18598350302": "2026-11-11T21:11:46.529005-03:00",
+    "SHOPEE-22392993399": "2026-11-11T21:11:46.529005-03:00",
+    "22392993399": "2026-11-11T21:11:46.529005-03:00"
   },
   "titulos": {
     "kit 6 forma de silicone para fritadeira air fryer com alça antiaderente cozinha": "2026-11-10T15:08:22.842268-03:00",
-    "rádio caixa de som bluetooth recarregável lanterna retro portátil fm am usb sd p": "2026-11-08T20:10:13.791383-03:00",
-    "caneca magnética com mistura automática 380ml": "2026-11-08T20:10:13.791383-03:00",
     "2026 nova série 8 relógio t800 ultra smart watch esportivo sem fio prova d água ": "2026-11-08T21:12:55.738574-03:00",
     "smartwatch gps bettdow com aplicativo de ia integrado 100 modos esportivos resis": "2026-11-08T21:12:55.738574-03:00",
     "kit raquete frescobol bateu colou peteca tênis c bolinha bate gruda binquedo men": "2026-11-08T21:41:04.937266-03:00",
@@ -187,7 +185,9 @@
     "ventilador luminária led 6 pás lâmpada soquete bocal e27 teto 3 cores luz branco": "2026-11-11T19:09:27.605574-03:00",
     "mini aspirador de pó portátil automotivo e casa potente recarregável": "2026-11-11T19:09:27.605574-03:00",
     "whey ultra protein concentrado pote 900g ftw": "2026-11-11T20:09:55.687295-03:00",
-    "mouse pad rgb grande gamer personalizado apoio ergonômico confortável antiderrap": "2026-11-11T20:09:55.687295-03:00"
+    "mouse pad rgb grande gamer personalizado apoio ergonômico confortável antiderrap": "2026-11-11T20:09:55.687295-03:00",
+    "alaxe5 generation original speaker immediate shipping best price": "2026-11-11T21:11:46.529005-03:00",
+    "hipercalórico dark mass 3kg dark lab whey protein creatina bcaa waxy maize premi": "2026-11-11T21:11:46.529005-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -264,7 +264,7 @@
     },
     "SHOPEE-22392993399": {
       "preco": 78.9,
-      "ts": "2026-11-07T08:11:22.127374-03:00"
+      "ts": "2026-11-11T21:11:46.529005-03:00"
     },
     "SHOPEE-58262387632": {
       "preco": 66.41,
@@ -407,8 +407,8 @@
       "ts": "2026-11-08T07:09:05.766379-03:00"
     },
     "SHOPEE-18598350302": {
-      "preco": 46.99,
-      "ts": "2026-11-08T07:09:05.766379-03:00"
+      "preco": 42.29,
+      "ts": "2026-11-11T21:11:46.529005-03:00"
     },
     "SHOPEE-58215631607": {
       "preco": 21.5,

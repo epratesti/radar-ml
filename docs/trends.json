@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-11T20:09:55.687295-03:00",
+  "atualizado": "2026-11-11T21:11:46.529005-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-18598350302",
+      "titulo": "Alaxe5 Generation Original Speaker Immediate Shipping Best Price",
+      "preco": 42.29,
+      "preco_anterior": 46.99,
+      "a_partir_de": true,
+      "desconto": 61,
+      "vendas": 5187,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mh4dohuahhc099",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "caixa de som",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/4VeIF1IxlV",
+      "comissao": "0.08",
+      "loja": "TW1 TECH LTDA",
+      "postado_em": "2026-11-11T21:11:46.529005-03:00"
+    },
+    {
+      "id": "SHOPEE-22392993399",
+      "titulo": "Hipercalórico Dark Mass 3kg Dark Lab - Whey Protein, Creatina, BCAA, Waxy Maize, Premium Mass Gainer",
+      "preco": 78.9,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 51,
+      "vendas": 2684,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lzawnmo1qj3970",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "whey protein",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/1gK6nYqJbs",
+      "comissao": "0.26",
+      "loja": "Dark Lab Oficial",
+      "postado_em": "2026-11-11T21:11:46.529005-03:00"
+    },
     {
       "id": "SHOPEE-23198212585",
       "titulo": "Whey Ultra Protein Concentrado Pote 900g - FTW",
@@ -504,42 +540,6 @@
       "comissao": "0.31",
       "loja": "Primacial",
       "postado_em": "2026-11-10T12:13:31.854234-03:00"
-    },
-    {
-      "id": "SHOPEE-58202148614",
-      "titulo": "Caixa de Som Bluetooth Portátil RGB com Microfone Sem Fio Karaokê USB TF AUX LED Colorido Mini Speaker Potente",
-      "preco": 34.99,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 65,
-      "vendas": 1239,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8262w-ml5kmo5n7hmp56",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "caixa de som",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/4LKpqr3KR9",
-      "comissao": "0.07",
-      "loja": "ANJ.GG store",
-      "postado_em": "2026-11-10T12:13:31.854234-03:00"
-    },
-    {
-      "id": "SHOPEE-58259749592",
-      "titulo": "Kit Carregador 67W Turbo + Cabo Tipo-C Carga Rápida Universal Xiaomi Redmi Note E Poco X7 Android",
-      "preco": 29.8,
-      "preco_anterior": null,
-      "a_partir_de": false,
-      "desconto": 40,
-      "vendas": 9300,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8258n-mr8vmek85csha1",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "carregador turbo",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/50aTOFmuV6",
-      "comissao": "0.15",
-      "loja": "Reis Empire",
-      "postado_em": "2026-11-10T10:15:56.712994-03:00"
     }
   ]
 }
