@@ -4,10 +4,6 @@
     "21997150349": "2026-11-10T15:08:22.842268-03:00",
     "SHOPEE-18499853587": "2026-11-11T22:11:28.276087-03:00",
     "18499853587": "2026-11-11T22:11:28.276087-03:00",
-    "SHOPEE-23218022612": "2026-11-09T15:19:19.613107-03:00",
-    "23218022612": "2026-11-09T15:19:19.613107-03:00",
-    "SHOPEE-23300932279": "2026-11-09T15:19:19.613107-03:00",
-    "23300932279": "2026-11-09T15:19:19.613107-03:00",
     "SHOPEE-58213437798": "2026-11-09T16:08:37.062004-03:00",
     "58213437798": "2026-11-09T16:08:37.062004-03:00",
     "SHOPEE-23794330101": "2026-11-09T16:08:37.062004-03:00",
@@ -113,13 +109,13 @@
     "SHOPEE-54850610196": "2026-11-12T11:17:52.711067-03:00",
     "54850610196": "2026-11-12T11:17:52.711067-03:00",
     "SHOPEE-18499695542": "2026-11-12T12:11:08.880911-03:00",
-    "18499695542": "2026-11-12T12:11:08.880911-03:00"
+    "18499695542": "2026-11-12T12:11:08.880911-03:00",
+    "SHOPEE-23898692172": "2026-11-12T15:45:58.716149-03:00",
+    "23898692172": "2026-11-12T15:45:58.716149-03:00"
   },
   "titulos": {
     "kit 6 forma de silicone para fritadeira air fryer com alça antiaderente cozinha": "2026-11-10T15:08:22.842268-03:00",
     "carregador sem fio 5000 10000mah iphone": "2026-11-11T22:11:28.276087-03:00",
-    "mini liquidificador portátil shake 6 laminas cabo usb": "2026-11-09T15:19:19.613107-03:00",
-    "caixa de som bluetooth amplificada potente led rgb usb sd radio fm mp3 celular n": "2026-11-09T15:19:19.613107-03:00",
     "body splash inspirado em perfumes importados com essência concentrada e fragrânc": "2026-11-09T16:08:37.062004-03:00",
     "porta ovos 4 andares rolante em plástico para geladeira organizador 20 a 30 ovos": "2026-11-09T16:08:37.062004-03:00",
     "mouse pad desk pad couro borda costurada gigante antiderrapante tapete mesa game": "2026-11-09T17:08:19.497351-03:00",
@@ -172,7 +168,8 @@
     "caneta paint original reparadora pintura automotiva permanente não sai na água t": "2026-11-12T10:14:11.637699-03:00",
     "adaptador de tomada ultra resistente de porcelana para secador air fryer benjami": "2026-11-12T10:14:11.637699-03:00",
     "caneca magnética com mistura automática 380ml": "2026-11-12T11:17:52.711067-03:00",
-    "mini aspirador de pó 3 em 1 a vacuo usb portátil recarregavel se8010": "2026-11-12T12:11:08.880911-03:00"
+    "mini aspirador de pó 3 em 1 a vacuo usb portátil recarregavel se8010": "2026-11-12T12:11:08.880911-03:00",
+    "ventilador de teto com luz silencioso controle remoto economica instalação fácil": "2026-11-12T15:45:58.716149-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -205,7 +202,7 @@
     },
     "SHOPEE-23898692172": {
       "preco": 57.77,
-      "ts": "2026-11-06T19:10:14.397657-03:00"
+      "ts": "2026-11-12T15:45:58.716149-03:00"
     },
     "SHOPEE-58202615709": {
       "preco": 59.88,
