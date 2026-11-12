@@ -2,14 +2,6 @@
   "ids": {
     "SHOPEE-21997150349": "2026-11-10T15:08:22.842268-03:00",
     "21997150349": "2026-11-10T15:08:22.842268-03:00",
-    "SHOPEE-22093160276": "2026-11-08T21:12:55.738574-03:00",
-    "22093160276": "2026-11-08T21:12:55.738574-03:00",
-    "SHOPEE-44213872297": "2026-11-08T21:12:55.738574-03:00",
-    "44213872297": "2026-11-08T21:12:55.738574-03:00",
-    "SHOPEE-58265197313": "2026-11-08T21:41:04.937266-03:00",
-    "58265197313": "2026-11-08T21:41:04.937266-03:00",
-    "SHOPEE-58253326285": "2026-11-08T21:41:04.937266-03:00",
-    "58253326285": "2026-11-08T21:41:04.937266-03:00",
     "SHOPEE-22099191110": "2026-11-08T22:12:16.269138-03:00",
     "22099191110": "2026-11-08T22:12:16.269138-03:00",
     "SHOPEE-54663825990": "2026-11-08T22:12:16.269138-03:00",
@@ -26,8 +18,8 @@
     "18499604408": "2026-11-09T10:15:42.379010-03:00",
     "SHOPEE-58254952015": "2026-11-09T10:15:42.379010-03:00",
     "58254952015": "2026-11-09T10:15:42.379010-03:00",
-    "SHOPEE-18499853587": "2026-11-09T13:09:29.879739-03:00",
-    "18499853587": "2026-11-09T13:09:29.879739-03:00",
+    "SHOPEE-18499853587": "2026-11-11T22:11:28.276087-03:00",
+    "18499853587": "2026-11-11T22:11:28.276087-03:00",
     "SHOPEE-23797686527": "2026-11-09T13:09:29.879739-03:00",
     "23797686527": "2026-11-09T13:09:29.879739-03:00",
     "SHOPEE-18350470458": "2026-11-09T14:11:34.525734-03:00",
@@ -123,14 +115,12 @@
     "SHOPEE-18598350302": "2026-11-11T21:11:46.529005-03:00",
     "18598350302": "2026-11-11T21:11:46.529005-03:00",
     "SHOPEE-22392993399": "2026-11-11T21:11:46.529005-03:00",
-    "22392993399": "2026-11-11T21:11:46.529005-03:00"
+    "22392993399": "2026-11-11T21:11:46.529005-03:00",
+    "SHOPEE-23994387054": "2026-11-11T22:11:28.276087-03:00",
+    "23994387054": "2026-11-11T22:11:28.276087-03:00"
   },
   "titulos": {
     "kit 6 forma de silicone para fritadeira air fryer com alça antiaderente cozinha": "2026-11-10T15:08:22.842268-03:00",
-    "2026 nova série 8 relógio t800 ultra smart watch esportivo sem fio prova d água ": "2026-11-08T21:12:55.738574-03:00",
-    "smartwatch gps bettdow com aplicativo de ia integrado 100 modos esportivos resis": "2026-11-08T21:12:55.738574-03:00",
-    "kit raquete frescobol bateu colou peteca tênis c bolinha bate gruda binquedo men": "2026-11-08T21:41:04.937266-03:00",
-    "carregador lightning turbo para 11 12 13 14 pro x xr 20w cabo tipo c lightning": "2026-11-08T21:41:04.937266-03:00",
     "garrafa térmica watersy 500ml 48h frio perfeita para academia futebol e dia a di": "2026-11-08T22:12:16.269138-03:00",
     "perfume masculino 100ml fragrância elegante longa duração para uso diário": "2026-11-08T22:12:16.269138-03:00",
     "chaleira elétrica inox 1 8l 1000w ou 1200w desligamento automático bule jarra ca": "2026-11-09T08:11:36.421253-03:00",
@@ -139,7 +129,7 @@
     "fone pro sem fio som hifi 8d pop up automático toque inteligente bateria 5 7h bl": "2026-11-09T09:11:32.747371-03:00",
     "2026 novo watch s20 pro max relógio 10 smart watch homens bt chamada sempre em e": "2026-11-09T10:15:42.379010-03:00",
     "caixa de som c 2 microfones bluetooth 5 0 karaokê luzes led entretenimento em ca": "2026-11-09T10:15:42.379010-03:00",
-    "carregador sem fio 5000 10000mah iphone": "2026-11-09T13:09:29.879739-03:00",
+    "carregador sem fio 5000 10000mah iphone": "2026-11-11T22:11:28.276087-03:00",
     "relógio masculino digital wr 100 qualidade entrega rápida": "2026-11-09T13:09:29.879739-03:00",
     "mochila bolsa reforçada notebook resistente trabalho faculdade coreana": "2026-11-09T14:11:34.525734-03:00",
     "mini liquidificador portátil shake 6 laminas cabo usb": "2026-11-09T15:19:19.613107-03:00",
@@ -187,7 +177,8 @@
     "whey ultra protein concentrado pote 900g ftw": "2026-11-11T20:09:55.687295-03:00",
     "mouse pad rgb grande gamer personalizado apoio ergonômico confortável antiderrap": "2026-11-11T20:09:55.687295-03:00",
     "alaxe5 generation original speaker immediate shipping best price": "2026-11-11T21:11:46.529005-03:00",
-    "hipercalórico dark mass 3kg dark lab whey protein creatina bcaa waxy maize premi": "2026-11-11T21:11:46.529005-03:00"
+    "hipercalórico dark mass 3kg dark lab whey protein creatina bcaa waxy maize premi": "2026-11-11T21:11:46.529005-03:00",
+    "kit dupla renovadores faciais kokeshi pele porcelana olhos gueixa": "2026-11-11T22:11:28.276087-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -231,8 +222,8 @@
       "ts": "2026-11-06T20:10:15.229966-03:00"
     },
     "SHOPEE-23994387054": {
-      "preco": 39.9,
-      "ts": "2026-11-06T21:11:32.606211-03:00"
+      "preco": 31.9,
+      "ts": "2026-11-11T22:11:28.276087-03:00"
     },
     "SHOPEE-58259749592": {
       "preco": 29.8,
@@ -551,8 +542,8 @@
       "ts": "2026-11-09T10:15:42.379010-03:00"
     },
     "SHOPEE-18499853587": {
-      "preco": 28.85,
-      "ts": "2026-11-09T13:09:29.879739-03:00"
+      "preco": 25.96,
+      "ts": "2026-11-11T22:11:28.276087-03:00"
     },
     "SHOPEE-23797686527": {
       "preco": 14.49,
