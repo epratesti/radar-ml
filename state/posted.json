@@ -117,7 +117,11 @@
     "SHOPEE-58256926114": "2026-11-11T22:24:29.527384-03:00",
     "58256926114": "2026-11-11T22:24:29.527384-03:00",
     "SHOPEE-21198282551": "2026-11-11T22:24:29.527384-03:00",
-    "21198282551": "2026-11-11T22:24:29.527384-03:00"
+    "21198282551": "2026-11-11T22:24:29.527384-03:00",
+    "SHOPEE-23899017576": "2026-11-12T07:08:56.029954-03:00",
+    "23899017576": "2026-11-12T07:08:56.029954-03:00",
+    "SHOPEE-52905774499": "2026-11-12T07:08:56.029954-03:00",
+    "52905774499": "2026-11-12T07:08:56.029954-03:00"
   },
   "titulos": {
     "kit 6 forma de silicone para fritadeira air fryer com alça antiaderente cozinha": "2026-11-10T15:08:22.842268-03:00",
@@ -178,7 +182,9 @@
     "hipercalórico dark mass 3kg dark lab whey protein creatina bcaa waxy maize premi": "2026-11-11T21:11:46.529005-03:00",
     "kit dupla renovadores faciais kokeshi pele porcelana olhos gueixa": "2026-11-11T22:11:28.276087-03:00",
     "carregador portátil 5000mah 10000mah indução sem fio bateria carga": "2026-11-11T22:24:29.527384-03:00",
-    "forma de silicone 1 ou 3 peças para air fryer forno fritadeira assadeira reutili": "2026-11-11T22:24:29.527384-03:00"
+    "forma de silicone 1 ou 3 peças para air fryer forno fritadeira assadeira reutili": "2026-11-11T22:24:29.527384-03:00",
+    "carregador portátil indução para sem fio bateria carga 3000 5000 10000mah": "2026-11-12T07:08:56.029954-03:00",
+    "espremedor elétrico de frutas automático laranja limão e outras frutas suco natu": "2026-11-12T07:08:56.029954-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -335,7 +341,7 @@
     },
     "SHOPEE-23899017576": {
       "preco": 28.98,
-      "ts": "2026-11-07T17:08:13.989872-03:00"
+      "ts": "2026-11-12T07:08:56.029954-03:00"
     },
     "SHOPEE-58202231060": {
       "preco": 78.6,
@@ -688,6 +694,10 @@
     "SHOPEE-21198282551": {
       "preco": 10.8,
       "ts": "2026-11-11T22:24:29.527384-03:00"
+    },
+    "SHOPEE-52905774499": {
+      "preco": 49.99,
+      "ts": "2026-11-12T07:08:56.029954-03:00"
     }
   },
   "alertas": {}
