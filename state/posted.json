@@ -8,10 +8,6 @@
     "17255136776": "2026-11-11T10:14:43.616810-03:00",
     "SHOPEE-23497594302": "2026-11-11T10:14:43.616810-03:00",
     "23497594302": "2026-11-11T10:14:43.616810-03:00",
-    "SHOPEE-46360468172": "2026-11-10T07:09:13.798806-03:00",
-    "46360468172": "2026-11-10T07:09:13.798806-03:00",
-    "SHOPEE-22199220609": "2026-11-10T07:09:13.798806-03:00",
-    "22199220609": "2026-11-10T07:09:13.798806-03:00",
     "SHOPEE-58251249633": "2026-11-10T08:10:53.877913-03:00",
     "58251249633": "2026-11-10T08:10:53.877913-03:00",
     "SHOPEE-58209955451": "2026-11-10T08:10:53.877913-03:00",
@@ -111,15 +107,17 @@
     "SHOPEE-23198988208": "2026-11-13T07:07:56.290052-03:00",
     "23198988208": "2026-11-13T07:07:56.290052-03:00",
     "SHOPEE-22497773735": "2026-11-13T07:07:56.290052-03:00",
-    "22497773735": "2026-11-13T07:07:56.290052-03:00"
+    "22497773735": "2026-11-13T07:07:56.290052-03:00",
+    "SHOPEE-52858085838": "2026-11-13T08:09:49.779087-03:00",
+    "52858085838": "2026-11-13T08:09:49.779087-03:00",
+    "SHOPEE-58267502829": "2026-11-13T08:09:49.779087-03:00",
+    "58267502829": "2026-11-13T08:09:49.779087-03:00"
   },
   "titulos": {
     "kit 6 forma de silicone para fritadeira air fryer com alça antiaderente cozinha": "2026-11-10T15:08:22.842268-03:00",
     "carregador sem fio 5000 10000mah iphone": "2026-11-11T22:11:28.276087-03:00",
     "relógio smartwatch d20 pro bluetooth coloca foto na tela monitor cardíaco pressã": "2026-11-11T10:14:43.616810-03:00",
     "romantic crown mochila de viagem expansível bolsa executiva notebook masculina e": "2026-11-11T10:14:43.616810-03:00",
-    "kit 4 potes herméticos tampa bambu organizador mantimentos cozinha": "2026-11-10T07:09:13.798806-03:00",
-    "b brobô varredora aspirador de pó automática 3 em 1 limpeza doméstica robótico i": "2026-11-10T07:09:13.798806-03:00",
     "relógio retrô digital prata led unissex fashion masculino feminino pulseira inox": "2026-11-10T08:10:53.877913-03:00",
     "descalcificante limpa cafeteira expresso maquina nespresso dolce gusto 3 coraçõe": "2026-11-10T08:10:53.877913-03:00",
     "kit carregador 67w turbo cabo tipo c carga rápida universal xiaomi redmi note e ": "2026-11-10T10:15:56.712994-03:00",
@@ -169,7 +167,9 @@
     "1 3 5 pcs cápsula café reutilizável dolce gusto recarregável refrescante efectiv": "2026-11-12T19:10:39.202234-03:00",
     "carregador portátil power bank universal 10 000mah e 5 000mah": "2026-11-12T22:11:46.354865-03:00",
     "mouse pad desk pad couro borda costurada gigante antiderrapante tapete mesa game": "2026-11-13T07:07:56.290052-03:00",
-    "romantic crown mochila viagem feminina masculina multifuncional reforçada imperm": "2026-11-13T07:07:56.290052-03:00"
+    "romantic crown mochila viagem feminina masculina multifuncional reforçada imperm": "2026-11-13T07:07:56.290052-03:00",
+    "garrafa térmica cabo madeira para café 1l": "2026-11-13T08:09:49.779087-03:00",
+    "conjunto feminino 5 peças relógio colar brincos pulseira anel dourado": "2026-11-13T08:09:49.779087-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -313,8 +313,8 @@
       "ts": "2026-11-07T15:12:02.675566-03:00"
     },
     "SHOPEE-52858085838": {
-      "preco": 39.49,
-      "ts": "2026-11-07T15:12:02.675566-03:00"
+      "preco": 43.99,
+      "ts": "2026-11-13T08:09:49.779087-03:00"
     },
     "SHOPEE-23293253949": {
       "preco": 118.92,
@@ -695,6 +695,10 @@
     "SHOPEE-21797728567": {
       "preco": 41.48,
       "ts": "2026-11-12T19:10:39.202234-03:00"
+    },
+    "SHOPEE-58267502829": {
+      "preco": 37.99,
+      "ts": "2026-11-13T08:09:49.779087-03:00"
     }
   },
   "alertas": {}

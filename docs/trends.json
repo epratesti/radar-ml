@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-13T07:07:56.290052-03:00",
+  "atualizado": "2026-11-13T08:09:49.779087-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-52858085838",
+      "titulo": "Garrafa Térmica Cabo Madeira Para Café 1l",
+      "preco": 43.99,
+      "preco_anterior": null,
+      "a_partir_de": false,
+      "desconto": 45,
+      "vendas": 5582,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820ma-mvd7eu0ozvuo27",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "garrafa termica",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/9zzH7Ck8BP",
+      "comissao": "0.13",
+      "loja": "SELLNEEDS",
+      "postado_em": "2026-11-13T08:09:49.779087-03:00"
+    },
+    {
+      "id": "SHOPEE-58267502829",
+      "titulo": "Conjunto Feminino 5 Peças Relógio Colar Brincos Pulseira Anel Dourado",
+      "preco": 37.99,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 62,
+      "vendas": 2042,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8258m-mt566n3atc01c7",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "relogio",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/7VHv4aSAwx",
+      "comissao": "0.03",
+      "loja": "GlamGlow_Store",
+      "postado_em": "2026-11-13T08:09:49.779087-03:00"
+    },
     {
       "id": "SHOPEE-23198988208",
       "titulo": "Mouse Pad Desk Pad Couro Borda Costurada Gigante Antiderrapante Tapete Mesa Gamer Setup Trabalho Estudo Protetor Mesa",
@@ -504,42 +540,6 @@
       "comissao": "0.12",
       "loja": "Loja Oficial N&M 1",
       "postado_em": "2026-11-11T15:30:06.914612-03:00"
-    },
-    {
-      "id": "SHOPEE-22593614484",
-      "titulo": "Smartwatch D20 - Relógio Inteligente y68 Esportivo Bluetooth Android/iOS - Com foto Na Tela",
-      "preco": 17.96,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 53,
-      "vendas": 4212,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rffv-m43cb4hjqxjrce",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "relogio",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/9AQ68PSw3z",
-      "comissao": "0.03",
-      "loja": "TOP LOJA ELETRONICO",
-      "postado_em": "2026-11-11T15:08:41.340013-03:00"
-    },
-    {
-      "id": "SHOPEE-22794275506",
-      "titulo": "Kit 100 Forma de airfryer descartavel antiaderente de papel cozinha quadrado fritadeira cozimento",
-      "preco": 16.98,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 76,
-      "vendas": 3154,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lz-mofy71n9gl4wb4",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "air fryer",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/7fbJPlFu6Y",
-      "comissao": "0.05",
-      "loja": "HomeSmart",
-      "postado_em": "2026-11-11T12:11:56.223100-03:00"
     }
   ]
 }
