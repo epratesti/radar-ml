@@ -107,7 +107,11 @@
     "SHOPEE-22494456015": "2026-11-13T14:12:04.225792-03:00",
     "22494456015": "2026-11-13T14:12:04.225792-03:00",
     "SHOPEE-23293253949": "2026-11-13T15:09:00.409167-03:00",
-    "23293253949": "2026-11-13T15:09:00.409167-03:00"
+    "23293253949": "2026-11-13T15:09:00.409167-03:00",
+    "SHOPEE-55359781665": "2026-11-13T15:27:29.519467-03:00",
+    "55359781665": "2026-11-13T15:27:29.519467-03:00",
+    "SHOPEE-24293312600": "2026-11-13T15:27:29.519467-03:00",
+    "24293312600": "2026-11-13T15:27:29.519467-03:00"
   },
   "titulos": {
     "carregador sem fio 5000 10000mah iphone": "2026-11-11T22:11:28.276087-03:00",
@@ -163,7 +167,9 @@
     "mini power bank 10000mah para viagens recarga sem fio e cabo iphone e tipo c 2em": "2026-11-13T11:15:22.545130-03:00",
     "2026 nova série 8 relógio t800 ultra smart watch esportivo sem fio prova d água ": "2026-11-13T14:12:04.225792-03:00",
     "fone de ouvido bluetooth sem fio headphone bluetooth recarregável p9 air top cas": "2026-11-13T14:12:04.225792-03:00",
-    "whey protein concentrado 1kg dark lab": "2026-11-13T15:09:00.409167-03:00"
+    "whey protein concentrado 1kg dark lab": "2026-11-13T15:09:00.409167-03:00",
+    "kit 2 sacos lavar tenis sapato máquina lavar roupas protege não danifica lavagem": "2026-11-13T15:27:29.519467-03:00",
+    "10000mah 5000mah 3000mah carregador portátil indução iphone magsafe bateria sem ": "2026-11-13T15:27:29.519467-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -340,7 +346,7 @@
     },
     "SHOPEE-55359781665": {
       "preco": 36.9,
-      "ts": "2026-11-07T19:08:50.471916-03:00"
+      "ts": "2026-11-13T15:27:29.519467-03:00"
     },
     "SHOPEE-58261888418": {
       "preco": 34.99,
@@ -705,6 +711,10 @@
     "SHOPEE-22494456015": {
       "preco": 24.87,
       "ts": "2026-11-13T14:12:04.225792-03:00"
+    },
+    "SHOPEE-24293312600": {
+      "preco": 26.77,
+      "ts": "2026-11-13T15:27:29.519467-03:00"
     }
   },
   "alertas": {}

@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-13T15:09:00.409167-03:00",
+  "atualizado": "2026-11-13T15:27:29.519467-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-55359781665",
+      "titulo": "Kit 2 Sacos lavar Tenis Sapato Máquina Lavar roupas Protege não danifica Lavagem Segura Lavanderia",
+      "preco": 36.9,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 45,
+      "vendas": 8383,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lj-mnovtdkehbsx28",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "tenis",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/4VeJ6kO3hl",
+      "comissao": "0.13",
+      "loja": "TMZ UTILIDADES",
+      "postado_em": "2026-11-13T15:27:29.519467-03:00"
+    },
+    {
+      "id": "SHOPEE-24293312600",
+      "titulo": "10000mAh/5000mAH/3000mAh Carregador portátil indução iPhone MagSafe bateria sem fio carregando",
+      "preco": 26.77,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 41,
+      "vendas": 2652,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-81zv0-miphxrgv629v09",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "power bank",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/6q2DgJlqAm",
+      "comissao": "0.1",
+      "loja": "CarnavalDeals",
+      "postado_em": "2026-11-13T15:27:29.519467-03:00"
+    },
     {
       "id": "SHOPEE-23293253949",
       "titulo": "Whey Protein Concentrado 1Kg Dark Lab",
@@ -504,42 +540,6 @@
       "comissao": "0.14",
       "loja": "JX VERDE",
       "postado_em": "2026-11-11T22:11:28.276087-03:00"
-    },
-    {
-      "id": "SHOPEE-18598350302",
-      "titulo": "Alaxe5 Generation Original Speaker Immediate Shipping Best Price",
-      "preco": 42.29,
-      "preco_anterior": 46.99,
-      "a_partir_de": true,
-      "desconto": 61,
-      "vendas": 5187,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mh4dohuahhc099",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "caixa de som",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/4VeIF1IxlV",
-      "comissao": "0.08",
-      "loja": "TW1 TECH LTDA",
-      "postado_em": "2026-11-11T21:11:46.529005-03:00"
-    },
-    {
-      "id": "SHOPEE-22392993399",
-      "titulo": "Hipercalórico Dark Mass 3kg Dark Lab - Whey Protein, Creatina, BCAA, Waxy Maize, Premium Mass Gainer",
-      "preco": 78.9,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 51,
-      "vendas": 2684,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lzawnmo1qj3970",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "whey protein",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/1gK6nYqJbs",
-      "comissao": "0.26",
-      "loja": "Dark Lab Oficial",
-      "postado_em": "2026-11-11T21:11:46.529005-03:00"
     }
   ]
 }
