@@ -1,6 +1,24 @@
 {
-  "atualizado": "2026-11-13T14:12:04.225792-03:00",
+  "atualizado": "2026-11-13T15:09:00.409167-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-23293253949",
+      "titulo": "Whey Protein Concentrado 1Kg Dark Lab",
+      "preco": 136.9,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 40,
+      "vendas": 2065,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lzkq1yrpylqtc1",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "whey protein",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/4LKtIlvUEx",
+      "comissao": "0.26",
+      "loja": "Dark Lab Oficial",
+      "postado_em": "2026-11-13T15:09:00.409167-03:00"
+    },
     {
       "id": "SHOPEE-22093160276",
       "titulo": "2026 Nova Série 8 Relógio T800 Ultra Smart Watch Esportivo Sem Fio À Prova D'água T800 Ultra2 MAX",
@@ -522,24 +540,6 @@
       "comissao": "0.26",
       "loja": "Dark Lab Oficial",
       "postado_em": "2026-11-11T21:11:46.529005-03:00"
-    },
-    {
-      "id": "SHOPEE-23198212585",
-      "titulo": "Whey Ultra Protein Concentrado Pote 900g - FTW",
-      "preco": 45.9,
-      "preco_anterior": 69.99,
-      "a_partir_de": true,
-      "desconto": 58,
-      "vendas": 2813,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztc-mj9vukr0feo684",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "whey protein",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/qkzo1tUIh",
-      "comissao": "0.22",
-      "loja": "Loja Oficial FTW",
-      "postado_em": "2026-11-11T20:09:55.687295-03:00"
     }
   ]
 }

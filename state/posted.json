@@ -1,15 +1,11 @@
 {
   "ids": {
-    "SHOPEE-21997150349": "2026-11-10T15:08:22.842268-03:00",
-    "21997150349": "2026-11-10T15:08:22.842268-03:00",
     "SHOPEE-18499853587": "2026-11-11T22:11:28.276087-03:00",
     "18499853587": "2026-11-11T22:11:28.276087-03:00",
     "SHOPEE-17255136776": "2026-11-11T10:14:43.616810-03:00",
     "17255136776": "2026-11-11T10:14:43.616810-03:00",
     "SHOPEE-23497594302": "2026-11-11T10:14:43.616810-03:00",
     "23497594302": "2026-11-11T10:14:43.616810-03:00",
-    "SHOPEE-21297578652": "2026-11-10T15:08:22.842268-03:00",
-    "21297578652": "2026-11-10T15:08:22.842268-03:00",
     "SHOPEE-23096150316": "2026-11-10T15:33:36.666437-03:00",
     "23096150316": "2026-11-10T15:33:36.666437-03:00",
     "SHOPEE-22892686035": "2026-11-10T17:07:21.809151-03:00",
@@ -109,14 +105,14 @@
     "SHOPEE-22093160276": "2026-11-13T14:12:04.225792-03:00",
     "22093160276": "2026-11-13T14:12:04.225792-03:00",
     "SHOPEE-22494456015": "2026-11-13T14:12:04.225792-03:00",
-    "22494456015": "2026-11-13T14:12:04.225792-03:00"
+    "22494456015": "2026-11-13T14:12:04.225792-03:00",
+    "SHOPEE-23293253949": "2026-11-13T15:09:00.409167-03:00",
+    "23293253949": "2026-11-13T15:09:00.409167-03:00"
   },
   "titulos": {
-    "kit 6 forma de silicone para fritadeira air fryer com alça antiaderente cozinha": "2026-11-10T15:08:22.842268-03:00",
     "carregador sem fio 5000 10000mah iphone": "2026-11-11T22:11:28.276087-03:00",
     "relógio smartwatch d20 pro bluetooth coloca foto na tela monitor cardíaco pressã": "2026-11-11T10:14:43.616810-03:00",
     "romantic crown mochila de viagem expansível bolsa executiva notebook masculina e": "2026-11-11T10:14:43.616810-03:00",
-    "sandália ortopédica feminina terapêutica para esporão chinelo ortopédico": "2026-11-10T15:08:22.842268-03:00",
     "1 2 5 suporte de parede multifuncional caixa de armazenamento casa para carregar": "2026-11-10T15:33:36.666437-03:00",
     "fone de ouvido entrada lightning para iphone microfone bluetooth": "2026-11-10T17:07:21.809151-03:00",
     "mochila bolsa viagem resistente coreana masculina feminina colorida": "2026-11-10T17:07:21.809151-03:00",
@@ -166,7 +162,8 @@
     "relógio eletrônico prova d água para presente esportivo casual de negócios mascu": "2026-11-13T11:15:22.545130-03:00",
     "mini power bank 10000mah para viagens recarga sem fio e cabo iphone e tipo c 2em": "2026-11-13T11:15:22.545130-03:00",
     "2026 nova série 8 relógio t800 ultra smart watch esportivo sem fio prova d água ": "2026-11-13T14:12:04.225792-03:00",
-    "fone de ouvido bluetooth sem fio headphone bluetooth recarregável p9 air top cas": "2026-11-13T14:12:04.225792-03:00"
+    "fone de ouvido bluetooth sem fio headphone bluetooth recarregável p9 air top cas": "2026-11-13T14:12:04.225792-03:00",
+    "whey protein concentrado 1kg dark lab": "2026-11-13T15:09:00.409167-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -314,8 +311,8 @@
       "ts": "2026-11-13T08:09:49.779087-03:00"
     },
     "SHOPEE-23293253949": {
-      "preco": 118.92,
-      "ts": "2026-11-07T16:14:09.935270-03:00"
+      "preco": 136.9,
+      "ts": "2026-11-13T15:09:00.409167-03:00"
     },
     "SHOPEE-23497309877": {
       "preco": 61.98,
