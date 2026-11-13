@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-13T11:15:22.545130-03:00",
+  "atualizado": "2026-11-13T14:12:04.225792-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-22093160276",
+      "titulo": "2026 Nova Série 8 Relógio T800 Ultra Smart Watch Esportivo Sem Fio À Prova D'água T800 Ultra2 MAX",
+      "preco": 43.99,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 72,
+      "vendas": 3008,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rdym-lxrzfhio6fhl9d",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "smartwatch",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/9KjairAXZQ",
+      "comissao": "0.16",
+      "loja": "-BML-",
+      "postado_em": "2026-11-13T14:12:04.225792-03:00"
+    },
+    {
+      "id": "SHOPEE-22494456015",
+      "titulo": "Fone de ouvido Bluetooth Sem Fio Headphone Bluetooth Recarregável P9 Air Top Casual Esportivo",
+      "preco": 24.87,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 47,
+      "vendas": 15982,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-824gf-mf8cvs3kgwela4",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "fone bluetooth",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/2LZqNzwhtd",
+      "comissao": "0.06",
+      "loja": "TOP LOJA ELETRONICO",
+      "postado_em": "2026-11-13T14:12:04.225792-03:00"
+    },
     {
       "id": "SHOPEE-23598011105",
       "titulo": "Relógio eletrônico à prova d'água para presente esportivo casual de negócios masculino",
@@ -504,42 +540,6 @@
       "comissao": "0.22",
       "loja": "Loja Oficial FTW",
       "postado_em": "2026-11-11T20:09:55.687295-03:00"
-    },
-    {
-      "id": "SHOPEE-58250947403",
-      "titulo": "Mouse Pad RGB Grande Gamer Personalizado Apoio Ergonômico Confortável Antiderrapante Premium",
-      "preco": 21.55,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 46,
-      "vendas": 809,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mgz5o43odp1ha5",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "mouse gamer",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/9pfnvtgfjQ",
-      "comissao": "0.13",
-      "loja": "Paulista Multshop",
-      "postado_em": "2026-11-11T20:09:55.687295-03:00"
-    },
-    {
-      "id": "SHOPEE-19697980846",
-      "titulo": "Ventilador Luminária Led 6 Pás Lâmpada Soquete Bocal E27 Teto 3 Cores Luz Branco Amarelo Bivolt",
-      "preco": 42.99,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 52,
-      "vendas": 7572,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mhqkzkrt4w03ba",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "ventilador",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/1W0fs5rgh0",
-      "comissao": "0.15",
-      "loja": "SKY MALL",
-      "postado_em": "2026-11-11T19:09:27.605574-03:00"
     }
   ]
 }

@@ -8,8 +8,6 @@
     "17255136776": "2026-11-11T10:14:43.616810-03:00",
     "SHOPEE-23497594302": "2026-11-11T10:14:43.616810-03:00",
     "23497594302": "2026-11-11T10:14:43.616810-03:00",
-    "SHOPEE-58255159172": "2026-11-10T13:11:20.508437-03:00",
-    "58255159172": "2026-11-10T13:11:20.508437-03:00",
     "SHOPEE-21297578652": "2026-11-10T15:08:22.842268-03:00",
     "21297578652": "2026-11-10T15:08:22.842268-03:00",
     "SHOPEE-23096150316": "2026-11-10T15:33:36.666437-03:00",
@@ -107,14 +105,17 @@
     "SHOPEE-23598011105": "2026-11-13T11:15:22.545130-03:00",
     "23598011105": "2026-11-13T11:15:22.545130-03:00",
     "SHOPEE-23894229861": "2026-11-13T11:15:22.545130-03:00",
-    "23894229861": "2026-11-13T11:15:22.545130-03:00"
+    "23894229861": "2026-11-13T11:15:22.545130-03:00",
+    "SHOPEE-22093160276": "2026-11-13T14:12:04.225792-03:00",
+    "22093160276": "2026-11-13T14:12:04.225792-03:00",
+    "SHOPEE-22494456015": "2026-11-13T14:12:04.225792-03:00",
+    "22494456015": "2026-11-13T14:12:04.225792-03:00"
   },
   "titulos": {
     "kit 6 forma de silicone para fritadeira air fryer com alça antiaderente cozinha": "2026-11-10T15:08:22.842268-03:00",
     "carregador sem fio 5000 10000mah iphone": "2026-11-11T22:11:28.276087-03:00",
     "relógio smartwatch d20 pro bluetooth coloca foto na tela monitor cardíaco pressã": "2026-11-11T10:14:43.616810-03:00",
     "romantic crown mochila de viagem expansível bolsa executiva notebook masculina e": "2026-11-11T10:14:43.616810-03:00",
-    "fones de ouvido sem fio bluetooth compactos xiaomi redmi airdots com estojo reca": "2026-11-10T13:11:20.508437-03:00",
     "sandália ortopédica feminina terapêutica para esporão chinelo ortopédico": "2026-11-10T15:08:22.842268-03:00",
     "1 2 5 suporte de parede multifuncional caixa de armazenamento casa para carregar": "2026-11-10T15:33:36.666437-03:00",
     "fone de ouvido entrada lightning para iphone microfone bluetooth": "2026-11-10T17:07:21.809151-03:00",
@@ -163,7 +164,9 @@
     "chinelo feminino leve e prático para uso em praia e lazer": "2026-11-13T09:12:13.921039-03:00",
     "relógio retrô digital prata led unissex fashion masculino feminino pulseira inox": "2026-11-13T09:12:13.921039-03:00",
     "relógio eletrônico prova d água para presente esportivo casual de negócios mascu": "2026-11-13T11:15:22.545130-03:00",
-    "mini power bank 10000mah para viagens recarga sem fio e cabo iphone e tipo c 2em": "2026-11-13T11:15:22.545130-03:00"
+    "mini power bank 10000mah para viagens recarga sem fio e cabo iphone e tipo c 2em": "2026-11-13T11:15:22.545130-03:00",
+    "2026 nova série 8 relógio t800 ultra smart watch esportivo sem fio prova d água ": "2026-11-13T14:12:04.225792-03:00",
+    "fone de ouvido bluetooth sem fio headphone bluetooth recarregável p9 air top cas": "2026-11-13T14:12:04.225792-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -479,8 +482,8 @@
       "ts": "2026-11-12T11:17:52.711067-03:00"
     },
     "SHOPEE-22093160276": {
-      "preco": 45.88,
-      "ts": "2026-11-08T21:12:55.738574-03:00"
+      "preco": 43.99,
+      "ts": "2026-11-13T14:12:04.225792-03:00"
     },
     "SHOPEE-44213872297": {
       "preco": 315.0,
@@ -701,6 +704,10 @@
     "SHOPEE-23894229861": {
       "preco": 26.98,
       "ts": "2026-11-13T11:15:22.545130-03:00"
+    },
+    "SHOPEE-22494456015": {
+      "preco": 24.87,
+      "ts": "2026-11-13T14:12:04.225792-03:00"
     }
   },
   "alertas": {}
