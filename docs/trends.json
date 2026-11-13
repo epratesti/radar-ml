@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-13T08:09:49.779087-03:00",
+  "atualizado": "2026-11-13T09:12:13.921039-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-58260024382",
+      "titulo": "Chinelo Feminino Leve e Prático Para Uso em Praia e Lazer",
+      "preco": 14.97,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 70,
+      "vendas": 9401,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-825bb-mum5w17d61vrd7",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "chinelo",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/114SSx3CRn",
+      "comissao": "0.03",
+      "loja": "Martins Chinelos",
+      "postado_em": "2026-11-13T09:12:13.921039-03:00"
+    },
+    {
+      "id": "SHOPEE-58251249633",
+      "titulo": "Relógio Retrô Digital Prata LED Unissex Fashion Masculino Feminino Pulseira Inoxidável Alta Qualidade",
+      "preco": 14.9,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 70,
+      "vendas": 3096,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mhnwr6kx4o3n60",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "relogio",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/6fio53VLdi",
+      "comissao": "0.08",
+      "loja": "TIMECRAFT",
+      "postado_em": "2026-11-13T09:12:13.921039-03:00"
+    },
     {
       "id": "SHOPEE-52858085838",
       "titulo": "Garrafa Térmica Cabo Madeira Para Café 1l",
@@ -504,42 +540,6 @@
       "comissao": "0.11",
       "loja": "VidaBem",
       "postado_em": "2026-11-11T18:08:08.085623-03:00"
-    },
-    {
-      "id": "SHOPEE-22494941454",
-      "titulo": "Kit Facial Kokeshi Completo 3 Passos Hidratação e Colágeno",
-      "preco": 44.9,
-      "preco_anterior": 56.91,
-      "a_partir_de": false,
-      "desconto": 52,
-      "vendas": 9797,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lx-mqbygibr40sg7a",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "kit skincare",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/80EA1zcwtu",
-      "comissao": "0.21",
-      "loja": "KOKESHI OFICIAL",
-      "postado_em": "2026-11-11T15:30:06.914612-03:00"
-    },
-    {
-      "id": "SHOPEE-58208872077",
-      "titulo": "mochila grande unissex resistente impermeável notebook alta capacidade com compartimentos ideal trabalho faculdade",
-      "preco": 59.4,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 70,
-      "vendas": 4166,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lk-ms4ydyx58xdy23",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "mochila",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/9V2xok21oq",
-      "comissao": "0.12",
-      "loja": "Loja Oficial N&M 1",
-      "postado_em": "2026-11-11T15:30:06.914612-03:00"
     }
   ]
 }
