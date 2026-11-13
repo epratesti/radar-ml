@@ -1,6 +1,24 @@
 {
-  "atualizado": "2026-11-12T19:10:39.202234-03:00",
+  "atualizado": "2026-11-12T22:11:46.354865-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-20607193834",
+      "titulo": "CARREGADOR PORTÁTIL POWER BANK UNIVERSAL 10.000MAH E 5.000MAH",
+      "preco": 37.49,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 63,
+      "vendas": 3528,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztv-mkjwat5lsi6803",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "power bank",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/7puks9i28w",
+      "comissao": "0.11",
+      "loja": "LUFEE ACESSÓRIOS",
+      "postado_em": "2026-11-12T22:11:46.354865-03:00"
+    },
     {
       "id": "SHOPEE-21797728567",
       "titulo": "Arara 4/5 Andares Multiuso c/ Sapateira, Cabideiro e Suporte p/ Roupas, Tênis e Closet Quarto",
@@ -522,24 +540,6 @@
       "comissao": "0.14",
       "loja": "JX VERDE",
       "postado_em": "2026-11-11T11:15:56.144170-03:00"
-    },
-    {
-      "id": "SHOPEE-23497594302",
-      "titulo": "ROMANTIC CROWN Mochila de Viagem Expansível, Bolsa Executiva Notebook Masculina e Feminina Trabalho,Grande,Reforçada",
-      "preco": 89.98,
-      "preco_anterior": 99.98,
-      "a_partir_de": false,
-      "desconto": 87,
-      "vendas": 3269,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820la-mu7g0m7pk9vl21",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "mochila",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/9V2xT5YA68",
-      "comissao": "0.08",
-      "loja": "Romantic Crown.02",
-      "postado_em": "2026-11-11T10:14:43.616810-03:00"
     }
   ]
 }
