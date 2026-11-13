@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-12T22:11:46.354865-03:00",
+  "atualizado": "2026-11-13T07:07:56.290052-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-23198988208",
+      "titulo": "Mouse Pad Desk Pad Couro Borda Costurada Gigante Antiderrapante Tapete Mesa Gamer Setup Trabalho Estudo Protetor Mesa",
+      "preco": 15.89,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 56,
+      "vendas": 3082,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820li-mlfcjdzl6ryf41",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "mouse gamer",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/7KyVs487vW",
+      "comissao": "0.19",
+      "loja": "OmniStore",
+      "postado_em": "2026-11-13T07:07:56.290052-03:00"
+    },
+    {
+      "id": "SHOPEE-22497773735",
+      "titulo": "ROMANTIC CROWN Mochila Viagem Feminina Masculina Multifuncional Reforçada Impermeável Expansível, Notebook Antifurto USB",
+      "preco": 109.98,
+      "preco_anterior": null,
+      "a_partir_de": false,
+      "desconto": 63,
+      "vendas": 4720,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lv-mt38wyvxh81x6a",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "mochila",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/3LSN6hfDgw",
+      "comissao": "0.08",
+      "loja": "Romantic Crown 02",
+      "postado_em": "2026-11-13T07:07:56.290052-03:00"
+    },
     {
       "id": "SHOPEE-20607193834",
       "titulo": "CARREGADOR PORTÁTIL POWER BANK UNIVERSAL 10.000MAH E 5.000MAH",
@@ -504,42 +540,6 @@
       "comissao": "0.05",
       "loja": "HomeSmart",
       "postado_em": "2026-11-11T12:11:56.223100-03:00"
-    },
-    {
-      "id": "SHOPEE-22499056874",
-      "titulo": "Smartwatch MINI 38MM PRO Com monitor De Frequência Cardíaca Do Computador São Paulo pronta entrega",
-      "preco": 53.0,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 74,
-      "vendas": 1657,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mg4sqr0e5nggcd",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "smartwatch",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/60T5IeLQqS",
-      "comissao": "0.13",
-      "loja": "Os produtos preferidos",
-      "postado_em": "2026-11-11T11:15:56.144170-03:00"
-    },
-    {
-      "id": "SHOPEE-19499549872",
-      "titulo": "Robô Varredora/Aspirador De Pó Automática 3 Em 1 Limpeza Doméstica Robótico Inteligente E Silencioso",
-      "preco": 38.18,
-      "preco_anterior": null,
-      "a_partir_de": false,
-      "desconto": 60,
-      "vendas": 1934,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-m2wi3azb4nid1e",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "aspirador",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/6q2CMP0Ybb",
-      "comissao": "0.14",
-      "loja": "JX VERDE",
-      "postado_em": "2026-11-11T11:15:56.144170-03:00"
     }
   ]
 }
