@@ -6,8 +6,6 @@
     "17255136776": "2026-11-11T10:14:43.616810-03:00",
     "SHOPEE-23497594302": "2026-11-11T10:14:43.616810-03:00",
     "23497594302": "2026-11-11T10:14:43.616810-03:00",
-    "SHOPEE-58258956764": "2026-11-10T18:08:51.907255-03:00",
-    "58258956764": "2026-11-10T18:08:51.907255-03:00",
     "SHOPEE-23399193375": "2026-11-10T19:09:10.274310-03:00",
     "23399193375": "2026-11-10T19:09:10.274310-03:00",
     "SHOPEE-22997182283": "2026-11-10T20:09:18.482908-03:00",
@@ -105,13 +103,14 @@
     "SHOPEE-55359781665": "2026-11-13T15:27:29.519467-03:00",
     "55359781665": "2026-11-13T15:27:29.519467-03:00",
     "SHOPEE-24293312600": "2026-11-13T15:27:29.519467-03:00",
-    "24293312600": "2026-11-13T15:27:29.519467-03:00"
+    "24293312600": "2026-11-13T15:27:29.519467-03:00",
+    "SHOPEE-23099337262": "2026-11-13T18:09:27.320092-03:00",
+    "23099337262": "2026-11-13T18:09:27.320092-03:00"
   },
   "titulos": {
     "carregador sem fio 5000 10000mah iphone": "2026-11-11T22:11:28.276087-03:00",
     "relógio smartwatch d20 pro bluetooth coloca foto na tela monitor cardíaco pressã": "2026-11-11T10:14:43.616810-03:00",
     "romantic crown mochila de viagem expansível bolsa executiva notebook masculina e": "2026-11-11T10:14:43.616810-03:00",
-    "carregador rápido de 120w com 6a usb c cabo 1m para mi turbo charge turbo power ": "2026-11-10T18:08:51.907255-03:00",
     "2026 t800 ultra 3 max mais recente smartwatch relógio inteligente nfc série 10 2": "2026-11-10T19:09:10.274310-03:00",
     "kit carregador para iphone fonte cabo 20w pd turbo rapido tipo c lightning": "2026-11-10T20:09:18.482908-03:00",
     "cr2032 3v com 1 2 3 4 cartelas para relógio controle e eletrônicos": "2026-11-10T20:09:18.482908-03:00",
@@ -160,7 +159,8 @@
     "fone de ouvido bluetooth sem fio headphone bluetooth recarregável p9 air top cas": "2026-11-13T14:12:04.225792-03:00",
     "whey protein concentrado 1kg dark lab": "2026-11-13T15:09:00.409167-03:00",
     "kit 2 sacos lavar tenis sapato máquina lavar roupas protege não danifica lavagem": "2026-11-13T15:27:29.519467-03:00",
-    "10000mah 5000mah 3000mah carregador portátil indução iphone magsafe bateria sem ": "2026-11-13T15:27:29.519467-03:00"
+    "10000mah 5000mah 3000mah carregador portátil indução iphone magsafe bateria sem ": "2026-11-13T15:27:29.519467-03:00",
+    "liquidificador britânia 2 6l 4 velocidades diamante 1100": "2026-11-13T18:09:27.320092-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -706,6 +706,10 @@
     "SHOPEE-24293312600": {
       "preco": 26.77,
       "ts": "2026-11-13T15:27:29.519467-03:00"
+    },
+    "SHOPEE-23099337262": {
+      "preco": 99.9,
+      "ts": "2026-11-13T18:09:27.320092-03:00"
     }
   },
   "alertas": {}
