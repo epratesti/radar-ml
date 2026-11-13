@@ -107,7 +107,11 @@
     "SHOPEE-58260024382": "2026-11-13T09:12:13.921039-03:00",
     "58260024382": "2026-11-13T09:12:13.921039-03:00",
     "SHOPEE-58251249633": "2026-11-13T09:12:13.921039-03:00",
-    "58251249633": "2026-11-13T09:12:13.921039-03:00"
+    "58251249633": "2026-11-13T09:12:13.921039-03:00",
+    "SHOPEE-23598011105": "2026-11-13T11:15:22.545130-03:00",
+    "23598011105": "2026-11-13T11:15:22.545130-03:00",
+    "SHOPEE-23894229861": "2026-11-13T11:15:22.545130-03:00",
+    "23894229861": "2026-11-13T11:15:22.545130-03:00"
   },
   "titulos": {
     "kit 6 forma de silicone para fritadeira air fryer com alça antiaderente cozinha": "2026-11-10T15:08:22.842268-03:00",
@@ -163,7 +167,9 @@
     "garrafa térmica cabo madeira para café 1l": "2026-11-13T08:09:49.779087-03:00",
     "conjunto feminino 5 peças relógio colar brincos pulseira anel dourado": "2026-11-13T08:09:49.779087-03:00",
     "chinelo feminino leve e prático para uso em praia e lazer": "2026-11-13T09:12:13.921039-03:00",
-    "relógio retrô digital prata led unissex fashion masculino feminino pulseira inox": "2026-11-13T09:12:13.921039-03:00"
+    "relógio retrô digital prata led unissex fashion masculino feminino pulseira inox": "2026-11-13T09:12:13.921039-03:00",
+    "relógio eletrônico prova d água para presente esportivo casual de negócios mascu": "2026-11-13T11:15:22.545130-03:00",
+    "mini power bank 10000mah para viagens recarga sem fio e cabo iphone e tipo c 2em": "2026-11-13T11:15:22.545130-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -693,6 +699,14 @@
     "SHOPEE-58267502829": {
       "preco": 37.99,
       "ts": "2026-11-13T08:09:49.779087-03:00"
+    },
+    "SHOPEE-23598011105": {
+      "preco": 13.99,
+      "ts": "2026-11-13T11:15:22.545130-03:00"
+    },
+    "SHOPEE-23894229861": {
+      "preco": 26.98,
+      "ts": "2026-11-13T11:15:22.545130-03:00"
     }
   },
   "alertas": {}
