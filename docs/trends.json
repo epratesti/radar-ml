@@ -1,6 +1,24 @@
 {
-  "atualizado": "2026-11-14T10:15:22.656031-03:00",
+  "atualizado": "2026-11-14T11:15:53.893344-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-23497594302",
+      "titulo": "ROMANTIC CROWN Mochila de Viagem Expansível, Bolsa Executiva Notebook Masculina e Feminina Trabalho,Grande,Reforçada",
+      "preco": 99.98,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 86,
+      "vendas": 3542,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820la-mu7g0m7pk9vl21",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "mochila",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/3B8wuOfr1x",
+      "comissao": "0.08",
+      "loja": "Romantic Crown.02",
+      "postado_em": "2026-11-14T11:15:53.893344-03:00"
+    },
     {
       "id": "SHOPEE-21997150349",
       "titulo": "Kit 6 Forma de Silicone para Fritadeira Air Fryer com Alça Antiaderente Cozinha",
@@ -522,24 +540,6 @@
       "comissao": "0.07",
       "loja": "Hard Extreme",
       "postado_em": "2026-11-12T17:09:50.052323-03:00"
-    },
-    {
-      "id": "SHOPEE-23197485445",
-      "titulo": "Whey Protein Fuse 900g Isolate Dark Lab",
-      "preco": 78.9,
-      "preco_anterior": null,
-      "a_partir_de": false,
-      "desconto": 51,
-      "vendas": 4920,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lzaxtiavhw6de4",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "whey protein",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/3g5CVXy1ad",
-      "comissao": "0.26",
-      "loja": "Dark Lab Oficial",
-      "postado_em": "2026-11-12T16:08:24.381438-03:00"
     }
   ]
 }
