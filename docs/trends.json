@@ -1,6 +1,24 @@
 {
-  "atualizado": "2026-11-14T11:15:53.893344-03:00",
+  "atualizado": "2026-11-14T12:14:25.600095-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-18799900509",
+      "titulo": "T900 Ultra Smartwatch Relógio Inteligente Prova Bluetooth Monitoramento De Saúde Exercício Contagem NFC",
+      "preco": 49.8,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 67,
+      "vendas": 1375,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mfffhm1n60p1be",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "smartwatch",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/1Bvbhk4Vk",
+      "comissao": "0.13",
+      "loja": "Relógios ULTRA",
+      "postado_em": "2026-11-14T12:14:25.600095-03:00"
+    },
     {
       "id": "SHOPEE-23497594302",
       "titulo": "ROMANTIC CROWN Mochila de Viagem Expansível, Bolsa Executiva Notebook Masculina e Feminina Trabalho,Grande,Reforçada",
@@ -522,24 +540,6 @@
       "comissao": "0.15",
       "loja": "BEST MO",
       "postado_em": "2026-11-12T19:10:39.202234-03:00"
-    },
-    {
-      "id": "SHOPEE-52352168399",
-      "titulo": "Pasta de Amendoim com Whey Protein 600g Dr Peanut",
-      "preco": 41.99,
-      "preco_anterior": null,
-      "a_partir_de": false,
-      "desconto": 58,
-      "vendas": 2683,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztc-mjogvg8bh62p24",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "whey protein",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/4qH9tgtaDw",
-      "comissao": "0.07",
-      "loja": "Hard Extreme",
-      "postado_em": "2026-11-12T17:09:50.052323-03:00"
     }
   ]
 }
