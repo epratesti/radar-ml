@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-14T13:10:25.102347-03:00",
+  "atualizado": "2026-11-14T15:08:31.221728-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-20399896346",
+      "titulo": "High Quality Non-Toxic Reusable Pour Over Coffee Filter Stainless Steel Coffee Tea Filter--Immediate",
+      "preco": 18.99,
+      "preco_anterior": null,
+      "a_partir_de": false,
+      "desconto": 76,
+      "vendas": 1190,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-824i9-mfra08dv9dl91a",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "cafeteira",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/BVK19jXx8",
+      "comissao": "0.13",
+      "loja": "FLMAX",
+      "postado_em": "2026-11-14T15:08:31.221728-03:00"
+    },
+    {
+      "id": "SHOPEE-58200879255",
+      "titulo": "Carregador de Carregamento Turbo 30w Fonte 3A Torre Carregar Celular Tipo-C com Cabo Lightning(ios)",
+      "preco": 24.99,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 64,
+      "vendas": 4441,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lc-mpfk4paqdm9v32",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "carregador turbo",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/60T9DuIRVS",
+      "comissao": "0.07",
+      "loja": "ENDLESS",
+      "postado_em": "2026-11-14T15:08:31.221728-03:00"
+    },
     {
       "id": "SHOPEE-58264684239",
       "titulo": "Kit Hidrabene Clareador Skincare Clareador Facial: Sabonete, Protetor 70 FPS e Sérum Multicorretivo",
@@ -504,42 +540,6 @@
       "comissao": "0.19",
       "loja": "OmniStore",
       "postado_em": "2026-11-13T07:07:56.290052-03:00"
-    },
-    {
-      "id": "SHOPEE-22497773735",
-      "titulo": "ROMANTIC CROWN Mochila Viagem Feminina Masculina Multifuncional Reforçada Impermeável Expansível, Notebook Antifurto USB",
-      "preco": 109.98,
-      "preco_anterior": null,
-      "a_partir_de": false,
-      "desconto": 63,
-      "vendas": 4720,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lv-mt38wyvxh81x6a",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "mochila",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/3LSN6hfDgw",
-      "comissao": "0.08",
-      "loja": "Romantic Crown 02",
-      "postado_em": "2026-11-13T07:07:56.290052-03:00"
-    },
-    {
-      "id": "SHOPEE-20607193834",
-      "titulo": "CARREGADOR PORTÁTIL POWER BANK UNIVERSAL 10.000MAH E 5.000MAH",
-      "preco": 37.49,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 63,
-      "vendas": 3528,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztv-mkjwat5lsi6803",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "power bank",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/7puks9i28w",
-      "comissao": "0.11",
-      "loja": "LUFEE ACESSÓRIOS",
-      "postado_em": "2026-11-12T22:11:46.354865-03:00"
     }
   ]
 }
