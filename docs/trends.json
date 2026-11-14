@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-13T21:11:50.594861-03:00",
+  "atualizado": "2026-11-13T21:16:55.416355-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-22397182247",
+      "titulo": "Carregador iPhone Turbo Tipo-C 20W + Cabo Lightining para IPhone Carga rápida",
+      "preco": 15.99,
+      "preco_anterior": null,
+      "a_partir_de": false,
+      "desconto": 68,
+      "vendas": 9995,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rbkw-lpcg9rytbas79a",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "carregador turbo",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/6fiq18Fu9W",
+      "comissao": "0.11",
+      "loja": "ZSZ_SHOP",
+      "postado_em": "2026-11-13T21:16:55.416355-03:00"
+    },
+    {
+      "id": "SHOPEE-22793684140",
+      "titulo": "Tênis Feminino Esportivo Leve e mácio Academia Corrida",
+      "preco": 29.0,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 42,
+      "vendas": 6957,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-m5tyxgjeaxz9d5",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "tenis",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/4fxjJ3NQMk",
+      "comissao": "0.13",
+      "loja": "Dulojashoes",
+      "postado_em": "2026-11-13T21:16:55.416355-03:00"
+    },
     {
       "id": "SHOPEE-58207663151",
       "titulo": "Kit 50 a 300 Formas Descartável Para Airfryer Antiaderente Não Suja Cozinha Fritadedira Promoção",
@@ -504,42 +540,6 @@
       "comissao": "0.13",
       "loja": "RYT WEB",
       "postado_em": "2026-11-12T10:14:11.637699-03:00"
-    },
-    {
-      "id": "SHOPEE-23899017576",
-      "titulo": "Carregador Portátil Indução para Sem fio Bateria Carga 3000/5000/10000mAh",
-      "preco": 28.98,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 58,
-      "vendas": 10100,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mhpueqwbzs3me6",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "power bank",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/2qW4uy14Hs",
-      "comissao": "0.11",
-      "loja": "TW1 TECH LTDA",
-      "postado_em": "2026-11-12T07:08:56.029954-03:00"
-    },
-    {
-      "id": "SHOPEE-52905774499",
-      "titulo": "Espremedor Elétrico de Frutas Automático | Laranja, Limão e Outras Frutas | Suco Natural Rápido | Design Premium",
-      "preco": 49.99,
-      "preco_anterior": null,
-      "a_partir_de": false,
-      "desconto": 83,
-      "vendas": 3171,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8260c-mlw5gdmlji8493",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "liquidificador",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/9KjYeuGONK",
-      "comissao": "0.03",
-      "loja": "Link&LinkShop_Brasil",
-      "postado_em": "2026-11-12T07:08:56.029954-03:00"
     }
   ]
 }
