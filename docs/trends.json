@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-13T22:10:49.626291-03:00",
+  "atualizado": "2026-11-14T07:07:19.292101-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-58259749592",
+      "titulo": "Kit Carregador 67W Turbo + Cabo Tipo-C Carga Rápida Universal Xiaomi Redmi Note E Poco X7 Android",
+      "preco": 29.51,
+      "preco_anterior": null,
+      "a_partir_de": false,
+      "desconto": 41,
+      "vendas": 9437,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8258n-mr8vmek85csha1",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "carregador turbo",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/6q2GDRFGoZ",
+      "comissao": "0.15",
+      "loja": "Reis Empire",
+      "postado_em": "2026-11-14T07:07:19.292101-03:00"
+    },
+    {
+      "id": "SHOPEE-23694435102",
+      "titulo": "Chinelo Rasteira Feminina Adulto e Infantil com Nó Bico Quadrado Confortável e Elegante para Dia a Dia",
+      "preco": 29.9,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 67,
+      "vendas": 6511,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lf-mlnmkfz6dvr8e0",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "chinelo",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/2BGPr5yl56",
+      "comissao": "0.06",
+      "loja": "GOIS E MORAIS",
+      "postado_em": "2026-11-14T07:07:19.292101-03:00"
+    },
     {
       "id": "SHOPEE-20199206047",
       "titulo": "Air Fryer Britânia 4,2L Dura Mais 1500W BFR38",
@@ -504,42 +540,6 @@
       "comissao": "0.14",
       "loja": "LUZORA",
       "postado_em": "2026-11-12T15:45:58.716149-03:00"
-    },
-    {
-      "id": "SHOPEE-18499695542",
-      "titulo": "Mini Aspirador De Pó 3 em 1 a Vacuo Usb Portátil Recarregavel -SE8010",
-      "preco": 21.99,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 56,
-      "vendas": 11678,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7renx-m8c8ne7qdez9a8",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "aspirador",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/9pfpaa0ACn",
-      "comissao": "0.03",
-      "loja": "HUAJIE LOJA",
-      "postado_em": "2026-11-12T12:11:08.880911-03:00"
-    },
-    {
-      "id": "SHOPEE-54850610196",
-      "titulo": "Caneca Magnética Com Mistura Automática 380ml",
-      "preco": 33.98,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 72,
-      "vendas": 1830,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820l7-mlffathukzr9f4",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "cafeteira",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/ql0oNh0bC",
-      "comissao": "0.07",
-      "loja": "Belin Life ",
-      "postado_em": "2026-11-12T11:17:52.711067-03:00"
     }
   ]
 }
