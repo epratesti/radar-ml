@@ -105,7 +105,11 @@
     "SHOPEE-22397182247": "2026-11-13T21:16:55.416355-03:00",
     "22397182247": "2026-11-13T21:16:55.416355-03:00",
     "SHOPEE-22793684140": "2026-11-13T21:16:55.416355-03:00",
-    "22793684140": "2026-11-13T21:16:55.416355-03:00"
+    "22793684140": "2026-11-13T21:16:55.416355-03:00",
+    "SHOPEE-20199206047": "2026-11-13T22:10:49.626291-03:00",
+    "20199206047": "2026-11-13T22:10:49.626291-03:00",
+    "SHOPEE-23198072057": "2026-11-13T22:10:49.626291-03:00",
+    "23198072057": "2026-11-13T22:10:49.626291-03:00"
   },
   "titulos": {
     "carregador sem fio 5000 10000mah iphone": "2026-11-11T22:11:28.276087-03:00",
@@ -160,7 +164,9 @@
     "kit 50 a 300 formas descartável para airfryer antiaderente não suja cozinha frit": "2026-11-13T21:11:50.594861-03:00",
     "whey ultra protein refil 900g 15g proteína por dose ftw": "2026-11-13T21:11:50.594861-03:00",
     "carregador iphone turbo tipo c 20w cabo lightining para iphone carga rápida": "2026-11-13T21:16:55.416355-03:00",
-    "tênis feminino esportivo leve e mácio academia corrida": "2026-11-13T21:16:55.416355-03:00"
+    "tênis feminino esportivo leve e mácio academia corrida": "2026-11-13T21:16:55.416355-03:00",
+    "air fryer britânia 4 2l dura mais 1500w bfr38": "2026-11-13T22:10:49.626291-03:00",
+    "bolsa feminina nylon impermeável vira mochila transversal tiracolo leve 3em1": "2026-11-13T22:10:49.626291-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -714,6 +720,14 @@
     "SHOPEE-21099598473": {
       "preco": 65.0,
       "ts": "2026-11-13T21:11:50.594861-03:00"
+    },
+    "SHOPEE-20199206047": {
+      "preco": 199.0,
+      "ts": "2026-11-13T22:10:49.626291-03:00"
+    },
+    "SHOPEE-23198072057": {
+      "preco": 37.58,
+      "ts": "2026-11-13T22:10:49.626291-03:00"
     }
   },
   "alertas": {}

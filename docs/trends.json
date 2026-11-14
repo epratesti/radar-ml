@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-13T21:16:55.416355-03:00",
+  "atualizado": "2026-11-13T22:10:49.626291-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-20199206047",
+      "titulo": "Air Fryer Britânia 4,2L Dura Mais 1500W BFR38",
+      "preco": 199.0,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 20,
+      "vendas": 1082,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8258f-mudi8zi45c034a",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "air fryer",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/1gK7jY3EJG",
+      "comissao": "0.35",
+      "loja": "Britânia Oficial",
+      "postado_em": "2026-11-13T22:10:49.626291-03:00"
+    },
+    {
+      "id": "SHOPEE-23198072057",
+      "titulo": "Bolsa feminina nylon impermeável vira mochila transversal tiracolo leve 3em1",
+      "preco": 37.58,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 62,
+      "vendas": 2372,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mdzni6y96lmr72",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "mochila",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/4fxkh9a8zK",
+      "comissao": "0.08",
+      "loja": "Stella Bolsas Mochilas",
+      "postado_em": "2026-11-13T22:10:49.626291-03:00"
+    },
     {
       "id": "SHOPEE-22397182247",
       "titulo": "Carregador iPhone Turbo Tipo-C 20W + Cabo Lightining para IPhone Carga rápida",
@@ -504,42 +540,6 @@
       "comissao": "0.07",
       "loja": "Belin Life ",
       "postado_em": "2026-11-12T11:17:52.711067-03:00"
-    },
-    {
-      "id": "SHOPEE-21399069053",
-      "titulo": "Caneta Paint Original Reparadora Pintura Automotiva Permanente Não Sai Na Água Tira Riscos Carro Moto Retoque de Placa Tênis Pneus para Ferro Metal Madeira Plástico Gesso Vidro Couro Tecido Cores Preto Branco Prata (Cinza) Dourado Azul Vermelha",
-      "preco": 15.53,
-      "preco_anterior": 18.72,
-      "a_partir_de": false,
-      "desconto": 63,
-      "vendas": 5107,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lsirz2r48wfv6e",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "tenis",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/4B1Si8PKNj",
-      "comissao": "0.24",
-      "loja": "VENDAS.VTO",
-      "postado_em": "2026-11-12T10:14:11.637699-03:00"
-    },
-    {
-      "id": "SHOPEE-23598387814",
-      "titulo": "Adaptador de Tomada Ultra Resistente de Porcelana para Secador Air Fryer Benjamin Bivolt 10A e 20A",
-      "preco": 12.72,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 60,
-      "vendas": 2607,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rep2-m8i16u5pyp4wcf",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "air fryer",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/2BGOKT1KIP",
-      "comissao": "0.13",
-      "loja": "RYT WEB",
-      "postado_em": "2026-11-12T10:14:11.637699-03:00"
     }
   ]
 }
