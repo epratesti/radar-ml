@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-14T17:08:13.680306-03:00",
+  "atualizado": "2026-11-14T18:14:33.837650-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-21297578652",
+      "titulo": "Sandália ortopédica feminina Terapêutica para Esporão Chinelo ortopédico",
+      "preco": 27.03,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 49,
+      "vendas": 5055,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-m9t94f0t2lo94f",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "chinelo",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/2LZq3Oy7kB",
+      "comissao": "0.18",
+      "loja": "Moleka Calçados",
+      "postado_em": "2026-11-14T18:14:33.837650-03:00"
+    },
+    {
+      "id": "SHOPEE-23399193375",
+      "titulo": "2026 T800 Ultra 3 MAX Mais Recente Smartwatch Relógio Inteligente NFC Série 10 2.19Polegadas Sem Fio",
+      "preco": 39.8,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 73,
+      "vendas": 1521,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mhq4f2lhz40397",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "smartwatch",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/9AQAWYBAuN",
+      "comissao": "0.11",
+      "loja": "LUNANA Shop",
+      "postado_em": "2026-11-14T18:14:33.837650-03:00"
+    },
     {
       "id": "SHOPEE-22594546423",
       "titulo": "Cola para Sapato e Tênis 60ML Adesivo Forte Flexível Impermeável para Reparo de Sola, Couro, Borracha e PVC 60ML",
@@ -504,42 +540,6 @@
       "comissao": "0.08",
       "loja": "TIMECRAFT",
       "postado_em": "2026-11-13T09:12:13.921039-03:00"
-    },
-    {
-      "id": "SHOPEE-52858085838",
-      "titulo": "Garrafa Térmica Cabo Madeira Para Café 1l",
-      "preco": 43.99,
-      "preco_anterior": null,
-      "a_partir_de": false,
-      "desconto": 45,
-      "vendas": 5582,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820ma-mvd7eu0ozvuo27",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "garrafa termica",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/9zzH7Ck8BP",
-      "comissao": "0.13",
-      "loja": "SELLNEEDS",
-      "postado_em": "2026-11-13T08:09:49.779087-03:00"
-    },
-    {
-      "id": "SHOPEE-58267502829",
-      "titulo": "Conjunto Feminino 5 Peças Relógio Colar Brincos Pulseira Anel Dourado",
-      "preco": 37.99,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 62,
-      "vendas": 2042,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8258m-mt566n3atc01c7",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "relogio",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/7VHv4aSAwx",
-      "comissao": "0.03",
-      "loja": "GlamGlow_Store",
-      "postado_em": "2026-11-13T08:09:49.779087-03:00"
     }
   ]
 }
