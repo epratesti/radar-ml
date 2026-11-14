@@ -2,10 +2,6 @@
   "ids": {
     "SHOPEE-18499853587": "2026-11-11T22:11:28.276087-03:00",
     "18499853587": "2026-11-11T22:11:28.276087-03:00",
-    "SHOPEE-23198212585": "2026-11-11T20:09:55.687295-03:00",
-    "23198212585": "2026-11-11T20:09:55.687295-03:00",
-    "SHOPEE-58250947403": "2026-11-11T20:09:55.687295-03:00",
-    "58250947403": "2026-11-11T20:09:55.687295-03:00",
     "SHOPEE-18598350302": "2026-11-11T21:11:46.529005-03:00",
     "18598350302": "2026-11-11T21:11:46.529005-03:00",
     "SHOPEE-22392993399": "2026-11-11T21:11:46.529005-03:00",
@@ -113,12 +109,12 @@
     "SHOPEE-22094238842": "2026-11-14T19:09:49.384588-03:00",
     "22094238842": "2026-11-14T19:09:49.384588-03:00",
     "SHOPEE-23098440348": "2026-11-14T19:09:49.384588-03:00",
-    "23098440348": "2026-11-14T19:09:49.384588-03:00"
+    "23098440348": "2026-11-14T19:09:49.384588-03:00",
+    "SHOPEE-19697980846": "2026-11-14T20:10:58.542301-03:00",
+    "19697980846": "2026-11-14T20:10:58.542301-03:00"
   },
   "titulos": {
     "carregador sem fio 5000 10000mah iphone": "2026-11-11T22:11:28.276087-03:00",
-    "whey ultra protein concentrado pote 900g ftw": "2026-11-11T20:09:55.687295-03:00",
-    "mouse pad rgb grande gamer personalizado apoio ergonômico confortável antiderrap": "2026-11-11T20:09:55.687295-03:00",
     "alaxe5 generation original speaker immediate shipping best price": "2026-11-11T21:11:46.529005-03:00",
     "hipercalórico dark mass 3kg dark lab whey protein creatina bcaa waxy maize premi": "2026-11-11T21:11:46.529005-03:00",
     "kit dupla renovadores faciais kokeshi pele porcelana olhos gueixa": "2026-11-11T22:11:28.276087-03:00",
@@ -172,7 +168,8 @@
     "sandália ortopédica feminina terapêutica para esporão chinelo ortopédico": "2026-11-14T18:14:33.837650-03:00",
     "2026 t800 ultra 3 max mais recente smartwatch relógio inteligente nfc série 10 2": "2026-11-14T18:14:33.837650-03:00",
     "body splash feminino arabe ayra 100ml primacial perfume floral": "2026-11-14T19:09:49.384588-03:00",
-    "k12 caixa de som sem fio com microfone karaokê mini alto falante bluetooth portá": "2026-11-14T19:09:49.384588-03:00"
+    "k12 caixa de som sem fio com microfone karaokê mini alto falante bluetooth portá": "2026-11-14T19:09:49.384588-03:00",
+    "ventilador luminária led 6 pás lâmpada soquete bocal e27 teto 3 cores luz branco": "2026-11-14T20:10:58.542301-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -181,7 +178,7 @@
     },
     "SHOPEE-19697980846": {
       "preco": 42.99,
-      "ts": "2026-11-11T19:09:27.605574-03:00"
+      "ts": "2026-11-14T20:10:58.542301-03:00"
     },
     "SHOPEE-23198988208": {
       "preco": 15.89,
