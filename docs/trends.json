@@ -1,6 +1,24 @@
 {
-  "atualizado": "2026-11-14T15:08:31.221728-03:00",
+  "atualizado": "2026-11-14T17:08:13.680306-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-22594546423",
+      "titulo": "Cola para Sapato e Tênis 60ML Adesivo Forte Flexível Impermeável para Reparo de Sola, Couro, Borracha e PVC 60ML",
+      "preco": 14.97,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 42,
+      "vendas": 6207,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820mf-msxpyhl68qv9ad",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "tenis",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/4LKsuROh2i",
+      "comissao": "0.14",
+      "loja": "Seleção de Moda",
+      "postado_em": "2026-11-14T17:08:13.680306-03:00"
+    },
     {
       "id": "SHOPEE-20399896346",
       "titulo": "High Quality Non-Toxic Reusable Pour Over Coffee Filter Stainless Steel Coffee Tea Filter--Immediate",
@@ -522,24 +540,6 @@
       "comissao": "0.03",
       "loja": "GlamGlow_Store",
       "postado_em": "2026-11-13T08:09:49.779087-03:00"
-    },
-    {
-      "id": "SHOPEE-23198988208",
-      "titulo": "Mouse Pad Desk Pad Couro Borda Costurada Gigante Antiderrapante Tapete Mesa Gamer Setup Trabalho Estudo Protetor Mesa",
-      "preco": 15.89,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 56,
-      "vendas": 3082,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820li-mlfcjdzl6ryf41",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "mouse gamer",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/7KyVs487vW",
-      "comissao": "0.19",
-      "loja": "OmniStore",
-      "postado_em": "2026-11-13T07:07:56.290052-03:00"
     }
   ]
 }

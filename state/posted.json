@@ -109,7 +109,9 @@
     "SHOPEE-20399896346": "2026-11-14T15:08:31.221728-03:00",
     "20399896346": "2026-11-14T15:08:31.221728-03:00",
     "SHOPEE-58200879255": "2026-11-14T15:08:31.221728-03:00",
-    "58200879255": "2026-11-14T15:08:31.221728-03:00"
+    "58200879255": "2026-11-14T15:08:31.221728-03:00",
+    "SHOPEE-22594546423": "2026-11-14T17:08:13.680306-03:00",
+    "22594546423": "2026-11-14T17:08:13.680306-03:00"
   },
   "titulos": {
     "carregador sem fio 5000 10000mah iphone": "2026-11-11T22:11:28.276087-03:00",
@@ -166,7 +168,8 @@
     "kit hidrabene clareador skincare clareador facial sabonete protetor 70 fps e sér": "2026-11-14T13:10:25.102347-03:00",
     "fone de ouvido entrada lightning para iphone microfone bluetooth": "2026-11-14T13:10:25.102347-03:00",
     "high quality non toxic reusable pour over coffee filter stainless steel coffee t": "2026-11-14T15:08:31.221728-03:00",
-    "carregador de carregamento turbo 30w fonte 3a torre carregar celular tipo c com ": "2026-11-14T15:08:31.221728-03:00"
+    "carregador de carregamento turbo 30w fonte 3a torre carregar celular tipo c com ": "2026-11-14T15:08:31.221728-03:00",
+    "cola para sapato e tênis 60ml adesivo forte flexível impermeável para reparo de ": "2026-11-14T17:08:13.680306-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -740,6 +743,10 @@
     "SHOPEE-58200879255": {
       "preco": 24.99,
       "ts": "2026-11-14T15:08:31.221728-03:00"
+    },
+    "SHOPEE-22594546423": {
+      "preco": 14.97,
+      "ts": "2026-11-14T17:08:13.680306-03:00"
     }
   },
   "alertas": {}
