@@ -111,7 +111,9 @@
     "SHOPEE-58259749592": "2026-11-14T07:07:19.292101-03:00",
     "58259749592": "2026-11-14T07:07:19.292101-03:00",
     "SHOPEE-23694435102": "2026-11-14T07:07:19.292101-03:00",
-    "23694435102": "2026-11-14T07:07:19.292101-03:00"
+    "23694435102": "2026-11-14T07:07:19.292101-03:00",
+    "SHOPEE-23594439744": "2026-11-14T09:12:14.262187-03:00",
+    "23594439744": "2026-11-14T09:12:14.262187-03:00"
   },
   "titulos": {
     "carregador sem fio 5000 10000mah iphone": "2026-11-11T22:11:28.276087-03:00",
@@ -169,7 +171,8 @@
     "air fryer britânia 4 2l dura mais 1500w bfr38": "2026-11-13T22:10:49.626291-03:00",
     "bolsa feminina nylon impermeável vira mochila transversal tiracolo leve 3em1": "2026-11-13T22:10:49.626291-03:00",
     "kit carregador 67w turbo cabo tipo c carga rápida universal xiaomi redmi note e ": "2026-11-14T07:07:19.292101-03:00",
-    "chinelo rasteira feminina adulto e infantil com nó bico quadrado confortável e e": "2026-11-14T07:07:19.292101-03:00"
+    "chinelo rasteira feminina adulto e infantil com nó bico quadrado confortável e e": "2026-11-14T07:07:19.292101-03:00",
+    "400ml 6 lâminas espremedor elétrico mini liquidificador portátil de suco de alim": "2026-11-14T09:12:14.262187-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -731,6 +734,10 @@
     "SHOPEE-23198072057": {
       "preco": 37.58,
       "ts": "2026-11-13T22:10:49.626291-03:00"
+    },
+    "SHOPEE-23594439744": {
+      "preco": 35.49,
+      "ts": "2026-11-14T09:12:14.262187-03:00"
     }
   },
   "alertas": {}

@@ -1,6 +1,24 @@
 {
-  "atualizado": "2026-11-14T07:07:19.292101-03:00",
+  "atualizado": "2026-11-14T09:12:14.262187-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-23594439744",
+      "titulo": "400ML 6 Lâminas Espremedor Elétrico Mini Liquidificador Portátil De Suco De Alimentos Misturador Leite",
+      "preco": 35.49,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 51,
+      "vendas": 2162,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-824j0-mf4w5g1wmgaw9d",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "liquidificador",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/8AXbGlKpkF",
+      "comissao": "0.11",
+      "loja": "zapshop2",
+      "postado_em": "2026-11-14T09:12:14.262187-03:00"
+    },
     {
       "id": "SHOPEE-58259749592",
       "titulo": "Kit Carregador 67W Turbo + Cabo Tipo-C Carga Rápida Universal Xiaomi Redmi Note E Poco X7 Android",
@@ -522,24 +540,6 @@
       "comissao": "0.03",
       "loja": "RN VARIEDADES",
       "postado_em": "2026-11-12T16:08:24.381438-03:00"
-    },
-    {
-      "id": "SHOPEE-23898692172",
-      "titulo": "Ventilador de Teto com Luz Silencioso Controle Remoto Economica Instalação Fácil LED Bivolt E27",
-      "preco": 57.77,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 50,
-      "vendas": 11722,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rdwy-mbw84yf3pvcl00",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "ventilador",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/2BGOhFC3jU",
-      "comissao": "0.14",
-      "loja": "LUZORA",
-      "postado_em": "2026-11-12T15:45:58.716149-03:00"
     }
   ]
 }
