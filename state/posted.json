@@ -2,12 +2,6 @@
   "ids": {
     "SHOPEE-18499853587": "2026-11-11T22:11:28.276087-03:00",
     "18499853587": "2026-11-11T22:11:28.276087-03:00",
-    "SHOPEE-17255136776": "2026-11-11T10:14:43.616810-03:00",
-    "17255136776": "2026-11-11T10:14:43.616810-03:00",
-    "SHOPEE-23497594302": "2026-11-11T10:14:43.616810-03:00",
-    "23497594302": "2026-11-11T10:14:43.616810-03:00",
-    "SHOPEE-23994798337": "2026-11-11T09:12:18.854592-03:00",
-    "23994798337": "2026-11-11T09:12:18.854592-03:00",
     "SHOPEE-22499056874": "2026-11-11T11:15:56.144170-03:00",
     "22499056874": "2026-11-11T11:15:56.144170-03:00",
     "SHOPEE-19499549872": "2026-11-11T11:15:56.144170-03:00",
@@ -113,13 +107,12 @@
     "SHOPEE-23694435102": "2026-11-14T07:07:19.292101-03:00",
     "23694435102": "2026-11-14T07:07:19.292101-03:00",
     "SHOPEE-23594439744": "2026-11-14T09:12:14.262187-03:00",
-    "23594439744": "2026-11-14T09:12:14.262187-03:00"
+    "23594439744": "2026-11-14T09:12:14.262187-03:00",
+    "SHOPEE-21997150349": "2026-11-14T10:15:22.656031-03:00",
+    "21997150349": "2026-11-14T10:15:22.656031-03:00"
   },
   "titulos": {
     "carregador sem fio 5000 10000mah iphone": "2026-11-11T22:11:28.276087-03:00",
-    "relógio smartwatch d20 pro bluetooth coloca foto na tela monitor cardíaco pressã": "2026-11-11T10:14:43.616810-03:00",
-    "romantic crown mochila de viagem expansível bolsa executiva notebook masculina e": "2026-11-11T10:14:43.616810-03:00",
-    "escova limpador de ventilador espanador de pó flexível para limpar ar condiciona": "2026-11-11T09:12:18.854592-03:00",
     "smartwatch mini 38mm pro com monitor de frequência cardíaca do computador são pa": "2026-11-11T11:15:56.144170-03:00",
     "robô varredora aspirador de pó automática 3 em 1 limpeza doméstica robótico inte": "2026-11-11T11:15:56.144170-03:00",
     "kit 100 forma de airfryer descartavel antiaderente de papel cozinha quadrado fri": "2026-11-11T12:11:56.223100-03:00",
@@ -172,7 +165,8 @@
     "bolsa feminina nylon impermeável vira mochila transversal tiracolo leve 3em1": "2026-11-13T22:10:49.626291-03:00",
     "kit carregador 67w turbo cabo tipo c carga rápida universal xiaomi redmi note e ": "2026-11-14T07:07:19.292101-03:00",
     "chinelo rasteira feminina adulto e infantil com nó bico quadrado confortável e e": "2026-11-14T07:07:19.292101-03:00",
-    "400ml 6 lâminas espremedor elétrico mini liquidificador portátil de suco de alim": "2026-11-14T09:12:14.262187-03:00"
+    "400ml 6 lâminas espremedor elétrico mini liquidificador portátil de suco de alim": "2026-11-14T09:12:14.262187-03:00",
+    "kit 6 forma de silicone para fritadeira air fryer com alça antiaderente cozinha": "2026-11-14T10:15:22.656031-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -416,8 +410,8 @@
       "ts": "2026-11-08T10:16:02.979418-03:00"
     },
     "SHOPEE-21997150349": {
-      "preco": 9.99,
-      "ts": "2026-11-10T15:08:22.842268-03:00"
+      "preco": 10.99,
+      "ts": "2026-11-14T10:15:22.656031-03:00"
     },
     "SHOPEE-22098878065": {
       "preco": 19.9,
