@@ -1,6 +1,24 @@
 {
-  "atualizado": "2026-11-15T13:23:43.154666-03:00",
+  "atualizado": "2026-11-15T14:10:03.336978-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-58256926114",
+      "titulo": "Carregador Portátil 5000Mah/10000Mah Indução Sem fio Bateria Carga",
+      "preco": 28.86,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 83,
+      "vendas": 6163,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820ln-mlske0kwri132f",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "power bank",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/114VzBX2Pb",
+      "comissao": "0.13",
+      "loja": "Banana.Store_",
+      "postado_em": "2026-11-15T14:10:03.336978-03:00"
+    },
     {
       "id": "SHOPEE-58250184742",
       "titulo": "Kit 100/200/300 Forro de Papel Descartável para Airfryer Antiaderente,Quadrado,Anti-Óleo Sem Limpeza",
@@ -522,24 +540,6 @@
       "comissao": "0.08",
       "loja": "Stella Bolsas Mochilas",
       "postado_em": "2026-11-13T22:10:49.626291-03:00"
-    },
-    {
-      "id": "SHOPEE-22397182247",
-      "titulo": "Carregador iPhone Turbo Tipo-C 20W + Cabo Lightining para IPhone Carga rápida",
-      "preco": 15.99,
-      "preco_anterior": null,
-      "a_partir_de": false,
-      "desconto": 68,
-      "vendas": 9995,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rbkw-lpcg9rytbas79a",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "carregador turbo",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/6fiq18Fu9W",
-      "comissao": "0.11",
-      "loja": "ZSZ_SHOP",
-      "postado_em": "2026-11-13T21:16:55.416355-03:00"
     }
   ]
 }
