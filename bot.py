@@ -1,6 +1,6 @@
-"""Radar Shopee → Telegram + Facebook Page.
+"""Radar Shopee → Telegram (+ Facebook Page, pausado).
 
-v5.0 (somente Shopee)
+v5.1 (somente Shopee + FB pausado)
 
 Novidades:
 1. Ranking por potencial: pontua vendas, desconto e comissão (não é mais aleatório).
@@ -60,7 +60,10 @@ STATE = ROOT / "state" / "posted.json"
 TZ = ZoneInfo("America/Sao_Paulo")
 
 # --- Estado de execução (circuit breakers e alertas) --------------------------
-FB_ATIVO = bool(FB_PAGE_ID and FB_ACCESS_TOKEN)
+# PAUSADO: por enquanto não vamos mandar no Facebook (sem resultado)
+# Para reativar: apague a linha FB_ATIVO = False abaixo (ou mude para True e mantenha os secrets)
+FB_ATIVO = False  # pausado temporariamente
+# FB_ATIVO = bool(FB_PAGE_ID and FB_ACCESS_TOKEN)
 FB_FALHAS = 0
 FB_ERROS_FATAIS = {3, 10, 102, 190, 200, 240, 283, 368}
 SHOPEE_FALHAS = 0
@@ -510,16 +513,17 @@ def fb_erro(r):
 
 
 def fb_dica(code):
-    if code == 240:
-        return ("Token sem permissão de postar nessa página. Use o PAGE ACCESS TOKEN da página "
-                "(GET /me/accounts), com pages_manage_posts, e confira o FB_PAGE_ID.")
-    if code in (190, 102):
-        return "Token inválido ou expirado. Gere um novo token de página (longa duração)."
-    if code in (10, 200, 283, 368):
-        return "Falta permissão (pages_manage_posts), app em modo Desenvolvimento ou conta restrita."
-    if code == 3:
-        return "Funcionalidade indisponível para esse app/token. Revise as permissões."
-    return "Verifique FB_PAGE_ID, FB_ACCESS_TOKEN e as permissões do app."
+    dicas = {
+        3: "App não tem permissão (pages_manage_posts / pages_read_engagement).",
+        10: "Permissão negada — revise o token da página.",
+        102: "Sessão inválida / token expirado.",
+        190: "Token inválido ou expirado. Gere um novo token de página de longa duração.",
+        200: "Permissão insuficiente (pages_manage_posts).",
+        240: "Aplicativo não autorizado para essa ação.",
+        283: "Token sem pages_manage_posts.",
+        368: "Bloqueio temporário por spam / rate limit do Facebook.",
+    }
+    return dicas.get(code, "Verifique o token e as permissões da página.")
 
 
 def fb_diagnostico():
@@ -527,8 +531,8 @@ def fb_diagnostico():
     if not FB_ATIVO:
         return
     try:
-        r = S.get(f"{FB_API}/me", params={"fields": "id,name", "access_token": FB_ACCESS_TOKEN}, timeout=20)
-        if r.status_code != 200:
+        r = S.get(f"{FB_API}/me", params={"access_token": FB_ACCESS_TOKEN, "fields": "id,name"}, timeout=15)
+        if not r.ok:
             code, _, msg = fb_erro(r)
             print(f"Facebook: token rejeitado (code {code}): {msg}")
             add_alerta("fb_off", f"Facebook desativado (code {code}): {fb_dica(code)}")
@@ -598,23 +602,30 @@ def pode_postar(agora):
 # Site (docs/trends.json) — acumula os últimos posts
 # ----------------------------------------------------------------------------
 def atualizar_trends(postados, agora):
-    ocultar = {"item_id", "chamada", "score", "comissao_pct"}
-    antigos = []
-    try:
-        antigos = (json.loads(TRENDS.read_text(encoding="utf-8")) or {}).get("itens") or []
-    except Exception:
-        pass
-    novos = [
-        {**{k: v for k, v in p.items() if k not in ocultar}, "postado_em": agora.isoformat()}
-        for p in postados
-    ]
-    ids_novos = {i["id"] for i in novos}
-    itens = (novos + [i for i in antigos if i.get("id") not in ids_novos])[:TRENDS_MAX]
     TRENDS.parent.mkdir(parents=True, exist_ok=True)
-    TRENDS.write_text(
-        json.dumps({"atualizado": agora.isoformat(), "itens": itens}, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
+    try:
+        data = json.loads(TRENDS.read_text(encoding="utf-8") or "[]")
+        if not isinstance(data, list):
+            data = []
+    except Exception:
+        data = []
+
+    for p in postados:
+        data.insert(0, {
+            "id": p["id"],
+            "titulo": p["titulo"],
+            "preco": p["preco"],
+            "desconto": p.get("desconto") or 0,
+            "vendas": p.get("vendas") or 0,
+            "imagem": p.get("imagem") or "",
+            "link": p["link"],
+            "fonte": p.get("fonte") or "shopee",
+            "ts": agora.isoformat(),
+        })
+
+    data = data[:TRENDS_MAX]
+    TRENDS.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+    print(f"trends.json atualizado ({len(data)} itens)")
 
 
 # ----------------------------------------------------------------------------
