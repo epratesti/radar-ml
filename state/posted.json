@@ -107,7 +107,11 @@
     "SHOPEE-23994798337": "2026-11-15T09:11:49.695387-03:00",
     "23994798337": "2026-11-15T09:11:49.695387-03:00",
     "SHOPEE-57356208902": "2026-11-15T09:11:49.695387-03:00",
-    "57356208902": "2026-11-15T09:11:49.695387-03:00"
+    "57356208902": "2026-11-15T09:11:49.695387-03:00",
+    "SHOPEE-22199220609": "2026-11-15T11:16:19.318180-03:00",
+    "22199220609": "2026-11-15T11:16:19.318180-03:00",
+    "SHOPEE-20398185214": "2026-11-15T11:16:19.318180-03:00",
+    "20398185214": "2026-11-15T11:16:19.318180-03:00"
   },
   "titulos": {
     "caneca magnética com mistura automática 380ml": "2026-11-12T11:17:52.711067-03:00",
@@ -163,7 +167,9 @@
     "mochila grande unissex resistente impermeável notebook alta capacidade com compa": "2026-11-15T08:19:45.071537-03:00",
     "fone de ouvido inpods 13 bluetooth sem fio com microfone fones esportivos adequa": "2026-11-15T08:19:45.071537-03:00",
     "escova limpador de ventilador espanador de pó flexível para limpar ar condiciona": "2026-11-15T09:11:49.695387-03:00",
-    "palmilha ortopédica 4d anatômica alto conforto tênis sapatos": "2026-11-15T09:11:49.695387-03:00"
+    "palmilha ortopédica 4d anatômica alto conforto tênis sapatos": "2026-11-15T09:11:49.695387-03:00",
+    "b brobô varredora aspirador de pó automática 3 em 1 limpeza doméstica robótico i": "2026-11-15T11:16:19.318180-03:00",
+    "sapateira organizadora com 9 prateleiras para organizar sapatos calçados chinelo": "2026-11-15T11:16:19.318180-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -232,7 +238,7 @@
     },
     "SHOPEE-22199220609": {
       "preco": 37.99,
-      "ts": "2026-11-10T07:09:13.798806-03:00"
+      "ts": "2026-11-15T11:16:19.318180-03:00"
     },
     "SHOPEE-22493277109": {
       "preco": 13.59,
@@ -757,6 +763,10 @@
     "SHOPEE-57356208902": {
       "preco": 29.99,
       "ts": "2026-11-15T09:11:49.695387-03:00"
+    },
+    "SHOPEE-20398185214": {
+      "preco": 56.48,
+      "ts": "2026-11-15T11:16:19.318180-03:00"
     }
   },
   "alertas": {}
