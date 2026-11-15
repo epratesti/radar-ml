@@ -1,7 +1,5 @@
 {
   "ids": {
-    "SHOPEE-18499695542": "2026-11-12T12:11:08.880911-03:00",
-    "18499695542": "2026-11-12T12:11:08.880911-03:00",
     "SHOPEE-23898692172": "2026-11-12T15:45:58.716149-03:00",
     "23898692172": "2026-11-12T15:45:58.716149-03:00",
     "SHOPEE-23197485445": "2026-11-12T16:08:24.381438-03:00",
@@ -109,10 +107,11 @@
     "SHOPEE-22199220609": "2026-11-15T11:16:19.318180-03:00",
     "22199220609": "2026-11-15T11:16:19.318180-03:00",
     "SHOPEE-20398185214": "2026-11-15T11:16:19.318180-03:00",
-    "20398185214": "2026-11-15T11:16:19.318180-03:00"
+    "20398185214": "2026-11-15T11:16:19.318180-03:00",
+    "SHOPEE-58250184742": "2026-11-15T13:23:43.154666-03:00",
+    "58250184742": "2026-11-15T13:23:43.154666-03:00"
   },
   "titulos": {
-    "mini aspirador de pó 3 em 1 a vacuo usb portátil recarregavel se8010": "2026-11-12T12:11:08.880911-03:00",
     "ventilador de teto com luz silencioso controle remoto economica instalação fácil": "2026-11-12T15:45:58.716149-03:00",
     "whey protein fuse 900g isolate dark lab": "2026-11-12T16:08:24.381438-03:00",
     "relógio masculino digital wr 100 qualidade entrega rápida": "2026-11-12T16:08:24.381438-03:00",
@@ -166,7 +165,8 @@
     "escova limpador de ventilador espanador de pó flexível para limpar ar condiciona": "2026-11-15T09:11:49.695387-03:00",
     "palmilha ortopédica 4d anatômica alto conforto tênis sapatos": "2026-11-15T09:11:49.695387-03:00",
     "b brobô varredora aspirador de pó automática 3 em 1 limpeza doméstica robótico i": "2026-11-15T11:16:19.318180-03:00",
-    "sapateira organizadora com 9 prateleiras para organizar sapatos calçados chinelo": "2026-11-15T11:16:19.318180-03:00"
+    "sapateira organizadora com 9 prateleiras para organizar sapatos calçados chinelo": "2026-11-15T11:16:19.318180-03:00",
+    "kit 100 200 300 forro de papel descartável para airfryer antiaderente quadrado a": "2026-11-15T13:23:43.154666-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -658,8 +658,8 @@
       "ts": "2026-11-11T15:08:41.340013-03:00"
     },
     "SHOPEE-58250184742": {
-      "preco": 14.99,
-      "ts": "2026-11-11T18:08:08.085623-03:00"
+      "preco": 13.98,
+      "ts": "2026-11-15T13:23:43.154666-03:00"
     },
     "SHOPEE-22791523448": {
       "preco": 20.99,
