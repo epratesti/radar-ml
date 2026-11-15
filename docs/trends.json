@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-15T14:10:03.336978-03:00",
+  "atualizado": "2026-11-15T15:07:28.161659-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-23598387814",
+      "titulo": "Adaptador de Tomada Ultra Resistente de Porcelana para Secador Air Fryer Benjamin Bivolt 10A e 20A",
+      "preco": 12.72,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 60,
+      "vendas": 2714,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rep2-m8i16u5pyp4wcf",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "air fryer",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/3Vlqub22hq",
+      "comissao": "0.13",
+      "loja": "RYT WEB",
+      "postado_em": "2026-11-15T15:07:28.161659-03:00"
+    },
+    {
+      "id": "SHOPEE-23397324970",
+      "titulo": "Relógio À Prova D'água LED Digital de Pulso Esportivo feminino Masculino Ultra9 Esporte Pulseira De Silicone",
+      "preco": 13.98,
+      "preco_anterior": null,
+      "a_partir_de": false,
+      "desconto": 71,
+      "vendas": 4946,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lr7g6pzaeed783",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "relogio",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/6L5xgRWcJY",
+      "comissao": "0.03",
+      "loja": "T&TBem_vindo.br",
+      "postado_em": "2026-11-15T15:07:28.161659-03:00"
+    },
     {
       "id": "SHOPEE-58256926114",
       "titulo": "Carregador Portátil 5000Mah/10000Mah Indução Sem fio Bateria Carga",
@@ -504,42 +540,6 @@
       "comissao": "0.06",
       "loja": "GOIS E MORAIS",
       "postado_em": "2026-11-14T07:07:19.292101-03:00"
-    },
-    {
-      "id": "SHOPEE-20199206047",
-      "titulo": "Air Fryer Britânia 4,2L Dura Mais 1500W BFR38",
-      "preco": 199.0,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 20,
-      "vendas": 1082,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-8258f-mudi8zi45c034a",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "air fryer",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/1gK7jY3EJG",
-      "comissao": "0.35",
-      "loja": "Britânia Oficial",
-      "postado_em": "2026-11-13T22:10:49.626291-03:00"
-    },
-    {
-      "id": "SHOPEE-23198072057",
-      "titulo": "Bolsa feminina nylon impermeável vira mochila transversal tiracolo leve 3em1",
-      "preco": 37.58,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 62,
-      "vendas": 2372,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mdzni6y96lmr72",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "mochila",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/4fxkh9a8zK",
-      "comissao": "0.08",
-      "loja": "Stella Bolsas Mochilas",
-      "postado_em": "2026-11-13T22:10:49.626291-03:00"
     }
   ]
 }
