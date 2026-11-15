@@ -103,7 +103,11 @@
     "SHOPEE-23897644397": "2026-11-15T07:09:26.666459-03:00",
     "23897644397": "2026-11-15T07:09:26.666459-03:00",
     "SHOPEE-57113764077": "2026-11-15T07:09:26.666459-03:00",
-    "57113764077": "2026-11-15T07:09:26.666459-03:00"
+    "57113764077": "2026-11-15T07:09:26.666459-03:00",
+    "SHOPEE-58208872077": "2026-11-15T08:19:45.071537-03:00",
+    "58208872077": "2026-11-15T08:19:45.071537-03:00",
+    "SHOPEE-48717947960": "2026-11-15T08:19:45.071537-03:00",
+    "48717947960": "2026-11-15T08:19:45.071537-03:00"
   },
   "titulos": {
     "caneta paint original reparadora pintura automotiva permanente não sai na água t": "2026-11-12T10:14:11.637699-03:00",
@@ -157,7 +161,9 @@
     "hipercalórico dark mass 3kg dark lab whey protein creatina bcaa waxy maize premi": "2026-11-14T22:10:25.077730-03:00",
     "caixa saco organizador cobertor casaco guarda roupa ecológico anti poeira umidad": "2026-11-14T22:10:25.077730-03:00",
     "caixa de som speaker bluetooth rgb portátil 10w usb aux": "2026-11-15T07:09:26.666459-03:00",
-    "tênis de corrida sola de borracha parte superior em tecido de malha unissex tama": "2026-11-15T07:09:26.666459-03:00"
+    "tênis de corrida sola de borracha parte superior em tecido de malha unissex tama": "2026-11-15T07:09:26.666459-03:00",
+    "mochila grande unissex resistente impermeável notebook alta capacidade com compa": "2026-11-15T08:19:45.071537-03:00",
+    "fone de ouvido inpods 13 bluetooth sem fio com microfone fones esportivos adequa": "2026-11-15T08:19:45.071537-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -421,8 +427,8 @@
       "ts": "2026-11-08T13:58:02.593000-03:00"
     },
     "SHOPEE-58208872077": {
-      "preco": 59.4,
-      "ts": "2026-11-11T15:30:06.914612-03:00"
+      "preco": 59.9,
+      "ts": "2026-11-15T08:19:45.071537-03:00"
     },
     "SHOPEE-58201056244": {
       "preco": 51.99,
@@ -743,6 +749,10 @@
     "SHOPEE-57113764077": {
       "preco": 59.99,
       "ts": "2026-11-15T07:09:26.666459-03:00"
+    },
+    "SHOPEE-48717947960": {
+      "preco": 19.98,
+      "ts": "2026-11-15T08:19:45.071537-03:00"
     }
   },
   "alertas": {}

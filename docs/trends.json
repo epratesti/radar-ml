@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-15T07:09:26.666459-03:00",
+  "atualizado": "2026-11-15T08:19:45.071537-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-58208872077",
+      "titulo": "mochila grande unissex resistente impermeável notebook alta capacidade com compartimentos ideal trabalho faculdade",
+      "preco": 59.9,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 70,
+      "vendas": 4507,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lk-ms4ydyx58xdy23",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "mochila",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/30pWi5gUMu",
+      "comissao": "0.12",
+      "loja": "Loja Oficial N&M 1",
+      "postado_em": "2026-11-15T08:19:45.071537-03:00"
+    },
+    {
+      "id": "SHOPEE-48717947960",
+      "titulo": "Fone De Ouvido Inpods 13 Bluetooth Sem Fio Com Microfone Fones esportivos Adequado Branco",
+      "preco": 19.98,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 71,
+      "vendas": 7481,
+      "imagem": "https://cf.shopee.com.br/file/sg-11134201-825bb-mt7fxycgurra13",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "fone bluetooth",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/Lom0K4JxJ",
+      "comissao": "0.03",
+      "loja": "Pixel_Workshop.br",
+      "postado_em": "2026-11-15T08:19:45.071537-03:00"
+    },
     {
       "id": "SHOPEE-23897644397",
       "titulo": "Caixa De Som Speaker Bluetooth RGB Portátil 10W usb/aux",
@@ -504,42 +540,6 @@
       "comissao": "0.15",
       "loja": "Britânia Oficial",
       "postado_em": "2026-11-13T18:09:27.320092-03:00"
-    },
-    {
-      "id": "SHOPEE-55359781665",
-      "titulo": "Kit 2 Sacos lavar Tenis Sapato Máquina Lavar roupas Protege não danifica Lavagem Segura Lavanderia",
-      "preco": 36.9,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 45,
-      "vendas": 8383,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-820lj-mnovtdkehbsx28",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "tenis",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/4VeJ6kO3hl",
-      "comissao": "0.13",
-      "loja": "TMZ UTILIDADES",
-      "postado_em": "2026-11-13T15:27:29.519467-03:00"
-    },
-    {
-      "id": "SHOPEE-24293312600",
-      "titulo": "10000mAh/5000mAH/3000mAh Carregador portátil indução iPhone MagSafe bateria sem fio carregando",
-      "preco": 26.77,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 41,
-      "vendas": 2652,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-81zv0-miphxrgv629v09",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "power bank",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/6q2DgJlqAm",
-      "comissao": "0.1",
-      "loja": "CarnavalDeals",
-      "postado_em": "2026-11-13T15:27:29.519467-03:00"
     }
   ]
 }
