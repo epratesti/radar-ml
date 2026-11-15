@@ -1,7 +1,5 @@
 {
   "ids": {
-    "SHOPEE-23898692172": "2026-11-12T15:45:58.716149-03:00",
-    "23898692172": "2026-11-12T15:45:58.716149-03:00",
     "SHOPEE-23197485445": "2026-11-12T16:08:24.381438-03:00",
     "23197485445": "2026-11-12T16:08:24.381438-03:00",
     "SHOPEE-23797686527": "2026-11-12T16:08:24.381438-03:00",
@@ -115,10 +113,13 @@
     "SHOPEE-23598387814": "2026-11-15T15:07:28.161659-03:00",
     "23598387814": "2026-11-15T15:07:28.161659-03:00",
     "SHOPEE-23397324970": "2026-11-15T15:07:28.161659-03:00",
-    "23397324970": "2026-11-15T15:07:28.161659-03:00"
+    "23397324970": "2026-11-15T15:07:28.161659-03:00",
+    "SHOPEE-22098878065": "2026-11-15T16:08:02.194003-03:00",
+    "22098878065": "2026-11-15T16:08:02.194003-03:00",
+    "SHOPEE-54850610196": "2026-11-15T16:08:02.194003-03:00",
+    "54850610196": "2026-11-15T16:08:02.194003-03:00"
   },
   "titulos": {
-    "ventilador de teto com luz silencioso controle remoto economica instalação fácil": "2026-11-12T15:45:58.716149-03:00",
     "whey protein fuse 900g isolate dark lab": "2026-11-12T16:08:24.381438-03:00",
     "relógio masculino digital wr 100 qualidade entrega rápida": "2026-11-12T16:08:24.381438-03:00",
     "pasta de amendoim com whey protein 600g dr peanut": "2026-11-12T17:09:50.052323-03:00",
@@ -175,7 +176,9 @@
     "kit 100 200 300 forro de papel descartável para airfryer antiaderente quadrado a": "2026-11-15T13:23:43.154666-03:00",
     "carregador portátil 5000mah 10000mah indução sem fio bateria carga": "2026-11-15T14:10:03.336978-03:00",
     "adaptador de tomada ultra resistente de porcelana para secador air fryer benjami": "2026-11-15T15:07:28.161659-03:00",
-    "relógio prova d água led digital de pulso esportivo feminino masculino ultra9 es": "2026-11-15T15:07:28.161659-03:00"
+    "relógio prova d água led digital de pulso esportivo feminino masculino ultra9 es": "2026-11-15T15:07:28.161659-03:00",
+    "chinelo bandeirinha original sandalia de dedo unissex verão presente para o dia ": "2026-11-15T16:08:02.194003-03:00",
+    "caneca magnética com mistura automática 380ml": "2026-11-15T16:08:02.194003-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -424,7 +427,7 @@
     },
     "SHOPEE-22098878065": {
       "preco": 19.9,
-      "ts": "2026-11-08T11:14:27.928573-03:00"
+      "ts": "2026-11-15T16:08:02.194003-03:00"
     },
     "SHOPEE-58206612939": {
       "preco": 36.9,
@@ -488,7 +491,7 @@
     },
     "SHOPEE-54850610196": {
       "preco": 33.98,
-      "ts": "2026-11-12T11:17:52.711067-03:00"
+      "ts": "2026-11-15T16:08:02.194003-03:00"
     },
     "SHOPEE-22093160276": {
       "preco": 43.99,
