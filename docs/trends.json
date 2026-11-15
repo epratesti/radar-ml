@@ -1,6 +1,42 @@
 {
-  "atualizado": "2026-11-14T22:10:25.077730-03:00",
+  "atualizado": "2026-11-15T07:09:26.666459-03:00",
   "itens": [
+    {
+      "id": "SHOPEE-23897644397",
+      "titulo": "Caixa De Som Speaker Bluetooth RGB Portátil 10W usb/aux",
+      "preco": 23.88,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 84,
+      "vendas": 3866,
+      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-mc11b9opykdjdf",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "caixa de som",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/70LhruDcmh",
+      "comissao": "0.03",
+      "loja": "yiyiyi",
+      "postado_em": "2026-11-15T07:09:26.666459-03:00"
+    },
+    {
+      "id": "SHOPEE-57113764077",
+      "titulo": "Tênis de corrida, sola de borracha, parte superior em tecido de malha, unissex, tamanho 34-45, 1 par",
+      "preco": 59.99,
+      "preco_anterior": null,
+      "a_partir_de": true,
+      "desconto": 57,
+      "vendas": 4072,
+      "imagem": "https://cf.shopee.com.br/file/cn-11134207-820l4-msqvigqau9ze31",
+      "frete_gratis": false,
+      "categoria": "Shopee",
+      "busca": "tenis",
+      "fonte": "shopee",
+      "link": "https://s.shopee.com.br/2qW57gUP5b",
+      "comissao": "0.07",
+      "loja": "Crianças sortudas.br",
+      "postado_em": "2026-11-15T07:09:26.666459-03:00"
+    },
     {
       "id": "SHOPEE-22392993399",
       "titulo": "Hipercalórico Dark Mass 3kg Dark Lab - Whey Protein, Creatina, BCAA, Waxy Maize, Premium Mass Gainer",
@@ -504,42 +540,6 @@
       "comissao": "0.1",
       "loja": "CarnavalDeals",
       "postado_em": "2026-11-13T15:27:29.519467-03:00"
-    },
-    {
-      "id": "SHOPEE-23293253949",
-      "titulo": "Whey Protein Concentrado 1Kg Dark Lab",
-      "preco": 136.9,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 40,
-      "vendas": 2065,
-      "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lzkq1yrpylqtc1",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "whey protein",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/4LKtIlvUEx",
-      "comissao": "0.26",
-      "loja": "Dark Lab Oficial",
-      "postado_em": "2026-11-13T15:09:00.409167-03:00"
-    },
-    {
-      "id": "SHOPEE-22093160276",
-      "titulo": "2026 Nova Série 8 Relógio T800 Ultra Smart Watch Esportivo Sem Fio À Prova D'água T800 Ultra2 MAX",
-      "preco": 43.99,
-      "preco_anterior": null,
-      "a_partir_de": true,
-      "desconto": 72,
-      "vendas": 3008,
-      "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rdym-lxrzfhio6fhl9d",
-      "frete_gratis": false,
-      "categoria": "Shopee",
-      "busca": "smartwatch",
-      "fonte": "shopee",
-      "link": "https://s.shopee.com.br/9KjairAXZQ",
-      "comissao": "0.16",
-      "loja": "-BML-",
-      "postado_em": "2026-11-13T14:12:04.225792-03:00"
     }
   ]
 }
