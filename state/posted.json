@@ -107,7 +107,11 @@
     "SHOPEE-58208872077": "2026-11-15T08:19:45.071537-03:00",
     "58208872077": "2026-11-15T08:19:45.071537-03:00",
     "SHOPEE-48717947960": "2026-11-15T08:19:45.071537-03:00",
-    "48717947960": "2026-11-15T08:19:45.071537-03:00"
+    "48717947960": "2026-11-15T08:19:45.071537-03:00",
+    "SHOPEE-23994798337": "2026-11-15T09:11:49.695387-03:00",
+    "23994798337": "2026-11-15T09:11:49.695387-03:00",
+    "SHOPEE-57356208902": "2026-11-15T09:11:49.695387-03:00",
+    "57356208902": "2026-11-15T09:11:49.695387-03:00"
   },
   "titulos": {
     "caneta paint original reparadora pintura automotiva permanente não sai na água t": "2026-11-12T10:14:11.637699-03:00",
@@ -163,7 +167,9 @@
     "caixa de som speaker bluetooth rgb portátil 10w usb aux": "2026-11-15T07:09:26.666459-03:00",
     "tênis de corrida sola de borracha parte superior em tecido de malha unissex tama": "2026-11-15T07:09:26.666459-03:00",
     "mochila grande unissex resistente impermeável notebook alta capacidade com compa": "2026-11-15T08:19:45.071537-03:00",
-    "fone de ouvido inpods 13 bluetooth sem fio com microfone fones esportivos adequa": "2026-11-15T08:19:45.071537-03:00"
+    "fone de ouvido inpods 13 bluetooth sem fio com microfone fones esportivos adequa": "2026-11-15T08:19:45.071537-03:00",
+    "escova limpador de ventilador espanador de pó flexível para limpar ar condiciona": "2026-11-15T09:11:49.695387-03:00",
+    "palmilha ortopédica 4d anatômica alto conforto tênis sapatos": "2026-11-15T09:11:49.695387-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -640,7 +646,7 @@
     },
     "SHOPEE-23994798337": {
       "preco": 11.99,
-      "ts": "2026-11-11T09:12:18.854592-03:00"
+      "ts": "2026-11-15T09:11:49.695387-03:00"
     },
     "SHOPEE-19499549872": {
       "preco": 38.18,
@@ -753,6 +759,10 @@
     "SHOPEE-48717947960": {
       "preco": 19.98,
       "ts": "2026-11-15T08:19:45.071537-03:00"
+    },
+    "SHOPEE-57356208902": {
+      "preco": 29.99,
+      "ts": "2026-11-15T09:11:49.695387-03:00"
     }
   },
   "alertas": {}
