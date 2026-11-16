@@ -1,19 +1,5 @@
 {
   "ids": {
-    "SHOPEE-23598011105": "2026-11-13T11:15:22.545130-03:00",
-    "23598011105": "2026-11-13T11:15:22.545130-03:00",
-    "SHOPEE-23894229861": "2026-11-13T11:15:22.545130-03:00",
-    "23894229861": "2026-11-13T11:15:22.545130-03:00",
-    "SHOPEE-22093160276": "2026-11-13T14:12:04.225792-03:00",
-    "22093160276": "2026-11-13T14:12:04.225792-03:00",
-    "SHOPEE-22494456015": "2026-11-13T14:12:04.225792-03:00",
-    "22494456015": "2026-11-13T14:12:04.225792-03:00",
-    "SHOPEE-23293253949": "2026-11-13T15:09:00.409167-03:00",
-    "23293253949": "2026-11-13T15:09:00.409167-03:00",
-    "SHOPEE-55359781665": "2026-11-13T15:27:29.519467-03:00",
-    "55359781665": "2026-11-13T15:27:29.519467-03:00",
-    "SHOPEE-24293312600": "2026-11-13T15:27:29.519467-03:00",
-    "24293312600": "2026-11-13T15:27:29.519467-03:00",
     "SHOPEE-23099337262": "2026-11-13T18:09:27.320092-03:00",
     "23099337262": "2026-11-13T18:09:27.320092-03:00",
     "SHOPEE-54557028525": "2026-11-13T20:11:21.722043-03:00",
@@ -107,16 +93,11 @@
     "SHOPEE-20997608223": "2026-11-16T11:07:52.659076-03:00",
     "20997608223": "2026-11-16T11:07:52.659076-03:00",
     "SHOPEE-23597035403": "2026-11-16T11:07:52.659076-03:00",
-    "23597035403": "2026-11-16T11:07:52.659076-03:00"
+    "23597035403": "2026-11-16T11:07:52.659076-03:00",
+    "SHOPEE-18598350302": "2026-11-16T17:53:14.026322-03:00",
+    "18598350302": "2026-11-16T17:53:14.026322-03:00"
   },
   "titulos": {
-    "relógio eletrônico prova d água para presente esportivo casual de negócios mascu": "2026-11-13T11:15:22.545130-03:00",
-    "mini power bank 10000mah para viagens recarga sem fio e cabo iphone e tipo c 2em": "2026-11-13T11:15:22.545130-03:00",
-    "2026 nova série 8 relógio t800 ultra smart watch esportivo sem fio prova d água ": "2026-11-13T14:12:04.225792-03:00",
-    "fone de ouvido bluetooth sem fio headphone bluetooth recarregável p9 air top cas": "2026-11-13T14:12:04.225792-03:00",
-    "whey protein concentrado 1kg dark lab": "2026-11-13T15:09:00.409167-03:00",
-    "kit 2 sacos lavar tenis sapato máquina lavar roupas protege não danifica lavagem": "2026-11-13T15:27:29.519467-03:00",
-    "10000mah 5000mah 3000mah carregador portátil indução iphone magsafe bateria sem ": "2026-11-13T15:27:29.519467-03:00",
     "liquidificador britânia 2 6l 4 velocidades diamante 1100": "2026-11-13T18:09:27.320092-03:00",
     "chaleira elétrica inox 1 8l 1000w ou 1200w desligamento automático bule jarra ca": "2026-11-13T20:11:21.722043-03:00",
     "kit 50 a 300 formas descartável para airfryer antiaderente não suja cozinha frit": "2026-11-13T21:11:50.594861-03:00",
@@ -163,7 +144,8 @@
     "rádio caixa de som bluetooth recarregável lanterna retro portátil fm am usb sd p": "2026-11-16T07:08:09.195805-03:00",
     "carregador 120w completo turbo cabo usb tipo c xiaomi": "2026-11-16T08:10:40.154250-03:00",
     "caixa de som bluetooth portátil com led rgb portátil fm usb tws 30w para praia f": "2026-11-16T11:07:52.659076-03:00",
-    "1 3 5 pcs cápsula café reutilizável dolce gusto recarregável refrescante efectiv": "2026-11-16T11:07:52.659076-03:00"
+    "1 3 5 pcs cápsula café reutilizável dolce gusto recarregável refrescante efectiv": "2026-11-16T11:07:52.659076-03:00",
+    "alaxe5 generation original speaker immediate shipping best price": "2026-11-16T17:53:14.026322-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -383,8 +365,8 @@
       "ts": "2026-11-13T21:16:55.416355-03:00"
     },
     "SHOPEE-18598350302": {
-      "preco": 42.29,
-      "ts": "2026-11-11T21:11:46.529005-03:00"
+      "preco": 46.99,
+      "ts": "2026-11-16T17:53:14.026322-03:00"
     },
     "SHOPEE-58215631607": {
       "preco": 21.5,
