@@ -103,7 +103,11 @@
     "SHOPEE-49610876725": "2026-11-16T07:08:09.195805-03:00",
     "49610876725": "2026-11-16T07:08:09.195805-03:00",
     "SHOPEE-58260430067": "2026-11-16T08:10:40.154250-03:00",
-    "58260430067": "2026-11-16T08:10:40.154250-03:00"
+    "58260430067": "2026-11-16T08:10:40.154250-03:00",
+    "SHOPEE-20997608223": "2026-11-16T11:07:52.659076-03:00",
+    "20997608223": "2026-11-16T11:07:52.659076-03:00",
+    "SHOPEE-23597035403": "2026-11-16T11:07:52.659076-03:00",
+    "23597035403": "2026-11-16T11:07:52.659076-03:00"
   },
   "titulos": {
     "relógio eletrônico prova d água para presente esportivo casual de negócios mascu": "2026-11-13T11:15:22.545130-03:00",
@@ -157,7 +161,9 @@
     "carregador sem fio 5000 10000mah iphone": "2026-11-15T22:11:14.436162-03:00",
     "ventilador de teto com luz silencioso controle remoto economica instalação fácil": "2026-11-16T07:08:09.195805-03:00",
     "rádio caixa de som bluetooth recarregável lanterna retro portátil fm am usb sd p": "2026-11-16T07:08:09.195805-03:00",
-    "carregador 120w completo turbo cabo usb tipo c xiaomi": "2026-11-16T08:10:40.154250-03:00"
+    "carregador 120w completo turbo cabo usb tipo c xiaomi": "2026-11-16T08:10:40.154250-03:00",
+    "caixa de som bluetooth portátil com led rgb portátil fm usb tws 30w para praia f": "2026-11-16T11:07:52.659076-03:00",
+    "1 3 5 pcs cápsula café reutilizável dolce gusto recarregável refrescante efectiv": "2026-11-16T11:07:52.659076-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -438,7 +444,7 @@
     },
     "SHOPEE-23597035403": {
       "preco": 9.59,
-      "ts": "2026-11-12T19:10:39.202234-03:00"
+      "ts": "2026-11-16T11:07:52.659076-03:00"
     },
     "SHOPEE-23397600706": {
       "preco": 11.8,
@@ -457,8 +463,8 @@
       "ts": "2026-11-13T09:12:13.921039-03:00"
     },
     "SHOPEE-20997608223": {
-      "preco": 99.99,
-      "ts": "2026-11-08T19:09:41.270274-03:00"
+      "preco": 94.99,
+      "ts": "2026-11-16T11:07:52.659076-03:00"
     },
     "SHOPEE-22993575936": {
       "preco": 11.89,
