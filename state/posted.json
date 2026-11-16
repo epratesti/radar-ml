@@ -1,9 +1,5 @@
 {
   "ids": {
-    "SHOPEE-52858085838": "2026-11-13T08:09:49.779087-03:00",
-    "52858085838": "2026-11-13T08:09:49.779087-03:00",
-    "SHOPEE-58267502829": "2026-11-13T08:09:49.779087-03:00",
-    "58267502829": "2026-11-13T08:09:49.779087-03:00",
     "SHOPEE-58260024382": "2026-11-13T09:12:13.921039-03:00",
     "58260024382": "2026-11-13T09:12:13.921039-03:00",
     "SHOPEE-58251249633": "2026-11-13T09:12:13.921039-03:00",
@@ -109,11 +105,11 @@
     "SHOPEE-23898692172": "2026-11-16T07:08:09.195805-03:00",
     "23898692172": "2026-11-16T07:08:09.195805-03:00",
     "SHOPEE-49610876725": "2026-11-16T07:08:09.195805-03:00",
-    "49610876725": "2026-11-16T07:08:09.195805-03:00"
+    "49610876725": "2026-11-16T07:08:09.195805-03:00",
+    "SHOPEE-58260430067": "2026-11-16T08:10:40.154250-03:00",
+    "58260430067": "2026-11-16T08:10:40.154250-03:00"
   },
   "titulos": {
-    "garrafa térmica cabo madeira para café 1l": "2026-11-13T08:09:49.779087-03:00",
-    "conjunto feminino 5 peças relógio colar brincos pulseira anel dourado": "2026-11-13T08:09:49.779087-03:00",
     "chinelo feminino leve e prático para uso em praia e lazer": "2026-11-13T09:12:13.921039-03:00",
     "relógio retrô digital prata led unissex fashion masculino feminino pulseira inox": "2026-11-13T09:12:13.921039-03:00",
     "relógio eletrônico prova d água para presente esportivo casual de negócios mascu": "2026-11-13T11:15:22.545130-03:00",
@@ -166,7 +162,8 @@
     "chinelo adulto masculino confortável leve e antiderrapante": "2026-11-15T21:13:06.455714-03:00",
     "carregador sem fio 5000 10000mah iphone": "2026-11-15T22:11:14.436162-03:00",
     "ventilador de teto com luz silencioso controle remoto economica instalação fácil": "2026-11-16T07:08:09.195805-03:00",
-    "rádio caixa de som bluetooth recarregável lanterna retro portátil fm am usb sd p": "2026-11-16T07:08:09.195805-03:00"
+    "rádio caixa de som bluetooth recarregável lanterna retro portátil fm am usb sd p": "2026-11-16T07:08:09.195805-03:00",
+    "carregador 120w completo turbo cabo usb tipo c xiaomi": "2026-11-16T08:10:40.154250-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -764,6 +761,10 @@
     "SHOPEE-20398185214": {
       "preco": 56.48,
       "ts": "2026-11-15T11:16:19.318180-03:00"
+    },
+    "SHOPEE-58260430067": {
+      "preco": 28.99,
+      "ts": "2026-11-16T08:10:40.154250-03:00"
     }
   },
   "alertas": {}
