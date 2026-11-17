@@ -1,9 +1,5 @@
 {
   "ids": {
-    "SHOPEE-23497594302": "2026-11-14T11:15:53.893344-03:00",
-    "23497594302": "2026-11-14T11:15:53.893344-03:00",
-    "SHOPEE-18799900509": "2026-11-14T12:14:25.600095-03:00",
-    "18799900509": "2026-11-14T12:14:25.600095-03:00",
     "SHOPEE-58264684239": "2026-11-14T13:10:25.102347-03:00",
     "58264684239": "2026-11-14T13:10:25.102347-03:00",
     "SHOPEE-22892686035": "2026-11-14T13:10:25.102347-03:00",
@@ -83,11 +79,13 @@
     "SHOPEE-58203770266": "2026-11-17T11:04:09.961405-03:00",
     "58203770266": "2026-11-17T11:04:09.961405-03:00",
     "SHOPEE-22793090494": "2026-11-17T11:04:09.961405-03:00",
-    "22793090494": "2026-11-17T11:04:09.961405-03:00"
+    "22793090494": "2026-11-17T11:04:09.961405-03:00",
+    "SHOPEE-58215631607": "2026-11-17T12:55:47.723204-03:00",
+    "58215631607": "2026-11-17T12:55:47.723204-03:00",
+    "SHOPEE-22093160276": "2026-11-17T12:55:47.723204-03:00",
+    "22093160276": "2026-11-17T12:55:47.723204-03:00"
   },
   "titulos": {
-    "romantic crown mochila de viagem expansível bolsa executiva notebook masculina e": "2026-11-14T11:15:53.893344-03:00",
-    "t900 ultra smartwatch relógio inteligente prova bluetooth monitoramento de saúde": "2026-11-14T12:14:25.600095-03:00",
     "kit hidrabene clareador skincare clareador facial sabonete protetor 70 fps e sér": "2026-11-14T13:10:25.102347-03:00",
     "fone de ouvido entrada lightning para iphone microfone bluetooth": "2026-11-14T13:10:25.102347-03:00",
     "high quality non toxic reusable pour over coffee filter stainless steel coffee t": "2026-11-14T15:08:31.221728-03:00",
@@ -127,7 +125,9 @@
     "senbenbao x55 fones de ouvido tws sono sem fio bluetooth display led alta fideli": "2026-11-17T09:11:39.070890-03:00",
     "ventilador 80w de teto silencioso led 3 cores bulbo 12w com controle bivolt 5 pá": "2026-11-17T09:11:39.070890-03:00",
     "ez vip rose eau de parfum 100ml lançamento exclusivo": "2026-11-17T11:04:09.961405-03:00",
-    "air pro 4 tws fone de ouvido sem fio bluetooth 5 1mini fones esportivos para and": "2026-11-17T11:04:09.961405-03:00"
+    "air pro 4 tws fone de ouvido sem fio bluetooth 5 1mini fones esportivos para and": "2026-11-17T11:04:09.961405-03:00",
+    "kit body splash masculino 2x200ml neonoble silver stone e noir deep": "2026-11-17T12:55:47.723204-03:00",
+    "2026 nova série 8 relógio t800 ultra smart watch esportivo sem fio prova d água ": "2026-11-17T12:55:47.723204-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -351,8 +351,8 @@
       "ts": "2026-11-16T17:53:14.026322-03:00"
     },
     "SHOPEE-58215631607": {
-      "preco": 21.5,
-      "ts": "2026-11-08T08:10:36.653242-03:00"
+      "preco": 32.9,
+      "ts": "2026-11-17T12:55:47.723204-03:00"
     },
     "SHOPEE-29842873054": {
       "preco": 78.9,
@@ -444,7 +444,7 @@
     },
     "SHOPEE-22093160276": {
       "preco": 43.99,
-      "ts": "2026-11-13T14:12:04.225792-03:00"
+      "ts": "2026-11-17T12:55:47.723204-03:00"
     },
     "SHOPEE-44213872297": {
       "preco": 315.0,
