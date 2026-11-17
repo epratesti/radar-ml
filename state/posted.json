@@ -1,9 +1,5 @@
 {
   "ids": {
-    "SHOPEE-23594439744": "2026-11-14T09:12:14.262187-03:00",
-    "23594439744": "2026-11-14T09:12:14.262187-03:00",
-    "SHOPEE-21997150349": "2026-11-14T10:15:22.656031-03:00",
-    "21997150349": "2026-11-14T10:15:22.656031-03:00",
     "SHOPEE-23497594302": "2026-11-14T11:15:53.893344-03:00",
     "23497594302": "2026-11-14T11:15:53.893344-03:00",
     "SHOPEE-18799900509": "2026-11-14T12:14:25.600095-03:00",
@@ -83,11 +79,13 @@
     "SHOPEE-40331456554": "2026-11-17T09:11:39.070890-03:00",
     "40331456554": "2026-11-17T09:11:39.070890-03:00",
     "SHOPEE-23498780349": "2026-11-17T09:11:39.070890-03:00",
-    "23498780349": "2026-11-17T09:11:39.070890-03:00"
+    "23498780349": "2026-11-17T09:11:39.070890-03:00",
+    "SHOPEE-58203770266": "2026-11-17T11:04:09.961405-03:00",
+    "58203770266": "2026-11-17T11:04:09.961405-03:00",
+    "SHOPEE-22793090494": "2026-11-17T11:04:09.961405-03:00",
+    "22793090494": "2026-11-17T11:04:09.961405-03:00"
   },
   "titulos": {
-    "400ml 6 lâminas espremedor elétrico mini liquidificador portátil de suco de alim": "2026-11-14T09:12:14.262187-03:00",
-    "kit 6 forma de silicone para fritadeira air fryer com alça antiaderente cozinha": "2026-11-14T10:15:22.656031-03:00",
     "romantic crown mochila de viagem expansível bolsa executiva notebook masculina e": "2026-11-14T11:15:53.893344-03:00",
     "t900 ultra smartwatch relógio inteligente prova bluetooth monitoramento de saúde": "2026-11-14T12:14:25.600095-03:00",
     "kit hidrabene clareador skincare clareador facial sabonete protetor 70 fps e sér": "2026-11-14T13:10:25.102347-03:00",
@@ -127,7 +125,9 @@
     "whey protein fuse 900g isolate dark lab": "2026-11-17T07:09:09.350354-03:00",
     "ez silver essence eau de parfum 100ml": "2026-11-17T07:09:09.350354-03:00",
     "senbenbao x55 fones de ouvido tws sono sem fio bluetooth display led alta fideli": "2026-11-17T09:11:39.070890-03:00",
-    "ventilador 80w de teto silencioso led 3 cores bulbo 12w com controle bivolt 5 pá": "2026-11-17T09:11:39.070890-03:00"
+    "ventilador 80w de teto silencioso led 3 cores bulbo 12w com controle bivolt 5 pá": "2026-11-17T09:11:39.070890-03:00",
+    "ez vip rose eau de parfum 100ml lançamento exclusivo": "2026-11-17T11:04:09.961405-03:00",
+    "air pro 4 tws fone de ouvido sem fio bluetooth 5 1mini fones esportivos para and": "2026-11-17T11:04:09.961405-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -733,6 +733,14 @@
     "SHOPEE-40331456554": {
       "preco": 19.29,
       "ts": "2026-11-17T09:11:39.070890-03:00"
+    },
+    "SHOPEE-58203770266": {
+      "preco": 44.9,
+      "ts": "2026-11-17T11:04:09.961405-03:00"
+    },
+    "SHOPEE-22793090494": {
+      "preco": 21.99,
+      "ts": "2026-11-17T11:04:09.961405-03:00"
     }
   },
   "alertas": {}
