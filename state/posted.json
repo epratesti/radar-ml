@@ -79,7 +79,11 @@
     "SHOPEE-23197485445": "2026-11-17T07:09:09.350354-03:00",
     "23197485445": "2026-11-17T07:09:09.350354-03:00",
     "SHOPEE-58200797547": "2026-11-17T07:09:09.350354-03:00",
-    "58200797547": "2026-11-17T07:09:09.350354-03:00"
+    "58200797547": "2026-11-17T07:09:09.350354-03:00",
+    "SHOPEE-40331456554": "2026-11-17T09:11:39.070890-03:00",
+    "40331456554": "2026-11-17T09:11:39.070890-03:00",
+    "SHOPEE-23498780349": "2026-11-17T09:11:39.070890-03:00",
+    "23498780349": "2026-11-17T09:11:39.070890-03:00"
   },
   "titulos": {
     "400ml 6 lâminas espremedor elétrico mini liquidificador portátil de suco de alim": "2026-11-14T09:12:14.262187-03:00",
@@ -121,7 +125,9 @@
     "1 3 5 pcs cápsula café reutilizável dolce gusto recarregável refrescante efectiv": "2026-11-16T11:07:52.659076-03:00",
     "alaxe5 generation original speaker immediate shipping best price": "2026-11-16T17:53:14.026322-03:00",
     "whey protein fuse 900g isolate dark lab": "2026-11-17T07:09:09.350354-03:00",
-    "ez silver essence eau de parfum 100ml": "2026-11-17T07:09:09.350354-03:00"
+    "ez silver essence eau de parfum 100ml": "2026-11-17T07:09:09.350354-03:00",
+    "senbenbao x55 fones de ouvido tws sono sem fio bluetooth display led alta fideli": "2026-11-17T09:11:39.070890-03:00",
+    "ventilador 80w de teto silencioso led 3 cores bulbo 12w com controle bivolt 5 pá": "2026-11-17T09:11:39.070890-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -330,7 +336,7 @@
     },
     "SHOPEE-23498780349": {
       "preco": 38.8,
-      "ts": "2026-11-07T22:10:25.120709-03:00"
+      "ts": "2026-11-17T09:11:39.070890-03:00"
     },
     "SHOPEE-58202416470": {
       "preco": 4.98,
@@ -723,6 +729,10 @@
     "SHOPEE-58260430067": {
       "preco": 28.99,
       "ts": "2026-11-16T08:10:40.154250-03:00"
+    },
+    "SHOPEE-40331456554": {
+      "preco": 19.29,
+      "ts": "2026-11-17T09:11:39.070890-03:00"
     }
   },
   "alertas": {}
