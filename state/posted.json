@@ -1,9 +1,5 @@
 {
   "ids": {
-    "SHOPEE-58264684239": "2026-11-14T13:10:25.102347-03:00",
-    "58264684239": "2026-11-14T13:10:25.102347-03:00",
-    "SHOPEE-22892686035": "2026-11-14T13:10:25.102347-03:00",
-    "22892686035": "2026-11-14T13:10:25.102347-03:00",
     "SHOPEE-20399896346": "2026-11-14T15:08:31.221728-03:00",
     "20399896346": "2026-11-14T15:08:31.221728-03:00",
     "SHOPEE-58200879255": "2026-11-14T15:08:31.221728-03:00",
@@ -83,11 +79,13 @@
     "SHOPEE-58215631607": "2026-11-17T12:55:47.723204-03:00",
     "58215631607": "2026-11-17T12:55:47.723204-03:00",
     "SHOPEE-22093160276": "2026-11-17T12:55:47.723204-03:00",
-    "22093160276": "2026-11-17T12:55:47.723204-03:00"
+    "22093160276": "2026-11-17T12:55:47.723204-03:00",
+    "SHOPEE-23198988208": "2026-11-17T13:25:30.966183-03:00",
+    "23198988208": "2026-11-17T13:25:30.966183-03:00",
+    "SHOPEE-58207663151": "2026-11-17T13:25:30.966183-03:00",
+    "58207663151": "2026-11-17T13:25:30.966183-03:00"
   },
   "titulos": {
-    "kit hidrabene clareador skincare clareador facial sabonete protetor 70 fps e sér": "2026-11-14T13:10:25.102347-03:00",
-    "fone de ouvido entrada lightning para iphone microfone bluetooth": "2026-11-14T13:10:25.102347-03:00",
     "high quality non toxic reusable pour over coffee filter stainless steel coffee t": "2026-11-14T15:08:31.221728-03:00",
     "carregador de carregamento turbo 30w fonte 3a torre carregar celular tipo c com ": "2026-11-14T15:08:31.221728-03:00",
     "cola para sapato e tênis 60ml adesivo forte flexível impermeável para reparo de ": "2026-11-14T17:08:13.680306-03:00",
@@ -127,7 +125,9 @@
     "ez vip rose eau de parfum 100ml lançamento exclusivo": "2026-11-17T11:04:09.961405-03:00",
     "air pro 4 tws fone de ouvido sem fio bluetooth 5 1mini fones esportivos para and": "2026-11-17T11:04:09.961405-03:00",
     "kit body splash masculino 2x200ml neonoble silver stone e noir deep": "2026-11-17T12:55:47.723204-03:00",
-    "2026 nova série 8 relógio t800 ultra smart watch esportivo sem fio prova d água ": "2026-11-17T12:55:47.723204-03:00"
+    "2026 nova série 8 relógio t800 ultra smart watch esportivo sem fio prova d água ": "2026-11-17T12:55:47.723204-03:00",
+    "mouse pad desk pad couro borda costurada gigante antiderrapante tapete mesa game": "2026-11-17T13:25:30.966183-03:00",
+    "kit 50 a 300 formas descartável para airfryer antiaderente não suja cozinha frit": "2026-11-17T13:25:30.966183-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -140,7 +140,7 @@
     },
     "SHOPEE-23198988208": {
       "preco": 15.89,
-      "ts": "2026-11-13T07:07:56.290052-03:00"
+      "ts": "2026-11-17T13:25:30.966183-03:00"
     },
     "SHOPEE-58204543063": {
       "preco": 15.99,
@@ -592,7 +592,7 @@
     },
     "SHOPEE-58207663151": {
       "preco": 11.99,
-      "ts": "2026-11-13T21:11:50.594861-03:00"
+      "ts": "2026-11-17T13:25:30.966183-03:00"
     },
     "SHOPEE-23397324970": {
       "preco": 13.98,
