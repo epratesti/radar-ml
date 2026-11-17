@@ -1,5 +1,27 @@
 [
   {
+    "id": "SHOPEE-58200797547",
+    "titulo": "EZ Silver Essence - Eau de Parfum 100ml",
+    "preco": 44.9,
+    "desconto": 35,
+    "vendas": 6468,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mhbzozlyxp8l74",
+    "link": "https://s.shopee.com.br/30pd5jt9tj",
+    "fonte": "shopee",
+    "ts": "2026-11-17T07:09:09.350354-03:00"
+  },
+  {
+    "id": "SHOPEE-23197485445",
+    "titulo": "Whey Protein Fuse 900g Isolate Dark Lab",
+    "preco": 78.9,
+    "desconto": 51,
+    "vendas": 4940,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lzaxtiavhw6de4",
+    "link": "https://s.shopee.com.br/1BNyuMiOwh",
+    "fonte": "shopee",
+    "ts": "2026-11-17T07:09:09.350354-03:00"
+  },
+  {
     "id": "SHOPEE-18598350302",
     "titulo": "Alaxe5 Generation Original Speaker Immediate Shipping Best Price",
     "preco": 46.99,
