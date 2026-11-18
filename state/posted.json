@@ -1,9 +1,5 @@
 {
   "ids": {
-    "SHOPEE-23598387814": "2026-11-15T15:07:28.161659-03:00",
-    "23598387814": "2026-11-15T15:07:28.161659-03:00",
-    "SHOPEE-23397324970": "2026-11-15T15:07:28.161659-03:00",
-    "23397324970": "2026-11-15T15:07:28.161659-03:00",
     "SHOPEE-22098878065": "2026-11-15T16:08:02.194003-03:00",
     "22098878065": "2026-11-15T16:08:02.194003-03:00",
     "SHOPEE-54850610196": "2026-11-15T16:08:02.194003-03:00",
@@ -71,11 +67,13 @@
     "SHOPEE-21399069053": "2026-11-18T14:12:42.843908-03:00",
     "21399069053": "2026-11-18T14:12:42.843908-03:00",
     "SHOPEE-58264628974": "2026-11-18T14:12:42.843908-03:00",
-    "58264628974": "2026-11-18T14:12:42.843908-03:00"
+    "58264628974": "2026-11-18T14:12:42.843908-03:00",
+    "SHOPEE-23399193375": "2026-11-18T15:10:24.893072-03:00",
+    "23399193375": "2026-11-18T15:10:24.893072-03:00",
+    "SHOPEE-23897644397": "2026-11-18T15:10:24.893072-03:00",
+    "23897644397": "2026-11-18T15:10:24.893072-03:00"
   },
   "titulos": {
-    "adaptador de tomada ultra resistente de porcelana para secador air fryer benjami": "2026-11-15T15:07:28.161659-03:00",
-    "relógio prova d água led digital de pulso esportivo feminino masculino ultra9 es": "2026-11-15T15:07:28.161659-03:00",
     "chinelo bandeirinha original sandalia de dedo unissex verão presente para o dia ": "2026-11-15T16:08:02.194003-03:00",
     "caneca magnética com mistura automática 380ml": "2026-11-15T16:08:02.194003-03:00",
     "chinelo adulto masculino confortável leve e antiderrapante": "2026-11-15T21:13:06.455714-03:00",
@@ -109,7 +107,9 @@
     "body splash feminino arabe ayra 100ml primacial perfume floral": "2026-11-18T13:35:48.059140-03:00",
     "fone de ouvido sem fio com cancelamento de ruído bluetooth pop up": "2026-11-18T13:35:48.059140-03:00",
     "caneta paint original reparadora pintura automotiva permanente não sai na água t": "2026-11-18T14:12:42.843908-03:00",
-    "body splash feminino perfume deo colônia flooratta red 200ml": "2026-11-18T14:12:42.843908-03:00"
+    "body splash feminino perfume deo colônia flooratta red 200ml": "2026-11-18T14:12:42.843908-03:00",
+    "2026 t800 ultra 3 max mais recente smartwatch relógio inteligente nfc série 10 2": "2026-11-18T15:10:24.893072-03:00",
+    "caixa de som speaker bluetooth rgb portátil 10w usb aux": "2026-11-18T15:10:24.893072-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -297,8 +297,8 @@
       "ts": "2026-11-07T20:09:58.302295-03:00"
     },
     "SHOPEE-23897644397": {
-      "preco": 23.88,
-      "ts": "2026-11-15T07:09:26.666459-03:00"
+      "preco": 26.88,
+      "ts": "2026-11-18T15:10:24.893072-03:00"
     },
     "SHOPEE-23198212585": {
       "preco": 45.9,
@@ -562,7 +562,7 @@
     },
     "SHOPEE-23399193375": {
       "preco": 39.8,
-      "ts": "2026-11-14T18:14:33.837650-03:00"
+      "ts": "2026-11-18T15:10:24.893072-03:00"
     },
     "SHOPEE-22997182283": {
       "preco": 9.49,
