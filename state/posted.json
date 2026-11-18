@@ -1,9 +1,5 @@
 {
   "ids": {
-    "SHOPEE-22199220609": "2026-11-15T11:16:19.318180-03:00",
-    "22199220609": "2026-11-15T11:16:19.318180-03:00",
-    "SHOPEE-20398185214": "2026-11-15T11:16:19.318180-03:00",
-    "20398185214": "2026-11-15T11:16:19.318180-03:00",
     "SHOPEE-58250184742": "2026-11-15T13:23:43.154666-03:00",
     "58250184742": "2026-11-15T13:23:43.154666-03:00",
     "SHOPEE-58256926114": "2026-11-15T14:10:03.336978-03:00",
@@ -67,11 +63,13 @@
     "SHOPEE-22392993399": "2026-11-18T10:14:25.010941-03:00",
     "22392993399": "2026-11-18T10:14:25.010941-03:00",
     "SHOPEE-23497594302": "2026-11-18T10:14:25.010941-03:00",
-    "23497594302": "2026-11-18T10:14:25.010941-03:00"
+    "23497594302": "2026-11-18T10:14:25.010941-03:00",
+    "SHOPEE-23893966960": "2026-11-18T11:30:43.163564-03:00",
+    "23893966960": "2026-11-18T11:30:43.163564-03:00",
+    "SHOPEE-22199220609": "2026-11-18T11:30:43.163564-03:00",
+    "22199220609": "2026-11-18T11:30:43.163564-03:00"
   },
   "titulos": {
-    "b brobô varredora aspirador de pó automática 3 em 1 limpeza doméstica robótico i": "2026-11-15T11:16:19.318180-03:00",
-    "sapateira organizadora com 9 prateleiras para organizar sapatos calçados chinelo": "2026-11-15T11:16:19.318180-03:00",
     "kit 100 200 300 forro de papel descartável para airfryer antiaderente quadrado a": "2026-11-15T13:23:43.154666-03:00",
     "carregador portátil 5000mah 10000mah indução sem fio bateria carga": "2026-11-15T14:10:03.336978-03:00",
     "adaptador de tomada ultra resistente de porcelana para secador air fryer benjami": "2026-11-15T15:07:28.161659-03:00",
@@ -103,7 +101,9 @@
     "carregador iphone turbo tipo c 20w cabo lightining para iphone carga rápida": "2026-11-18T08:12:00.504450-03:00",
     "high quality non toxic reusable pour over coffee filter stainless steel coffee t": "2026-11-18T08:12:00.504450-03:00",
     "hipercalórico dark mass 3kg dark lab whey protein creatina bcaa waxy maize premi": "2026-11-18T10:14:25.010941-03:00",
-    "romantic crown mochila de viagem expansível bolsa executiva notebook masculina e": "2026-11-18T10:14:25.010941-03:00"
+    "romantic crown mochila de viagem expansível bolsa executiva notebook masculina e": "2026-11-18T10:14:25.010941-03:00",
+    "principia kit essencial gl 03 ch vc ps 01 fps 60 ou ps 05 fps 70": "2026-11-18T11:30:43.163564-03:00",
+    "b brobô varredora aspirador de pó automática 3 em 1 limpeza doméstica robótico i": "2026-11-18T11:30:43.163564-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -172,7 +172,7 @@
     },
     "SHOPEE-22199220609": {
       "preco": 37.99,
-      "ts": "2026-11-15T11:16:19.318180-03:00"
+      "ts": "2026-11-18T11:30:43.163564-03:00"
     },
     "SHOPEE-22493277109": {
       "preco": 13.59,
@@ -717,6 +717,10 @@
     "SHOPEE-22793090494": {
       "preco": 21.99,
       "ts": "2026-11-17T11:04:09.961405-03:00"
+    },
+    "SHOPEE-23893966960": {
+      "preco": 120.95,
+      "ts": "2026-11-18T11:30:43.163564-03:00"
     }
   },
   "alertas": {}
