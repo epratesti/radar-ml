@@ -1,5 +1,27 @@
 [
   {
+    "id": "SHOPEE-58264628974",
+    "titulo": "Body splash Feminino Perfume Deo Colônia Flooratta Red 200ML",
+    "preco": 29.5,
+    "desconto": 70,
+    "vendas": 2633,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-820ll-mqw9v9ijy0w65b",
+    "link": "https://s.shopee.com.br/qlAXCndMZ",
+    "fonte": "shopee",
+    "ts": "2026-11-18T14:12:42.843908-03:00"
+  },
+  {
+    "id": "SHOPEE-21399069053",
+    "titulo": "Caneta Paint Original Reparadora Pintura Automotiva Permanente Não Sai Na Água Tira Riscos Carro Moto Retoque de Placa Tênis Pneus para Ferro Metal Madeira Plástico Gesso Vidro Couro Tecido Cores Preto Branco Prata (Cinza) Dourado Azul Vermelha",
+    "preco": 18.72,
+    "desconto": 55,
+    "vendas": 5274,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lsirz2r48wfv6e",
+    "link": "https://s.shopee.com.br/2VtMxjafbl",
+    "fonte": "shopee",
+    "ts": "2026-11-18T14:12:42.843908-03:00"
+  },
+  {
     "id": "SHOPEE-19899586753",
     "titulo": "Fone de Ouvido Sem Fio Com Cancelamento De Ruído Bluetooth Pop-Up",
     "preco": 42.89,
@@ -306,27 +328,5 @@
     "link": "https://s.shopee.com.br/60TAkGdvcQ",
     "fonte": "shopee",
     "ts": "2026-11-16T07:08:09.195805-03:00"
-  },
-  {
-    "id": "SHOPEE-18499853587",
-    "titulo": "Carregador Sem Fio 5000/10000mAh iPhone",
-    "preco": 28.85,
-    "desconto": 50,
-    "vendas": 11444,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-mavkx3k4v9n308",
-    "link": "https://s.shopee.com.br/gRfaZYJ5V",
-    "fonte": "shopee",
-    "ts": "2026-11-15T22:11:14.436162-03:00"
-  },
-  {
-    "id": "SHOPEE-23197685907",
-    "titulo": "Chinelo Adulto Masculino Confortável Leve e Antiderrapante",
-    "preco": 18.9,
-    "desconto": 79,
-    "vendas": 4960,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-820lc-msv9x4r1nax20d",
-    "link": "https://s.shopee.com.br/1qdZSU01l8",
-    "fonte": "shopee",
-    "ts": "2026-11-15T21:13:06.455714-03:00"
   }
 ]
