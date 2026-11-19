@@ -1,5 +1,27 @@
 [
   {
+    "id": "SHOPEE-58258562285",
+    "titulo": "Suporte Organizador De Ovos Dispenser Para Geladeira Prático Anti-Queda Utensílios De Cozinha Original",
+    "preco": 4.99,
+    "desconto": 75,
+    "vendas": 8342,
+    "imagem": "https://cf.shopee.com.br/file/sg-11134201-81zvu-mmvetjba5xq9cb",
+    "link": "https://s.shopee.com.br/6q2PBOyZU4",
+    "fonte": "shopee",
+    "ts": "2026-11-19T13:46:27.456954-03:00"
+  },
+  {
+    "id": "SHOPEE-23293253949",
+    "titulo": "Whey Protein Concentrado 1Kg Dark Lab",
+    "preco": 136.9,
+    "desconto": 40,
+    "vendas": 2273,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lzkq1yrpylqtc1",
+    "link": "https://s.shopee.com.br/8AXmsJ3VNX",
+    "fonte": "shopee",
+    "ts": "2026-11-19T13:46:27.456954-03:00"
+  },
+  {
     "id": "SHOPEE-20197726295",
     "titulo": "Caixa Saco Organizador Cobertor Casaco Guarda Roupa Ecológico Anti-Poeira Umidade Insetos Multiuso",
     "preco": 13.81,
@@ -306,27 +328,5 @@
     "link": "https://s.shopee.com.br/3B93I2sWYk",
     "fonte": "shopee",
     "ts": "2026-11-17T12:55:47.723204-03:00"
-  },
-  {
-    "id": "SHOPEE-22793090494",
-    "titulo": "Air Pro 4 Tws Fone De Ouvido Sem Fio Bluetooth 5.1Mini Fones Esportivos Para Android / Ios iphone",
-    "preco": 21.99,
-    "desconto": 63,
-    "vendas": 7838,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lwghsqx5css501",
-    "link": "https://s.shopee.com.br/9pfxMiTKkq",
-    "fonte": "shopee",
-    "ts": "2026-11-17T11:04:09.961405-03:00"
-  },
-  {
-    "id": "SHOPEE-58203770266",
-    "titulo": "EZ Vip Rose - Eau de Parfum 100ml LANÇAMENTO EXCLUSIVO",
-    "preco": 44.9,
-    "desconto": 35,
-    "vendas": 2155,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztc-mjrcbybqujghc2",
-    "link": "https://s.shopee.com.br/6fivSTfCSX",
-    "fonte": "shopee",
-    "ts": "2026-11-17T11:04:09.961405-03:00"
   }
 ]

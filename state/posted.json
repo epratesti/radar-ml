@@ -69,7 +69,11 @@
     "SHOPEE-58256926114": "2026-11-19T12:12:22.386574-03:00",
     "58256926114": "2026-11-19T12:12:22.386574-03:00",
     "SHOPEE-20197726295": "2026-11-19T12:12:22.386574-03:00",
-    "20197726295": "2026-11-19T12:12:22.386574-03:00"
+    "20197726295": "2026-11-19T12:12:22.386574-03:00",
+    "SHOPEE-23293253949": "2026-11-19T13:46:27.456954-03:00",
+    "23293253949": "2026-11-19T13:46:27.456954-03:00",
+    "SHOPEE-58258562285": "2026-11-19T13:46:27.456954-03:00",
+    "58258562285": "2026-11-19T13:46:27.456954-03:00"
   },
   "titulos": {
     "alaxe5 generation original speaker immediate shipping best price": "2026-11-16T17:53:14.026322-03:00",
@@ -106,7 +110,9 @@
     "relógio retrô digital prata led unissex fashion masculino feminino pulseira inox": "2026-11-19T11:15:36.172465-03:00",
     "fone de ouvido sem fio m10 tws bluetooth 5 3 display led touch": "2026-11-19T11:15:36.172465-03:00",
     "carregador portátil 5000mah 10000mah indução sem fio bateria carga": "2026-11-19T12:12:22.386574-03:00",
-    "caixa saco organizador cobertor casaco guarda roupa ecológico anti poeira umidad": "2026-11-19T12:12:22.386574-03:00"
+    "caixa saco organizador cobertor casaco guarda roupa ecológico anti poeira umidad": "2026-11-19T12:12:22.386574-03:00",
+    "whey protein concentrado 1kg dark lab": "2026-11-19T13:46:27.456954-03:00",
+    "suporte organizador de ovos dispenser para geladeira prático anti queda utensíli": "2026-11-19T13:46:27.456954-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -255,7 +261,7 @@
     },
     "SHOPEE-23293253949": {
       "preco": 136.9,
-      "ts": "2026-11-13T15:09:00.409167-03:00"
+      "ts": "2026-11-19T13:46:27.456954-03:00"
     },
     "SHOPEE-23497309877": {
       "preco": 61.98,
@@ -736,6 +742,10 @@
     "SHOPEE-58214853079": {
       "preco": 18.99,
       "ts": "2026-11-19T11:15:36.172465-03:00"
+    },
+    "SHOPEE-58258562285": {
+      "preco": 4.99,
+      "ts": "2026-11-19T13:46:27.456954-03:00"
     }
   },
   "alertas": {}
