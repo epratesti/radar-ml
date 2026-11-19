@@ -1,5 +1,27 @@
 [
   {
+    "id": "SHOPEE-20199206047",
+    "titulo": "Air Fryer Britânia 4,2L Dura Mais 1500W BFR38",
+    "preco": 179.9,
+    "desconto": 28,
+    "vendas": 2218,
+    "imagem": "https://cf.shopee.com.br/file/sg-11134201-8258f-mudi8zi45c034a",
+    "link": "https://s.shopee.com.br/4LL4MF91Jl",
+    "fonte": "shopee",
+    "ts": "2026-11-19T14:29:56.498930-03:00"
+  },
+  {
+    "id": "SHOPEE-18499853587",
+    "titulo": "Carregador Sem Fio 5000/10000mAh iPhone",
+    "preco": 28.85,
+    "desconto": 50,
+    "vendas": 10999,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-mavkx3k4v9n308",
+    "link": "https://s.shopee.com.br/9zzQxDQApd",
+    "fonte": "shopee",
+    "ts": "2026-11-19T14:29:56.498930-03:00"
+  },
+  {
     "id": "SHOPEE-58258562285",
     "titulo": "Suporte Organizador De Ovos Dispenser Para Geladeira Prático Anti-Queda Utensílios De Cozinha Original",
     "preco": 4.99,
@@ -306,27 +328,5 @@
     "link": "https://s.shopee.com.br/7putGSnSF4",
     "fonte": "shopee",
     "ts": "2026-11-17T13:25:30.966183-03:00"
-  },
-  {
-    "id": "SHOPEE-22093160276",
-    "titulo": "2026 Nova Série 8 Relógio T800 Ultra Smart Watch Esportivo Sem Fio À Prova D'água T800 Ultra2 MAX",
-    "preco": 43.99,
-    "desconto": 72,
-    "vendas": 2674,
-    "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rdym-lxrzfhio6fhl9d",
-    "link": "https://s.shopee.com.br/4fxpTq5ze4",
-    "fonte": "shopee",
-    "ts": "2026-11-17T12:55:47.723204-03:00"
-  },
-  {
-    "id": "SHOPEE-58215631607",
-    "titulo": "Kit Body Splash Masculino 2x200ml NeoNoble Silver Stone e Noir Deep",
-    "preco": 32.9,
-    "desconto": 59,
-    "vendas": 5559,
-    "imagem": "https://cf.shopee.com.br/file/sg-11134201-8259q-mrirzbbo3g1x0f",
-    "link": "https://s.shopee.com.br/3B93I2sWYk",
-    "fonte": "shopee",
-    "ts": "2026-11-17T12:55:47.723204-03:00"
   }
 ]
