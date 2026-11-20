@@ -1,5 +1,27 @@
 [
   {
+    "id": "SHOPEE-22197514607",
+    "titulo": "Ventilador de Mesa Prime Air Maxx Force 6 pás 60W AVTE01",
+    "preco": 100.0,
+    "desconto": 33,
+    "vendas": 2299,
+    "imagem": "https://cf.shopee.com.br/file/sg-11134201-825a4-mudirk0nhngna6",
+    "link": "https://s.shopee.com.br/906tYrzrU8",
+    "fonte": "shopee",
+    "ts": "2026-11-20T13:02:44.768205-03:00"
+  },
+  {
+    "id": "SHOPEE-58200797547",
+    "titulo": "EZ Silver Essence - Eau de Parfum 100ml",
+    "preco": 44.9,
+    "desconto": 35,
+    "vendas": 6662,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mhbzozlyxp8l74",
+    "link": "https://s.shopee.com.br/5q9rveYbuH",
+    "fonte": "shopee",
+    "ts": "2026-11-20T13:02:44.768205-03:00"
+  },
+  {
     "id": "SHOPEE-23198212585",
     "titulo": "Whey Ultra Protein Concentrado Pote 900g - FTW",
     "preco": 69.99,
@@ -306,27 +328,5 @@
     "link": "https://s.shopee.com.br/5q9p6Kd4Od",
     "fonte": "shopee",
     "ts": "2026-11-18T11:30:43.163564-03:00"
-  },
-  {
-    "id": "SHOPEE-23497594302",
-    "titulo": "ROMANTIC CROWN Mochila de Viagem Expansível, Bolsa Executiva Notebook Masculina e Feminina Trabalho,Grande,Reforçada",
-    "preco": 99.98,
-    "desconto": 86,
-    "vendas": 3821,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-820la-mu7g0m7pk9vl21",
-    "link": "https://s.shopee.com.br/70LkG8f2S2",
-    "fonte": "shopee",
-    "ts": "2026-11-18T10:14:25.010941-03:00"
-  },
-  {
-    "id": "SHOPEE-22392993399",
-    "titulo": "Hipercalórico Dark Mass 3kg Dark Lab - Whey Protein, Creatina, BCAA, Waxy Maize, Premium Mass Gainer",
-    "preco": 78.9,
-    "desconto": 51,
-    "vendas": 2748,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lzawnmo1qj3970",
-    "link": "https://s.shopee.com.br/1gKFVHgUvq",
-    "fonte": "shopee",
-    "ts": "2026-11-18T10:14:25.010941-03:00"
   }
 ]
