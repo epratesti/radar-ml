@@ -1,13 +1,5 @@
 {
   "ids": {
-    "SHOPEE-23198988208": "2026-11-17T13:25:30.966183-03:00",
-    "23198988208": "2026-11-17T13:25:30.966183-03:00",
-    "SHOPEE-58207663151": "2026-11-17T13:25:30.966183-03:00",
-    "58207663151": "2026-11-17T13:25:30.966183-03:00",
-    "SHOPEE-55359781665": "2026-11-17T14:10:13.667393-03:00",
-    "55359781665": "2026-11-17T14:10:13.667393-03:00",
-    "SHOPEE-22892686035": "2026-11-17T14:10:13.667393-03:00",
-    "22892686035": "2026-11-17T14:10:13.667393-03:00",
     "SHOPEE-23994387054": "2026-11-17T16:42:31.002536-03:00",
     "23994387054": "2026-11-17T16:42:31.002536-03:00",
     "SHOPEE-23899017576": "2026-11-17T16:42:31.002536-03:00",
@@ -79,13 +71,13 @@
     "SHOPEE-58200797547": "2026-11-20T13:02:44.768205-03:00",
     "58200797547": "2026-11-20T13:02:44.768205-03:00",
     "SHOPEE-22197514607": "2026-11-20T13:02:44.768205-03:00",
-    "22197514607": "2026-11-20T13:02:44.768205-03:00"
+    "22197514607": "2026-11-20T13:02:44.768205-03:00",
+    "SHOPEE-23198988208": "2026-11-20T14:26:13.169820-03:00",
+    "23198988208": "2026-11-20T14:26:13.169820-03:00",
+    "SHOPEE-20607193834": "2026-11-20T14:26:13.169820-03:00",
+    "20607193834": "2026-11-20T14:26:13.169820-03:00"
   },
   "titulos": {
-    "mouse pad desk pad couro borda costurada gigante antiderrapante tapete mesa game": "2026-11-17T13:25:30.966183-03:00",
-    "kit 50 a 300 formas descartável para airfryer antiaderente não suja cozinha frit": "2026-11-17T13:25:30.966183-03:00",
-    "saco lavar tenis sapato máquina lavar roupas protege não danifica lavagem segura": "2026-11-17T14:10:13.667393-03:00",
-    "fone de ouvido entrada lightning para iphone microfone bluetooth": "2026-11-17T14:10:13.667393-03:00",
     "kit dupla renovadores faciais kokeshi pele porcelana olhos gueixa": "2026-11-17T16:42:31.002536-03:00",
     "carregador portátil indução para sem fio bateria carga 3000 5000 10000mah": "2026-11-17T16:42:31.002536-03:00",
     "carregador iphone turbo tipo c 20w cabo lightining para iphone carga rápida": "2026-11-18T08:12:00.504450-03:00",
@@ -121,7 +113,9 @@
     "kit renovadores gota de colágeno e rosa mosqueta kokeshi": "2026-11-20T11:18:51.146496-03:00",
     "whey ultra protein concentrado pote 900g ftw": "2026-11-20T11:18:51.146496-03:00",
     "ez silver essence eau de parfum 100ml": "2026-11-20T13:02:44.768205-03:00",
-    "ventilador de mesa prime air maxx force 6 pás 60w avte01": "2026-11-20T13:02:44.768205-03:00"
+    "ventilador de mesa prime air maxx force 6 pás 60w avte01": "2026-11-20T13:02:44.768205-03:00",
+    "mouse pad desk pad couro borda costurada gigante antiderrapante tapete mesa game": "2026-11-20T14:26:13.169820-03:00",
+    "carregador portátil power bank universal 10 000mah e 5 000mah": "2026-11-20T14:26:13.169820-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -134,7 +128,7 @@
     },
     "SHOPEE-23198988208": {
       "preco": 15.89,
-      "ts": "2026-11-17T13:25:30.966183-03:00"
+      "ts": "2026-11-20T14:26:13.169820-03:00"
     },
     "SHOPEE-58204543063": {
       "preco": 15.99,
@@ -238,7 +232,7 @@
     },
     "SHOPEE-20607193834": {
       "preco": 37.49,
-      "ts": "2026-11-12T22:11:46.354865-03:00"
+      "ts": "2026-11-20T14:26:13.169820-03:00"
     },
     "SHOPEE-22393096204": {
       "preco": 19.99,
