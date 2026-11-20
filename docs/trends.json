@@ -1,5 +1,27 @@
 [
   {
+    "id": "SHOPEE-23198212585",
+    "titulo": "Whey Ultra Protein Concentrado Pote 900g - FTW",
+    "preco": 69.99,
+    "desconto": 36,
+    "vendas": 3315,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztc-mj9vukr0feo684",
+    "link": "https://s.shopee.com.br/8fU3TE1bMY",
+    "fonte": "shopee",
+    "ts": "2026-11-20T11:18:51.146496-03:00"
+  },
+  {
+    "id": "SHOPEE-58262387632",
+    "titulo": "Kit Renovadores Gota de Colágeno e Rosa Mosqueta Kokeshi",
+    "preco": 61.52,
+    "desconto": 42,
+    "vendas": 6768,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-820lc-mume7ufalreo72",
+    "link": "https://s.shopee.com.br/60TIBrJP3G",
+    "fonte": "shopee",
+    "ts": "2026-11-20T11:18:51.146496-03:00"
+  },
+  {
     "id": "SHOPEE-18598350302",
     "titulo": "Alaxe5 Generation Original Speaker Immediate Shipping Best Price",
     "preco": 46.98,
@@ -306,27 +328,5 @@
     "link": "https://s.shopee.com.br/1gKFVHgUvq",
     "fonte": "shopee",
     "ts": "2026-11-18T10:14:25.010941-03:00"
-  },
-  {
-    "id": "SHOPEE-20399896346",
-    "titulo": "High Quality Non-Toxic Reusable Pour Over Coffee Filter Stainless Steel Coffee Tea Filter--Immediate",
-    "preco": 18.99,
-    "desconto": 76,
-    "vendas": 1211,
-    "imagem": "https://cf.shopee.com.br/file/sg-11134201-824i9-mfra08dv9dl91a",
-    "link": "https://s.shopee.com.br/70LjGJR3e9",
-    "fonte": "shopee",
-    "ts": "2026-11-18T08:12:00.504450-03:00"
-  },
-  {
-    "id": "SHOPEE-22397182247",
-    "titulo": "Carregador iPhone Turbo Tipo-C 20W + Cabo Lightining para IPhone Carga rápida",
-    "preco": 14.98,
-    "desconto": 70,
-    "vendas": 10857,
-    "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rbkw-lpcg9rytbas79a",
-    "link": "https://s.shopee.com.br/AUvfgjFRdP",
-    "fonte": "shopee",
-    "ts": "2026-11-18T08:12:00.504450-03:00"
   }
 ]
