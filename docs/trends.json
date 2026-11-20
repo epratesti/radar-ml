@@ -1,5 +1,27 @@
 [
   {
+    "id": "SHOPEE-55359781665",
+    "titulo": "Saco lavar Tenis Sapato Máquina Lavar roupas Protege não danifica Lavagem Segura Lavanderia",
+    "preco": 22.89,
+    "desconto": 56,
+    "vendas": 7783,
+    "imagem": "https://cf.shopee.com.br/file/br-11134201-820l4-mvptt51ms269c3",
+    "link": "https://s.shopee.com.br/2qWID5vdvu",
+    "fonte": "shopee",
+    "ts": "2026-11-20T15:09:29.979560-03:00"
+  },
+  {
+    "id": "SHOPEE-22099191110",
+    "titulo": "Garrafa Térmica WATERSY 500ml - 48h Frio! Perfeita para Academia, Futebol e Dia a Dia⚽🏋️",
+    "preco": 27.98,
+    "desconto": 76,
+    "vendas": 4303,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-820lb-msl12l6zbq4k5a",
+    "link": "https://s.shopee.com.br/20xBDYYUCW",
+    "fonte": "shopee",
+    "ts": "2026-11-20T15:09:29.979560-03:00"
+  },
+  {
     "id": "SHOPEE-20607193834",
     "titulo": "CARREGADOR PORTÁTIL POWER BANK UNIVERSAL 10.000MAH E 5.000MAH",
     "preco": 37.49,
@@ -306,27 +328,5 @@
     "link": "https://s.shopee.com.br/2VtMxjafbl",
     "fonte": "shopee",
     "ts": "2026-11-18T14:12:42.843908-03:00"
-  },
-  {
-    "id": "SHOPEE-19899586753",
-    "titulo": "Fone de Ouvido Sem Fio Com Cancelamento De Ruído Bluetooth Pop-Up",
-    "preco": 42.89,
-    "desconto": 78,
-    "vendas": 6169,
-    "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rffm-m4f5wo6pi7mjaa",
-    "link": "https://s.shopee.com.br/AKcDxdRQk1",
-    "fonte": "shopee",
-    "ts": "2026-11-18T13:35:48.059140-03:00"
-  },
-  {
-    "id": "SHOPEE-22094238842",
-    "titulo": "BODY SPLASH FEMININO ARABE AYRA 100ML - PRIMACIAL PERFUME FLORAL",
-    "preco": 24.9,
-    "desconto": 38,
-    "vendas": 5593,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-820m1-mukoqlfdn280c5",
-    "link": "https://s.shopee.com.br/LotwHpXNU",
-    "fonte": "shopee",
-    "ts": "2026-11-18T13:35:48.059140-03:00"
   }
 ]

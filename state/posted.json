@@ -75,7 +75,11 @@
     "SHOPEE-23198988208": "2026-11-20T14:26:13.169820-03:00",
     "23198988208": "2026-11-20T14:26:13.169820-03:00",
     "SHOPEE-20607193834": "2026-11-20T14:26:13.169820-03:00",
-    "20607193834": "2026-11-20T14:26:13.169820-03:00"
+    "20607193834": "2026-11-20T14:26:13.169820-03:00",
+    "SHOPEE-22099191110": "2026-11-20T15:09:29.979560-03:00",
+    "22099191110": "2026-11-20T15:09:29.979560-03:00",
+    "SHOPEE-55359781665": "2026-11-20T15:09:29.979560-03:00",
+    "55359781665": "2026-11-20T15:09:29.979560-03:00"
   },
   "titulos": {
     "kit dupla renovadores faciais kokeshi pele porcelana olhos gueixa": "2026-11-17T16:42:31.002536-03:00",
@@ -115,7 +119,9 @@
     "ez silver essence eau de parfum 100ml": "2026-11-20T13:02:44.768205-03:00",
     "ventilador de mesa prime air maxx force 6 pás 60w avte01": "2026-11-20T13:02:44.768205-03:00",
     "mouse pad desk pad couro borda costurada gigante antiderrapante tapete mesa game": "2026-11-20T14:26:13.169820-03:00",
-    "carregador portátil power bank universal 10 000mah e 5 000mah": "2026-11-20T14:26:13.169820-03:00"
+    "carregador portátil power bank universal 10 000mah e 5 000mah": "2026-11-20T14:26:13.169820-03:00",
+    "garrafa térmica watersy 500ml 48h frio perfeita para academia futebol e dia a di": "2026-11-20T15:09:29.979560-03:00",
+    "saco lavar tenis sapato máquina lavar roupas protege não danifica lavagem segura": "2026-11-20T15:09:29.979560-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -291,8 +297,8 @@
       "ts": "2026-11-07T18:08:31.727592-03:00"
     },
     "SHOPEE-55359781665": {
-      "preco": 22.9,
-      "ts": "2026-11-17T14:10:13.667393-03:00"
+      "preco": 22.89,
+      "ts": "2026-11-20T15:09:29.979560-03:00"
     },
     "SHOPEE-58261888418": {
       "preco": 34.99,
@@ -448,7 +454,7 @@
     },
     "SHOPEE-22099191110": {
       "preco": 27.98,
-      "ts": "2026-11-08T22:12:16.269138-03:00"
+      "ts": "2026-11-20T15:09:29.979560-03:00"
     },
     "SHOPEE-54663825990": {
       "preco": 27.99,
