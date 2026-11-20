@@ -79,7 +79,11 @@
     "SHOPEE-22099191110": "2026-11-20T15:09:29.979560-03:00",
     "22099191110": "2026-11-20T15:09:29.979560-03:00",
     "SHOPEE-55359781665": "2026-11-20T15:09:29.979560-03:00",
-    "55359781665": "2026-11-20T15:09:29.979560-03:00"
+    "55359781665": "2026-11-20T15:09:29.979560-03:00",
+    "SHOPEE-23096150316": "2026-11-20T16:00:33.021503-03:00",
+    "23096150316": "2026-11-20T16:00:33.021503-03:00",
+    "SHOPEE-52858085838": "2026-11-20T16:00:33.021503-03:00",
+    "52858085838": "2026-11-20T16:00:33.021503-03:00"
   },
   "titulos": {
     "kit dupla renovadores faciais kokeshi pele porcelana olhos gueixa": "2026-11-17T16:42:31.002536-03:00",
@@ -121,7 +125,9 @@
     "mouse pad desk pad couro borda costurada gigante antiderrapante tapete mesa game": "2026-11-20T14:26:13.169820-03:00",
     "carregador portátil power bank universal 10 000mah e 5 000mah": "2026-11-20T14:26:13.169820-03:00",
     "garrafa térmica watersy 500ml 48h frio perfeita para academia futebol e dia a di": "2026-11-20T15:09:29.979560-03:00",
-    "saco lavar tenis sapato máquina lavar roupas protege não danifica lavagem segura": "2026-11-20T15:09:29.979560-03:00"
+    "saco lavar tenis sapato máquina lavar roupas protege não danifica lavagem segura": "2026-11-20T15:09:29.979560-03:00",
+    "1 2 5 suporte de parede multifuncional caixa de armazenamento casa para carregar": "2026-11-20T16:00:33.021503-03:00",
+    "garrafa térmica cabo madeira para café 1l": "2026-11-20T16:00:33.021503-03:00"
   },
   "precos": {
     "SHOPEE-22895058213": {
@@ -266,7 +272,7 @@
     },
     "SHOPEE-52858085838": {
       "preco": 43.99,
-      "ts": "2026-11-13T08:09:49.779087-03:00"
+      "ts": "2026-11-20T16:00:33.021503-03:00"
     },
     "SHOPEE-23293253949": {
       "preco": 136.9,
@@ -562,7 +568,7 @@
     },
     "SHOPEE-23096150316": {
       "preco": 9.89,
-      "ts": "2026-11-10T15:33:36.666437-03:00"
+      "ts": "2026-11-20T16:00:33.021503-03:00"
     },
     "SHOPEE-22892686035": {
       "preco": 9.99,
