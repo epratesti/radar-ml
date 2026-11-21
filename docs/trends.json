@@ -1,5 +1,27 @@
 [
   {
+    "id": "SHOPEE-52905774499",
+    "titulo": "Espremedor Elétrico de Frutas Automático | Laranja, Limão e Outras Frutas | Suco Natural Rápido | Design Premium",
+    "preco": 45.89,
+    "desconto": 85,
+    "vendas": 5025,
+    "imagem": "https://cf.shopee.com.br/file/sg-11134201-8260c-mlw5gdmlji8493",
+    "link": "https://s.shopee.com.br/LoyxW8nSd",
+    "fonte": "shopee",
+    "ts": "2026-11-21T17:07:50.696150-03:00"
+  },
+  {
+    "id": "SHOPEE-58207663151",
+    "titulo": "Kit 50 a 300 Formas Descartável Para Airfryer Antiaderente Não Suja Cozinha Fritadedira Promoção",
+    "preco": 11.99,
+    "desconto": 54,
+    "vendas": 7707,
+    "imagem": "https://cf.shopee.com.br/file/sg-11134201-82626-mm9sym8py58v5c",
+    "link": "https://s.shopee.com.br/4VeUYY8Nym",
+    "fonte": "shopee",
+    "ts": "2026-11-21T17:07:50.696150-03:00"
+  },
+  {
     "id": "SHOPEE-22397182247",
     "titulo": "Carregador iPhone Turbo Tipo-C 20W + Cabo Lightining para IPhone Carga rápida",
     "preco": 16.29,
@@ -306,27 +328,5 @@
     "link": "https://s.shopee.com.br/6q2PBOyZU4",
     "fonte": "shopee",
     "ts": "2026-11-19T13:46:27.456954-03:00"
-  },
-  {
-    "id": "SHOPEE-23293253949",
-    "titulo": "Whey Protein Concentrado 1Kg Dark Lab",
-    "preco": 136.9,
-    "desconto": 40,
-    "vendas": 2273,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lzkq1yrpylqtc1",
-    "link": "https://s.shopee.com.br/8AXmsJ3VNX",
-    "fonte": "shopee",
-    "ts": "2026-11-19T13:46:27.456954-03:00"
-  },
-  {
-    "id": "SHOPEE-20197726295",
-    "titulo": "Caixa Saco Organizador Cobertor Casaco Guarda Roupa Ecológico Anti-Poeira Umidade Insetos Multiuso",
-    "preco": 13.81,
-    "desconto": 77,
-    "vendas": 8863,
-    "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rd3t-m7np9ti1i0ar99",
-    "link": "https://s.shopee.com.br/7AfFa0xIoA",
-    "fonte": "shopee",
-    "ts": "2026-11-19T12:12:22.386574-03:00"
   }
 ]

@@ -1,9 +1,5 @@
 {
   "ids": {
-    "SHOPEE-23797686527": "2026-11-18T16:18:58.451651-03:00",
-    "23797686527": "2026-11-18T16:18:58.451651-03:00",
-    "SHOPEE-19499549872": "2026-11-18T16:18:58.451651-03:00",
-    "19499549872": "2026-11-18T16:18:58.451651-03:00",
     "SHOPEE-23898692172": "2026-11-19T09:10:20.345748-03:00",
     "23898692172": "2026-11-19T09:10:20.345748-03:00",
     "SHOPEE-21297578652": "2026-11-19T09:10:20.345748-03:00",
@@ -73,11 +69,13 @@
     "SHOPEE-22392993399": "2026-11-21T16:08:54.447601-03:00",
     "22392993399": "2026-11-21T16:08:54.447601-03:00",
     "SHOPEE-22397182247": "2026-11-21T16:08:54.447601-03:00",
-    "22397182247": "2026-11-21T16:08:54.447601-03:00"
+    "22397182247": "2026-11-21T16:08:54.447601-03:00",
+    "SHOPEE-58207663151": "2026-11-21T17:07:50.696150-03:00",
+    "58207663151": "2026-11-21T17:07:50.696150-03:00",
+    "SHOPEE-52905774499": "2026-11-21T17:07:50.696150-03:00",
+    "52905774499": "2026-11-21T17:07:50.696150-03:00"
   },
   "titulos": {
-    "relógio masculino digital wr 100 qualidade entrega rápida": "2026-11-18T16:18:58.451651-03:00",
-    "robô varredora aspirador de pó automática 3 em 1 limpeza doméstica robótico inte": "2026-11-18T16:18:58.451651-03:00",
     "ventilador de teto com luz silencioso controle remoto economica instalação fácil": "2026-11-19T09:10:20.345748-03:00",
     "sandália ortopédica feminina terapêutica para esporão chinelo ortopédico": "2026-11-19T09:10:20.345748-03:00",
     "relógio retrô digital prata led unissex fashion masculino feminino pulseira inox": "2026-11-19T11:15:36.172465-03:00",
@@ -112,7 +110,9 @@
     "body splash feminino arabe ayra 100ml primacial perfume floral": "2026-11-21T14:55:19.125918-03:00",
     "1 2 peças suporte de canto e reta porta shampoo prateleira para banheiro organiz": "2026-11-21T14:55:19.125918-03:00",
     "hipercalórico dark mass 3kg dark lab whey protein creatina bcaa waxy maize premi": "2026-11-21T16:08:54.447601-03:00",
-    "carregador iphone turbo tipo c 20w cabo lightining para iphone carga rápida": "2026-11-21T16:08:54.447601-03:00"
+    "carregador iphone turbo tipo c 20w cabo lightining para iphone carga rápida": "2026-11-21T16:08:54.447601-03:00",
+    "kit 50 a 300 formas descartável para airfryer antiaderente não suja cozinha frit": "2026-11-21T17:07:50.696150-03:00",
+    "espremedor elétrico de frutas automático laranja limão e outras frutas suco natu": "2026-11-21T17:07:50.696150-03:00"
   },
   "precos": {
     "SHOPEE-19697980846": {
@@ -198,10 +198,6 @@
     "SHOPEE-23293253949": {
       "preco": 136.9,
       "ts": "2026-11-19T13:46:27.456954-03:00"
-    },
-    "SHOPEE-23497309877": {
-      "preco": 61.98,
-      "ts": "2026-11-07T16:14:09.935270-03:00"
     },
     "SHOPEE-23899017576": {
       "preco": 28.98,
@@ -513,7 +509,7 @@
     },
     "SHOPEE-58207663151": {
       "preco": 11.99,
-      "ts": "2026-11-17T13:25:30.966183-03:00"
+      "ts": "2026-11-21T17:07:50.696150-03:00"
     },
     "SHOPEE-23397324970": {
       "preco": 13.98,
@@ -560,8 +556,8 @@
       "ts": "2026-11-11T22:24:29.527384-03:00"
     },
     "SHOPEE-52905774499": {
-      "preco": 49.99,
-      "ts": "2026-11-12T07:08:56.029954-03:00"
+      "preco": 45.89,
+      "ts": "2026-11-21T17:07:50.696150-03:00"
     },
     "SHOPEE-18499695542": {
       "preco": 21.99,
