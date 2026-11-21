@@ -1,9 +1,5 @@
 {
   "ids": {
-    "SHOPEE-22094238842": "2026-11-18T13:35:48.059140-03:00",
-    "22094238842": "2026-11-18T13:35:48.059140-03:00",
-    "SHOPEE-19899586753": "2026-11-18T13:35:48.059140-03:00",
-    "19899586753": "2026-11-18T13:35:48.059140-03:00",
     "SHOPEE-21399069053": "2026-11-18T14:12:42.843908-03:00",
     "21399069053": "2026-11-18T14:12:42.843908-03:00",
     "SHOPEE-58264628974": "2026-11-18T14:12:42.843908-03:00",
@@ -75,11 +71,11 @@
     "SHOPEE-23093960843": "2026-11-21T10:16:30.974854-03:00",
     "23093960843": "2026-11-21T10:16:30.974854-03:00",
     "SHOPEE-23195818961": "2026-11-21T10:16:30.974854-03:00",
-    "23195818961": "2026-11-21T10:16:30.974854-03:00"
+    "23195818961": "2026-11-21T10:16:30.974854-03:00",
+    "SHOPEE-49912454334": "2026-11-21T14:10:28.542449-03:00",
+    "49912454334": "2026-11-21T14:10:28.542449-03:00"
   },
   "titulos": {
-    "body splash feminino arabe ayra 100ml primacial perfume floral": "2026-11-18T13:35:48.059140-03:00",
-    "fone de ouvido sem fio com cancelamento de ruído bluetooth pop up": "2026-11-18T13:35:48.059140-03:00",
     "caneta paint original reparadora pintura automotiva permanente não sai na água t": "2026-11-18T14:12:42.843908-03:00",
     "body splash feminino perfume deo colônia flooratta red 200ml": "2026-11-18T14:12:42.843908-03:00",
     "2026 t800 ultra 3 max mais recente smartwatch relógio inteligente nfc série 10 2": "2026-11-18T15:10:24.893072-03:00",
@@ -115,7 +111,8 @@
     "kit dupla renovadores faciais kokeshi pele porcelana olhos gueixa": "2026-11-20T21:41:58.531510-03:00",
     "2026 nova série 8 relógio t800 ultra smart watch esportivo sem fio prova d água ": "2026-11-20T21:41:58.531510-03:00",
     "pasta sanfonada para documento com 12 divisórias e pasta prancheta tamanho a4 es": "2026-11-21T10:16:30.974854-03:00",
-    "carregador de chaveiro portátil 1500mah ultra compacto mini pacote de bateria ca": "2026-11-21T10:16:30.974854-03:00"
+    "carregador de chaveiro portátil 1500mah ultra compacto mini pacote de bateria ca": "2026-11-21T10:16:30.974854-03:00",
+    "maria 5d wm curl cílios fácil ventilador extensões de atacado volume pré fabrica": "2026-11-21T14:10:28.542449-03:00"
   },
   "precos": {
     "SHOPEE-19697980846": {
@@ -193,26 +190,6 @@
     "SHOPEE-20607193834": {
       "preco": 37.49,
       "ts": "2026-11-20T14:26:13.169820-03:00"
-    },
-    "SHOPEE-22393096204": {
-      "preco": 19.99,
-      "ts": "2026-11-07T13:10:50.125970-03:00"
-    },
-    "SHOPEE-22598926569": {
-      "preco": 29.9,
-      "ts": "2026-11-07T13:47:11.236300-03:00"
-    },
-    "SHOPEE-53312814680": {
-      "preco": 139.99,
-      "ts": "2026-11-07T13:47:11.236300-03:00"
-    },
-    "SHOPEE-40927356584": {
-      "preco": 14.73,
-      "ts": "2026-11-07T14:09:18.815917-03:00"
-    },
-    "SHOPEE-20797795834": {
-      "preco": 55.88,
-      "ts": "2026-11-07T14:09:18.815917-03:00"
     },
     "SHOPEE-58203349918": {
       "preco": 32.99,
@@ -364,7 +341,7 @@
     },
     "SHOPEE-49912454334": {
       "preco": 19.0,
-      "ts": "2026-11-08T16:07:51.618244-03:00"
+      "ts": "2026-11-21T14:10:28.542449-03:00"
     },
     "SHOPEE-45963749827": {
       "preco": 34.98,
