@@ -1,9 +1,5 @@
 {
   "ids": {
-    "SHOPEE-21399069053": "2026-11-18T14:12:42.843908-03:00",
-    "21399069053": "2026-11-18T14:12:42.843908-03:00",
-    "SHOPEE-58264628974": "2026-11-18T14:12:42.843908-03:00",
-    "58264628974": "2026-11-18T14:12:42.843908-03:00",
     "SHOPEE-23399193375": "2026-11-18T15:10:24.893072-03:00",
     "23399193375": "2026-11-18T15:10:24.893072-03:00",
     "SHOPEE-23897644397": "2026-11-18T15:10:24.893072-03:00",
@@ -73,11 +69,13 @@
     "SHOPEE-23195818961": "2026-11-21T10:16:30.974854-03:00",
     "23195818961": "2026-11-21T10:16:30.974854-03:00",
     "SHOPEE-49912454334": "2026-11-21T14:10:28.542449-03:00",
-    "49912454334": "2026-11-21T14:10:28.542449-03:00"
+    "49912454334": "2026-11-21T14:10:28.542449-03:00",
+    "SHOPEE-22094238842": "2026-11-21T14:55:19.125918-03:00",
+    "22094238842": "2026-11-21T14:55:19.125918-03:00",
+    "SHOPEE-22099046331": "2026-11-21T14:55:19.125918-03:00",
+    "22099046331": "2026-11-21T14:55:19.125918-03:00"
   },
   "titulos": {
-    "caneta paint original reparadora pintura automotiva permanente não sai na água t": "2026-11-18T14:12:42.843908-03:00",
-    "body splash feminino perfume deo colônia flooratta red 200ml": "2026-11-18T14:12:42.843908-03:00",
     "2026 t800 ultra 3 max mais recente smartwatch relógio inteligente nfc série 10 2": "2026-11-18T15:10:24.893072-03:00",
     "caixa de som speaker bluetooth rgb portátil 10w usb aux": "2026-11-18T15:10:24.893072-03:00",
     "relógio masculino digital wr 100 qualidade entrega rápida": "2026-11-18T16:18:58.451651-03:00",
@@ -112,7 +110,9 @@
     "2026 nova série 8 relógio t800 ultra smart watch esportivo sem fio prova d água ": "2026-11-20T21:41:58.531510-03:00",
     "pasta sanfonada para documento com 12 divisórias e pasta prancheta tamanho a4 es": "2026-11-21T10:16:30.974854-03:00",
     "carregador de chaveiro portátil 1500mah ultra compacto mini pacote de bateria ca": "2026-11-21T10:16:30.974854-03:00",
-    "maria 5d wm curl cílios fácil ventilador extensões de atacado volume pré fabrica": "2026-11-21T14:10:28.542449-03:00"
+    "maria 5d wm curl cílios fácil ventilador extensões de atacado volume pré fabrica": "2026-11-21T14:10:28.542449-03:00",
+    "body splash feminino arabe ayra 100ml primacial perfume floral": "2026-11-21T14:55:19.125918-03:00",
+    "1 2 peças suporte de canto e reta porta shampoo prateleira para banheiro organiz": "2026-11-21T14:55:19.125918-03:00"
   },
   "precos": {
     "SHOPEE-19697980846": {
@@ -125,7 +125,7 @@
     },
     "SHOPEE-22094238842": {
       "preco": 24.9,
-      "ts": "2026-11-18T13:35:48.059140-03:00"
+      "ts": "2026-11-21T14:55:19.125918-03:00"
     },
     "SHOPEE-58255159172": {
       "preco": 20.47,
@@ -694,6 +694,10 @@
     "SHOPEE-23195818961": {
       "preco": 14.99,
       "ts": "2026-11-21T10:16:30.974854-03:00"
+    },
+    "SHOPEE-22099046331": {
+      "preco": 11.45,
+      "ts": "2026-11-21T14:55:19.125918-03:00"
     }
   },
   "alertas": {}
