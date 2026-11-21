@@ -1,5 +1,27 @@
 [
   {
+    "id": "SHOPEE-22397182247",
+    "titulo": "Carregador iPhone Turbo Tipo-C 20W + Cabo Lightining para IPhone Carga rápida",
+    "preco": 16.29,
+    "desconto": 67,
+    "vendas": 12310,
+    "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rbkw-lpcg9rytbas79a",
+    "link": "https://s.shopee.com.br/8KrCldlDIz",
+    "fonte": "shopee",
+    "ts": "2026-11-21T16:08:54.447601-03:00"
+  },
+  {
+    "id": "SHOPEE-22392993399",
+    "titulo": "Hipercalórico Dark Mass 3kg Dark Lab - Whey Protein, Creatina, BCAA, Waxy Maize, Premium Mass Gainer",
+    "preco": 78.9,
+    "desconto": 51,
+    "vendas": 2865,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lzawnmo1qj3970",
+    "link": "https://s.shopee.com.br/8KrD4c2s2W",
+    "fonte": "shopee",
+    "ts": "2026-11-21T16:08:54.447601-03:00"
+  },
+  {
     "id": "SHOPEE-22099046331",
     "titulo": "1/2 Peças Suporte de Canto e Reta Porta Shampoo Prateleira Para Banheiro Organizador com Adesivo",
     "preco": 11.45,
@@ -306,27 +328,5 @@
     "link": "https://s.shopee.com.br/7AfFa0xIoA",
     "fonte": "shopee",
     "ts": "2026-11-19T12:12:22.386574-03:00"
-  },
-  {
-    "id": "SHOPEE-58256926114",
-    "titulo": "Carregador Portátil 5000Mah/10000Mah Indução Sem fio Bateria Carga",
-    "preco": 28.86,
-    "desconto": 83,
-    "vendas": 8090,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-820ln-mlske0kwri132f",
-    "link": "https://s.shopee.com.br/AAIr9WPXUe",
-    "fonte": "shopee",
-    "ts": "2026-11-19T12:12:22.386574-03:00"
-  },
-  {
-    "id": "SHOPEE-58214853079",
-    "titulo": "Fone De Ouvido Sem Fio M10 TWS Bluetooth 5.3 display Led Touch",
-    "preco": 18.99,
-    "desconto": 73,
-    "vendas": 9227,
-    "imagem": "https://cf.shopee.com.br/file/sg-11134201-8258z-mr0fi8bhfthid6",
-    "link": "https://s.shopee.com.br/2BGZYv8V0l",
-    "fonte": "shopee",
-    "ts": "2026-11-19T11:15:36.172465-03:00"
   }
 ]

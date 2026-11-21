@@ -1,9 +1,5 @@
 {
   "ids": {
-    "SHOPEE-23399193375": "2026-11-18T15:10:24.893072-03:00",
-    "23399193375": "2026-11-18T15:10:24.893072-03:00",
-    "SHOPEE-23897644397": "2026-11-18T15:10:24.893072-03:00",
-    "23897644397": "2026-11-18T15:10:24.893072-03:00",
     "SHOPEE-23797686527": "2026-11-18T16:18:58.451651-03:00",
     "23797686527": "2026-11-18T16:18:58.451651-03:00",
     "SHOPEE-19499549872": "2026-11-18T16:18:58.451651-03:00",
@@ -73,11 +69,13 @@
     "SHOPEE-22094238842": "2026-11-21T14:55:19.125918-03:00",
     "22094238842": "2026-11-21T14:55:19.125918-03:00",
     "SHOPEE-22099046331": "2026-11-21T14:55:19.125918-03:00",
-    "22099046331": "2026-11-21T14:55:19.125918-03:00"
+    "22099046331": "2026-11-21T14:55:19.125918-03:00",
+    "SHOPEE-22392993399": "2026-11-21T16:08:54.447601-03:00",
+    "22392993399": "2026-11-21T16:08:54.447601-03:00",
+    "SHOPEE-22397182247": "2026-11-21T16:08:54.447601-03:00",
+    "22397182247": "2026-11-21T16:08:54.447601-03:00"
   },
   "titulos": {
-    "2026 t800 ultra 3 max mais recente smartwatch relógio inteligente nfc série 10 2": "2026-11-18T15:10:24.893072-03:00",
-    "caixa de som speaker bluetooth rgb portátil 10w usb aux": "2026-11-18T15:10:24.893072-03:00",
     "relógio masculino digital wr 100 qualidade entrega rápida": "2026-11-18T16:18:58.451651-03:00",
     "robô varredora aspirador de pó automática 3 em 1 limpeza doméstica robótico inte": "2026-11-18T16:18:58.451651-03:00",
     "ventilador de teto com luz silencioso controle remoto economica instalação fácil": "2026-11-19T09:10:20.345748-03:00",
@@ -112,7 +110,9 @@
     "carregador de chaveiro portátil 1500mah ultra compacto mini pacote de bateria ca": "2026-11-21T10:16:30.974854-03:00",
     "maria 5d wm curl cílios fácil ventilador extensões de atacado volume pré fabrica": "2026-11-21T14:10:28.542449-03:00",
     "body splash feminino arabe ayra 100ml primacial perfume floral": "2026-11-21T14:55:19.125918-03:00",
-    "1 2 peças suporte de canto e reta porta shampoo prateleira para banheiro organiz": "2026-11-21T14:55:19.125918-03:00"
+    "1 2 peças suporte de canto e reta porta shampoo prateleira para banheiro organiz": "2026-11-21T14:55:19.125918-03:00",
+    "hipercalórico dark mass 3kg dark lab whey protein creatina bcaa waxy maize premi": "2026-11-21T16:08:54.447601-03:00",
+    "carregador iphone turbo tipo c 20w cabo lightining para iphone carga rápida": "2026-11-21T16:08:54.447601-03:00"
   },
   "precos": {
     "SHOPEE-19697980846": {
@@ -161,7 +161,7 @@
     },
     "SHOPEE-22392993399": {
       "preco": 78.9,
-      "ts": "2026-11-18T10:14:25.010941-03:00"
+      "ts": "2026-11-21T16:08:54.447601-03:00"
     },
     "SHOPEE-58262387632": {
       "preco": 61.52,
@@ -190,10 +190,6 @@
     "SHOPEE-20607193834": {
       "preco": 37.49,
       "ts": "2026-11-20T14:26:13.169820-03:00"
-    },
-    "SHOPEE-58203349918": {
-      "preco": 32.99,
-      "ts": "2026-11-07T15:12:02.675566-03:00"
     },
     "SHOPEE-52858085838": {
       "preco": 43.99,
@@ -464,8 +460,8 @@
       "ts": "2026-11-09T19:09:12.417685-03:00"
     },
     "SHOPEE-22397182247": {
-      "preco": 14.98,
-      "ts": "2026-11-18T08:12:00.504450-03:00"
+      "preco": 16.29,
+      "ts": "2026-11-21T16:08:54.447601-03:00"
     },
     "SHOPEE-23497594302": {
       "preco": 99.98,
