@@ -73,7 +73,11 @@
     "SHOPEE-58207663151": "2026-11-21T17:07:50.696150-03:00",
     "58207663151": "2026-11-21T17:07:50.696150-03:00",
     "SHOPEE-52905774499": "2026-11-21T17:07:50.696150-03:00",
-    "52905774499": "2026-11-21T17:07:50.696150-03:00"
+    "52905774499": "2026-11-21T17:07:50.696150-03:00",
+    "SHOPEE-58203770266": "2026-11-21T20:44:23.468531-03:00",
+    "58203770266": "2026-11-21T20:44:23.468531-03:00",
+    "SHOPEE-23497594302": "2026-11-21T20:44:23.468531-03:00",
+    "23497594302": "2026-11-21T20:44:23.468531-03:00"
   },
   "titulos": {
     "ventilador de teto com luz silencioso controle remoto economica instalação fácil": "2026-11-19T09:10:20.345748-03:00",
@@ -112,7 +116,9 @@
     "hipercalórico dark mass 3kg dark lab whey protein creatina bcaa waxy maize premi": "2026-11-21T16:08:54.447601-03:00",
     "carregador iphone turbo tipo c 20w cabo lightining para iphone carga rápida": "2026-11-21T16:08:54.447601-03:00",
     "kit 50 a 300 formas descartável para airfryer antiaderente não suja cozinha frit": "2026-11-21T17:07:50.696150-03:00",
-    "espremedor elétrico de frutas automático laranja limão e outras frutas suco natu": "2026-11-21T17:07:50.696150-03:00"
+    "espremedor elétrico de frutas automático laranja limão e outras frutas suco natu": "2026-11-21T17:07:50.696150-03:00",
+    "ez vip rose eau de parfum 100ml lançamento exclusivo": "2026-11-21T20:44:23.468531-03:00",
+    "romantic crown mochila de viagem expansível bolsa executiva notebook masculina e": "2026-11-21T20:44:23.468531-03:00"
   },
   "precos": {
     "SHOPEE-19697980846": {
@@ -203,33 +209,9 @@
       "preco": 28.98,
       "ts": "2026-11-17T16:42:31.002536-03:00"
     },
-    "SHOPEE-58202231060": {
-      "preco": 78.6,
-      "ts": "2026-11-07T17:08:13.989872-03:00"
-    },
-    "SHOPEE-20398528613": {
-      "preco": 11.99,
-      "ts": "2026-11-07T17:44:51.940227-03:00"
-    },
-    "SHOPEE-23394735827": {
-      "preco": 25.99,
-      "ts": "2026-11-07T17:44:51.940227-03:00"
-    },
-    "SHOPEE-23995144850": {
-      "preco": 23.88,
-      "ts": "2026-11-07T18:08:31.727592-03:00"
-    },
     "SHOPEE-55359781665": {
       "preco": 22.89,
       "ts": "2026-11-20T15:09:29.979560-03:00"
-    },
-    "SHOPEE-58261888418": {
-      "preco": 34.99,
-      "ts": "2026-11-07T19:08:50.471916-03:00"
-    },
-    "SHOPEE-21797631048": {
-      "preco": 18.98,
-      "ts": "2026-11-07T20:09:58.302295-03:00"
     },
     "SHOPEE-23897644397": {
       "preco": 26.88,
@@ -461,7 +443,7 @@
     },
     "SHOPEE-23497594302": {
       "preco": 99.98,
-      "ts": "2026-11-18T10:14:25.010941-03:00"
+      "ts": "2026-11-21T20:44:23.468531-03:00"
     },
     "SHOPEE-58251249633": {
       "preco": 14.9,
@@ -653,7 +635,7 @@
     },
     "SHOPEE-58203770266": {
       "preco": 44.9,
-      "ts": "2026-11-17T11:04:09.961405-03:00"
+      "ts": "2026-11-21T20:44:23.468531-03:00"
     },
     "SHOPEE-22793090494": {
       "preco": 21.99,

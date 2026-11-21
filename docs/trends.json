@@ -1,5 +1,27 @@
 [
   {
+    "id": "SHOPEE-23497594302",
+    "titulo": "ROMANTIC CROWN Mochila de Viagem Expansível, Bolsa Executiva Notebook Masculina e Feminina Trabalho,Grande,Reforçada",
+    "preco": 99.98,
+    "desconto": 86,
+    "vendas": 4075,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-820la-mu7g0m7pk9vl21",
+    "link": "https://s.shopee.com.br/AKcHdI5od9",
+    "fonte": "shopee",
+    "ts": "2026-11-21T20:44:23.468531-03:00"
+  },
+  {
+    "id": "SHOPEE-58203770266",
+    "titulo": "EZ Vip Rose - Eau de Parfum 100ml LANÇAMENTO EXCLUSIVO",
+    "preco": 44.9,
+    "desconto": 35,
+    "vendas": 3187,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztc-mjrcbybqujghc2",
+    "link": "https://s.shopee.com.br/7KyfiPStre",
+    "fonte": "shopee",
+    "ts": "2026-11-21T20:44:23.468531-03:00"
+  },
+  {
     "id": "SHOPEE-52905774499",
     "titulo": "Espremedor Elétrico de Frutas Automático | Laranja, Limão e Outras Frutas | Suco Natural Rápido | Design Premium",
     "preco": 45.89,
@@ -306,27 +328,5 @@
     "link": "https://s.shopee.com.br/4LL4MF91Jl",
     "fonte": "shopee",
     "ts": "2026-11-19T14:29:56.498930-03:00"
-  },
-  {
-    "id": "SHOPEE-18499853587",
-    "titulo": "Carregador Sem Fio 5000/10000mAh iPhone",
-    "preco": 28.85,
-    "desconto": 50,
-    "vendas": 10999,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-mavkx3k4v9n308",
-    "link": "https://s.shopee.com.br/9zzQxDQApd",
-    "fonte": "shopee",
-    "ts": "2026-11-19T14:29:56.498930-03:00"
-  },
-  {
-    "id": "SHOPEE-58258562285",
-    "titulo": "Suporte Organizador De Ovos Dispenser Para Geladeira Prático Anti-Queda Utensílios De Cozinha Original",
-    "preco": 4.99,
-    "desconto": 75,
-    "vendas": 8342,
-    "imagem": "https://cf.shopee.com.br/file/sg-11134201-81zvu-mmvetjba5xq9cb",
-    "link": "https://s.shopee.com.br/6q2PBOyZU4",
-    "fonte": "shopee",
-    "ts": "2026-11-19T13:46:27.456954-03:00"
   }
 ]
