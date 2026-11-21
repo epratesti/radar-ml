@@ -1,9 +1,5 @@
 {
   "ids": {
-    "SHOPEE-23893966960": "2026-11-18T11:30:43.163564-03:00",
-    "23893966960": "2026-11-18T11:30:43.163564-03:00",
-    "SHOPEE-22199220609": "2026-11-18T11:30:43.163564-03:00",
-    "22199220609": "2026-11-18T11:30:43.163564-03:00",
     "SHOPEE-22094238842": "2026-11-18T13:35:48.059140-03:00",
     "22094238842": "2026-11-18T13:35:48.059140-03:00",
     "SHOPEE-19899586753": "2026-11-18T13:35:48.059140-03:00",
@@ -82,8 +78,6 @@
     "23195818961": "2026-11-21T10:16:30.974854-03:00"
   },
   "titulos": {
-    "principia kit essencial gl 03 ch vc ps 01 fps 60 ou ps 05 fps 70": "2026-11-18T11:30:43.163564-03:00",
-    "b brobô varredora aspirador de pó automática 3 em 1 limpeza doméstica robótico i": "2026-11-18T11:30:43.163564-03:00",
     "body splash feminino arabe ayra 100ml primacial perfume floral": "2026-11-18T13:35:48.059140-03:00",
     "fone de ouvido sem fio com cancelamento de ruído bluetooth pop up": "2026-11-18T13:35:48.059140-03:00",
     "caneta paint original reparadora pintura automotiva permanente não sai na água t": "2026-11-18T14:12:42.843908-03:00",
@@ -191,10 +185,6 @@
     "SHOPEE-21399069053": {
       "preco": 18.72,
       "ts": "2026-11-18T14:12:42.843908-03:00"
-    },
-    "SHOPEE-58210532717": {
-      "preco": 29.9,
-      "ts": "2026-11-07T12:10:29.785169-03:00"
     },
     "SHOPEE-23593847901": {
       "preco": 27.99,
