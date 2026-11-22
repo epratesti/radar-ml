@@ -69,7 +69,11 @@
     "SHOPEE-58264628974": "2026-11-22T15:22:37.482341-03:00",
     "58264628974": "2026-11-22T15:22:37.482341-03:00",
     "SHOPEE-58258562285": "2026-11-22T15:22:37.482341-03:00",
-    "58258562285": "2026-11-22T15:22:37.482341-03:00"
+    "58258562285": "2026-11-22T15:22:37.482341-03:00",
+    "SHOPEE-58256926114": "2026-11-22T16:09:00.215968-03:00",
+    "58256926114": "2026-11-22T16:09:00.215968-03:00",
+    "SHOPEE-22892686035": "2026-11-22T16:09:00.215968-03:00",
+    "22892686035": "2026-11-22T16:09:00.215968-03:00"
   },
   "titulos": {
     "mochila grande unissex resistente impermeável notebook alta capacidade com compa": "2026-11-19T16:26:41.693965-03:00",
@@ -106,7 +110,9 @@
     "ventilador de teto com luz silencioso controle remoto economica instalação fácil": "2026-11-22T15:07:26.520342-03:00",
     "2026 t800 ultra 3 max mais recente smartwatch relógio inteligente nfc série 10 2": "2026-11-22T15:07:26.520342-03:00",
     "body splash feminino perfume deo colônia flooratta red 200ml": "2026-11-22T15:22:37.482341-03:00",
-    "suporte organizador de ovos dispenser para geladeira prático anti queda utensíli": "2026-11-22T15:22:37.482341-03:00"
+    "suporte organizador de ovos dispenser para geladeira prático anti queda utensíli": "2026-11-22T15:22:37.482341-03:00",
+    "carregador portátil 5000mah 10000mah indução sem fio bateria carga": "2026-11-22T16:09:00.215968-03:00",
+    "fone de ouvido entrada lightning para iphone microfone bluetooth": "2026-11-22T16:09:00.215968-03:00"
   },
   "precos": {
     "SHOPEE-19697980846": {
@@ -260,10 +266,6 @@
     "SHOPEE-23597035403": {
       "preco": 9.59,
       "ts": "2026-11-16T11:07:52.659076-03:00"
-    },
-    "SHOPEE-23397600706": {
-      "preco": 11.8,
-      "ts": "2026-11-08T16:07:51.618244-03:00"
     },
     "SHOPEE-49912454334": {
       "preco": 19.0,
@@ -422,8 +424,8 @@
       "ts": "2026-11-20T16:00:33.021503-03:00"
     },
     "SHOPEE-22892686035": {
-      "preco": 9.99,
-      "ts": "2026-11-17T14:10:13.667393-03:00"
+      "preco": 10.49,
+      "ts": "2026-11-22T16:09:00.215968-03:00"
     },
     "SHOPEE-58258956764": {
       "preco": 15.89,
@@ -483,7 +485,7 @@
     },
     "SHOPEE-58256926114": {
       "preco": 28.86,
-      "ts": "2026-11-19T12:12:22.386574-03:00"
+      "ts": "2026-11-22T16:09:00.215968-03:00"
     },
     "SHOPEE-21198282551": {
       "preco": 10.8,
