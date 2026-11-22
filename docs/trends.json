@@ -1,5 +1,27 @@
 [
   {
+    "id": "SHOPEE-23893966960",
+    "titulo": "Principia Kit Essencial GL-03 + CH + VC + PS-01 FPS 60 ou PS-05 FPS 70",
+    "preco": 163.08,
+    "desconto": 30,
+    "vendas": 4254,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-820md-mseerrdpq0w615",
+    "link": "https://s.shopee.com.br/70LpNhFb1U",
+    "fonte": "shopee",
+    "ts": "2026-11-22T11:15:51.423641-03:00"
+  },
+  {
+    "id": "SHOPEE-22199220609",
+    "titulo": "B&BRobô Varredora/Aspirador De Pó Automática 3 Em 1 Limpeza Doméstica Robótico Inteligente E Silencioso",
+    "preco": 37.99,
+    "desconto": 69,
+    "vendas": 8442,
+    "imagem": "https://cf.shopee.com.br/file/sg-11134201-821dm-mh9dj2twkavd00",
+    "link": "https://s.shopee.com.br/6L68mjEiLc",
+    "fonte": "shopee",
+    "ts": "2026-11-22T11:15:51.423641-03:00"
+  },
+  {
     "id": "SHOPEE-23497594302",
     "titulo": "ROMANTIC CROWN Mochila de Viagem Expansível, Bolsa Executiva Notebook Masculina e Feminina Trabalho,Grande,Reforçada",
     "preco": 99.98,
@@ -306,27 +328,5 @@
     "link": "https://s.shopee.com.br/6VPYz2E50f",
     "fonte": "shopee",
     "ts": "2026-11-19T15:10:51.421384-03:00"
-  },
-  {
-    "id": "SHOPEE-49610876725",
-    "titulo": "Rádio Caixa de Som Bluetooth Recarregável Lanterna Retro Portátil FM AM USB SD Pilha",
-    "preco": 69.9,
-    "desconto": 50,
-    "vendas": 2830,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-820me-mogu34styw3n6e",
-    "link": "https://s.shopee.com.br/80EMlmmqtm",
-    "fonte": "shopee",
-    "ts": "2026-11-19T15:10:51.421384-03:00"
-  },
-  {
-    "id": "SHOPEE-20199206047",
-    "titulo": "Air Fryer Britânia 4,2L Dura Mais 1500W BFR38",
-    "preco": 179.9,
-    "desconto": 28,
-    "vendas": 2218,
-    "imagem": "https://cf.shopee.com.br/file/sg-11134201-8258f-mudi8zi45c034a",
-    "link": "https://s.shopee.com.br/4LL4MF91Jl",
-    "fonte": "shopee",
-    "ts": "2026-11-19T14:29:56.498930-03:00"
   }
 ]
