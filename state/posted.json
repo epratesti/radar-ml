@@ -1,9 +1,5 @@
 {
   "ids": {
-    "SHOPEE-49610876725": "2026-11-19T15:10:51.421384-03:00",
-    "49610876725": "2026-11-19T15:10:51.421384-03:00",
-    "SHOPEE-22791523448": "2026-11-19T15:10:51.421384-03:00",
-    "22791523448": "2026-11-19T15:10:51.421384-03:00",
     "SHOPEE-58208872077": "2026-11-19T16:26:41.693965-03:00",
     "58208872077": "2026-11-19T16:26:41.693965-03:00",
     "SHOPEE-19697980846": "2026-11-19T16:26:41.693965-03:00",
@@ -69,11 +65,13 @@
     "SHOPEE-23898692172": "2026-11-22T15:07:26.520342-03:00",
     "23898692172": "2026-11-22T15:07:26.520342-03:00",
     "SHOPEE-23399193375": "2026-11-22T15:07:26.520342-03:00",
-    "23399193375": "2026-11-22T15:07:26.520342-03:00"
+    "23399193375": "2026-11-22T15:07:26.520342-03:00",
+    "SHOPEE-58264628974": "2026-11-22T15:22:37.482341-03:00",
+    "58264628974": "2026-11-22T15:22:37.482341-03:00",
+    "SHOPEE-58258562285": "2026-11-22T15:22:37.482341-03:00",
+    "58258562285": "2026-11-22T15:22:37.482341-03:00"
   },
   "titulos": {
-    "rádio caixa de som bluetooth recarregável lanterna retro portátil fm am usb sd p": "2026-11-19T15:10:51.421384-03:00",
-    "mini aspirador de pó portátil automotivo e casa potente recarregável": "2026-11-19T15:10:51.421384-03:00",
     "mochila grande unissex resistente impermeável notebook alta capacidade com compa": "2026-11-19T16:26:41.693965-03:00",
     "ventilador luminária led 6 pás lâmpada soquete bocal e27 teto 3 cores luz branco": "2026-11-19T16:26:41.693965-03:00",
     "whey protein fuse 900g isolate dark lab": "2026-11-20T09:12:59.934761-03:00",
@@ -106,7 +104,9 @@
     "kit hidrabene clareador skincare clareador facial sabonete protetor 70 fps e sér": "2026-11-22T13:11:15.015536-03:00",
     "romantic crown copo térmico inox portátil 1200ml 600ml com tampa e canudo garraf": "2026-11-22T13:11:15.015536-03:00",
     "ventilador de teto com luz silencioso controle remoto economica instalação fácil": "2026-11-22T15:07:26.520342-03:00",
-    "2026 t800 ultra 3 max mais recente smartwatch relógio inteligente nfc série 10 2": "2026-11-22T15:07:26.520342-03:00"
+    "2026 t800 ultra 3 max mais recente smartwatch relógio inteligente nfc série 10 2": "2026-11-22T15:07:26.520342-03:00",
+    "body splash feminino perfume deo colônia flooratta red 200ml": "2026-11-22T15:22:37.482341-03:00",
+    "suporte organizador de ovos dispenser para geladeira prático anti queda utensíli": "2026-11-22T15:22:37.482341-03:00"
   },
   "precos": {
     "SHOPEE-19697980846": {
@@ -256,10 +256,6 @@
     "SHOPEE-58208872077": {
       "preco": 59.9,
       "ts": "2026-11-19T16:26:41.693965-03:00"
-    },
-    "SHOPEE-22194652188": {
-      "preco": 46.99,
-      "ts": "2026-11-08T15:07:29.761374-03:00"
     },
     "SHOPEE-23597035403": {
       "preco": 9.59,
@@ -607,7 +603,7 @@
     },
     "SHOPEE-58264628974": {
       "preco": 29.5,
-      "ts": "2026-11-18T14:12:42.843908-03:00"
+      "ts": "2026-11-22T15:22:37.482341-03:00"
     },
     "SHOPEE-58214853079": {
       "preco": 18.99,
@@ -615,7 +611,7 @@
     },
     "SHOPEE-58258562285": {
       "preco": 4.99,
-      "ts": "2026-11-19T13:46:27.456954-03:00"
+      "ts": "2026-11-22T15:22:37.482341-03:00"
     },
     "SHOPEE-22197514607": {
       "preco": 100.0,
