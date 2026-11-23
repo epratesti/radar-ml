@@ -1,9 +1,5 @@
 {
   "ids": {
-    "SHOPEE-23198988208": "2026-11-20T14:26:13.169820-03:00",
-    "23198988208": "2026-11-20T14:26:13.169820-03:00",
-    "SHOPEE-20607193834": "2026-11-20T14:26:13.169820-03:00",
-    "20607193834": "2026-11-20T14:26:13.169820-03:00",
     "SHOPEE-22099191110": "2026-11-20T15:09:29.979560-03:00",
     "22099191110": "2026-11-20T15:09:29.979560-03:00",
     "SHOPEE-55359781665": "2026-11-20T15:09:29.979560-03:00",
@@ -69,11 +65,13 @@
     "SHOPEE-58250947403": "2026-11-23T13:16:36.633481-03:00",
     "58250947403": "2026-11-23T13:16:36.633481-03:00",
     "SHOPEE-23197485445": "2026-11-23T13:16:36.633481-03:00",
-    "23197485445": "2026-11-23T13:16:36.633481-03:00"
+    "23197485445": "2026-11-23T13:16:36.633481-03:00",
+    "SHOPEE-58200797547": "2026-11-23T15:09:10.888137-03:00",
+    "58200797547": "2026-11-23T15:09:10.888137-03:00",
+    "SHOPEE-21399069053": "2026-11-23T15:09:10.888137-03:00",
+    "21399069053": "2026-11-23T15:09:10.888137-03:00"
   },
   "titulos": {
-    "mouse pad desk pad couro borda costurada gigante antiderrapante tapete mesa game": "2026-11-20T14:26:13.169820-03:00",
-    "carregador portátil power bank universal 10 000mah e 5 000mah": "2026-11-20T14:26:13.169820-03:00",
     "garrafa térmica watersy 500ml 48h frio perfeita para academia futebol e dia a di": "2026-11-20T15:09:29.979560-03:00",
     "saco lavar tenis sapato máquina lavar roupas protege não danifica lavagem segura": "2026-11-20T15:09:29.979560-03:00",
     "1 2 5 suporte de parede multifuncional caixa de armazenamento casa para carregar": "2026-11-20T16:00:33.021503-03:00",
@@ -106,7 +104,9 @@
     "sandália ortopédica feminina terapêutica para esporão chinelo ortopédico": "2026-11-22T21:07:06.235824-03:00",
     "robô varredora aspirador de pó automática 3 em 1 limpeza doméstica robótico inte": "2026-11-22T21:07:06.235824-03:00",
     "mouse pad rgb grande gamer personalizado apoio ergonômico confortável antiderrap": "2026-11-23T13:16:36.633481-03:00",
-    "whey protein fuse 900g isolate dark lab": "2026-11-23T13:16:36.633481-03:00"
+    "whey protein fuse 900g isolate dark lab": "2026-11-23T13:16:36.633481-03:00",
+    "ez silver essence eau de parfum 100ml": "2026-11-23T15:09:10.888137-03:00",
+    "caneta paint original reparadora pintura automotiva permanente não sai na água t": "2026-11-23T15:09:10.888137-03:00"
   },
   "precos": {
     "SHOPEE-19697980846": {
@@ -171,11 +171,11 @@
     },
     "SHOPEE-58200797547": {
       "preco": 44.9,
-      "ts": "2026-11-20T13:02:44.768205-03:00"
+      "ts": "2026-11-23T15:09:10.888137-03:00"
     },
     "SHOPEE-21399069053": {
       "preco": 18.72,
-      "ts": "2026-11-18T14:12:42.843908-03:00"
+      "ts": "2026-11-23T15:09:10.888137-03:00"
     },
     "SHOPEE-23593847901": {
       "preco": 27.99,
@@ -304,10 +304,6 @@
     "SHOPEE-23797686527": {
       "preco": 14.49,
       "ts": "2026-11-18T16:18:58.451651-03:00"
-    },
-    "SHOPEE-18350470458": {
-      "preco": 29.9,
-      "ts": "2026-11-09T14:11:34.525734-03:00"
     },
     "SHOPEE-23218022612": {
       "preco": 24.48,
