@@ -1,5 +1,27 @@
 [
   {
+    "id": "SHOPEE-19499549872",
+    "titulo": "Robô Varredora/Aspirador De Pó Automática 3 Em 1 Limpeza Doméstica Robótico Inteligente E Silencioso",
+    "preco": 42.69,
+    "desconto": 55,
+    "vendas": 2362,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-m2wi3azb4nid1e",
+    "link": "https://s.shopee.com.br/3Vm2P3q2sC",
+    "fonte": "shopee",
+    "ts": "2026-11-22T21:07:06.235824-03:00"
+  },
+  {
+    "id": "SHOPEE-21297578652",
+    "titulo": "Sandália ortopédica feminina Terapêutica para Esporão Chinelo ortopédico",
+    "preco": 32.0,
+    "desconto": 44,
+    "vendas": 5458,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-m9t94f0t2lo94f",
+    "link": "https://s.shopee.com.br/5AuGZj1aRE",
+    "fonte": "shopee",
+    "ts": "2026-11-22T21:07:06.235824-03:00"
+  },
+  {
     "id": "SHOPEE-22791523448",
     "titulo": "Mini Aspirador De pó Portátil Automotivo e Casa Potente Recarregável",
     "preco": 20.99,
@@ -306,27 +328,5 @@
     "link": "https://s.shopee.com.br/2qWID5vdvu",
     "fonte": "shopee",
     "ts": "2026-11-20T15:09:29.979560-03:00"
-  },
-  {
-    "id": "SHOPEE-22099191110",
-    "titulo": "Garrafa Térmica WATERSY 500ml - 48h Frio! Perfeita para Academia, Futebol e Dia a Dia⚽🏋️",
-    "preco": 27.98,
-    "desconto": 76,
-    "vendas": 4303,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-820lb-msl12l6zbq4k5a",
-    "link": "https://s.shopee.com.br/20xBDYYUCW",
-    "fonte": "shopee",
-    "ts": "2026-11-20T15:09:29.979560-03:00"
-  },
-  {
-    "id": "SHOPEE-20607193834",
-    "titulo": "CARREGADOR PORTÁTIL POWER BANK UNIVERSAL 10.000MAH E 5.000MAH",
-    "preco": 37.49,
-    "desconto": 63,
-    "vendas": 4489,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztv-mkjwat5lsi6803",
-    "link": "https://s.shopee.com.br/9pg0kuQoAg",
-    "fonte": "shopee",
-    "ts": "2026-11-20T14:26:13.169820-03:00"
   }
 ]
