@@ -1,5 +1,27 @@
 [
   {
+    "id": "SHOPEE-23197485445",
+    "titulo": "Whey Protein Fuse 900g Isolate Dark Lab",
+    "preco": 78.9,
+    "desconto": 51,
+    "vendas": 4747,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lzaxtiavhw6de4",
+    "link": "https://s.shopee.com.br/3B9C0S9OVt",
+    "fonte": "shopee",
+    "ts": "2026-11-23T13:16:36.633481-03:00"
+  },
+  {
+    "id": "SHOPEE-58250947403",
+    "titulo": "Mouse Pad RGB Grande Gamer Personalizado Apoio Ergonômico Confortável Antiderrapante Premium",
+    "preco": 11.58,
+    "desconto": 71,
+    "vendas": 1616,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mgz5o43odp1ha5",
+    "link": "https://s.shopee.com.br/2gCvDSnjZV",
+    "fonte": "shopee",
+    "ts": "2026-11-23T13:16:36.633481-03:00"
+  },
+  {
     "id": "SHOPEE-19499549872",
     "titulo": "Robô Varredora/Aspirador De Pó Automática 3 Em 1 Limpeza Doméstica Robótico Inteligente E Silencioso",
     "preco": 42.69,
@@ -306,27 +328,5 @@
     "link": "https://s.shopee.com.br/3qOpOvRVTn",
     "fonte": "shopee",
     "ts": "2026-11-20T16:00:33.021503-03:00"
-  },
-  {
-    "id": "SHOPEE-23096150316",
-    "titulo": "1/2/5 Suporte De Parede Multifuncional Caixa De Armazenamento Casa Para Carregar Remoto Um Slot Organizadores para Casa",
-    "preco": 9.89,
-    "desconto": 62,
-    "vendas": 8781,
-    "imagem": "https://cf.shopee.com.br/file/sg-11134201-8258x-msf4mu1o9q1124",
-    "link": "https://s.shopee.com.br/6AmiOB16q0",
-    "fonte": "shopee",
-    "ts": "2026-11-20T16:00:33.021503-03:00"
-  },
-  {
-    "id": "SHOPEE-55359781665",
-    "titulo": "Saco lavar Tenis Sapato Máquina Lavar roupas Protege não danifica Lavagem Segura Lavanderia",
-    "preco": 22.89,
-    "desconto": 56,
-    "vendas": 7783,
-    "imagem": "https://cf.shopee.com.br/file/br-11134201-820l4-mvptt51ms269c3",
-    "link": "https://s.shopee.com.br/2qWID5vdvu",
-    "fonte": "shopee",
-    "ts": "2026-11-20T15:09:29.979560-03:00"
   }
 ]

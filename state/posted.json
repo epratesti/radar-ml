@@ -1,9 +1,5 @@
 {
   "ids": {
-    "SHOPEE-58200797547": "2026-11-20T13:02:44.768205-03:00",
-    "58200797547": "2026-11-20T13:02:44.768205-03:00",
-    "SHOPEE-22197514607": "2026-11-20T13:02:44.768205-03:00",
-    "22197514607": "2026-11-20T13:02:44.768205-03:00",
     "SHOPEE-23198988208": "2026-11-20T14:26:13.169820-03:00",
     "23198988208": "2026-11-20T14:26:13.169820-03:00",
     "SHOPEE-20607193834": "2026-11-20T14:26:13.169820-03:00",
@@ -69,11 +65,13 @@
     "SHOPEE-21297578652": "2026-11-22T21:07:06.235824-03:00",
     "21297578652": "2026-11-22T21:07:06.235824-03:00",
     "SHOPEE-19499549872": "2026-11-22T21:07:06.235824-03:00",
-    "19499549872": "2026-11-22T21:07:06.235824-03:00"
+    "19499549872": "2026-11-22T21:07:06.235824-03:00",
+    "SHOPEE-58250947403": "2026-11-23T13:16:36.633481-03:00",
+    "58250947403": "2026-11-23T13:16:36.633481-03:00",
+    "SHOPEE-23197485445": "2026-11-23T13:16:36.633481-03:00",
+    "23197485445": "2026-11-23T13:16:36.633481-03:00"
   },
   "titulos": {
-    "ez silver essence eau de parfum 100ml": "2026-11-20T13:02:44.768205-03:00",
-    "ventilador de mesa prime air maxx force 6 pás 60w avte01": "2026-11-20T13:02:44.768205-03:00",
     "mouse pad desk pad couro borda costurada gigante antiderrapante tapete mesa game": "2026-11-20T14:26:13.169820-03:00",
     "carregador portátil power bank universal 10 000mah e 5 000mah": "2026-11-20T14:26:13.169820-03:00",
     "garrafa térmica watersy 500ml 48h frio perfeita para academia futebol e dia a di": "2026-11-20T15:09:29.979560-03:00",
@@ -106,7 +104,9 @@
     "whey protein concentrado 1kg dark lab": "2026-11-22T18:18:18.950596-03:00",
     "mini aspirador de pó portátil automotivo e casa potente recarregável": "2026-11-22T18:18:18.950596-03:00",
     "sandália ortopédica feminina terapêutica para esporão chinelo ortopédico": "2026-11-22T21:07:06.235824-03:00",
-    "robô varredora aspirador de pó automática 3 em 1 limpeza doméstica robótico inte": "2026-11-22T21:07:06.235824-03:00"
+    "robô varredora aspirador de pó automática 3 em 1 limpeza doméstica robótico inte": "2026-11-22T21:07:06.235824-03:00",
+    "mouse pad rgb grande gamer personalizado apoio ergonômico confortável antiderrap": "2026-11-23T13:16:36.633481-03:00",
+    "whey protein fuse 900g isolate dark lab": "2026-11-23T13:16:36.633481-03:00"
   },
   "precos": {
     "SHOPEE-19697980846": {
@@ -147,7 +147,7 @@
     },
     "SHOPEE-23197485445": {
       "preco": 78.9,
-      "ts": "2026-11-20T09:12:59.934761-03:00"
+      "ts": "2026-11-23T13:16:36.633481-03:00"
     },
     "SHOPEE-22199220609": {
       "preco": 37.99,
@@ -434,8 +434,8 @@
       "ts": "2026-11-22T18:18:18.950596-03:00"
     },
     "SHOPEE-58250947403": {
-      "preco": 21.55,
-      "ts": "2026-11-11T20:09:55.687295-03:00"
+      "preco": 11.58,
+      "ts": "2026-11-23T13:16:36.633481-03:00"
     },
     "SHOPEE-58256926114": {
       "preco": 28.86,
