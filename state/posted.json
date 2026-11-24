@@ -1,13 +1,5 @@
 {
   "ids": {
-    "SHOPEE-22392993399": "2026-11-21T16:08:54.447601-03:00",
-    "22392993399": "2026-11-21T16:08:54.447601-03:00",
-    "SHOPEE-22397182247": "2026-11-21T16:08:54.447601-03:00",
-    "22397182247": "2026-11-21T16:08:54.447601-03:00",
-    "SHOPEE-58207663151": "2026-11-21T17:07:50.696150-03:00",
-    "58207663151": "2026-11-21T17:07:50.696150-03:00",
-    "SHOPEE-52905774499": "2026-11-21T17:07:50.696150-03:00",
-    "52905774499": "2026-11-21T17:07:50.696150-03:00",
     "SHOPEE-58203770266": "2026-11-21T20:44:23.468531-03:00",
     "58203770266": "2026-11-21T20:44:23.468531-03:00",
     "SHOPEE-23497594302": "2026-11-21T20:44:23.468531-03:00",
@@ -69,13 +61,13 @@
     "SHOPEE-22093160276": "2026-11-24T16:08:08.125661-03:00",
     "22093160276": "2026-11-24T16:08:08.125661-03:00",
     "SHOPEE-23198988208": "2026-11-24T16:08:08.125661-03:00",
-    "23198988208": "2026-11-24T16:08:08.125661-03:00"
+    "23198988208": "2026-11-24T16:08:08.125661-03:00",
+    "SHOPEE-22392993399": "2026-11-24T17:08:25.754413-03:00",
+    "22392993399": "2026-11-24T17:08:25.754413-03:00",
+    "SHOPEE-18499853587": "2026-11-24T17:08:25.754413-03:00",
+    "18499853587": "2026-11-24T17:08:25.754413-03:00"
   },
   "titulos": {
-    "hipercalórico dark mass 3kg dark lab whey protein creatina bcaa waxy maize premi": "2026-11-21T16:08:54.447601-03:00",
-    "carregador iphone turbo tipo c 20w cabo lightining para iphone carga rápida": "2026-11-21T16:08:54.447601-03:00",
-    "kit 50 a 300 formas descartável para airfryer antiaderente não suja cozinha frit": "2026-11-21T17:07:50.696150-03:00",
-    "espremedor elétrico de frutas automático laranja limão e outras frutas suco natu": "2026-11-21T17:07:50.696150-03:00",
     "ez vip rose eau de parfum 100ml lançamento exclusivo": "2026-11-21T20:44:23.468531-03:00",
     "romantic crown mochila de viagem expansível bolsa executiva notebook masculina e": "2026-11-21T20:44:23.468531-03:00",
     "b brobô varredora aspirador de pó automática 3 em 1 limpeza doméstica robótico i": "2026-11-22T11:15:51.423641-03:00",
@@ -106,7 +98,9 @@
     "kit 100 forma de airfryer descartavel antiaderente de papel cozinha quadrado fri": "2026-11-24T14:13:42.385527-03:00",
     "carregador de carregamento turbo 30w fonte 3a torre carregar celular tipo c com ": "2026-11-24T14:13:42.385527-03:00",
     "2026 nova série 8 relógio t800 ultra smart watch esportivo sem fio prova d água ": "2026-11-24T16:08:08.125661-03:00",
-    "mouse pad desk pad couro borda costurada gigante antiderrapante tapete mesa game": "2026-11-24T16:08:08.125661-03:00"
+    "mouse pad desk pad couro borda costurada gigante antiderrapante tapete mesa game": "2026-11-24T16:08:08.125661-03:00",
+    "hipercalórico dark mass 3kg dark lab whey protein creatina bcaa waxy maize premi": "2026-11-24T17:08:25.754413-03:00",
+    "carregador sem fio 5000 10000mah iphone": "2026-11-24T17:08:25.754413-03:00"
   },
   "precos": {
     "SHOPEE-19697980846": {
@@ -147,7 +141,7 @@
     },
     "SHOPEE-22392993399": {
       "preco": 78.9,
-      "ts": "2026-11-21T16:08:54.447601-03:00"
+      "ts": "2026-11-24T17:08:25.754413-03:00"
     },
     "SHOPEE-58262387632": {
       "preco": 61.52,
@@ -168,10 +162,6 @@
     "SHOPEE-21399069053": {
       "preco": 18.72,
       "ts": "2026-11-23T15:09:10.888137-03:00"
-    },
-    "SHOPEE-23593847901": {
-      "preco": 27.99,
-      "ts": "2026-11-10T17:07:21.809151-03:00"
     },
     "SHOPEE-20607193834": {
       "preco": 37.49,
@@ -291,7 +281,7 @@
     },
     "SHOPEE-18499853587": {
       "preco": 28.85,
-      "ts": "2026-11-19T14:29:56.498930-03:00"
+      "ts": "2026-11-24T17:08:25.754413-03:00"
     },
     "SHOPEE-23797686527": {
       "preco": 14.49,
