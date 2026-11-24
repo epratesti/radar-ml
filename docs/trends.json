@@ -1,5 +1,27 @@
 [
   {
+    "id": "SHOPEE-22197514607",
+    "titulo": "Ventilador de Mesa Prime Air Maxx Force 6 pás 60W AVTE01",
+    "preco": 100.0,
+    "desconto": 33,
+    "vendas": 4968,
+    "imagem": "https://cf.shopee.com.br/file/sg-11134201-825a4-mudirk0nhngna6",
+    "link": "https://s.shopee.com.br/Lp3xKxPV8",
+    "fonte": "shopee",
+    "ts": "2026-11-24T20:19:10.188891-03:00"
+  },
+  {
+    "id": "SHOPEE-58262387632",
+    "titulo": "Kit Renovadores Gota de Colágeno e Rosa Mosqueta Kokeshi",
+    "preco": 61.52,
+    "desconto": 42,
+    "vendas": 8059,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-820lc-mume7ufalreo72",
+    "link": "https://s.shopee.com.br/2VtUs8uBp7",
+    "fonte": "shopee",
+    "ts": "2026-11-24T20:19:10.188891-03:00"
+  },
+  {
     "id": "SHOPEE-23694435102",
     "titulo": "Chinelo Rasteira Feminina Adulto e Infantil com Nó Bico Quadrado Confortável e Elegante para Dia a Dia",
     "preco": 29.9,
@@ -306,27 +328,5 @@
     "link": "https://s.shopee.com.br/70LuMO1tTe",
     "fonte": "shopee",
     "ts": "2026-11-22T15:07:26.520342-03:00"
-  },
-  {
-    "id": "SHOPEE-45963749827",
-    "titulo": "ROMANTIC CROWN Copo Térmico Inox Portátil 1200ml/600ml com Tampa e Canudo Garrafa Térmica Inoxidável",
-    "preco": 34.98,
-    "desconto": 50,
-    "vendas": 6544,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-820lh-mtgcw2meqoeac6",
-    "link": "https://s.shopee.com.br/2gCs0mVwqa",
-    "fonte": "shopee",
-    "ts": "2026-11-22T13:11:15.015536-03:00"
-  },
-  {
-    "id": "SHOPEE-58264684239",
-    "titulo": "Kit Hidrabene Clareador Skincare Clareador Facial: Sabonete, Protetor 70 FPS e Sérum Multicorretivo",
-    "preco": 71.16,
-    "desconto": 56,
-    "vendas": 13866,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-820m8-mvoyqqp7u5tt80",
-    "link": "https://s.shopee.com.br/1LhXTzydBq",
-    "fonte": "shopee",
-    "ts": "2026-11-22T13:11:15.015536-03:00"
   }
 ]
