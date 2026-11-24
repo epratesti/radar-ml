@@ -1,7 +1,5 @@
 {
   "ids": {
-    "SHOPEE-49912454334": "2026-11-21T14:10:28.542449-03:00",
-    "49912454334": "2026-11-21T14:10:28.542449-03:00",
     "SHOPEE-22094238842": "2026-11-21T14:55:19.125918-03:00",
     "22094238842": "2026-11-21T14:55:19.125918-03:00",
     "SHOPEE-22099046331": "2026-11-21T14:55:19.125918-03:00",
@@ -67,10 +65,13 @@
     "SHOPEE-55359781665": "2026-11-24T12:13:18.868148-03:00",
     "55359781665": "2026-11-24T12:13:18.868148-03:00",
     "SHOPEE-20399896346": "2026-11-24T12:13:18.868148-03:00",
-    "20399896346": "2026-11-24T12:13:18.868148-03:00"
+    "20399896346": "2026-11-24T12:13:18.868148-03:00",
+    "SHOPEE-22794275506": "2026-11-24T14:13:42.385527-03:00",
+    "22794275506": "2026-11-24T14:13:42.385527-03:00",
+    "SHOPEE-58200879255": "2026-11-24T14:13:42.385527-03:00",
+    "58200879255": "2026-11-24T14:13:42.385527-03:00"
   },
   "titulos": {
-    "maria 5d wm curl cílios fácil ventilador extensões de atacado volume pré fabrica": "2026-11-21T14:10:28.542449-03:00",
     "body splash feminino arabe ayra 100ml primacial perfume floral": "2026-11-21T14:55:19.125918-03:00",
     "1 2 peças suporte de canto e reta porta shampoo prateleira para banheiro organiz": "2026-11-21T14:55:19.125918-03:00",
     "hipercalórico dark mass 3kg dark lab whey protein creatina bcaa waxy maize premi": "2026-11-21T16:08:54.447601-03:00",
@@ -103,7 +104,9 @@
     "kit facial kokeshi completo 3 passos hidratação e colágeno": "2026-11-23T19:18:52.773925-03:00",
     "kit carregador 67w turbo cabo tipo c carga rápida universal xiaomi redmi note e ": "2026-11-23T19:18:52.773925-03:00",
     "saco lavar tenis sapato máquina lavar roupas protege não danifica lavagem segura": "2026-11-24T12:13:18.868148-03:00",
-    "high quality non toxic reusable pour over coffee filter stainless steel coffee t": "2026-11-24T12:13:18.868148-03:00"
+    "high quality non toxic reusable pour over coffee filter stainless steel coffee t": "2026-11-24T12:13:18.868148-03:00",
+    "kit 100 forma de airfryer descartavel antiaderente de papel cozinha quadrado fri": "2026-11-24T14:13:42.385527-03:00",
+    "carregador de carregamento turbo 30w fonte 3a torre carregar celular tipo c com ": "2026-11-24T14:13:42.385527-03:00"
   },
   "precos": {
     "SHOPEE-19697980846": {
@@ -117,10 +120,6 @@
     "SHOPEE-22094238842": {
       "preco": 24.9,
       "ts": "2026-11-21T14:55:19.125918-03:00"
-    },
-    "SHOPEE-58255159172": {
-      "preco": 20.47,
-      "ts": "2026-11-10T13:11:20.508437-03:00"
     },
     "SHOPEE-23898692172": {
       "preco": 57.77,
@@ -318,10 +317,6 @@
       "preco": 14.9,
       "ts": "2026-11-19T11:15:36.172465-03:00"
     },
-    "SHOPEE-58202148614": {
-      "preco": 34.99,
-      "ts": "2026-11-10T12:13:31.854234-03:00"
-    },
     "SHOPEE-21297578652": {
       "preco": 32.0,
       "ts": "2026-11-22T21:07:06.235824-03:00"
@@ -372,7 +367,7 @@
     },
     "SHOPEE-22794275506": {
       "preco": 16.98,
-      "ts": "2026-11-11T12:11:56.223100-03:00"
+      "ts": "2026-11-24T14:13:42.385527-03:00"
     },
     "SHOPEE-22593614484": {
       "preco": 17.96,
@@ -459,8 +454,8 @@
       "ts": "2026-11-14T12:14:25.600095-03:00"
     },
     "SHOPEE-58200879255": {
-      "preco": 24.99,
-      "ts": "2026-11-14T15:08:31.221728-03:00"
+      "preco": 24.98,
+      "ts": "2026-11-24T14:13:42.385527-03:00"
     },
     "SHOPEE-22594546423": {
       "preco": 14.97,
