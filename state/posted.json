@@ -1,9 +1,5 @@
 {
   "ids": {
-    "SHOPEE-22094238842": "2026-11-21T14:55:19.125918-03:00",
-    "22094238842": "2026-11-21T14:55:19.125918-03:00",
-    "SHOPEE-22099046331": "2026-11-21T14:55:19.125918-03:00",
-    "22099046331": "2026-11-21T14:55:19.125918-03:00",
     "SHOPEE-22392993399": "2026-11-21T16:08:54.447601-03:00",
     "22392993399": "2026-11-21T16:08:54.447601-03:00",
     "SHOPEE-22397182247": "2026-11-21T16:08:54.447601-03:00",
@@ -69,11 +65,13 @@
     "SHOPEE-22794275506": "2026-11-24T14:13:42.385527-03:00",
     "22794275506": "2026-11-24T14:13:42.385527-03:00",
     "SHOPEE-58200879255": "2026-11-24T14:13:42.385527-03:00",
-    "58200879255": "2026-11-24T14:13:42.385527-03:00"
+    "58200879255": "2026-11-24T14:13:42.385527-03:00",
+    "SHOPEE-22093160276": "2026-11-24T16:08:08.125661-03:00",
+    "22093160276": "2026-11-24T16:08:08.125661-03:00",
+    "SHOPEE-23198988208": "2026-11-24T16:08:08.125661-03:00",
+    "23198988208": "2026-11-24T16:08:08.125661-03:00"
   },
   "titulos": {
-    "body splash feminino arabe ayra 100ml primacial perfume floral": "2026-11-21T14:55:19.125918-03:00",
-    "1 2 peças suporte de canto e reta porta shampoo prateleira para banheiro organiz": "2026-11-21T14:55:19.125918-03:00",
     "hipercalórico dark mass 3kg dark lab whey protein creatina bcaa waxy maize premi": "2026-11-21T16:08:54.447601-03:00",
     "carregador iphone turbo tipo c 20w cabo lightining para iphone carga rápida": "2026-11-21T16:08:54.447601-03:00",
     "kit 50 a 300 formas descartável para airfryer antiaderente não suja cozinha frit": "2026-11-21T17:07:50.696150-03:00",
@@ -106,7 +104,9 @@
     "saco lavar tenis sapato máquina lavar roupas protege não danifica lavagem segura": "2026-11-24T12:13:18.868148-03:00",
     "high quality non toxic reusable pour over coffee filter stainless steel coffee t": "2026-11-24T12:13:18.868148-03:00",
     "kit 100 forma de airfryer descartavel antiaderente de papel cozinha quadrado fri": "2026-11-24T14:13:42.385527-03:00",
-    "carregador de carregamento turbo 30w fonte 3a torre carregar celular tipo c com ": "2026-11-24T14:13:42.385527-03:00"
+    "carregador de carregamento turbo 30w fonte 3a torre carregar celular tipo c com ": "2026-11-24T14:13:42.385527-03:00",
+    "2026 nova série 8 relógio t800 ultra smart watch esportivo sem fio prova d água ": "2026-11-24T16:08:08.125661-03:00",
+    "mouse pad desk pad couro borda costurada gigante antiderrapante tapete mesa game": "2026-11-24T16:08:08.125661-03:00"
   },
   "precos": {
     "SHOPEE-19697980846": {
@@ -115,7 +115,7 @@
     },
     "SHOPEE-23198988208": {
       "preco": 15.89,
-      "ts": "2026-11-20T14:26:13.169820-03:00"
+      "ts": "2026-11-24T16:08:08.125661-03:00"
     },
     "SHOPEE-22094238842": {
       "preco": 24.9,
@@ -279,7 +279,7 @@
     },
     "SHOPEE-22093160276": {
       "preco": 43.99,
-      "ts": "2026-11-20T21:41:58.531510-03:00"
+      "ts": "2026-11-24T16:08:08.125661-03:00"
     },
     "SHOPEE-22099191110": {
       "preco": 27.98,
