@@ -1,13 +1,5 @@
 {
   "ids": {
-    "SHOPEE-23994387054": "2026-11-20T21:41:58.531510-03:00",
-    "23994387054": "2026-11-20T21:41:58.531510-03:00",
-    "SHOPEE-22093160276": "2026-11-20T21:41:58.531510-03:00",
-    "22093160276": "2026-11-20T21:41:58.531510-03:00",
-    "SHOPEE-23093960843": "2026-11-21T10:16:30.974854-03:00",
-    "23093960843": "2026-11-21T10:16:30.974854-03:00",
-    "SHOPEE-23195818961": "2026-11-21T10:16:30.974854-03:00",
-    "23195818961": "2026-11-21T10:16:30.974854-03:00",
     "SHOPEE-49912454334": "2026-11-21T14:10:28.542449-03:00",
     "49912454334": "2026-11-21T14:10:28.542449-03:00",
     "SHOPEE-22094238842": "2026-11-21T14:55:19.125918-03:00",
@@ -71,13 +63,13 @@
     "SHOPEE-22494941454": "2026-11-23T19:18:52.773925-03:00",
     "22494941454": "2026-11-23T19:18:52.773925-03:00",
     "SHOPEE-58259749592": "2026-11-23T19:18:52.773925-03:00",
-    "58259749592": "2026-11-23T19:18:52.773925-03:00"
+    "58259749592": "2026-11-23T19:18:52.773925-03:00",
+    "SHOPEE-55359781665": "2026-11-24T12:13:18.868148-03:00",
+    "55359781665": "2026-11-24T12:13:18.868148-03:00",
+    "SHOPEE-20399896346": "2026-11-24T12:13:18.868148-03:00",
+    "20399896346": "2026-11-24T12:13:18.868148-03:00"
   },
   "titulos": {
-    "kit dupla renovadores faciais kokeshi pele porcelana olhos gueixa": "2026-11-20T21:41:58.531510-03:00",
-    "2026 nova série 8 relógio t800 ultra smart watch esportivo sem fio prova d água ": "2026-11-20T21:41:58.531510-03:00",
-    "pasta sanfonada para documento com 12 divisórias e pasta prancheta tamanho a4 es": "2026-11-21T10:16:30.974854-03:00",
-    "carregador de chaveiro portátil 1500mah ultra compacto mini pacote de bateria ca": "2026-11-21T10:16:30.974854-03:00",
     "maria 5d wm curl cílios fácil ventilador extensões de atacado volume pré fabrica": "2026-11-21T14:10:28.542449-03:00",
     "body splash feminino arabe ayra 100ml primacial perfume floral": "2026-11-21T14:55:19.125918-03:00",
     "1 2 peças suporte de canto e reta porta shampoo prateleira para banheiro organiz": "2026-11-21T14:55:19.125918-03:00",
@@ -109,7 +101,9 @@
     "carregador portátil indução para sem fio bateria carga 3000 5000 10000mah": "2026-11-23T16:10:34.389491-03:00",
     "mini aspirador de pó 3 em 1 a vacuo usb portátil recarregavel se8010": "2026-11-23T17:08:53.992527-03:00",
     "kit facial kokeshi completo 3 passos hidratação e colágeno": "2026-11-23T19:18:52.773925-03:00",
-    "kit carregador 67w turbo cabo tipo c carga rápida universal xiaomi redmi note e ": "2026-11-23T19:18:52.773925-03:00"
+    "kit carregador 67w turbo cabo tipo c carga rápida universal xiaomi redmi note e ": "2026-11-23T19:18:52.773925-03:00",
+    "saco lavar tenis sapato máquina lavar roupas protege não danifica lavagem segura": "2026-11-24T12:13:18.868148-03:00",
+    "high quality non toxic reusable pour over coffee filter stainless steel coffee t": "2026-11-24T12:13:18.868148-03:00"
   },
   "precos": {
     "SHOPEE-19697980846": {
@@ -139,10 +133,6 @@
     "SHOPEE-58259749592": {
       "preco": 29.51,
       "ts": "2026-11-23T19:18:52.773925-03:00"
-    },
-    "SHOPEE-46360468172": {
-      "preco": 35.49,
-      "ts": "2026-11-10T07:09:13.798806-03:00"
     },
     "SHOPEE-22494941454": {
       "preco": 65.03,
@@ -201,8 +191,8 @@
       "ts": "2026-11-23T16:10:34.389491-03:00"
     },
     "SHOPEE-55359781665": {
-      "preco": 22.89,
-      "ts": "2026-11-20T15:09:29.979560-03:00"
+      "preco": 21.9,
+      "ts": "2026-11-24T12:13:18.868148-03:00"
     },
     "SHOPEE-23897644397": {
       "preco": 26.88,
@@ -328,14 +318,6 @@
       "preco": 14.9,
       "ts": "2026-11-19T11:15:36.172465-03:00"
     },
-    "SHOPEE-58209955451": {
-      "preco": 17.87,
-      "ts": "2026-11-10T08:10:53.877913-03:00"
-    },
-    "SHOPEE-21869498082": {
-      "preco": 10.99,
-      "ts": "2026-11-10T10:15:56.712994-03:00"
-    },
     "SHOPEE-58202148614": {
       "preco": 34.99,
       "ts": "2026-11-10T12:13:31.854234-03:00"
@@ -378,7 +360,7 @@
     },
     "SHOPEE-20399896346": {
       "preco": 18.99,
-      "ts": "2026-11-18T08:12:00.504450-03:00"
+      "ts": "2026-11-24T12:13:18.868148-03:00"
     },
     "SHOPEE-23994798337": {
       "preco": 11.99,
