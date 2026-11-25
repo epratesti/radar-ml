@@ -1,7 +1,5 @@
 {
   "ids": {
-    "SHOPEE-58256926114": "2026-11-22T16:09:00.215968-03:00",
-    "58256926114": "2026-11-22T16:09:00.215968-03:00",
     "SHOPEE-22892686035": "2026-11-25T13:13:48.016936-03:00",
     "22892686035": "2026-11-25T13:13:48.016936-03:00",
     "SHOPEE-23293253949": "2026-11-22T18:18:18.950596-03:00",
@@ -59,10 +57,13 @@
     "SHOPEE-58258562285": "2026-11-25T16:08:58.411378-03:00",
     "58258562285": "2026-11-25T16:08:58.411378-03:00",
     "SHOPEE-23497594302": "2026-11-25T16:08:58.411378-03:00",
-    "23497594302": "2026-11-25T16:08:58.411378-03:00"
+    "23497594302": "2026-11-25T16:08:58.411378-03:00",
+    "SHOPEE-22094238842": "2026-11-25T17:09:04.573040-03:00",
+    "22094238842": "2026-11-25T17:09:04.573040-03:00",
+    "SHOPEE-22199220609": "2026-11-25T17:09:04.573040-03:00",
+    "22199220609": "2026-11-25T17:09:04.573040-03:00"
   },
   "titulos": {
-    "carregador portátil 5000mah 10000mah indução sem fio bateria carga": "2026-11-22T16:09:00.215968-03:00",
     "fone de ouvido entrada lightning para iphone microfone bluetooth": "2026-11-25T13:13:48.016936-03:00",
     "whey protein concentrado 1kg dark lab": "2026-11-22T18:18:18.950596-03:00",
     "mini aspirador de pó portátil automotivo e casa potente recarregável": "2026-11-22T18:18:18.950596-03:00",
@@ -91,7 +92,9 @@
     "ventilador de teto com luz silencioso controle remoto economica instalação fácil": "2026-11-25T15:08:46.020112-03:00",
     "garrafa térmica watersy 500ml 48h frio perfeita para academia futebol e dia a di": "2026-11-25T15:08:46.020112-03:00",
     "suporte organizador de ovos dispenser para geladeira prático anti queda utensíli": "2026-11-25T16:08:58.411378-03:00",
-    "romantic crown mochila de viagem expansível bolsa executiva notebook masculina e": "2026-11-25T16:08:58.411378-03:00"
+    "romantic crown mochila de viagem expansível bolsa executiva notebook masculina e": "2026-11-25T16:08:58.411378-03:00",
+    "body splash feminino arabe ayra 100ml primacial perfume floral": "2026-11-25T17:09:04.573040-03:00",
+    "b brobô varredora aspirador de pó automática 3 em 1 limpeza doméstica robótico i": "2026-11-25T17:09:04.573040-03:00"
   },
   "precos": {
     "SHOPEE-19697980846": {
@@ -104,7 +107,7 @@
     },
     "SHOPEE-22094238842": {
       "preco": 24.9,
-      "ts": "2026-11-21T14:55:19.125918-03:00"
+      "ts": "2026-11-25T17:09:04.573040-03:00"
     },
     "SHOPEE-23898692172": {
       "preco": 57.77,
@@ -127,8 +130,8 @@
       "ts": "2026-11-23T13:16:36.633481-03:00"
     },
     "SHOPEE-22199220609": {
-      "preco": 37.99,
-      "ts": "2026-11-22T11:15:51.423641-03:00"
+      "preco": 39.99,
+      "ts": "2026-11-25T17:09:04.573040-03:00"
     },
     "SHOPEE-22392993399": {
       "preco": 78.9,

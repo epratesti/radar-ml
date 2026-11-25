@@ -1,5 +1,27 @@
 [
   {
+    "id": "SHOPEE-22199220609",
+    "titulo": "B&BRobô Varredora/Aspirador De Pó Automática 3 Em 1 Limpeza Doméstica Robótico Inteligente E Silencioso",
+    "preco": 39.99,
+    "desconto": 67,
+    "vendas": 9294,
+    "imagem": "https://cf.shopee.com.br/file/sg-11134201-821dm-mh9dj2twkavd00",
+    "link": "https://s.shopee.com.br/4qHPzVkyAK",
+    "fonte": "shopee",
+    "ts": "2026-11-25T17:09:04.573040-03:00"
+  },
+  {
+    "id": "SHOPEE-22094238842",
+    "titulo": "BODY SPLASH FEMININO ARABE AYRA 100ML - PRIMACIAL PERFUME FLORAL",
+    "preco": 24.9,
+    "desconto": 38,
+    "vendas": 6405,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-820m1-mukoqlfdn280c5",
+    "link": "https://s.shopee.com.br/4LLE6Vfhe2",
+    "fonte": "shopee",
+    "ts": "2026-11-25T17:09:04.573040-03:00"
+  },
+  {
     "id": "SHOPEE-23497594302",
     "titulo": "ROMANTIC CROWN Mochila de Viagem Expansível, Bolsa Executiva Notebook Masculina e Feminina Trabalho,Grande,Reforçada",
     "preco": 99.98,
@@ -306,27 +328,5 @@
     "link": "https://s.shopee.com.br/4fxznClbVJ",
     "fonte": "shopee",
     "ts": "2026-11-22T18:18:18.950596-03:00"
-  },
-  {
-    "id": "SHOPEE-23293253949",
-    "titulo": "Whey Protein Concentrado 1Kg Dark Lab",
-    "preco": 136.9,
-    "desconto": 40,
-    "vendas": 2474,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lzkq1yrpylqtc1",
-    "link": "https://s.shopee.com.br/3Vm2P487q3",
-    "fonte": "shopee",
-    "ts": "2026-11-22T18:18:18.950596-03:00"
-  },
-  {
-    "id": "SHOPEE-22892686035",
-    "titulo": "Fone de Ouvido entrada lightning para Iphone Microfone Bluetooth",
-    "preco": 10.49,
-    "desconto": 65,
-    "vendas": 7159,
-    "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rbkc-lpcgfnwj651k1e",
-    "link": "https://s.shopee.com.br/6VPdphLDxv",
-    "fonte": "shopee",
-    "ts": "2026-11-22T16:09:00.215968-03:00"
   }
 ]
