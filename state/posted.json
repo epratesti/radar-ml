@@ -1,17 +1,5 @@
 {
   "ids": {
-    "SHOPEE-58203770266": "2026-11-21T20:44:23.468531-03:00",
-    "58203770266": "2026-11-21T20:44:23.468531-03:00",
-    "SHOPEE-23497594302": "2026-11-21T20:44:23.468531-03:00",
-    "23497594302": "2026-11-21T20:44:23.468531-03:00",
-    "SHOPEE-22199220609": "2026-11-22T11:15:51.423641-03:00",
-    "22199220609": "2026-11-22T11:15:51.423641-03:00",
-    "SHOPEE-23893966960": "2026-11-22T11:15:51.423641-03:00",
-    "23893966960": "2026-11-22T11:15:51.423641-03:00",
-    "SHOPEE-58264684239": "2026-11-22T13:11:15.015536-03:00",
-    "58264684239": "2026-11-22T13:11:15.015536-03:00",
-    "SHOPEE-45963749827": "2026-11-22T13:11:15.015536-03:00",
-    "45963749827": "2026-11-22T13:11:15.015536-03:00",
     "SHOPEE-23898692172": "2026-11-22T15:07:26.520342-03:00",
     "23898692172": "2026-11-22T15:07:26.520342-03:00",
     "SHOPEE-23399193375": "2026-11-22T15:07:26.520342-03:00",
@@ -22,8 +10,8 @@
     "58258562285": "2026-11-22T15:22:37.482341-03:00",
     "SHOPEE-58256926114": "2026-11-22T16:09:00.215968-03:00",
     "58256926114": "2026-11-22T16:09:00.215968-03:00",
-    "SHOPEE-22892686035": "2026-11-22T16:09:00.215968-03:00",
-    "22892686035": "2026-11-22T16:09:00.215968-03:00",
+    "SHOPEE-22892686035": "2026-11-25T13:13:48.016936-03:00",
+    "22892686035": "2026-11-25T13:13:48.016936-03:00",
     "SHOPEE-23293253949": "2026-11-22T18:18:18.950596-03:00",
     "23293253949": "2026-11-22T18:18:18.950596-03:00",
     "SHOPEE-22791523448": "2026-11-22T18:18:18.950596-03:00",
@@ -74,18 +62,12 @@
     "22197514607": "2026-11-24T20:19:10.188891-03:00"
   },
   "titulos": {
-    "ez vip rose eau de parfum 100ml lançamento exclusivo": "2026-11-21T20:44:23.468531-03:00",
-    "romantic crown mochila de viagem expansível bolsa executiva notebook masculina e": "2026-11-21T20:44:23.468531-03:00",
-    "b brobô varredora aspirador de pó automática 3 em 1 limpeza doméstica robótico i": "2026-11-22T11:15:51.423641-03:00",
-    "principia kit essencial gl 03 ch vc ps 01 fps 60 ou ps 05 fps 70": "2026-11-22T11:15:51.423641-03:00",
-    "kit hidrabene clareador skincare clareador facial sabonete protetor 70 fps e sér": "2026-11-22T13:11:15.015536-03:00",
-    "romantic crown copo térmico inox portátil 1200ml 600ml com tampa e canudo garraf": "2026-11-22T13:11:15.015536-03:00",
     "ventilador de teto com luz silencioso controle remoto economica instalação fácil": "2026-11-22T15:07:26.520342-03:00",
     "2026 t800 ultra 3 max mais recente smartwatch relógio inteligente nfc série 10 2": "2026-11-22T15:07:26.520342-03:00",
     "body splash feminino perfume deo colônia flooratta red 200ml": "2026-11-22T15:22:37.482341-03:00",
     "suporte organizador de ovos dispenser para geladeira prático anti queda utensíli": "2026-11-22T15:22:37.482341-03:00",
     "carregador portátil 5000mah 10000mah indução sem fio bateria carga": "2026-11-22T16:09:00.215968-03:00",
-    "fone de ouvido entrada lightning para iphone microfone bluetooth": "2026-11-22T16:09:00.215968-03:00",
+    "fone de ouvido entrada lightning para iphone microfone bluetooth": "2026-11-25T13:13:48.016936-03:00",
     "whey protein concentrado 1kg dark lab": "2026-11-22T18:18:18.950596-03:00",
     "mini aspirador de pó portátil automotivo e casa potente recarregável": "2026-11-22T18:18:18.950596-03:00",
     "sandália ortopédica feminina terapêutica para esporão chinelo ortopédico": "2026-11-22T21:07:06.235824-03:00",
@@ -204,10 +186,6 @@
       "preco": 27.48,
       "ts": "2026-11-14T19:09:49.384588-03:00"
     },
-    "SHOPEE-22499056874": {
-      "preco": 53.0,
-      "ts": "2026-11-11T11:15:56.144170-03:00"
-    },
     "SHOPEE-58264684239": {
       "preco": 71.16,
       "ts": "2026-11-22T13:11:15.015536-03:00"
@@ -300,10 +278,6 @@
       "preco": 29.9,
       "ts": "2026-11-24T18:03:36.201592-03:00"
     },
-    "SHOPEE-17255136776": {
-      "preco": 18.79,
-      "ts": "2026-11-11T10:14:43.616810-03:00"
-    },
     "SHOPEE-22397182247": {
       "preco": 16.29,
       "ts": "2026-11-21T16:08:54.447601-03:00"
@@ -325,8 +299,8 @@
       "ts": "2026-11-20T16:00:33.021503-03:00"
     },
     "SHOPEE-22892686035": {
-      "preco": 10.49,
-      "ts": "2026-11-22T16:09:00.215968-03:00"
+      "preco": 8.99,
+      "ts": "2026-11-25T13:13:48.016936-03:00"
     },
     "SHOPEE-23399193375": {
       "preco": 39.8,
