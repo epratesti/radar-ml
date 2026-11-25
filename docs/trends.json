@@ -1,5 +1,27 @@
 [
   {
+    "id": "SHOPEE-23497594302",
+    "titulo": "ROMANTIC CROWN Mochila de Viagem Expansível, Bolsa Executiva Notebook Masculina e Feminina Trabalho,Grande,Reforçada",
+    "preco": 99.98,
+    "desconto": 86,
+    "vendas": 4175,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-820la-mu7g0m7pk9vl21",
+    "link": "https://s.shopee.com.br/6VPhIeefb6",
+    "fonte": "shopee",
+    "ts": "2026-11-25T16:08:58.411378-03:00"
+  },
+  {
+    "id": "SHOPEE-58258562285",
+    "titulo": "Suporte Organizador De Ovos Dispenser Para Geladeira Prático Anti-Queda Utensílios De Cozinha Original",
+    "preco": 4.99,
+    "desconto": 75,
+    "vendas": 8847,
+    "imagem": "https://cf.shopee.com.br/file/sg-11134201-81zvu-mmvetjba5xq9cb",
+    "link": "https://s.shopee.com.br/6VPicMZfjX",
+    "fonte": "shopee",
+    "ts": "2026-11-25T16:08:58.411378-03:00"
+  },
+  {
     "id": "SHOPEE-22099191110",
     "titulo": "Garrafa Térmica WATERSY 500ml - 48h Frio! Perfeita para Academia, Futebol e Dia a Dia⚽🏋️",
     "preco": 27.99,
@@ -306,27 +328,5 @@
     "link": "https://s.shopee.com.br/6VPdphLDxv",
     "fonte": "shopee",
     "ts": "2026-11-22T16:09:00.215968-03:00"
-  },
-  {
-    "id": "SHOPEE-58256926114",
-    "titulo": "Carregador Portátil 5000Mah/10000Mah Indução Sem fio Bateria Carga",
-    "preco": 28.86,
-    "desconto": 83,
-    "vendas": 9910,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-820ln-mlske0kwri132f",
-    "link": "https://s.shopee.com.br/7fbbDqq38t",
-    "fonte": "shopee",
-    "ts": "2026-11-22T16:09:00.215968-03:00"
-  },
-  {
-    "id": "SHOPEE-58258562285",
-    "titulo": "Suporte Organizador De Ovos Dispenser Para Geladeira Prático Anti-Queda Utensílios De Cozinha Original",
-    "preco": 4.99,
-    "desconto": 75,
-    "vendas": 8986,
-    "imagem": "https://cf.shopee.com.br/file/sg-11134201-81zvu-mmvetjba5xq9cb",
-    "link": "https://s.shopee.com.br/906yl73I3d",
-    "fonte": "shopee",
-    "ts": "2026-11-22T15:22:37.482341-03:00"
   }
 ]
