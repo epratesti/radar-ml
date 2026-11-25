@@ -1,5 +1,27 @@
 [
   {
+    "id": "SHOPEE-23098440348",
+    "titulo": "K12 Caixa de som sem fio com microfone Karaokê, Mini Alto-falante Bluetooth portátil 1/2 Mic",
+    "preco": 27.48,
+    "desconto": 73,
+    "vendas": 8985,
+    "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rff1-m96a3707agyh54",
+    "link": "https://s.shopee.com.br/9073jFceJS",
+    "fonte": "shopee",
+    "ts": "2026-11-25T18:09:44.343391-03:00"
+  },
+  {
+    "id": "SHOPEE-23198212585",
+    "titulo": "Whey Ultra Protein Concentrado Pote 900g - FTW",
+    "preco": 69.99,
+    "desconto": 36,
+    "vendas": 3597,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztc-mj9vukr0feo684",
+    "link": "https://s.shopee.com.br/2gCvPXBIWo",
+    "fonte": "shopee",
+    "ts": "2026-11-25T18:09:44.343391-03:00"
+  },
+  {
     "id": "SHOPEE-22199220609",
     "titulo": "B&BRobô Varredora/Aspirador De Pó Automática 3 Em 1 Limpeza Doméstica Robótico Inteligente E Silencioso",
     "preco": 39.99,
@@ -306,27 +328,5 @@
     "link": "https://s.shopee.com.br/3Vm2P3q2sC",
     "fonte": "shopee",
     "ts": "2026-11-22T21:07:06.235824-03:00"
-  },
-  {
-    "id": "SHOPEE-21297578652",
-    "titulo": "Sandália ortopédica feminina Terapêutica para Esporão Chinelo ortopédico",
-    "preco": 32.0,
-    "desconto": 44,
-    "vendas": 5458,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-m9t94f0t2lo94f",
-    "link": "https://s.shopee.com.br/5AuGZj1aRE",
-    "fonte": "shopee",
-    "ts": "2026-11-22T21:07:06.235824-03:00"
-  },
-  {
-    "id": "SHOPEE-22791523448",
-    "titulo": "Mini Aspirador De pó Portátil Automotivo e Casa Potente Recarregável",
-    "preco": 20.99,
-    "desconto": 79,
-    "vendas": 6656,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-820mf-mlcl5xgwbp530f",
-    "link": "https://s.shopee.com.br/4fxznClbVJ",
-    "fonte": "shopee",
-    "ts": "2026-11-22T18:18:18.950596-03:00"
   }
 ]
