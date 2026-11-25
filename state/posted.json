@@ -1,9 +1,5 @@
 {
   "ids": {
-    "SHOPEE-23898692172": "2026-11-22T15:07:26.520342-03:00",
-    "23898692172": "2026-11-22T15:07:26.520342-03:00",
-    "SHOPEE-23399193375": "2026-11-22T15:07:26.520342-03:00",
-    "23399193375": "2026-11-22T15:07:26.520342-03:00",
     "SHOPEE-58264628974": "2026-11-22T15:22:37.482341-03:00",
     "58264628974": "2026-11-22T15:22:37.482341-03:00",
     "SHOPEE-58258562285": "2026-11-22T15:22:37.482341-03:00",
@@ -59,11 +55,13 @@
     "SHOPEE-58262387632": "2026-11-24T20:19:10.188891-03:00",
     "58262387632": "2026-11-24T20:19:10.188891-03:00",
     "SHOPEE-22197514607": "2026-11-24T20:19:10.188891-03:00",
-    "22197514607": "2026-11-24T20:19:10.188891-03:00"
+    "22197514607": "2026-11-24T20:19:10.188891-03:00",
+    "SHOPEE-23898692172": "2026-11-25T15:08:46.020112-03:00",
+    "23898692172": "2026-11-25T15:08:46.020112-03:00",
+    "SHOPEE-22099191110": "2026-11-25T15:08:46.020112-03:00",
+    "22099191110": "2026-11-25T15:08:46.020112-03:00"
   },
   "titulos": {
-    "ventilador de teto com luz silencioso controle remoto economica instalação fácil": "2026-11-22T15:07:26.520342-03:00",
-    "2026 t800 ultra 3 max mais recente smartwatch relógio inteligente nfc série 10 2": "2026-11-22T15:07:26.520342-03:00",
     "body splash feminino perfume deo colônia flooratta red 200ml": "2026-11-22T15:22:37.482341-03:00",
     "suporte organizador de ovos dispenser para geladeira prático anti queda utensíli": "2026-11-22T15:22:37.482341-03:00",
     "carregador portátil 5000mah 10000mah indução sem fio bateria carga": "2026-11-22T16:09:00.215968-03:00",
@@ -91,7 +89,9 @@
     "carregador sem fio 5000 10000mah iphone": "2026-11-24T17:08:25.754413-03:00",
     "chinelo rasteira feminina adulto e infantil com nó bico quadrado confortável e e": "2026-11-24T18:03:36.201592-03:00",
     "kit renovadores gota de colágeno e rosa mosqueta kokeshi": "2026-11-24T20:19:10.188891-03:00",
-    "ventilador de mesa prime air maxx force 6 pás 60w avte01": "2026-11-24T20:19:10.188891-03:00"
+    "ventilador de mesa prime air maxx force 6 pás 60w avte01": "2026-11-24T20:19:10.188891-03:00",
+    "ventilador de teto com luz silencioso controle remoto economica instalação fácil": "2026-11-25T15:08:46.020112-03:00",
+    "garrafa térmica watersy 500ml 48h frio perfeita para academia futebol e dia a di": "2026-11-25T15:08:46.020112-03:00"
   },
   "precos": {
     "SHOPEE-19697980846": {
@@ -108,7 +108,7 @@
     },
     "SHOPEE-23898692172": {
       "preco": 57.77,
-      "ts": "2026-11-22T15:07:26.520342-03:00"
+      "ts": "2026-11-25T15:08:46.020112-03:00"
     },
     "SHOPEE-23994387054": {
       "preco": 34.57,
@@ -259,8 +259,8 @@
       "ts": "2026-11-24T16:08:08.125661-03:00"
     },
     "SHOPEE-22099191110": {
-      "preco": 27.98,
-      "ts": "2026-11-20T15:09:29.979560-03:00"
+      "preco": 27.99,
+      "ts": "2026-11-25T15:08:46.020112-03:00"
     },
     "SHOPEE-54557028525": {
       "preco": 37.44,
@@ -329,10 +329,6 @@
     "SHOPEE-22794275506": {
       "preco": 16.98,
       "ts": "2026-11-24T14:13:42.385527-03:00"
-    },
-    "SHOPEE-22593614484": {
-      "preco": 17.96,
-      "ts": "2026-11-11T15:08:41.340013-03:00"
     },
     "SHOPEE-58250184742": {
       "preco": 13.98,
