@@ -1,5 +1,16 @@
 [
   {
+    "id": "SHOPEE-58200797547",
+    "titulo": "EZ Silver Essence - Eau de Parfum 100ml",
+    "preco": 44.9,
+    "desconto": 35,
+    "vendas": 6510,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mhbzozlyxp8l74",
+    "link": "https://s.shopee.com.br/1gKUW5MS1v",
+    "fonte": "shopee",
+    "ts": "2026-11-26T17:03:02.650837-03:00"
+  },
+  {
     "id": "SHOPEE-23399193375",
     "titulo": "2026 T800 Ultra 3 MAX Mais Recente Smartwatch Relógio Inteligente NFC Série 10 2.19Polegadas Sem Fio",
     "preco": 39.9,
@@ -317,16 +328,5 @@
     "link": "https://s.shopee.com.br/6q2UA52Wob",
     "fonte": "shopee",
     "ts": "2026-11-23T16:10:34.389491-03:00"
-  },
-  {
-    "id": "SHOPEE-21399069053",
-    "titulo": "Caneta Paint Original Reparadora Pintura Automotiva Permanente Não Sai Na Água Tira Riscos Carro Moto Retoque de Placa Tênis Pneus para Ferro Metal Madeira Plástico Gesso Vidro Couro Tecido Cores Preto Branco Prata (Cinza) Dourado Azul Vermelha",
-    "preco": 18.72,
-    "desconto": 55,
-    "vendas": 5164,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lsirz2r48wfv6e",
-    "link": "https://s.shopee.com.br/3LSYo0tjv5",
-    "fonte": "shopee",
-    "ts": "2026-11-23T15:09:10.888137-03:00"
   }
 ]
