@@ -1,5 +1,27 @@
 [
   {
+    "id": "SHOPEE-20197726295",
+    "titulo": "Caixa Saco Organizador Cobertor Casaco Guarda Roupa Ecológico Anti-Poeira Umidade Insetos Multiuso",
+    "preco": 29.99,
+    "desconto": 62,
+    "vendas": 8684,
+    "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rd3t-m7np9ti1i0ar99",
+    "link": "https://s.shopee.com.br/8AXyKXLoBy",
+    "fonte": "shopee",
+    "ts": "2026-11-26T18:08:40.227596-03:00"
+  },
+  {
+    "id": "SHOPEE-22094238842",
+    "titulo": "BODY SPLASH FEMININO ARABE AYRA 100ML - PRIMACIAL PERFUME FLORAL",
+    "preco": 19.9,
+    "desconto": 50,
+    "vendas": 6771,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-820m1-mukoqlfdn280c5",
+    "link": "https://s.shopee.com.br/gRxKFQG3l",
+    "fonte": "shopee",
+    "ts": "2026-11-26T18:08:40.227596-03:00"
+  },
+  {
     "id": "SHOPEE-58200797547",
     "titulo": "EZ Silver Essence - Eau de Parfum 100ml",
     "preco": 44.9,
@@ -306,27 +328,5 @@
     "link": "https://s.shopee.com.br/5AuGO7jhUQ",
     "fonte": "shopee",
     "ts": "2026-11-23T17:08:53.992527-03:00"
-  },
-  {
-    "id": "SHOPEE-23899017576",
-    "titulo": "Carregador Portátil Indução para Sem fio Bateria Carga 3000/5000/10000mAh",
-    "preco": 28.96,
-    "desconto": 58,
-    "vendas": 9211,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mhpueqwbzs3me6",
-    "link": "https://s.shopee.com.br/6fj420trAj",
-    "fonte": "shopee",
-    "ts": "2026-11-23T16:10:34.389491-03:00"
-  },
-  {
-    "id": "SHOPEE-19697980846",
-    "titulo": "Ventilador Luminária Led 6 Pás Lâmpada Soquete Bocal E27 Teto 3 Cores Luz Branco Amarelo Bivolt",
-    "preco": 42.99,
-    "desconto": 52,
-    "vendas": 9594,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mhqkzkrt4w03ba",
-    "link": "https://s.shopee.com.br/6q2UA52Wob",
-    "fonte": "shopee",
-    "ts": "2026-11-23T16:10:34.389491-03:00"
   }
 ]
