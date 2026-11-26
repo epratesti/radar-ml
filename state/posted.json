@@ -2,14 +2,6 @@
   "ids": {
     "SHOPEE-22892686035": "2026-11-25T13:13:48.016936-03:00",
     "22892686035": "2026-11-25T13:13:48.016936-03:00",
-    "SHOPEE-21297578652": "2026-11-22T21:07:06.235824-03:00",
-    "21297578652": "2026-11-22T21:07:06.235824-03:00",
-    "SHOPEE-19499549872": "2026-11-22T21:07:06.235824-03:00",
-    "19499549872": "2026-11-22T21:07:06.235824-03:00",
-    "SHOPEE-58250947403": "2026-11-23T13:16:36.633481-03:00",
-    "58250947403": "2026-11-23T13:16:36.633481-03:00",
-    "SHOPEE-23197485445": "2026-11-23T13:16:36.633481-03:00",
-    "23197485445": "2026-11-23T13:16:36.633481-03:00",
     "SHOPEE-58200797547": "2026-11-23T15:09:10.888137-03:00",
     "58200797547": "2026-11-23T15:09:10.888137-03:00",
     "SHOPEE-21399069053": "2026-11-23T15:09:10.888137-03:00",
@@ -61,14 +53,14 @@
     "SHOPEE-23198212585": "2026-11-25T18:09:44.343391-03:00",
     "23198212585": "2026-11-25T18:09:44.343391-03:00",
     "SHOPEE-23098440348": "2026-11-25T18:09:44.343391-03:00",
-    "23098440348": "2026-11-25T18:09:44.343391-03:00"
+    "23098440348": "2026-11-25T18:09:44.343391-03:00",
+    "SHOPEE-58214853079": "2026-11-26T14:15:01.263822-03:00",
+    "58214853079": "2026-11-26T14:15:01.263822-03:00",
+    "SHOPEE-58251249633": "2026-11-26T14:15:01.263822-03:00",
+    "58251249633": "2026-11-26T14:15:01.263822-03:00"
   },
   "titulos": {
     "fone de ouvido entrada lightning para iphone microfone bluetooth": "2026-11-25T13:13:48.016936-03:00",
-    "sandália ortopédica feminina terapêutica para esporão chinelo ortopédico": "2026-11-22T21:07:06.235824-03:00",
-    "robô varredora aspirador de pó automática 3 em 1 limpeza doméstica robótico inte": "2026-11-22T21:07:06.235824-03:00",
-    "mouse pad rgb grande gamer personalizado apoio ergonômico confortável antiderrap": "2026-11-23T13:16:36.633481-03:00",
-    "whey protein fuse 900g isolate dark lab": "2026-11-23T13:16:36.633481-03:00",
     "ez silver essence eau de parfum 100ml": "2026-11-23T15:09:10.888137-03:00",
     "caneta paint original reparadora pintura automotiva permanente não sai na água t": "2026-11-23T15:09:10.888137-03:00",
     "ventilador luminária led 6 pás lâmpada soquete bocal e27 teto 3 cores luz branco": "2026-11-23T16:10:34.389491-03:00",
@@ -94,7 +86,9 @@
     "body splash feminino arabe ayra 100ml primacial perfume floral": "2026-11-25T17:09:04.573040-03:00",
     "b brobô varredora aspirador de pó automática 3 em 1 limpeza doméstica robótico i": "2026-11-25T17:09:04.573040-03:00",
     "whey ultra protein concentrado pote 900g ftw": "2026-11-25T18:09:44.343391-03:00",
-    "k12 caixa de som sem fio com microfone karaokê mini alto falante bluetooth portá": "2026-11-25T18:09:44.343391-03:00"
+    "k12 caixa de som sem fio com microfone karaokê mini alto falante bluetooth portá": "2026-11-25T18:09:44.343391-03:00",
+    "fone de ouvido sem fio m10 tws bluetooth 5 3 display led touch": "2026-11-26T14:15:01.263822-03:00",
+    "relógio retrô digital prata led unissex fashion masculino feminino pulseira inox": "2026-11-26T14:15:01.263822-03:00"
   },
   "precos": {
     "SHOPEE-19697980846": {
@@ -291,7 +285,7 @@
     },
     "SHOPEE-58251249633": {
       "preco": 14.9,
-      "ts": "2026-11-19T11:15:36.172465-03:00"
+      "ts": "2026-11-26T14:15:01.263822-03:00"
     },
     "SHOPEE-21297578652": {
       "preco": 32.0,
@@ -348,10 +342,6 @@
     "SHOPEE-58256926114": {
       "preco": 28.86,
       "ts": "2026-11-22T16:09:00.215968-03:00"
-    },
-    "SHOPEE-21198282551": {
-      "preco": 10.8,
-      "ts": "2026-11-11T22:24:29.527384-03:00"
     },
     "SHOPEE-52905774499": {
       "preco": 45.89,
@@ -471,7 +461,7 @@
     },
     "SHOPEE-58214853079": {
       "preco": 18.99,
-      "ts": "2026-11-19T11:15:36.172465-03:00"
+      "ts": "2026-11-26T14:15:01.263822-03:00"
     },
     "SHOPEE-58258562285": {
       "preco": 4.99,

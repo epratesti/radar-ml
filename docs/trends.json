@@ -1,5 +1,27 @@
 [
   {
+    "id": "SHOPEE-58251249633",
+    "titulo": "Relógio Retrô Digital Prata LED Unissex Fashion Masculino Feminino Pulseira Inoxidável Alta Qualidade",
+    "preco": 14.9,
+    "desconto": 70,
+    "vendas": 3963,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mhnwr6kx4o3n60",
+    "link": "https://s.shopee.com.br/9zzcFrTVtj",
+    "fonte": "shopee",
+    "ts": "2026-11-26T14:15:01.263822-03:00"
+  },
+  {
+    "id": "SHOPEE-58214853079",
+    "titulo": "Fone De Ouvido Sem Fio M10 TWS Bluetooth 5.3 display Led Touch",
+    "preco": 18.99,
+    "desconto": 73,
+    "vendas": 14082,
+    "imagem": "https://cf.shopee.com.br/file/sg-11134201-8258z-mr0fi8bhfthid6",
+    "link": "https://s.shopee.com.br/5LDmhI7Pnv",
+    "fonte": "shopee",
+    "ts": "2026-11-26T14:15:01.263822-03:00"
+  },
+  {
     "id": "SHOPEE-23098440348",
     "titulo": "K12 Caixa de som sem fio com microfone Karaokê, Mini Alto-falante Bluetooth portátil 1/2 Mic",
     "preco": 27.48,
@@ -306,27 +328,5 @@
     "link": "https://s.shopee.com.br/3B9C0S9OVt",
     "fonte": "shopee",
     "ts": "2026-11-23T13:16:36.633481-03:00"
-  },
-  {
-    "id": "SHOPEE-58250947403",
-    "titulo": "Mouse Pad RGB Grande Gamer Personalizado Apoio Ergonômico Confortável Antiderrapante Premium",
-    "preco": 11.58,
-    "desconto": 71,
-    "vendas": 1616,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mgz5o43odp1ha5",
-    "link": "https://s.shopee.com.br/2gCvDSnjZV",
-    "fonte": "shopee",
-    "ts": "2026-11-23T13:16:36.633481-03:00"
-  },
-  {
-    "id": "SHOPEE-19499549872",
-    "titulo": "Robô Varredora/Aspirador De Pó Automática 3 Em 1 Limpeza Doméstica Robótico Inteligente E Silencioso",
-    "preco": 42.69,
-    "desconto": 55,
-    "vendas": 2362,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-m2wi3azb4nid1e",
-    "link": "https://s.shopee.com.br/3Vm2P3q2sC",
-    "fonte": "shopee",
-    "ts": "2026-11-22T21:07:06.235824-03:00"
   }
 ]
