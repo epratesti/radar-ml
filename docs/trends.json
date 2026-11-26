@@ -1,5 +1,27 @@
 [
   {
+    "id": "SHOPEE-23399193375",
+    "titulo": "2026 T800 Ultra 3 MAX Mais Recente Smartwatch Relógio Inteligente NFC Série 10 2.19Polegadas Sem Fio",
+    "preco": 39.9,
+    "desconto": 73,
+    "vendas": 2158,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mhq4f2lhz40397",
+    "link": "https://s.shopee.com.br/7pv7fsblIW",
+    "fonte": "shopee",
+    "ts": "2026-11-26T15:09:55.173132-03:00"
+  },
+  {
+    "id": "SHOPEE-23197485445",
+    "titulo": "Whey Protein Fuse 900g Isolate Dark Lab",
+    "preco": 78.9,
+    "desconto": 51,
+    "vendas": 4551,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lzaxtiavhw6de4",
+    "link": "https://s.shopee.com.br/3qOyyIXKU4",
+    "fonte": "shopee",
+    "ts": "2026-11-26T15:09:55.173132-03:00"
+  },
+  {
     "id": "SHOPEE-58251249633",
     "titulo": "Relógio Retrô Digital Prata LED Unissex Fashion Masculino Feminino Pulseira Inoxidável Alta Qualidade",
     "preco": 14.9,
@@ -306,27 +328,5 @@
     "link": "https://s.shopee.com.br/3LSYo0tjv5",
     "fonte": "shopee",
     "ts": "2026-11-23T15:09:10.888137-03:00"
-  },
-  {
-    "id": "SHOPEE-58200797547",
-    "titulo": "EZ Silver Essence - Eau de Parfum 100ml",
-    "preco": 44.9,
-    "desconto": 35,
-    "vendas": 6712,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-81z1k-mhbzozlyxp8l74",
-    "link": "https://s.shopee.com.br/1qdoDw8Zff",
-    "fonte": "shopee",
-    "ts": "2026-11-23T15:09:10.888137-03:00"
-  },
-  {
-    "id": "SHOPEE-23197485445",
-    "titulo": "Whey Protein Fuse 900g Isolate Dark Lab",
-    "preco": 78.9,
-    "desconto": 51,
-    "vendas": 4747,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lzaxtiavhw6de4",
-    "link": "https://s.shopee.com.br/3B9C0S9OVt",
-    "fonte": "shopee",
-    "ts": "2026-11-23T13:16:36.633481-03:00"
   }
 ]

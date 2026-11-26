@@ -2,10 +2,6 @@
   "ids": {
     "SHOPEE-22892686035": "2026-11-25T13:13:48.016936-03:00",
     "22892686035": "2026-11-25T13:13:48.016936-03:00",
-    "SHOPEE-58200797547": "2026-11-23T15:09:10.888137-03:00",
-    "58200797547": "2026-11-23T15:09:10.888137-03:00",
-    "SHOPEE-21399069053": "2026-11-23T15:09:10.888137-03:00",
-    "21399069053": "2026-11-23T15:09:10.888137-03:00",
     "SHOPEE-19697980846": "2026-11-23T16:10:34.389491-03:00",
     "19697980846": "2026-11-23T16:10:34.389491-03:00",
     "SHOPEE-23899017576": "2026-11-23T16:10:34.389491-03:00",
@@ -57,12 +53,14 @@
     "SHOPEE-58214853079": "2026-11-26T14:15:01.263822-03:00",
     "58214853079": "2026-11-26T14:15:01.263822-03:00",
     "SHOPEE-58251249633": "2026-11-26T14:15:01.263822-03:00",
-    "58251249633": "2026-11-26T14:15:01.263822-03:00"
+    "58251249633": "2026-11-26T14:15:01.263822-03:00",
+    "SHOPEE-23197485445": "2026-11-26T15:09:55.173132-03:00",
+    "23197485445": "2026-11-26T15:09:55.173132-03:00",
+    "SHOPEE-23399193375": "2026-11-26T15:09:55.173132-03:00",
+    "23399193375": "2026-11-26T15:09:55.173132-03:00"
   },
   "titulos": {
     "fone de ouvido entrada lightning para iphone microfone bluetooth": "2026-11-25T13:13:48.016936-03:00",
-    "ez silver essence eau de parfum 100ml": "2026-11-23T15:09:10.888137-03:00",
-    "caneta paint original reparadora pintura automotiva permanente não sai na água t": "2026-11-23T15:09:10.888137-03:00",
     "ventilador luminária led 6 pás lâmpada soquete bocal e27 teto 3 cores luz branco": "2026-11-23T16:10:34.389491-03:00",
     "carregador portátil indução para sem fio bateria carga 3000 5000 10000mah": "2026-11-23T16:10:34.389491-03:00",
     "mini aspirador de pó 3 em 1 a vacuo usb portátil recarregavel se8010": "2026-11-23T17:08:53.992527-03:00",
@@ -88,7 +86,9 @@
     "whey ultra protein concentrado pote 900g ftw": "2026-11-25T18:09:44.343391-03:00",
     "k12 caixa de som sem fio com microfone karaokê mini alto falante bluetooth portá": "2026-11-25T18:09:44.343391-03:00",
     "fone de ouvido sem fio m10 tws bluetooth 5 3 display led touch": "2026-11-26T14:15:01.263822-03:00",
-    "relógio retrô digital prata led unissex fashion masculino feminino pulseira inox": "2026-11-26T14:15:01.263822-03:00"
+    "relógio retrô digital prata led unissex fashion masculino feminino pulseira inox": "2026-11-26T14:15:01.263822-03:00",
+    "whey protein fuse 900g isolate dark lab": "2026-11-26T15:09:55.173132-03:00",
+    "2026 t800 ultra 3 max mais recente smartwatch relógio inteligente nfc série 10 2": "2026-11-26T15:09:55.173132-03:00"
   },
   "precos": {
     "SHOPEE-19697980846": {
@@ -121,7 +121,7 @@
     },
     "SHOPEE-23197485445": {
       "preco": 78.9,
-      "ts": "2026-11-23T13:16:36.633481-03:00"
+      "ts": "2026-11-26T15:09:55.173132-03:00"
     },
     "SHOPEE-22199220609": {
       "preco": 39.99,
@@ -300,8 +300,8 @@
       "ts": "2026-11-25T13:13:48.016936-03:00"
     },
     "SHOPEE-23399193375": {
-      "preco": 39.8,
-      "ts": "2026-11-22T15:07:26.520342-03:00"
+      "preco": 39.9,
+      "ts": "2026-11-26T15:09:55.173132-03:00"
     },
     "SHOPEE-58207663151": {
       "preco": 11.99,
