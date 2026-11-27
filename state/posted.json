@@ -2,10 +2,6 @@
   "ids": {
     "SHOPEE-22892686035": "2026-11-25T13:13:48.016936-03:00",
     "22892686035": "2026-11-25T13:13:48.016936-03:00",
-    "SHOPEE-22392993399": "2026-11-24T17:08:25.754413-03:00",
-    "22392993399": "2026-11-24T17:08:25.754413-03:00",
-    "SHOPEE-18499853587": "2026-11-24T17:08:25.754413-03:00",
-    "18499853587": "2026-11-24T17:08:25.754413-03:00",
     "SHOPEE-23694435102": "2026-11-24T18:03:36.201592-03:00",
     "23694435102": "2026-11-24T18:03:36.201592-03:00",
     "SHOPEE-58262387632": "2026-11-24T20:19:10.188891-03:00",
@@ -53,12 +49,14 @@
     "SHOPEE-23293253949": "2026-11-27T16:09:06.087512-03:00",
     "23293253949": "2026-11-27T16:09:06.087512-03:00",
     "SHOPEE-22093160276": "2026-11-27T16:09:06.087512-03:00",
-    "22093160276": "2026-11-27T16:09:06.087512-03:00"
+    "22093160276": "2026-11-27T16:09:06.087512-03:00",
+    "SHOPEE-58203770266": "2026-11-27T17:09:47.671518-03:00",
+    "58203770266": "2026-11-27T17:09:47.671518-03:00",
+    "SHOPEE-8020679826": "2026-11-27T17:09:47.671518-03:00",
+    "8020679826": "2026-11-27T17:09:47.671518-03:00"
   },
   "titulos": {
     "fone de ouvido entrada lightning para iphone microfone bluetooth": "2026-11-25T13:13:48.016936-03:00",
-    "hipercalórico dark mass 3kg dark lab whey protein creatina bcaa waxy maize premi": "2026-11-24T17:08:25.754413-03:00",
-    "carregador sem fio 5000 10000mah iphone": "2026-11-24T17:08:25.754413-03:00",
     "chinelo rasteira feminina adulto e infantil com nó bico quadrado confortável e e": "2026-11-24T18:03:36.201592-03:00",
     "kit renovadores gota de colágeno e rosa mosqueta kokeshi": "2026-11-24T20:19:10.188891-03:00",
     "ventilador de mesa prime air maxx force 6 pás 60w avte01": "2026-11-26T21:23:12.957083-03:00",
@@ -82,7 +80,9 @@
     "rádio caixa de som bluetooth recarregável lanterna retro portátil fm am usb sd p": "2026-11-27T14:30:23.614686-03:00",
     "kit dupla renovadores faciais kokeshi pele porcelana olhos gueixa": "2026-11-27T15:10:12.037726-03:00",
     "whey protein concentrado 1kg dark lab": "2026-11-27T16:09:06.087512-03:00",
-    "2026 nova série 8 relógio t800 ultra smart watch esportivo sem fio prova d água ": "2026-11-27T16:09:06.087512-03:00"
+    "2026 nova série 8 relógio t800 ultra smart watch esportivo sem fio prova d água ": "2026-11-27T16:09:06.087512-03:00",
+    "ez vip rose eau de parfum 100ml lançamento exclusivo": "2026-11-27T17:09:47.671518-03:00",
+    "liquidificador mondial l 99 turbo 550 w 3 velocidades": "2026-11-27T17:09:47.671518-03:00"
   },
   "precos": {
     "SHOPEE-19697980846": {
@@ -399,7 +399,7 @@
     },
     "SHOPEE-58203770266": {
       "preco": 44.9,
-      "ts": "2026-11-21T20:44:23.468531-03:00"
+      "ts": "2026-11-27T17:09:47.671518-03:00"
     },
     "SHOPEE-22793090494": {
       "preco": 21.99,
@@ -436,6 +436,10 @@
     "SHOPEE-22099046331": {
       "preco": 11.45,
       "ts": "2026-11-21T14:55:19.125918-03:00"
+    },
+    "SHOPEE-8020679826": {
+      "preco": 103.99,
+      "ts": "2026-11-27T17:09:47.671518-03:00"
     }
   },
   "alertas": {}

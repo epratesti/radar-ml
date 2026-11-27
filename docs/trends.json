@@ -1,5 +1,27 @@
 [
   {
+    "id": "SHOPEE-8020679826",
+    "titulo": "Liquidificador Mondial L‑99 Turbo 550 W 3 Velocidades",
+    "preco": 103.99,
+    "desconto": 40,
+    "vendas": 7739,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-mc83lzgst4gw71",
+    "link": "https://s.shopee.com.br/9KjxFWrCXo",
+    "fonte": "shopee",
+    "ts": "2026-11-27T17:09:47.671518-03:00"
+  },
+  {
+    "id": "SHOPEE-58203770266",
+    "titulo": "EZ Vip Rose - Eau de Parfum 100ml LANÇAMENTO EXCLUSIVO",
+    "preco": 44.9,
+    "desconto": 35,
+    "vendas": 4315,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-81ztc-mjrcbybqujghc2",
+    "link": "https://s.shopee.com.br/7fbjGTJXq6",
+    "fonte": "shopee",
+    "ts": "2026-11-27T17:09:47.671518-03:00"
+  },
+  {
     "id": "SHOPEE-22093160276",
     "titulo": "2026 Nova Série 8 Relógio T800 Ultra Smart Watch Esportivo Sem Fio À Prova D'água T800 Ultra2 MAX",
     "preco": 42.75,
@@ -306,27 +328,5 @@
     "link": "https://s.shopee.com.br/50aqNQ2DmD",
     "fonte": "shopee",
     "ts": "2026-11-24T18:03:36.201592-03:00"
-  },
-  {
-    "id": "SHOPEE-18499853587",
-    "titulo": "Carregador Sem Fio 5000/10000mAh iPhone",
-    "preco": 28.85,
-    "desconto": 50,
-    "vendas": 10232,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-mavkx3k4v9n308",
-    "link": "https://s.shopee.com.br/6q2UEJtDpk",
-    "fonte": "shopee",
-    "ts": "2026-11-24T17:08:25.754413-03:00"
-  },
-  {
-    "id": "SHOPEE-22392993399",
-    "titulo": "Hipercalórico Dark Mass 3kg Dark Lab - Whey Protein, Creatina, BCAA, Waxy Maize, Premium Mass Gainer",
-    "preco": 78.9,
-    "desconto": 51,
-    "vendas": 2887,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lzawnmo1qj3970",
-    "link": "https://s.shopee.com.br/3g5SbN7UV2",
-    "fonte": "shopee",
-    "ts": "2026-11-24T17:08:25.754413-03:00"
   }
 ]
