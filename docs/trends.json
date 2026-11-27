@@ -1,5 +1,27 @@
 [
   {
+    "id": "SHOPEE-22093160276",
+    "titulo": "2026 Nova Série 8 Relógio T800 Ultra Smart Watch Esportivo Sem Fio À Prova D'água T800 Ultra2 MAX",
+    "preco": 42.75,
+    "desconto": 72,
+    "vendas": 1847,
+    "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rdym-lxrzfhio6fhl9d",
+    "link": "https://s.shopee.com.br/40iPAbwgGd",
+    "fonte": "shopee",
+    "ts": "2026-11-27T16:09:06.087512-03:00"
+  },
+  {
+    "id": "SHOPEE-23293253949",
+    "titulo": "Whey Protein Concentrado 1Kg Dark Lab",
+    "preco": 136.9,
+    "desconto": 40,
+    "vendas": 2604,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-7r98o-lzkq1yrpylqtc1",
+    "link": "https://s.shopee.com.br/2qWRmSb8Vy",
+    "fonte": "shopee",
+    "ts": "2026-11-27T16:09:06.087512-03:00"
+  },
+  {
     "id": "SHOPEE-23994387054",
     "titulo": "Kit Dupla Renovadores Faciais Kokeshi Pele Porcelana Olhos Gueixa",
     "preco": 31.9,
@@ -306,27 +328,5 @@
     "link": "https://s.shopee.com.br/3g5SbN7UV2",
     "fonte": "shopee",
     "ts": "2026-11-24T17:08:25.754413-03:00"
-  },
-  {
-    "id": "SHOPEE-23198988208",
-    "titulo": "Mouse Pad Desk Pad Couro Borda Costurada Gigante Antiderrapante Tapete Mesa Gamer Setup Trabalho Estudo Protetor Mesa",
-    "preco": 15.89,
-    "desconto": 56,
-    "vendas": 2842,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-820li-mlfcjdzl6ryf41",
-    "link": "https://s.shopee.com.br/3LSc0glCDZ",
-    "fonte": "shopee",
-    "ts": "2026-11-24T16:08:08.125661-03:00"
-  },
-  {
-    "id": "SHOPEE-22093160276",
-    "titulo": "2026 Nova Série 8 Relógio T800 Ultra Smart Watch Esportivo Sem Fio À Prova D'água T800 Ultra2 MAX",
-    "preco": 43.99,
-    "desconto": 72,
-    "vendas": 2062,
-    "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rdym-lxrzfhio6fhl9d",
-    "link": "https://s.shopee.com.br/2gCvb8bVBN",
-    "fonte": "shopee",
-    "ts": "2026-11-24T16:08:08.125661-03:00"
   }
 ]
