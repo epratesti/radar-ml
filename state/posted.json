@@ -2,10 +2,6 @@
   "ids": {
     "SHOPEE-22892686035": "2026-11-25T13:13:48.016936-03:00",
     "22892686035": "2026-11-25T13:13:48.016936-03:00",
-    "SHOPEE-22494941454": "2026-11-23T19:18:52.773925-03:00",
-    "22494941454": "2026-11-23T19:18:52.773925-03:00",
-    "SHOPEE-58259749592": "2026-11-23T19:18:52.773925-03:00",
-    "58259749592": "2026-11-23T19:18:52.773925-03:00",
     "SHOPEE-55359781665": "2026-11-24T12:13:18.868148-03:00",
     "55359781665": "2026-11-24T12:13:18.868148-03:00",
     "SHOPEE-20399896346": "2026-11-24T12:13:18.868148-03:00",
@@ -26,8 +22,8 @@
     "23694435102": "2026-11-24T18:03:36.201592-03:00",
     "SHOPEE-58262387632": "2026-11-24T20:19:10.188891-03:00",
     "58262387632": "2026-11-24T20:19:10.188891-03:00",
-    "SHOPEE-22197514607": "2026-11-24T20:19:10.188891-03:00",
-    "22197514607": "2026-11-24T20:19:10.188891-03:00",
+    "SHOPEE-22197514607": "2026-11-26T21:23:12.957083-03:00",
+    "22197514607": "2026-11-26T21:23:12.957083-03:00",
     "SHOPEE-23898692172": "2026-11-25T15:08:46.020112-03:00",
     "23898692172": "2026-11-25T15:08:46.020112-03:00",
     "SHOPEE-22099191110": "2026-11-25T15:08:46.020112-03:00",
@@ -57,12 +53,12 @@
     "SHOPEE-20197726295": "2026-11-26T18:08:40.227596-03:00",
     "20197726295": "2026-11-26T18:08:40.227596-03:00",
     "SHOPEE-58264628974": "2026-11-26T19:10:35.246906-03:00",
-    "58264628974": "2026-11-26T19:10:35.246906-03:00"
+    "58264628974": "2026-11-26T19:10:35.246906-03:00",
+    "SHOPEE-23096150316": "2026-11-26T21:23:12.957083-03:00",
+    "23096150316": "2026-11-26T21:23:12.957083-03:00"
   },
   "titulos": {
     "fone de ouvido entrada lightning para iphone microfone bluetooth": "2026-11-25T13:13:48.016936-03:00",
-    "kit facial kokeshi completo 3 passos hidratação e colágeno": "2026-11-23T19:18:52.773925-03:00",
-    "kit carregador 67w turbo cabo tipo c carga rápida universal xiaomi redmi note e ": "2026-11-23T19:18:52.773925-03:00",
     "saco lavar tenis sapato máquina lavar roupas protege não danifica lavagem segura": "2026-11-24T12:13:18.868148-03:00",
     "high quality non toxic reusable pour over coffee filter stainless steel coffee t": "2026-11-24T12:13:18.868148-03:00",
     "kit 100 forma de airfryer descartavel antiaderente de papel cozinha quadrado fri": "2026-11-24T14:13:42.385527-03:00",
@@ -73,7 +69,7 @@
     "carregador sem fio 5000 10000mah iphone": "2026-11-24T17:08:25.754413-03:00",
     "chinelo rasteira feminina adulto e infantil com nó bico quadrado confortável e e": "2026-11-24T18:03:36.201592-03:00",
     "kit renovadores gota de colágeno e rosa mosqueta kokeshi": "2026-11-24T20:19:10.188891-03:00",
-    "ventilador de mesa prime air maxx force 6 pás 60w avte01": "2026-11-24T20:19:10.188891-03:00",
+    "ventilador de mesa prime air maxx force 6 pás 60w avte01": "2026-11-26T21:23:12.957083-03:00",
     "ventilador de teto com luz silencioso controle remoto economica instalação fácil": "2026-11-25T15:08:46.020112-03:00",
     "garrafa térmica watersy 500ml 48h frio perfeita para academia futebol e dia a di": "2026-11-25T15:08:46.020112-03:00",
     "suporte organizador de ovos dispenser para geladeira prático anti queda utensíli": "2026-11-25T16:08:58.411378-03:00",
@@ -88,7 +84,8 @@
     "2026 t800 ultra 3 max mais recente smartwatch relógio inteligente nfc série 10 2": "2026-11-26T15:09:55.173132-03:00",
     "ez silver essence eau de parfum 100ml": "2026-11-26T17:03:02.650837-03:00",
     "caixa saco organizador cobertor casaco guarda roupa ecológico anti poeira umidad": "2026-11-26T18:08:40.227596-03:00",
-    "body splash feminino perfume deo colônia flooratta red 200ml": "2026-11-26T19:10:35.246906-03:00"
+    "body splash feminino perfume deo colônia flooratta red 200ml": "2026-11-26T19:10:35.246906-03:00",
+    "1 2 5 suporte de parede multifuncional caixa de armazenamento casa para carregar": "2026-11-26T21:23:12.957083-03:00"
   },
   "precos": {
     "SHOPEE-19697980846": {
@@ -293,7 +290,7 @@
     },
     "SHOPEE-23096150316": {
       "preco": 9.89,
-      "ts": "2026-11-20T16:00:33.021503-03:00"
+      "ts": "2026-11-26T21:23:12.957083-03:00"
     },
     "SHOPEE-22892686035": {
       "preco": 8.99,
@@ -350,10 +347,6 @@
     "SHOPEE-18499695542": {
       "preco": 23.99,
       "ts": "2026-11-23T17:08:53.992527-03:00"
-    },
-    "SHOPEE-21797728567": {
-      "preco": 41.48,
-      "ts": "2026-11-12T19:10:39.202234-03:00"
     },
     "SHOPEE-58267502829": {
       "preco": 37.99,
@@ -464,8 +457,8 @@
       "ts": "2026-11-25T16:08:58.411378-03:00"
     },
     "SHOPEE-22197514607": {
-      "preco": 100.0,
-      "ts": "2026-11-24T20:19:10.188891-03:00"
+      "preco": 90.0,
+      "ts": "2026-11-26T21:23:12.957083-03:00"
     },
     "SHOPEE-23195818961": {
       "preco": 14.99,
