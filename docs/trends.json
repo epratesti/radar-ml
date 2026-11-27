@@ -1,5 +1,27 @@
 [
   {
+    "id": "SHOPEE-23994387054",
+    "titulo": "Kit Dupla Renovadores Faciais Kokeshi Pele Porcelana Olhos Gueixa",
+    "preco": 31.9,
+    "desconto": 36,
+    "vendas": 10600,
+    "imagem": "https://cf.shopee.com.br/file/br-11134207-820lg-mv7qrwedl8n5f6",
+    "link": "https://s.shopee.com.br/4B1qv5YR46",
+    "fonte": "shopee",
+    "ts": "2026-11-27T15:10:12.037726-03:00"
+  },
+  {
+    "id": "SHOPEE-23898692172",
+    "titulo": "Ventilador de Teto com Luz Silencioso Controle Remoto Economica Instalação Fácil LED Bivolt E27",
+    "preco": 51.99,
+    "desconto": 55,
+    "vendas": 10522,
+    "imagem": "https://cf.shopee.com.br/file/sg-11134201-7rdwy-mbw84yf3pvcl00",
+    "link": "https://s.shopee.com.br/1LhePLTnZB",
+    "fonte": "shopee",
+    "ts": "2026-11-27T15:10:12.037726-03:00"
+  },
+  {
     "id": "SHOPEE-49610876725",
     "titulo": "Rádio Caixa de Som Bluetooth Recarregável Lanterna Retro Portátil FM AM USB SD Pilha",
     "preco": 71.9,
@@ -306,27 +328,5 @@
     "link": "https://s.shopee.com.br/2gCvb8bVBN",
     "fonte": "shopee",
     "ts": "2026-11-24T16:08:08.125661-03:00"
-  },
-  {
-    "id": "SHOPEE-58200879255",
-    "titulo": "Carregador de Carregamento Turbo 30w Fonte 3A Torre Carregar Celular Tipo-C com Cabo Lightning(ios)",
-    "preco": 24.98,
-    "desconto": 64,
-    "vendas": 4258,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-820lc-mpfk4paqdm9v32",
-    "link": "https://s.shopee.com.br/1qdnx09vwi",
-    "fonte": "shopee",
-    "ts": "2026-11-24T14:13:42.385527-03:00"
-  },
-  {
-    "id": "SHOPEE-22794275506",
-    "titulo": "Kit 100 Forma de airfryer descartavel antiaderente de papel cozinha quadrado fritadeira cozimento",
-    "preco": 16.98,
-    "desconto": 76,
-    "vendas": 3830,
-    "imagem": "https://cf.shopee.com.br/file/br-11134207-820l5-mvhiu678rkea1f",
-    "link": "https://s.shopee.com.br/4qHSuVfBFO",
-    "fonte": "shopee",
-    "ts": "2026-11-24T14:13:42.385527-03:00"
   }
 ]
